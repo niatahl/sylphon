@@ -6,9 +6,9 @@ import com.fs.starfarer.api.Global;
 import com.fs.starfarer.api.combat.MutableShipStatsAPI;
 import com.fs.starfarer.api.combat.ShipAPI;
 import com.fs.starfarer.api.impl.combat.BaseShipSystemScript;
-import data.scripts.plugins.NicToyCustomTrailPlugin;
+import data.scripts.plugins.MagicTrailPlugin;
 import data.scripts.plugins.SRD_FakeSmokePlugin;
-import data.scripts.plugins.SRD_SpriteRenderPlugin;
+import data.scripts.util.MagicRender;
 import org.lazywizard.lazylib.MathUtils;
 import org.lwjgl.util.vector.Vector2f;
 
@@ -86,7 +86,7 @@ public class SRD_NullfieldCatalyst extends BaseShipSystemScript {
 
             //Drastically increases mobility and shifts us toward being phased, but not entirely
             //(also cuts our trails, since we are technically entering another dimension)
-            NicToyCustomTrailPlugin.cutTrailsOnEntity(fighter);
+            MagicTrailPlugin.cutTrailsOnEntity(fighter);
             fighter.setExtraAlphaMult(0.3f);
             float speedBonus = SPEED_BONUS_MULT;
             float mobilityBonus = MOBILITY_BONUS_MULT;
@@ -117,7 +117,7 @@ public class SRD_NullfieldCatalyst extends BaseShipSystemScript {
                     Vector2f modifiedShadowPos = new Vector2f(MathUtils.getRandomNumberInRange(-SHADOW_FLICKER_DIFFERENCE, SHADOW_FLICKER_DIFFERENCE), MathUtils.getRandomNumberInRange(-SHADOW_FLICKER_DIFFERENCE, SHADOW_FLICKER_DIFFERENCE));
                     modifiedShadowPos.x += shadowPos.x;
                     modifiedShadowPos.y += shadowPos.y;
-                    SRD_SpriteRenderPlugin.battlespaceRender(Global.getSettings().getSprite("SRD_fx", "SRD_generic_fighter_phantom_" + MathUtils.getRandomNumberInRange((int)0, (int)2)), modifiedShadowPos, new Vector2f(0f, 0f),
+                    MagicRender.battlespace(Global.getSettings().getSprite("SRD_fx", "SRD_generic_fighter_phantom_" + MathUtils.getRandomNumberInRange((int)0, (int)2)), modifiedShadowPos, new Vector2f(0f, 0f),
                             new Vector2f(fighter.getSpriteAPI().getWidth(), fighter.getSpriteAPI().getHeight()),
                             new Vector2f(0f, 0f), fighter.getFacing() + angleDifference,
                             0f, AFTERIMAGE_COLOR, true, 0.1f, 0f, 0.3f);

@@ -93,7 +93,6 @@ public class SRD_Rofocale {
                 5, // size of the market
                 new ArrayList<>(
                         Arrays.asList(
-                                "SRD_geofront",
                                 Conditions.POPULATION_6)),
                 new ArrayList<>(
                         Arrays.asList( // which submarkets to generate
@@ -127,9 +126,6 @@ public class SRD_Rofocale {
                 7, // size of the market
                 new ArrayList<>(
                         Arrays.asList(
-                                Conditions.HEADQUARTERS,
-                                Conditions.MILITARY_BASE,
-                                Conditions.ORBITAL_STATION,
                                 Conditions.POPULATION_5)),
                 new ArrayList<>(
                         Arrays.asList( // which submarkets to generate
@@ -191,7 +187,6 @@ public class SRD_Rofocale {
         MarketAPI newMarket = Global.getFactory().createMarket(marketID, name, size);
         newMarket.setFactionId(factionID);
         newMarket.setPrimaryEntity(primaryEntity);
-        newMarket.setBaseSmugglingStabilityValue(0);
         newMarket.getTariff().modifyFlat("generator", tarrif);
 
         //Adds submarkets
@@ -213,7 +208,7 @@ public class SRD_Rofocale {
             }
         }
 
-        globalEconomy.addMarket(newMarket);
+        globalEconomy.addMarket(newMarket, true);
         primaryEntity.setMarket(newMarket);
         primaryEntity.setFaction(factionID);
 

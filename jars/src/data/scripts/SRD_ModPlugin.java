@@ -11,7 +11,6 @@ import data.scripts.campaignPlugins.SRD_KeepTrackOfSylphCorePlugin;
 import data.scripts.world.SRD_FactionRelationPlugin;
 import data.scripts.world.SRD_Nym;
 import data.scripts.world.SRD_Rofocale;
-import exerelin.campaign.SectorManager;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -50,6 +49,7 @@ public class SRD_ModPlugin extends BaseModPlugin {
 
     @Override
     public void onNewGame() {
+        /* Commented out while working on other stuff
         SectorAPI sector = Global.getSector();
 
         //If we have Nexerelin and random worlds enabled, don't spawn our manual systems
@@ -69,5 +69,6 @@ public class SRD_ModPlugin extends BaseModPlugin {
             //Even if we have nexerelin, we still have to add bounties for the faction
             SharedData.getData().getPersonBountyEventData().addParticipatingFaction("sylphon");
         }
+        */
     }
 }

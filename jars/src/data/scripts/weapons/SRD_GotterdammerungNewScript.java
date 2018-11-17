@@ -3,14 +3,11 @@ package data.scripts.weapons;
 import com.fs.starfarer.api.Global;
 import com.fs.starfarer.api.combat.*;
 import com.fs.starfarer.api.graphics.SpriteAPI;
-import data.scripts.plugins.NicToyCustomTrailPlugin;
+import data.scripts.plugins.MagicTrailPlugin;
 import data.scripts.plugins.SRD_LensFlarePlugin;
-import data.scripts.plugins.SRD_SpriteRenderPlugin;
 import org.lazywizard.lazylib.MathUtils;
-import org.lazywizard.lazylib.VectorUtils;
 import org.lwjgl.util.vector.Vector2f;
 
-import javax.xml.bind.annotation.XmlElementDecl;
 import java.awt.*;
 
 import static org.lwjgl.opengl.GL11.*;
@@ -103,17 +100,17 @@ public class SRD_GotterdammerungNewScript implements BeamEffectPlugin {
                 //TEST: spawns wierd trails in random directions
                 SpriteAPI spriteToUse = Global.getSettings().getSprite("SRD_fx","projectile_trail_standard");
                 for (int i1 = 0; i1 < 80; i1++) {
-                    float id = NicToyCustomTrailPlugin.getUniqueID();
+                    float id = MagicTrailPlugin.getUniqueID();
                     float angle = MathUtils.getRandomNumberInRange(0f, 360f);
                     float startSpeed = MathUtils.getRandomNumberInRange(50f, 500f);
                     float startAngularVelocity = MathUtils.getRandomNumberInRange(-40f, 40f);
                     float startSize = MathUtils.getRandomNumberInRange(17f, 50f);
                     float lifetimeMult = MathUtils.getRandomNumberInRange(0.3f, 1.2f);
                     for (int i2 = 0; i2 < 100; i2++) {
-                        NicToyCustomTrailPlugin.AddTrailMemberAdvanced(null, id, spriteToUse, beam.getTo(), startSpeed * ((float)i2 / 100f), 0f,
+                        MagicTrailPlugin.AddTrailMemberAdvanced(null, id, spriteToUse, beam.getTo(), startSpeed * ((float)i2 / 100f), 0f,
                                 angle, startAngularVelocity * ((float)i2 / 100f), 0f, startSize, 0f, MUZZLE_FLASH_COLOR, MUZZLE_FLASH_COLOR,
                                 0.45f, 0f, 0.6f * ((float)i2 / 100f) * lifetimeMult, 1.4f * ((float)i2 / 100f) * lifetimeMult, GL_SRC_ALPHA, GL_ONE,
-                                500f, 0f);
+                                500f, 0f, new Vector2f(0f, 0f), null);
                     }
                 }
 

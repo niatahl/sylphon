@@ -146,10 +146,7 @@ public class SRD_Nym {
                 new ArrayList<>(
                         Arrays.asList( // list of market conditions
                                 Conditions.FREE_PORT,
-                                Conditions.VOLATILES_COMPLEX,
-                                Conditions.MILITARY_BASE,
                                 Conditions.OUTPOST,
-                                Conditions.ORBITAL_STATION,
                                 Conditions.POPULATION_5)),
                 new ArrayList<>(
                         Arrays.asList( // which submarkets to generate
@@ -260,7 +257,6 @@ public class SRD_Nym {
         MarketAPI newMarket = Global.getFactory().createMarket(marketID, name, size);
         newMarket.setFactionId(factionID);
         newMarket.setPrimaryEntity(primaryEntity);
-        newMarket.setBaseSmugglingStabilityValue(0);
         newMarket.getTariff().modifyFlat("generator", tarrif);
 
         //Adds submarkets
@@ -282,7 +278,7 @@ public class SRD_Nym {
             }
         }
 
-        globalEconomy.addMarket(newMarket);
+        globalEconomy.addMarket(newMarket, true);
         primaryEntity.setMarket(newMarket);
         primaryEntity.setFaction(factionID);
 

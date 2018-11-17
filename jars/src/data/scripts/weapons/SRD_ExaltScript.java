@@ -5,7 +5,7 @@ package data.scripts.weapons;
 import com.fs.starfarer.api.Global;
 import com.fs.starfarer.api.combat.*;
 import com.fs.starfarer.api.graphics.SpriteAPI;
-import data.scripts.plugins.SRD_SpriteRenderPlugin;
+import data.scripts.util.MagicRender;
 import org.lazywizard.lazylib.CollisionUtils;
 import org.lazywizard.lazylib.MathUtils;
 import org.lazywizard.lazylib.VectorUtils;
@@ -69,7 +69,7 @@ public class SRD_ExaltScript implements EveryFrameWeaponEffectPlugin {
             }
             laserLocation = VectorUtils.rotateAroundPivot(laserLocation, weapon.getLocation(), weapon.getCurrAngle(), weapon.getLocation());
 
-            SRD_SpriteRenderPlugin.singleFrameRender(spriteToUse, laserLocation, new Vector2f(9f, 210f), weapon.getCurrAngle() - 90f,
+            MagicRender.singleframe(spriteToUse, laserLocation, new Vector2f(9f, 210f), weapon.getCurrAngle() - 90f,
                     COLORS[rangeBracket], true);
         }
 

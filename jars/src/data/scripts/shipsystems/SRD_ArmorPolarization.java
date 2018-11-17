@@ -1,10 +1,7 @@
 package data.scripts.shipsystems;
 
-import com.fs.starfarer.api.combat.DamagingProjectileAPI;
 import com.fs.starfarer.api.combat.MutableShipStatsAPI;
 import com.fs.starfarer.api.impl.combat.BaseShipSystemScript;
-import data.scripts.plugins.NicToyCustomTrailPlugin;
-import org.lazywizard.lazylib.combat.CombatUtils;
 
 public class SRD_ArmorPolarization extends BaseShipSystemScript {
 

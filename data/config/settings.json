@@ -1,7 +1,5 @@
 {
 	"plugins":{
-		"NicToyCustomTrailPlugin":"data.scripts.plugins.NicToyCustomTrailPlugin",
-		"SRD_SpriteRenderPlugin":"data.scripts.plugins.SRD_SpriteRenderPlugin",
 		"SRD_VeritasTrackerPlugin":"data.scripts.plugins.SRD_VeritasTrackerPlugin",
 		"SRD_FakeSmokePlugin":"data.scripts.plugins.SRD_FakeSmokePlugin",
 		"SRD_NullspaceMissileTrackerPlugin":"data.scripts.plugins.SRD_NullspaceMissileTrackerPlugin",

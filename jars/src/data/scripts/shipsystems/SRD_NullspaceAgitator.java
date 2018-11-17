@@ -5,8 +5,7 @@ import com.fs.starfarer.api.Global;
 import com.fs.starfarer.api.combat.MutableShipStatsAPI;
 import com.fs.starfarer.api.combat.ShipAPI;
 import com.fs.starfarer.api.impl.combat.BaseShipSystemScript;
-import data.scripts.plugins.SRD_SpriteRenderPlugin;
-import org.lazywizard.lazylib.MathUtils;
+import data.scripts.util.MagicRender;
 import org.lazywizard.lazylib.combat.CombatUtils;
 import org.lwjgl.util.vector.Vector2f;
 
@@ -46,7 +45,7 @@ public class SRD_NullspaceAgitator extends BaseShipSystemScript {
 
         if (runOnce) {
             runOnce = false;
-            SRD_SpriteRenderPlugin.objectspaceRender(Global.getSettings().getSprite("SRD_fx", "seresvalla_wave"), ship, new Vector2f(0f, 0f),
+            MagicRender.objectspace(Global.getSettings().getSprite("SRD_fx", "seresvalla_wave"), ship, new Vector2f(0f, 0f),
                     new Vector2f(0f, 0f), PULSE_STARTSIZE, PULSE_GROWTH, 180f, 0f, true, PULSE_COLOR, true, 0f, 0.2f, 0.9f, true);
             for (ShipAPI testShip : CombatUtils.getShipsWithinRange(ship.getLocation(), EFFECT_RANGE)) {
                 if (!testShip.getVariant().getHullMods().contains("SRD_nullspace_conduits")) {

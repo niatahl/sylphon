@@ -3,8 +3,7 @@ package data.scripts.weapons;
 import com.fs.starfarer.api.Global;
 import com.fs.starfarer.api.combat.*;
 import com.fs.starfarer.api.graphics.SpriteAPI;
-import com.fs.starfarer.api.impl.campaign.ids.Stats;
-import data.scripts.plugins.NicToyCustomTrailPlugin;
+import data.scripts.plugins.MagicTrailPlugin;
 import org.lazywizard.lazylib.MathUtils;
 import org.lwjgl.util.vector.Vector2f;
 
@@ -34,7 +33,7 @@ public class SRD_PurgatoryOnHitEffect implements OnHitEffectPlugin {
                     (int)(COLOR1.getGreen() * currentMult + COLOR2.getGreen() * (1f - currentMult)),
                     (int)(COLOR1.getBlue() * currentMult + COLOR2.getBlue() * (1f - currentMult)));
 
-            float id = NicToyCustomTrailPlugin.getUniqueID();
+            float id = MagicTrailPlugin.getUniqueID();
             float angle = MathUtils.getRandomNumberInRange(projectile.getFacing()-10f, projectile.getFacing()+10f);
             float startSpeed = MathUtils.getRandomNumberInRange(0f, 900f);
             float startAngularVelocity = MathUtils.getRandomNumberInRange(-65f, 65f);
@@ -44,11 +43,11 @@ public class SRD_PurgatoryOnHitEffect implements OnHitEffectPlugin {
                 //This is for "end fizzle"
                 float fizzleConstantSpeed = MathUtils.getRandomNumberInRange(-20f, 20f);
                 float fizzleConstantAngle = MathUtils.getRandomNumberInRange(-35f, 35f);
-                NicToyCustomTrailPlugin.AddTrailMemberAdvanced(null, id, spriteToUse, projectile.getLocation(),
+                MagicTrailPlugin.AddTrailMemberAdvanced(null, id, spriteToUse, projectile.getLocation(),
                         startSpeed * ((float)i2 / 70f), fizzleConstantSpeed * (1f - (float)i2 / 70f),
                         angle, startAngularVelocity * ((float)i2 / 70f), fizzleConstantAngle * (1f - (float)i2 / 70f), startSize, 0f,
                         colorToUse, colorToUse,0.45f, 0f, 0.5f * ((float)i2 / 70f) * lifetimeMult, 1.1f * ((float)i2 / 70f) * lifetimeMult,
-                        GL_SRC_ALPHA, GL_ONE,500f, 600f);
+                        GL_SRC_ALPHA, GL_ONE,500f, 600f, new Vector2f(0f, 0f), null);
             }
         }
 

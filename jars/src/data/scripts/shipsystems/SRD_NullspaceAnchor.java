@@ -7,16 +7,6 @@ import com.fs.starfarer.api.combat.ShipAPI;
 import com.fs.starfarer.api.combat.ShipSystemAPI;
 import com.fs.starfarer.api.combat.WeaponAPI;
 import com.fs.starfarer.api.impl.combat.BaseShipSystemScript;
-import data.scripts.plugins.NicToyCustomTrailPlugin;
-import data.scripts.plugins.SRD_FakeSmokePlugin;
-import data.scripts.plugins.SRD_SpriteRenderPlugin;
-import org.lazywizard.lazylib.MathUtils;
-import org.lazywizard.lazylib.VectorUtils;
-import org.lwjgl.util.vector.Vector2f;
-
-import java.awt.*;
-import java.util.HashMap;
-import java.util.Map;
 
 public class SRD_NullspaceAnchor extends BaseShipSystemScript {
 

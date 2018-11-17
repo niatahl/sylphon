@@ -6,9 +6,9 @@ import java.awt.Color;
 import com.fs.starfarer.api.Global;
 import com.fs.starfarer.api.combat.*;
 import com.fs.starfarer.api.impl.combat.BaseShipSystemScript;
-import data.scripts.plugins.NicToyCustomTrailPlugin;
+import data.scripts.plugins.MagicTrailPlugin;
 import data.scripts.plugins.SRD_FakeSmokePlugin;
-import data.scripts.plugins.SRD_SpriteRenderPlugin;
+import data.scripts.util.MagicRender;
 import org.lazywizard.lazylib.MathUtils;
 import org.lwjgl.util.vector.Vector2f;
 
@@ -68,7 +68,7 @@ public class SRD_CreeperDevice extends BaseShipSystemScript {
 
         //Once we are past the charge-up state, we start moving the shadow towards our ship, while keeping the actual ship invisible and phased
         //(also cuts our trails, since we are technically entering another dimension)
-        NicToyCustomTrailPlugin.cutTrailsOnEntity(ship);
+        MagicTrailPlugin.cutTrailsOnEntity(ship);
         ship.setPhased(true);
         if (player) {
             //We can make the ship slightly visible to the player, but that kinda breaks the immersion a bit
@@ -95,7 +95,7 @@ public class SRD_CreeperDevice extends BaseShipSystemScript {
                 Vector2f modifiedShadowPos = new Vector2f(MathUtils.getRandomNumberInRange(-SHADOW_FLICKER_DIFFERENCE, SHADOW_FLICKER_DIFFERENCE), MathUtils.getRandomNumberInRange(-SHADOW_FLICKER_DIFFERENCE, SHADOW_FLICKER_DIFFERENCE));
                 modifiedShadowPos.x += shadowPos.x;
                 modifiedShadowPos.y += shadowPos.y;
-                SRD_SpriteRenderPlugin.battlespaceRender(Global.getSettings().getSprite("SRD_fx", "" + ship.getHullSpec().getBaseHullId() + "_phantom"), modifiedShadowPos, new Vector2f(0f, 0f),
+                MagicRender.battlespace(Global.getSettings().getSprite("SRD_fx", "" + ship.getHullSpec().getBaseHullId() + "_phantom"), modifiedShadowPos, new Vector2f(0f, 0f),
                         new Vector2f(168f, 229f),
                         new Vector2f(0f, 0f), ship.getFacing() + angleDifference,
                         0f, AFTERIMAGE_COLOR, true, 0.1f, 0f, 0.3f);
@@ -105,7 +105,7 @@ public class SRD_CreeperDevice extends BaseShipSystemScript {
         }
 
         //Cuts our custom trails
-        NicToyCustomTrailPlugin.cutTrailsOnEntity(ship);
+        MagicTrailPlugin.cutTrailsOnEntity(ship);
 
         //Always render smoke at the shadow's position
         for (int i = 0; i < (500 * Global.getCombatEngine().getElapsedInLastFrame()); i++) {

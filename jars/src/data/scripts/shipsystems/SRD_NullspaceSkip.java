@@ -2,13 +2,12 @@
 package data.scripts.shipsystems;
 
 import com.fs.starfarer.api.Global;
-import com.fs.starfarer.api.combat.CombatEntityAPI;
 import com.fs.starfarer.api.combat.MutableShipStatsAPI;
 import com.fs.starfarer.api.combat.ShipAPI;
 import com.fs.starfarer.api.impl.combat.BaseShipSystemScript;
-import data.scripts.plugins.NicToyCustomTrailPlugin;
+import data.scripts.plugins.MagicTrailPlugin;
 import data.scripts.plugins.SRD_FakeSmokePlugin;
-import data.scripts.plugins.SRD_SpriteRenderPlugin;
+import data.scripts.util.MagicRender;
 import org.lazywizard.lazylib.MathUtils;
 import org.lwjgl.util.vector.Vector2f;
 
@@ -96,7 +95,7 @@ public class SRD_NullspaceSkip extends BaseShipSystemScript {
 
         //Phases us and drastically increases mobility
         //(also cuts our trails, since we are technically entering another dimension)
-        NicToyCustomTrailPlugin.cutTrailsOnEntity(ship);
+        MagicTrailPlugin.cutTrailsOnEntity(ship);
         ship.setPhased(true);
         ship.setExtraAlphaMult(0f);
         ship.setApplyExtraAlphaToEngines(true);
@@ -127,7 +126,7 @@ public class SRD_NullspaceSkip extends BaseShipSystemScript {
                 Vector2f modifiedShadowPos = new Vector2f(MathUtils.getRandomNumberInRange(-SHADOW_FLICKER_DIFFERENCE, SHADOW_FLICKER_DIFFERENCE), MathUtils.getRandomNumberInRange(-SHADOW_FLICKER_DIFFERENCE, SHADOW_FLICKER_DIFFERENCE));
                 modifiedShadowPos.x += shadowPos.x;
                 modifiedShadowPos.y += shadowPos.y;
-                SRD_SpriteRenderPlugin.battlespaceRender(Global.getSettings().getSprite("SRD_fx", "" + ship.getHullSpec().getBaseHullId() + "_phantom"), modifiedShadowPos, new Vector2f(0f, 0f),
+                MagicRender.battlespace(Global.getSettings().getSprite("SRD_fx", "" + ship.getHullSpec().getBaseHullId() + "_phantom"), modifiedShadowPos, new Vector2f(0f, 0f),
                         new Vector2f(ship.getSpriteAPI().getWidth(), ship.getSpriteAPI().getHeight()),
                         new Vector2f(0f, 0f), ship.getFacing() + angleDifference,
                         0f, AFTERIMAGE_COLOR, true, 0.1f, 0f, 0.3f);

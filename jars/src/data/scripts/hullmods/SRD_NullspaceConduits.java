@@ -14,8 +14,7 @@ import com.fs.starfarer.api.combat.ShipAPI.HullSize;
 import com.fs.starfarer.api.combat.*;
 import com.fs.starfarer.api.graphics.SpriteAPI;
 import com.fs.starfarer.api.loading.WeaponSlotAPI;
-import data.scripts.plugins.NicToyCustomTrailPlugin;
-import data.scripts.plugins.SRD_FakeSmokePlugin;
+import data.scripts.plugins.MagicTrailPlugin;
 import org.lazywizard.lazylib.MathUtils;
 import org.lazywizard.lazylib.combat.CombatUtils;
 import org.lwjgl.util.vector.Vector2f;
@@ -319,7 +318,7 @@ public class SRD_NullspaceConduits extends BaseHullMod {
 
                 //ID handling
                 if (associatedIDs.get(ship).get(testSlot) == null) {
-                    associatedIDs.get(ship).put(testSlot, NicToyCustomTrailPlugin.getUniqueID());
+                    associatedIDs.get(ship).put(testSlot, MagicTrailPlugin.getUniqueID());
                 }
 
                 //Handles actual contrail rendering
@@ -342,9 +341,9 @@ public class SRD_NullspaceConduits extends BaseHullMod {
                 } else if (testSlot.getAngle() % 180f == 0f) {
                     endAngleVel = 0;
                 }
-                NicToyCustomTrailPlugin.AddTrailMemberAdvanced((CombatEntityAPI)ship, associatedIDs.get(ship).get(testSlot), spriteToUse, positionOfSmoke, smokeSpeed, smokeSpeed * 0.5f, angleOfSmoke,
+                MagicTrailPlugin.AddTrailMemberAdvanced((CombatEntityAPI)ship, associatedIDs.get(ship).get(testSlot), spriteToUse, positionOfSmoke, smokeSpeed, smokeSpeed * 0.5f, angleOfSmoke,
                         0f, endAngleVel, SMOKE_START_SIZE * sizeMod, SMOKE_END_SIZE * sizeMod, actualSmokeColor, SMOKE_COLOR, SMOKE_OPACITY, 0f,
-                        0.20f, 0.75f, GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA, 128f, 1950f);
+                        0.20f, 0.75f, GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA, 128f, 1950f, new Vector2f(0f, 0f), null);
             }
 
             //Handles afterimages
@@ -384,7 +383,7 @@ public class SRD_NullspaceConduits extends BaseHullMod {
                 if (associatedIDs.get(ship) == null) {
                     associatedIDs.put(ship, new HashMap<WeaponSlotAPI, Float>());
                 }
-                associatedIDs.get(ship).put(testSlot, NicToyCustomTrailPlugin.getUniqueID());
+                associatedIDs.get(ship).put(testSlot, MagicTrailPlugin.getUniqueID());
             }
         }
     }

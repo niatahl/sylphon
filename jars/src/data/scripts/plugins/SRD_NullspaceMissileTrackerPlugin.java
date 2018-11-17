@@ -6,6 +6,7 @@ import com.fs.starfarer.api.Global;
 import com.fs.starfarer.api.combat.*;
 import com.fs.starfarer.api.graphics.SpriteAPI;
 import com.fs.starfarer.api.input.InputEventAPI;
+import data.scripts.util.MagicRender;
 import data.scripts.weapons.SRD_BenedictionOnHitEffect;
 import org.lazywizard.lazylib.FastTrig;
 import org.lazywizard.lazylib.MathUtils;
@@ -95,7 +96,7 @@ public class SRD_NullspaceMissileTrackerPlugin extends BaseEveryFrameCombatPlugi
                         Vector2f modifiedShadowPos = new Vector2f(MathUtils.getRandomNumberInRange(-SHADOW_FLICKER_DIFFERENCE, SHADOW_FLICKER_DIFFERENCE), MathUtils.getRandomNumberInRange(-SHADOW_FLICKER_DIFFERENCE, SHADOW_FLICKER_DIFFERENCE));
                         modifiedShadowPos.x += shadowPos.x;
                         modifiedShadowPos.y += shadowPos.y;
-                        SRD_SpriteRenderPlugin.battlespaceRender(Global.getSettings().getSprite("SRD_fx", "" + proj.getProjectileSpecId() + "_phantom"), modifiedShadowPos, new Vector2f(0f, 0f),
+                        MagicRender.battlespace(Global.getSettings().getSprite("SRD_fx", "" + proj.getProjectileSpecId() + "_phantom"), modifiedShadowPos, new Vector2f(0f, 0f),
                                 missileSizes.get(proj.getProjectileSpecId()),
                                 new Vector2f(0f, 0f), proj.getFacing() + angleDifference,
                                 0f, AFTERIMAGE_COLOR, true, 0.05f, 0f, 0.2f);
@@ -114,31 +115,31 @@ public class SRD_NullspaceMissileTrackerPlugin extends BaseEveryFrameCombatPlugi
                 //-------------------------------Render a "triple trail" for the missile, so it looks sort of like its "drilling" through nullspace----------------------------------------------
                 //Gets IDs
                 if (trailIDs1.get(proj) == null) {
-                    trailIDs1.put(proj, NicToyCustomTrailPlugin.getUniqueID());
+                    trailIDs1.put(proj, MagicTrailPlugin.getUniqueID());
                 }
                 if (trailIDs2.get(proj) == null) {
-                    trailIDs2.put(proj, NicToyCustomTrailPlugin.getUniqueID());
+                    trailIDs2.put(proj, MagicTrailPlugin.getUniqueID());
                 }
                 if (trailIDs3.get(proj) == null) {
-                    trailIDs3.put(proj, NicToyCustomTrailPlugin.getUniqueID());
+                    trailIDs3.put(proj, MagicTrailPlugin.getUniqueID());
                 }
 
                 //Spawns three trails, with a 120 degree offset
                 SpriteAPI spriteToUse = Global.getSettings().getSprite("SRD_fx", "conduit_trails_standard");
-                NicToyCustomTrailPlugin.AddTrailMemberAdvanced(proj, trailIDs1.get(proj), spriteToUse, proj.getLocation(), 100f, 0f,
+                MagicTrailPlugin.AddTrailMemberAdvanced(proj, trailIDs1.get(proj), spriteToUse, proj.getLocation(), 100f, 0f,
                         (float)(FastTrig.sin(6f * proj.getElapsed()) * 40f) + proj.getFacing() + 180f, 0f, 0f, 14f,
                         25f, AFTERIMAGE_COLOR, Color.BLACK, 1f, 0f, 0f, 1.5f, GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA,
-                        64f, 1550f);
+                        64f, 1550f, new Vector2f(0f, 0f), null);
 
-                NicToyCustomTrailPlugin.AddTrailMemberAdvanced(proj, trailIDs2.get(proj), spriteToUse, proj.getLocation(), 100f, 0f,
+                MagicTrailPlugin.AddTrailMemberAdvanced(proj, trailIDs2.get(proj), spriteToUse, proj.getLocation(), 100f, 0f,
                         (float)(FastTrig.sin(6f * proj.getElapsed() + (Math.toRadians(120))) * 40f) + proj.getFacing() + 180f, 0f, 0f, 14f,
                         25f, AFTERIMAGE_COLOR, Color.BLACK,1f, 0f, 0f, 1.5f, GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA,
-                        64f, 1550f);
+                        64f, 1550f, new Vector2f(0f, 0f), null);
 
-                NicToyCustomTrailPlugin.AddTrailMemberAdvanced(proj, trailIDs3.get(proj), spriteToUse, proj.getLocation(), 100f, 0f,
+                MagicTrailPlugin.AddTrailMemberAdvanced(proj, trailIDs3.get(proj), spriteToUse, proj.getLocation(), 100f, 0f,
                         (float)(FastTrig.sin(6f * proj.getElapsed() + (Math.toRadians(240))) * 40f) + proj.getFacing() + 180f, 0f, 0f, 14f,
                         25f, AFTERIMAGE_COLOR, Color.BLACK, 1f, 0f, 0f, 1.5f, GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA,
-                        64f, 1550f);
+                        64f, 1550f, new Vector2f(0f, 0f), null);
             }
         }
     }

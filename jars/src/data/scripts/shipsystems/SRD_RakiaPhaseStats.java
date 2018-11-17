@@ -5,9 +5,9 @@ import com.fs.starfarer.api.combat.MutableShipStatsAPI;
 import com.fs.starfarer.api.combat.ShipAPI;
 import com.fs.starfarer.api.graphics.SpriteAPI;
 import com.fs.starfarer.api.impl.combat.BaseShipSystemScript;
-import data.scripts.plugins.NicToyCustomTrailPlugin;
+import data.scripts.plugins.MagicTrailPlugin;
 import data.scripts.plugins.SRD_FakeSmokePlugin;
-import data.scripts.plugins.SRD_SpriteRenderPlugin;
+import data.scripts.util.MagicRender;
 import org.lazywizard.lazylib.CollisionUtils;
 import org.lazywizard.lazylib.FastTrig;
 import org.lazywizard.lazylib.MathUtils;
@@ -113,7 +113,7 @@ public class SRD_RakiaPhaseStats extends BaseShipSystemScript {
                 Vector2f modifiedPhantomPos = new Vector2f(MathUtils.getRandomNumberInRange(-PHANTOM_FLICKER_DIFFERENCE, PHANTOM_FLICKER_DIFFERENCE), MathUtils.getRandomNumberInRange(-PHANTOM_FLICKER_DIFFERENCE, PHANTOM_FLICKER_DIFFERENCE));
                 modifiedPhantomPos.x += phantomPos.x;
                 modifiedPhantomPos.y += phantomPos.y;
-                SRD_SpriteRenderPlugin.battlespaceRender(Global.getSettings().getSprite("SRD_fx", "" + ship.getHullSpec().getBaseHullId() + "_phantom"), modifiedPhantomPos, new Vector2f(0f, 0f),
+                MagicRender.battlespace(Global.getSettings().getSprite("SRD_fx", "" + ship.getHullSpec().getBaseHullId() + "_phantom"), modifiedPhantomPos, new Vector2f(0f, 0f),
                         new Vector2f(ship.getSpriteAPI().getWidth(), ship.getSpriteAPI().getHeight()),
                         new Vector2f(0f, 0f), ship.getFacing() + angleDifference,
                         0f, AFTERIMAGE_COLOR, true, 0.1f, 0f, 0.3f);
@@ -121,7 +121,7 @@ public class SRD_RakiaPhaseStats extends BaseShipSystemScript {
 
             //Special, "Semi-Fixed" phantom
             Color colorToUse = new Color(((float)PHASE_COLOR.getRed()/255f), ((float)PHASE_COLOR.getGreen()/255f), ((float)PHASE_COLOR.getBlue()/255f), ((float)PHASE_COLOR.getAlpha()/255f) * effectLevel);
-            SRD_SpriteRenderPlugin.battlespaceRender(Global.getSettings().getSprite("SRD_fx", "" + ship.getHullSpec().getBaseHullId() + "_phantom"),
+            MagicRender.battlespace(Global.getSettings().getSprite("SRD_fx", "" + ship.getHullSpec().getBaseHullId() + "_phantom"),
                     new Vector2f(ship.getLocation().x, ship.getLocation().y), new Vector2f(0f, 0f), new Vector2f(ship.getSpriteAPI().getWidth(), ship.getSpriteAPI().getHeight()),
                     new Vector2f(0f, 0f), ship.getFacing()-90f,0f, colorToUse, true, 0f, 0.1f, 0.2f);
 
@@ -146,7 +146,7 @@ public class SRD_RakiaPhaseStats extends BaseShipSystemScript {
         //If we have not gotten any IDs for them yet, get some IDs
         if (drillTrailIDs[0] == 0f) {
             for (int i = 0; i < drillTrailIDs.length; i++) {
-                drillTrailIDs[i] = NicToyCustomTrailPlugin.getUniqueID();
+                drillTrailIDs[i] = MagicTrailPlugin.getUniqueID();
             }
         }
 
@@ -158,20 +158,20 @@ public class SRD_RakiaPhaseStats extends BaseShipSystemScript {
             positionToSpawn.y += drillPositions[0].x;   //Quite misleading: the sprite is turned 90 degrees incorrectly when considering coordinates and angles
             positionToSpawn.x += drillPositions[0].y;
             positionToSpawn = VectorUtils.rotateAroundPivot(positionToSpawn, ship.getLocation(), ship.getFacing(), new Vector2f(0f, 0f));
-            NicToyCustomTrailPlugin.AddTrailMemberAdvanced(ship, drillTrailIDs[i], spriteToUse, positionToSpawn, drillSpeed, drillSpeed * 0.5f,
+            MagicTrailPlugin.AddTrailMemberAdvanced(ship, drillTrailIDs[i], spriteToUse, positionToSpawn, drillSpeed, drillSpeed * 0.5f,
                     (float)(FastTrig.sin(6f * drillCounter + (Math.toRadians(120 * i))) * 12f) + ship.getFacing() + 180f + drillAngles[0], 0f, 0f, 17f,
                     32f, PHASE_COLOR, Color.BLACK, 0.8f * effectLevel, 0.1f, 0f, 0.35f, GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA,
-                    64f, 1550f);
+                    64f, 1550f, new Vector2f(0f, 0f), null);
         }
         for (int i = 0; i < 3; i++) {
             Vector2f positionToSpawn = new Vector2f(ship.getLocation().x, ship.getLocation().y);
             positionToSpawn.y += drillPositions[1].x;   //Quite misleading: the sprite is turned 90 degrees incorrectly when considering coordinates and angles
             positionToSpawn.x += drillPositions[1].y;
             positionToSpawn = VectorUtils.rotateAroundPivot(positionToSpawn, ship.getLocation(), ship.getFacing(), new Vector2f(0f, 0f));
-            NicToyCustomTrailPlugin.AddTrailMemberAdvanced(ship, drillTrailIDs[i+3], spriteToUse, positionToSpawn, drillSpeed, drillSpeed * 0.5f,
+            MagicTrailPlugin.AddTrailMemberAdvanced(ship, drillTrailIDs[i+3], spriteToUse, positionToSpawn, drillSpeed, drillSpeed * 0.5f,
                     (float)(FastTrig.sin(6f * drillCounter + (Math.toRadians(120 * i))) * 12f) + ship.getFacing() + 180f + drillAngles[1], 0f, 0f, 17f,
                     32f, PHASE_COLOR, Color.BLACK, 0.8f * effectLevel, 0.1f, 0f, 0.35f, GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA,
-                    64f, 1550f);
+                    64f, 1550f, new Vector2f(0f, 0f), null);
         }
     }
 
@@ -204,7 +204,7 @@ public class SRD_RakiaPhaseStats extends BaseShipSystemScript {
 
         //Cuts our trails, by allocating new IDs to each of them
         for (int i = 0; i < drillTrailIDs.length; i++) {
-            drillTrailIDs[i] = NicToyCustomTrailPlugin.getUniqueID();
+            drillTrailIDs[i] = MagicTrailPlugin.getUniqueID();
         }
     }
 

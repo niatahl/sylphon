@@ -1,26 +1,16 @@
 package data.scripts.hullmods;
 
 import com.fs.starfarer.api.Global;
-import com.fs.starfarer.api.campaign.AsteroidAPI;
 import com.fs.starfarer.api.combat.*;
 import com.fs.starfarer.api.combat.ShipAPI.HullSize;
-import com.fs.starfarer.api.graphics.SpriteAPI;
-import com.fs.starfarer.api.loading.WeaponSlotAPI;
 import data.scripts.SRD_ModPlugin;
-import data.scripts.plugins.NicToyCustomTrailPlugin;
-import data.scripts.plugins.SRD_FakeSmokePlugin;
 import org.lazywizard.lazylib.MathUtils;
-import org.lazywizard.lazylib.combat.CombatUtils;
 import org.lwjgl.util.vector.Vector2f;
 
 import java.awt.*;
 import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
-
-import static org.lwjgl.opengl.GL11.GL_ONE_MINUS_SRC_ALPHA;
-import static org.lwjgl.opengl.GL11.GL_SRC_ALPHA;
 
 public class SRD_ModularNullspaceConduits extends BaseHullMod {
     //-------------------------------------------INCOMPATIBLE HULLMOD SOUND---------------------------------------------

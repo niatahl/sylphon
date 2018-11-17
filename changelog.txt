@@ -1,4 +1,11 @@
-﻿0.8.3
+﻿0.9
+Additions:
+- Added basic mission-only 0.9 integration
+
+Changes:
+- Now uses and requires MagicLib; all old code which is included in MagicLib has been refactored and many old scripts have been removed
+
+0.8.3 [Never released]
 Additions:
 - Sylphon fleets in the campaign now has a chance to upgrade their ships with Sylph Cores, if the submarket is available in their market
 - Added a new line of hullmods for Sylph Cores; they can only be used on ships with a mounted Sylph Core:

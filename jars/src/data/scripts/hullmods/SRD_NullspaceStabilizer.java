@@ -7,8 +7,8 @@ import com.fs.starfarer.api.combat.ShipAPI.HullSize;
 import com.fs.starfarer.api.graphics.SpriteAPI;
 import com.fs.starfarer.api.impl.campaign.ids.Stats;
 import com.fs.starfarer.api.loading.WeaponSlotAPI;
-import data.scripts.plugins.NicToyCustomTrailPlugin;
-import data.scripts.plugins.SRD_SpriteRenderPlugin;
+import data.scripts.plugins.MagicTrailPlugin;
+import data.scripts.util.MagicRender;
 import org.lazywizard.lazylib.MathUtils;
 import org.lazywizard.lazylib.combat.CombatUtils;
 import org.lwjgl.util.vector.Vector2f;
@@ -107,7 +107,7 @@ public class SRD_NullspaceStabilizer extends BaseHullMod {
         //Render the pulse effect
         if (pulseTimers.get(ship) > PULSE_INTERVAL) {
             pulseTimers.put(ship, pulseTimers.get(ship) - PULSE_INTERVAL);
-            SRD_SpriteRenderPlugin.objectspaceRender(Global.getSettings().getSprite("SRD_fx", "seresvalla_pulse"), ship, new Vector2f(0f, 0f),
+            MagicRender.objectspace(Global.getSettings().getSprite("SRD_fx", "seresvalla_pulse"), ship, new Vector2f(0f, 0f),
                     new Vector2f(0f, 0f), PULSE_STARTSIZE, PULSE_GROWTH, 180f, 0f, true, PULSE_COLOR, true, 0.05f, 0f, 0.7f, true);
         }
 
@@ -247,7 +247,7 @@ public class SRD_NullspaceStabilizer extends BaseHullMod {
 
                 //ID handling
                 if (associatedIDs.get(ship).get(testSlot) == null) {
-                    associatedIDs.get(ship).put(testSlot, NicToyCustomTrailPlugin.getUniqueID());
+                    associatedIDs.get(ship).put(testSlot, MagicTrailPlugin.getUniqueID());
                 }
 
                 //Handles actual contrail rendering
@@ -270,9 +270,9 @@ public class SRD_NullspaceStabilizer extends BaseHullMod {
                 } else if (testSlot.getAngle() % 180f == 0f) {
                     endAngleVel = 0;
                 }
-                NicToyCustomTrailPlugin.AddTrailMemberAdvanced((CombatEntityAPI)ship, associatedIDs.get(ship).get(testSlot), spriteToUse, positionOfSmoke, smokeSpeed, smokeSpeed * 0.5f, angleOfSmoke,
+                MagicTrailPlugin.AddTrailMemberAdvanced((CombatEntityAPI)ship, associatedIDs.get(ship).get(testSlot), spriteToUse, positionOfSmoke, smokeSpeed, smokeSpeed * 0.5f, angleOfSmoke,
                         0f, endAngleVel, SMOKE_START_SIZE * sizeMod, SMOKE_END_SIZE * sizeMod, actualSmokeColor, SMOKE_COLOR, SMOKE_OPACITY, 0f,
-                        0.10f, 0.4f, GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA, 128f, 1950f);
+                        0.10f, 0.4f, GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA, 128f, 1950f, new Vector2f(0f, 0f), null);
             }
 
             //Handles afterimages
@@ -312,7 +312,7 @@ public class SRD_NullspaceStabilizer extends BaseHullMod {
                 if (associatedIDs.get(ship) == null) {
                     associatedIDs.put(ship, new HashMap<WeaponSlotAPI, Float>());
                 }
-                associatedIDs.get(ship).put(testSlot, NicToyCustomTrailPlugin.getUniqueID());
+                associatedIDs.get(ship).put(testSlot, MagicTrailPlugin.getUniqueID());
             }
         }
     }

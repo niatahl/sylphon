@@ -1,5 +1,5 @@
 //Based on the FakeBeam script by Tartiflette with DeathFly help, rebuilt and modified by Nicke535
-//Handles custom lens flare graphics to
+//Handles custom lens flare graphics
 package data.scripts.plugins;
 
 import com.fs.starfarer.api.Global;

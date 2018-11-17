@@ -7,6 +7,7 @@ import com.fs.starfarer.api.combat.CombatEngineAPI;
 import com.fs.starfarer.api.combat.DamagingProjectileAPI;
 import com.fs.starfarer.api.graphics.SpriteAPI;
 import com.fs.starfarer.api.input.InputEventAPI;
+import data.scripts.util.MagicRender;
 import org.lazywizard.lazylib.MathUtils;
 import org.lwjgl.util.vector.Vector2f;
 
@@ -73,7 +74,7 @@ public class SRD_ProjectileCustomGlowPlugin extends BaseEveryFrameCombatPlugin {
 
             Color colorToUse = new Color(COLORS.get(specID).getRed()/255f, COLORS.get(specID).getGreen()/255f, COLORS.get(specID).getBlue()/255f, opacity);
 
-            SRD_SpriteRenderPlugin.singleFrameRender(spriteToUse, proj.getLocation(), new Vector2f(SIZES_X.get(specID), SIZES_Y.get(specID)), proj.getFacing() - 90f, colorToUse, true);
+            MagicRender.singleframe(spriteToUse, proj.getLocation(), new Vector2f(SIZES_X.get(specID), SIZES_Y.get(specID)), proj.getFacing() - 90f, colorToUse, true);
         }
     }
 }

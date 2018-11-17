@@ -5,21 +5,15 @@ package data.scripts.weapons;
 import com.fs.starfarer.api.Global;
 import com.fs.starfarer.api.combat.*;
 import com.fs.starfarer.api.graphics.SpriteAPI;
-import com.fs.starfarer.api.loading.WeaponSpecAPI;
-import data.scripts.plugins.NicToyCustomTrailPlugin;
-import data.scripts.plugins.SRD_SpriteRenderPlugin;
-import data.scripts.plugins.SRD_VeritasTrackerPlugin;
+import data.scripts.plugins.MagicTrailPlugin;
 import org.lazywizard.lazylib.MathUtils;
-import org.lazywizard.lazylib.VectorUtils;
 import org.lwjgl.util.vector.Vector2f;
 
 import java.awt.*;
 import java.util.HashMap;
-import java.util.Map;
 
 import static org.lwjgl.opengl.GL11.GL_ONE;
 import static org.lwjgl.opengl.GL11.GL_SRC_ALPHA;
-import static org.lwjgl.opengl.GL11.glViewport;
 
 public class SRD_BenedictionOnHitEffect implements OnHitEffectPlugin {
 
@@ -47,14 +41,14 @@ public class SRD_BenedictionOnHitEffect implements OnHitEffectPlugin {
                 script.comboMap.get(burstID).put(ship, 1f);
             }
 
-            //TEST: another visual effect
+            //Spawns a whole bunch of wierd trails as an on-hit visual. Gotta make use of those trails somewhere!
             float currentMult = script.comboMap.get(burstID).get(ship);
             Color colorToUse = new Color((int)(ONHIT_COLOR_BASE.getRed() * ((2.48832f - currentMult)/1.48832f) + ONHIT_COLOR_FINAL.getRed() * ((currentMult - 1f)/1.48832f)),
                     (int)(ONHIT_COLOR_BASE.getGreen() * ((2.48832f - currentMult)/1.48832f) + ONHIT_COLOR_FINAL.getGreen() * ((currentMult - 1f)/1.48832f)),
                     (int)(ONHIT_COLOR_BASE.getBlue() * ((2.48832f - currentMult)/1.48832f) + ONHIT_COLOR_FINAL.getBlue() * ((currentMult - 1f)/1.48832f)));
             SpriteAPI spriteToUse = Global.getSettings().getSprite("SRD_fx","projectile_trail_fuzzy");
             for (int i1 = 0; i1 < 6 * currentMult; i1++) {
-                float id = NicToyCustomTrailPlugin.getUniqueID();
+                float id = MagicTrailPlugin.getUniqueID();
                 float angle = MathUtils.getRandomNumberInRange(projectile.getFacing() - 40f, projectile.getFacing() + 40f);
                 float startSpeed = MathUtils.getRandomNumberInRange(50f, 500f) * currentMult;
                 float startAngularVelocity = MathUtils.getRandomNumberInRange(-75f, 75f);
@@ -64,27 +58,14 @@ public class SRD_BenedictionOnHitEffect implements OnHitEffectPlugin {
                     //This is for "end fizzle"
                     float fizzleConstantSpeed = MathUtils.getRandomNumberInRange(-10f, 10f) * (currentMult - 1f);
                     float fizzleConstantAngle = MathUtils.getRandomNumberInRange(-20f, 20f) * (currentMult - 1f);
-                    NicToyCustomTrailPlugin.AddTrailMemberAdvanced(null, id, spriteToUse, projectile.getLocation(),
+                    MagicTrailPlugin.AddTrailMemberAdvanced(null, id, spriteToUse, projectile.getLocation(),
                             startSpeed * ((float)i2 / 70f), fizzleConstantSpeed * (1f - (float)i2 / 70f),
                             angle, startAngularVelocity * ((float)i2 / 70f), fizzleConstantAngle * (1f - (float)i2 / 70f), startSize, 0f,
                             colorToUse, colorToUse,0.45f, 0f, 0.5f * ((float)i2 / 70f) * lifetimeMult, 1.1f * ((float)i2 / 70f) * lifetimeMult,
-                            GL_SRC_ALPHA, GL_ONE,500f, 600f);
+                            GL_SRC_ALPHA, GL_ONE,500f, 600f, new Vector2f(0f, 0f), null);
                 }
             }
             engine.addHitParticle(projectile.getLocation(), new Vector2f(0f, 0f), 250f * (float)Math.sqrt(currentMult), (float)Math.sqrt(currentMult), 0.4f, colorToUse);
-
-            //New: renders a small viisual pulse on impact, with size and opacity depending on bonus damage
-            /*
-            SpriteAPI spriteToUse = Global.getSettings().getSprite("SRD_fx", "seresvalla_wave");
-            float currentMult = script.comboMap.get(burstID).get(ship);
-            Vector2f startSize = new Vector2f(500f * (float)Math.sqrt(currentMult), 500f * (float)Math.sqrt(currentMult));
-            Vector2f endSize = new Vector2f(-1250f * (float)Math.sqrt(currentMult), -1250f * (float)Math.sqrt(currentMult));
-            Color colorToUse = new Color((int)(ONHIT_COLOR_BASE.getRed() * ((2.48832f - currentMult)/1.48832f) + ONHIT_COLOR_FINAL.getRed() * ((currentMult - 1f)/1.48832f)),
-                    (int)(ONHIT_COLOR_BASE.getGreen() * ((2.48832f - currentMult)/1.48832f) + ONHIT_COLOR_FINAL.getGreen() * ((currentMult - 1f)/1.48832f)),
-                    (int)(ONHIT_COLOR_BASE.getBlue() * ((2.48832f - currentMult)/1.48832f) + ONHIT_COLOR_FINAL.getBlue() * ((currentMult - 1f)/1.48832f)));
-            SRD_SpriteRenderPlugin.battlespaceRender(spriteToUse, new Vector2f(projectile.getLocation().x, projectile.getLocation().y), target.getVelocity(), startSize, endSize,
-                    MathUtils.getRandomNumberInRange(0f, 360f), 0f, colorToUse, true, 0.1f, 0.2f, 0.1f);
-            */
 
             //Now, deal bonus damage from our combo map, and increase the combo map for our current target by MODIFYING_MULT
             engine.applyDamage(ship, point, projectile.getDamageAmount() * (script.comboMap.get(burstID).get(ship) - 1), projectile.getDamageType(),

@@ -7,7 +7,7 @@ import com.fs.starfarer.api.graphics.SpriteAPI;
 import com.fs.starfarer.api.impl.combat.BaseShipSystemScript;
 import com.fs.starfarer.api.loading.WeaponSlotAPI;
 import data.scripts.SRD_ModPlugin;
-import data.scripts.plugins.NicToyCustomTrailPlugin;
+import data.scripts.plugins.MagicTrailPlugin;
 import org.lazywizard.lazylib.MathUtils;
 import org.lazywizard.lazylib.VectorUtils;
 import org.lazywizard.lazylib.combat.CombatUtils;
@@ -112,7 +112,7 @@ public class SRD_FluxExchanger extends BaseShipSystemScript {
                 //Spawns some visuals to indicate we are actually eating flux from the thing: spawn a quad trail
                 SpriteAPI spriteToUse = Global.getSettings().getSprite("SRD_fx", "flux_exchanger_strip");
                 if (associatedIDs.get(target) == null) {
-                    associatedIDs.put(target, NicToyCustomTrailPlugin.getUniqueID());
+                    associatedIDs.put(target, MagicTrailPlugin.getUniqueID());
                 }
 
                 //If we are almost out of range, start fading out the trail visuals (also do this if we have very low flux)
@@ -126,9 +126,10 @@ public class SRD_FluxExchanger extends BaseShipSystemScript {
 
                 float stripSpeed = MathUtils.getDistance(target.getLocation(), ship.getLocation()) / 0.11f;
                 float angleOfStrip = VectorUtils.getAngle(target.getLocation(), ship.getLocation());
-                NicToyCustomTrailPlugin.AddTrailMemberAdvanced(target, associatedIDs.get(target), spriteToUse, target.getLocation(), stripSpeed, stripSpeed, angleOfStrip,
+                MagicTrailPlugin.AddTrailMemberAdvanced(target, associatedIDs.get(target), spriteToUse, target.getLocation(), stripSpeed, stripSpeed, angleOfStrip,
                         0f, 0f, target.getCollisionRadius() * 2f, ship.getCollisionRadius() * 4f, target.getVentCoreColor(), target.getVentFringeColor(),
-                        effectLevel * opacityMult, 0.1f,0f, 0.01f, GL_SRC_ALPHA, GL_ONE, 512f, 1300f);
+                        effectLevel * opacityMult, 0.1f,0f, 0.01f, GL_SRC_ALPHA, GL_ONE, 512f, 1300f, new Vector2f(0f, 0f),
+                        null);
             }
         }
 
