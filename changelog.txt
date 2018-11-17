@@ -1,5 +1,6 @@
 ﻿0.8.3
 Additions:
+- TEST
 - Sylphon fleets in the campaign now has a chance to upgrade their ships with Sylph Cores, if the submarket is available in their market
 - Added a new line of hullmods for Sylph Cores; they can only be used on ships with a mounted Sylph Core:
 	-- Advisor Subroutines: Provides tactical advice to the commander, increasing command point regeneration as long as the flagship also has this mod
