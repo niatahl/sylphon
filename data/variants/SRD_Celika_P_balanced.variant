@@ -1,0 +1,20 @@
+{
+    "displayName": "Balanced",
+    "fluxCapacitors": 3,
+    "fluxVents": 10,
+    "hullId": "SRD_Celika_P",
+	"goalVariant": true,
+    "hullMods": [],
+    "permaMods": [],
+    "quality": 0.5,
+    "variantId": "SRD_Celika_P_balanced",
+    "weaponGroups": [{
+        "autofire": true,
+        "mode": "LINKED",
+        "weapons": {
+            "WS0001": "SRD_arphage",
+            "WS0002": "SRD_qoga",
+            "WS0003": "SRD_paja"
+        }
+    }]
+}

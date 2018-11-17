@@ -1,0 +1,54 @@
+{
+  "displayName": "Barrage",
+  "fluxCapacitors": 0,
+  "fluxVents": 44,
+  "goalVariant": true,
+  "hullId": "SRD_Seresvalla",
+  "hullMods": [
+    "eccm",
+    "missleracks"
+  ],
+  "permaMods": [],
+  "quality": 0.5,
+  "variantId": "SRD_Seresvalla_barrage",
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0001": "SRD_selene",
+        "WS0002": "SRD_selene"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0004": "SRD_exalt_3",
+        "WS0005": "SRD_exalt_3",
+        "WS0006": "SRD_exalt_3",
+        "WS0007": "SRD_exalt_3"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0003": "SRD_largesse"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0008": "SRD_venn",
+        "WS0009": "SRD_venn",
+        "WS0010": "SRD_venn",
+        "WS0011": "SRD_venn",
+        "WS0012": "SRD_venn",
+        "WS0013": "SRD_venn"
+      }
+    }
+  ],
+  "wings": []
+}

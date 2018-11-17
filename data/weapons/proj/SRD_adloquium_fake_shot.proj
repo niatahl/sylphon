@@ -1,0 +1,18 @@
+{
+	"id":"SRD_adloquium_fake_shot",
+	"specClass":"projectile",
+	"spawnType":"BALLISTIC",
+	"collisionClass":"PROJECTILE_FF",
+	"collisionClassByFighter":"PROJECTILE_FIGHTER",	
+	"length":200.0,
+	"width":12.0,
+	"fadeTime":0.2,
+	"coreColor":[255,220,255,255],
+	"fringeColor": [255,25,165,255],
+	"glowColor": [255,25,145,75],
+	"glowRadius":70,
+	"hitGlowRadius":50,	
+	"textureScrollSpeed":64.0,
+	"pixelsPerTexel":10.0,
+	"bulletSprite":"graphics/sylphon/missiles/SRD_adloquium_slug.png"
+}

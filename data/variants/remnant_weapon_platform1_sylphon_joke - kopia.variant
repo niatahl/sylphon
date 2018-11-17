@@ -1,0 +1,34 @@
+{
+  "displayName": "Overpowered",
+  "fluxCapacitors": 10,
+  "fluxVents": 10,
+  "goalVariant": true,
+  "hullId": "remnant_weapon_platform1",
+  "hullMods": [],
+  "permaMods": [],
+  "quality": 0.5,
+  "variantId": "remnant_weapon_platform1_sylphon_joke",
+  "weaponGroups": [
+    {
+      "autofire": true,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS 001": "SRD_goetterdaemmerung_modular",
+        "WS 002": "SRD_goetterdaemmerung_modular"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 003": "SRD_selene"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {}
+    }
+  ],
+  "wings": []
+}

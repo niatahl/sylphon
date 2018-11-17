@@ -1,0 +1,62 @@
+{
+  "collisionClass": "RAY",
+  "collisionClassByFighter": "RAY_FIGHTER",
+  "convergeOnPoint": true,
+  "coreColor": [
+    255,
+    155,
+    155,
+    255
+  ],
+  "everyFrameEffect": "data.scripts.weapons.SRD_CondemnationOscillationScript",
+  "fireSoundOne": "SRD_disavowal_fire",
+  "fringeColor": [
+    230,
+    40,
+    230,
+    200
+  ],
+  "glowColor": [
+    205,
+    155,
+    255,
+    255
+  ],
+  "hardpointAngleOffsets": [
+    0,
+    0,
+    0
+  ],
+  "hardpointOffsets": [
+    11,
+    0,
+    12,
+    3,
+    12,
+    -3
+  ],
+  "hardpointSprite": "graphics/sylphon/weapons/SRD_venn_hardpoint.png",
+  "hitGlowRadius": 0,
+  "id": "SRD_venn",
+  "pixelsPerTexel": 4,
+  "size": "SMALL",
+  "specClass": "beam",
+  "textureScrollSpeed": 200,
+  "textureType": WEAVE,
+  "turretAngleOffsets": [
+    0,
+    0,
+    0
+  ],
+  "turretOffsets": [
+    8,
+    0,
+    9,
+    3,
+    9,
+    -3
+  ],
+  "turretSprite": "graphics/sylphon/weapons/SRD_venn_turret.png",
+  "type": "ENERGY",
+  "width": 5
+}

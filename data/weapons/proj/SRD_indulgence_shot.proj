@@ -1,0 +1,18 @@
+{
+	"id":"SRD_indulgence_shot",
+	"specClass":"projectile",
+	"spawnType":"BALLISTIC_AS_BEAM",
+	"collisionClass":"RAY",
+	"collisionClassByFighter":"RAY_FIGHTER",
+	"length":100.0,
+	"width":15,
+	"fadeTime":0.1,
+	"fringeColor":[20,125,255,105],
+	"coreColor":[100,200,255,155],
+#	"glowColor":[0,155,255,155],
+#	"glowRadius":10,
+	"hitGlowRadius":10,	
+	"textureType":WEAVE,
+	"textureScrollSpeed":64,
+	"pixelsPerTexel":1.0,
+}

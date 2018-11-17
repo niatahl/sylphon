@@ -1,0 +1,41 @@
+{
+  "animationType": "MUZZLE_FLASH",
+  "barrelMode": "ALTERNATING",
+  "fireSoundOne": "SRD_ablution_fire",
+  "hardpointAngleOffsets": [
+    0
+  ],
+  "hardpointOffsets": [
+    0,
+    0
+  ],
+  "hardpointSprite": "",
+  "id": "SRD_ablution",
+  "muzzleFlashSpec": {
+    "length": 10,
+    "particleColor": [
+      160,
+      0,
+      235,
+      150
+    ],
+    "particleCount": 10,
+    "particleDuration": 0.3,
+    "particleSizeMin": 3,
+    "particleSizeRange": 3,
+    "spread": 5
+  },
+  "projectileSpecId": "SRD_ablution_shot",
+  "size": "SMALL",
+  "specClass": "projectile",
+  "textureType": ROUGH,
+  "turretAngleOffsets": [
+    0
+  ],
+  "turretOffsets": [
+    0,
+    0
+  ],
+  "turretSprite": "",
+  "type": "ENERGY"
+}

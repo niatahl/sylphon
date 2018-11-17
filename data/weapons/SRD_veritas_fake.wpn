@@ -1,0 +1,49 @@
+{
+  "animationType": "GLOW_AND_FLASH",
+  "barrelMode": "ALTERNATING",
+  "fireSoundTwo": "SRD_equity_shot",
+  "glowColor": [
+    255,
+    0,
+    255,
+    100
+  ],
+  "hardpointAngleOffsets": [
+    0
+  ],
+  "hardpointGlowSprite": "graphics/sylphon/weapons/SRD_veritas_glow.png",
+  "hardpointOffsets": [
+    43.5,
+    0
+  ],
+  "hardpointSprite": "graphics/sylphon/weapons/SRD_veritas.png",
+  "id": "SRD_veritas_fake",
+  "muzzleFlashSpec": {
+    "length": 30,
+    "particleColor": [
+      255,
+      0,
+      255,
+      155
+    ],
+    "particleCount": 10,
+    "particleDuration": 0.5,
+    "particleSizeMin": 10,
+    "particleSizeRange": 10,
+    "spread": 20
+  },
+  "projectileSpecId": "SRD_veritas_shot",
+  "size": "LARGE",
+  "specClass": "projectile",
+  "textureType": ROUGH,
+  "turretAngleOffsets": [
+    0
+  ],
+  "turretGlowSprite": "graphics/sylphon/weapons/SRD_veritas_glow.png",
+  "turretOffsets": [
+    27.5,
+    0
+  ],
+  "turretSprite": "graphics/sylphon/weapons/SRD_veritas.png",
+  "type": "BALLISTIC"
+}

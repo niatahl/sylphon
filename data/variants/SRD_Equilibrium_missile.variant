@@ -1,0 +1,63 @@
+{
+  "displayName": "Missile",
+  "fluxCapacitors": 0,
+  "fluxVents": 29,
+  "goalVariant": true,
+  "hullId": "SRD_Equilibrium",
+  "hullMods": [
+    "targetingunit",
+    "missleracks"
+  ],
+  "permaMods": [],
+  "quality": 0,
+  "variantId": "SRD_Equilibrium_missile",
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0003": "SRD_benediction",
+        "WS0004": "SRD_benediction"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0017": "SRD_raphiel",
+        "WS0018": "SRD_raphiel"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "SRD_zealot",
+        "WS0002": "SRD_zealot",
+        "WS0014": "SRD_adloquium",
+        "WS0015": "SRD_adloquium"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0005": "SRD_venn",
+        "WS0006": "SRD_venn",
+        "WS0007": "SRD_venn",
+        "WS0008": "SRD_venn",
+        "WS0009": "SRD_venn",
+        "WS0010": "SRD_venn",
+        "WS0011": "SRD_venn",
+        "WS0012": "SRD_venn",
+        "WS0013": "SRD_clemency"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {}
+    }
+  ],
+  "wings": []
+}

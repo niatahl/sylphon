@@ -1,0 +1,60 @@
+{
+  "collisionClass": "RAY",
+  "collisionClassByFighter": "RAY_FIGHTER",
+  "coreColor": [
+    255,
+    205,
+    205,
+    255
+  ],
+  "everyFrameEffect": "data.scripts.weapons.SRD_CondemnationOscillationScript",
+  "fireSoundTwo": "SRD_condemnation_loop",
+  "fringeColor": [
+    255,
+    25,
+    105,
+    185
+  ],
+  "glowColor": [
+    255,
+    50,
+    150,
+    185
+  ],
+  "hardpointAngleOffsets": [
+    0,
+    0
+  ],
+  "hardpointGlowSprite": "graphics/sylphon/weapons/SRD_paratach_hardpoint_glow.png",
+  "hardpointOffsets": [
+    -2,
+    -5.5,
+    -2,
+    5.5
+  ],
+  "hardpointSprite": "graphics/sylphon/weapons/SRD_paratach_hardpoint_base.png",
+  "hitGlowRadius": 0,
+  "id": "SRD_paratach",
+  "pixelsPerTexel": 1,
+  "size": "LARGE",
+  "specClass": "beam",
+  "textureScrollSpeed": 500,
+  "textureType": [
+    "graphics/sylphon/fx/SRD_paratach_beam_fringe.png",
+    "graphics/sylphon/fx/SRD_paratach_beam_core.png"
+  ],
+  "turretAngleOffsets": [
+    0,
+    0
+  ],
+  "turretGlowSprite": "graphics/sylphon/weapons/SRD_paratach_turret_glow.png",
+  "turretOffsets": [
+    -4,
+    -5.5,
+    -4,
+    5.5
+  ],
+  "turretSprite": "graphics/sylphon/weapons/SRD_paratach_turret_base.png",
+  "type": "ENERGY",
+  "width": 60
+}

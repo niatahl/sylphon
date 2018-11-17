@@ -1,0 +1,79 @@
+name,id,tier,rarity,tags,base value,unlocked,hidden,hiddenEverywhere,cost_frigate,cost_dest,cost_cruiser,cost_capital,script,desc,short,sprite
+Integrated Nullspace Conduits,SRD_nullspace_conduits,2,,special,9999,,TRUE,,0,0,0,0,data.scripts.hullmods.SRD_NullspaceConduits,"%s%sThese special conduits allow the ship to 'skim' the surface of Nullspace. While they are not powerful enough to cause a full breach, they can have enough of an impact to improve the ship's top speed by up to %s while traveling in a straight line. The conduits also allow the ship's generator to partially operate in nullspace, causing energy weapons to use %s less flux (%s for beam weapons).
+
+The energies released when such a device malfunctions is, however, far from harmless: %s. 
+
+Also reduces the damage of harmful nullspace forces by %s.
+
+Incompatible with %s.",Increases speed when traveling in a straight line. Reduces energy weapon flux cost. Damages anything nearby when overloading.,graphics/sylphon/hullmods/nullspace_conduit.png
+Ambush Barrier,SRD_burst_shield_generator,2,,"defensive, shields",9999,,TRUE,,0,0,0,0,data.scripts.hullmods.SRD_BurstShieldGenerator,"A highly experimental shield generator is built into this ship's phase coils. While it has above average efficiency, it generates massive amounts of flux, and the intricacies of the device means that the ship is %s.",Unable to mount shield hullmods.,graphics/hullmods/accelerated_shields.png
+Integrated Nullwave Emitter,SRD_nullwave_emitter,2,,defensive,9999,,TRUE,,0,0,0,0,data.scripts.hullmods.SRD_NullwaveEmitter,"A special device intended to remedy some of the weaknesses latent in nullspace-breaching technology. Instead of absorbing the counter-forces caused by nullspace, this unique piece of technology channels the energies into the ship's shield generator, allowing it to %s, as long as it has recently used its shipsystem.
+
+Channeling these energies causes wild reactions to occur in nearby matter, however, sparking a chain reaction which %s. This cone is directed at whatever happens to be in the shield's arc upon deployment, be they friend or foe.
+
+Due to the device being hard-linked into the shield generation system, the ship is %s.",Activating shields after ship system unleashes destruction.,graphics/sylphon/hullmods/integrated_nullspace_shunt.png
+Nullspace Soother,SRD_nullspace_stabilizer,2,,special,9999,,TRUE,,0,0,0,0,data.scripts.hullmods.SRD_NullspaceStabilizer,"A massive device which takes up almost half of the Seresvalla's mass, it is capable of 'calming' a large area of nullspace.
+
+Out of combat, it boosts the entire fleet's Burn Level by %s, by reducing nullspace-related drive instabilities.
+
+In combat, it increases the turn rate of any ships with %s by up to %s, while increasing their passive speed bonus from nullspace-skimming by %s.
+
+Increases the monthly maintainance supply cost by %s. Also functions as %s.",Boosts performance for nearby Nullspace Conduits. Increases fleet burn level. Higher upkeep,graphics/sylphon/hullmods/SRD_nullspace_stabilizer.png
+Nanolaminate Armor,SRD_nanolaminate_armor,2,,"defensive, shields",9999,,TRUE,,0,0,0,0,data.scripts.hullmods.SRD_NanolaminateArmor,"Special armor plating lined with tiny linear alternators and thermoelectric generators, enabling it to convert incoming weapons fire into spare energy for the ship's shield capacitors.
+
+Each time the ship loses %s of its total armor (ignoring the damage reducing effect from %s) the ship's shield capacitors get supercharged; if the ship activates its shields within %s they will %s while firing harmful energy bolts at anything in the shield's arc.",Taking shield damage supercharges shields,graphics/sylphon/hullmods/SRD_nanolaminate_armor.png
+Masterwork Optics,SRD_masterwork_optics,2,,special,9999,,TRUE,,0,0,0,0,data.scripts.hullmods.SRD_MasterworkOptics,"These highly advanced optical lenses are instrumental in the Götterdämmerung's firing mechanism. While hard to maintain and service, they allow beams to keep their coherency for far longer than any comparable alternative; all beam weapons on the ship gains %s SU longer range.
+
+Increases the monthly maintainance supply cost by %s, and increases recovery costs after deployment by %s.",Vastly increased beam range. Higher upkeep,graphics/sylphon/hullmods/SRD_masterwork_optics.png
+Drone Carrier,SRD_drone_carrier,,,,,,TRUE,,0,0,0,0,data.scripts.hullmods.SRD_DroneCarrier,"While mounted with modular carrier autoforges, this ship has fully automated the entire production and servicing chain. Its hangar bays, if they could even be called as such, are far too small and cramped to allow pilots to enter them, and operate in complete vacuum. Only fighter models specifically designed to be automated or remote-controlled are usable under these conditions.
+
+The ship %s. However, its automated systems are far superior to comparable crewed alternatives: all fighters mounted on the ship has their refit time reduced by %s, while the ship's replacement rate degrades %s slower and recovers %s faster.
+
+Incompatible with %s.",Better carrier performance. Cannot mount crewed fighters,graphics/sylphon/hullmods/SRD_drone_carrier.png
+Super-Heavy Mountpoints,SRD_superheavy_weapons_frelia,,,,,,TRUE,,0,0,0,0,data.scripts.hullmods.SRD_SuperweaponBayConversion,"The Frelia is equipped with a pair of refit-able %s. These mounts cannot mount normal weapons, but they can mount super-heavy weapons that other ships cannot, including the fearsome %s cannon.
+
+Slots are also designed to be easily converted into additional launch bays for the ship; the ship gains %s for each of these slots left empty.",Super-large mounts,graphics/sylphon/hullmods/harmonius_hullmod.png
+,,,,,,,,,,,,,,,,
+Sylph Core,SRD_sylph_core,,,,,,TRUE,,0,0,0,0,data.scripts.hullmods.SRD_SylphCore,"This ship has had a voluntary AI-core integrated into the mainframe by the Sylphon. While upkeep is increased by %s to keep the core operating under peak conditions, the ship %s. The ship's crew capacity is however reduced by %s due to installation requirements.%s",Automated ship,graphics/sylphon/hullmods/SRD_sylph_core.png
+,,,,,,,,,,,,,,,,
+Modular Nullspace Conduits,SRD_modular_nullspace_conduits,1,,special,8000,,,,3,5,10,20,data.scripts.hullmods.SRD_ModularNullspaceConduits,"A smaller, modular implementation of nullspace skimming technology. By using the ship's already-existing flux conduits for cooling and counter-balancing, it uses up only a fraction of the normal space required by such a device, but is significantly less efficient as a result.
+
+Functions as %s, but does not grant all the bonuses such conduits normally entail. The ship can skim nullspace, increasing its speed by up to %s while travelling in a straight line, but it takes %s as long to reach that speed compared to normal conduits.
+
+Also reduces the damage of harmful nullspace forces by %s.
+
+Incompatible with %s",Increases speed when traveling in a straight line.,graphics/sylphon/hullmods/SRD_modular_nullspace_conduit.png
+Sylphon Prototype: Micro Nullspace Shunt,SRD_prototype_miniature_nullspace_shunt,3,,special,18000,,,,5,10,25,50,data.scripts.hullmods.SRD_PrototypeMiniatureNullspaceShunt,"A highly advanced prototype which allows a ship to 'dump' excess soft flux into nullspace, allowing a much higher dissipation rate than normal.
+
+Allows the ship to increase flux dissipation by %s through %s. The hard flux returned is much lower than the soft flux consumed however, generating %s.
+
+Requires the ship to have some form of %s installed. A ship can only have a single %s.",Converts soft flux to hard flux.,graphics/sylphon/hullmods/SRD_prototype_miniature_nullspace_shunt.png
+Sylphon Prototype: Nullpoint Shield,SRD_prototype_nullpoint_shield,3,,"defensive, shield",18000,,,,5,10,25,50,data.scripts.hullmods.SRD_PrototypeNullpointShield,"An attempt at downsizing the Nullpoint Barrier to a more manageable size. While much less efficient than the original, this specialized emitter is capable of supporting a thin but deep nullspace wake just outside the shield for lengthened periods of time while only generating marginally more flux than a normal shield emitter would.
+
+Decreases all shield damage taken by %s, and %s. All damage reduced this way is %s, being released as bolts of nullspace-lightning at anything in front of the ship. Note that due to how volatile the emitter is, this effect %s.
+
+Incompatible with most shield-related hullmods. Requires the ship to have some form of %s installed. A ship can only have a single %s.",Installs a passive Nullpoint Barrier.,graphics/sylphon/hullmods/SRD_prototype_nullpoint_shield.png
+Sylphon Prototype: Local Soother,SRD_prototype_local_stabilizer,3,,special,15000,,,,8,15,22,30,data.scripts.hullmods.SRD_PrototypeLocalStabilizer,"Developed for fleets where bringing a Seresvalla is not logistically possible, this experimental device creates a tiny ""bubble"" of stable nullspace around the ship, improving the performance of the ship's %s drastically.
+
+Provides all the normal benefits of a %s, increasing manoeuvrability by %s and increasing the bonuses from nullspace-skimming by %s, but does not confer this bonus to other ships. Also increases the ship's burn level by %s.
+
+Cannot be mounted if a full %s exists. Requires the ship to have some form of %s installed. A ship can only have a single %s.",Installs a personal Nullspace Soother.,graphics/sylphon/hullmods/SRD_prototype_local_stabilizer.png
+,,,,,,,,,,,,,,,,
+Outcast Engineering,SRD_outcast_engineering,2,,special,9999,,TRUE,,0,0,0,0,data.scripts.hullmods.SRD_OutcastEngineering,"While very similar in nature to regular Sylphon designs, this specialized ship has some key differences that sets it apart from its peers.
+
+Counts as %s, and gives most of the regular benefits those provide: increases top speed by up to %s while traveling in a straight line. While overloading, %s. 
+
+However, instead of linking the conduit system to the ship's reactor, this ship utilizes the system's counter-forces to strengthen its armor. The ship's armor and hull takes up to %s less damage, and %s less EMP damage, based on the ship's flux. This bonus increases the higher the ship's flux gets, starting at %s and maxing out at %s.
+
+Also reduces the damage of harmful nullspace forces by %s.",Increases speed when traveling in a straight line. Bonus armor damage reduction at high flux. Damages anything nearby when overloading.,graphics/sylphon/hullmods/outcast_engineering.png
+Variable Ammo Loader,SRD_variable_ammo_loader,,,,,,TRUE,,0,0,0,0,data.scripts.hullmods.SRD_VariableAmmoLoader,"The Replekia has advanced ammo-switchers built into its main batteries, allowing the three Phira cannons on the ship to swap between different modes via the ship's shipsystem:
+
+Shock Cannons are the default mode; they have %s, deals %s more damage than the stat card indicates, deals %s damage and also causes %s on direct hull hits.
+
+Impact Driver is the dedicated anti-shield option; they deal %s less damage than the stat card indicates but deals %s damage.
+
+Type-3 Shells are designed to engage smaller, harder-to-hit targets. They deal %s, but otherwise function as the stat card indicates.",Main cannons can switch ammo types,graphics/sylphon/hullmods/SRD_variable_ammo.png
+,,,,,,,,,,,,,,,,
+HULLMOD CONFLICT,SRD_IncompatibleHullmodWarning,,,,,,TRUE,,0,0,0,0,data.scripts.hullmods.SRD_IncompatibleHullmodWarning,"%s, this hullmod conflict with another previously installed or built-in hullmod.",,graphics/icons/intel/investigation.png
+EXTRA FIGHTER BAYS 1,SRD_hiddenmod_extra_carrier_bays_1,,,,,,TRUE,TRUE,0,0,0,0,data.scripts.hullmods.SRD_FAKEMOD_HiddenExtraCarrierBays1,"YOU SHOULDN'T BE SEEING THIS.",,graphics/icons/intel/investigation.png
+EXTRA FIGHTER BAYS 2,SRD_hiddenmod_extra_carrier_bays_2,,,,,,TRUE,TRUE,0,0,0,0,data.scripts.hullmods.SRD_FAKEMOD_HiddenExtraCarrierBays2,"YOU SHOULDN'T BE SEEING THIS.",,graphics/icons/intel/investigation.png

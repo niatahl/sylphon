@@ -1,0 +1,23 @@
+{
+	"id":"SRD_nullspace_anchor",
+	"type":"STAT_MOD",
+	"aiType":"CUSTOM",
+	"aiScript":"data.scripts.shipsystemAI.SRD_NullspaceAnchorAI",
+	
+	"jitterUnderColor":[155,75,255,50],
+	"jitterUnderCopies":12,
+	"jitterUnderMinRange":0,
+	"jitterUnderRange":4,
+	"jitterUnderRangeRadiusFraction":0,
+	
+	"jitterColor":[205,65,255,0],
+	"jitterCopies":2,
+	"jitterMinRange":0,
+	"jitterRange":5,
+	"jitterRangeRadiusFraction":0,
+
+	"statsScript":"data.scripts.shipsystems.SRD_NullspaceAnchor",
+	
+	"useSound":"system_high_energy_focus_activate",
+	"outOfUsesSound":"gun_out_of_ammo",
+}

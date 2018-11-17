@@ -1,0 +1,44 @@
+{
+  "animationType": "SMOKE",
+  "barrelMode": "ALTERNATING",
+  "fireSoundTwo": "SRD_selene_fire",
+  "hardpointAngleOffsets": [
+    0
+  ],
+  "hardpointOffsets": [
+    25,
+    0
+  ],
+  "hardpointSprite": "graphics/sylphon/weapons/SRD_selene_launcher_hardpoint.png",
+  "id": "SRD_selene",
+  "projectileSpecId": "SRD_selene_msl",
+  "size": "LARGE",
+  "smokeSpec": {
+    "blowbackDuration": 2,
+    "blowbackLength": 30,
+    "blowbackParticleCount": 3,
+    "blowbackSpread": 10,
+    "cloudDuration": 1,
+    "cloudParticleCount": 3,
+    "cloudRadius": 10,
+    "particleColor": [
+      0,
+      0,
+      0,
+      200
+    ],
+    "particleSizeMin": 15,
+    "particleSizeRange": 20
+  },
+  "specClass": "projectile",
+  "textureType": ROUGH,
+  "turretAngleOffsets": [
+    0
+  ],
+  "turretOffsets": [
+    20,
+    0
+  ],
+  "turretSprite": "graphics/sylphon/weapons/SRD_selene_launcher_turret.png",
+  "type": "MISSILE"
+}

@@ -1,0 +1,25 @@
+{
+    "displayName": "Standard",
+    "fluxCapacitors": 0,
+    "fluxVents": 16,
+    "hullId": "SRD_Tilia",
+	"goalVariant": true,
+    "hullMods": [],
+    "permaMods": [],
+    "quality": 0.5,
+    "variantId": "SRD_Tilia_standard",
+    "weaponGroups": [{
+        "autofire": true,
+        "mode": "LINKED",
+        "weapons": {
+            "WS0001": "SRD_vacuity",
+            "WS0002": "SRD_vacuity",
+            "WS0003": "SRD_vacuity",
+            "WS0004": "SRD_vacuity"
+        }
+    }],
+    "wings": [
+        "SRD_Eos_fighter_wing",
+        "SRD_Eos_fighter_wing"
+    ]
+}

@@ -1,0 +1,42 @@
+{
+  "displayName": "Standard",
+  "fluxCapacitors": 10,
+  "fluxVents": 20,
+  "goalVariant": true,
+  "hullId": "SRD_Silverhead",
+  "hullMods": [
+    "targetingunit"
+  ],
+  "permaMods": [],
+  "quality": 0,
+  "variantId": "SRD_Silverhead_standard",
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0003": "SRD_raphiel",
+        "WS0004": "SRD_raphiel"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "SRD_dignity",
+        "WS0002": "SRD_dignity",
+        "WS0005": "SRD_embrace",
+        "WS0006": "SRD_embrace"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0007": "SRD_venn",
+        "WS0008": "SRD_venn"
+      }
+    }
+  ],
+  "wings": []
+}

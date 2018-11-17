@@ -1,0 +1,226 @@
+{
+  "bounds": [
+    -39,
+    -13.5,
+    -25,
+    -36,
+    3.5,
+    -37,
+    14.5,
+    -24.5,
+    26,
+    -24,
+    37,
+    -12,
+    27.5,
+    -9,
+    39,
+    0.5,
+    27.5,
+    9,
+    37,
+    12,
+    26,
+    24,
+    14.5,
+    24.5,
+    3.5,
+    37,
+    -25,
+    36,
+    -39,
+    13.5
+  ],
+  "builtInMods": [
+    "SRD_outcast_engineering",
+    "SRD_sylph_core"
+  ],
+  "builtInWeapons": {
+    "WS0006": "SRD_celika_p_glow_deco",
+    "WS0007": "SRD_celika_p_grid_deco"
+  },
+  "builtInWings": [],
+  "center": [
+    38,
+    40.5
+  ],
+  "collisionRadius": 64.5,
+  "engineSlots": [
+    {
+      "angle": 180,
+      "contrailSize": 31,
+      "length": 70.5,
+      "location": [
+        -39,
+        -0
+      ],
+      "style": "LOW_TECH",
+      "width": 31
+    },
+    {
+      "angle": 180,
+      "contrailSize": 15,
+      "length": 93,
+      "location": [
+        -38.5,
+        5
+      ],
+      "style": "SRD_MTF_ENGINE",
+      "width": 15
+    },
+    {
+      "angle": -180,
+      "contrailSize": 15,
+      "length": 93,
+      "location": [
+        -38.5,
+        -5
+      ],
+      "style": "SRD_MTF_ENGINE",
+      "width": 15
+    },
+    {
+      "angle": 180,
+      "contrailSize": 12,
+      "length": 46,
+      "location": [
+        -40,
+        20
+      ],
+      "style": "SRD_MTF_ENGINE",
+      "width": 12
+    },
+    {
+      "angle": -180,
+      "contrailSize": 12,
+      "length": 46,
+      "location": [
+        -40,
+        -20
+      ],
+      "style": "SRD_MTF_ENGINE",
+      "width": 12
+    },
+    {
+      "angle": 180,
+      "contrailSize": 12,
+      "length": 46,
+      "location": [
+        -36,
+        28
+      ],
+      "style": "SRD_MTF_ENGINE",
+      "width": 12
+    },
+    {
+      "angle": -180,
+      "contrailSize": 12,
+      "length": 46,
+      "location": [
+        -36,
+        -28
+      ],
+      "style": "SRD_MTF_ENGINE",
+      "width": 12
+    }
+  ],
+  "height": 81,
+  "hullId": "SRD_Celika_P",
+  "hullName": "Celika Rel",
+  "hullSize": "FRIGATE",
+  "shieldCenter": [
+    0,
+    0
+  ],
+  "shieldRadius": 57.5,
+  "spriteName": "graphics/sylphon/ships/Outcast/Celika_P/SRD_Celika_P.png",
+  "style": "SRD_MTF_TECH",
+  "viewOffset": 0,
+  "weaponSlots": [
+    {
+      "angle": 35.5,
+      "arc": 112,
+      "id": "WS0001",
+      "locations": [
+        -6,
+        17.5
+      ],
+      "mount": "TURRET",
+      "size": "MEDIUM",
+      "type": "HYBRID"
+    },
+    {
+      "angle": -35.5,
+      "arc": 112,
+      "id": "WS0002",
+      "locations": [
+        -6,
+        -17.5
+      ],
+      "mount": "TURRET",
+      "size": "MEDIUM",
+      "type": "HYBRID"
+    },
+    {
+      "angle": 0,
+      "arc": 105,
+      "id": "WS0003",
+      "locations": [
+        16.5,
+        -0
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "HYBRID"
+    },
+    {
+      "angle": 163,
+      "arc": 28,
+      "id": "WS0004",
+      "locations": [
+        -18.5,
+        5.5
+      ],
+      "mount": "TURRET",
+      "size": "MEDIUM",
+      "type": "SYSTEM"
+    },
+    {
+      "angle": -163,
+      "arc": 28,
+      "id": "WS0005",
+      "locations": [
+        -18.5,
+        -5.5
+      ],
+      "mount": "TURRET",
+      "size": "MEDIUM",
+      "type": "SYSTEM"
+    },
+    {
+      "angle": 0,
+      "arc": 105,
+      "id": "WS0006",
+      "locations": [
+        0,
+        -0
+      ],
+      "mount": "HARDPOINT",
+      "size": "SMALL",
+      "type": "DECORATIVE"
+    },
+    {
+      "angle": 0,
+      "arc": 105,
+      "id": "WS0007",
+      "locations": [
+        0,
+        -0
+      ],
+      "mount": "HARDPOINT",
+      "size": "SMALL",
+      "type": "DECORATIVE"
+    }
+  ],
+  "width": 76
+}

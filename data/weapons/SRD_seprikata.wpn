@@ -1,0 +1,79 @@
+{
+  "collisionClass": "RAY",
+  "collisionClassByFighter": "RAY_FIGHTER",
+  "coreColor": [
+    255,
+    125,
+    205,
+    205
+  ],
+  "everyFrameEffect": "data.scripts.weapons.SRD_RotatingBeamScript",
+  "fireSoundTwo": "SRD_radiant_dawn_loop",
+  "fringeColor": [
+    255,
+    85,
+    210,
+    205
+  ],
+  "glowColor": [
+    245,
+    125,
+    210,
+    225
+  ],
+  "hardpointAngleOffsets": [
+    0,
+    0,
+    0,
+    0
+  ],
+  "hardpointGlowSprite": "graphics/sylphon/weapons/SRD_seprikata_hardpoint_glow.png",
+  "hardpointOffsets": [
+    14,
+    -0,
+    14,
+    0,
+    14,
+    -0,
+    14,
+    0
+  ],
+  "hardpointSprite": "graphics/sylphon/weapons/SRD_seprikata_hardpoint.png",
+  "hitGlowRadius": 0,
+  "id": "SRD_seprikata",
+  "pierceSet": [
+    PROJECTILE_FF,
+    PROJECTILE_NO_FF,
+    PROJECTILE_FIGHTER,
+    MISSILE_FF,
+    MISSILE_NO_FF
+  ],
+  "pixelsPerTexel": 4,
+  "size": "LARGE",
+  "specClass": "beam",
+  "textureScrollSpeed": 260,
+  "textureType": [
+    "graphics/sylphon/fx/SRD_sepri_beam_fringe.png",
+    "graphics/sylphon/fx/SRD_sepri_beam_core.png"
+  ],
+  "turretAngleOffsets": [
+    0,
+    0,
+    0,
+    0
+  ],
+  "turretGlowSprite": "graphics/sylphon/weapons/SRD_seprikata_turret_glow.png",
+  "turretOffsets": [
+    8.5,
+    0,
+    8.5,
+    -0,
+    8.5,
+    0,
+    8.5,
+    -0
+  ],
+  "turretSprite": "graphics/sylphon/weapons/SRD_seprikata_turret.png",
+  "type": "ENERGY",
+  "width": 10
+}

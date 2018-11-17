@@ -1,0 +1,50 @@
+{
+  "animationType": "MUZZLE_FLASH",
+  "barrelMode": "ALTERNATING",
+  "fireSoundTwo": "SRD_adloquium_fire_supercharged",
+  #"everyFrameEffect": "data.scripts.weapons.SRD_EndzeitScript",
+  "glowColor": [
+    155,
+    50,
+    255,
+    255
+  ],
+  "hardpointAngleOffsets": [
+    0
+  ],
+  "hardpointGlowSprite": "graphics/sylphon/weapons/SRD_Endzeit_glow.png",
+  "hardpointOffsets": [
+    0,
+    0
+  ],
+  "hardpointSprite": "",
+  "id": "SRD_Endzeit",
+  "muzzleFlashSpec":{
+	"length":85.0,   # only used if animationType = MUZZLE_FLASH
+	"spread":15.0,
+	"particleSizeMin":10.0,
+	"particleSizeRange":45.0,
+	"particleDuration":1.5,
+	"particleCount":75,
+    "particleColor": [
+      150,
+      55,
+      255,
+      150
+    ],
+  },
+  "projectileSpecId": "SRD_Endzeit_shot",
+  "size": "LARGE",
+  "specClass": "projectile",
+  "textureType": ROUGH,
+  "turretAngleOffsets": [
+    0
+  ],
+  "turretGlowSprite": "graphics/sylphon/weapons/SRD_Endzeit_glow.png",
+  "turretOffsets": [
+    0,
+    0
+  ],
+  "turretSprite": "",
+  "type": "ENERGY"
+}

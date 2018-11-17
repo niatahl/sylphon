@@ -1,0 +1,322 @@
+{
+  "bounds": [
+    -34,
+    -10,
+    -30.5,
+    -19,
+    -32,
+    -54,
+    -19.5,
+    -109,
+    2.5,
+    -117.5,
+    15,
+    -101,
+    29.5,
+    -56.5,
+    50.5,
+    -37,
+    21.5,
+    -33,
+    21.5,
+    -23,
+    48.5,
+    -19.5,
+    18.5,
+    -0,
+    48.5,
+    19.5,
+    21.5,
+    23,
+    21.5,
+    33,
+    50.5,
+    37,
+    29.5,
+    56.5,
+    15,
+    101,
+    2.5,
+    117.5,
+    -19.5,
+    109,
+    -32,
+    54,
+    -30.5,
+    19,
+    -34,
+    10,
+    -25.5,
+    -0
+  ],
+  "builtInMods": [
+    "SRD_nullspace_conduits"
+  ],
+  "builtInWeapons": {
+    "WS0001": "SRD_veritas",
+    "WS0002": "SRD_veritas"
+  },
+  "builtInWings": [],
+  "center": [
+    120,
+    36
+  ],
+  "collisionRadius": 144,
+  "engineSlots": [
+    {
+      "angle": 180,
+      "contrailSize": 20,
+      "length": 64.5,
+      "location": [
+        -36,
+        42
+      ],
+      "style": "SRD_ENGINE",
+      "width": 20
+    },
+    {
+      "angle": -180,
+      "contrailSize": 20,
+      "length": 64.5,
+      "location": [
+        -34.5,
+        -42
+      ],
+      "style": "SRD_ENGINE",
+      "width": 20
+    },
+    {
+      "angle": 180,
+      "contrailSize": 18,
+      "length": 77.5,
+      "location": [
+        -34,
+        59
+      ],
+      "style": "SRD_ENGINE",
+      "width": 18
+    },
+    {
+      "angle": -180,
+      "contrailSize": 18,
+      "length": 77.5,
+      "location": [
+        -32.5,
+        -59
+      ],
+      "style": "SRD_ENGINE",
+      "width": 18
+    },
+    {
+      "angle": 180,
+      "contrailSize": 14,
+      "length": 53,
+      "location": [
+        -33,
+        25
+      ],
+      "style": "SRD_ENGINE",
+      "width": 14
+    },
+    {
+      "angle": -180,
+      "contrailSize": 14,
+      "length": 53,
+      "location": [
+        -31.5,
+        -25
+      ],
+      "style": "SRD_ENGINE",
+      "width": 14
+    },
+    {
+      "angle": 180,
+      "contrailSize": 10,
+      "length": 44.5,
+      "location": [
+        -26.5,
+        91
+      ],
+      "style": "SRD_ENGINE",
+      "width": 10
+    },
+    {
+      "angle": -180,
+      "contrailSize": 10,
+      "length": 44.5,
+      "location": [
+        -26.5,
+        -91
+      ],
+      "style": "SRD_ENGINE",
+      "width": 10
+    },
+    {
+      "angle": 180,
+      "contrailSize": 12,
+      "length": 54.5,
+      "location": [
+        -29.5,
+        82.5
+      ],
+      "style": "SRD_ENGINE",
+      "width": 12
+    },
+    {
+      "angle": -180,
+      "contrailSize": 12,
+      "length": 54.5,
+      "location": [
+        -29.5,
+        -82.5
+      ],
+      "style": "SRD_ENGINE",
+      "width": 12
+    },
+    {
+      "angle": 180,
+      "contrailSize": 14,
+      "length": 67.5,
+      "location": [
+        -31,
+        73
+      ],
+      "style": "SRD_ENGINE",
+      "width": 14
+    },
+    {
+      "angle": -180,
+      "contrailSize": 14,
+      "length": 67.5,
+      "location": [
+        -31,
+        -73
+      ],
+      "style": "SRD_ENGINE",
+      "width": 14
+    }
+  ],
+  "height": 91,
+  "hullId": "SRD_Tarima",
+  "hullName": "Tarima",
+  "hullSize": "DESTROYER",
+  "shieldCenter": [
+    0,
+    -0
+  ],
+  "shieldRadius": 135.5,
+  "spriteName": "graphics/sylphon/ships/SRD_Tarima.png",
+  "style": "SRD_TECH",
+  "viewOffset": 0,
+  "weaponSlots": [
+    {
+      "angle": 0,
+      "arc": 0,
+      "id": "WS0001",
+      "locations": [
+        -12,
+        28
+      ],
+      "mount": "HARDPOINT",
+      "size": "LARGE",
+      "type": "BUILT_IN"
+    },
+    {
+      "angle": -0,
+      "arc": 0,
+      "id": "WS0002",
+      "locations": [
+        -12,
+        -28
+      ],
+      "mount": "HARDPOINT",
+      "size": "LARGE",
+      "type": "BUILT_IN"
+    },
+    {
+      "angle": 12,
+      "arc": 123,
+      "id": "WS0003",
+      "locations": [
+        1.5,
+        57.5
+      ],
+      "mount": "TURRET",
+      "size": "MEDIUM",
+      "type": "ENERGY"
+    },
+    {
+      "angle": -12,
+      "arc": 123,
+      "id": "WS0004",
+      "locations": [
+        1.5,
+        -57.5
+      ],
+      "mount": "TURRET",
+      "size": "MEDIUM",
+      "type": "ENERGY"
+    },
+    {
+      "angle": 41,
+      "arc": 227,
+      "id": "WS0005",
+      "locations": [
+        -1,
+        89
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "ENERGY"
+    },
+    {
+      "angle": -41,
+      "arc": 227,
+      "id": "WS0006",
+      "locations": [
+        -1,
+        -89
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "ENERGY"
+    },
+    {
+      "angle": 171.5,
+      "arc": 68,
+      "id": "WS0007",
+      "locations": [
+        -4.5,
+        101.5
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "SYSTEM"
+    },
+    {
+      "angle": -171.5,
+      "arc": 68,
+      "id": "WS0008",
+      "locations": [
+        -4.5,
+        -101.5
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "SYSTEM"
+    },
+    {
+      "angle": 180,
+      "arc": 71,
+      "id": "WS0009",
+      "locations": [
+        -13,
+        -0
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "SYSTEM"
+    }
+  ],
+  "width": 240
+}

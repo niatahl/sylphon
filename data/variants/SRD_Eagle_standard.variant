@@ -1,0 +1,57 @@
+{
+  "displayName": "Standard",
+  "fluxCapacitors": 5,
+  "fluxVents": 30,
+  "goalVariant": true,
+  "hullId": "SRD_Eagle",
+  "hullMods": [
+    "targetingunit"
+  ],
+  "permaMods": [],
+  "quality": 0,
+  "variantId": "SRD_Eagle_standard",
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0001": "SRD_adloquium",
+        "WS0002": "SRD_dignity",
+        "WS0009": "SRD_raphiel",
+        "WS0010": "SRD_raphiel"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0011": "harpoon",
+        "WS0012": "harpoon"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {}
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0003": "SRD_zealot",
+        "WS0004": "SRD_zealot"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0005": "SRD_venn",
+        "WS0006": "SRD_venn",
+        "WS0007": "SRD_venn",
+        "WS0008": "SRD_venn"
+      }
+    }
+  ],
+  "wings": []
+}

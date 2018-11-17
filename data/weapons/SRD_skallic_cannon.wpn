@@ -1,0 +1,44 @@
+{
+  "animationType": "MUZZLE_FLASH",
+  "barrelMode": "ALTERNATING",
+  "fireSoundTwo": "SRD_purgatory_fire",
+  "hardpointAngleOffsets": [
+    0
+  ],
+  "hardpointGunSprite": "graphics/sylphon/weapons/SRD_skallic_cannon_recoil.png",
+  "hardpointOffsets": [
+    24,
+    0
+  ],
+  "hardpointSprite": "graphics/sylphon/weapons/SRD_skallic_cannon_base.png",
+  "id": "SRD_skallic_cannon",
+  "muzzleFlashSpec": {
+    "length": 40,
+    "particleColor": [
+      70,
+      150,
+      255,
+      205
+    ],
+    "particleCount": 20,
+    "particleDuration": 0.4,
+    "particleSizeMin": 10,
+    "particleSizeRange": 20,
+    "spread": 10
+  },
+  "projectileSpecId": "SRD_skalla_shot",
+  "size": "SMALL",
+  "specClass": "projectile",
+  "textureType": ROUGH,
+  "turretAngleOffsets": [
+    0
+  ],
+  "turretGunSprite": "graphics/sylphon/weapons/SRD_skallic_cannon_recoil.png",
+  "turretOffsets": [
+    14.5,
+    0
+  ],
+  "turretSprite": "graphics/sylphon/weapons/SRD_skallic_cannon_base.png",
+  "type": "ENERGY",
+  "visualRecoil": 8
+}

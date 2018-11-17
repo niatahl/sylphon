@@ -1,0 +1,76 @@
+{
+  "bounds": [
+    -6.5,
+    -10,
+    -0.5,
+    -14,
+    6.5,
+    -8.5,
+    6.5,
+    8.5,
+    -0.5,
+    14,
+    -6.5,
+    10
+  ],
+  "builtInMods": [
+    "no_weapon_flux"
+  ],
+  "builtInWings": [],
+  "center": [
+    15,
+    9
+  ],
+  "collisionRadius": 22,
+  "engineSlots": [
+    {
+      "angle": 180,
+      "contrailSize": 4,
+      "length": 18,
+      "location": [
+        -6,
+        8
+      ],
+      "style": "SRD_ENGINE",
+      "width": 4
+    },
+    {
+      "angle": -180,
+      "contrailSize": 4,
+      "length": 18,
+      "location": [
+        -6,
+        -8
+      ],
+      "style": "SRD_ENGINE",
+      "width": 4
+    }
+  ],
+  "height": 18,
+  "hullId": "SRD_Cicerone",
+  "hullName": "Cicerone",
+  "hullSize": "FIGHTER",
+  "shieldCenter": [
+    0,
+    0
+  ],
+  "shieldRadius": 18.5,
+  "spriteName": "graphics/sylphon/ships/fighters/SRD_Cicerone.png",
+  "style": "SRD_TECH",
+  "viewOffset": 0,
+  "weaponSlots": [
+    {
+      "angle": 0,
+      "arc": 125,
+      "id": "WS0001",
+      "locations": [
+        5,
+        -0
+      ],
+      "mount": "TURRET",
+      "size": "MEDIUM",
+      "type": "ENERGY"
+    }
+  ],
+  "width": 30
+}

@@ -1,0 +1,19 @@
+{
+	"id":"SRD_veritas_shot",
+	"specClass":"projectile",
+	"spawnType":"BALLISTIC",
+	"collisionClass":"PROJECTILE_FF",
+	"collisionClassByFighter":"PROJECTILE_FIGHTER",	
+	"onHitEffect":"data.scripts.weapons.SRD_VeritasOnHitEffect",
+	"length":180.0,
+	"width":10.0,
+	"fadeTime":0.15,
+	"coreColor":[200,200,255,255],
+	"fringeColor": [255,55,255,205],
+	"glowColor": [255,55,255,35],
+	"glowRadius":40,
+	"hitGlowRadius":35,	
+	"textureScrollSpeed":64.0,
+	"pixelsPerTexel":10.0,
+	"bulletSprite":"graphics/sylphon/missiles/SRD_adloquium_slug.png"
+}

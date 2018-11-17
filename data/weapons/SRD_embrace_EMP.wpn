@@ -1,0 +1,35 @@
+{
+  "animationType": "GLOW",
+  "barrelMode": "ALTERNATING",
+  "fireSoundTwo": "SRD_embrace_charged_fire",
+  "glowColor": [
+    255,
+    0,
+    255,
+    155
+  ],
+  "hardpointAngleOffsets": [
+    0
+  ],
+  "hardpointGlowSprite": "graphics/sylphon/weapons/SRD_embrace_hardpoint_glow.png",
+  "hardpointOffsets": [
+    3.5,
+    0
+  ],
+  "hardpointSprite": "graphics/sylphon/weapons/SRD_embrace_hardpoint.png",
+  "id": "SRD_embrace_EMP",
+  "projectileSpecId": "SRD_embrace_EMP_shot",
+  "size": "SMALL",
+  "specClass": "projectile",
+  "textureType": ROUGH,
+  "turretAngleOffsets": [
+    0
+  ],
+  "turretGlowSprite": "graphics/sylphon/weapons/SRD_embrace_turret_glow.png",
+  "turretOffsets": [
+    3,
+    0
+  ],
+  "turretSprite": "graphics/sylphon/weapons/SRD_embrace_turret.png",
+  "type": "ENERGY"
+}

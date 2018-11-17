@@ -1,0 +1,61 @@
+{
+    "displayName": "Flagship",
+    "fluxCapacitors": 17,
+    "fluxVents": 50,
+    "hullId": "SRD_Equilibrium_null",
+    "hullMods": [
+        "targetingunit",
+        "missleracks"
+    ],
+    "permaMods": [],
+    "quality": 1,
+    "variantId": "SRD_Equilibrium_null_flag",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS0003": "SRD_benediction",
+                "WS0004": "SRD_benediction"
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS0014": "SRD_selene",
+                "WS0015": "SRD_selene"
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS0017": "SRD_raphiel",
+                "WS0018": "SRD_raphiel"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0005": "SRD_lucidas",
+                "WS0006": "SRD_lucidas",
+                "WS0007": "SRD_lucidas",
+                "WS0008": "SRD_lucidas"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0001": "SRD_clemency",
+                "WS0002": "SRD_clemency",
+                "WS0009": "SRD_venn",
+                "WS0010": "SRD_venn",
+                "WS0013": "SRD_clemency"
+            }
+        }
+    ],
+    "wings": []
+}

@@ -1,0 +1,55 @@
+{
+  "animationType": "GLOW_AND_FLASH",
+  "barrelMode": "LINKED",
+  "everyFrameEffect": "data.scripts.weapons.SRD_AdloquiumScript",
+  "glowColor": [
+    205,
+    55,
+    205,
+    100
+  ],
+  "hardpointAngleOffsets": [
+    0,
+    0
+  ],
+  "hardpointGlowSprite": "graphics/sylphon/weapons/SRD_adloquium_hardpoint_glow.png",
+  "hardpointOffsets": [
+    -3,
+    7.5,
+    -3,
+    -7.5
+  ],
+  "hardpointSprite": "graphics/sylphon/weapons/SRD_adloquium_hardpoint.png",
+  "id": "SRD_adloquium",
+  "muzzleFlashSpec": {
+    "length": 50,
+    "particleColor": [
+      205,
+      55,
+      205,
+      155
+    ],
+    "particleCount": 20,
+    "particleDuration": 0.4,
+    "particleSizeMin": 20,
+    "particleSizeRange": 30,
+    "spread": 30
+  },
+  "projectileSpecId": "SRD_adloquium_shot",
+  "size": "LARGE",
+  "specClass": "projectile",
+  "textureType": ROUGH,
+  "turretAngleOffsets": [
+    0,
+    -0
+  ],
+  "turretGlowSprite": "graphics/sylphon/weapons/SRD_adloquium_turret_glow.png",
+  "turretOffsets": [
+    -6.5,
+    7.5,
+    -6.5,
+    -7.5
+  ],
+  "turretSprite": "graphics/sylphon/weapons/SRD_adloquium_turret.png",
+  "type": "ENERGY"
+}

@@ -1,0 +1,41 @@
+{
+  "animationType": "NONE",
+  "barrelMode": "ALTERNATING",
+  "hardpointAngleOffsets": [
+    0
+  ],
+  "hardpointOffsets": [
+    0,
+    0
+  ],
+  "hardpointSprite": "",
+  "id": "SRD_lustration",
+  "projectileSpecId": "SRD_lustration_msl",
+  "size": "SMALL",
+  "specClass": "projectile",
+  "textureType": ROUGH,
+  "turretAngleOffsets": [
+    -41,
+    41,
+    -66,
+    66,
+    -82,
+    82
+  ],
+  "turretOffsets": [
+    -0.5,
+    -8.5,
+    -0.5,
+    8.5,
+    -2.5,
+    -9,
+    -2.5,
+    9,
+    -4.5,
+    -10,
+    -4.5,
+    10
+  ],
+  "turretSprite": "",
+  "type": "MISSILE"
+}

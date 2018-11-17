@@ -1,0 +1,571 @@
+﻿0.8.3
+Additions:
+- Sylphon fleets in the campaign now has a chance to upgrade their ships with Sylph Cores, if the submarket is available in their market
+- Added a new line of hullmods for Sylph Cores; they can only be used on ships with a mounted Sylph Core:
+	-- Advisor Subroutines: Provides tactical advice to the commander, increasing command point regeneration as long as the flagship also has this mod
+- Added new visual steam effects on the Stricture and Condemnation
+- Added oscillation visuals to the Vacuity and Disavowal PD
+
+Changes:
+- Adjusted the code for how Sylph Core installations are tracked; slightly better performance for new ships that install Sylph Cores (shouldn't be noticable below a couple of thousand ships, though, so it's no biggie)
+- Split up the code for oscillating beams into separate scripts instead of using a single script for them all
+
+Balancing:
+- Lowered Largesse range from 900 to 800
+- Sylphon Prototype Nullpoint Shield:
+	-- Now increases shield upkeep by 75%
+	-- Now halves shield arc for any ships who already have frontal shields
+	-- Shield damage reduction from 45% to 50% (this is to offset a bug-fix which acted as a nerf)
+
+Bugfixes:
+- Fixed a crash error with the Seresvalla when it couldn't find any targets to shoot lightning at with its shipsystem
+- Fixed a potential memory leak causing trail-spawning projectiles to be kept in memory after fading.
+
+
+0.8.2b
+Bugfixes:
+- Fixed crashy stuff again cause Nicke doesn't know what ! means
+
+
+0.8.2a
+Bufixes:
+- Fixed crashy stuff
+
+
+0.8.2
+Changes:
+-Updated description for Selene with info on functionality
+
+Balancing:
+-Buffed Finis Astra's mobility stats across the board to make the giant deathray a bit less tedious to move around. Still can't hit moving targets.
+-Scourge Eagle supply costs upped to 36/36
+-Celika Rel supply costs upped to 10/10
+-Dread Eagle - made a bit squishier to be more in line with the aggressive high risk/reward design it's intended for
+ --shield efficiency lowered from 0.7 to 0.8
+ --Armor lowered from 600 to 500
+ --Top speed lowered from 80 to 70
+-Replekia dissipation lowered from 1000 to 900
+-Nullpoint Barrier 
+ --system duration lowered from 3 to 2 seconds
+ --cooldown increased from 5 to 8 seconds
+-Seresvalla shield efficiency lowered from 0.6 to 0.8
+-Eolia supply costs lowered to 26/26
+-Catora top speed lowered from 180 to 110
+-Celika top speed lowered from 160 to 140
+-Silverhead top speed lowered from 110 to 90
+-Adloquium 
+ --OP raised from 22 to 24
+ --Time between salvos increased by 2s
+ --energy per shot increased from 1100 to 1200
+-Spectral defense drone weapon changed from Disavowal PD to Vacuity PD
+
+Bugfixes:
+- Fixed crashing error with the Seresvalla
+- Fixed [REDACTED] triggering at times it shouldn't
+
+
+0.8.1
+Additions:
+-Added supership starts
+-Added "custom" defence station for Nex
+
+
+0.8
+Additions:
+-Added Fulgent-class carrier for Remnant
+-Added a campaign-layer feature allowing you to automate most Sylphon designs in exchange for AI cores and credits (available to core Sylphon markets)
+-Added a new shipsystem to some Sylphon carriers: the Nullfield Catalyst
+-Added the first rules.csv additions in the mod: custom dialogue for turning in AI cores
+-Ad-c¤ ? €Mä=23 £*/ REDACTED-
+-Added an additional gladiator society bounty following the null order line of bounties. If you're looking for the Metafalica, maybe give it a try.
+
+Changes:
+-The Tahlan Shipworks are now a separate mod altogether, and their ships are no longer available
+-Completely reworked the Frelia battlecarrier; it now has a pair of super-heavy weapons which can be converted into hangar bays
+-Updated some descriptions
+-Changed pricing of various weapons to be more consistent
+-All Nullspace Conduit hullmods now reduces the damage of harmful nullspace forces (such as overloading Nullspace Conduits)
+-Removed the Heavy Autoforge from Ozma station; it was a carryover from previous versions
+-Ozma station market size decreased by 1
+-Castrum market size increased by 1
+-The Embrace now auto-charges; you can't release the trigger to cancel a shot
+-Adapted the Embrace script to function properly with the new sound effects from MesoTroniK
+-Changed the mechanics of the Flux Exchanger; it now fires bolts of energy at a fixed damage, which are randomly spread across any available targets; more charged energy=more bolts of energy
+-The Flux Exchanger AI now considers preventing non-fighter friendly fire twice as important as before, and is generally slightly less willing to activate the system
+-Modular Nullspace Conduits are now incompatible with Safety Overrides
+-Skallic Drones now has a maximum range of 6000 SU
+-Slightly changed the Hymnon's old glowing capacitor sprite
+-Changed Replekia large mounts to energy (Hybrids were a holdover from an earlier iteration that I forgot to change)
+-Adjusted Replekia's base cost down to sensible levels
+-Increased spawn rates for faction hullmods in markets and prototype hullmod ship variants in Sylphon fleets
+-Removed all non-Sylphon ships from the mod, to be released as standalone later on.
+
+Balancing:
+-Myrigo upgrade
+	--Increased Myrigo OP cost from 12 to 18
+	--Increased number of harrow S launchers from 4 to 6
+	--Added Vacuity PD
+-Improved Finis Astra maneuverability
+-Lowered Seresvalla dissipation by 100
+-Radiant Dawn:
+	--DPS increased from 300 to 350
+	--Beams now fully converge
+	--(further changes to be coming in the future)
+-Prototype Nullpoint Shield hullmod:
+	--Damage reduction reduced from 50% to 45%
+	--Bolt range increased from 600 SU to 700 SU
+-Clemency Pulse/Ping
+	--Now only disables missiles if its EMP is higher than 1/3rd of the missiles current health (still considers EMP resistance, but previously anything without EMP resist would automatically be disabled)
+-Condemnation range lowered to 800 SU
+
+Bugfixes:
+-Fixed case sensitivity bugs for Linux
+-Fixed Bounties not spawning properly when Nexerelin is loaded
+-Fixed the stability bonus from the Geofront on Castrum not having a description
+-Fixed Outcast Nullspace Conduits not counting as nullspace conduits for the purpose of the Flux Exchanger
+-The Disavowal's beams now properly converge in the center (used to converge on the left-hand side)
+-Fixed some visual issues regarding engines and the Slip Drive, Nullspace Skip and Nullspace Joust
+-Fixed some minor issues with commodity supply and demand on Castrum
+-Fixed a bug causing many in-game icons to display improperly or not display at all
+-The Metafalica's built-in Phira cannons no longer prioritize missiles
+-The Götterdämmerung now correctly fires a single beam, instead of three overlayed ones (some damage values were tweaked due to this, but the end result should be similar)
+-Modular Nullspace Conduits are no longer incompatible with themselves
+-Automated Sylphon ships no longer have 0.8 crew capacity
+-Fixed some incompatibility issues with Gladiator Society
+-Fixed a display error when in combat against or with a Metafalica
+-Fixed esoteric crashing issue due to a corrupt .variant file
+-Minor code cleanup
+
+
+0.7e
+Changes:
+-New sounds for Dignity and Embrace weapons
+
+Balancing:
+-Increased Misja top speed to 200
+-Lowered Rakia's ppt to 360s
+-Raphiel EMP damage lowered to 300
+
+
+0.7d
+Additions:
+-Added Ar Ciel Outcast heavy rail driver
+-Added sim variants
+-Added 3 variants of the Misja support drone, featuring High Explosive, Kinetic and PD versions.
+-Added Qoga Outcast medium rail driver
+
+Changes:
+-Changed Slip Drive system to control like a phase skimmer
+-Changed Divinity to burst fire
+
+Balancing:
+-Lowered Slip Drive recharge rate
+-Added High Maintenance to Yukikaze
+-Lowered Shiva impact
+-Lowered Etrika armor rating to 750
+-Increased Armor Polarization duration to 2s
+-Increased Armor Polarization cooldown to 8s
+-Replekia Armor lowered to 1400
+-Lowered Replekia top speed to 50
+-Lowered Metafalica top speed to 60
+-Increased supply cost of Metafalica to 60/60
+
+Bugfixes:
+-Fixed Nanolaminate Armor related crash when using SWP's shield bypass (or anything else that removes the shield)
+-Fixed an error related to the modular soother hullmod
+
+
+0.7c-2 (Hotfix 2)
+Bugfixes:
+-Fixed Replekia having wrong ship system
+
+0.7c-1 (Hotfix)
+Bugfixes:
+-Fixed crashes occuring when deploying Sylphon D-hulls
+
+0.7c
+Changes:
+-Small updates to Metafalica sprite
+-New sound for Excogitation (thx again, Meso)
+
+Bugfixes:
+-Fixed Drone Carrier hullmod deleting rejected figher LPCs
+-Fixed Outcast ships being unable to mount Sylphon prototype hullmods
+
+
+0.7b
+Additions:
+-Added Metafalica, Replekia's mean outcast sister
+-Added Scourge Eagle, Outcast variant of Dread Eagle
+-Added Nex carrier starts
+-Added Paja Outcast PD
+-Added Veda Outcast impact driver
+-Added Arphage Outcast blast driver
+-Added Outcast Engineering hullmod
+
+Changes:
+-Purgatory projectile speed increased from 900 to 1000
+-New sound for Selene (technically a 0.7a change but I'm sloppy with changelogs)
+-Replekia system changed to armor polarize, variable ammo now exclusive to Metafalica
+-Replekia large mounts are now modular, built-ins moved to Metafalica
+-Some sprite color adjustments here and there
+
+Bugfixes:
+-Fixed wrong file paths in system generation scripts
+-Fixed bombers being retarded
+
+
+0.7a
+Additions:
+-Vacuity PD laser added.
+-Added Replekia-class battleship.
+-Added Tilia-class drone carrier.
+-Added Eolia-class drone carrier.
+-Added Nalka kinetic drone fighter.
+-Added Infel space superiority fighter, exclusive to Replekia.
+-Added a sound when attempting to mount a non-compatible hullmod on a ship (only applies to Sylphon hullmods, of course).
+-Added a new plugin for handling custom glows for projectiles.
+-Added a new hullmod, which comes built-in on most Sylphon carriers.
+-Added Excogitation burst blaster.
+-Added Indulgence wave pulser. (early beta version)
+-Added the Variable Ammo System to the Replikia, and the associated hullmod
+
+Changes:
+-Iphrail is now guided
+-Adjusted various turret angles
+-Null order variants removed from autofitting
+-improved folder structure
+-Changed the Divinity's projectile to use the new custom glow system
+-The Equity and Divinity now uses the Custom Trail System (though the Divinity is very faint)
+-Added civilian-grade hull to Buffalo (SRD)
+
+Balancing:
+-Disavowal beam dps increased from 330 to 350.
+-Some minor adjustments here and there that I forgot to document. Whoopsiedoo~
+-Harrow missile damage reduced from 300 to 250.
+-Improved armor values on several ships so they aren't quite as papery.
+-Improved speed of most of the slower ships without mobility systems to make them slightly less clunky to deploy and a bit less kiteable.
+-Increased per shot damage and lowered rate of fire of Purgatory. Overall dps reduced slightly. EMP dps reduced.
+-Equity EMP damage increased.
+
+Bugfixes:
+-Set aiming arc to 5 degress for multiple fighters.
+-Fixed Sivva wing not properly being loaded in autofit menu.
+-Fixed resolution of Nym system background.
+-Adjusted some variables to make Skallic Drones slightly less... incompetent.
+
+
+0.7
+Additions:
+-Added Frelia-class battlecarrier
+-Added Sivva strike fighter
+-Added Sadri torpedo bomber
+-Added Maris disabler fighter
+-Added Iphrail torpedo
+-Added a new drone system to the Frelia (and another system for the drones themselves)
+-Added new visual on-hit effects to the Purgatory
+
+Changes:
+-Changed faction ring color in campaign mode
+-Minor improvements to Nullspace Anchor AI; should no longer deactivate for so such a short time that it cannot do anything with its deactivation
+-Decreased Rakia turnrate while using Nullspace Dive, and increased its experienced time mult
+-Adjusted both Ozma and Sylpheed station's placement/size slightly, and changed the sprite for Sylpheed Station
+-Changed the background of the Nym system
+
+Balancing:
+-Lowered Rakia dissipation to 600
+-Lucidas impact lowered to a much more reasonable 6 per beam 
+-Lowered Ravana OP cost to 16
+-Lowered Myrigos OP cost to 12
+-Drastically reduced the amount of EMP arcs generated by the Purgatory, and they now only spawn on non-shield hits
+-Purgatory EMP damage increased to 200
+-Purgatory flux per shot decreased to 230
+-Divinity flux per shot decreased to 350
+
+Bugfixes:
+-Fixed large combat Nex start
+-Fixed various variants that were over OP capacity
+-Fixed a misspelling of Praetorium
+
+
+0.6f-2
+-Fixed download archive with proper files. No actual changes.
+
+
+0.6f-1
+Additions:
+-Added custom sprites for Ozma and Sylpheed Station
+
+Bugfixes:
+-Fixed a crash related to the integrated nullspace conduit hullmod
+
+
+0.6f
+Additions:
+-Added Comms Relays to Nym and Rofocale systems
+-Added custom hullmod for automated ships to avoid conflicts with SWP
+
+Balance:
+-Lowered Rakia armour and dissipation, buffed flux capacity
+-Exalt ammo regen speed halved
+
+
+0.6e
+Additions:
+-Version Checker support added (technically in a stealth-update to 0.6d already but now it's official)
+-Added faction relations for the Extratewhatsitsname. The BLUE one.
+
+Changes:
+-Nex startpoint changed to Ozma station in Nym system
+-Adjusted fighter tiers to something more sensible
+-Moved both the Sylphon systems
+
+Balance:
+-Lowered Dread Eagle dissipation by 100
+-Increased Dread Eagle maintenance to 32/32
+-Added High Maintenance to Ascordia
+-Changed Ascordia maintenance to 35/35
+-Lowered flux capacity on most ships
+-Charity OP cost increased to 15
+-Exalt OP costs increased to 7/14/28
+-Nullspace Jaunt cooldown increased to 12s
+-Catora maintenance increased to 6/6
+
+Bugfixes:
+-Corrected numerous minor errors for Nexerelin, and properly added "relation locks" for appropriate factions
+-Fixed an incorrect error warning that the Sylphon are not supported in non-random Nexerelin games
+-Fixed Castrum producing Metal from Rare Ore, instead of Rare Metal
+-ACTUALLY fixed the weapon groups on the Finis Astra's default variant
+
+
+0.6d
+Changes:
+-Improved Nex support for proper faction start
+
+
+0.6c
+Additions:
+-Added new variants using weapons that were missing from markets
+-Added the Rofocale system, home to Sylphon HQ
+-Added a custom market condition for Castrum
+
+Balance:
+-Lowered range of Götterdämmerung to 1200. (With integrated hullmods that puts it at 2.8k range)
+-Increased supply cost of Dread Eagle
+-Reduced EMP amount on Purgatory
+-Finis Astra supply amount reduced
+-Increased maximum speed of various slower ships
+-Reduced Armor and Dissipation on Finis Astra
+-Reduced Ascordia hitpoints to 5000
+-Relocated the Nym system
+-Added High Maintenance functionality to Masterwork Optics
+-Slightly lowered the "experienced" time dilation for the Rakia (still no actual time dilation)
+
+Bugfixes:
+-Actually added hullmods to faction
+-Fixed "deep hyperspace" spawning on top of the Nym system
+-Fixed minor generation errors in the Nym system
+-Fixed the Creeper Device crashing if mounted on anything else than the Dread Eagle
+-Fixed naming inconsistencies with the Götterdämmerung which caused it to not have a description
+-Fixed some issues with weapon groups for the Finis Astra standard variant
+-Fixed some typos
+
+
+0.6b
+Changes:
+-Added a few missing descriptions
+-Ascordia system changed to nullspace skip
+
+Balance:
+-Small buff to Divinity efficiency
+-Added some impact to Lucidas to reinforce the disabler beam theme
+
+
+0.6a
+Changes:
+-Added preliminary partial Nexerelin support
+
+
+0.6
+Additions:
+-Added proper initial campaign integration: the Sylphon now has a subsidiary reseller in the Nym system
+-Added faction relations for the Sylphon, with almost every mod included (Is your mod missing? Tell us!)
+-Added a custom phase system for the Rakia: it now "drills" into nullspace instead of phasing normally
+-Added two prototype Tahlan Shipworks ships. 
+-Added Divinity heavy pulse cannon.
+-Added another test mission, for Tahlan Shipworks
+-Added new visuals for the Benediction's on-hit effect
+-Added a new shipsystem for the Finis Astra, and tied it to the ship's main weapon (also added AI for said ship system)
+-Added completely new visuals for the Götterdämmerung
+-Added some new ship variants, including Prototype variants that use Sylphon Prototype hullmods
+
+Changes:
+-Added a secondary trail to Benediction missiles
+-Reworked the Götterdämmerung completely:
+	--Now has a "targeting laser" with fairly low damage for a while, before firing the main beam wave.
+ 	--Deals 20% of the target's maximum Hull in damage once the main beam wave hits
+-Selene now releases a spread of projectiles instead of direct impact
+-More new weapons sounds that I can't be bothered to list
+-Description overhauls here and there
+-Updated certain variants
+-The Nullspace Soother's effect is now global
+-Changed some icons for shipsystems
+-Sylphon ships removed from Tritach fleet
+
+Balance:
+-Equilibrium supply cost reduced to 50/50, the days of fortress shield, ATC and hybrid large mounts are long long gone
+-Increased burst delay on condemnation to lower dps
+-Seresvalla dissipation lowered from 900 to 800
+-Benediction ammo reduced from 36 to 30 (11 to 10 salvos)
+-Slightly improved turn-rate for small ships when using the Nullspace Skip (unchanged for large ships)
+-Nerfed the Micro Nullspace Shunt: now only gives 50% increased dissipation, instead of 100%
+-Various Exalt nerfs (too much back and forth for me to even remember all the changes I've made at this point)
+-Lowered crew requirements across all ships (lore-based change here)
+
+Bugfixes:
+-Fixed Nullspace Skip not properly clamping angular velocity when turning counter-clockwise
+-Fixed some minor issues related to flicker-beams and phasing
+-Fixed the Seresvalla's shipsystem not working properly under AI control (it didn't fire out lightning bolts)
+-Fixed the Null Order Equilibrium spitting out "incompatible hullmod" warnings simply for having a shield hullmod built-in (this, by extension, also fixed a whole bunch of other hullmod issues)
+-Fixed some minor typos
+-Fixed some ID checks being done on all projectiles twice per frame for no reason
+-Fixed minor issues in the Flux Exchanger AI giving it improper behaviour if chargeDown is larger than 0
+
+
+0.5i
+Additions:
+-Added Largesse medium beam
+-Added Sylphon ships to Tri-Tachyon fleets for the time being
+
+Bugfixes:
+-Finally fixed the damn incredibly low weapon prices. Don't ask.
+
+
+0.5h
+Additions:
+-Added the Exalt-3/6/12, partially laser-targeted missiles that adapt their behaviour depending on range
+-Added a "hullmod conflict" indicator upon installing conflicting hullmods
+-Added Benison HE-railgun
+
+Changes:
+-Altered Purgatory visuals (both trail and sprite)
+-Slightly adjusted some hullmod descriptions
+
+
+0.5g
+Additions:
+-Added the second Sylphon Prototype: the Nullpoint Shield
+-Added the third Sylphon Prototype: the Local Stabilizer
+-Added a "drilling" visual effect to Selene missiles
+-Added Stricture medium burst beam
+-Added Exalt-series smart missile launchers (initial prototype, unfinished)
+
+Changes:
+-Changed Purgatory visuals to a more "beam-like" appearance
+-Made the Nullpoint Barrier round its displayed "absorbed damage"
+-Changed some highlighting related to Sylphon Prototype hullmods
+-Nullspace Skip and Nullspace Joust now cuts all trails on the ship
+-Made the Lucidas oscillate slightly to fit the new loop sound, and increased its texture scroll speed
+-new sounds for Lucidas, Condemnation, Radiant Dawn and Zealot (thx Meso)
+-New sprites for various weapons including Condemnation and Purgatory
+
+Balance:
+-Reduced the Micro Nullspace Shunt conversion efficiency from 0.2 hard flux per soft flux to 0.25;
+-Lowered rate of fire of Cicerone's clemency ping
+
+Bugfixes:
+-Fixed *massive* issues which could potentially multiply the memory cost of the mod by several factors
+-Fixed Nullpoint Barrier always firing its lightning bolts at the ship using the system
+-Fixed Shield Bypass from SWP not correctly being identified as a Shield hullmod for the purposes of Sylphon hullmods
+
+
+0.5f
+Additions:
+-Added the Modular Nullspace Conduits hullmod; it functions as Nullspace Conduits, but with reduced performance
+-Added the Miniature Nullspace Shunt hullmod, the first Sylphon Prototype available
+
+Changes:
+-Reverted the Nullspace Conduit afterimage blend mode to a previous version
+
+Balance:
+- Dignity
+	--Reduced Flux/second from 325 to 300
+	--Reduced maximum Damage/second from 650(!) to 350 [minimum Damage/second unchanged at 250]
+
+Bugfixes:
+-The game no longer crashes upon activating the Silverhead's shipsystem (caused by incorrectly named files)
+
+
+0.5e
+Additions:
+-Buffalo (SRD) automated freighter added
+-Ascordia Hunterkiller added
+-Added the Nanolaminate Armor hullmod, which comes built-in on some Sylphon ships
+-Added custom system AI to the Flux Exchanger
+-Updated to the newest (and hopefully final!) version of the Custom Trail Plugin
+-Completely reworked the Nullspace Shunt: now reduces weapon flux cost drastically while in use
+	--2 second chargeup, 4 seconds active, 0.5 second chargedown. 20 seconds cooldown. Reduces all weapon flux by up to 50%
+-Magical things
+
+Changes:
+-Changed mounts and stats on Valestri
+-Valestri system changed to new Nullspace Shunt
+-Changed mounts on Okarra
+-Buffed Hubris OP from 140 to 150
+
+Bugfixes:
+-Removed duplicate mount on Valestri
+-The Evocation Pulse is now correctly picked up by most custom defense AI at more than 75% of its range
+-Made the Seresvalla emit smoke properly
+-Fixed the Nullspace Soother icon not showing up properly in-game
+
+
+0.5d
+Additions
+-The Seresvalla now has a new shipsystem: the Flux Exchanger
+
+Changes:
+-Added shields to Etrika and Catora
+-Armor Polarization duration upped to 2s for usability
+-Removed Ambush Barrier hullmod from Rakia
+-Changed Cicerone's mini clemency to a lower damage variant, upped OP to compensate for weapon fixes
+-The Nullspace Stabilizer now has built-in Nullspace Conduits: the Seresvalla has lost its normal Nullspace Conduits
+-Upgraded to the newer Custom Trail plugin
+-Updated the description for the Nullspace Stabilizer, to accomodate for its mechanical changes
+-The Evocation and Clemency should now be detectable by custom defense scripts, and have a more cone-like detection method
+
+Bugfixes:
+-Fixes an issue allowing the Adloquium to get out-of-sync with its three shot combo
+-Fixed visual glitch allowing the Nullspace Soother to emit pulses even when the ship was destroyed
+-Adjusted the algorithm in the Test Mission to properly spawn all Sylphon ships automatically
+-Fixed the Nullpoint Barrier, Nullwave Emitter, Evocation, Clemency and the passive overload effect from Nullspace Conduits being able to hit phased targets
+-Fixed the Evocation and Clemency not properly using their fire offsets for lightning generation
+
+
+0.5c
+Additions:
+-Added projectile trails for the Adloquium and Purgatory
+-Added super early wip prototype version of Zodiark
+
+Changes:
+-Buffed Adloquium to adjust for new script
+-Buffed Condemnation cause it sucked
+
+Bugfixes:
+-Fixed a stupid bug causing the Adloquium to deal more damage than intended
+
+
+0.5b
+Additions:
+-Added new particle affects to the Adloquium
+-The color of Nullspace Vents now changes while venting: fades from purple to black as flux decreases
+
+Changes:
+-Reworked the Nullspace Conduits: now reduces energy weapon cost slightly, and is incompatible with Advanced Optics
+-Lowered dissipation values across the board to go with reworked conduits
+-Slightly tweaked Selene particles
+-Rakia changed to phase ship, system is now Armor Polarization
+
+Bugfixes:
+-Fixed some clipping issues with the Nullspace Skip/Jaunt sound
+-Fixed minor glitch allowing the Dignity to fire out of phase in some edge-case scenarios

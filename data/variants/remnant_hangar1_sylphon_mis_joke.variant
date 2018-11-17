@@ -1,0 +1,33 @@
+{
+  "displayName": "Missile-Filled",
+  "fluxCapacitors": 10,
+  "fluxVents": 10,
+  "goalVariant": true,
+  "hullId": "remnant_hangar1",
+  "hullMods": [],
+  "permaMods": [],
+  "quality": 0.5,
+  "variantId": "remnant_hangar1_sylphon_mis_joke",
+  "weaponGroups": [
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 001": "SRD_exalt_6",
+        "WS 002": "SRD_exalt_6",
+        "WS 004": "SRD_exalt_3",
+        "WS 005": "SRD_exalt_3"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {}
+    }
+  ],
+  "wings": [
+    "SRD_Myrigo_bomber_wing",
+    "SRD_Myrigo_bomber_wing",
+    "SRD_Myrigo_bomber_wing"
+  ]
+}

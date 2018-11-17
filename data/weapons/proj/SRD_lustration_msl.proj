@@ -1,0 +1,37 @@
+{
+	"id":"SRD_lustration_msl",
+	"specClass":"missile",
+	"missileType":"MISSILE",
+	"sprite":"",
+	"size":[1,1],	
+	"center":[0.5,0.5],
+	"collisionRadius":1,
+	"collisionClass":"MISSILE_NO_FF",
+	"explosionColor":[255,50,200,255],  # purely visual, will get a white additively blended core on top of this color
+	"explosionRadius":110, # purely visual
+	"engineSpec":{"turnAcc":800,
+				  "turnRate":410,
+				  "acc":1400,
+				  "dec":1000},
+	"engineSlots":[{"id":"ES1",
+					"loc":[0.5,0.5],
+				    #"style":"MISSILE_MIDLINE",
+				    "style":"CUSTOM",
+					"styleSpec":{
+						"mode":"QUAD_STRIP", # PARTICLES or QUAD_STRIP, determines which params are used
+						"engineColor":[255,50,220,180],
+						"contrailDuration":0.8,
+						"contrailWidthMult":1,
+						"contrailWidthAddedFractionAtEnd":-0.2,  # can be negative. makes trail spread out/narrow at the end
+						"contrailMinSeg":2, # min segment length, in pixels
+						"contrailMaxSpeedMult":0.5f,
+						"contrailAngularVelocityMult":0.5f,
+						"contrailSpawnDistMult":0f, # how far away from engine it starts
+						"contrailColor":[255,50,220,200],
+						"type":"GLOW" # GLOW or SMOKE; additive or regular blend mode
+					},
+				    "width":3,
+				    "length":8.0,
+				    "angle":180.0},
+				    ]
+}

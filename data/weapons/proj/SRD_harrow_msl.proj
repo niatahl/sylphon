@@ -1,0 +1,57 @@
+{
+	"id":"SRD_harrow_msl",
+	"specClass":"missile",
+	"missileType":"MISSILE",
+	"sprite":"graphics/sylphon/missiles/SRD_harrow_msl.png",
+	"size":[6,10],	
+	"center":[3,5],
+	"collisionRadius":10,
+	"collisionClass":"MISSILE_NO_FF",
+	"explosionColor":[255,50,200,255],  # purely visual, will get a white additively blended core on top of this color
+	"explosionRadius":110, # purely visual
+	"engineSpec":{"turnAcc":500,
+				  "turnRate":510,
+				  "acc":2000,
+				  "dec":500},
+	"engineSlots":[{"id":"ES1",
+					"loc":[-2, 0],
+				    #"style":"MISSILE_MIDLINE",
+				    "style":"CUSTOM",
+					"styleSpec":{
+						"mode":"QUAD_STRIP", # PARTICLES or QUAD_STRIP, determines which params are used
+						"engineColor":[255,50,220,180],
+						"contrailDuration":1.5,
+						"contrailWidthMult":1.8,
+						"contrailWidthAddedFractionAtEnd":-0.2,  # can be negative. makes trail spread out/narrow at the end
+						"contrailMinSeg":2, # min segment length, in pixels
+						"contrailMaxSpeedMult":0.5f,
+						"contrailAngularVelocityMult":0.5f,
+						"contrailSpawnDistMult":0f, # how far away from engine it starts
+						"contrailColor":[255,50,220,120],
+						"type":"GLOW" # GLOW or SMOKE; additive or regular blend mode
+					},
+				    "width":4,
+				    "length":14.0,
+				    "angle":180.0},
+				    {"id":"ES2",
+					"loc":[-2, 0],
+				    #"style":"MISSILE_MIDLINE",
+				    "style":"CUSTOM",
+					"styleSpec":{
+						"mode":"QUAD_STRIP", # PARTICLES or QUAD_STRIP, determines which params are used
+						"engineColor":[210,50,220,100],
+						"contrailDuration":1.0, # changed duration
+						"contrailWidthMult":9.6, # changed width
+						"contrailWidthAddedFractionAtEnd":0.6,  # negative; narrows at end, positive: widens
+						"contrailMinSeg":2, # min segment length, in pixels
+						"contrailMaxSpeedMult":0.5f,
+						"contrailAngularVelocityMult":0.5f,
+						"contrailSpawnDistMult":0f, # how far away from engine it starts
+						"contrailColor":[160,0,235,80],
+						"type":"GLOW" # GLOW or SMOKE; additive or regular blend mode
+					},
+				    "width":1,
+				    "length":1.0,
+				    "angle":180.0},
+				    ]
+}

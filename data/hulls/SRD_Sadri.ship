@@ -1,0 +1,106 @@
+{
+  "bounds": [
+    -14.5,
+    -10.5,
+    -1.5,
+    -6.5,
+    4,
+    -16.5,
+    14.5,
+    -11,
+    9,
+    -5.5,
+    9,
+    5.5,
+    14.5,
+    11,
+    4,
+    16.5,
+    -1.5,
+    6.5,
+    -14.5,
+    10.5
+  ],
+  "builtInMods": [
+    "no_weapon_flux"
+  ],
+  "builtInWings": [],
+  "center": [
+    18,
+    17.5
+  ],
+  "collisionRadius": 27.5,
+  "engineSlots": [
+    {
+      "angle": 180,
+      "contrailSize": 12,
+      "length": 21.5,
+      "location": [
+        -17.5,
+        6
+      ],
+      "style": "SRD_ENGINE",
+      "width": 12
+    },
+    {
+      "angle": -180,
+      "contrailSize": 12,
+      "length": 21.5,
+      "location": [
+        -17.5,
+        -6
+      ],
+      "style": "SRD_ENGINE",
+      "width": 12
+    },
+    {
+      "angle": 163.5,
+      "contrailSize": 7.00004,
+      "length": 28.6749,
+      "location": [
+        -0.5,
+        14
+      ],
+      "style": "SRD_ENGINE",
+      "width": 7.00004
+    },
+    {
+      "angle": -163.5,
+      "contrailSize": 7.00004,
+      "length": 28.6749,
+      "location": [
+        -0.5,
+        -14
+      ],
+      "style": "SRD_ENGINE",
+      "width": 7.00004
+    }
+  ],
+  "height": 35,
+  "hullId": "SRD_Sadri",
+  "hullName": "Sadri",
+  "hullSize": "FIGHTER",
+  "shieldCenter": [
+    0,
+    0
+  ],
+  "shieldRadius": 25,
+  "spriteName": "graphics/sylphon/ships/fighters/SRD_Sadri.png",
+  "style": "SRD_TECH",
+  "viewOffset": 0,
+  "weaponSlots": [
+    {
+      "angle": 0,
+      "arc": 5,
+      "id": "WS0001",
+      "locations": [
+        5,
+        -0
+      ],
+      "mount": "HIDDEN",
+      "size": "SMALL",
+      "type": "MISSILE"
+    }
+  ],
+  "width": 36
+}

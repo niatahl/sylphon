@@ -1,0 +1,10 @@
+{
+	"id":"SRD_nullspace_agitator",
+	"type":"STAT_MOD",
+	"aiType":"WEAPON_BOOST",
+	
+	"statsScript":"data.scripts.shipsystems.SRD_NullspaceAgitator",
+	
+	"useSound":"system_high_energy_focus_activate",
+	"outOfUsesSound":"gun_out_of_ammo",
+}

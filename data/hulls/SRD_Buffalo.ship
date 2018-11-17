@@ -1,0 +1,181 @@
+{
+  "bounds": [
+    -77,
+    -18.5,
+    -84,
+    -39.5,
+    -76.5,
+    -54,
+    -52,
+    -53.5,
+    -43,
+    -46,
+    30.5,
+    -48,
+    47.5,
+    -57,
+    63.5,
+    -35.5,
+    83,
+    -17.5,
+    83,
+    17.5,
+    63.5,
+    35.5,
+    47.5,
+    57,
+    30.5,
+    48,
+    -43,
+    46,
+    -52,
+    53.5,
+    -76.5,
+    54,
+    -84,
+    39.5,
+    -77,
+    18.5,
+    -81.5,
+    -0
+  ],
+  "builtInMods": [
+    "SRD_sylph_core",
+    "civgrade"
+  ],
+  "builtInWings": [],
+  "center": [
+    59,
+    86
+  ],
+  "collisionRadius": 114,
+  "engineSlots": [
+    {
+      "angle": 180,
+      "contrailSize": 12,
+      "length": 43.5,
+      "location": [
+        -85.5,
+        35
+      ],
+      "style": "SRD_ENGINE",
+      "width": 12
+    },
+    {
+      "angle": -180,
+      "contrailSize": 12,
+      "length": 43.5,
+      "location": [
+        -85.5,
+        -35
+      ],
+      "style": "SRD_ENGINE",
+      "width": 12
+    },
+    {
+      "angle": 180,
+      "contrailSize": 11,
+      "length": 39,
+      "location": [
+        -84,
+        27
+      ],
+      "style": "SRD_ENGINE",
+      "width": 11
+    },
+    {
+      "angle": -180,
+      "contrailSize": 11,
+      "length": 39,
+      "location": [
+        -84,
+        -27
+      ],
+      "style": "SRD_ENGINE",
+      "width": 11
+    },
+    {
+      "angle": 180,
+      "contrailSize": 128,
+      "length": 36,
+      "location": [
+        -79,
+        49
+      ],
+      "style": "SRD_ENGINE",
+      "width": 6
+    },
+    {
+      "angle": -180,
+      "contrailSize": 128,
+      "length": 36,
+      "location": [
+        -79,
+        -49
+      ],
+      "style": "SRD_ENGINE",
+      "width": 6
+    },
+    {
+      "angle": 180,
+      "contrailSize": 128,
+      "length": 36,
+      "location": [
+        -81,
+        45
+      ],
+      "style": "SRD_ENGINE",
+      "width": 6
+    },
+    {
+      "angle": -180,
+      "contrailSize": 128,
+      "length": 36,
+      "location": [
+        -81,
+        -45
+      ],
+      "style": "SRD_ENGINE",
+      "width": 6
+    }
+  ],
+  "height": 178,
+  "hullId": "SRD_Buffalo",
+  "hullName": "Buffalo (SRD)",
+  "hullSize": "DESTROYER",
+  "shieldCenter": [
+    0,
+    -0
+  ],
+  "shieldRadius": 106.5,
+  "spriteName": "graphics/sylphon/ships/SRD_Buffalo.png",
+  "style": "SRD_TECH",
+  "viewOffset": 0,
+  "weaponSlots": [
+    {
+      "angle": 90,
+      "arc": 209,
+      "id": "WS0001",
+      "locations": [
+        63,
+        23
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "ENERGY"
+    },
+    {
+      "angle": -90,
+      "arc": 209,
+      "id": "WS0002",
+      "locations": [
+        63,
+        -23
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "ENERGY"
+    }
+  ],
+  "width": 118
+}

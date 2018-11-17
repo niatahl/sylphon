@@ -1,0 +1,52 @@
+{
+  "collisionClass": "RAY",
+  "collisionClassByFighter": "RAY_FIGHTER",
+  "coreColor": [
+    205,
+    190,
+    255,
+    255
+  ],
+  "everyFrameEffect": "data.scripts.weapons.SRD_CondemnationOscillationScript",
+  "fireSoundTwo": "SRD_largesse_loop",
+  "fringeColor": [
+    205,
+    0,
+    255,
+    220
+  ],
+  "glowColor": [
+    205,
+    50,
+    255,
+    120
+  ],
+  "hardpointAngleOffsets": [
+    0
+  ],
+  "hardpointOffsets": [
+    0,
+    0
+  ],
+  "hardpointSprite": "",
+  "hitGlowRadius": 15,
+  "id": "SRD_vedra",
+  "pixelsPerTexel": 1,
+  "size": "MEDIUM",
+  "specClass": "beam",
+  "textureScrollSpeed": 512,
+  "textureType": [
+    "graphics/sylphon/fx/SRD_sepri_beam_fringe.png",
+    "graphics/sylphon/fx/SRD_largesse_beam_core.png"
+  ],
+  "turretAngleOffsets": [
+    0
+  ],
+  "turretOffsets": [
+    4,
+    0.5
+  ],
+  "turretSprite": "graphics/sylphon/weapons/SRD_Vedra_base.png",
+  "type": "ENERGY",
+  "width": 10
+}

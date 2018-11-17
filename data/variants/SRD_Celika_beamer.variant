@@ -1,0 +1,26 @@
+{
+    "displayName": "Beamer",
+    "fluxCapacitors": 5,
+    "fluxVents": 10,
+    "hullId": "SRD_Celika",
+    "hullMods": [],
+	"goalVariant": true,
+    "permaMods": [],
+    "quality": 0.5,
+    "variantId": "SRD_Celika_beamer",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0001": "SRD_largesse",
+                "WS0002": "SRD_largesse"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS0003": "SRD_lucidas"}
+        }
+    ]
+}

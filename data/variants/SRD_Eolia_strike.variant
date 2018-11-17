@@ -1,0 +1,54 @@
+{
+    "displayName": "Strike",
+    "fluxCapacitors": 1,
+    "fluxVents": 30,
+    "hullId": "SRD_Eolia",
+    "hullMods": ["targetingunit"],
+	"goalVariant": true,
+    "permaMods": [],
+    "quality": 0.5,
+    "variantId": "SRD_Eolia_strike",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0009": "SRD_charity",
+                "WS0010": "SRD_charity"
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS0007": "SRD_raphiel",
+                "WS0008": "SRD_raphiel",
+                "WS0011": "SRD_raphiel",
+                "WS0012": "SRD_raphiel"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0001": "SRD_dignity",
+                "WS0002": "SRD_dignity"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0003": "SRD_vacuity",
+                "WS0004": "SRD_vacuity",
+                "WS0005": "SRD_vacuity",
+                "WS0006": "SRD_vacuity"
+            }
+        }
+    ],
+    "wings": [
+        "SRD_Sadri_bomber_wing",
+        "SRD_Sadri_bomber_wing",
+        "SRD_Sadri_bomber_wing"
+    ]
+}

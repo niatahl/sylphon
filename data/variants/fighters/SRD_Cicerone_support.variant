@@ -1,0 +1,23 @@
+{
+  "displayName": "Support",
+  "fluxCapacitors": 0,
+  "fluxVents": 0,
+  "goalVariant": true,
+  "hullId": "SRD_Cicerone",
+  "hullMods": [
+    "no_weapon_flux"
+  ],
+  "permaMods": [],
+  "quality": 0,
+  "variantId": "SRD_Cicerone_support",
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "SRD_clemency_ftr"
+      }
+    }
+  ],
+  "wings": []
+}

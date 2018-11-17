@@ -1,0 +1,18 @@
+{
+	"id":"SRD_arphage_shot",
+	"specClass":"projectile",
+	"spawnType":"BALLISTIC",
+	"collisionClass":"PROJECTILE_FF",
+	"collisionClassByFighter":"PROJECTILE_FIGHTER",	
+	"length":40.0,
+	"width":10.0,
+	"fadeTime":0.15,
+	"coreColor":[255,255,255,255],
+	"fringeColor": [255,100,0,255],
+	"glowColor": [255,50,0,135],
+	"glowRadius":40,
+	"hitGlowRadius":25,	
+	"textureScrollSpeed":32.0,
+	"pixelsPerTexel":10.0,
+	"bulletSprite":"graphics/sylphon/missiles/SRD_zealot_slug.png"
+}

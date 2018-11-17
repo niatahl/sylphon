@@ -1,0 +1,54 @@
+{
+  "displayName": "Standard",
+  "fluxCapacitors": 30,
+  "fluxVents": 13,
+  "goalVariant": true,
+  "hullId": "SRD_Rakia",
+  "hullMods": [
+    "targetingunit"
+  ],
+  "permaMods": [],
+  "quality": 0,
+  "variantId": "SRD_Rakia_standard",
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0009": "SRD_equity"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0010": "SRD_harrow_alpha",
+        "WS0011": "SRD_harrow_beta"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {}
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "SRD_zealot",
+        "WS0002": "SRD_zealot"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0003": "SRD_venn",
+        "WS0004": "SRD_venn",
+        "WS0005": "SRD_venn",
+        "WS0006": "SRD_venn"
+      }
+    }
+  ],
+  "wings": []
+}

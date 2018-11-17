@@ -1,0 +1,501 @@
+{
+  "bounds": [
+    -83,
+    -3.5,
+    -89,
+    -4.5,
+    -83,
+    -55.5,
+    -60,
+    -54.5,
+    -53,
+    -63.5,
+    -40,
+    -63.5,
+    -24,
+    -79,
+    -34.5,
+    -84.5,
+    -32.5,
+    -100,
+    -25,
+    -133.5,
+    42,
+    -152,
+    52.5,
+    -138.5,
+    51.5,
+    -119.5,
+    61,
+    -84,
+    64,
+    -53,
+    57,
+    -46,
+    58,
+    -26,
+    52,
+    -10.5,
+    28.5,
+    -9.5,
+    28.5,
+    9.5,
+    52,
+    10.5,
+    58,
+    26,
+    57,
+    46,
+    64,
+    53,
+    61,
+    84,
+    51.5,
+    119.5,
+    52.5,
+    138.5,
+    42,
+    152,
+    -25,
+    133.5,
+    -32.5,
+    100,
+    -34.5,
+    84.5,
+    -24,
+    79,
+    -40,
+    63.5,
+    -53,
+    63.5,
+    -60,
+    54.5,
+    -83,
+    55.5,
+    -89,
+    4.5,
+    -83,
+    3.5
+  ],
+  "builtInMods": [
+    "SRD_nullspace_conduits"
+  ],
+  "builtInWeapons": {
+    "WS0007": "SRD_venn",
+    "WS0008": "SRD_venn"
+  },
+  "builtInWings": [
+    "SRD_Spectral_defense_wing",
+    "SRD_Spectral_defense_wing"
+  ],
+  "center": [
+    154,
+    92
+  ],
+  "collisionRadius": 186.5,
+  "engineSlots": [
+    {
+      "angle": 180,
+      "contrailSize": 14,
+      "length": 50.5,
+      "location": [
+        -92,
+        9
+      ],
+      "style": "SRD_ENGINE",
+      "width": 14
+    },
+    {
+      "angle": -180,
+      "contrailSize": 14,
+      "length": 50.5,
+      "location": [
+        -92,
+        -9
+      ],
+      "style": "SRD_ENGINE",
+      "width": 14
+    },
+    {
+      "angle": 180,
+      "contrailSize": 14,
+      "length": 50.5,
+      "location": [
+        -91,
+        23
+      ],
+      "style": "SRD_ENGINE",
+      "width": 14
+    },
+    {
+      "angle": -180,
+      "contrailSize": 14,
+      "length": 50.5,
+      "location": [
+        -91,
+        -23
+      ],
+      "style": "SRD_ENGINE",
+      "width": 14
+    },
+    {
+      "angle": 180,
+      "contrailSize": 14,
+      "length": 50,
+      "location": [
+        -89,
+        33.5
+      ],
+      "style": "SRD_ENGINE",
+      "width": 14
+    },
+    {
+      "angle": -180,
+      "contrailSize": 14,
+      "length": 50,
+      "location": [
+        -89,
+        -33.5
+      ],
+      "style": "SRD_ENGINE",
+      "width": 14
+    },
+    {
+      "angle": 180,
+      "contrailSize": 11,
+      "length": 39.5,
+      "location": [
+        -90,
+        42.5
+      ],
+      "style": "SRD_ENGINE",
+      "width": 11
+    },
+    {
+      "angle": -180,
+      "contrailSize": 11,
+      "length": 39.5,
+      "location": [
+        -90,
+        -42.5
+      ],
+      "style": "SRD_ENGINE",
+      "width": 11
+    },
+    {
+      "angle": 180,
+      "contrailSize": 11,
+      "length": 39.5,
+      "location": [
+        -88,
+        50.5
+      ],
+      "style": "SRD_ENGINE",
+      "width": 11
+    },
+    {
+      "angle": -180,
+      "contrailSize": 11,
+      "length": 39.5,
+      "location": [
+        -88,
+        -50.5
+      ],
+      "style": "SRD_ENGINE",
+      "width": 11
+    },
+    {
+      "angle": 180,
+      "contrailSize": 22,
+      "length": 67,
+      "location": [
+        -38,
+        91
+      ],
+      "style": "SRD_ENGINE",
+      "width": 22
+    },
+    {
+      "angle": -180,
+      "contrailSize": 22,
+      "length": 67,
+      "location": [
+        -38,
+        -91
+      ],
+      "style": "SRD_ENGINE",
+      "width": 22
+    }
+  ],
+  "height": 161,
+  "hullId": "SRD_Valestri",
+  "hullName": "Valestri",
+  "hullSize": "CRUISER",
+  "shieldCenter": [
+    13.5,
+    -0
+  ],
+  "shieldRadius": 166.5,
+  "spriteName": "graphics/sylphon/ships/SRD_Valestri.png",
+  "style": "SRD_TECH",
+  "viewOffset": 0,
+  "weaponSlots": [
+    {
+      "angle": 45,
+      "arc": 80,
+      "id": "WS0003",
+      "locations": [
+        32,
+        128
+      ],
+      "mount": "TURRET",
+      "size": "MEDIUM",
+      "type": "ENERGY"
+    },
+    {
+      "angle": -45,
+      "arc": 80,
+      "id": "WS0004",
+      "locations": [
+        32,
+        -128
+      ],
+      "mount": "TURRET",
+      "size": "MEDIUM",
+      "type": "ENERGY"
+    },
+    {
+      "angle": 0,
+      "arc": 90,
+      "id": "WS0005",
+      "locations": [
+        47,
+        58
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "ENERGY"
+    },
+    {
+      "angle": -0,
+      "arc": 90,
+      "id": "WS0006",
+      "locations": [
+        47,
+        -58
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "ENERGY"
+    },
+    {
+      "angle": 45,
+      "arc": 120,
+      "id": "WS0001",
+      "locations": [
+        25,
+        106
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "ENERGY"
+    },
+    {
+      "angle": -45,
+      "arc": 120,
+      "id": "WS0002",
+      "locations": [
+        25,
+        -106
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "ENERGY"
+    },
+    {
+      "angle": 135,
+      "arc": 180,
+      "id": "WS0007",
+      "locations": [
+        -0.5,
+        46
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "BUILT_IN"
+    },
+    {
+      "angle": -135,
+      "arc": 180,
+      "id": "WS0008",
+      "locations": [
+        -0.5,
+        -46
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "BUILT_IN"
+    },
+    {
+      "angle": 0,
+      "arc": 5,
+      "id": "WS0009",
+      "locations": [
+        55,
+        15
+      ],
+      "mount": "HARDPOINT",
+      "size": "SMALL",
+      "type": "MISSILE"
+    },
+    {
+      "angle": -0,
+      "arc": 5,
+      "id": "WS0010",
+      "locations": [
+        55,
+        -15
+      ],
+      "mount": "HARDPOINT",
+      "size": "SMALL",
+      "type": "MISSILE"
+    },
+    {
+      "angle": 0,
+      "arc": 5,
+      "id": "WS0011",
+      "locations": [
+        59,
+        90
+      ],
+      "mount": "HARDPOINT",
+      "size": "SMALL",
+      "type": "SYNERGY"
+    },
+    {
+      "angle": -0,
+      "arc": 5,
+      "id": "WS0012",
+      "locations": [
+        59,
+        -90
+      ],
+      "mount": "HARDPOINT",
+      "size": "SMALL",
+      "type": "SYNERGY"
+    },
+    {
+      "angle": -0,
+      "arc": 5,
+      "id": "WS0013",
+      "locations": [
+        48,
+        -108
+      ],
+      "mount": "HARDPOINT",
+      "size": "MEDIUM",
+      "type": "ENERGY"
+    },
+    {
+      "angle": 0,
+      "arc": 5,
+      "id": "WS0014",
+      "locations": [
+        48,
+        108
+      ],
+      "mount": "HARDPOINT",
+      "size": "MEDIUM",
+      "type": "ENERGY"
+    },
+    {
+      "angle": 0,
+      "arc": 60,
+      "id": "WS0015",
+      "locations": [
+        25,
+        74
+      ],
+      "mount": "TURRET",
+      "size": "LARGE",
+      "type": "ENERGY"
+    },
+    {
+      "angle": -0,
+      "arc": 60,
+      "id": "WS0016",
+      "locations": [
+        25,
+        -74
+      ],
+      "mount": "TURRET",
+      "size": "LARGE",
+      "type": "ENERGY"
+    },
+    {
+      "angle": -0,
+      "arc": 5,
+      "id": "WS0017",
+      "locations": [
+        20,
+        0
+      ],
+      "mount": "HARDPOINT",
+      "size": "MEDIUM",
+      "type": "ENERGY"
+    },
+    {
+      "angle": 180,
+      "arc": 140,
+      "id": "WS0019",
+      "locations": [
+        -10,
+        113.5
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "SYSTEM"
+    },
+    {
+      "angle": -180,
+      "arc": 140,
+      "id": "WS0022",
+      "locations": [
+        -10,
+        -113.5
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "SYSTEM"
+    },
+    {
+      "angle": 0,
+      "arc": 360,
+      "id": "LB 1",
+      "locations": [
+        28.5,
+        26,
+        37,
+        26
+      ],
+      "mount": "HIDDEN",
+      "size": "LARGE",
+      "type": "LAUNCH_BAY"
+    },
+    {
+      "angle": 0,
+      "arc": 360,
+      "id": "LB 2",
+      "locations": [
+        28.5,
+        -25.5,
+        36.5,
+        -25.5
+      ],
+      "mount": "HIDDEN",
+      "size": "LARGE",
+      "type": "LAUNCH_BAY"
+    }
+  ],
+  "width": 308
+}

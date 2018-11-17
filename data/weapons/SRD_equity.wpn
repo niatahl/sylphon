@@ -1,0 +1,50 @@
+{
+  "animationType": "GLOW_AND_FLASH",
+  "autocharge": true,
+  "barrelMode": "ALTERNATING",
+  "fireSoundTwo": "SRD_equity_shot",
+  "glowColor": [
+    150,
+    50,
+    255,
+    155
+  ],
+  "hardpointAngleOffsets": [
+    0
+  ],
+  "hardpointGlowSprite": "graphics/sylphon/weapons/SRD_equity_hp_glow.png",
+  "hardpointOffsets": [
+    98.5,
+    0
+  ],
+  "hardpointSprite": "graphics/sylphon/weapons/SRD_equity_hp.png",
+  "id": "SRD_equity",
+  "muzzleFlashSpec": {
+    "length": 85,
+    "particleColor": [
+      150,
+      50,
+      255,
+      120
+    ],
+    "particleCount": 50,
+    "particleDuration": 1.5,
+    "particleSizeMin": 10,
+    "particleSizeRange": 45,
+    "spread": 15
+  },
+  "projectileSpecId": "SRD_equity_shot",
+  "size": "LARGE",
+  "specClass": "projectile",
+  "textureType": ROUGH,
+  "turretAngleOffsets": [
+    0
+  ],
+  "turretGlowSprite": "graphics/sylphon/weapons/SRD_equity_glow.png",
+  "turretOffsets": [
+    36.5,
+    0
+  ],
+  "turretSprite": "graphics/sylphon/weapons/SRD_equity.png",
+  "type": "ENERGY"
+}

@@ -1,0 +1,153 @@
+{
+  "bounds": [
+    -20.5,
+    -16,
+    -27.5,
+    -38.5,
+    0,
+    -56.5,
+    24,
+    -33,
+    24,
+    33,
+    0,
+    56.5,
+    -27.5,
+    38.5,
+    -20.5,
+    16
+  ],
+  "builtInMods": [
+    "SRD_nullspace_conduits"
+  ],
+  "builtInWeapons": {
+    "WS0003": "SRD_clemency"
+  },
+  "builtInWings": [],
+  "center": [
+    58.5,
+    33.5
+  ],
+  "collisionRadius": 69,
+  "engineSlots": [
+    {
+      "angle": -180,
+      "contrailSize": 11,
+      "length": 43,
+      "location": [
+        -33.5,
+        -32.5
+      ],
+      "style": "SRD_ENGINE",
+      "width": 11
+    },
+    {
+      "angle": 180,
+      "contrailSize": 11,
+      "length": 43,
+      "location": [
+        -33.5,
+        32.5
+      ],
+      "style": "SRD_ENGINE",
+      "width": 11
+    },
+    {
+      "angle": -180,
+      "contrailSize": 12,
+      "length": 45.5,
+      "location": [
+        -31,
+        -24.5
+      ],
+      "style": "SRD_ENGINE",
+      "width": 12
+    },
+    {
+      "angle": 180,
+      "contrailSize": 12,
+      "length": 45.5,
+      "location": [
+        -31,
+        24.5
+      ],
+      "style": "SRD_ENGINE",
+      "width": 12
+    }
+  ],
+  "height": 62,
+  "hullId": "SRD_Furika",
+  "hullName": "Furika",
+  "hullSize": "FRIGATE",
+  "shieldCenter": [
+    0,
+    -0
+  ],
+  "shieldRadius": 63.5,
+  "spriteName": "graphics/sylphon/ships/SRD_Furika.png",
+  "style": "SRD_TECH",
+  "viewOffset": 0,
+  "weaponSlots": [
+    {
+      "angle": 0,
+      "arc": 5,
+      "id": "WS0001",
+      "locations": [
+        18.5,
+        22.5
+      ],
+      "mount": "HARDPOINT",
+      "size": "MEDIUM",
+      "type": "ENERGY"
+    },
+    {
+      "angle": -0,
+      "arc": 5,
+      "id": "WS0002",
+      "locations": [
+        18.5,
+        -22.5
+      ],
+      "mount": "HARDPOINT",
+      "size": "MEDIUM",
+      "type": "ENERGY"
+    },
+    {
+      "angle": 0,
+      "arc": 270,
+      "id": "WS0003",
+      "locations": [
+        0,
+        -0
+      ],
+      "mount": "TURRET",
+      "size": "MEDIUM",
+      "type": "BUILT_IN"
+    },
+    {
+      "angle": 180,
+      "arc": 64,
+      "id": "WS0004",
+      "locations": [
+        -7.5,
+        8
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "SYSTEM"
+    },
+    {
+      "angle": -180,
+      "arc": 64,
+      "id": "WS0005",
+      "locations": [
+        -7.5,
+        -8
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "SYSTEM"
+    }
+  ],
+  "width": 117
+}

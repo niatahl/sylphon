@@ -1,0 +1,31 @@
+{
+  "displayName": "Elite Fighter",
+  "fluxCapacitors": 0,
+  "fluxVents": 0,
+  "goalVariant": true,
+  "hullId": "SRD_Catharsis",
+  "hullMods": [
+    "no_weapon_flux"
+  ],
+  "permaMods": [],
+  "quality": 0,
+  "variantId": "SRD_Catharsis_Elite",
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "SRD_ablution",
+        "WS0002": "SRD_ablution"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0003": "SRD_lustration"
+      }
+    }
+  ],
+  "wings": []
+}

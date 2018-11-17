@@ -1,0 +1,17 @@
+id,variant,tags,tier,rarity,fleet pts,op cost,formation,range,attackRunRange,num,role,role desc,refit,base value,,,,,,,,,,,,,number
+SRD_Spectral_harrow_wing,SRD_Spectral_harrow,"bomber1, bomber, high",0,,1,0,V,3000,500,5,BOMBER,Fighter,3,2000,,,,,,,,,,,,,221122
+SRD_Catharsis_Elite_wing,SRD_Catharsis_Elite,"Interceptor5, interceptor, high",3,,15,24,V,5000,500,1,INTERCEPTOR,Hunter,20,80000,,,,,,,,,,,,,123454
+SRD_Spectral_defense_wing,SRD_Spectral_defense,"support1, interceptor, high",0,,1,2,V,3000,300,5,SUPPORT,Support,4,3000,,,,,,,,,,,,,221122
+SRD_Cicerone_support_wing,SRD_Cicerone_support,"support3, fighter, high",2,,5,16,CLAW,4000,800,3,SUPPORT,Support,15,15000,,,,,,,,,,,,,2
+SRD_Eos_fighter_wing,SRD_Eos_fighter,"fighter5, fighter, high",2,,8,14,V,4000,500,3,FIGHTER,Fighter,15,20000,,,,,,,,,,,,,
+SRD_Myrigo_bomber_wing,SRD_Myrigo_bomber,"bomber5, bomber, high",1,,7,18,V,4000,1000,3,BOMBER,Fighterbomber,12,12000,,,,,,,,,,,,,
+SRD_Maris_disabler_wing,SRD_Maris_disabler,"fighter4, fighter, high",1,,6,10,CLAW,4000,300,3,FIGHTER,Disabler,12,13000,,,,,,,,,,,,,
+SRD_Sivva_scalpel_wing,SRD_Sivva_scalpel,"fighter3, fighter, high",1,,5,14,V,4000,400,5,FIGHTER,Assault,15,14000,,,,,,,,,,,,,
+SRD_Sadri_bomber_wing,SRD_Sadri_bomber,"bomber5, bomber, high",2,0.5,10,14,V,4000,1500,2,BOMBER,Bomber,15,15000,,,,,,,,,,,,,
+SRD_Skallic_drone_cannon_wing,SRD_Skallic_drone_cannon,"no_drop, no_sell, high",3,0,0,0,V,10000,1200,1,FIGHTER,Barrage Drone,1,999,,,,,,,,,,,,,
+SRD_Nalka_fighter_wing,SRD_Nalka_fighter,"fighter4, fighter, high",2,,8,12,V,4000,400,3,FIGHTER,Fighter,10,6000,,,,,,,,,,,,,
+SRD_Infel_cosmo_wing,SRD_Infel_cosmo,"no_drop, no_sell, high",3,0,10,0,V,4000,500,3,FIGHTER,Cosmo Fighter,12,999,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,
+SRD_Misja_pd_wing,SRD_Misja_pd,"support5, fighter, low",3,0.5,10,8,V,3000,500,3,SUPPORT,Drone,6,10000,,,,,,,,,,,,,
+SRD_Misja_impact_wing,SRD_Misja_impact,"support5, fighter, low",3,0.5,10,8,V,3000,700,2,SUPPORT,Drone,6,10000,,,,,,,,,,,,,
+SRD_Misja_arphage_wing,SRD_Misja_arphage,"support5, fighter, low",3,0.5,10,8,V,3000,1000,1,SUPPORT,Drone,6,10000,,,,,,,,,,,,,

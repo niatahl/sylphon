@@ -1,0 +1,166 @@
+{
+  "bounds": [
+    -20,
+    -4,
+    -12.5,
+    -13.5,
+    -7,
+    -13.5,
+    -1,
+    -6.5,
+    15,
+    -0,
+    -1,
+    6.5,
+    -7,
+    13.5,
+    -12.5,
+    13.5,
+    -20,
+    4
+  ],
+  "builtInMods": [
+    "no_weapon_flux"
+  ],
+  "builtInWings": [],
+  "center": [
+    15,
+    21.5
+  ],
+  "collisionRadius": 32.5,
+  "engineSlots": [
+    {
+      "angle": 180,
+      "contrailSize": 7,
+      "length": 25,
+      "location": [
+        -21.5,
+        3
+      ],
+      "style": "SRD_ENGINE",
+      "width": 7
+    },
+    {
+      "angle": -180,
+      "contrailSize": 7,
+      "length": 25,
+      "location": [
+        -21.5,
+        -3
+      ],
+      "style": "SRD_ENGINE",
+      "width": 7
+    }
+  ],
+  "height": 43,
+  "hullId": "SRD_Infel",
+  "hullName": "Infel",
+  "hullSize": "FIGHTER",
+  "shieldCenter": [
+    0,
+    0
+  ],
+  "shieldRadius": 29,
+  "spriteName": "graphics/sylphon/ships/fighters/SRD_Infel.png",
+  "style": "SRD_TECH",
+  "viewOffset": 0,
+  "weaponSlots": [
+    {
+      "angle": 0,
+      "arc": 5,
+      "id": "WS0001",
+      "locations": [
+        16.5,
+        2.5
+      ],
+      "mount": "HIDDEN",
+      "size": "SMALL",
+      "type": "UNIVERSAL"
+    },
+    {
+      "angle": -0,
+      "arc": 5,
+      "id": "WS0002",
+      "locations": [
+        16.5,
+        -2.5
+      ],
+      "mount": "HIDDEN",
+      "size": "SMALL",
+      "type": "UNIVERSAL"
+    },
+    {
+      "angle": 0,
+      "arc": 5,
+      "id": "WS0003",
+      "locations": [
+        -5.5,
+        12.5
+      ],
+      "mount": "HIDDEN",
+      "size": "SMALL",
+      "type": "UNIVERSAL"
+    },
+    {
+      "angle": -0,
+      "arc": 5,
+      "id": "WS0004",
+      "locations": [
+        -5.5,
+        -12.5
+      ],
+      "mount": "HIDDEN",
+      "size": "SMALL",
+      "type": "UNIVERSAL"
+    },
+    {
+      "angle": 0,
+      "arc": 0,
+      "id": "WS0005",
+      "locations": [
+        -5,
+        8
+      ],
+      "mount": "HIDDEN",
+      "size": "SMALL",
+      "type": "UNIVERSAL"
+    },
+    {
+      "angle": -0,
+      "arc": 0,
+      "id": "WS0006",
+      "locations": [
+        -5,
+        -8
+      ],
+      "mount": "HIDDEN",
+      "size": "SMALL",
+      "type": "UNIVERSAL"
+    },
+    {
+      "angle": 0,
+      "arc": 0,
+      "id": "WS0007",
+      "locations": [
+        -3.5,
+        6
+      ],
+      "mount": "HIDDEN",
+      "size": "SMALL",
+      "type": "UNIVERSAL"
+    },
+    {
+      "angle": -0,
+      "arc": 0,
+      "id": "WS0008",
+      "locations": [
+        -3.5,
+        -6
+      ],
+      "mount": "HIDDEN",
+      "size": "SMALL",
+      "type": "UNIVERSAL"
+    }
+  ],
+  "width": 30
+}

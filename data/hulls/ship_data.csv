@@ -1,0 +1,61 @@
+name,id,designation,system id,fleet pts,hitpoints,armor rating,max flux,8/6/5/4%,flux dissipation,ordnance points,fighter bays,max speed,acceleration,deceleration,max turn rate,turn acceleration,mass,shield type,defense id,shield arc,shield upkeep,shield efficiency,phase cost,phase upkeep,min crew,max crew,cargo,fuel,fuel/ly,range,max burn,base value,cr %/day,CR to deploy,peak CR sec,CR loss/sec,supplies/rec,supplies/mo,hints,tags,breakProb,minPieces,maxPieces,number
+#frigates,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Furika,SRD_Furika,Gunship,SRD_nullspace_shunt,5,2000,350,3000,2500,300,40,,140,190,130,60,120,240,FRONT,,270,0.3,0.9,,,5,15,40,20,1,20,10,16000,8,10,300,0.25,6,6,,sylphon_bp,0.4,2,2,59428
+Celika,SRD_Celika,Frigate,SRD_nullpoint_barrier,5,2000,300,3000,2500,300,45,,140,180,120,60,120,250,OMNI,,360,0.3,0.7,,,0,0,20,20,1,20,10,15000,8,10,300,0.25,8,8,,sylphon_bp,0.4,2,2,59429
+Catora,SRD_Catora,Heavy Frigate,SRD_armor_polarization,5,2000,500,3500,2500,200,55,,110,130,80,50,60,600,FRONT,,120,0.3,1,,,0,0,20,20,1,20,9,17000,8,10,240,0.25,6,6,,sylphon_bp,0.4,2,2,59429
+Vril,SRD_Vril,Frigate,SRD_nullpoint_barrier,5,2400,350,5000,2500,400,60,,160,180,120,60,120,250,OMNI,,360,0.3,0.7,,,0,0,20,20,1,20,10,25000,8,10,300,0.25,12,12,,sylphon_bp,0.4,2,2,59429
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+#destroyers,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Tarima,SRD_Tarima,Destroyer,SRD_accelerated_capacitors,9,4000,400,5500,8333,450,70,,90,60,50,30,30,350,FRONT,,200,0.3,0.9,,,25,50,80,50,2,25,9,24000,5,15,300,0.25,11,11,,sylphon_bp,0.5,2,3,59432
+Silverhead,SRD_Silverhead,Destroyer,SRD_nullspace_skip,11,3000,450,6000,6667,450,90,,90,70,60,40,100,280,FRONT,,270,0.3,0.7,,,30,50,50,40,2,20,9,30000,5,20,300,0.25,12,12,,sylphon_bp,0.7,2,3,59433
+Etrika,SRD_Etrika,Heavy Destroyer,SRD_armor_polarization,12,6000,750,8000,,300,120,,70,60,40,40,30,1400,FRONT,,120,0.3,1.1,,,0,0,80,60,2,25,8,34000,3,15,480,0.25,18,18,,sylphon_bp,0.5,2,3,59431
+Buffalo (SRD),SRD_Buffalo,Freighter,maneuveringjets,5,2500,100,3000,1167,200,30,,60,30,25,20,10,400,OMNI,,120,0.3,1,,,0,0,300,80,2,40,9,18000,5,20,240,0.25,3,3,"CIVILIAN, FREIGHTER",sylphon_bp,0.6,2,3,304
+Hymnon,SRD_Hymnon,Destroyer,SRD_nullspace_shunt,11,3400,500,7000,6667,400,55,,80,60,40,40,80,400,OMNI,,120,0.3,0.8,,,20,40,50,40,2,20,9,30000,5,25,300,0.25,12,12,,sylphon_bp,0.7,2,3,59427
+Tilia,SRD_Tilia,Light Carrier,SRD_nullfield_catalyst,11,4250,300,4000,2813,250,60,3,80,50,30,25,25,450,OMNI,,180,0.3,0.8,,,0,50,90,50,2,20,9,30000,5,15,360,0.25,14,14,CARRIER,sylphon_bp,0.5,2,3,318
+Raging Heart,SRD_Raging_Heart,Intelligent Device,SRD_nullspace_shunt,30,10000,1000,20000,17000,1200,110,,120,100,100,50,80,1200,OMNI,,360,0.3,0.5,,,0,0,100,60,1,35,9,100000,3,12,720,0.25,50,50,HIDE_IN_CODEX,sylphon_bp,0.5,2,3,59423
+Ascordia,SRD_Ascordia,Hunterkiller,SRD_nullspace_skip,20,6000,500,12000,17000,800,130,,110,70,50,40,40,1200,FRONT,,270,0.3,0.7,,,0,0,100,60,1,35,9,100000,3,12,480,0.25,35,35,,sylphon_bp,0.5,2,3,59423
+#cruisers,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Rakia,SRD_Rakia,Experimental Cruiser,SRD_armor_polarization,17,6000,900,18000,20000,600,110,,80,60,40,45,50,1300,PHASE,SRD_rakia_phase,50,4,0.3,0.02,0.05,10,100,100,140,2.5,35,8,150000,3,20,360,0.25,35,35,,sylphon_bp,0.4,2,3,59421
+Dread Eagle,SRD_Eagle,Cruiser,SRD_creeper_device,17,8000,500,10000,17000,750,150,,70,50,25,25,25,1800,FRONT,,270,0.3,0.8,,,80,120,150,100,3,33,8,55000,3,12,480,0.25,33,33,,sylphon_bp,0.5,2,3,59423
+Hubris,SRD_Hubris,Battlecarrier,targetingfeed,20,6000,500,10000,17000,600,150,2,50,30,20,15,15,1900,OMNI,,180,0.3,0.9,,,150,300,170,110,3,35,8,50000,3,20,540,0.25,24,24,"CARRIER, COMBAT",sylphon_bp,0.5,2,3,59430
+Valestri,SRD_Valestri,Superheavy Cruiser,SRD_nullspace_shunt,30,8000,800,14000,,700,190,2,50,20,15,10,10,2400,FRONT,,160,0.3,1,,,120,180,120,100,3,25,7,75000,3,20,300,0.25,30,30,,sylphon_bp,0.5,2,3,59432
+Okarra,SRD_Okarra,Heavy Cruiser,SRD_armor_polarization,15,10000,1200,16000,9000,600,180,,55,15,8,12,12,2250,FRONT,,180,0.3,0.9,,,100,150,150,150,5,30,8,70000,4,12,540,0.25,28,28,,sylphon_bp,0.4,2,3,59439
+Eolia,SRD_Eolia,Drone Carrier,SRD_nullfield_catalyst,20,6000,500,12000,17000,600,170,3,60,35,20,15,15,1700,OMNI,,180,0.3,0.8,,,100,300,150,100,3,35,8,50000,3,20,540,0.25,26,26,"CARRIER, COMBAT",sylphon_bp,0.5,2,3,59430
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+#capitals,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Equilibrium,SRD_Equilibrium,Battleship,SRD_nullspace_skip,40,16000,1100,24000,31250,1200,280,2,40,30,20,10,10,3300,FRONT,,120,0.3,0.6,,,200,400,500,500,10,30,7,400000,4,20,720,0.25,50,50,,sylphon_bp,0.6,2,5,59422
+Seresvalla,SRD_Seresvalla,Battlecruiser,SRD_flux_exchanger,25,10000,900,18000,25000,800,220,1,80,50,30,15,15,2000,OMNI,,180,0.3,0.8,,,100,200,250,250,8,45,8,250000,4,20,600,0.25,40,40,,sylphon_bp,0.6,2,4,59434
+Finis Astra,SRD_Finis_Astra,Siege Platform,SRD_nullspace_anchor,30,12000,800,30000,,600,165,,40,10,3,5,5,3000,OMNI,,160,0.3,0.8,,,150,300,100,80,12,30,6,600000,3,25,420,0.25,40,40,,sylphon_bp,0.4,2,4,59430
+Replekia,SRD_Replekia,Battleship,SRD_armor_polarization,50,15000,1400,24000,,900,310,1,50,50,30,15,10,3200,OMNI,,200,0.3,0.9,,,250,600,400,400,10,40,8,450000,4,20,780,0.25,50,50,,sylphon_bp,0.5,2,5,2202
+Frelia,SRD_Frelia,Battlecarrier,SRD_skallic_drones,40,12000,1000,18000,31250,900,220,4,40,30,20,10,10,3400,FRONT,,200,0.3,0.7,,,300,700,400,400,9,35,7,400000,4,20,720,0.25,50,50,"CARRIER, COMBAT",sylphon_bp,0.6,2,5,59439
+Mariana (Fuel),SRD_Mariana_fuel,Modular Tanker,drone_pd_x2,7,7000,500,5000,5000,300,60,,30,5,5,10,5,4500,OMNI,,360,0.3,1,,,40,120,300,2500,10,40,6,60000,2,20,720,0.25,10,10,"CIVILIAN, TANKER",sylphon_bp,0.7,2,4,59438
+Mariana (Cargo),SRD_Mariana_cargo,Modular Freighter,drone_pd_x2,7,7000,500,5000,5000,300,60,,30,5,5,10,5,4500,OMNI,,360,0.3,1,,,40,120,1800,350,10,40,6,60000,2,20,720,0.25,10,10,"CIVILIAN, FREIGHTER",sylphon_bp,0.7,2,4,59437
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+#fighters,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Spectral,SRD_Spectral,Fighter,,,80,10,500,,100,0,,300,400,350,160,360,10,NONE,,0,0,0,,,0,0,,,,,,,,,,,,,,,0,,,59424
+Catharsis,SRD_Catharsis,Elite Fighter,displacer,,800,200,1500,2500,120,0,,270,370,320,170,350,100,OMNI,,360,0,1,,,5,5,,,,,,,,,,,,,,,0,,,59425
+Cicerone,SRD_Cicerone,Support Fighter,,,400,50,600,,60,0,,150,300,250,90,180,30,OMNI,,120,0,1,,,0,0,,,,,,,,,,,,,,,0,,,59435
+Ravana,SRD_Eos,Fighter,flarelauncher_fighter,,500,50,500,,100,0,,200,400,350,90,180,30,OMNI,,180,0,1,,,0,0,,,,,,,,,,,,,,,0,,,54373
+Myrigo,SRD_Myrigo,Bomber,SRD_armor_polarization,,500,80,300,,100,0,,150,300,250,90,180,30,FRONT,,90,0,1,,,0,0,,,,,,,,,,,,,,,0,,,1151
+Maris,SRD_Maris,Fighter,,,400,50,400,,100,0,,190,350,300,90,180,30,FRONT,,120,0,1,,,0,0,,,,,,,,,,,,,,,0,,,104
+Sivva,SRD_Sivva,Strike Fighter,,,200,50,300,,80,0,,210,400,350,90,180,30,FRONT,,90,0,1,,,0,0,,,,,,,,,,,,,,,0,,,11554
+Sadri,SRD_Sadri,Bomber,SRD_armor_polarization,,300,10,300,,50,0,,150,350,250,90,180,10,FRONT,,120,0,1,,,0,0,,,,,,,,,,,,,,,0,,,101
+Skallic Drone,SRD_Skallic_drone,Barrage Drone,SRD_nullspace_entry,,500,50,500,,50,0,,20,50,50,100,200,30,OMNI,,360,0,1,,,0,0,,,,,,,,,,,,,,,0,,,59435
+Nalka,SRD_Nalka,Fighter,,,300,50,350,,80,0,,190,350,300,90,180,30,FRONT,,90,0,1,,,0,0,,,,,,,,,,,,,,,0,,,11554
+Infel,SRD_Infel,Fighter,,,400,80,350,,80,0,,190,350,300,90,180,30,FRONT,,90,0,1,,,1,1,,,,,,,,,,,,,,,0,,,11554
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+#Outcast,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Metafalica,SRD_Metafalica,Ghostship,SRD_variable_ammo,50,16000,1600,26000,,1200,250,1,60,50,30,15,10,3200,OMNI,,200,0.3,0.8,,,100,400,400,400,10,40,8,900000,4,20,780,0.25,60,60,HIDE_IN_CODEX,outcast_bp,0.5,2,5,2202
+Scourge Eagle,SRD_Eagle_P,Cruiser,SRD_slip_drive,20,8000,900,12000,17000,700,150,,80,60,35,25,25,1800,FRONT,,270,0.3,0.9,,,80,120,150,100,3,33,8,55000,3,12,480,0.25,36,36,HIDE_IN_CODEX,outcast_bp,0.5,2,3,59423
+Celika Rel,SRD_Celika_P,Frigate,SRD_nullspace_shunt,7,2000,500,3400,2500,280,45,,120,100,80,60,120,250,OMNI,,360,0.3,0.9,,,0,0,20,20,1,20,10,15000,8,10,300,0.25,10,10,HIDE_IN_CODEX,outcast_bp,0.4,2,2,59429
+Misja,SRD_Misja,Support Fighter,,,300,100,300,,60,0,,200,300,250,90,180,30,FRONT,,120,0,1,,,0,0,,,,,,,,,,,,,HIDE_IN_CODEX,outcast_bp,0,,,565656
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+#NOR,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Sura Tel,NOR_Sura_Tel,Messenger,phaseteleporter,20,6000,500,12000,17000,800,130,,110,70,50,40,40,1200,FRONT,,270,0.3,0.7,,,0,0,100,60,1,35,9,100000,3,12,480,0.25,35,35,"UNBOARDABLE, HIDE_IN_CODEX",,0.5,2,3,59423
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+#Variants,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Fulgent,SRD_Fulgent,Battlecarrier,reservewing,40,12000,1000,18000,31250,1100,280,4,40,30,20,10,10,3400,OMNI,,180,0.3,0.7,,,300,700,400,400,9,35,7,400000,4,20,720,0.25,50,50,"CARRIER, COMBAT, HIDE_IN_CODEX",,0.6,2,5,59439
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+#Weird stuff,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Omega Aeterna,SRD_Omega_Aeterna,Harbinger of the End,SRD_nullpoint_barrier,40,40000,1600,50000,31250,2200,300,,30,20,10,15,10,3300,OMNI,,360,0.3,0.5,,,0,1000,500,500,10,30,7,9999999,4,20,900,0.25,80,80,"UNBOARDABLE, HIDE_IN_CODEX",,0.6,2,5,59431
+Zodiark,SRD_Zodiark,Deity Cruiser,SRD_nullpoint_barrier,25,10000,600,20000,17000,1400,100,,100,90,80,50,50,1800,OMNI,,360,0.3,0.5,,,0,0,100,80,3,35,8,500000,3,12,480,0.25,40,40,HIDE_IN_CODEX,,0.5,2,3,59423

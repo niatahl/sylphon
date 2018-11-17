@@ -1,0 +1,57 @@
+{
+  "displayName": "Strike",
+  "fluxCapacitors": 0,
+  "fluxVents": 28,
+  "goalVariant": true,
+  "hullId": "SRD_Eagle",
+  "hullMods": [
+    "targetingunit"
+  ],
+  "permaMods": [],
+  "quality": 0,
+  "variantId": "SRD_Eagle_strike",
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0009": "SRD_raphiel",
+        "WS0010": "SRD_raphiel",
+        "WS0011": "SRD_raphiel",
+        "WS0012": "SRD_raphiel"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "SRD_paratach"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0002": "SRD_charity",
+        "WS0003": "SRD_charity",
+        "WS0004": "SRD_charity",
+        "WS0005": "SRD_embrace",
+        "WS0006": "SRD_embrace"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0007": "SRD_venn",
+        "WS0008": "SRD_venn"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {}
+    }
+  ],
+  "wings": []
+}

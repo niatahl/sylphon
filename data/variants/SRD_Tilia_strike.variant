@@ -1,0 +1,25 @@
+{
+    "displayName": "Strike",
+    "fluxCapacitors": 0,
+    "fluxVents": 8,
+    "hullId": "SRD_Tilia",
+    "hullMods": ["targetingunit"],
+	"goalVariant": true,
+    "permaMods": [],
+    "quality": 0.5,
+    "variantId": "SRD_Tilia_strike",
+    "weaponGroups": [{
+        "autofire": true,
+        "mode": "LINKED",
+        "weapons": {
+            "WS0001": "SRD_vacuity",
+            "WS0002": "SRD_vacuity",
+            "WS0003": "SRD_vacuity",
+            "WS0004": "SRD_vacuity"
+        }
+    }],
+    "wings": [
+        "SRD_Sadri_bomber_wing",
+        "SRD_Sadri_bomber_wing"
+    ]
+}

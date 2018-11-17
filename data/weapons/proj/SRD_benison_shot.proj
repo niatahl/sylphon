@@ -1,0 +1,18 @@
+{
+	"id":"SRD_benison_shot",
+	"specClass":"projectile",
+	"spawnType":"BALLISTIC",
+	"collisionClass":"PROJECTILE_FF",
+	"collisionClassByFighter":"PROJECTILE_FIGHTER",	
+	"length":130.0,
+	"width":6.0,
+	"fadeTime":0.15,
+	"coreColor":[150,200,255,255],
+	"fringeColor": [255,25,35,245],
+	"glowColor": [255,025,135,55],
+	"glowRadius":30,
+	"hitGlowRadius":25,	
+	"textureScrollSpeed":64.0,
+	"pixelsPerTexel":10.0,
+	"bulletSprite":"graphics/sylphon/missiles/SRD_adloquium_slug.png"
+}

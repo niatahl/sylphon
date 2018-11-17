@@ -1,0 +1,28 @@
+{
+    "displayName": "Sylphon",
+    "fluxCapacitors": 0,
+    "fluxVents": 0,
+    "hullId": "remnant_shield2",
+    "hullMods": [
+        "SRD_modular_nullspace_conduits",
+        "SRD_prototype_nullpoint_shield",
+        "reinforcedhull",
+        "heavyarmor",
+        "fluxbreakers"
+    ],
+    "permaMods": [],
+    "quality": 0.5,
+    "variantId": "remnant_shield2_sylphon",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {"WS 002": "SRD_exalt_12"}
+        },
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {"WS 001": "SRD_exalt_12"}
+        }
+    ]
+}

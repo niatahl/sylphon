@@ -1,0 +1,58 @@
+{
+  "displayName": "Prototype",
+  "fluxCapacitors": 3,
+  "fluxVents": 50,
+  "goalVariant": false,
+  "hullId": "SRD_Equilibrium",
+  "hullMods": [
+    "targetingunit",
+    "SRD_prototype_miniature_nullspace_shunt"
+  ],
+  "permaMods": [],
+  "quality": 0.3,
+  "variantId": "SRD_Equilibrium_prototype",
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0014": "SRD_divinity",
+        "WS0015": "SRD_divinity"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0003": "SRD_divinity",
+        "WS0004": "SRD_divinity"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "SRD_dignity",
+        "WS0002": "SRD_dignity"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0005": "SRD_embrace",
+        "WS0006": "SRD_embrace"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0007": "SRD_venn",
+        "WS0008": "SRD_venn",
+        "WS0013": "SRD_clemency"
+      }
+    }
+  ],
+  "wings": []
+}

@@ -1,0 +1,11 @@
+{
+  "baseHullId": "SRD_Okarra",
+  "baseValueMult": 0.8,
+  "descriptionId": "SRD_Okarra",
+  "descriptionPrefix": "Export variant without proprietary Sylphon Nulltech.",
+  "hullName": "Okarra (TT)",
+  "restoreToBaseHull": false,
+  "skinHullId": "SRD_Okarra_TT",
+  "spriteName": "graphics/sylphon/ships/skins/SRD_Okarra_TT.png",
+  "removeBuiltInMods":[SRD_nullspace_conduits]
+}

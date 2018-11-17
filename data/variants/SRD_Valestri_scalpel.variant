@@ -1,0 +1,55 @@
+{
+    "displayName": "Scalpel",
+    "fluxCapacitors": 9,
+    "fluxVents": 30,
+    "hullId": "SRD_Valestri",
+    "hullMods": ["targetingunit"],
+    "goalVariant": true,	
+    "permaMods": [],
+    "quality": 0.5,
+    "variantId": "SRD_Valestri_scalpel",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0007": "SRD_venn",
+                "WS0008": "SRD_venn"
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {"WS0015": "SRD_paratach"}
+        },
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {"WS0016": "SRD_paratach"}
+        },
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {"WS0013": "SRD_dignity"}
+        },
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0001": "SRD_venn",
+                "WS0002": "SRD_venn",
+                "WS0003": "SRD_dignity",
+                "WS0004": "SRD_dignity",
+                "WS0005": "SRD_lucidas",
+                "WS0006": "SRD_lucidas",
+                "WS0009": "SRD_raphiel",
+                "WS0010": "SRD_raphiel",
+                "WS0011": "SRD_raphiel",
+                "WS0012": "SRD_raphiel",
+                "WS0014": "SRD_dignity",
+                "WS0017": "SRD_dignity"
+            }
+        }
+    ],
+    "wings": []
+}

@@ -1,0 +1,18 @@
+{
+	"id":"SRD_phira_impact_shot",
+	"specClass":"projectile",
+	"spawnType":"BALLISTIC",
+	"collisionClass":"PROJECTILE_FF",
+	"collisionClassByFighter":"PROJECTILE_FIGHTER",	
+	"length":40.0,
+	"width":10.0,
+	"fadeTime":0.15,
+	"coreColor":[255,255,255,255],
+	"fringeColor": [255,255,255,205],
+	"glowColor": [255,0,0,35],
+	"glowRadius":50,
+	"hitGlowRadius":25,	
+	"textureScrollSpeed":32.0,
+	"pixelsPerTexel":10.0,
+	"bulletSprite":"graphics/sylphon/missiles/SRD_adloquium_slug.png"
+}

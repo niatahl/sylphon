@@ -1,0 +1,59 @@
+{
+    "displayName": "Temple",
+    "fluxCapacitors": 44,
+    "fluxVents": 50,
+    "hullId": "SRD_Omega_Aeterna_null",
+    "hullMods": [
+        "stabilizedshieldemitter",
+        "heavyarmor",
+        "missleracks",
+        "advancedshieldemitter"
+    ],
+    "permaMods": [],
+    "quality": 1,
+    "variantId": "SRD_Omega_Aeterna_null_flag",
+	"goalVariant": true,
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0001": "SRD_Endzeit",
+                "WS0002": "SRD_Endzeit"
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS0015": "SRD_raphiel_pod",
+                "WS0016": "SRD_raphiel_pod"
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0005": "SRD_zealot",
+                "WS0006": "SRD_zealot",
+                "WS0017": "SRD_paratach"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0003": "SRD_clemency",
+                "WS0004": "SRD_clemency",
+                "WS0007": "SRD_venn",
+                "WS0008": "SRD_venn",
+                "WS0009": "SRD_venn",
+                "WS0010": "SRD_venn",
+                "WS0011": "SRD_venn",
+                "WS0012": "SRD_venn",
+                "WS0013": "SRD_venn",
+                "WS0014": "SRD_venn"
+            }
+        }
+    ]
+}

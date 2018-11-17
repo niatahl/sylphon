@@ -1,0 +1,50 @@
+{
+  "animationType": "GLOW_AND_FLASH",
+  "autocharge": true,
+  "barrelMode": "ALTERNATING",
+  "fireSoundTwo": "SRD_qoga_fire",
+  "glowColor": [
+    255,
+    0,
+    0,
+    255
+  ],
+  "hardpointAngleOffsets": [
+    0
+  ],
+  "hardpointGlowSprite": "graphics/sylphon/weapons/SRD_qoga_hp_glow.png",
+  "hardpointOffsets": [
+    1.5,
+    0
+  ],
+  "hardpointSprite": "graphics/sylphon/weapons/SRD_qoga_hp_base.png",
+  "id": "SRD_qoga",
+  "muzzleFlashSpec": {
+    "length": 40,
+    "particleColor": [
+      255,
+      20,
+      20,
+      255
+    ],
+    "particleCount": 15,
+    "particleDuration": 1,
+    "particleSizeMin": 10,
+    "particleSizeRange": 15,
+    "spread": 5
+  },
+  "projectileSpecId": "SRD_qoga_shot",
+  "size": "MEDIUM",
+  "specClass": "projectile",
+  "textureType": ROUGH,
+  "turretAngleOffsets": [
+    0
+  ],
+  "turretGlowSprite": "graphics/sylphon/weapons/SRD_qoga_turret_glow.png",
+  "turretOffsets": [
+    2.5,
+    0
+  ],
+  "turretSprite": "graphics/sylphon/weapons/SRD_qoga_turret_base.png",
+  "type": "BALLISTIC"
+}

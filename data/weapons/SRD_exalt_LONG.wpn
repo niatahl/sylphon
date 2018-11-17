@@ -1,0 +1,44 @@
+{
+  "animationType": "SMOKE",
+  "barrelMode": "ALTERNATING",
+  "fireSoundTwo": "harpoon_fire",
+  "hardpointAngleOffsets": [
+    0
+  ],
+  "hardpointOffsets": [
+    18.5,
+    0
+  ],
+  "hardpointSprite": "graphics/sylphon/weapons/SRD_exalt_3_hp.png",
+  "id": "SRD_exalt_LONG",
+  "projectileSpecId": "SRD_exalt_LONG_msl",
+  "size": "SMALL",
+ "smokeSpec": {
+    "blowbackDuration": 2,
+    "blowbackLength": 30,
+    "blowbackParticleCount": 3,
+    "blowbackSpread": 10,
+    "cloudDuration": 1,
+    "cloudParticleCount": 3,
+    "cloudRadius": 5,
+    "particleColor": [
+      255,
+      255,
+      255,
+      200
+    ],
+    "particleSizeMin": 20,
+    "particleSizeRange": 20
+	},
+  "specClass": "projectile",
+  "textureType": ROUGH,
+  "turretAngleOffsets": [
+    0
+  ],
+  "turretOffsets": [
+    14,
+    0
+  ],
+  "turretSprite": "graphics/sylphon/weapons/SRD_exalt_3_turret.png",
+  "type": "MISSILE"
+}

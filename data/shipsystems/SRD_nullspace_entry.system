@@ -1,0 +1,27 @@
+{
+	"id":"SRD_nullspace_entry",
+	"type":"ENGINE_MOD",
+	"aiType":"MANEUVERING_JETS",
+	
+	"statsScript":"data.scripts.shipsystems.SRD_NullspaceEntry",
+	
+	"engineGlowLengthMult":0,
+	"engineGlowWidthMult":0,
+	"engineGlowGlowMult":0,
+	
+	"flameoutOnImpactChance":0,
+
+	"clampTurnRateAfter":true,
+	"clampMaxSpeedAfter":true,
+	"alwaysAccelerate":true,
+
+	#"useSound":"system_plasma_jets",
+	"loopSound":"SRD_nullspace_with_system",
+	"outOfUsesSound":"engine_disabled",
+	
+	"aiHints":{
+		"activeSpeedIncrease":100,
+		"burstMovementPotential":300,
+		"averageSpeedIncrease":130,
+	}
+}

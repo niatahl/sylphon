@@ -1,0 +1,11 @@
+id,trigger,conditions,script,text,options,notes
+# Turning in cores: start,,,,,,
+aiCores_turnInOptionSelSylphon,DialogOptionSelected,"$option == aiCores_startTurnIn
+$faction.id == sylphon",FireAll PopulateCoresTurnInOptions,"""You have come to the right place, Captain, and your reward shall be appropriate.""
+OR
+""Whether you understand the significance of your actions or not, you are doing the right thing.""",,
+,,,,,,
+# Turning in cores: end,,,,,,
+aiCores_turnInResponseSylphon,AICoresTurnedIn,$faction.id == sylphon,FireAll PopulateOptions,"""You may not even be aware of the significance of this transaction, but let me assure you that it was the right choice and possibly a path to peace one day.""
+
+The $PersonRank hands over the cores with utmost care to an associate, before turning back to you. ""Did you want anything else?""",,

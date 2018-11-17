@@ -1,0 +1,57 @@
+{
+  "animationType": "NONE",
+  "barrelMode": "ALTERNATING",
+  "fireSoundTwo": "SRD_purgatory_fire",
+  "renderHints":["RENDER_BARREL_BELOW"],
+  "hardpointAngleOffsets": [
+    0,
+    0,
+    0
+  ],
+  "hardpointGunSprite": "graphics/sylphon/weapons/SRD_purgatory_hp_barrels.png",
+  "hardpointOffsets": [
+    34.5,
+    8,
+    34.5,
+    0,
+    34.5,
+    -8
+  ],
+  "hardpointSprite": "graphics/sylphon/weapons/SRD_phira_hp.png",
+  "id": "SRD_phira_shock",
+  "muzzleFlashSpec": {
+    "length": 40,
+    "particleColor": [
+      70,
+      150,
+      255,
+      205
+    ],
+    "particleCount": 20,
+    "particleDuration": 0.4,
+    "particleSizeMin": 10,
+    "particleSizeRange": 20,
+    "spread": 10
+  },
+  "projectileSpecId": "SRD_phira_shock_shot",
+  "size": "LARGE",
+  "specClass": "projectile",
+  "textureType": ROUGH,
+  "turretAngleOffsets": [
+    0,
+    0,
+    0
+  ],
+  "turretGunSprite": "graphics/sylphon/weapons/SRD_purgatory_turret_barrels.png",
+  "turretOffsets": [
+    28,
+    8,
+    28,
+    0,
+    28,
+    -8
+  ],
+  "turretSprite": "graphics/sylphon/weapons/SRD_phira_turret.png",
+  "type": "BALLISTIC",
+  "visualRecoil": 15
+}

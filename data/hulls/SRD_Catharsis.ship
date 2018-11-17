@@ -1,0 +1,120 @@
+{
+  "bounds": [
+    -14.5,
+    -16.5,
+    -19.5,
+    -5.5,
+    -19.5,
+    5.5,
+    -14.5,
+    16.5,
+    20.5,
+    -0
+  ],
+  "builtInWeapons": {
+    "WS0003": "SRD_lustration"
+  },
+  "builtInWings": [],
+  "center": [
+    20,
+    25
+  ],
+  "collisionRadius": 29,
+  "engineSlots": [
+    {
+      "angle": 180,
+      "contrailSize": 11,
+      "length": 37.5,
+      "location": [
+        -19,
+        6
+      ],
+      "style": "SRD_ENGINE",
+      "width": 11
+    },
+    {
+      "angle": -180,
+      "contrailSize": 11,
+      "length": 37.5,
+      "location": [
+        -19,
+        -6
+      ],
+      "style": "SRD_ENGINE",
+      "width": 11
+    },
+    {
+      "angle": 159.5,
+      "contrailSize": 7.657473,
+      "length": 25.452717,
+      "location": [
+        -14,
+        10.5
+      ],
+      "style": "SRD_ENGINE",
+      "width": 7.657473
+    },
+    {
+      "angle": -159.5,
+      "contrailSize": 7.657473,
+      "length": 25.452717,
+      "location": [
+        -14,
+        -10.5
+      ],
+      "style": "SRD_ENGINE",
+      "width": 7.657473
+    }
+  ],
+  "height": 50,
+  "hullId": "SRD_Catharsis",
+  "hullName": "Catharsis",
+  "hullSize": "FIGHTER",
+  "shieldCenter": [
+    0,
+    0
+  ],
+  "shieldRadius": 26,
+  "spriteName": "graphics/sylphon/ships/fighters/SRD_Catharsis.png",
+  "style": "SRD_TECH",
+  "viewOffset": 0,
+  "weaponSlots": [
+    {
+      "angle": 0,
+      "arc": 10,
+      "id": "WS0001",
+      "locations": [
+        13.5,
+        5.5
+      ],
+      "mount": "HIDDEN",
+      "size": "SMALL",
+      "type": "HYBRID"
+    },
+    {
+      "angle": -0,
+      "arc": 10,
+      "id": "WS0002",
+      "locations": [
+        13.5,
+        -5.5
+      ],
+      "mount": "HIDDEN",
+      "size": "SMALL",
+      "type": "HYBRID"
+    },
+    {
+      "angle": 0,
+      "arc": 0,
+      "id": "WS0003",
+      "locations": [
+        0,
+        -0
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "BUILT_IN"
+    }
+  ],
+  "width": 40
+}

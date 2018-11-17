@@ -1,0 +1,45 @@
+{
+  "animationType": "MUZZLE_FLASH",
+  "barrelMode": "ALTERNATING",
+  "fireSoundTwo": "SRD_benison_fire",
+  "renderHints":["RENDER_BARREL_BELOW"],
+  "hardpointAngleOffsets": [
+    0
+  ],
+  "hardpointGunSprite": "graphics/sylphon/weapons/SRD_benison_hp_barrel.png",
+  "hardpointOffsets": [
+    8.5,
+    0
+  ],
+  "hardpointSprite": "graphics/sylphon/weapons/SRD_benison_hp_base.png",
+  "id": "SRD_benison",
+  "muzzleFlashSpec": {
+    "length": 30,
+    "particleColor": [
+      255,
+      55,
+      155,
+      155
+    ],
+    "particleCount": 15,
+    "particleDuration": 0.5,
+    "particleSizeMin": 15,
+    "particleSizeRange": 20,
+    "spread": 20
+  },
+  "projectileSpecId": "SRD_benison_shot",
+  "size": "MEDIUM",
+  "specClass": "projectile",
+  "textureType": ROUGH,
+  "turretAngleOffsets": [
+    0
+  ],
+  "turretGunSprite": "graphics/sylphon/weapons/SRD_benison_turret_barrel.png",
+  "turretOffsets": [
+    8.5,
+    0
+  ],
+  "turretSprite": "graphics/sylphon/weapons/SRD_benison_turret_base.png",
+  "type": "BALLISTIC",
+  "visualRecoil": 5
+}

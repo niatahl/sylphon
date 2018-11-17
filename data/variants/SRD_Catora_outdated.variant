@@ -1,0 +1,43 @@
+{
+    "displayName": "Outdated",
+    "fluxCapacitors": 0,
+    "fluxVents": 5,
+    "hullId": "SRD_Catora",
+    "hullMods": ["heavyarmor"],
+	"goalVariant": true,
+    "permaMods": [],
+    "quality": 0.5,
+    "variantId": "SRD_Catora_outdated",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {"WS0008": "harpoon"}
+        },
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {"WS0007": "harpoon"}
+        },
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {"WS0001": "irpulse"}
+        },
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {"WS0002": "irpulse"}
+        },
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0003": "pdburst",
+                "WS0004": "pdburst",
+                "WS0005": "irpulse",
+                "WS0006": "irpulse"
+            }
+        }
+    ]
+}

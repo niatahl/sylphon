@@ -1,0 +1,47 @@
+{
+  "collisionClass": "RAY",
+  "collisionClassByFighter": "RAY_FIGHTER",
+  "coreColor": [
+    255,
+    255,
+    255,
+    255
+  ],
+  "fringeColor": [
+    255,
+    255,
+    255,
+    255
+  ],
+  "glowColor": [
+    255,
+    255,
+    255,
+    255
+  ],
+  "hardpointAngleOffsets": [
+    0
+  ],
+  "hardpointOffsets": [
+    0,
+    0
+  ],
+  "hardpointSprite": "",
+  "hitGlowRadius": 0,
+  "id": "SRD_Seresvalla_plateR",
+  "pixelsPerTexel": 1,
+  "size": "LARGE",
+  "specClass": "beam",
+  "textureScrollSpeed": 64,
+  "textureType": ROUGH,
+  "turretAngleOffsets": [
+    0
+  ],
+  "turretOffsets": [
+    0,
+    0
+  ],
+  "turretSprite": "graphics/sylphon/weapons/deco/SRD_seresvalla_plateR_sh.png",
+  "type": "DECORATIVE",
+  "width": 10
+}

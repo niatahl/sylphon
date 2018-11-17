@@ -1,0 +1,19 @@
+{
+  "baseHullId": "SRD_Omega_Aeterna",
+  "baseValueMult": 2,
+  "descriptionId": "SRD_Omega_Aeterna",
+  "descriptionPrefix": "Modified to serve as the 1st Order of Null's flagship.",
+  "fleetPoints": 80,
+  "hullName": "Omega Aeterna (ORN)",
+  "ordnancePoints": 340,
+  "restoreToBaseHull": true,
+  "skinHullId": "SRD_Omega_Aeterna_null",
+  "spriteName": "graphics/sylphon/ships/skins/SRD_Omega_Aeterna_null.png",
+  #"systemId": "SRD_nullpoint_barrier",
+  "weaponSlotChanges":{
+		"WS0017":{
+      		"type": "UNIVERSAL",
+    	},
+    },
+	"builtInMods":["extendedshieldemitter","high_maintenance"],
+}

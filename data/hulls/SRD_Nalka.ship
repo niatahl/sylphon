@@ -1,0 +1,90 @@
+{
+  "bounds": [
+    -11.5,
+    -10,
+    9.5,
+    -15.5,
+    5,
+    -6.5,
+    10.5,
+    -0,
+    5,
+    6.5,
+    9.5,
+    15.5,
+    -11.5,
+    10
+  ],
+  "builtInMods": [
+    "no_weapon_flux"
+  ],
+  "builtInWings": [],
+  "center": [
+    16,
+    14
+  ],
+  "collisionRadius": 23.5,
+  "engineSlots": [
+    {
+      "angle": 180,
+      "contrailSize": 30,
+      "length": 30,
+      "location": [
+        -14,
+        5.5
+      ],
+      "style": "SRD_ENGINE",
+      "width": 10
+    },
+    {
+      "angle": -180,
+      "contrailSize": 30,
+      "length": 30,
+      "location": [
+        -14,
+        -5.5
+      ],
+      "style": "SRD_ENGINE",
+      "width": 10
+    }
+  ],
+  "height": 28,
+  "hullId": "SRD_Nalka",
+  "hullName": "Nalka",
+  "hullSize": "FIGHTER",
+  "shieldCenter": [
+    0,
+    0
+  ],
+  "shieldRadius": 22,
+  "spriteName": "graphics/sylphon/ships/fighters/SRD_Nalka.png",
+  "style": "SRD_TECH",
+  "viewOffset": 0,
+  "weaponSlots": [
+    {
+      "angle": 0,
+      "arc": 5,
+      "id": "WS0001",
+      "locations": [
+        11,
+        9
+      ],
+      "mount": "HIDDEN",
+      "size": "SMALL",
+      "type": "UNIVERSAL"
+    },
+    {
+      "angle": -0,
+      "arc": 5,
+      "id": "WS0002",
+      "locations": [
+        11,
+        -9
+      ],
+      "mount": "HIDDEN",
+      "size": "SMALL",
+      "type": "UNIVERSAL"
+    }
+  ],
+  "width": 32
+}

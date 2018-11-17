@@ -1,0 +1,28 @@
+{
+  "baseHullId": "SRD_Equilibrium",
+  "baseValueMult": 2,
+  "descriptionId": "SRD_Equilibrium",
+  "descriptionPrefix": "Modified to serve as the 2nd Order of Null's flagship.",
+  "fleetPoints": 50,
+  "hullName": "Equilibrium (ORN)",
+  "ordnancePoints": 300,
+  "restoreToBaseHull": true,
+  "skinHullId": "SRD_Equilibrium_null",
+  "spriteName": "graphics/sylphon/ships/skins/SRD_Equilibrium_null.png",
+  "systemId": "SRD_nullpoint_barrier",
+  "weaponSlotChanges":{
+		"WS0003":{
+      		"type": "UNIVERSAL",
+    	},
+    	"WS0004":{
+      		"type": "UNIVERSAL",
+    	},
+		"WS0014":{
+      		"type": "SYNERGY",
+    	},
+		"WS0015":{
+      		"type": "SYNERGY",
+    	},
+    },
+	"builtInMods":["extendedshieldemitter","high_maintenance"],
+}

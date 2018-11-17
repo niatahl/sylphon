@@ -1,0 +1,19 @@
+{
+	"id":"SRD_nullpoint_barrier",
+	"type":"SHIELD_MOD",
+	"aiType":"FORTRESS_SHIELD",
+
+	"statsScript":"data.scripts.shipsystems.SRD_NullpointBarrier",
+	
+	"shieldRingColor":[0,0,0,255],
+	"shieldInnerColor":[124,34,204,240],
+	"shieldThicknessMult":1.5,
+	"shieldFluctuationMult":2,
+	
+	"soundFilterType":"LOWPASS",
+	"soundFilterGain":0.55,
+	"soundFilterGainHF":0.2,
+
+	"loopSound":"system_fortress_shield_loop",
+	"outOfUsesSound":"gun_out_of_ammo",	
+}

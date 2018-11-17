@@ -1,0 +1,22 @@
+{
+  "displayName": "Missile-Filled",
+  "fluxCapacitors": 10,
+  "fluxVents": 10,
+  "goalVariant": false,
+  "hullId": "remnant_shield2",
+  "hullMods": [],
+  "permaMods": [],
+  "quality": 0.5,
+  "variantId": "remnant_shield2_sylphon_mis_joke",
+  "weaponGroups": [
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 001": "SRD_exalt_12",
+        "WS 002": "SRD_exalt_12"
+      }
+    }
+  ],
+  "wings": []
+}

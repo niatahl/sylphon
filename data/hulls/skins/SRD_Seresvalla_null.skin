@@ -1,0 +1,25 @@
+{
+  "baseHullId": "SRD_Seresvalla",
+  "baseValueMult": 2,
+  "descriptionId": "SRD_Seresvalla",
+  "descriptionPrefix": "Modified to serve as the 3rd Order of Null's flagship.",
+  "fleetPoints": 40,
+  "hullName": "Seresvalla (ORN)",
+  "ordnancePoints": 240,
+  "restoreToBaseHull": true,
+  "skinHullId": "SRD_Seresvalla_null",
+  "spriteName": "graphics/sylphon/ships/skins/SRD_Seresvalla_null.png",
+  #"systemId": "SRD_nullpoint_barrier",
+  "weaponSlotChanges":{
+		"WS0001":{
+      		"type": "UNIVERSAL",
+    	},
+    	"WS0002":{
+      		"type": "UNIVERSAL",
+    	},
+		"WS0003":{
+      		"type": "SYNERGY",
+    	},
+    },
+	"builtInMods":["extendedshieldemitter","high_maintenance"],
+}

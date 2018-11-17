@@ -1,0 +1,11 @@
+{
+	"id":"SRD_flux_exchanger",
+	"type":"STAT_MOD",
+	"aiType":"CUSTOM",
+	"aiScript":"data.scripts.shipsystemAI.SRD_FluxExchangerAI",
+	
+	"statsScript":"data.scripts.shipsystems.SRD_FluxExchanger",
+	
+	"useSound":"system_high_energy_focus_activate",
+	"outOfUsesSound":"gun_out_of_ammo",
+}

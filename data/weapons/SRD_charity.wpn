@@ -1,0 +1,49 @@
+{
+  "animationType": "GLOW_AND_FLASH",
+  "barrelMode": "ALTERNATING",
+  "fireSoundTwo": "SRD_charity_fire",
+  "glowColor": [
+    200,
+    50,
+    255,
+    155
+  ],
+  "hardpointAngleOffsets": [
+    0
+  ],
+  "hardpointGlowSprite": "graphics/sylphon/weapons/SRD_charity_hardpoint_glow.png",
+  "hardpointOffsets": [
+    17,
+    0
+  ],
+  "hardpointSprite": "graphics/sylphon/weapons/SRD_charity_hardpoint.png",
+  "id": "SRD_charity",
+  "muzzleFlashSpec": {
+    "length": 35,
+    "particleColor": [
+      200,
+      50,
+      255,
+      155
+    ],
+    "particleCount": 15,
+    "particleDuration": 0.5,
+    "particleSizeMin": 15,
+    "particleSizeRange": 20,
+    "spread": 20,
+  },
+  "projectileSpecId": "SRD_charity_shot",
+  "size": "MEDIUM",
+  "specClass": "projectile",
+  "textureType": ROUGH,
+  "turretAngleOffsets": [
+    0
+  ],
+  "turretGlowSprite": "graphics/sylphon/weapons/SRD_charity_turret_glow.png",
+  "turretOffsets": [
+    16,
+    0
+  ],
+  "turretSprite": "graphics/sylphon/weapons/SRD_charity_turret.png",
+  "type": "ENERGY"
+}

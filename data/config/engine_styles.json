@@ -1,0 +1,34 @@
+{
+	"SRD_ENGINE":{
+		"engineColor":[124,34,204,240],
+		"contrailParticleSizeMult":5.0,
+		"contrailParticleDuration":2.0,
+		"contrailParticleFinalSizeMult":0,
+		"contrailMaxSpeedMult":0.6,
+		"contrailAngularVelocityMult":0.6,
+		"contrailColor":[96,17,165,25],
+		"type":"GLOW"
+	},
+
+	"SRD_RH_ENGINE":{
+		"engineColor":[255,80,240,240],
+		"contrailParticleSizeMult":5.0,
+		"contrailParticleDuration":2.0,
+		"contrailParticleFinalSizeMult":0,
+		"contrailMaxSpeedMult":0.6,
+		"contrailAngularVelocityMult":0.6,
+		"contrailColor":[255,80,240,25],
+		"type":"GLOW"
+	},
+	
+	"SRD_MTF_ENGINE":{
+		"engineColor":[255,50,0,240],
+		"contrailParticleSizeMult":4.0,
+		"contrailParticleDuration":3.0,
+		"contrailParticleFinalSizeMult":0,
+		"contrailMaxSpeedMult":0.6,
+		"contrailAngularVelocityMult":0.6,
+		"contrailColor":[255,0,0,45],
+		"type":"GLOW"
+	}
+}

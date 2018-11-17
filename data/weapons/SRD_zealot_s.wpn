@@ -1,0 +1,57 @@
+{
+  "animationType": "GLOW_AND_FLASH",
+  "barrelMode": "LINKED",
+  "fireSoundTwo": "SRD_zealot_fire",
+  "glowColor": [
+    200,
+    100,
+    255,
+    185
+  ],
+  "hardpointAngleOffsets": [
+    0
+  ],
+  "hardpointGlowSprite": "",
+  "hardpointOffsets": [
+    0,0
+  ],
+  "hardpointSprite": "",
+  "id": "SRD_zealot_s",
+  "muzzleFlashSpec": {
+    "length": 15,
+    "particleColor": [
+      205,
+      55,
+      205,
+      55
+    ],
+    "particleCount": 10,
+    "particleDuration": 0.5,
+    "particleSizeMin": 10,
+    "particleSizeRange": 10,
+    "spread": 10
+  },
+  "projectileSpecId": "SRD_zealot_shot",
+  "size": "SMALL",
+  "specClass": "projectile",
+  "textureType": ROUGH,
+  "turretAngleOffsets": [
+    0,
+    0,
+    0,
+    0
+  ],
+  "turretGlowSprite": "",
+  "turretOffsets": [
+    3,
+    6,
+    3,
+    3,
+    3,
+    -3,
+    3,
+    -6
+  ],
+  "turretSprite": "",
+  "type": "BALLISTIC"
+}

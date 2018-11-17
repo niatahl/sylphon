@@ -1,0 +1,21 @@
+{
+  "displayName": "Cannon",
+  "fluxCapacitors": 0,
+  "fluxVents": 0,
+  "goalVariant": true,
+  "hullId": "SRD_Skallic_drone",
+  "hullMods": [],
+  "permaMods": [],
+  "quality": 0,
+  "variantId": "SRD_Skallic_drone_cannon",
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "SRD_skallic_cannon"
+      }
+    }
+  ],
+  "wings": []
+}

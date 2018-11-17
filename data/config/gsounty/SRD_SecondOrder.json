@@ -1,0 +1,16 @@
+{
+"faction":"nullorder",
+"firstname":"Magos",
+"lastname":"Tulur",
+"gender":"M",
+"officerlevel":20,
+"mainShip":"SRD_Equilibrium_null_flag",
+"ships":["SRD_Seresvalla_elite","SRD_Equilibrium_missile","2"],
+"randomFleet":true,
+"combatPoints":160,
+"reward":3200000,
+"needBounty":"SRD_ThirdOrder",
+"description":"Three of them taken care of, excellent work. The location of the 2nd Order has been provided, you know what to do.",
+"dialog":"Be judged before the realm of the gods!",
+"avatar":"graphics/sylphon/portraits/portrait_nullorder.png",
+}

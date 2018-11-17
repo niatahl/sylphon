@@ -1,0 +1,51 @@
+{
+  "animationType": "GLOW",
+  "barrelMode": "LINKED",
+  "glowColor": [
+    255,
+    100,
+    255,
+    155
+  ],
+  "hardpointAngleOffsets": [
+    0
+  ],
+  "hardpointOffsets": [
+    0,
+    0
+  ],
+  "hardpointSprite": "",
+  "id": "SRD_axel",
+  "projectileSpecId": "SRD_axel_msl",
+  "size": "MEDIUM",
+  "specClass": "projectile",
+  "textureType": ROUGH,
+  "turretAngleOffsets": [
+    0,
+    30,
+    -30,
+    60,
+    -60,
+    90,
+    -90
+  ],
+  "turretGlowSprite": "graphics/sylphon/weapons/SRD_axel_turret_glow.png",
+  "turretOffsets": [
+    7.5,
+    0,
+    7,
+    1.5,
+    7,
+    -1.5,
+    6,
+    3,
+    6,
+    -3,
+    5,
+    4,
+    5,
+    -4
+  ],
+  "turretSprite": "graphics/sylphon/weapons/SRD_axel_turret.png",
+  "type": "ENERGY"
+}

@@ -1,0 +1,358 @@
+{
+  "bounds": [
+    -65.5,
+    -21,
+    -85.5,
+    -22.5,
+    -87.5,
+    -57.5,
+    -79,
+    -66,
+    -55.5,
+    -67,
+    -28,
+    -81,
+    -17,
+    -76.5,
+    22.5,
+    -76,
+    33,
+    -63,
+    53,
+    -61.5,
+    56,
+    -56.5,
+    64.5,
+    -56.5,
+    89.5,
+    -39.5,
+    77.5,
+    -25.5,
+    69.5,
+    -26,
+    60,
+    -18,
+    23,
+    -17.5,
+    23,
+    17.5,
+    60,
+    18,
+    69.5,
+    26,
+    77.5,
+    25.5,
+    89.5,
+    39.5,
+    64.5,
+    56.5,
+    56,
+    56.5,
+    53,
+    61.5,
+    33,
+    63,
+    22.5,
+    76,
+    -17,
+    76.5,
+    -28,
+    81,
+    -55.5,
+    67,
+    -79,
+    66,
+    -87.5,
+    57.5,
+    -85.5,
+    22.5,
+    -65.5,
+    21,
+    -72,
+    -0
+  ],
+  "builtInMods": [
+    "SRD_nullspace_conduits",
+    "SRD_nanolaminate_armor",
+    "SRD_sylph_core"
+  ],
+  "builtInWings": [],
+  "center": [
+    82,
+    90
+  ],
+  "collisionRadius": 134,
+  "engineSlots": [
+    {
+      "angle": 180,
+      "contrailSize": 19,
+      "length": 63,
+      "location": [
+        -88,
+        35
+      ],
+      "style": "SRD_ENGINE",
+      "width": 19
+    },
+    {
+      "angle": -180,
+      "contrailSize": 19,
+      "length": 63,
+      "location": [
+        -88,
+        -35
+      ],
+      "style": "SRD_ENGINE",
+      "width": 19
+    },
+    {
+      "angle": 180,
+      "contrailSize": 12,
+      "length": 48.5,
+      "location": [
+        -89,
+        46.5
+      ],
+      "style": "SRD_ENGINE",
+      "width": 12
+    },
+    {
+      "angle": -180,
+      "contrailSize": 12,
+      "length": 48.5,
+      "location": [
+        -89,
+        -46.5
+      ],
+      "style": "SRD_ENGINE",
+      "width": 12
+    },
+    {
+      "angle": 180,
+      "contrailSize": 11,
+      "length": 42,
+      "location": [
+        -90,
+        55
+      ],
+      "style": "SRD_ENGINE",
+      "width": 11
+    },
+    {
+      "angle": -180,
+      "contrailSize": 11,
+      "length": 42,
+      "location": [
+        -90,
+        -55
+      ],
+      "style": "SRD_ENGINE",
+      "width": 11
+    },
+    {
+      "angle": 180,
+      "contrailSize": 11,
+      "length": 42,
+      "location": [
+        -87,
+        25
+      ],
+      "style": "SRD_ENGINE",
+      "width": 11
+    },
+    {
+      "angle": -180,
+      "contrailSize": 11,
+      "length": 42,
+      "location": [
+        -87,
+        -25
+      ],
+      "style": "SRD_ENGINE",
+      "width": 11
+    }
+  ],
+  "height": 180,
+  "hullId": "SRD_Etrika",
+  "hullName": "Etrika",
+  "hullSize": "DESTROYER",
+  "shieldCenter": [
+    0,
+    0
+  ],
+  "shieldRadius": 120.5,
+  "spriteName": "graphics/sylphon/ships/SRD_Etrika.png",
+  "style": "SRD_TECH",
+  "viewOffset": 0,
+  "weaponSlots": [
+    {
+      "angle": 0,
+      "arc": 90,
+      "id": "WS0001",
+      "locations": [
+        4,
+        42
+      ],
+      "mount": "TURRET",
+      "size": "MEDIUM",
+      "type": "HYBRID"
+    },
+    {
+      "angle": -0,
+      "arc": 90,
+      "id": "WS0002",
+      "locations": [
+        4,
+        -42
+      ],
+      "mount": "TURRET",
+      "size": "MEDIUM",
+      "type": "HYBRID"
+    },
+    {
+      "angle": 54.5,
+      "arc": 110,
+      "id": "WS0003",
+      "locations": [
+        -34.5,
+        52.5
+      ],
+      "mount": "TURRET",
+      "size": "MEDIUM",
+      "type": "ENERGY"
+    },
+    {
+      "angle": -54.5,
+      "arc": 110,
+      "id": "WS0004",
+      "locations": [
+        -34.5,
+        -52.5
+      ],
+      "mount": "TURRET",
+      "size": "MEDIUM",
+      "type": "ENERGY"
+    },
+    {
+      "angle": 0,
+      "arc": 180,
+      "id": "WS0005",
+      "locations": [
+        40,
+        37
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "ENERGY"
+    },
+    {
+      "angle": -0,
+      "arc": 180,
+      "id": "WS0006",
+      "locations": [
+        40,
+        -37
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "ENERGY"
+    },
+    {
+      "angle": 135,
+      "arc": 180,
+      "id": "WS0007",
+      "locations": [
+        -64,
+        40
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "ENERGY"
+    },
+    {
+      "angle": -135,
+      "arc": 180,
+      "id": "WS0008",
+      "locations": [
+        -64,
+        -40
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "ENERGY"
+    },
+    {
+      "angle": 0,
+      "arc": 5,
+      "id": "WS0009",
+      "locations": [
+        11,
+        -0
+      ],
+      "mount": "HARDPOINT",
+      "size": "LARGE",
+      "type": "ENERGY"
+    },
+    {
+      "angle": 180,
+      "arc": 90,
+      "id": "WS0010",
+      "locations": [
+        -60,
+        -0
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "SYSTEM"
+    },
+    {
+      "angle": 180,
+      "arc": 47,
+      "id": "WS0011",
+      "locations": [
+        -52.5,
+        51.5
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "SYSTEM"
+    },
+    {
+      "angle": -180,
+      "arc": 47,
+      "id": "WS0012",
+      "locations": [
+        -52.5,
+        -51.5
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "SYSTEM"
+    },
+    {
+      "angle": 180,
+      "arc": 67,
+      "id": "WS0013",
+      "locations": [
+        -58.5,
+        10.5
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "SYSTEM"
+    },
+    {
+      "angle": -180,
+      "arc": 67,
+      "id": "WS0014",
+      "locations": [
+        -58.5,
+        -10.5
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "SYSTEM"
+    }
+  ],
+  "width": 164
+}

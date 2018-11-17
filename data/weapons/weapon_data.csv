@@ -1,0 +1,108 @@
+name,id,tier,rarity,base value,range,damage/second,damage/shot,emp,impact,turn rate,OPs,ammo,ammo/sec,reload size,type,energy/shot,energy/second,chargeup,chargedown,burst size,burst delay,min spread,max spread,spread/shot,spread decay/sec,beam speed,proj speed,launch speed,flight time,proj hitpoints,hints,tags,groupTag,tech/manufacturer,for weapon tooltip>>,primaryRoleStr,speedStr,trackingStr,turnRateStr,accuracyStr,customPrimary,customPrimaryHL,customAncillary,customAncillaryHL,noDPSInTooltip,number
+Condemnation,SRD_paratach,3,0.5,20000,800,2000,,,0,7,22,,,,HIGH_EXPLOSIVE,,1000,0.5,0.5,0.5,4,,,,,10000,,,,,,"energy20, beam15, LR",,,,Anti Armor,,,,,,,,,,1308
+Purgatory,SRD_skalla,3,1,22000,800,,300,200,20,10,24,,,,ENERGY,350,,,1.7,3,0.2,0,0,0,0,,1000,,,,,energy20,,,,General,,,,,Has a %s chance to generate 1-4 EMP arcs on direct hits,25%,,,,1311
+Disavowal PD,SRD_venn,2,1,500,500,350,,,0,100,7,3,1,,ENERGY,,100,0.1,0,0.3,0.05,,,,,10000,,,,,PD,"pd9, beam6",,,,Point Defense,,,,,,,,,,1312
+Radiant Dawn,SRD_seprikata,3,1,9000,850,600,,,5,15,19,,,,ENERGY,,150,2,1,,,,,,,2400,,,,,,"beam15, SRD_ROTATING_BEAM_FULL_CONVERGE, SRD_ROTATING_BEAM_CENTER_BEAM",,,,Anti Shield,,,,,,,,,,1313
+Zealot Repeater,SRD_zealot,2,1,3400,800,,20,10,5,35,12,,,,KINETIC,20,,0,0.8,3,0.1,,,,,,900,,,,,kinetic11,,,,Anti Shield,,,,,,,,,,1314
+Clemency Pulse,SRD_clemency,2,1,4000,500,,400,400,,40,12,,,,FRAGMENTATION,300,,0.1,1,,,1,1,1,1,,5000,,,100,PD,energy15,,,,Point Defense,,,,,Shots chain remaining damage to nearby secondary targets,,,,,1315
+Adloquium,SRD_adloquium,3,0.4,21000,800,,500,,50,15,24,,,,ENERGY,600,,0.2,7,3,0.5,,,,1,10000,1500,,,20,,energy19,,,,General,,,,,Deals %s damage with its first two shots and %s damage with its final shot,"750, 1500",,,,1317
+Raphiel MRM,SRD_raphiel,1,1,400,2500,,600,300,50,30,4,3,,,KINETIC,0,,0,1,1,,0,0,0,,,700,100,5,150,DO_NOT_AIM,"missile8, strike3",,,,Anti Shield,Very Fast,Medium,,,,,,,true,1319
+Raphiel MRM Pod,SRD_raphiel_pod,2,1,2000,2500,,600,300,50,30,10,20,,,KINETIC,0,,0,5,4,0.3,0,0,0,,,700,100,5,150,DO_NOT_AIM,"missile8, strike3",,,,Anti Shield,Very Fast,Medium,,,,,,,true,1319
+Selene,SRD_selene,3,0.4,15000,5000,,1500,1500,200,5,22,5,0.02,1,HIGH_EXPLOSIVE,0,,0.5,10,,,,,,,,300,500,17,200,"DO_NOT_AIM, STRIKE","missile16, LR",,,,Anti Armor,Slow,Good,,,Final stage damage is split across %s projectiles,5,,,true,1320
+Charity,SRD_charity,3,0.8,3000,600,,250,,20,15,15,5,1,1,ENERGY,280,,0.1,0.25,,,,,,,,1000,,,,,energy14,,,,Strike,,,,,,,,,,1321
+Benediction,SRD_benediction,3,0.4,20000,1200,,1000,,30,10,26,30,,,HIGH_EXPLOSIVE,0,,0,5,6,0.15,0,0,0,0,,500,800,4,150,STRIKE,"strike16, rocket14",,,,Finisher,Medium,none,,,Each missile in a volley increases the damage of the next missile when hitting the target,,,,true,1322
+Embrace,SRD_embrace,1,0.6,500,500,,40,,0,50,5,,,,ENERGY,45,,0.33,0,,,,,,,,1000,,,,,energy8,,,,General,,,,,"Every 5th shot is supercharged, dealing %s damage and %s EMP damage","60, 300",,,,1323
+Lucidas,SRD_lucidas,1,0.8,700,700,50,,200,6,20,6,,,,ENERGY,,65,1,1,,,,,,,3000,,,,,,"beam9, SRD_ROTATING_BEAM_FULL_CONVERGE",,,,Suppression,,,,,Impairs mobility of targets hit,,,,,1324
+Dignity,SRD_dignity,1,,1500,600,200,100,,0,20,10,,,,ENERGY,120,220,0,0.4,,,,,,,,1200,,,,,energy13,,,,General,,,,,Slaved miniature embraces do %s damage and spin up to provide an additional %s dps without additional flux cost,"10, 100",,,,22
+Stricture,SRD_stricture,3,0.5,15000,700,1000,,,0,14,14,,,,HIGH_EXPLOSIVE,,1000,0.5,0.5,0.5,3,,,,,10000,,,,,,"energy14, beam15",,,,Anti Armor,,,,,,,,,,1308
+Exalt-3,SRD_exalt_3,2,1,1000,4000,,150,,50,20,7,9,0.05,3,HIGH_EXPLOSIVE,50,,,5,3,1,,,,,,300,200,8,100,,"missile4, LR",,,,Variable Support,Variable,Good,,,"Fires more powerful missiles at shorter range dealing %s, %s and %s damage at long, medium and short range respectively","100, 200, 300",,,true,1309
+Exalt-6,SRD_exalt_6,2,1,3000,4000,,150,,50,10,14,24,0.1,6,HIGH_EXPLOSIVE,50,,,5,6,0.5,,,,,,300,200,8,100,,"missile8, LR",,,,Variable Support,Variable,Good,,,"Fires more powerful missiles at shorter range dealing %s, %s and %s damage at long, medium and short range respectively","100, 200, 300",,,true,1310
+Exalt-12,SRD_exalt_12,2,1,9000,4000,,150,,50,5,28,60,0.2,12,HIGH_EXPLOSIVE,50,,,5,12,0.25,,,,,,300,200,8,100,,"missile16, LR",,,,Variable Support,Variable,Good,,,"Fires more powerful missiles at shorter range dealing %s, %s and %s damage at long, medium and short range respectively","100, 200, 300",,,true,1311
+Benison,SRD_benison,3,0.3,3000,800,,300,,30,20,12,,,,HIGH_EXPLOSIVE,300,,0,1.2,1,,0,5,1,2,,900,,,30,,he16,,,,Anti Armor,,,,,,,,,,4.75
+Largesse,SRD_largesse,2,,2200,800,160,,,10,15,12,,,,ENERGY,,160,0.1,0.1,,,,,,,3000,,,,,,beam14,,,,General,,,,,,,,,,21
+Divinity,SRD_divinity,2,0.8,12000,600,,400,0,30,25,24,,,,ENERGY,350,,0,2.2,4,0.2,0,5,1,10,,1000,,,75,,energy18,,,,General,,,,,,,,,,7.5
+Iphrail Torpedo,SRD_iphrail,2,,500,1000,,1200,500,100,20,2,1,,,HIGH_EXPLOSIVE,0,,0.1,8,,,0,0,0,0,,500,150,2.5,250,"GUIDED_POOR, STRIKE",missile15,,,,Torpedo,Medium,Poor,,,,,,,true,1310
+Vacuity PD,SRD_vacuity,1,,200,600,65,,,0,100,4,,,,ENERGY,,50,0,0.25,,,,,,,2400,,,,,PD,"pd7, beam7, SR",,,,Point Defense,,,,,,,,,,17
+Indulgence,SRD_indulgence,2,,5000,500,,10,,5,40,10,,,,ENERGY,17,,0,1,12,0.025,,,,,,2000,,,,,"energy10, SR",,,,General,,,,,,,,,,4545
+Excogitation,SRD_excogitation,2,,1500,500,,200,,10,30,7,,,,ENERGY,230,,0.3,6,3,0.1,0,10,3,3,,1000,,,,,"energy5, SR",,,,Strike,,,,,,,,,,85646
+Enkindle ESM,SRD_enkindle,1,,500,1500,,100,1000,15,30,5,,,,ENERGY,10,,0,20,1,,0,0,0,,,500,250,10,150,"DO_NOT_AIM, HEATSEEKER","utility13, missile0",,,,Suppression,Fast,Excellent,,,,,,,true,11.25
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+#Super-Heavy,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Harmonius,SRD_harmonius,3,1,50000,1200,,1000,1000,200,4,10000,,,,ENERGY,1500,,0.5,4,1,,0,0,0,0,,1200,,,500,,"energy30, NICTOY_SUPERHEAVY",,,,,,,,,Only mountable on the Frelia's superlarge mounts,,,,,1318
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+#Outcast,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Arphage,SRD_arphage,3,0.3,5000,1000,,500,100,50,10,13,,,,HIGH_EXPLOSIVE,700,,0.3,3,1,,,,,,,1500,,,300,,"kinetic15, LR, remnant",,,,Anti Armor,,,,,"Linked to variable ammo loader ship system, allowing the firing of different ammo types",,,,,5.5
+Veda,SRD_veda,3,0.5,1000,700,,50,,5,30,7,,,,KINETIC,60,,0.1,0.2,1,,0,4,1,2,,1300,,,50,,"kinetic8, LR, remnant",,,,Anti Shield,,,,,,,,,,3.75
+Paja,SRD_paja,2,1,500,450,,30,,,120,5,,,,FRAGMENTATION,7,,0,1.3,10,0.05,3,10,4,3,,1100,,,,"PD, ANTI_FTR","pd8, he1",,,,Point Defense,,,,,,,,,,44
+Ar Ciel,SRD_arciel,3,0.2,25000,1200,,1000,,200,5,28,,,,KINETIC,1400,,0.5,4,1,,,,,,,2200,,,500,,"kinetic20, LR",,,,Anti Shield,,,,,Deals %s extra damage as High Explosive on direct hits,20,,,,454
+Qoga,SRD_qoga,3,0.3,5000,1000,,500,,50,10,14,,,,KINETIC,700,,0.5,3.5,1,,,,,,,2000,,,300,,"kinetic15, LR",,,,Anti Shield,,,,,Deals %s extra damage as High Explosive on direct hits,20,,,,4.50
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+#fighters,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Harrow S,SRD_harrow_s,1,1,10000,700,,200,100,20,0,0,1,,,HIGH_EXPLOSIVE,,,,1,1,,,,,,,600,100,1.5,100,SYSTEM,missile5,,,,,,,,,,,,,,1305
+Lustration,SRD_lustration,1,1,1,500,,50,,5,0,0,,,,HIGH_EXPLOSIVE,,,,7,24,0.05,,,,,,400,200,3,,"SYSTEM,ANTI_FTR",,,,,,,,,,,,,,,1306
+Ablution,SRD_ablution,1,1,1,500,,50,,5,0,0,,,,ENERGY,20,,,0.15,,,0.5,0.5,0.1,,,2000,,,,SYSTEM,,,,,,,,,,,,,,,1307
+Stricture S,SRD_stricture_s,3,0.5,15000,500,500,,,0,0,0,,,,HIGH_EXPLOSIVE,,500,0.5,0.5,0.5,3,,,,,10000,,,,,SYSTEM,"energy14, beam15",,,,,,,,,,,,,,1308
+Skallic Cannon,SRD_skallic_cannon,3,1,20000,1000,,200,75,50,10,0,,,,ENERGY,250,,0.2,1.5,1,0.2,0,0,0,0,,900,,,,SYSTEM,energy20,,,,,,,,,,,,,,1311
+Zealot S,SRD_zealot_s,2,1,3400,500,,20,10,5,35,0,,,,KINETIC,80,,0,0.8,3,0.1,,,,,,900,,,,SYSTEM,kinetic11,,,,,,,,,,,,,,1314
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+#built_in,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Götterdämmerung,SRD_goetterdaemmerung,3,0.5,9999999,1300,2500,,0,0,0,99,1,,,ENERGY,,2000,5,2,0.5,15,,,,,10000,,,,,"SYSTEM, STRIKE",SRD_REQUIRES_ANCHOR,,,,Siege,,,,,Deals damage equal to %s of target's maximum hull on final blast,45%,,,,1309
+Evocation Pulse,SRD_evocation,2,1,3000,600,,500,500,,0,0,,,,ENERGY,600,,0.2,1,,,,,,,,5000,,,100,"SYSTEM, PD",energy15,,,,Heavy Point Defense,,,,,,,,,,1316
+Endzeit,SRD_Endzeit,3,0.4,9999999,1200,,1000,1000,200,10,99,,,,KINETIC,500,,0.4,0.1,1,,1,1,1,1,,2000,,,500,SYSTEM,kinetic19,,,,Obliteration,,,,,,,,,,1318
+Equity,SRD_equity,2,1,10000,700,,2000,5000,200,0,0,,,,ENERGY,2200,,0.5,7,,,0,0,,,,1200,,,,SYSTEM,,,,,Strike,,,,,,,,,,1301
+Harrow Alpha,SRD_harrow_alpha,1,1,10000,1000,,250,200,30,0,0,,,,HIGH_EXPLOSIVE,,,,7,9,0.2,,,,,,600,300,2.5,100,SYSTEM,,,,,Strike,,,,,,,,,,1302
+Harrow Beta,SRD_harrow_beta,1,1,10000,1000,,250,200,30,0,0,,,,HIGH_EXPLOSIVE,,,,7,9,0.2,,,,,,600,300,2.5,100,SYSTEM,,,,,Strike,,,,,,,,,,1303
+Harrower,SRD_harrower,1,1,10000,2000,,300,200,30,0,0,,,,HIGH_EXPLOSIVE,,,,12,22,0.2,,,,,,600,100,5,100,SYSTEM,,,,,,,,,,,,,,,1304
+Veritas,SRD_veritas,3,,7000,1000,,400,,100,0,30,,,,OTHER,500,,1.25,2.25,,,,,,,,1200,,,400,SYSTEM,"kinetic20, LR, remnant",,,,General,,,,,Deals %s damage as kinetic on impact. Will stick to the target on direct hits and explode for %s damage as high explosive,"200, 200",,,,1320
+Clemency Ping,SRD_clemency_ftr,2,1,4000,500,,200,200,,100,0,,,,FRAGMENTATION,0,,0,1.5,,,2,2,2,2,,2000,,,100,"PD, SYSTEM",energy15,,,,,,,,,,,,,,1315
+Axel Shooter,SRD_axel,1,1,10000,2000,,100,100,100,0,0,,,,ENERGY,1000,,,5,,,,,,,,1400,100,5,9999,SYSTEM,,,,,,,,,,,,,,,1304
+Phira,SRD_phira_burst,3,0,9999,1000,,270,,50,10,24,,,,HIGH_EXPLOSIVE,330,,,1.7,3,0.2,,,,,,1200,,,,"SYSTEM, SHOW_IN_CODEX",he20,,,,Multi-Purpose,,,,,,,,,,466
+Phira Impact,SRD_phira_impact,3,0,9999,1000,,230,,100,10,24,,,,KINETIC,300,,,1.7,3,0.2,,,,,,1200,,,,SYSTEM,kinetic20,,,,,,,,,,,,,,454
+Phira Shock,SRD_phira_shock,3,0,9999,1000,,300,200,20,10,24,,,,ENERGY,350,,,1.7,3,0.2,0,0,0,0,,1200,,,,SYSTEM,energy20,,,,,,,,,,,,,,467
+Vedra,SRD_vedra,1,,200,500,100,,,0,100,4,,,,ENERGY,,100,0,0.25,,,,,,,2400,,,,,PD,"pd7, beam7, SR",,,,Point Defense,,,,,,,,,,17
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+#joke,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Götterdämmerung mkII,SRD_goetterdaemmerung_modular,3,0.5,9999999,1300,2500,,0,0,4,99,,,,ENERGY,,100,5,2,0.5,15,,,,,10000,,,,,SYSTEM,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+#NOR,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Nullrain,NOR_nullrain,1,1,9999,2000,,100,100,100,0,0,,,,ENERGY,100,,,5,20,0.1,,,,,,1000,500,5,9999,SYSTEM,,,,,,,,,,,,,,,1304
+Nullray,NOR_nullray,3,0.5,9999,900,2000,,,0,7,22,,,,ENERGY,,2000,0.5,0.5,1,6,,,,,10000,,,,,SYSTEM,"energy20, beam15, LR",,,,,,,,,,,,,,1308
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+#script_necessary,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Veritas(Fake),SRD_veritas_fake,3,,7000,1000,,400,,100,0,30,,,,KINETIC,500,,1.25,2.25,,,,,,,,1200,,,400,SYSTEM,"kinetic20, LR, remnant",,,,,,,,,,,,,,1320
+Embrace(Fake),SRD_embrace_EMP,1,,500,500,,60,300,0,50,5,,,,ENERGY,45,,0.33,0,,,,,,,,1000,,,,SYSTEM,energy8,,,,,,,,,,,,,,19.25
+Dignity(Fake),SRD_dignity_secondary,1,,1500,600,,10,,0,20,10,,,,ENERGY,0,,0,0,,,,,,,,1200,,,,SYSTEM,energy13,,,,,,,,,,,,,,22
+Adloquium(Fake),SRD_adloquium_fake,3,0.4,22000,800,,600,,50,15,22,,,,ENERGY,400,,0.2,4,3,0.5,,,,1,10000,1500,,,20,SYSTEM,energy19,,,,,,,,,,,,,,1317
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+#exalt_stuff,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Exalt_LONG,SRD_exalt_LONG,2,1,5000,4000,,100,,50,20,5,9,0.06,3,HIGH_EXPLOSIVE,10,,,5,3,0.4,,,,,,300,200,12,100,SYSTEM,"missile4, LR",,,,,,,,,,,,,,1309
+Exalt_MEDIUM,SRD_exalt_MEDIUM,2,1,5000,2000,,200,,50,20,5,9,0.06,3,HIGH_EXPLOSIVE,10,,,5,3,0.4,,,,,,500,200,5,100,SYSTEM,"missile4, LR",,,,,,,,,,,,,,1309
+Exalt_SHORT,SRD_exalt_SHORT,2,1,5000,750,,300,,50,20,5,9,0.06,3,HIGH_EXPLOSIVE,10,,,5,3,0.4,,,,,,700,200,1.5,100,SYSTEM,"missile4, LR",,,,,,,,,,,,,,1309
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+#deco,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Evocation Capacitors,SRD_evocation_deco,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,SYSTEM,,,,,,,,,,,,,,,1401
+Seresvalla Plate R shadow,SRD_Seresvalla_plateR,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,SYSTEM,,,,,,,,,,,,,,,1402
+Seresvalla Plate L shadow,SRD_Seresvalla_plateL,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,SYSTEM,,,,,,,,,,,,,,,1403
+Seresvalla Plate R 1,SRD_Seresvalla_plateR_1,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,SYSTEM,,,,,,,,,,,,,,,1404
+Seresvalla Plate R 2,SRD_Seresvalla_plateR_2,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,SYSTEM,,,,,,,,,,,,,,,1405
+Seresvalla Plate R 3,SRD_Seresvalla_plateR_3,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,SYSTEM,,,,,,,,,,,,,,,1406
+Seresvalla Plate L 1,SRD_Seresvalla_plateL_1,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,SYSTEM,,,,,,,,,,,,,,,1407
+Seresvalla Plate L 2,SRD_Seresvalla_plateL_2,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,SYSTEM,,,,,,,,,,,,,,,1408
+Seresvalla Plate L 3,SRD_Seresvalla_plateL_3,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,SYSTEM,,,,,,,,,,,,,,,1409
+Ascordia Plate L,SRD_Ascordia_plateL,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,SYSTEM,,,,,,,,,,,,,,,1409
+Ascordia Plate R,SRD_Ascordia_plateR,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,SYSTEM,,,,,,,,,,,,,,,1409
+Finis Astra Glowmap 1,SRD_finis_astra_glow_1,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,SYSTEM,,,,,,,,,,,,,,,1410
+Finis Astra Glowmap 2,SRD_finis_astra_glow_2,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,SYSTEM,,,,,,,,,,,,,,,1411
+Frelia Bonus Hangar L,SRD_Frelia_extrabayL,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,SYSTEM,,,,,,,,,,,,,,,1409
+Frelia Bonus Hangar R,SRD_Frelia_extrabayR,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,SYSTEM,,,,,,,,,,,,,,,1409
+Vril PlateR,SRD_vril_plateR,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Vril PlateL,SRD_vril_plateL,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+#Outcast Armor,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Metafalica Deco Glow,SRD_metafalica_glow_deco,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,SYSTEM,,,,,,,,,,,,,,,1401
+Metafalica Deco Grid,SRD_metafalica_grid_deco,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,SYSTEM,,,,,,,,,,,,,,,1401
+Scourge Eagle Deco Glow,SRD_eagle_p_glow_deco,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,SYSTEM,,,,,,,,,,,,,,,1401
+Scourge Eagle Deco Grid,SRD_eagle_p_grid_deco,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,SYSTEM,,,,,,,,,,,,,,,1401
+Celika Rel Deco Glow,SRD_celika_p_glow_deco,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,SYSTEM,,,,,,,,,,,,,,,1401
+Celika Rel Deco Grid,SRD_celika_p_grid_deco,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,SYSTEM,,,,,,,,,,,,,,,1401
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,

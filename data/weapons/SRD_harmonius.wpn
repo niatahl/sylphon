@@ -1,0 +1,48 @@
+{
+  "animationType": "GLOW_AND_FLASH",
+  "barrelMode": "ALTERNATING",
+  "fireSoundTwo": "SRD_harmonius_fire",
+  "glowColor": [
+    155,
+    0,
+    255,
+    255
+  ],
+  "hardpointAngleOffsets": [
+    0
+  ],
+  "hardpointOffsets": [
+    0,
+    0
+  ],
+  "hardpointSprite": "",
+  "id": "SRD_harmonius",
+  "muzzleFlashSpec": {
+    "length": 100,
+    "particleColor": [
+      155,
+      0,
+      255,
+      155
+    ],
+    "particleCount": 30,
+    "particleDuration": 2,
+    "particleSizeMin": 30,
+    "particleSizeRange": 50,
+    "spread": 10
+  },
+  "projectileSpecId": "SRD_harmonius_shot",
+  "size": "LARGE",
+  "specClass": "projectile",
+  "textureType": ROUGH,
+  "turretAngleOffsets": [
+    0
+  ],
+  "turretGlowSprite": "graphics/sylphon/weapons/SRD_harmonius_turret_glow.png",
+  "turretOffsets": [
+    6.5,
+    0
+  ],
+  "turretSprite": "graphics/sylphon/weapons/SRD_harmonius_turret_base.png",
+  "type": "ENERGY"
+}

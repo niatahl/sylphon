@@ -1,0 +1,32 @@
+{
+  "displayName": "Standard",
+  "fluxCapacitors": 0,
+  "fluxVents": 8,
+  "goalVariant": true,
+  "hullId": "SRD_Mariana_cargo",
+  "hullMods": [],
+  "permaMods": [],
+  "quality": 0,
+  "variantId": "SRD_Mariana_cargo_standard",
+  "weaponGroups": [
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0005": "SRD_clemency",
+        "WS0006": "SRD_clemency"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "SRD_venn",
+        "WS0002": "SRD_venn",
+        "WS0003": "SRD_venn",
+        "WS0004": "SRD_venn"
+      }
+    }
+  ],
+  "wings": []
+}

@@ -1,0 +1,51 @@
+{
+  "collisionClass": "RAY",
+  "collisionClassByFighter": "RAY_FIGHTER",
+  "coreColor": [
+    255,
+    255,
+    255,
+    255
+  ],
+  "renderHints":["RENDER_ADDITIVE"],
+  "showDamageWhenDecorative":false,
+  "renderBelowAllWeapons":true,
+  "everyFrameEffect": "data.scripts.weapons.SRD_FinisAstraLights1Script",
+  "fringeColor": [
+    255,
+    255,
+    255,
+    255
+  ],
+  "glowColor": [
+    255,
+    255,
+    255,
+    255
+  ],
+  "hardpointAngleOffsets": [
+    0
+  ],
+  "hardpointOffsets": [
+    0,
+    0
+  ],
+  "hardpointSprite": "",
+  "hitGlowRadius": 0,
+  "id": "SRD_finis_astra_glow_1",
+  "pixelsPerTexel": 1,
+  "size": "SMALL",
+  "specClass": "beam",
+  "textureScrollSpeed": 64,
+  "textureType": ROUGH,
+  "turretAngleOffsets": [
+    0
+  ],
+  "turretOffsets": [
+    0,
+    0
+  ],
+  "turretSprite": "graphics/sylphon/ships/SRD_Finis_Astra_glow1.png",
+  "type": "DECORATIVE",
+  "width": 10
+}

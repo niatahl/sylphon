@@ -1,0 +1,57 @@
+{
+  "displayName": "Prototype",
+  "fluxCapacitors": 0,
+  "fluxVents": 5,
+  "goalVariant": false,
+  "hullId": "SRD_Ascordia",
+  "hullMods": [
+    "SRD_prototype_miniature_nullspace_shunt",
+    "targetingunit"
+  ],
+  "permaMods": [],
+  "quality": 0.8,
+  "variantId": "SRD_Ascordia_prototype",
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0001": "SRD_charity",
+        "WS0002": "SRD_charity",
+        "WS0003": "SRD_charity"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0010": "SRD_exalt_3",
+        "WS0011": "SRD_exalt_3"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0004": "SRD_dignity"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0005": "SRD_dignity",
+        "WS0006": "SRD_venn",
+        "WS0007": "SRD_venn",
+        "WS0008": "SRD_venn",
+        "WS0009": "SRD_venn"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {}
+    }
+  ],
+  "wings": []
+}

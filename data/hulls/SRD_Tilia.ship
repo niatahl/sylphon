@@ -1,0 +1,250 @@
+{
+  "bounds": [
+    -47.5,
+    -43,
+    -53.5,
+    -74,
+    -43.5,
+    -83,
+    0.5,
+    -92,
+    28,
+    -88,
+    51,
+    -72.5,
+    44,
+    -63,
+    44,
+    -36.5,
+    50.5,
+    -29.5,
+    50.5,
+    29.5,
+    44,
+    36.5,
+    44,
+    63,
+    51,
+    72.5,
+    28,
+    88,
+    0.5,
+    92,
+    -43.5,
+    83,
+    -53.5,
+    74,
+    -47.5,
+    43
+  ],
+  "builtInMods": [
+    "SRD_nullspace_conduits",
+    "SRD_sylph_core",
+	"SRD_drone_carrier"
+  ],
+  "builtInWings": [
+    "SRD_Maris_disabler_wing"
+  ],
+  "center": [
+    95,
+    58
+  ],
+  "collisionRadius": 121,
+  "engineSlots": [
+    {
+      "angle": 180,
+      "contrailSize": 14,
+      "length": 45.5,
+      "location": [
+        -52.5,
+        37
+      ],
+      "style": "SRD_ENGINE",
+      "width": 14
+    },
+    {
+      "angle": -180,
+      "contrailSize": 14,
+      "length": 45.5,
+      "location": [
+        -52.5,
+        -37
+      ],
+      "style": "SRD_ENGINE",
+      "width": 14
+    },
+    {
+      "angle": 180,
+      "contrailSize": 14,
+      "length": 44,
+      "location": [
+        -51,
+        28.5
+      ],
+      "style": "SRD_ENGINE",
+      "width": 14
+    },
+    {
+      "angle": -180,
+      "contrailSize": 14,
+      "length": 44,
+      "location": [
+        -51,
+        -28.5
+      ],
+      "style": "SRD_ENGINE",
+      "width": 14
+    }
+  ],
+  "height": 116,
+  "hullId": "SRD_Tilia",
+  "hullName": "Tilia",
+  "hullSize": "DESTROYER",
+  "shieldCenter": [
+    0,
+    0
+  ],
+  "shieldRadius": 111,
+  "spriteName": "graphics/sylphon/ships/SRD_Tilia.png",
+  "style": "SRD_TECH",
+  "viewOffset": 0,
+  "weaponSlots": [
+    {
+      "angle": 40.5,
+      "arc": 206,
+      "id": "WS0001",
+      "locations": [
+        20,
+        72
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "ENERGY"
+    },
+    {
+      "angle": -40.5,
+      "arc": 206,
+      "id": "WS0002",
+      "locations": [
+        20,
+        -72
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "ENERGY"
+    },
+    {
+      "angle": 135,
+      "arc": 153,
+      "id": "WS0003",
+      "locations": [
+        -41,
+        70
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "ENERGY"
+    },
+    {
+      "angle": -135,
+      "arc": 153,
+      "id": "WS0004",
+      "locations": [
+        -41,
+        -70
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "ENERGY"
+    },
+    {
+      "angle": -179,
+      "arc": 62,
+      "id": "WS0005",
+      "locations": [
+        -43.5,
+        50.5
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "SYSTEM"
+    },
+    {
+      "angle": 179,
+      "arc": 62,
+      "id": "WS0006",
+      "locations": [
+        -43.5,
+        -50.5
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "SYSTEM"
+    },
+    {
+      "angle": 180,
+      "arc": 76,
+      "id": "WS0007",
+      "locations": [
+        -37,
+        12.5
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "SYSTEM"
+    },
+    {
+      "angle": -180,
+      "arc": 76,
+      "id": "WS0008",
+      "locations": [
+        -37,
+        -12.5
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "SYSTEM"
+    },
+    {
+      "angle": 180,
+      "arc": 116,
+      "id": "WS0009",
+      "locations": [
+        -41.5,
+        -0
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "SYSTEM"
+    },
+    {
+      "angle": 0,
+      "arc": 360,
+      "id": "LB 1",
+      "locations": [
+        4,
+        21.5,
+        12,
+        43
+      ],
+      "mount": "HIDDEN",
+      "size": "LARGE",
+      "type": "LAUNCH_BAY"
+    },
+    {
+      "angle": 0,
+      "arc": 360,
+      "id": "LB 2",
+      "locations": [
+        4,
+        -20.5,
+        12.5,
+        -41
+      ],
+      "mount": "HIDDEN",
+      "size": "LARGE",
+      "type": "LAUNCH_BAY"
+    }
+  ],
+  "width": 190
+}

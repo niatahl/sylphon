@@ -1,0 +1,52 @@
+{
+  "collisionClass": "RAY",
+  "collisionClassByFighter": "RAY_FIGHTER",
+  "coreColor": [
+    255,
+    255,
+    255,
+    255
+  ],
+  "fringeColor": [
+    255,
+    255,
+    255,
+    255
+  ],
+  "glowColor": [
+    255,
+    255,
+    255,
+    255
+  ],
+  "hardpointAngleOffsets": [
+    0
+  ],
+  "hardpointOffsets": [
+    0,
+    0
+  ],
+  "hardpointSprite": "graphics/sylphon/weapons/deco/SRD_Frelia_hangar_L_00.png",
+  "hitGlowRadius": 0,
+  "id": "SRD_Frelia_extrabayL",
+  "numFrames":2,
+  "frameRate":0,
+  "showDamageWhenDecorative": True,
+  "renderBelowAllWeapons":true,
+  "everyFrameEffect": "data.scripts.weapons.SRD_FreliaLeftHangarDeco",
+  "pixelsPerTexel": 1,
+  "size": "LARGE",
+  "specClass": "beam",
+  "textureScrollSpeed": 64,
+  "textureType": ROUGH,  
+  "turretAngleOffsets": [
+    0
+  ],
+  "turretOffsets": [
+    0,
+    0
+  ],
+  "turretSprite": "graphics/sylphon/weapons/deco/SRD_Frelia_hangar_L_00.png",
+  "type": "DECORATIVE",
+  "width": 10
+}

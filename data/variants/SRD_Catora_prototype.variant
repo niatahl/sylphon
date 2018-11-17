@@ -1,0 +1,50 @@
+{
+  "displayName": "Prototype",
+  "fluxCapacitors": 0,
+  "fluxVents": 10,
+  "goalVariant": false,
+  "hullId": "SRD_Catora",
+  "hullMods": [
+    "SRD_prototype_local_stabilizer",
+    "unstable_injector"
+  ],
+  "permaMods": [],
+  "quality": 0.8,
+  "variantId": "SRD_Catora_prototype",
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0007": "SRD_exalt_3",
+        "WS0008": "SRD_exalt_3"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "SRD_embrace",
+        "WS0002": "SRD_embrace",
+        "WS0005": "SRD_embrace",
+        "WS0006": "SRD_embrace"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {}
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {}
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {}
+    }
+  ],
+  "wings": []
+}

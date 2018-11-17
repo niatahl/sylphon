@@ -1,0 +1,57 @@
+{
+  "collisionClass": "RAY",
+  "collisionClassByFighter": "RAY_FIGHTER",
+  "coreColor": [
+    205,
+    255,
+    255,
+    185
+  ],
+  "fireSoundOne": "laser_intro",
+  "fireSoundTwo": "pd_laser_loop",
+  "everyFrameEffect": "data.scripts.weapons.SRD_CondemnationOscillationScript",
+  "fringeColor": [
+    155,
+    0,
+    200,
+    205
+  ],
+  "glowColor": [
+    155,
+    100,
+    255,
+    155
+  ],
+  "hardpointAngleOffsets": [
+    0
+  ],
+  "hardpointGlowSprite": "graphics/sylphon/weapons/SRD_vacuity_hp_glow.png",
+  "hardpointOffsets": [
+    7,
+    0
+  ],
+  "hardpointSprite": "graphics/sylphon/weapons/SRD_vacuity_hp_base.png",
+  "hitGlowRadius": 0,
+  "id": "SRD_vacuity",
+  "pierceSet": [
+    PROJECTILE_FF,
+    PROJECTILE_NO_FF,
+    PROJECTILE_FIGHTER
+  ],
+  "pixelsPerTexel": 5,
+  "size": "SMALL",
+  "specClass": "beam",
+  "textureScrollSpeed": 64,
+  "textureType": ROUGH,
+  "turretAngleOffsets": [
+    0
+  ],
+  "turretGlowSprite": "graphics/sylphon/weapons/SRD_vacuity_turret_glow.png",
+  "turretOffsets": [
+    5,
+    0
+  ],
+  "turretSprite": "graphics/sylphon/weapons/SRD_vacuity_turret_base.png",
+  "type": "ENERGY",
+  "width": 10
+}

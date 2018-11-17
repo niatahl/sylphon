@@ -1,0 +1,249 @@
+{
+  "bounds": [
+    -33.5,
+    -14,
+    -26.5,
+    -39.5,
+    -9,
+    -59.5,
+    15.5,
+    -58,
+    27.5,
+    -42,
+    27.5,
+    42,
+    15.5,
+    58,
+    -9,
+    59.5,
+    -26.5,
+    39.5,
+    -33.5,
+    14
+  ],
+  "builtInMods": [
+    "SRD_nullspace_conduits",
+    "SRD_sylph_core",
+    "SRD_nanolaminate_armor"
+  ],
+  "builtInWings": [],
+  "center": [
+    61,
+    38
+  ],
+  "collisionRadius": 78.5,
+  "engineSlots": [
+    {
+      "angle": 180,
+      "contrailSize": 24,
+      "length": 52.5,
+      "location": [
+        -38,
+        -0
+      ],
+      "style": "SRD_ENGINE",
+      "width": 24
+    },
+    {
+      "angle": 180,
+      "contrailSize": 17,
+      "length": 46.5,
+      "location": [
+        -34.5,
+        14.5
+      ],
+      "style": "SRD_ENGINE",
+      "width": 17
+    },
+    {
+      "angle": -180,
+      "contrailSize": 17,
+      "length": 46.5,
+      "location": [
+        -34.5,
+        -14.5
+      ],
+      "style": "SRD_ENGINE",
+      "width": 17
+    },
+    {
+      "angle": 180,
+      "contrailSize": 13,
+      "length": 45,
+      "location": [
+        -33,
+        24
+      ],
+      "style": "SRD_ENGINE",
+      "width": 13
+    },
+    {
+      "angle": -180,
+      "contrailSize": 13,
+      "length": 45,
+      "location": [
+        -33,
+        -24
+      ],
+      "style": "SRD_ENGINE",
+      "width": 13
+    },
+    {
+      "angle": 180,
+      "contrailSize": 10,
+      "length": 39,
+      "location": [
+        -30,
+        32
+      ],
+      "style": "SRD_ENGINE",
+      "width": 10
+    },
+    {
+      "angle": -180,
+      "contrailSize": 10,
+      "length": 39,
+      "location": [
+        -30,
+        -32
+      ],
+      "style": "SRD_ENGINE",
+      "width": 10
+    }
+  ],
+  "height": 69,
+  "hullId": "SRD_Catora",
+  "hullName": "Catora",
+  "hullSize": "FRIGATE",
+  "shieldCenter": [
+    0,
+    -0
+  ],
+  "shieldRadius": 73.5,
+  "spriteName": "graphics/sylphon/ships/SRD_Catora.png",
+  "style": "SRD_TECH",
+  "viewOffset": 0,
+  "weaponSlots": [
+    {
+      "angle": 36,
+      "arc": 115,
+      "id": "WS0001",
+      "locations": [
+        11,
+        45
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "ENERGY"
+    },
+    {
+      "angle": -36,
+      "arc": 115,
+      "id": "WS0002",
+      "locations": [
+        11,
+        -45
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "ENERGY"
+    },
+    {
+      "angle": -135,
+      "arc": 120,
+      "id": "WS0003",
+      "locations": [
+        -6,
+        -51
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "ENERGY"
+    },
+    {
+      "angle": 135,
+      "arc": 121,
+      "id": "WS0004",
+      "locations": [
+        -6,
+        51
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "ENERGY"
+    },
+    {
+      "angle": -14.5,
+      "arc": 149,
+      "id": "WS0005",
+      "locations": [
+        -6,
+        -26
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "ENERGY"
+    },
+    {
+      "angle": 14.5,
+      "arc": 149,
+      "id": "WS0006",
+      "locations": [
+        -6,
+        26
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "ENERGY"
+    },
+    {
+      "angle": -0,
+      "arc": 10,
+      "id": "WS0007",
+      "locations": [
+        22,
+        -29
+      ],
+      "mount": "HARDPOINT",
+      "size": "SMALL",
+      "type": "MISSILE"
+    },
+    {
+      "angle": 0,
+      "arc": 10,
+      "id": "WS0008",
+      "locations": [
+        22,
+        29
+      ],
+      "mount": "HARDPOINT",
+      "size": "SMALL",
+      "type": "MISSILE"
+    },
+    {
+      "angle": 173,
+      "arc": 59,
+      "id": "WS0009",
+      "locations": [
+        -7.5,
+        41.5
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "SYSTEM"
+    },
+    {
+      "angle": -173,
+      "arc": 59,
+      "id": "WS0010",
+      "locations": [
+        -7.5,
+        -41.5
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "SYSTEM"
+    }
+  ],
+  "width": 122
+}

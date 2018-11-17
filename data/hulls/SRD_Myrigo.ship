@@ -1,0 +1,148 @@
+{
+  "bounds": [
+    -8.5,
+    -5.5,
+    -6.5,
+    -18,
+    8.5,
+    -7.5,
+    8.5,
+    7.5,
+    -6.5,
+    18,
+    -8.5,
+    5.5
+  ],
+  "builtInMods": [
+    "no_weapon_flux"
+  ],
+  "builtInWings": [],
+  "center": [
+    20,
+    10.5
+  ],
+  "collisionRadius": 25,
+  "engineSlots": [
+    {
+      "angle": 180,
+      "contrailSize": 6,
+      "length": 16.5,
+      "location": [
+        -9.5,
+        4.5
+      ],
+      "style": "SRD_ENGINE",
+      "width": 6
+    },
+    {
+      "angle": -180,
+      "contrailSize": 6,
+      "length": 16.5,
+      "location": [
+        -9.5,
+        -4.5
+      ],
+      "style": "SRD_ENGINE",
+      "width": 6
+    }
+  ],
+  "height": 26,
+  "hullId": "SRD_Myrigo",
+  "hullName": "Myrigo",
+  "hullSize": "FIGHTER",
+  "shieldCenter": [
+    0,
+    -0
+  ],
+  "shieldRadius": 23,
+  "spriteName": "graphics/sylphon/ships/fighters/SRD_Myrigo.png",
+  "style": "SRD_TECH",
+  "viewOffset": 0,
+  "weaponSlots": [
+    {
+      "angle": 6.5,
+      "arc": 0,
+      "id": "WS0003",
+      "locations": [
+        -1,
+        10.5
+      ],
+      "mount": "HIDDEN",
+      "size": "SMALL",
+      "type": "MISSILE"
+    },
+    {
+      "angle": -6.5,
+      "arc": 0,
+      "id": "WS0004",
+      "locations": [
+        -1,
+        -10.5
+      ],
+      "mount": "HIDDEN",
+      "size": "SMALL",
+      "type": "MISSILE"
+    },
+    {
+      "angle": 16.5,
+      "arc": 0,
+      "id": "WS0001",
+      "locations": [
+        -4.5,
+        14.5
+      ],
+      "mount": "HIDDEN",
+      "size": "SMALL",
+      "type": "MISSILE"
+    },
+    {
+      "angle": -16.5,
+      "arc": 0,
+      "id": "WS0002",
+      "locations": [
+        -4.5,
+        -14.5
+      ],
+      "mount": "HIDDEN",
+      "size": "SMALL",
+      "type": "MISSILE"
+    },
+    {
+      "angle": 0,
+      "arc": 360,
+      "id": "WS0005",
+      "locations": [
+        1,
+        -0
+      ],
+      "mount": "HIDDEN",
+      "size": "SMALL",
+      "type": "ENERGY"
+    },
+    {
+      "angle": 6.5,
+      "arc": 0,
+      "id": "WS0006",
+      "locations": [
+        -2.5,
+        12.5
+      ],
+      "mount": "HIDDEN",
+      "size": "SMALL",
+      "type": "MISSILE"
+    },
+    {
+      "angle": -6.5,
+      "arc": 0,
+      "id": "WS0007",
+      "locations": [
+        -2.5,
+        -12.5
+      ],
+      "mount": "HIDDEN",
+      "size": "SMALL",
+      "type": "MISSILE"
+    }
+  ],
+  "width": 40
+}

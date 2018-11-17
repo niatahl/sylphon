@@ -1,0 +1,24 @@
+{
+	"id":"SRD_variable_ammo",
+	"type":"STAT_MOD",
+	"aiType":"CUSTOM",
+	"aiScript":"data.scripts.shipsystemAI.SRD_VariableAmmoAI",
+	
+	"statsScript":"data.scripts.shipsystems.SRD_VariableAmmo",
+
+	"fadeActivationSoundOnChargedown":true,
+	"useSound":"SRD_ammo_switch",
+	#"loopSound":"system_temporalshell_loop",
+	#"deactivateSound":"system_temporalshell_off",
+	"outOfUsesSound":"gun_out_of_ammo",
+	
+	"aiHints":{
+		"activeSpeedIncrease":0,  # not right since it's ship-dependent, but hopefully close enough
+		"burstMovementPotential":0,
+		"averageSpeedMult":1.0,
+	}
+}
+
+
+
+

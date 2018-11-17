@@ -1,0 +1,21 @@
+{
+  "displayName": "Defender",
+  "fluxCapacitors": 0,
+  "fluxVents": 0,
+  "goalVariant": true,
+  "hullId": "SRD_Spectral",
+  "hullMods": [],
+  "permaMods": [],
+  "quality": 0,
+  "variantId": "SRD_Spectral_defense",
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "SRD_vacuity"
+      }
+    }
+  ],
+  "wings": []
+}

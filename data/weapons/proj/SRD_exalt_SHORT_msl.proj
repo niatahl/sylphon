@@ -1,0 +1,36 @@
+{
+	"id":"SRD_exalt_SHORT_msl",
+	"specClass":"missile",	
+	"missileType":"MISSILE",
+	"sprite":"graphics/sylphon/missiles/SRD_exalt_msl.png",
+	"size":[12,19],	
+	"center":[6,9.5],
+	"collisionRadius":15,
+	"collisionClass":"MISSILE_NO_FF",
+	"explosionColor":[55,105,255,255],  # purely visual, will get a white additively blended core on top of this color
+	"explosionRadius":150, # purely visual
+	"engineSpec":{"turnAcc":500,
+				  "turnRate":300,
+				  "acc":1000,
+				  "dec":500},
+	"engineSlots":[{"id":"ES1",
+					"loc":[-9, 0],
+				    #"style":"MISSILE_HIGH_TECH",
+				    "style":"CUSTOM",
+					"styleSpec":{
+						"mode":"QUAD_STRIP", # PARTICLES or QUAD_STRIP, determines which params are used
+						"engineColor":[255,75,140,255],
+						"contrailDuration":2,
+						"contrailWidthMult":1,
+						"contrailWidthAddedFractionAtEnd":2.5,  # can be negative. makes trail spread out/narrow at the end
+						"contrailMinSeg":15, # min segment length, in pixels
+						"contrailMaxSpeedMult":0.5f,
+						"contrailAngularVelocityMult":0.5f,
+						"contrailColor":[55,105,255,75],
+						"type":"GLOW" # GLOW or SMOKE; additive or regular blend mode
+					},
+				    "width":10.0,
+				    "length":40.0,
+				    "angle":180.0},
+				    ]
+}

@@ -1,0 +1,80 @@
+{
+  "bounds": [
+    -12.5,
+    -11,
+    4,
+    -15.5,
+    12.5,
+    -9,
+    3.5,
+    -4.5,
+    3.5,
+    4.5,
+    12.5,
+    9,
+    4,
+    15.5,
+    -12.5,
+    11
+  ],
+  "builtInMods": [
+    "no_weapon_flux"
+  ],
+  "builtInWings": [],
+  "center": [
+    16,
+    14.5
+  ],
+  "collisionRadius": 27,
+  "engineSlots": [
+    {
+      "angle": 180,
+      "contrailSize": 7,
+      "length": 13,
+      "location": [
+        -14.5,
+        9
+      ],
+      "style": "SRD_MTF_ENGINE",
+      "width": 7
+    },
+    {
+      "angle": -180,
+      "contrailSize": 7,
+      "length": 13,
+      "location": [
+        -14.5,
+        -9
+      ],
+      "style": "SRD_MTF_ENGINE",
+      "width": 7
+    }
+  ],
+  "height": 29,
+  "hullId": "SRD_Misja",
+  "hullName": "Misja",
+  "hullSize": "FIGHTER",
+  "shieldCenter": [
+    0,
+    0
+  ],
+  "shieldRadius": 23.5,
+  "spriteName": "graphics/sylphon/ships/fighters/SRD_Misja.png",
+  "style": "SRD_MTF_TECH",
+  "viewOffset": 0,
+  "weaponSlots": [
+    {
+      "angle": 0,
+      "arc": 45,
+      "id": "WS0001",
+      "locations": [
+        -2.5,
+        -0
+      ],
+      "mount": "TURRET",
+      "size": "MEDIUM",
+      "type": "BALLISTIC"
+    }
+  ],
+  "width": 32
+}

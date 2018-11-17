@@ -1,0 +1,337 @@
+{
+  "bounds": [
+    -166.5,
+    -10,
+    -140.5,
+    -12,
+    -139.5,
+    -21.5,
+    -114.5,
+    -26.5,
+    -114,
+    -33.5,
+    -93.5,
+    -37.5,
+    -106.5,
+    -44,
+    -92.5,
+    -51.5,
+    -98,
+    -58,
+    -90.5,
+    -62,
+    -44.5,
+    -61.5,
+    -39.5,
+    -57,
+    47.5,
+    -57,
+    56.5,
+    -45,
+    45,
+    -39,
+    4.5,
+    -36.5,
+    10.5,
+    -28,
+    70,
+    -24,
+    79.5,
+    -32.5,
+    108.5,
+    -32.5,
+    116,
+    -27,
+    163,
+    -28,
+    166.5,
+    -24,
+    151.5,
+    -8.5,
+    117.5,
+    -7,
+    117.5,
+    7,
+    151.5,
+    8.5,
+    166.5,
+    24,
+    163,
+    28,
+    116,
+    27,
+    108.5,
+    32.5,
+    79.5,
+    32.5,
+    70,
+    24,
+    10.5,
+    28,
+    4.5,
+    36.5,
+    45,
+    39,
+    56.5,
+    45,
+    47.5,
+    57,
+    -39.5,
+    57,
+    -44.5,
+    61.5,
+    -90.5,
+    62,
+    -98,
+    58,
+    -92.5,
+    51.5,
+    -106.5,
+    44,
+    -93.5,
+    37.5,
+    -114,
+    33.5,
+    -114.5,
+    26.5,
+    -139.5,
+    21.5,
+    -140.5,
+    12,
+    -166.5,
+    10
+  ],
+  "builtInMods": [
+    "eccm",
+    "high_maintenance",
+    "SRD_nullspace_conduits"
+  ],
+  "builtInWeapons": {
+    "WS0009": "SRD_equity",
+    "WS0010": "SRD_harrow_alpha",
+    "WS0011": "SRD_harrow_beta"
+  },
+  "builtInWings": [],
+  "center": [
+    84,
+    169.5
+  ],
+  "collisionRadius": 191.5,
+  "engineSlots": [
+    {
+      "angle": 180,
+      "contrailSize": 17,
+      "length": 75.5,
+      "location": [
+        -142.5,
+        17.5
+      ],
+      "style": "SRD_ENGINE",
+      "width": 17
+    },
+    {
+      "angle": -180,
+      "contrailSize": 17,
+      "length": 75.5,
+      "location": [
+        -139.5,
+        -17.5
+      ],
+      "style": "SRD_ENGINE",
+      "width": 17
+    },
+    {
+      "angle": 180,
+      "contrailSize": 15,
+      "length": 73,
+      "location": [
+        -115.5,
+        30.5
+      ],
+      "style": "SRD_ENGINE",
+      "width": 15
+    },
+    {
+      "angle": -180,
+      "contrailSize": 15,
+      "length": 73,
+      "location": [
+        -113,
+        -30.5
+      ],
+      "style": "SRD_ENGINE",
+      "width": 15
+    }
+  ],
+  "height": 339,
+  "hullId": "SRD_Rakia",
+  "hullName": "Rakia",
+  "hullSize": "CRUISER",
+  "shieldCenter": [
+    0,
+    0
+  ],
+  "shieldRadius": 187.5,
+  "spriteName": "graphics/sylphon/ships/SRD_Rakia.png",
+  "style": "SRD_TECH",
+  "viewOffset": 0,
+  "weaponSlots": [
+    {
+      "angle": 30.5,
+      "arc": 105,
+      "id": "WS0001",
+      "locations": [
+        -63,
+        31.5
+      ],
+      "mount": "TURRET",
+      "size": "MEDIUM",
+      "type": "HYBRID"
+    },
+    {
+      "angle": -30.5,
+      "arc": 105,
+      "id": "WS0002",
+      "locations": [
+        -63,
+        -31.5
+      ],
+      "mount": "TURRET",
+      "size": "MEDIUM",
+      "type": "HYBRID"
+    },
+    {
+      "angle": 12.5,
+      "arc": 124,
+      "id": "WS0003",
+      "locations": [
+        -41.5,
+        21
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "ENERGY"
+    },
+    {
+      "angle": -12.5,
+      "arc": 124,
+      "id": "WS0004",
+      "locations": [
+        -41.5,
+        -21
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "ENERGY"
+    },
+    {
+      "angle": 90,
+      "arc": 270,
+      "id": "WS0005",
+      "locations": [
+        -92.5,
+        26
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "ENERGY"
+    },
+    {
+      "angle": -90,
+      "arc": 270,
+      "id": "WS0006",
+      "locations": [
+        -92.5,
+        -26
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "ENERGY"
+    },
+    {
+      "angle": 0,
+      "arc": 0,
+      "id": "WS0009",
+      "locations": [
+        10.5,
+        -0
+      ],
+      "mount": "HARDPOINT",
+      "size": "LARGE",
+      "type": "BUILT_IN"
+    },
+    {
+      "angle": 0,
+      "arc": 0,
+      "id": "WS0010",
+      "locations": [
+        -29,
+        57.5
+      ],
+      "mount": "HARDPOINT",
+      "size": "LARGE",
+      "type": "BUILT_IN"
+    },
+    {
+      "angle": -0,
+      "arc": 0,
+      "id": "WS0011",
+      "locations": [
+        -29,
+        -57.5
+      ],
+      "mount": "HARDPOINT",
+      "size": "LARGE",
+      "type": "BUILT_IN"
+    },
+    {
+      "angle": -180,
+      "arc": 115,
+      "id": "WS0007",
+      "locations": [
+        -77.5,
+        44
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "SYSTEM"
+    },
+    {
+      "angle": 180,
+      "arc": 115,
+      "id": "WS0008",
+      "locations": [
+        -77.5,
+        -44
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "SYSTEM"
+    },
+    {
+      "angle": -157,
+      "arc": 81,
+      "id": "WS0014",
+      "locations": [
+        117.5,
+        -22.5
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "SYSTEM"
+    },
+    {
+      "angle": 157,
+      "arc": 81,
+      "id": "WS0015",
+      "locations": [
+        117.5,
+        22.5
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "SYSTEM"
+    }
+  ],
+  "width": 168
+}

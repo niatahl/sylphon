@@ -1,0 +1,150 @@
+{
+  "bounds": [
+    35.5,
+    -17.5,
+    11,
+    -25,
+    1.5,
+    -35.5,
+    -32,
+    -30,
+    -32,
+    30,
+    1.5,
+    35.5,
+    11,
+    25,
+    35.5,
+    17.5
+  ],
+  "builtInMods": [
+    "SRD_nullspace_conduits",
+    "SRD_sylph_core"
+  ],
+  "builtInWings": [],
+  "center": [
+    38,
+    38
+  ],
+  "collisionRadius": 57.5,
+  "engineSlots": [
+    {
+      "angle": 180,
+      "contrailSize": 9,
+      "length": 33.5,
+      "location": [
+        -33.5,
+        27.5
+      ],
+      "style": "SRD_ENGINE",
+      "width": 9
+    },
+    {
+      "angle": -180,
+      "contrailSize": 9,
+      "length": 33.5,
+      "location": [
+        -33.5,
+        -27.5
+      ],
+      "style": "SRD_ENGINE",
+      "width": 9
+    },
+    {
+      "angle": 180,
+      "contrailSize": 8,
+      "length": 39,
+      "location": [
+        -37,
+        21
+      ],
+      "style": "SRD_ENGINE",
+      "width": 8
+    },
+    {
+      "angle": -180,
+      "contrailSize": 8,
+      "length": 39,
+      "location": [
+        -37,
+        -21
+      ],
+      "style": "SRD_ENGINE",
+      "width": 8
+    },
+    {
+      "angle": 180,
+      "contrailSize": 26,
+      "length": 59.5,
+      "location": [
+        -36.5,
+        -0
+      ],
+      "style": "SRD_ENGINE",
+      "width": 26
+    }
+  ],
+  "height": 81,
+  "hullId": "SRD_Celika",
+  "hullName": "\tCelika",
+  "hullSize": "FRIGATE",
+  "shieldCenter": [
+    0,
+    -0
+  ],
+  "shieldRadius": 52.5,
+  "spriteName": "graphics/sylphon/ships/SRD_Celika.png",
+  "style": "SRD_TECH",
+  "viewOffset": 0,
+  "weaponSlots": [
+    {
+      "angle": 27.5,
+      "arc": 117,
+      "id": "WS0001",
+      "locations": [
+        -3.5,
+        17.5
+      ],
+      "mount": "TURRET",
+      "size": "MEDIUM",
+      "type": "ENERGY"
+    },
+    {
+      "angle": -27.5,
+      "arc": 117,
+      "id": "WS0002",
+      "locations": [
+        -3.5,
+        -17.5
+      ],
+      "mount": "TURRET",
+      "size": "MEDIUM",
+      "type": "ENERGY"
+    },
+    {
+      "angle": 0,
+      "arc": 157,
+      "id": "WS0003",
+      "locations": [
+        19,
+        -0
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "ENERGY"
+    },
+    {
+      "angle": 180,
+      "arc": 72,
+      "id": "WS0004",
+      "locations": [
+        -3,
+        -0
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "SYSTEM"
+    }
+  ],
+  "width": 76
+}

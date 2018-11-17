@@ -1,0 +1,64 @@
+{
+  "displayName": "Finis",
+  "fluxCapacitors": 49,
+  "fluxVents": 50,
+  "goalVariant": true,
+  "hullId": "SRD_Omega_Aeterna",
+  "hullMods": [
+    "fluxdistributor",
+    "magazines",
+    "auxiliarythrusters"
+  ],
+  "permaMods": [],
+  "quality": 0,
+  "variantId": "SRD_Omega_Aeterna_Finis",
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "SRD_goetterdaemmerung",
+        "WS0002": "SRD_goetterdaemmerung"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0015": "sabotpod",
+        "WS0016": "sabotpod"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0003": "SRD_zealot",
+        "WS0004": "SRD_zealot",
+        "WS0005": "SRD_zealot",
+        "WS0006": "SRD_zealot",
+        "WS0017": "SRD_paratach"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0007": "SRD_venn",
+        "WS0008": "SRD_venn",
+        "WS0009": "SRD_venn",
+        "WS0010": "SRD_venn",
+        "WS0011": "SRD_venn",
+        "WS0012": "SRD_venn",
+        "WS0013": "SRD_venn",
+        "WS0014": "SRD_venn"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {}
+    }
+  ],
+  "wings": []
+}

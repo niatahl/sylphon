@@ -1,0 +1,19 @@
+{
+	"id":"SRD_ablution_shot",
+	"specClass":"projectile",
+	"spawnType":"BALLISTIC_AS_BEAM",
+	"collisionClass":"RAY",
+	"collisionClassByFighter":"RAY_FIGHTER",
+	"length":50.0,
+	"width":5,
+	"fadeTime":0.1,
+	"coreColor": [255,255,255,255],
+	"fringeColor": [255,25,155,185],
+	"glowColor": [255,100,200,185],
+	"glowRadius":10,
+	"hitGlowRadius":10,	
+	"textureType":"WEAVE",  # now also used for "BALLISTIC_AS_BEAM", if specified
+	#"textureType":["graphics/sylphon/fx/emp_arcs.png","graphics/sylphon/fx/emp_arcs.png"],
+	"textureScrollSpeed":-64,
+	"pixelsPerTexel":1.0,
+}

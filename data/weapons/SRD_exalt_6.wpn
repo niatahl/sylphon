@@ -1,0 +1,51 @@
+{
+  "animationType": "SMOKE",
+  "barrelMode": "ALTERNATING",
+  "fireSoundTwo": "SRD_exalt_fire",
+  "everyFrameEffect": "data.scripts.weapons.SRD_ExaltScript",
+  "hardpointAngleOffsets": [
+    0,
+    0
+  ],
+  "hardpointOffsets": [
+    18,
+    7.5,
+    18,
+    -7.5
+  ],
+  "hardpointSprite": "graphics/sylphon/weapons/SRD_exalt_6_hp.png",
+  "id": "SRD_exalt_6",
+  "projectileSpecId": "SRD_exalt_LONG_msl",
+  "size": "MEDIUM",
+  "smokeSpec": {
+    "blowbackDuration": 2,
+    "blowbackLength": 30,
+    "blowbackParticleCount": 3,
+    "blowbackSpread": 10,
+    "cloudDuration": 1,
+    "cloudParticleCount": 3,
+    "cloudRadius": 5,
+    "particleColor": [
+      255,
+      255,
+      255,
+      200
+    ],
+    "particleSizeMin": 20,
+    "particleSizeRange": 20
+	},
+  "specClass": "projectile",
+  "textureType": ROUGH,
+  "turretAngleOffsets": [
+    0,
+    0
+  ],
+  "turretOffsets": [
+    14,
+    7.5,
+    14,
+    -7.5
+  ],
+  "turretSprite": "graphics/sylphon/weapons/SRD_exalt_6_turret.png",
+  "type": "MISSILE"
+}

@@ -1,0 +1,93 @@
+{
+    	"playableFaction":true,
+    	"corvusCompatible":true,
+		
+		"directoryUseShortName":true,
+    
+    	"baseFleetCostMultiplier":1.1,
+
+    	"customRebelFaction":"",
+    	"customRebelFleetId":"",
+    	"rebelFleetSuffix":"Rebel",
+    
+    	"marketSpawnWeight":0.85,
+    
+    	"invasionPointMult": 0.85,
+    
+    	"allowPrisoners": true,
+    	"dropPrisoners": false,
+
+    	"invasionFleetName": "Conversion Fleet",
+    	"defenceFleetName": "Guardian Fleet",
+    	"vengeanceFleetNames":["Purging Fleet"],
+    	"vengeanceFleetNamesSingle":["a Purging Fleet"],
+	
+	"startRelationships":{
+		"hegemony": -0.20, #They don't like AIs, but they are also big and scary
+		"tritachyon": 0.60, #Long time business partners
+		"pirates": -0.70,  #Pirates, duh
+		"independent": 0.20,  #Lots of independent governments are SRD customers
+		"luddic_church": -0.60,	#Not a fan
+		"luddic_path": -1.00, #even less of a fan
+		"sindrian_diktat": -0.10, #dictators are sooo touchy
+		"remnant": 0.00, #family
+		"new_galactic_order": -0.49, #better stay quiet in your corner, Nazis
+		"interstellarimperium": -0.40, #aka the bitchy hegemony
+        "SCY": 0.00, #live and let live
+        "shadow_industry": 0.25, #aesthetically pleasing and one of the Sylphon CEOs follows Shadowy's art blog
+        "tiandong": 0.00, #we're professionals here
+        "exigency": -0.90, #AI haters, nuff said
+        "ORA": 0.40, #teampurple
+        "Coalition": -0.60, #they say Sylphon directors can be eccentric, but starting a war cause you don't like mint-green? well, here goes
+        "nomads": -0.30, #bad customers and they keep showing up where they aren't supposed to
+        "fringe_defence_syndicate": 0.00, #unlike certain people, Sylphon have no issues with spacewedges
+        "fob": 1, #yay tentacles???
+        "diableavionics": 0.00, #We're not getting involved in politics here
+        "junk_pirates": -0.70, #more pirates
+        "syndicate_asp": -0.70, #even more pirates
+        "sad": -0.70, #weird pirates
+        "dassault_mikoyan": 0.50, #science buddies
+        "blade_breakers": -0.70, #they have style, sad they are assholes
+        "blackrock_driveyards": 0.20, #team weird interdimensional technology 
+        "crystanite": 0.20, #shiny
+        "vass_shipyards": 0.40, #can't hurt to be friends with the time travelers
+		"exlane": -0.50, #removing that green paintjob with laser burns if need be
+	},
+	"maxRelationships":{
+		"hegemony": 0.00, #we can never be friends
+		"tritachyon": 0.70, #you just can't fully trust them
+        "new_galactic_order": -0.40, #just stay quiet
+        "interstellarimperium": 0.00, #we can't be friends either
+        "exigency": -0.60, #to the death
+	},
+	"diplomacyPositiveChance":{
+		"hegemony": 0.5, #they are so suspicious
+		"new_galactic_order": 0.1, #yeah I don't think so
+		"tritachyon": 0.8, #a tense relationship at times
+		"luddic_church": 0.4, #fuck off
+		"luddic_path": 0.2, #fuck off even more
+	};
+	"diplomacyNegativeChance":{
+		"new_galactic_order": 2, #we are watching
+		"exigency": 1.5, #stubborn people that
+		"exlane": 1.5, #that green is just irritating
+	};
+	"morality":"neutral",	
+    
+    	"alignments":{
+        	"technocratic":1.0,
+        	"corporate":0.5,
+        	"diplomatic":0.3,
+    	},
+    
+		"startShipsSolo":["SRD_Furika_standard"],
+    	"startShipsCombatSmall":["SRD_Silverhead_standard", "SRD_Catora_standard", "SRD_Catora_standard"],
+		"startShipsCarrierSmall":["SRD_Tilia_standard", "SRD_Catora_standard", "SRD_Celika_beamer"],
+    	"startShipsTradeSmall":["SRD_Buffalo_standard", "SRD_Hymnon_escort"],
+    	"startShipsCombatLarge":["SRD_Eagle_standard", "SRD_Tarima_standard", "SRD_Celika_standard"],
+		"startShipsCarrierLarge":["SRD_Eolia_standard", "SRD_Silverhead_standard", "SRD_Furika_standard", "SRD_Celika_heavy"],
+    	"startShipsTradeLarge":["SRD_Mariana_cargo_standard", "SRD_Mariana_fuel_standard", "SRD_Hubris_support", "SRD_Hymnon_escort", "SRD_Hymnon_escort"],
+		"startShipsSuper":[["SRD_Ascordia_prototype"],["SRD_Rakia_flag","SRD_Buffalo_standard"],["SRD_Eagle_P_balanced"]],
+		
+		"defenceStations":["remnant_station2_sylphon"],
+}

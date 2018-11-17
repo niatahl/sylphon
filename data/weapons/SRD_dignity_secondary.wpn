@@ -1,0 +1,41 @@
+{
+  "animationType": "MUZZLE_FLASH",
+  "barrelMode": "ALTERNATING",
+  "fireSoundTwo": "SRD_embrace_fire",
+  "hardpointAngleOffsets": [
+    0
+  ],
+  "hardpointOffsets": [
+    8,
+    0
+  ],
+  "hardpointSprite": "graphics/sylphon/weapons/SRD_dignity_hardpoint.png",
+  "id": "SRD_dignity_secondary",
+  "muzzleFlashSpec": {
+    "length": 30,
+    "particleColor": [
+      255,
+      55,
+      205,
+      205
+    ],
+    "particleCount": 10,
+    "particleDuration": 0.5,
+    "particleSizeMin": 10,
+    "particleSizeRange": 10,
+    "spread": 15
+  },
+  "projectileSpecId": "SRD_dignity_secondary_shot",
+  "size": "MEDIUM",
+  "specClass": "projectile",
+  "textureType": ROUGH,
+  "turretAngleOffsets": [
+    0
+  ],
+  "turretOffsets": [
+    6,
+    0
+  ],
+  "turretSprite": "graphics/sylphon/weapons/SRD_dignity_turret.png",
+  "type": "ENERGY"
+}

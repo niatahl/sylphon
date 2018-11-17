@@ -1,0 +1,52 @@
+{
+  "animationType": "GLOW_AND_FLASH",
+  "barrelMode": "LINKED",
+  "separateRecoilForLinkedBarrels":"TRUE",
+  "fireSoundTwo": "SRD_zealot_fire",
+  "everyFrameEffect": "data.scripts.weapons.SRD_IndulgenceScript",
+  "glowColor": [
+    0,
+    155,
+    255,
+    155
+  ],
+  "hardpointAngleOffsets": [
+    0,
+    0,
+  ],
+  "hardpointGlowSprite": "graphics/sylphon/weapons/SRD_indulgence_hp_glow.png",
+  "hardpointOffsets": [
+    5.5,
+    0,
+    5.5,
+    0
+  ],
+  "muzzleFlashSpec": {
+    "length": 35,
+    "particleColor":[50,155,255,105],
+    "particleCount": 3,
+    "particleDuration": 0.5,
+    "particleSizeMin": 15,
+    "particleSizeRange": 20,
+    "spread": 20,
+  },
+  "hardpointSprite": "graphics/sylphon/weapons/SRD_indulgence_hp_base.png",
+  "id": "SRD_indulgence",
+  "projectileSpecId": "SRD_indulgence_shot",
+  "size": "MEDIUM",
+  "specClass": "projectile",
+  "textureType": ROUGH,
+  "turretAngleOffsets": [
+    0,
+    0,
+  ],
+  "turretGlowSprite": "graphics/sylphon/weapons/SRD_indulgence_turret_glow.png",
+  "turretOffsets": [
+    6.5,
+    0,
+    6.5,
+    0
+  ],
+  "turretSprite": "graphics/sylphon/weapons/SRD_indulgence_turret_base.png",
+  "type": "ENERGY"
+}

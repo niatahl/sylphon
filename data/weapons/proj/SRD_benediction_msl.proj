@@ -1,0 +1,53 @@
+{
+	"id":"SRD_benediction_msl",
+	"specClass":"missile",
+	"missileType":"ROCKET",
+	"sprite":"graphics/sylphon/missiles/SRD_benediction_msl.png",
+	"onHitEffect":"data.scripts.weapons.SRD_BenedictionOnHitEffect",
+	"size":[5,19],	
+	"center":[2.5,9.5],
+	"collisionRadius":15,
+	"collisionClass":"MISSILE_FF",
+	"explosionColor":[200,0,255,35],  # purely visual, will get a white additively blended core on top of this color
+	"explosionRadius":20, # purely visual
+	"explosionSpec":{"duration":0.1f, # not visual
+					 "radius":175,
+					 "coreRadius":100, # full damage within core radius
+					 "collisionClass":HITS_SHIPS_AND_ASTEROIDS,
+					 "collisionClassByFighter":HITS_SHIPS_AND_ASTEROIDS,
+					 "particleSizeMin":6.0,
+					 "particleSizeRange":4.0,
+					 "particleDuration":1,
+					 "particleCount":2,
+					 "particleColor":[200,0,255,0]},
+	"flameoutTime":2, # total time from flameout to full fadeout
+	"noEngineGlowTime":0.5, # time spent without the engine glow being rendered
+	"fadeTime":0.7, # fadeout duration					 
+	"armingTime":0.5,
+	"engineSpec":{"turnAcc":0,
+				  "turnRate":0,
+				  "acc":800,
+				  "dec":500},
+	"engineSlots":[{"id":"ES1",
+					"loc":[-9.5, 0],
+				    "style":"CUSTOM",
+					"styleSpec":{
+						"mode":"QUAD_STRIP", # PARTICLES or QUAD_STRIP, determines which params are used
+						"engineColor":[250,100,255,225],
+						"contrailDuration":1.5,
+						"contrailWidthMult":2.5,
+						"contrailWidthAddedFractionAtEnd":0,  # can be negative. makes trail spread out/narrow at the end
+						"contrailMinSeg":10, # min segment length, in pixels
+						"contrailMaxSpeedMult":0f,
+						"contrailAngularVelocityMult":0.5f,
+						"contrailSpawnDistMult":0f, # how far away from engine it starts
+						"contrailColor":[0,0,0,185],
+						"glowSizeMult":2,
+						"glowAlternateColor":[250,0,255,225],
+						"type":"SMOKE" # GLOW or SMOKE; additive or regular blend mode
+					},
+				    "width":8.0,
+				    "length":100.0,
+				    "angle":180.0}]
+}
+			

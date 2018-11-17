@@ -1,0 +1,52 @@
+{
+  "displayName": "Standard",
+  "fluxCapacitors": 5,
+  "fluxVents": 19,
+  "goalVariant": true,
+  "hullId": "SRD_Hubris",
+  "hullMods": [],
+  "permaMods": [],
+  "quality": 0,
+  "variantId": "SRD_Hubris_standard",
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0009": "SRD_raphiel",
+        "WS0010": "SRD_raphiel",
+        "WS0011": "SRD_raphiel_pod",
+        "WS0012": "SRD_raphiel_pod"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0005": "SRD_embrace",
+        "WS0006": "SRD_embrace",
+        "WS0007": "SRD_embrace",
+        "WS0008": "SRD_embrace"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "SRD_venn",
+        "WS0002": "SRD_venn",
+        "WS0003": "SRD_clemency",
+        "WS0004": "SRD_clemency"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {}
+    }
+  ],
+  "wings": [
+    "SRD_Eos_fighter_wing",
+    "SRD_Eos_fighter_wing"
+  ]
+}

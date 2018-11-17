@@ -1,0 +1,16 @@
+{
+"faction":"nullorder",
+"firstname":"The",
+"lastname":"Word of Null",
+"gender":"M",
+"officerlevel":20,
+"mainShip":"SRD_Omega_Aeterna_null_flag",
+"ships":["SRD_Seresvalla_elite","2","SRD_Equilibrium_missile","2","SRD_Finis_Astra_standard","2"],
+"randomFleet":true,
+"combatPoints":200,
+"reward":8000000,
+"needBounty":"SRD_SecondOrder",
+"description":"This is the final act. Bring down the self-proclaimed Word of Null ...if you can.",
+"dialog":"You stand before the Word of Null. Be judged and sentenced in the name of his great nihility!",
+"avatar":"graphics/sylphon/portraits/portrait_nullorder.png",
+}

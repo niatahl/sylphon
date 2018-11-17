@@ -1,0 +1,52 @@
+{
+  "displayName": "Support",
+  "fluxCapacitors": 6,
+  "fluxVents": 20,
+  "goalVariant": true,
+  "hullId": "SRD_Etrika",
+  "hullMods": [
+    "targetingunit"
+  ],
+  "permaMods": [],
+  "quality": 0,
+  "variantId": "SRD_Etrika_support",
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0009": "SRD_skalla"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0001": "SRD_zealot",
+        "WS0002": "SRD_zealot"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0003": "SRD_largesse",
+        "WS0004": "SRD_largesse"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0007": "SRD_venn",
+        "WS0008": "SRD_venn"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {}
+    }
+  ],
+  "wings": []
+}

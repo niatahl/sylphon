@@ -1,0 +1,319 @@
+{
+	id:"sylphon",
+	"color":[190,0,255,255],
+	"secondaryUIColor":[145,171,255,255],
+	        "secondarySegments":6,
+	"displayName":"Sylphon RnD",
+	"displayNameWithArticle":"Sylphon RnD",
+	"displayNameLong":"Sylphon Research and Development",
+	"displayNameLongWithArticle":"Sylphon Research and Development",
+	"logo":"graphics/sylphon/factions/sylphon.png",
+	"crest":"graphics/sylphon/factions/crest_sylphon.png",
+	"shipNamePrefix":"SRD",
+	"shipNameSources":{
+		"JAPANESE":1
+	},
+	"description":"No description yet.",
+	"names":{
+		"modern":1,
+		"world":1,
+		"future":1,
+		"myth":1,
+	},
+	"hullMods":[
+		"advancedshieldemitter",
+		"advancedoptics",
+		"turretgyros",
+		"auxiliarythrusters",
+		"dedicated_targeting_core",
+		"eccm",
+		"missleracks",
+		"extendedshieldemitter",
+		"fluxcoil",
+		"fluxdistributor",
+		"frontemitter",
+		"frontshield",
+		"hardenedshieldemitter",
+		"hardened_subsystems",
+		"targetingunit",
+		"adaptiveshields",
+		"fluxbreakers",
+		"stabilizedshieldemitter",
+		"operations_center",
+		"nav_relay",
+		"ecm",
+		"SRD_modular_nullspace_conduits",
+		"SRD_prototype_miniature_nullspace_shunt",
+		"SRD_prototype_nullpoint_shield",
+		"SRD_prototype_local_stabilizer"
+	],
+	"illegalCommodities":[
+	],
+	"music":{
+		"theme":"music_tritach_encounter_neutral",
+		"market_neutral":"music_tritach_market_neutral",
+		"market_hostile":"music_tritach_market_hostile",
+		"market_friendly":"music_tritach_market_friendly",
+		"encounter_neutral":"music_tritach_encounter_neutral",
+		"encounter_hostile":"music_tritach_encounter_hostile",
+		"encounter_friendly":"music_tritach_encounter_friendly",
+	},
+	"internalComms":"sylphon_internal",
+	"portraits":{
+		"standard_male":[
+			"graphics/sylphon/portraits/portrait_sylphon1.png",
+		],
+		"standard_female":[
+			"graphics/sylphon/portraits/portrait_sylphon1.png",
+		],
+	},
+	"ranks":{
+		"ranks":{
+			"spaceCommander":{"name":"Radiant"},
+		},
+		"posts":{
+			"patrolCommander":{"name":"Seeker"},
+			"fleetCommander":{"name":"Traveler"},
+			"baseCommander":{"name":"Guardian"},
+		},
+	},
+	"custom":{
+		"offersCommissions":true,
+		"engagesInHostilities":false,
+		"buysAICores":true,
+		"AICoreValueMult":4,
+		"AICoreRepMult":2,
+		"buysSurveyData":true,
+	},	
+	"shipRoles":{
+		"fastAttack":{
+			"SRD_Furika_standard":10,
+			"SRD_Furika_beamer":10,
+			"SRD_Celika_standard":10,
+			"SRD_Celika_heavy":10,
+			"SRD_Catora_standard":10,
+			"SRD_Celika_beamer":10,
+			"SRD_Catora_prototype":5,
+			"fallback":{"combatSmall":1},
+		},
+	
+		"escortSmall":{
+			"SRD_Furika_standard":10,
+			"SRD_Furika_beamer":10,
+			"SRD_Celika_standard":10,
+			"SRD_Celika_heavy":10,
+			"fallback":{"combatSmall":1},
+		},
+		"escortMedium":{
+			"SRD_Silverhead_standard":5,
+			"SRD_Tarima_standard":5,
+			"SRD_Hymnon_standard":10,
+			"SRD_Hymnon_escort":10,
+			"SRD_Etrika_support":5,
+			"fallback":{"combatMedium":1},
+		},
+		"combatSmall":{
+			"SRD_Furika_standard":5,
+			"SRD_Celika_standard":10,
+			"SRD_Celika_heavy":10,
+			"SRD_Catora_standard":10,
+			"SRD_Catora_prototype":5,
+			
+			"SRD_Celika_P_standard":2,
+			"SRD_Celika_P_balanced":3,
+			
+			"fallback":{"escortSmall":1},
+		},
+		"combatMedium":{
+			"SRD_Silverhead_standard":10,
+			"SRD_Tarima_standard":5,
+			"SRD_Tarima_assault":5,
+			"SRD_Hymnon_standard":5,
+			"SRD_Etrika_standard":10,
+			"SRD_Etrika_support":2,
+			"fallback":{"combatSmall":2},
+		},
+		"combatLarge":{
+			"SRD_Eagle_standard":10,
+			"SRD_Eagle_strike":10,
+			"SRD_Eagle_prototype":3,
+			"SRD_Okarra_standard":10,
+			"SRD_Okarra_assault":10,
+			"SRD_Valestri_standard":10,
+			"SRD_Rakia_standard":2,
+			"SRD_Ascordia_standard":10,
+			"SRD_Ascordia_prototype":5,
+			
+			"SRD_Eagle_P_standard":2,
+			"SRD_Eagle_P_balanced":3,
+			
+			"fallback":{"combatMedium":2},
+		},
+		"combatCapital":{
+			"SRD_Equilibrium_standard":10,
+			"SRD_Equilibrium_missile":7,
+			"SRD_Equilibrium_prototype":5,
+			"SRD_Equilibrium_exalted":7,
+			"SRD_Finis_Astra_standard":2,
+			"SRD_Seresvalla_standard":10,
+			"SRD_Seresvalla_elite":5,
+			"SRD_Seresvalla_barrage":5,
+			"SRD_Replekia_andromeda":5,
+			
+			"SRD_Metafalica_standard":3,
+			
+			"fallback":{"combatLarge":2},
+		},
+		
+		# hybrid ships with good combat and cargo capacity
+		"combatFreighterSmall":{
+			"fallback":{"freighterSmall":1},
+		},
+		"combatFreighterMedium":{
+			"fallback":{"combatFreighterSmall":2},
+		},
+		"combatFreighterLarge":{
+			"fallback":{"combatFreighterMedium":2},
+		},
+		
+		"civilianRandom":{
+			"mercury_d_Standard":8,
+			"hermes_d_Standard":10,
+			"starliner_Standard":10,
+			"nebula_Standard":10,
+			"mudskipper_Standard":10,
+			"mercury_Attack":3,
+			"mercury_PD":3,
+			"mercury_FS":3,
+			"mercury_Standard":3,
+			"hermes_Standard":10,
+			"kite_Stock":1,
+			"colossus_Standard":1,
+			#"odyssey_Balanced":1,
+			"fallback":{"freighterSmall":1},
+		},
+	
+	
+		# carriers
+		"carrierSmall":{
+			"SRD_Tilia_standard":10,
+			"SRD_Tilia_strike":10,
+			"fallback":{"carrierMedium":0.5},
+		},
+		"carrierMedium":{
+			"SRD_Hubris_standard":10,
+			"SRD_Hubris_support":10,
+			"SRD_Eolia_standard":10,
+			"SRD_Eolia_strike":10,
+			"fallback":{"carrierSmall":2},
+		},
+		"carrierLarge":{
+			"SRD_Frelia_combat":10,
+			"SRD_Frelia_strike":10,
+			"fallback":{"carrierMedium":2},
+		},
+	
+		# freighters and such
+		"freighterSmall":{
+			"fallback":{"freighterMedium":0.5},
+		},
+		"freighterMedium":{
+			"SRD_Buffalo_standard":10,
+			"fallback":{"freighterSmall":2},
+		},
+		"freighterLarge":{
+			"SRD_Mariana_cargo_standard":10,
+			"fallback":{"freighterMedium":2},
+		},
+		
+		"tankerSmall":{
+			"dram_Light":10,
+			"fallback":{"tankerMedium":0.5},
+		},
+		"tankerMedium":{
+			"phaeton_Standard":10,
+			"fallback":{"tankerSmall":2},
+		},
+		"tankerLarge":{
+			"SRD_Mariana_fuel_standard":10,
+			"fallback":{"tankerMedium":2},
+		},
+		
+		"personnelSmall":{
+			"mercury_d_Standard":8,
+			"mercury_Attack":3,
+			"mercury_PD":3,
+			"mercury_Standard":3,
+			"mercury_FS":3,
+			"kite_Stock":10,
+			"fallback":{"personnelMedium":0.5},
+		},
+		"personnelMedium":{
+			"valkyrie_Elite":10,
+			"nebula_Standard":2,
+			"fallback":{"personnelSmall":2},
+		},
+		"personnelLarge":{
+			"fallback":{"personnelMedium":2},
+		},
+		
+		# utility ships
+		"tug":{
+			"ox_Standard":10,
+			"fallback":{"utility":1},
+		},
+		"crig":{
+			"crig_Standard":10,
+			"fallback":{"utility":1},
+		},
+		"utility":{
+			"crig_Standard":10,
+			"ox_Standard":10,
+		},
+	},
+	"traits":{
+		"captain":{
+			"timid":0,
+			"cautious":5,
+			"steady":10,
+			"aggressive":10,
+			"reckless":5,
+		},
+	},
+	"doctrine":{
+		# ship distribution
+		"small":10,
+		"fast":10,
+		"medium":8,
+		"large":5,
+		"capital":2,
+		
+		# as fraction of combat ships of same size
+		"escortSmallFraction":1,
+		"escortMediumFraction":1,
+		
+		# freighters tend not to be combat-oriented
+		"combatFreighterProbability":0.15,
+			
+		# tend toward larger ships
+		"minPointsForCombatCapital":17,
+		"minPointsForLargeCarrier":15,
+		
+		# officers ; TriTachyon is somewhat elite
+		"officersPerPoint":0.45,
+		"officerLevelPerPoint":0.4,
+		"officerLevelBase":7,
+		"officerLevelVariance":0.35,
+		
+		"commanderSkillsPerLevel":0.2,
+		"commanderSkillChance":0.5,
+		"commanderSkillLevelPerLevel":0.3,
+		"commanderSkills":{
+			"officer_management":2,
+			"coordinated_maneuvers":7,
+			"flux_modulation":10,
+			"defensive_systems":10,
+		},
+	},
+},
+

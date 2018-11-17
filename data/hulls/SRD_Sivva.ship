@@ -1,0 +1,85 @@
+{
+  "bounds": [
+    -8,
+    -12,
+    10.5,
+    -4.5,
+    10.5,
+    4.5,
+    -8,
+    12,
+    -15.5,
+    -0
+  ],
+  "builtInMods": [
+    "no_weapon_flux"
+  ],
+  "builtInWings": [],
+  "center": [
+    13,
+    16.5
+  ],
+  "collisionRadius": 26.5,
+  "engineSlots": [
+    {
+      "angle": 180,
+      "contrailSize": 9,
+      "length": 25,
+      "location": [
+        -16,
+        -0
+      ],
+      "style": "SRD_ENGINE",
+      "width": 9
+    },
+    {
+      "angle": 160,
+      "contrailSize": 7.424271,
+      "length": 14.653329,
+      "location": [
+        -13.5,
+        7
+      ],
+      "style": "SRD_ENGINE",
+      "width": 7.424271
+    },
+    {
+      "angle": -160,
+      "contrailSize": 7.424271,
+      "length": 14.653329,
+      "location": [
+        -13.5,
+        -7
+      ],
+      "style": "SRD_ENGINE",
+      "width": 7.424271
+    }
+  ],
+  "height": 33,
+  "hullId": "SRD_Sivva",
+  "hullName": "Sivva",
+  "hullSize": "FIGHTER",
+  "shieldCenter": [
+    0,
+    0
+  ],
+  "shieldRadius": 23,
+  "spriteName": "graphics/sylphon/ships/fighters/SRD_Sivva.png",
+  "style": "SRD_TECH",
+  "viewOffset": 0,
+  "weaponSlots": [
+    {
+      "angle": 0,
+      "arc": 0,
+      "id": "WS0001",
+      "locations": [
+        -2,
+        -0
+      ],
+      "mount": "HARDPOINT",
+      "size": "SMALL",
+      "type": "ENERGY"
+    }
+  ],
+  "width": 26
+}

@@ -1,0 +1,37 @@
+{
+  "animationType": "GLOW",
+  "barrelMode": "ALTERNATING",
+  "everyFrameEffect": "data.scripts.weapons.SRD_EvocationBoltScript",
+  "fireSoundOne": "SRD_evocation_shot",
+  "autocharge":true,  # whether the weapon will continue charging and fire if the LMB is tapped instead of held
+  "glowColor": [
+    255,
+    55,
+    155,
+    255
+  ],
+  "hardpointAngleOffsets": [
+    0
+  ],
+  "hardpointGlowSprite": "graphics/sylphon/weapons/SRD_evocation_glow.png",
+  "hardpointOffsets": [
+    9,
+    0
+  ],
+  "hardpointSprite": "graphics/sylphon/weapons/SRD_evocation.png",
+  "id": "SRD_evocation",
+  "projectileSpecId": "SRD_clemency_dummy",
+  "size": "LARGE",
+  "specClass": "projectile",
+  "textureType": ROUGH,
+  "turretAngleOffsets": [
+    0
+  ],
+  "turretGlowSprite": "graphics/sylphon/weapons/SRD_evocation_glow.png",
+  "turretOffsets": [
+    0,
+    0
+  ],
+  "turretSprite": "graphics/sylphon/weapons/SRD_evocation_t.png",
+  "type": "ENERGY"
+}

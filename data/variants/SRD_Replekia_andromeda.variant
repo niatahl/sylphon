@@ -1,0 +1,57 @@
+{
+    "displayName": "Andromeda",
+    "fluxCapacitors": 13,
+    "fluxVents": 50,
+    "hullId": "SRD_Replekia",
+	"goalVariant": true,
+    "hullMods": [
+        "targetingunit",
+        "auxiliarythrusters",
+        "hardenedshieldemitter"
+    ],
+    "permaMods": [],
+    "quality": 0.5,
+    "variantId": "SRD_Replekia_andromeda",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0001": "SRD_skalla",
+                "WS0002": "SRD_skalla",
+                "WS0003": "SRD_skalla"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0004": "SRD_charity",
+                "WS0006": "SRD_excogitation",
+                "WS0007": "SRD_excogitation",
+                "WS0018": "SRD_excogitation",
+                "WS0019": "SRD_excogitation"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0005": "SRD_vacuity",
+                "WS0008": "SRD_vacuity",
+                "WS0009": "SRD_vacuity",
+                "WS0010": "SRD_vacuity",
+                "WS0011": "SRD_vacuity",
+                "WS0012": "SRD_vacuity",
+                "WS0013": "SRD_vacuity",
+                "WS0014": "SRD_vacuity",
+                "WS0015": "SRD_vacuity",
+                "WS0016": "SRD_vacuity",
+                "WS0017": "SRD_vacuity",
+                "WS0020": "SRD_vacuity",
+                "WS0021": "SRD_vacuity"
+            }
+        }
+    ],
+    "wings": []
+}

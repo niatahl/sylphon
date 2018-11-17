@@ -1,0 +1,35 @@
+{
+  "animationType": "GLOW",
+  "barrelMode": "ALTERNATING",
+  "fireSoundTwo": "SRD_excogitation_fire",
+  "glowColor": [
+    105,
+    0,
+    255,
+    255
+  ],
+  "hardpointAngleOffsets": [
+    0
+  ],
+  "hardpointGlowSprite": "graphics/sylphon/weapons/SRD_excogitation_hp_glow.png",
+  "hardpointOffsets": [
+    -1.5,
+    0
+  ],
+  "hardpointSprite": "graphics/sylphon/weapons/SRD_excogitation_hp_base.png",
+  "id": "SRD_excogitation",
+  "projectileSpecId": "SRD_excogitation_shot",
+  "size": "SMALL",
+  "specClass": "projectile",
+  "textureType": ROUGH,
+  "turretAngleOffsets": [
+    0
+  ],
+  "turretGlowSprite": "graphics/sylphon/weapons/SRD_excogitation_turret_glow.png",
+  "turretOffsets": [
+    -4,
+    0
+  ],
+  "turretSprite": "graphics/sylphon/weapons/SRD_excogitation_turret_base.png",
+  "type": "ENERGY"
+}

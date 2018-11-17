@@ -1,0 +1,52 @@
+{
+  "collisionClass": "RAY",
+  "collisionClassByFighter": "RAY_FIGHTER",
+  "coreColor": [
+    255,
+    230,
+    250,
+    255
+  ],
+  "darkCore": false,
+  "beamEffect":"data.scripts.weapons.SRD_GotterdammerungNewScript",
+  "everyFrameEffect": "data.scripts.weapons.SRD_GotterdammerungGlowManagerScript",
+  #"fireSoundTwo": "tachyon_lance_fire",
+  "fringeColor": [
+    255,
+    50,
+    240,
+    205
+  ],
+  "glowColor": [
+    255,
+    80,
+    240,
+    255
+  ],
+  "hardpointAngleOffsets": [
+    0
+  ],
+  "hardpointOffsets": [
+    0,
+    0
+  ],
+  "hardpointSprite": "graphics/sylphon/weapons/SRD_goetterdaemmerung_hardpoint.png",
+  "hitGlowRadius": 0,
+  "id": "SRD_goetterdaemmerung",
+  "pixelsPerTexel": 4,
+  "size": "LARGE",
+  "specClass": "beam",
+  "textureScrollSpeed": 600,
+  #"textureType":WEAVE,
+  "textureType": ["graphics/sylphon/fx/SRD_sepri_beam_fringe.png","graphics/sylphon/fx/SRD_largesse_beam_core.png"],
+  "turretAngleOffsets": [
+    0
+  ],
+  "turretOffsets": [
+    -5,
+    0
+  ],
+  "turretSprite": "graphics/sylphon/weapons/SRD_goetterdaemmerung_turret.png",
+  "type": "ENERGY",
+  "width": 40
+}

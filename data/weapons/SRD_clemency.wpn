@@ -1,0 +1,36 @@
+{
+  "animationType": "GLOW",
+  "barrelMode": "ALTERNATING",
+  "everyFrameEffect": "data.scripts.weapons.SRD_SmartBoltScript",
+  "fireSoundTwo": "tachyon_lance_emp_impact",
+  "glowColor": [
+    155,
+    55,
+    255,
+    255
+  ],
+  "hardpointAngleOffsets": [
+    0
+  ],
+  "hardpointGlowSprite": "graphics/sylphon/weapons/SRD_clemency_hardpoint_glow.png",
+  "hardpointOffsets": [
+    13,
+    0
+  ],
+  "hardpointSprite": "graphics/sylphon/weapons/SRD_clemency_hardpoint.png",
+  "id": "SRD_clemency",
+  "projectileSpecId": "SRD_clemency_dummy",
+  "size": "MEDIUM",
+  "specClass": "projectile",
+  "textureType": ROUGH,
+  "turretAngleOffsets": [
+    0
+  ],
+  "turretGlowSprite": "graphics/sylphon/weapons/SRD_clemency_turret_glow.png",
+  "turretOffsets": [
+    8,
+    0
+  ],
+  "turretSprite": "graphics/sylphon/weapons/SRD_clemency_turret.png",
+  "type": "ENERGY"
+}

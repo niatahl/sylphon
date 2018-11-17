@@ -1,0 +1,63 @@
+{
+    "displayName": "Strike",
+    "fluxCapacitors": 0,
+    "fluxVents": 45,
+	"goalVariant": true,
+    "hullId": "SRD_Frelia",
+    "hullMods": ["targetingunit"],
+    "permaMods": [],
+    "quality": 0.5,
+    "variantId": "SRD_Frelia_strike",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0005": "SRD_harmonius",
+                "WS0006": "SRD_harmonius"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0009": "SRD_raphiel",
+                "WS0010": "SRD_raphiel",
+                "WS0011": "SRD_raphiel",
+                "WS0012": "SRD_raphiel"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0001": "SRD_charity",
+                "WS0002": "SRD_charity"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0013": "SRD_enkindle",
+                "WS0014": "SRD_enkindle"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0003": "SRD_clemency",
+                "WS0004": "SRD_clemency",
+                "WS0007": "SRD_venn",
+                "WS0008": "SRD_venn"
+            }
+        }
+    ],
+    "wings": [
+        "SRD_Sadri_bomber_wing",
+        "SRD_Sadri_bomber_wing",
+        "SRD_Sadri_bomber_wing",
+        "SRD_Sadri_bomber_wing"
+    ]
+}

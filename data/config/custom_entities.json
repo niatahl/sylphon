@@ -1,0 +1,46 @@
+{
+	"SRD_ozma_station":{
+		"defaultName":"Ozma Station", # used if name=null in addCustomEntity()
+		"defaultRadius":85, # used if radius<0 in addCustomEntity()
+		"customDescriptionId":"orbital_station_default",
+		"interactionImage":"graphics/illustrations/corporate_lobby.jpg",
+		"icon":"graphics/icons/station0.png",
+		"iconWidth":24,
+		"iconHeight":24,
+		"sprite":"graphics/sylphon/stations/SRD_ozma_station.png",
+		"spriteWidth":140,
+		"spriteHeight":140,
+		"renderShadow":false, #true,
+		"useLightColor":true,
+		"showInCampaign":true,
+		"showIconOnMap":true,
+		"showNameOnMap":false,
+		"scaleNameWithZoom":false,
+		"scaleIconWithZoom":true,
+		"tags":["station"],
+		"layers":[STATIONS], # what layer(s) to render in. See CampaignEngineLayers.java for possible values
+	},
+	"SRD_sylpheed_station":{
+		"defaultName":"Sylpheed Station", # used if name=null in addCustomEntity()
+		"defaultRadius":100, # used if radius<0 in addCustomEntity()
+		"customDescriptionId":"orbital_station_default",
+		"interactionImage":"graphics/illustrations/corporate_lobby.jpg",
+		"icon":"graphics/icons/station0.png",
+		"iconWidth":24,
+		"iconHeight":24,
+		"sprite":"graphics/sylphon/stations/SRD_sylpheed_station.png",
+		"spriteWidth":180,
+		"spriteHeight":180,
+		"renderShadow":false, #true,
+		"useLightColor":true,
+		"showInCampaign":true,
+		"showIconOnMap":true,
+		"showNameOnMap":false,
+		"scaleNameWithZoom":false,
+		"scaleIconWithZoom":true,
+		"tags":["station"],
+		"layers":[STATIONS], # what layer(s) to render in. See CampaignEngineLayers.java for possible values
+	},
+}
+
+

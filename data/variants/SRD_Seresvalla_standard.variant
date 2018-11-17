@@ -1,0 +1,48 @@
+{
+  "displayName": "Standard",
+  "fluxCapacitors": 0,
+  "fluxVents": 44,
+  "goalVariant": true,
+  "hullId": "SRD_Seresvalla",
+  "hullMods": [
+    "targetingunit",
+    "hardenedshieldemitter"
+  ],
+  "permaMods": [],
+  "quality": 0,
+  "variantId": "SRD_Seresvalla_standard",
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0004": "SRD_raphiel",
+        "WS0005": "SRD_raphiel",
+        "WS0006": "SRD_raphiel",
+        "WS0007": "SRD_raphiel"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "SRD_adloquium",
+        "WS0002": "SRD_adloquium",
+        "WS0003": "SRD_charity"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0008": "SRD_venn",
+        "WS0009": "SRD_venn",
+        "WS0010": "SRD_venn",
+        "WS0011": "SRD_venn",
+        "WS0012": "SRD_venn",
+        "WS0013": "SRD_venn"
+      }
+    }
+  ],
+  "wings": []
+}

@@ -1,0 +1,5 @@
+id,name,faction,desc,script,icon,order
+SRD_ai_conversion,"Sylph Core
+Installation",sylphon,"Several AI-cores within the Sylphon volunteer to be permanently embedded in ships. While their reasons differ, they all end up in this location; here, the Sylphon offer their closest allies to receive one of these volunteering cores in exchange for other cores they may have procured, to make up for lost workforce.
+
+Drop off Sylphon-made ships here together with a properly-dimensioned AI core (Beta for destroyer and below, Alpha for cruiser and larger), and it will have a core installed once you leave. Note that this will mothball the ship in the process.",data.scripts.campaign.submarkets.SRD_AIConversion,graphics/sylphon/factions/sylphon_ai_installing.png,200

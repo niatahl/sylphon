@@ -1,0 +1,92 @@
+{
+  "bounds": [
+    -7.5,
+    -6,
+    -12,
+    -10.5,
+    2,
+    -15.5,
+    8,
+    -10.5,
+    8,
+    10.5,
+    2,
+    15.5,
+    -12,
+    10.5,
+    -7.5,
+    6
+  ],
+  "builtInMods": [
+    "no_weapon_flux"
+  ],
+  "builtInWings": [],
+  "center": [
+    17,
+    13.5
+  ],
+  "collisionRadius": 25.5,
+  "engineSlots": [
+    {
+      "angle": 180,
+      "contrailSize": 7,
+      "length": 23.5,
+      "location": [
+        -12.5,
+        10.5
+      ],
+      "style": "SRD_ENGINE",
+      "width": 7
+    },
+    {
+      "angle": -180,
+      "contrailSize": 7,
+      "length": 23.5,
+      "location": [
+        -12.5,
+        -10.5
+      ],
+      "style": "SRD_ENGINE",
+      "width": 7
+    }
+  ],
+  "height": 27,
+  "hullId": "SRD_Eos",
+  "hullName": "Eos",
+  "hullSize": "FIGHTER",
+  "shieldCenter": [
+    0,
+    0
+  ],
+  "shieldRadius": 23,
+  "spriteName": "graphics/sylphon/ships/fighters/SRD_Eos.png",
+  "style": "SRD_TECH",
+  "viewOffset": 0,
+  "weaponSlots": [
+    {
+      "angle": 0,
+      "arc": 0,
+      "id": "WS0001",
+      "locations": [
+        5,
+        6.5
+      ],
+      "mount": "HIDDEN",
+      "size": "SMALL",
+      "type": "ENERGY"
+    },
+    {
+      "angle": -0,
+      "arc": 0,
+      "id": "WS0002",
+      "locations": [
+        5,
+        -6.5
+      ],
+      "mount": "HIDDEN",
+      "size": "SMALL",
+      "type": "ENERGY"
+    }
+  ],
+  "width": 34
+}

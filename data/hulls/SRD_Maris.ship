@@ -1,0 +1,76 @@
+{
+  "bounds": [
+    -9.5,
+    -12,
+    2.5,
+    -15.5,
+    7,
+    -10,
+    7,
+    10,
+    2.5,
+    15.5,
+    -9.5,
+    12
+  ],
+  "builtInMods": [
+    "no_weapon_flux"
+  ],
+  "builtInWings": [],
+  "center": [
+    17,
+    13.5
+  ],
+  "collisionRadius": 24.5,
+  "engineSlots": [
+    {
+      "angle": 180,
+      "contrailSize": 8,
+      "length": 20.5,
+      "location": [
+        -9,
+        5
+      ],
+      "style": "SRD_ENGINE",
+      "width": 8
+    },
+    {
+      "angle": -180,
+      "contrailSize": 8,
+      "length": 20.5,
+      "location": [
+        -9,
+        -5
+      ],
+      "style": "SRD_ENGINE",
+      "width": 8
+    }
+  ],
+  "height": 27,
+  "hullId": "SRD_Maris",
+  "hullName": "Maris",
+  "hullSize": "FIGHTER",
+  "shieldCenter": [
+    0,
+    0
+  ],
+  "shieldRadius": 21.5,
+  "spriteName": "graphics/sylphon/ships/fighters/SRD_Maris.png",
+  "style": "SRD_TECH",
+  "viewOffset": 0,
+  "weaponSlots": [
+    {
+      "angle": 0,
+      "arc": 0,
+      "id": "WS0001",
+      "locations": [
+        0.5,
+        -0
+      ],
+      "mount": "HARDPOINT",
+      "size": "SMALL",
+      "type": "ENERGY"
+    }
+  ],
+  "width": 34
+}

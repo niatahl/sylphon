@@ -1,0 +1,78 @@
+{
+  "animationType": "SMOKE",
+  "barrelMode": "ALTERNATING",
+  "fireSoundTwo": "SRD_benediction_fire",
+  "everyFrameEffect": "data.scripts.weapons.SRD_BenedictionWeaponScript",
+  "hardpointAngleOffsets": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "hardpointOffsets": [
+    9.5,
+    -3.5,
+    9.5,
+    3.5,
+    9.5,
+    -7.5,
+    9.5,
+    7.5,
+    9.5,
+    -11.5,
+    9.5,
+    11.5
+  ],
+  "hardpointSprite": "graphics/sylphon/weapons/SRD_benediction_hardpoint.png",
+  "id": "SRD_benediction",
+  "projectileSpecId": "SRD_benediction_msl",
+  "renderHints": [
+    RENDER_LOADED_MISSILES
+  ],
+  "size": "LARGE",
+  "smokeSpec": {
+    "blowbackDuration": 2,
+    "blowbackLength": 30,
+    "blowbackParticleCount": 3,
+    "blowbackSpread": 10,
+    "cloudDuration": 1,
+    "cloudParticleCount": 3,
+    "cloudRadius": 10,
+    "particleColor": [
+      0,
+      0,
+      0,
+      255
+    ],
+    "particleSizeMin": 20,
+    "particleSizeRange": 20
+  },
+  "specClass": "projectile",
+  "textureType": ROUGH,
+  "turretAngleOffsets": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "turretOffsets": [
+    5.5,
+    -3.5,
+    5.5,
+    3.5,
+    5.5,
+    -7.5,
+    5.5,
+    7.5,
+    5.5,
+    -11.5,
+    5.5,
+    11.5
+  ],
+  "turretSprite": "graphics/sylphon/weapons/SRD_benediction_turret.png",
+  "type": "MISSILE"
+}

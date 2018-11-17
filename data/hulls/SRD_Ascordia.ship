@@ -1,0 +1,383 @@
+{
+  "bounds": [
+    -53,
+    -8,
+    -79.5,
+    -10.5,
+    -88.5,
+    -23,
+    -66.5,
+    -38.5,
+    -48.5,
+    -37.5,
+    -44.5,
+    -70.5,
+    -33.5,
+    -86,
+    -9.5,
+    -86.5,
+    -1.5,
+    -81,
+    -0.5,
+    -42.5,
+    16.5,
+    -41.5,
+    34,
+    -30,
+    63,
+    -31,
+    68.5,
+    -26,
+    77.5,
+    -25.5,
+    88,
+    -11,
+    63,
+    -10.5,
+    63,
+    10.5,
+    88,
+    11,
+    77.5,
+    25.5,
+    68.5,
+    26,
+    63,
+    31,
+    34,
+    30,
+    16.5,
+    41.5,
+    -0.5,
+    42.5,
+    -1.5,
+    81,
+    -9.5,
+    86.5,
+    -33.5,
+    86,
+    -44.5,
+    70.5,
+    -48.5,
+    37.5,
+    -66.5,
+    38.5,
+    -88.5,
+    23,
+    -79.5,
+    10.5,
+    -53,
+    8
+  ],
+  "builtInMods": [
+    "SRD_nullspace_conduits",
+    "SRD_sylph_core",
+    "high_maintenance"
+  ],
+  "builtInWeapons": {
+    "WS0012": "SRD_Ascordia_plateL",
+    "WS0013": "SRD_Ascordia_plateR"
+  },
+  "builtInWings": [],
+  "center": [
+    88,
+    89.5
+  ],
+  "collisionRadius": 120.5,
+  "engineSlots": [
+    {
+      "angle": 180,
+      "contrailSize": 19,
+      "length": 44,
+      "location": [
+        -47.5,
+        65
+      ],
+      "style": "SRD_ENGINE",
+      "width": 19
+    },
+    {
+      "angle": -180,
+      "contrailSize": 19,
+      "length": 44,
+      "location": [
+        -47.5,
+        -65
+      ],
+      "style": "SRD_ENGINE",
+      "width": 19
+    },
+    {
+      "angle": -180,
+      "contrailSize": 17,
+      "length": 56.5,
+      "location": [
+        -48.5,
+        -53.5
+      ],
+      "style": "SRD_ENGINE",
+      "width": 17
+    },
+    {
+      "angle": 180,
+      "contrailSize": 17,
+      "length": 56.5,
+      "location": [
+        -48.5,
+        53.5
+      ],
+      "style": "SRD_ENGINE",
+      "width": 17
+    },
+    {
+      "angle": -180,
+      "contrailSize": 13,
+      "length": 70.5,
+      "location": [
+        -49.5,
+        -43
+      ],
+      "style": "SRD_ENGINE",
+      "width": 13
+    },
+    {
+      "angle": 180,
+      "contrailSize": 13,
+      "length": 70.5,
+      "location": [
+        -49.5,
+        43
+      ],
+      "style": "SRD_ENGINE",
+      "width": 13
+    },
+    {
+      "angle": 180,
+      "contrailSize": 20,
+      "length": 101.5,
+      "location": [
+        -57.5,
+        -0
+      ],
+      "style": "SRD_ENGINE",
+      "width": 20
+    },
+    {
+      "angle": 172,
+      "contrailSize": 7.974194,
+      "length": 57.733032,
+      "location": [
+        -57.5,
+        -0
+      ],
+      "style": "SRD_ENGINE",
+      "width": 7.974194
+    },
+    {
+      "angle": -172,
+      "contrailSize": 7.974194,
+      "length": 57.733032,
+      "location": [
+        -57.5,
+        0
+      ],
+      "style": "SRD_ENGINE",
+      "width": 7.974194
+    }
+  ],
+  "height": 179,
+  "hullId": "SRD_Ascordia",
+  "hullName": "Ascordia",
+  "hullSize": "DESTROYER",
+  "shieldCenter": [
+    0,
+    0
+  ],
+  "shieldRadius": 109.5,
+  "spriteName": "graphics/sylphon/ships/SRD_Ascordia.png",
+  "style": "SRD_TECH",
+  "viewOffset": 0,
+  "weaponSlots": [
+    {
+      "angle": 0,
+      "arc": 5,
+      "id": "WS0001",
+      "locations": [
+        1.5,
+        55
+      ],
+      "mount": "HARDPOINT",
+      "size": "MEDIUM",
+      "type": "SYNERGY"
+    },
+    {
+      "angle": -0,
+      "arc": 5,
+      "id": "WS0002",
+      "locations": [
+        1.5,
+        -55
+      ],
+      "mount": "HARDPOINT",
+      "size": "MEDIUM",
+      "type": "SYNERGY"
+    },
+    {
+      "angle": 0,
+      "arc": 5,
+      "id": "WS0003",
+      "locations": [
+        41.5,
+        -0
+      ],
+      "mount": "HARDPOINT",
+      "size": "MEDIUM",
+      "type": "ENERGY"
+    },
+    {
+      "angle": 32.5,
+      "arc": 120,
+      "id": "WS0004",
+      "locations": [
+        -26,
+        21.5
+      ],
+      "mount": "TURRET",
+      "size": "MEDIUM",
+      "type": "ENERGY"
+    },
+    {
+      "angle": -32.5,
+      "arc": 120,
+      "id": "WS0005",
+      "locations": [
+        -26,
+        -21.5
+      ],
+      "mount": "TURRET",
+      "size": "MEDIUM",
+      "type": "ENERGY"
+    },
+    {
+      "angle": 155.5,
+      "arc": 180,
+      "id": "WS0006",
+      "locations": [
+        -57.5,
+        23
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "ENERGY"
+    },
+    {
+      "angle": -155.5,
+      "arc": 180,
+      "id": "WS0007",
+      "locations": [
+        -57.5,
+        -23
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "ENERGY"
+    },
+    {
+      "angle": 61.5,
+      "arc": 180,
+      "id": "WS0008",
+      "locations": [
+        -20.5,
+        58.5
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "ENERGY"
+    },
+    {
+      "angle": -61.5,
+      "arc": 180,
+      "id": "WS0009",
+      "locations": [
+        -20.5,
+        -58.5
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "ENERGY"
+    },
+    {
+      "angle": 0,
+      "arc": 5,
+      "id": "WS0010",
+      "locations": [
+        2.5,
+        75
+      ],
+      "mount": "HARDPOINT",
+      "size": "SMALL",
+      "type": "SYNERGY"
+    },
+    {
+      "angle": -0,
+      "arc": 5,
+      "id": "WS0011",
+      "locations": [
+        2.5,
+        -75
+      ],
+      "mount": "HARDPOINT",
+      "size": "SMALL",
+      "type": "SYNERGY"
+    },
+    {
+      "angle": 0,
+      "arc": 0,
+      "id": "WS0012",
+      "locations": [
+        44.5,
+        18
+      ],
+      "mount": "TURRET",
+      "size": "LARGE",
+      "type": "DECORATIVE"
+    },
+    {
+      "angle": -0,
+      "arc": 0,
+      "id": "WS0013",
+      "locations": [
+        44.5,
+        -18
+      ],
+      "mount": "TURRET",
+      "size": "LARGE",
+      "type": "DECORATIVE"
+    },
+    {
+      "angle": 171,
+      "arc": 54,
+      "id": "WS0014",
+      "locations": [
+        -24,
+        79.5
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "SYSTEM"
+    },
+    {
+      "angle": -171,
+      "arc": 54,
+      "id": "WS0015",
+      "locations": [
+        -24,
+        -79.5
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "SYSTEM"
+    }
+  ],
+  "width": 176
+}

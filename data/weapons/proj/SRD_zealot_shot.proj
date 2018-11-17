@@ -1,0 +1,18 @@
+{
+	"id":"SRD_zealot_shot",
+	"specClass":"projectile",
+	"spawnType":"BALLISTIC",
+	"collisionClass":"PROJECTILE_FF",
+	"collisionClassByFighter":"PROJECTILE_FIGHTER",	
+	"length":120.0,
+	"width":5,
+	"fadeTime":0.1,
+	"fringeColor":[120,80,255,255],
+	"coreColor":[200,200,200,255],
+	"glowColor":[120,155,255,55],
+	"glowRadius":20,
+	"hitGlowRadius":15,	
+	"textureScrollSpeed":64.0,
+	"pixelsPerTexel":10.0,
+	"bulletSprite":"graphics/sylphon/missiles/SRD_zealot_slug.png"
+}

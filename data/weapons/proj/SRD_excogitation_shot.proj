@@ -1,0 +1,20 @@
+{
+	"id":"SRD_excogitation_shot",
+	"specClass":"projectile",
+	"spawnType":"BALLISTIC",
+	"collisionClass":"PROJECTILE_FF",
+	"collisionClassByFighter":"PROJECTILE_FIGHTER",	
+	"length":100.0,
+	"width":6,
+	"fadeTime":0.1,
+	"fringeColor":[155,0,255,205],
+	"coreColor":[255,100,205,255],
+	"glowColor":[125,0,255,165],
+	"glowRadius":30,
+	"hitGlowRadius":20,	
+	"textureType":WEAVE,
+	#"textureType":["graphics/sylphon/fx/beam_laser_fringe.png","graphics/sylphon/fx/FOB_strombel_beam_core.png"],
+	"textureScrollSpeed":64,
+	"pixelsPerTexel":5.0,
+	"bulletSprite":"graphics/sylphon/missiles/SRD_benediction_msl.png"
+}

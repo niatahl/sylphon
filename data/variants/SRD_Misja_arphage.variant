@@ -1,0 +1,21 @@
+{
+  "displayName": "Arphage",
+  "fluxCapacitors": 0,
+  "fluxVents": 0,
+  "goalVariant": true,
+  "hullId": "SRD_Misja",
+  "hullMods": [],
+  "permaMods": [],
+  "quality": 0,
+  "variantId": "SRD_Misja_arphage",
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "SRD_arphage"
+      }
+    }
+  ],
+  "wings": []
+}
