@@ -187,7 +187,7 @@
 			"mercury_FS":3,
 			"mercury_Standard":3,
 			"hermes_Standard":10,
-			"kite_Stock":1,
+			"kite_Standard":1,
 			"colossus_Standard":1,
 			#"odyssey_Balanced":1,
 			"fallback":{"freighterSmall":1},
@@ -245,7 +245,7 @@
 			"mercury_PD":3,
 			"mercury_Standard":3,
 			"mercury_FS":3,
-			"kite_Stock":10,
+			"kite_Standard":10,
 			"fallback":{"personnelMedium":0.5},
 		},
 		"personnelMedium":{
