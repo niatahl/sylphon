@@ -6,23 +6,11 @@ package data.scripts.world;
 import java.awt.Color;
 
 import com.fs.starfarer.api.Global;
-import com.fs.starfarer.api.campaign.CargoAPI;
-import com.fs.starfarer.api.campaign.CustomCampaignEntityAPI;
-import com.fs.starfarer.api.campaign.JumpPointAPI;
-import com.fs.starfarer.api.campaign.LocationAPI;
-import com.fs.starfarer.api.campaign.PlanetAPI;
-import com.fs.starfarer.api.campaign.SectorAPI;
-import com.fs.starfarer.api.campaign.SectorEntityToken;
-import com.fs.starfarer.api.campaign.StarSystemAPI;
+import com.fs.starfarer.api.campaign.*;
 import com.fs.starfarer.api.campaign.econ.EconomyAPI;
 import com.fs.starfarer.api.campaign.econ.MarketAPI;
 import com.fs.starfarer.api.impl.campaign.DerelictShipEntityPlugin;
-import com.fs.starfarer.api.impl.campaign.ids.Commodities;
-import com.fs.starfarer.api.impl.campaign.ids.Conditions;
-import com.fs.starfarer.api.impl.campaign.ids.Entities;
-import com.fs.starfarer.api.impl.campaign.ids.Factions;
-import com.fs.starfarer.api.impl.campaign.ids.Submarkets;
-import com.fs.starfarer.api.impl.campaign.ids.Terrain;
+import com.fs.starfarer.api.impl.campaign.ids.*;
 import com.fs.starfarer.api.impl.campaign.procgen.DefenderDataOverride;
 import com.fs.starfarer.api.impl.campaign.procgen.NebulaEditor;
 import com.fs.starfarer.api.impl.campaign.procgen.StarAge;
@@ -107,19 +95,20 @@ public class SRD_Nym {
                 3, // size of the market (from the JSON)
                 new ArrayList<>(
                         Arrays.asList( // list of market conditions from martinique.json
-                                Conditions.FRONTIER,
-                                Conditions.TERRAN,
-                                Conditions.ORBITAL_BURNS,
                                 Conditions.FARMLAND_RICH,
-                                Conditions.VICE_DEMAND,
-                                Conditions.RURAL_POLITY,
                                 Conditions.POPULATION_3)),
                 new ArrayList<>(
                         Arrays.asList( // which submarkets to generate
                                 Submarkets.SUBMARKET_BLACK,
                                 Submarkets.SUBMARKET_OPEN,
                                 Submarkets.SUBMARKET_STORAGE)),
-                0.3f); // tariff amount
+                new ArrayList<>(
+                        Arrays.asList( // Which industries we have on the market
+                                Industries.POPULATION,
+                                Industries.SPACEPORT,
+                                Industries.FARMING)),
+                0.3f, // tariff amount
+                false); // Free Port
 
         nym1.setCustomDescriptionId("SRD_planet_talloss");
 
@@ -142,7 +131,7 @@ public class SRD_Nym {
         // Add the marketplace to Ozma Station ---------------
         MarketAPI ozmaMarket = addMarketplace("sylphon", ozmaStation, null,
                 "Ozma Station", // name of the market
-                4, // size of the market
+                5, // size of the market
                 new ArrayList<>(
                         Arrays.asList( // list of market conditions
                                 Conditions.FREE_PORT,
@@ -154,7 +143,16 @@ public class SRD_Nym {
                                 Submarkets.SUBMARKET_BLACK,
                                 Submarkets.SUBMARKET_OPEN,
                                 Submarkets.SUBMARKET_STORAGE)),
-                0.3f); // tariff amount
+                new ArrayList<>(
+                        Arrays.asList( // Which industries we have on the market
+                                Industries.POPULATION,
+                                Industries.SPACEPORT,
+                                Industries.FUELPROD,
+                                Industries.PATROLHQ,
+                                Industries.HEAVYBATTERIES,
+                                Industries.WAYSTATION)),
+                0.3f, // tariff amount
+                true); // Free Port
 
         ozmaStation.setCustomDescriptionId("SRD_ozma_station");
 
@@ -249,7 +247,8 @@ public class SRD_Nym {
 
     //Shorthand function for adding a market
     public static MarketAPI addMarketplace(String factionID, SectorEntityToken primaryEntity, ArrayList<SectorEntityToken> connectedEntities, String name,
-                                           int size, ArrayList<String> marketConditions, ArrayList<String> submarkets, float tarrif) {
+                                           int size, ArrayList<String> marketConditions, ArrayList<String> submarkets, ArrayList<String> industries, float tarrif,
+                                           boolean freePort) {
         EconomyAPI globalEconomy = Global.getSector().getEconomy();
         String planetID = primaryEntity.getId();
         String marketID = planetID + "_market";
@@ -270,6 +269,14 @@ public class SRD_Nym {
         for (String condition : marketConditions) {
             newMarket.addCondition(condition);
         }
+
+        //Add market industries
+        for (String industry : industries) {
+            newMarket.addIndustry(industry);
+        }
+
+        //Sets us to a free port, if we should
+        newMarket.setFreePort(freePort);
 
         //Adds our connected entities, if any
         if (null != connectedEntities) {

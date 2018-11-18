@@ -49,26 +49,10 @@ public class SRD_ModPlugin extends BaseModPlugin {
 
     @Override
     public void onNewGame() {
-        /* Commented out while working on other stuff
         SectorAPI sector = Global.getSector();
 
-        //If we have Nexerelin and random worlds enabled, don't spawn our manual systems
-        boolean haveNexerelin = Global.getSettings().getModManager().isModEnabled("nexerelin");
-        if (!haveNexerelin || SectorManager.getCorvusMode()){
-            new SRD_Nym().generate(sector);
-            new SRD_Rofocale().generate(sector);
-        } else {
-            //If we have a random sector, we add the AI conversion submarket to the headquarters
-            Global.getSector().addScript(new SRD_AIConversionNexerelinAdderPlugin());
-        }
-
-        //Only run custom faction relations if Nexerelin is not active
-        if (!haveNexerelin) {
-            SRD_FactionRelationPlugin.initFactionRelationships(sector);
-        } else {
-            //Even if we have nexerelin, we still have to add bounties for the faction
-            SharedData.getData().getPersonBountyEventData().addParticipatingFaction("sylphon");
-        }
-        */
+        new SRD_Nym().generate(sector);
+        new SRD_Rofocale().generate(sector);
+        SRD_FactionRelationPlugin.initFactionRelationships(sector);
     }
 }

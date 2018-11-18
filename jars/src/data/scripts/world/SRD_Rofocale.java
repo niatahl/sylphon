@@ -6,18 +6,22 @@ import com.fs.starfarer.api.campaign.*;
 import com.fs.starfarer.api.campaign.econ.EconomyAPI;
 import com.fs.starfarer.api.campaign.econ.MarketAPI;
 import com.fs.starfarer.api.combat.BaseHullMod;
+import com.fs.starfarer.api.impl.campaign.econ.AICoreAdmin;
 import com.fs.starfarer.api.impl.campaign.ids.Conditions;
+import com.fs.starfarer.api.impl.campaign.ids.Industries;
 import com.fs.starfarer.api.impl.campaign.ids.Submarkets;
 import com.fs.starfarer.api.impl.campaign.ids.Terrain;
 import com.fs.starfarer.api.impl.campaign.procgen.NebulaEditor;
 import com.fs.starfarer.api.impl.campaign.procgen.PlanetConditionGenerator;
 import com.fs.starfarer.api.impl.campaign.procgen.StarAge;
 import com.fs.starfarer.api.impl.campaign.procgen.StarSystemGenerator;
+import com.fs.starfarer.api.impl.campaign.rulecmd.salvage.AICores;
 import com.fs.starfarer.api.impl.campaign.terrain.AsteroidFieldTerrainPlugin;
 import com.fs.starfarer.api.impl.campaign.terrain.DebrisFieldTerrainPlugin;
 import com.fs.starfarer.api.impl.campaign.terrain.HyperspaceTerrainPlugin;
 import com.fs.starfarer.api.util.Misc;
 import data.scripts.campaignPlugins.SRD_AIConversionFleetUpgraderPlugin;
+import org.jetbrains.annotations.Nullable;
 import org.lazywizard.lazylib.MathUtils;
 
 import java.awt.*;
@@ -90,18 +94,32 @@ public class SRD_Rofocale {
         rofocale4.setCustomDescriptionId("SRD_planet_castrum");
         MarketAPI rofocale4_market = addMarketplace("sylphon", rofocale4, null,
                 "Castrum", // name of the market
-                5, // size of the market
+                6, // size of the market
                 new ArrayList<>(
                         Arrays.asList(
-                                Conditions.POPULATION_6)),
+                                Conditions.POPULATION_6,
+                                Conditions.ORE_SPARSE,
+                                Conditions.RARE_ORE_MODERATE,
+                                Conditions.COLD)),
                 new ArrayList<>(
-                        Arrays.asList( // which submarkets to generate
+                        Arrays.asList( // Which submarkets to generate
                                 Submarkets.GENERIC_MILITARY,
-                                Submarkets.SUBMARKET_BLACK,
                                 Submarkets.SUBMARKET_OPEN,
                                 "SRD_ai_conversion", //Special submarket for upgrading ships with Sylph Cores
                                 Submarkets.SUBMARKET_STORAGE)),
-                0.3f); // tariff amount
+                new ArrayList<String>(
+                        Arrays.asList( // Which industries we have on the market
+                                Industries.POPULATION,
+                                Industries.HEAVYINDUSTRY,
+                                Industries.LIGHTINDUSTRY,
+                                Industries.MINING,
+                                Industries.REFINING,
+                                Industries.MEGAPORT,
+                                Industries.BATTLESTATION_HIGH,
+                                Industries.HEAVYBATTERIES,
+                                Industries.ORBITALWORKS)),
+                0.3f, // tariff amount
+                false); // Free Port
 
         // The moon Sylphon HQ orbits
         PlanetAPI rofocale4a = system.addPlanet("SRD_planet_rofocale4a", rofocale4, "Praetorium", "barren", 360*(float)Math.random(), 80, 680, 95f);
@@ -123,10 +141,10 @@ public class SRD_Rofocale {
         // Add the marketplace to Sylpheed Station ---------------
         MarketAPI sylpheed_station_market = addMarketplace("sylphon", sylpheed_station, null,
                 "Sylpheed Station", // name of the market
-                7, // size of the market
+                6, // size of the market
                 new ArrayList<>(
                         Arrays.asList(
-                                Conditions.POPULATION_5)),
+                                Conditions.POPULATION_6)),
                 new ArrayList<>(
                         Arrays.asList( // which submarkets to generate
                                 Submarkets.GENERIC_MILITARY,
@@ -134,8 +152,21 @@ public class SRD_Rofocale {
                                 Submarkets.SUBMARKET_OPEN,
                                 "SRD_ai_conversion", //Special submarket for upgrading ships with Sylph Cores
                                 Submarkets.SUBMARKET_STORAGE)),
-                0.3f); // tariff amount
+                new ArrayList<String>(
+                        Arrays.asList( // Which industries we have on the market
+                                Industries.POPULATION,
+                                Industries.FARMING,
+                                Industries.MEGAPORT,
+                                Industries.STARFORTRESS_HIGH,
+                                Industries.HIGHCOMMAND,
+                                Industries.ORBITALWORKS,
+                                Industries.HEAVYBATTERIES,
+                                "SRD_sylpheed_station_tech_mining")),
+                0.3f, // tariff amount
+                false); // Free Port
         sylpheed_station.setCustomDescriptionId("SRD_sylpheed_station");
+        sylpheed_station_market.getMemoryWithoutUpdate().set("$SRD_SylpheedTechMiningPlanet", rofocale4a.getMarket());
+
 
         // Some trojans for the inhabited planet
         SectorEntityToken rofocale4_troj = system.addTerrain(Terrain.ASTEROID_FIELD,
@@ -179,7 +210,8 @@ public class SRD_Rofocale {
 
     //Shorthand function for adding a market
     public static MarketAPI addMarketplace(String factionID, SectorEntityToken primaryEntity, ArrayList<SectorEntityToken> connectedEntities, String name,
-                                           int size, ArrayList<String> marketConditions, ArrayList<String> submarkets, float tarrif) {
+                                           int size, ArrayList<String> marketConditions, ArrayList<String> submarkets, ArrayList<String> industries, float tarrif,
+                                           boolean freePort) {
         EconomyAPI globalEconomy = Global.getSector().getEconomy();
         String planetID = primaryEntity.getId();
         String marketID = planetID + "_market";
@@ -200,6 +232,14 @@ public class SRD_Rofocale {
         for (String condition : marketConditions) {
             newMarket.addCondition(condition);
         }
+
+        //Add market industries
+        for (String industry : industries) {
+            newMarket.addIndustry(industry);
+        }
+
+        //Sets us to a free port, if we should
+        newMarket.setFreePort(freePort);
 
         //Adds our connected entities, if any
         if (null != connectedEntities) {

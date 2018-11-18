@@ -1,6 +1,7 @@
 ﻿0.9
 Additions:
-- Added basic mission-only 0.9 integration
+- Added 0.9 integration
+- Added a unique industry to Sylpheed Station allowing it to tech-mine Preatorium remotely
 
 Changes:
 - Now uses and requires MagicLib; all old code which is included in MagicLib has been refactored and many old scripts have been removed
