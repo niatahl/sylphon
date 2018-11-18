@@ -2,14 +2,59 @@
 	# should be a copy of "combatSmall", minus variants that are annoying to fight in low numbers
 	# for example, no Hyperions or fast beam-based kiting loadouts, or ships with damper field
 	"combatSmallForSmallFleet":{
+		"SRD_Furika_standard":5,
+		"SRD_Celika_standard":10,
+		"SRD_Celika_heavy":10,
+		"SRD_Catora_standard":10,
+		"SRD_Catora_prototype":5,
+			
+		"SRD_Celika_P_standard":2,
+		"SRD_Celika_P_balanced":3,
 	},
 	"combatSmall":{
+		"SRD_Furika_standard":5,
+		"SRD_Celika_standard":10,
+		"SRD_Celika_heavy":10,
+		"SRD_Catora_standard":10,
+		"SRD_Catora_prototype":5,
+			
+		"SRD_Celika_P_standard":2,
+		"SRD_Celika_P_balanced":3,
 	},
 	"combatMedium":{
+		"SRD_Silverhead_standard":10,
+		"SRD_Tarima_standard":5,
+		"SRD_Tarima_assault":5,
+		"SRD_Hymnon_standard":5,
+		"SRD_Etrika_standard":10,
+		"SRD_Etrika_support":2,
 	},
 	"combatLarge":{
-	},
+		"SRD_Eagle_standard":10,
+		"SRD_Eagle_strike":10,
+		"SRD_Eagle_prototype":3,
+		"SRD_Okarra_standard":10,
+		"SRD_Okarra_assault":10,
+		"SRD_Valestri_standard":10,
+		"SRD_Rakia_standard":2,
+		"SRD_Ascordia_standard":10,
+		"SRD_Ascordia_prototype":5,
+			
+		"SRD_Eagle_P_standard":2,
+		"SRD_Eagle_P_balanced":3,
+		},
 	"combatCapital":{
+		"SRD_Equilibrium_standard":10,
+		"SRD_Equilibrium_missile":7,
+		"SRD_Equilibrium_prototype":5,
+		"SRD_Equilibrium_exalted":7,
+		"SRD_Finis_Astra_standard":2,
+		"SRD_Seresvalla_standard":10,
+		"SRD_Seresvalla_elite":5,
+		"SRD_Seresvalla_barrage":5,
+		"SRD_Replekia_andromeda":5,
+			
+		"SRD_Metafalica_standard":3,
 	},
 	
 	
@@ -26,10 +71,18 @@
 
 	# carriers
 	"carrierSmall":{
+			"SRD_Tilia_standard":10,
+			"SRD_Tilia_strike":10,
 	},
 	"carrierMedium":{
+			"SRD_Hubris_standard":10,
+			"SRD_Hubris_support":10,
+			"SRD_Eolia_standard":10,
+			"SRD_Eolia_strike":10,
 	},
 	"carrierLarge":{
+			"SRD_Frelia_combat":10,
+			"SRD_Frelia_strike":10,
 	},
 
 	# phase ships
@@ -46,8 +99,10 @@
 	"freighterSmall":{
 	},
 	"freighterMedium":{
+			"SRD_Buffalo_standard":10,
 	},
 	"freighterLarge":{
+			"SRD_Mariana_cargo_standard":10,
 	},
 	
 	"tankerSmall":{
@@ -55,6 +110,7 @@
 	"tankerMedium":{
 	},
 	"tankerLarge":{
+			"SRD_Mariana_fuel_standard":10,
 	},
 	
 	"personnelSmall":{
