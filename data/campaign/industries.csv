@@ -1,0 +1,2 @@
+id,name,cost mult,build time,income,upkeep,downgrade,upgrade,tags,data,image,plugin,desc,order
+SRD_sylpheed_station_tech_mining,AI Network Analysis,60,45,,4,,,techmining,,graphics/icons/industry/techmining.png,data.scripts.economy.industries.SRD_SylpheedStationTechMining,"By utilizing the massive AI networks throughout Sylpheed Station, ancient data and blueprints can be extracted from an old AI network on Preatorium.",400
