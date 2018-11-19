@@ -9,7 +9,7 @@
   ],
   "fireSoundOne": "laser_intro",
   "fireSoundTwo": "pd_laser_loop",
-  "everyFrameEffect": "data.scripts.weapons.SRD_CondemnationOscillationScript",
+  "everyFrameEffect": "data.scripts.weapons.SRD_VacuityOscillationScript",
   "fringeColor": [
     155,
     0,

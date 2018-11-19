@@ -161,6 +161,9 @@ public class SRD_StrictureMuzzleFlashScript {
     private int currentBarrel = 0;
     private boolean shouldOffsetBarrelExtra = false;
 
+    //Instantiator
+    public SRD_StrictureMuzzleFlashScript() {}
+
     public void advance(float amount, CombatEngineAPI engine, WeaponAPI weapon) {
         //Don't run while paused, or without a weapon
         if (weapon == null || amount <= 0f) {return;}

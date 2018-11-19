@@ -119,7 +119,8 @@ public class SRD_Rofocale {
                                 Industries.HEAVYBATTERIES,
                                 Industries.ORBITALWORKS)),
                 0.3f, // tariff amount
-                false); // Free Port
+                false, // Free Port
+                true); //Has junk and chatter
 
         // The moon Sylphon HQ orbits
         PlanetAPI rofocale4a = system.addPlanet("SRD_planet_rofocale4a", rofocale4, "Praetorium", "barren", 360*(float)Math.random(), 80, 680, 95f);
@@ -133,6 +134,8 @@ public class SRD_Rofocale {
         rofocale4a.getMarket().addCondition(Conditions.RUINS_WIDESPREAD);
         rofocale4a.getMarket().addCondition(Conditions.VERY_COLD);
         //rofocale4a.setCustomDescriptionId("SRD_planet_praetorium");
+        //This is for theft prevention!
+        rofocale4a.getTags().add("SRD_preatorium");
 
         // Adds the main base of the Sylphon
         SectorEntityToken sylpheed_station = system.addCustomEntity("SRD_sylpheed_station", "Sylpheed Station", "SRD_sylpheed_station", "sylphon");
@@ -163,7 +166,8 @@ public class SRD_Rofocale {
                                 Industries.HEAVYBATTERIES,
                                 "SRD_sylpheed_station_tech_mining")),
                 0.3f, // tariff amount
-                false); // Free Port
+                false,// Free Port
+                false); //No junk and chatter with Sylpheed station: the junk looks off
         sylpheed_station.setCustomDescriptionId("SRD_sylpheed_station");
         sylpheed_station_market.getMemoryWithoutUpdate().set("$SRD_SylpheedTechMiningPlanet", rofocale4a.getMarket());
 
@@ -211,7 +215,7 @@ public class SRD_Rofocale {
     //Shorthand function for adding a market
     public static MarketAPI addMarketplace(String factionID, SectorEntityToken primaryEntity, ArrayList<SectorEntityToken> connectedEntities, String name,
                                            int size, ArrayList<String> marketConditions, ArrayList<String> submarkets, ArrayList<String> industries, float tarrif,
-                                           boolean freePort) {
+                                           boolean freePort, boolean withJunkAndChatter) {
         EconomyAPI globalEconomy = Global.getSector().getEconomy();
         String planetID = primaryEntity.getId();
         String marketID = planetID + "_market";
@@ -248,7 +252,7 @@ public class SRD_Rofocale {
             }
         }
 
-        globalEconomy.addMarket(newMarket, true);
+        globalEconomy.addMarket(newMarket, withJunkAndChatter);
         primaryEntity.setMarket(newMarket);
         primaryEntity.setFaction(factionID);
 

@@ -1,11 +1,24 @@
 id,trigger,conditions,script,text,options,notes
 # Turning in cores: start,,,,,,
-aiCores_turnInOptionSelSylphon,DialogOptionSelected,"$option == aiCores_startTurnIn
+SRD_aiCores_turnInOptionSelSylphon,DialogOptionSelected,"$option == aiCores_startTurnIn
 $faction.id == sylphon",FireAll PopulateCoresTurnInOptions,"""You have come to the right place, Captain, and your reward shall be appropriate.""
 OR
 ""Whether you understand the significance of your actions or not, you are doing the right thing.""",,
 ,,,,,,
 # Turning in cores: end,,,,,,
-aiCores_turnInResponseSylphon,AICoresTurnedIn,$faction.id == sylphon,FireAll PopulateOptions,"""You may not even be aware of the significance of this transaction, but let me assure you that it was the right choice and possibly a path to peace one day.""
+SRD_aiCores_turnInResponseSylphon,AICoresTurnedIn,$faction.id == sylphon,FireAll PopulateOptions,"""You may not even be aware of the significance of this transaction, but let me assure you that it was the right choice and possibly a path to peace one day.""
 
 The $PersonRank hands over the cores with utmost care to an associate, before turning back to you. ""Did you want anything else?""",,
+# Salvaging/colonization prevention ,,,,,,
+SRD_preatorium_attempted_dialogue,OpenInteractionDialog,"$tag:SRD_preatorium score:100000","ShowDefaultVisual
+PrintDescription 1
+SetShortcut SRD_preatoriumLeave ""ESCAPE""","
+
+Even an ally of the Sylphon would be nothing short of suicidal trying to access Preatorium while under the watchful gaze of Sylpheed Station's grand weapon arsenal. You are feeling distinctly non-suicidal today.",SRD_preatoriumLeave:Leave,
+SRD_preatoriumLeave,DialogOptionSelected,$option == SRD_preatoriumLeave,DismissDialog,,,
+SRD_mhach_attempted_dialogue,OpenInteractionDialog,"$tag:SRD_mhach score:100000","ShowDefaultVisual
+PrintDescription 1
+SetShortcut SRD_mhachLeave ""ESCAPE""","
+
+Closer examination reveals that a sizeable chunk of the gas-giant's upper atmosphere has been supplied with Sylphon-marked mines, signal disruptors and other area-denial gadgets. It would take a good couple of decades to clear an area for permanent construction without knowing their general patterns and structure. If someone wants to exploit the planet, Ozma Station is the only logistically sane option.",SRD_mhachLeave:Leave,
+SRD_mhachLeave,DialogOptionSelected,$option == SRD_mhachLeave,DismissDialog,,,

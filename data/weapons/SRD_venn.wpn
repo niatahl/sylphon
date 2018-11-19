@@ -8,7 +8,7 @@
     155,
     255
   ],
-  "everyFrameEffect": "data.scripts.weapons.SRD_CondemnationOscillationScript",
+  "everyFrameEffect": "data.scripts.weapons.SRD_DisavowalOscillationScript",
   "fireSoundOne": "SRD_disavowal_fire",
   "fringeColor": [
     230,

@@ -1,7 +1,8 @@
 ﻿0.9
 Additions:
 - Added 0.9 integration
-- Added a unique industry to Sylpheed Station allowing it to tech-mine Preatorium remotely
+- Added a unique industry to Sylpheed Station allowing it to tech-mine Preatorium remotely (and some lore-gibble preventing Preatorium from being colonized/looted)
+- Added the Vetra-class kinetic bomber
 
 Changes:
 - Now uses and requires MagicLib; all old code which is included in MagicLib has been refactored and many old scripts have been removed

@@ -29,11 +29,19 @@ public class SRD_SylpheedStationTechMining extends BaseIndustry implements Marke
 
 	//Only show on Sylpheed Station
 	@Override
-	public boolean isHidden() {
-		return !market.getName().contains("Sylpheed Station");
-	}
 	public boolean showWhenUnavailable() {
 		return false;
+	}
+
+	//Can only be built on Sylpheed Station
+	@Override
+	public boolean isAvailableToBuild() {
+		if (!super.isAvailableToBuild()) return false;
+		if (market.getPrimaryEntity().getCustomEntitySpec() != null && market.getPrimaryEntity().getCustomEntitySpec().getId().contains("SRD_sylpheed_station")) {
+			return true;
+		} else {
+			return false;
+		}
 	}
 
 	public static final String TECH_MINING_MULT = "$core_techMiningMult";
@@ -73,9 +81,6 @@ public class SRD_SylpheedStationTechMining extends BaseIndustry implements Marke
 		supply(Commodities.HEAVY_MACHINERY, size);
 		supply(Commodities.FUEL, size);
 		supply(Commodities.SUPPLIES, size);
-//		supply(Commodities.HAND_WEAPONS, size);
-//		supply(Commodities.RARE_METALS, size - 2);
-//		supply(Commodities.VOLATILES, size - 2);
 
 		if (!isFunctional()) {
 			supply.clear();
@@ -88,22 +93,6 @@ public class SRD_SylpheedStationTechMining extends BaseIndustry implements Marke
 	@Override
 	public void unapply() {
 		market.removeTransientImmigrationModifier(this);
-	}
-
-
-	@Override
-	public boolean isAvailableToBuild() {
-		if (!super.isAvailableToBuild()) return false;
-		/* Should be replaced so to only be available for Sylpheed Station
-		if (market.hasCondition(Conditions.RUINS_VAST) ||
-				market.hasCondition(Conditions.RUINS_EXTENSIVE) ||
-				market.hasCondition(Conditions.RUINS_WIDESPREAD) ||
-				market.hasCondition(Conditions.RUINS_SCATTERED)) {
-			return true;
-		}
-		*/
-		if (market.getName().contains("Sylpheed Station")) { return true;}
-		return true;
 	}
 
 	@Override
@@ -122,17 +111,22 @@ public class SRD_SylpheedStationTechMining extends BaseIndustry implements Marke
 		float base = 2f;
 		return base + super.getPatherInterest();
 	}
-	
-	
+
 	protected boolean hasPostDemandSection(boolean hasDemand, IndustryTooltipMode mode) {
 		return true;
+	}
+
+	//We can see the industry
+	@Override
+	public boolean isHidden() {
+		return false;
 	}
 	
 	@Override
 	protected void addPostDemandSection(TooltipMakerAPI tooltip, boolean hasDemand, IndustryTooltipMode mode) {
 		float opad = 10f;
 		tooltip.addPara("Tapping into an old AI network hidden within the ruins of Praetorium, specialized Sylph Cores " +
-				"are tirelessly reverse engineering old domain code. This is also supplemented by normal tech-mining on the " +
+				"are tirelessly reverse-engineering old domain code. This is also supplemented by normal tech-mining on the " +
 				"planet's surface.", opad);
 		MemoryAPI mem = market.getMemoryWithoutUpdate();
 		MarketAPI targetMarket = market;

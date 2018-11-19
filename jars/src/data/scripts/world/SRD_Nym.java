@@ -108,7 +108,8 @@ public class SRD_Nym {
                                 Industries.SPACEPORT,
                                 Industries.FARMING)),
                 0.3f, // tariff amount
-                false); // Free Port
+                false, // Free Port
+                true); //Has junk and chatter
 
         nym1.setCustomDescriptionId("SRD_planet_talloss");
 
@@ -123,6 +124,8 @@ public class SRD_Nym {
         nym2.getMarket().addCondition(Conditions.VOLATILES_DIFFUSE);
         nym2.getMarket().addCondition(Conditions.ORGANICS_TRACE);
         nym2.setCustomDescriptionId("SRD_planet_mhach");
+        //This is for theft prevention!
+        nym2.getTags().add("SRD_mhach");
 
         // And a station in orbit.
         SectorEntityToken ozmaStation = system.addCustomEntity("SRD_ozma_station", "Ozma Station", "SRD_ozma_station", "sylphon");
@@ -152,7 +155,8 @@ public class SRD_Nym {
                                 Industries.HEAVYBATTERIES,
                                 Industries.WAYSTATION)),
                 0.3f, // tariff amount
-                true); // Free Port
+                true, // Free Port
+                true); //Has junk and chatter
 
         ozmaStation.setCustomDescriptionId("SRD_ozma_station");
 
@@ -248,7 +252,7 @@ public class SRD_Nym {
     //Shorthand function for adding a market
     public static MarketAPI addMarketplace(String factionID, SectorEntityToken primaryEntity, ArrayList<SectorEntityToken> connectedEntities, String name,
                                            int size, ArrayList<String> marketConditions, ArrayList<String> submarkets, ArrayList<String> industries, float tarrif,
-                                           boolean freePort) {
+                                           boolean freePort, boolean withJunkAndChatter) {
         EconomyAPI globalEconomy = Global.getSector().getEconomy();
         String planetID = primaryEntity.getId();
         String marketID = planetID + "_market";
@@ -285,7 +289,7 @@ public class SRD_Nym {
             }
         }
 
-        globalEconomy.addMarket(newMarket, true);
+        globalEconomy.addMarket(newMarket, withJunkAndChatter);
         primaryEntity.setMarket(newMarket);
         primaryEntity.setFaction(factionID);
 

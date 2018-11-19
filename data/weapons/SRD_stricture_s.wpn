@@ -7,7 +7,7 @@
     205,
     255
   ],
-  "everyFrameEffect": "data.scripts.weapons.SRD_CondemnationOscillationScript",
+  "everyFrameEffect": "data.scripts.weapons.SRD_StrictureOscillationScript",
   "fireSoundTwo": "SRD_stricture_loop",
   "fringeColor": [
     255,
