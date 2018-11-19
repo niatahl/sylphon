@@ -7,6 +7,10 @@
 		"SRD_LensFlarePlugin":"data.scripts.plugins.SRD_LensFlarePlugin",
 		"SRD_ProjectileCustomGlowPlugin":"data.scripts.plugins.SRD_ProjectileCustomGlowPlugin",
 		},  
+	"designTypeColors":{
+            "Sylphon RnD":[190,0,255,255],
+			"Sylphon Outcast":[255,50,0,255],
+    },
 	"graphics":{
 		"SRD_fx":{
 			"SRD_Rakia_phantom":"graphics/sylphon/ships/SRD_Rakia_glow2.png",
