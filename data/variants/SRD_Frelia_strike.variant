@@ -1,7 +1,7 @@
 {
     "displayName": "Strike",
     "fluxCapacitors": 0,
-    "fluxVents": 45,
+    "fluxVents": 47,
 	"goalVariant": true,
     "hullId": "SRD_Frelia",
     "hullMods": ["targetingunit"],
@@ -55,7 +55,7 @@
         }
     ],
     "wings": [
-        "SRD_Sadri_bomber_wing",
+        "SRD_Vetra_bomber_wing",
         "SRD_Sadri_bomber_wing",
         "SRD_Sadri_bomber_wing",
         "SRD_Sadri_bomber_wing"

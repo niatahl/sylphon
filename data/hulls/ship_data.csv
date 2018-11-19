@@ -43,6 +43,7 @@ Sivva,SRD_Sivva,Strike Fighter,Sylphon RnD,,,200,50,300,,80,0,,210,400,350,90,18
 Sadri,SRD_Sadri,Bomber,Sylphon RnD,SRD_armor_polarization,,300,10,300,,50,0,,150,350,250,90,180,10,FRONT,,120,0,1,,,0,0,,,,,,,,,,,,,,,0,,,101
 Skallic Drone,SRD_Skallic_drone,Barrage Drone,Sylphon RnD,SRD_nullspace_entry,,500,50,500,,50,0,,20,50,50,100,200,30,OMNI,,360,0,1,,,0,0,,,,,,,,,,,,,,,0,,,59435
 Nalka,SRD_Nalka,Fighter,Sylphon RnD,,,300,50,350,,80,0,,190,350,300,90,180,30,FRONT,,90,0,1,,,0,0,,,,,,,,,,,,,,,0,,,11554
+Vetra,SRD_Vetra,Bomber,Sylphon RnD,,,400,50,500,,100,0,,180,380,350,90,180,30,OMNI,,180,0,1,,,0,0,,,,,,,,,,,,,,,0,,,54442
 Infel,SRD_Infel,Fighter,Sylphon RnD,,,400,80,350,,80,0,,190,350,300,90,180,30,FRONT,,90,0,1,,,1,1,,,,,,,,,,,,,,,0,,,11554
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 #Outcast,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,

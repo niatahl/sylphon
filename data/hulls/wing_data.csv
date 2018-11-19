@@ -10,6 +10,7 @@ SRD_Sivva_scalpel_wing,SRD_Sivva_scalpel,"fighter3, fighter, high, sylphon_high_
 SRD_Sadri_bomber_wing,SRD_Sadri_bomber,"bomber5, bomber, high, sylphon_high_bp",2,0.5,10,14,V,4000,1500,600,2,BOMBER,Bomber,15,15000,,,,,,,,,,,,,
 SRD_Skallic_drone_cannon_wing,SRD_Skallic_drone_cannon,"no_drop, no_sell, high",3,0,0,0,V,10000,1200,,1,FIGHTER,Barrage Drone,1,999,,,,,,,,,,,,,
 SRD_Nalka_fighter_wing,SRD_Nalka_fighter,"fighter4, fighter, high, sylphon_core_bp",2,,8,12,V,4000,400,,3,FIGHTER,Fighter,10,6000,,,,,,,,,,,,,
+SRD_Vetra_bomber_wing,SRD_Vetra_bomber,"bomber4, bomber, high, sylphon_core_bp",2,,8,12,V,4000,1000,700,3,BOMBER,Bomber,12,11000,,,,,,,,,,,,,
 SRD_Infel_cosmo_wing,SRD_Infel_cosmo,"no_drop, no_sell, high",3,0,10,0,V,4000,500,,3,FIGHTER,Cosmo Fighter,12,999,,,,,,,,,,,,,
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 SRD_Misja_pd_wing,SRD_Misja_pd,"support5, fighter, low, sylphon_outcast_bp",3,0.5,10,8,V,3000,500,,3,SUPPORT,Drone,6,10000,,,,,,,,,,,,,
