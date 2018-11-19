@@ -59,5 +59,11 @@
 			"SRD_nullpoint_shield_icon":"graphics/sylphon/icons/hullsys/SRD_nullpoint_barrier.png",
 			"SRD_subprocess_linkup_icon":"graphics/sylphon/icons/hullsys/ai_network.png",
 		},
+		"blueprint_packages":{
+			"sylphon_core_package":"graphics/sylphon/icons/cargo/package_sylphon.png",
+			"sylphon_high_package":"graphics/sylphon/icons/cargo/package_sylphon.png",
+			"sylphon_ex_package":"graphics/sylphon/icons/cargo/package_sylphon.png",
+			"sylphon_outcast_package":"graphics/sylphon/icons/cargo/package_outcast.png",
+		},
 	}
 }
