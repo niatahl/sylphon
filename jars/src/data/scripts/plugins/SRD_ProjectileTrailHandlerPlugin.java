@@ -20,8 +20,8 @@ public class SRD_ProjectileTrailHandlerPlugin extends BaseEveryFrameCombatPlugin
     //A map of all the trail sprites used (note that all the sprites must be under SRD_fx): ensure this one has the same keys as the other maps
     private static final Map<String, String> TRAIL_SPRITES = new HashMap<>();
     static {
-        TRAIL_SPRITES.put("SRD_adloquium_shot", "projectile_trail_standard");
-        TRAIL_SPRITES.put("SRD_adloquium_fake_shot", "projectile_trail_standard");
+        TRAIL_SPRITES.put("SRD_adloquium_shot", "projectile_trail_core");
+        TRAIL_SPRITES.put("SRD_adloquium_fake_shot", "projectile_trail_core");
         TRAIL_SPRITES.put("SRD_skalla_shot", "projectile_trail_fuzzy");
         TRAIL_SPRITES.put("SRD_phira_shock_shot", "projectile_trail_fuzzy");
         TRAIL_SPRITES.put("SRD_benediction_msl", "projectile_trail_standard");
@@ -103,8 +103,8 @@ public class SRD_ProjectileTrailHandlerPlugin extends BaseEveryFrameCombatPlugin
     }
     private static final Map<String, Float> START_SIZES = new HashMap<>();
     static {
-        START_SIZES.put("SRD_adloquium_shot", 13f);
-        START_SIZES.put("SRD_adloquium_fake_shot", 13f);
+        START_SIZES.put("SRD_adloquium_shot", 10f);
+        START_SIZES.put("SRD_adloquium_fake_shot", 10f);
         START_SIZES.put("SRD_skalla_shot", 9f);
         START_SIZES.put("SRD_phira_shock_shot", 9f);
         START_SIZES.put("SRD_benediction_msl", 9f);
@@ -157,8 +157,8 @@ public class SRD_ProjectileTrailHandlerPlugin extends BaseEveryFrameCombatPlugin
     }
     private static final Map<String, Color> TRAIL_END_COLORS = new HashMap<>();
     static {
-        TRAIL_END_COLORS.put("SRD_adloquium_shot", new Color(255,55,185));
-        TRAIL_END_COLORS.put("SRD_adloquium_fake_shot", new Color(255,25,145));
+        TRAIL_END_COLORS.put("SRD_adloquium_shot", new Color(255,75,205));
+        TRAIL_END_COLORS.put("SRD_adloquium_fake_shot", new Color(255,45,165));
         TRAIL_END_COLORS.put("SRD_skalla_shot", new Color(70,150,255));
         TRAIL_END_COLORS.put("SRD_phira_shock_shot", new Color(255,100,50));
         TRAIL_END_COLORS.put("SRD_benediction_msl", new Color(255,55,185));
@@ -175,8 +175,8 @@ public class SRD_ProjectileTrailHandlerPlugin extends BaseEveryFrameCombatPlugin
     }
     private static final Map<String, Float> TRAIL_OPACITIES = new HashMap<>();
     static {
-        TRAIL_OPACITIES.put("SRD_adloquium_shot", 0.8f);
-        TRAIL_OPACITIES.put("SRD_adloquium_fake_shot", 1f);
+        TRAIL_OPACITIES.put("SRD_adloquium_shot", 0.7f);
+        TRAIL_OPACITIES.put("SRD_adloquium_fake_shot", 0.9f);
         TRAIL_OPACITIES.put("SRD_skalla_shot", 0.9f);
         TRAIL_OPACITIES.put("SRD_phira_shock_shot", 0.9f);
         TRAIL_OPACITIES.put("SRD_benediction_msl", 0.9f);
@@ -229,8 +229,8 @@ public class SRD_ProjectileTrailHandlerPlugin extends BaseEveryFrameCombatPlugin
     }
     private static final Map<String, Float> TRAIL_LOOP_LENGTHS = new HashMap<>();
     static {
-        TRAIL_LOOP_LENGTHS.put("SRD_adloquium_shot", -1f);
-        TRAIL_LOOP_LENGTHS.put("SRD_adloquium_fake_shot", -1f);
+        TRAIL_LOOP_LENGTHS.put("SRD_adloquium_shot", 400f);
+        TRAIL_LOOP_LENGTHS.put("SRD_adloquium_fake_shot", 300f);
         TRAIL_LOOP_LENGTHS.put("SRD_skalla_shot", 500f);
         TRAIL_LOOP_LENGTHS.put("SRD_phira_shock_shot", 500f);
         TRAIL_LOOP_LENGTHS.put("SRD_benediction_msl", 400f);
@@ -247,8 +247,8 @@ public class SRD_ProjectileTrailHandlerPlugin extends BaseEveryFrameCombatPlugin
     }
     private static final Map<String, Float> TRAIL_SCROLL_SPEEDS = new HashMap<>();
     static {
-        TRAIL_SCROLL_SPEEDS.put("SRD_adloquium_shot", 0f);
-        TRAIL_SCROLL_SPEEDS.put("SRD_adloquium_fake_shot", 0f);
+        TRAIL_SCROLL_SPEEDS.put("SRD_adloquium_shot", 400f);
+        TRAIL_SCROLL_SPEEDS.put("SRD_adloquium_fake_shot", 400f);
         TRAIL_SCROLL_SPEEDS.put("SRD_skalla_shot", 400f);
         TRAIL_SCROLL_SPEEDS.put("SRD_phira_shock_shot", 400f);
         TRAIL_SCROLL_SPEEDS.put("SRD_benediction_msl", 600f);
