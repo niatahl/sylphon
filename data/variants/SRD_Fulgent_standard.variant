@@ -1,0 +1,72 @@
+{
+  "displayName": "Standard",
+  "fluxCapacitors": 11,
+  "fluxVents": 0,
+  "goalVariant": true,
+  "hullId": "SRD_Fulgent",
+  "hullMods": [
+    "targetingunit"
+  ],
+  "permaMods": [],
+  "quality": 5,
+  "variantId": "SRD_Fulgent_standard",
+  "weaponGroups": [
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0007": "gauss",
+        "WS0008": "gauss"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0016": "sabot",
+        "WS0017": "sabot",
+        "WS0018": "sabot",
+        "WS0019": "sabot"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "gravitonbeam",
+        "WS0002": "gravitonbeam",
+        "WS0003": "ionbeam",
+        "WS0004": "ionbeam"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0014": "swarmer",
+        "WS0015": "swarmer"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0005": "guardian",
+        "WS0006": "pdburst",
+        "WS0009": "pdburst",
+        "WS0010": "pdburst",
+        "WS0011": "pdburst",
+        "WS0012": "pdburst",
+        "WS0013": "pdburst"
+      }
+    }
+  ],
+  "wings": [
+    "flash_wing",
+    "flash_wing",
+    "flash_wing",
+    "flash_wing",
+    "lux_wing",
+    "lux_wing"
+  ]
+}
