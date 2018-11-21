@@ -23,7 +23,7 @@ Largesse,SRD_largesse,2,,2200,800,160,,,10,15,12,,,,ENERGY,,160,0.1,0.1,,,,,,,30
 Divinity,SRD_divinity,2,0.8,12000,600,,400,0,30,25,24,,,,ENERGY,350,,0,2.2,4,0.2,0,5,1,10,,1000,,,75,,"energy18, sylphon_high_bp",,Sylphon RnD,,General,,,,,,,,,,7.5
 Iphrail Torpedo,SRD_iphrail,2,,500,1000,,1500,500,100,20,2,1,,,HIGH_EXPLOSIVE,0,,0.1,8,,,0,0,0,0,,500,150,2.5,250,"GUIDED_POOR, STRIKE","missile15, sylphon_core_bp",,Sylphon RnD,,Torpedo,Medium,Poor,,,,,,,true,1310
 Vacuity PD,SRD_vacuity,1,,200,600,65,,,0,100,4,,,,ENERGY,,50,0,0.25,,,,,,,2400,,,,,PD,"pd7, beam7, SR, sylphon_core_bp",,Sylphon RnD,,Point Defense,,,,,,,,,,17
-Indulgence,SRD_indulgence,2,,5000,500,,10,,5,40,10,,,,ENERGY,17,,0,1,12,0.025,,,,,,2000,,,,,"energy10, SR, sylphon_core_bp",,Sylphon RnD,,General,,,,,,,,,,4545
+Indulgence,SRD_indulgence,2,,5000,500,,10,,5,40,10,,,,ENERGY,8,,0,1,12,0.025,,,,,,2000,,,,,"energy10, SR, sylphon_core_bp",,Sylphon RnD,,General,,,,,,,,,,4545
 Excogitation,SRD_excogitation,2,,1500,500,,200,,10,30,7,,,,ENERGY,230,,0.3,6,3,0.1,0,10,3,3,,1000,,,,,"energy5, SR, sylphon_high_bp",,Sylphon RnD,,Strike,,,,,,,,,,85646
 Enkindle ESM,SRD_enkindle,1,,500,1500,,100,1000,15,30,5,,,,ENERGY,10,,0,20,1,,0,0,0,,,500,250,10,150,"DO_NOT_AIM, HEATSEEKER","utility13, missile0, sylphon_core_bp",,Sylphon RnD,,Suppression,Fast,Excellent,,,,,,,true,11.25
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
