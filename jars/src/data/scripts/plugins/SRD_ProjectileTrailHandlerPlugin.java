@@ -175,8 +175,8 @@ public class SRD_ProjectileTrailHandlerPlugin extends BaseEveryFrameCombatPlugin
     }
     private static final Map<String, Float> TRAIL_OPACITIES = new HashMap<>();
     static {
-        TRAIL_OPACITIES.put("SRD_adloquium_shot", 0.7f);
-        TRAIL_OPACITIES.put("SRD_adloquium_fake_shot", 0.9f);
+        TRAIL_OPACITIES.put("SRD_adloquium_shot", 0.8f);
+        TRAIL_OPACITIES.put("SRD_adloquium_fake_shot", 1f);
         TRAIL_OPACITIES.put("SRD_skalla_shot", 0.9f);
         TRAIL_OPACITIES.put("SRD_phira_shock_shot", 0.9f);
         TRAIL_OPACITIES.put("SRD_benediction_msl", 0.9f);
@@ -342,6 +342,29 @@ public class SRD_ProjectileTrailHandlerPlugin extends BaseEveryFrameCombatPlugin
                     MagicTrailPlugin.AddTrailMemberAdvanced(proj, projectileTrailIDs2.get(proj), spriteToUse, spawnPosition, 0f, 0f, proj.getFacing() - 180f,
                             0f, 0f, START_SIZES.get(specID) / 2f, END_SIZES.get(specID) / 2f, Color.white, Color.white,
                             TRAIL_OPACITIES.get(specID), TRAIL_DURATIONS_IN.get(specID), TRAIL_DURATIONS_MAIN.get(specID), TRAIL_DURATIONS_OUT.get(specID), TRAIL_BLEND_SRC.get(specID),
+                            TRAIL_BLEND_DEST.get(specID), TRAIL_LOOP_LENGTHS.get(specID), TRAIL_SCROLL_SPEEDS.get(specID), new Vector2f(0f, 0f), null);
+                }
+
+                //Making the Adlo a bit fancier
+                if (specID.contains("SRD_adloquium_shot")) {
+                    //If we haven't already started a second trail for this projectile, get an ID for it
+                    if (projectileTrailIDs2.get(proj) == null) {
+                        projectileTrailIDs2.put(proj, MagicTrailPlugin.getUniqueID());
+                    }
+                    MagicTrailPlugin.AddTrailMemberAdvanced(proj, projectileTrailIDs2.get(proj), Global.getSettings().getSprite("SRD_fx", "projectile_trail_fringe"), spawnPosition, 0f, 0f, proj.getFacing() - 180f,
+                            0f, 0f, START_SIZES.get(specID) * 2f, END_SIZES.get(specID) * 2f, new Color(67, 53,215), new Color(67,53,215),
+                            0.4f, TRAIL_DURATIONS_IN.get(specID), TRAIL_DURATIONS_MAIN.get(specID), TRAIL_DURATIONS_OUT.get(specID)*1.5f, TRAIL_BLEND_SRC.get(specID),
+                            TRAIL_BLEND_DEST.get(specID), TRAIL_LOOP_LENGTHS.get(specID), TRAIL_SCROLL_SPEEDS.get(specID), new Vector2f(0f, 0f), null);
+                }
+
+                if (specID.contains("SRD_adloquium_fake_shot")) {
+                    //If we haven't already started a second trail for this projectile, get an ID for it
+                    if (projectileTrailIDs2.get(proj) == null) {
+                        projectileTrailIDs2.put(proj, MagicTrailPlugin.getUniqueID());
+                    }
+                    MagicTrailPlugin.AddTrailMemberAdvanced(proj, projectileTrailIDs2.get(proj), Global.getSettings().getSprite("SRD_fx", "projectile_trail_fringe"), spawnPosition, 0f, 0f, proj.getFacing() - 180f,
+                            0f, 0f, START_SIZES.get(specID) * 2f, END_SIZES.get(specID) * 2f, new Color(67,53,215), new Color(67,53,215),
+                            0.4f, TRAIL_DURATIONS_IN.get(specID), TRAIL_DURATIONS_MAIN.get(specID), TRAIL_DURATIONS_OUT.get(specID)*1.5f, TRAIL_BLEND_SRC.get(specID),
                             TRAIL_BLEND_DEST.get(specID), TRAIL_LOOP_LENGTHS.get(specID), TRAIL_SCROLL_SPEEDS.get(specID), new Vector2f(0f, 0f), null);
                 }
 
