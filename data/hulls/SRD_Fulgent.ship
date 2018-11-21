@@ -218,7 +218,7 @@
       "type": "ENERGY"
     },
     {
-      "angle": 45,
+      "angle": 20,
       "arc": 120,
       "id": "WS0003",
       "locations": [
@@ -230,7 +230,7 @@
       "type": "ENERGY"
     },
     {
-      "angle": -45,
+      "angle": -20,
       "arc": 120,
       "id": "WS0004",
       "locations": [
@@ -254,7 +254,7 @@
       "type": "ENERGY"
     },
     {
-      "angle": 90,
+      "angle": 49,
       "arc": 210,
       "id": "WS0007",
       "locations": [
@@ -266,7 +266,7 @@
       "type": "HYBRID"
     },
     {
-      "angle": -90,
+      "angle": -49,
       "arc": 210,
       "id": "WS0008",
       "locations": [
@@ -452,10 +452,8 @@
       "locations": [
         94,
         22,
-        68.5,
-        29,
-        82,
-        25.5
+        84.5,
+        23
       ],
       "mount": "HIDDEN",
       "size": "LARGE",
@@ -466,12 +464,10 @@
       "arc": 360,
       "id": "LB 2",
       "locations": [
-        93.5,
+        96.5,
         -21,
-        72.5,
-        -31.5,
-        82,
-        -22
+        86.5,
+        -21
       ],
       "mount": "HIDDEN",
       "size": "LARGE",
@@ -500,6 +496,34 @@
         -34.5,
         -44,
         -44.5
+      ],
+      "mount": "HIDDEN",
+      "size": "LARGE",
+      "type": "LAUNCH_BAY"
+    },
+    {
+      "angle": 0,
+      "arc": 360,
+      "id": "LB 5",
+      "locations": [
+        66,
+        28,
+        75.5,
+        26.5
+      ],
+      "mount": "HIDDEN",
+      "size": "LARGE",
+      "type": "LAUNCH_BAY"
+    },
+    {
+      "angle": 0,
+      "arc": 360,
+      "id": "LB 6",
+      "locations": [
+        65.5,
+        -27,
+        76.5,
+        -25
       ],
       "mount": "HIDDEN",
       "size": "LARGE",
