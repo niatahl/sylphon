@@ -38,12 +38,12 @@
 	},
 	# ships the faction gets access to when importing S&W out-of-faction
 	"shipsWhenImporting":{
-		"tags":["base_bp", "sylphon_core_bp", "sylphon_high_bp", "sylphon_outcast_bp", "sylphon_ex_bp"],
+		"tags":["sylphon_core_bp", "sylphon_high_bp", "sylphon_outcast_bp", "sylphon_ex_bp"],
 		"hulls":[
 		],
 	},
 	"knownShips":{
-		"tags":["base_bp", "sylphon_core_bp", "sylphon_high_bp", "sylphon_outcast_bp", "sylphon_ex_bp"],
+		"tags":["sylphon_core_bp", "sylphon_high_bp", "sylphon_outcast_bp", "sylphon_ex_bp"],
 		"hulls":[
 		],
 	},
@@ -54,7 +54,7 @@
 		],
 	},
 	"knownFighters":{
-		"tags":["base_bp", "sylphon_core_bp", "sylphon_high_bp", "sylphon_outcast_bp", "sylphon_ex_bp"],
+		"tags":["sylphon_core_bp", "sylphon_high_bp", "sylphon_outcast_bp", "sylphon_ex_bp"],
 		"fighters":[
 		],
 	},
@@ -64,7 +64,7 @@
 		],
 	},
 	"knownWeapons":{
-		"tags":["base_bp", "missile_bp", "sylphon_core_bp", "sylphon_high_bp", "sylphon_outcast_bp", "sylphon_ex_bp"],
+		"tags":["missile_bp", "sylphon_core_bp", "sylphon_high_bp", "sylphon_outcast_bp", "sylphon_ex_bp"],
 		"weapons":[
 		],
 	},
