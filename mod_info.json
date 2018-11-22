@@ -1,10 +1,10 @@
 {
 	"id":"Sylphon_RnD", # internal id
-	"name":"Sylphon RnD beta", # displayed to the player
+	"name":"Sylphon RnD", # displayed to the player
 	"author":"Nia and Nicke",
-	"version":"0.9DEV",
+	"version":"0.9rc1",
 	"description":"Purple warships with weird smoke trails",
-	"gameVersion":"0.9",
+	"gameVersion":"0.9a",
 	"jars":["jars/SylphonRnD.jar"],
     	"modPlugin":"data.scripts.SRD_ModPlugin"
 }
