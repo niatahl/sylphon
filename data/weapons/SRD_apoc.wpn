@@ -1,28 +1,26 @@
 {
+  "beamEffect": "data.scripts.weapons.SRD_ApocatastasisBeamScript",
   "collisionClass": "RAY",
   "collisionClassByFighter": "RAY_FIGHTER",
-  
-  "beamEffect":"data.scripts.weapons.SRD_ApocatastasisBeamScript",
-
-  "everyFrameEffect": "data.scripts.weapons.SRD_ApocatastasisEveryFrameScript",
   "coreColor": [
     255,
     255,
     255,
-    185
+    255
   ],
+  "everyFrameEffect": "data.scripts.weapons.SRD_ApocatastasisEveryFrameScript",
   "fireSoundTwo": "SRD_apoc_loop",
   "fringeColor": [
-    150,
-    50,
     255,
-    225
+    30,
+    120,
+    255
   ],
   "glowColor": [
-    150,
-    100,
     255,
-    155
+    50,
+    150,
+    255
   ],
   "hardpointAngleOffsets": [
     0,
@@ -42,17 +40,19 @@
   "specClass": "beam",
   "textureScrollSpeed": 128,
   "textureType": [
-    "graphics/fx/beamfringe.png",
-    "graphics/fx/beamcore.png"
+	"graphics/sylphon/fx/SRD_sepri_beam_fringe.png",
+    "graphics/sylphon/fx/SRD_apoc_beam_core.png"
+	
   ],
   "turretAngleOffsets": [
     0,
     0
   ],
+  "turretGlowSprite": "graphics/sylphon/weapons/SRD_apocatastasis_glow.png",
   "turretOffsets": [
-    1,
+    -1,
     5.5,
-    1,
+    -1,
     -5.5
   ],
   "turretSprite": "graphics/sylphon/weapons/SRD_apocatastasis_base.png",
