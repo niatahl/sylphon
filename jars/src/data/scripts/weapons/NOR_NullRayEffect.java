@@ -15,11 +15,11 @@ public class NOR_NullRayEffect implements BeamEffectPlugin {
     //Color of our damage numbers we display
     private static final Color DAMAGE_NUMBER_COLOR = new Color(185, 50, 180, 255);
 
-    //Which efficiency is the flux conversion at? Going with 30% for now
-    private static final float FLUX_CONVERSION_RATIO = 0.30f;
+    //Which efficiency is the flux conversion at? Going with 40% for now
+    private static final float FLUX_CONVERSION_RATIO = 0.40f;
 
     //How much flux per second can we remove? Keep this pretty high due to efficiency above
-    private static final float MAX_FLUX_CONVERTED_PER_SECOND = 800f;
+    private static final float MAX_FLUX_CONVERTED_PER_SECOND = 1200f;
 
     @Override
     public void advance(float amount, CombatEngineAPI engine, BeamAPI beam) {
@@ -76,7 +76,7 @@ public class NOR_NullRayEffect implements BeamEffectPlugin {
                 //The particle-spawning
                 for (int i = 0; i < kindaDamageThisFrame * 0.2f; i++) {
                     if ((kindaDamageThisFrame*0.2f)-(float)i > Math.random()) {
-                        Vector2f vel = MathUtils.getPoint(beam.getTo(), MathUtils.getRandomNumberInRange(5f, 400f),
+                        Vector2f vel = MathUtils.getPoint(new Vector2f(0f, 0f), MathUtils.getRandomNumberInRange(5f, 400f),
                                 MathUtils.getRandomNumberInRange(-15f, 15f) + VectorUtils.getAngle(beam.getTo(), beam.getFrom()));
                         engine.addHitParticle(MathUtils.getRandomPointInCircle(beam.getTo(), 5f), vel, MathUtils.getRandomNumberInRange(5f, 17f), 2f,
                                 MathUtils.getRandomNumberInRange(0.1f, 0.2f), DAMAGE_NUMBER_COLOR);
