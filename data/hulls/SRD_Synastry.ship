@@ -1,0 +1,388 @@
+{
+  "bounds": [
+    -71,
+    -14.5,
+    -84.5,
+    -15,
+    -92,
+    -19.5,
+    -92.5,
+    -30.5,
+    -88,
+    -34,
+    -88,
+    -45.5,
+    -81.5,
+    -66,
+    -76,
+    -69.5,
+    -78.5,
+    -91.5,
+    -74.5,
+    -91.5,
+    -73,
+    -79,
+    -64.5,
+    -85.5,
+    -64.5,
+    -96.5,
+    -60.5,
+    -99.5,
+    -53,
+    -94.5,
+    -53.5,
+    -87.5,
+    -44,
+    -83.5,
+    -27.5,
+    -83.5,
+    -23.5,
+    -78,
+    -19.5,
+    -81.5,
+    -0.5,
+    -69.5,
+    13,
+    -68.5,
+    21.5,
+    -79.5,
+    27.5,
+    -76,
+    46,
+    -76,
+    50.5,
+    -71,
+    59.5,
+    -70.5,
+    62,
+    -68.5,
+    64,
+    -52.5,
+    80,
+    -52,
+    104,
+    -35.5,
+    90,
+    -20.5,
+    83,
+    -20,
+    78.5,
+    -18,
+    62,
+    -18.5,
+    57.5,
+    -13,
+    57.5,
+    13,
+    62,
+    18.5,
+    78.5,
+    18,
+    83,
+    20,
+    90,
+    20.5,
+    104,
+    35.5,
+    80,
+    52,
+    64,
+    52.5,
+    62,
+    68.5,
+    59.5,
+    70.5,
+    50.5,
+    71,
+    46,
+    76,
+    27.5,
+    76,
+    21.5,
+    79.5,
+    13,
+    68.5,
+    -0.5,
+    69.5,
+    -19.5,
+    81.5,
+    -23.5,
+    78,
+    -27.5,
+    83.5,
+    -44,
+    83.5,
+    -53.5,
+    87.5,
+    -53,
+    94.5,
+    -60.5,
+    99.5,
+    -64.5,
+    96.5,
+    -64.5,
+    85.5,
+    -73,
+    79,
+    -74.5,
+    91.5,
+    -78.5,
+    91.5,
+    -76,
+    69.5,
+    -81.5,
+    66,
+    -88,
+    45.5,
+    -88,
+    34,
+    -92.5,
+    30.5,
+    -92,
+    19.5,
+    -84.5,
+    15,
+    -71,
+    14.5,
+    -75.5,
+    -0
+  ],
+  "builtInMods": [
+    "SRD_nullspace_conduits",
+    "SRD_sylph_core"
+  ],
+  "builtInWeapons": {
+    "WS0001": "SRD_apoc"
+  },
+  "builtInWings": [],
+  "center": [
+    100,
+    93.5
+  ],
+  "collisionRadius": 151,
+  "engineSlots": [
+    {
+      "angle": 180,
+      "contrailSize": 25,
+      "length": 73.5,
+      "location": [
+        -93,
+        26
+      ],
+      "style": "SRD_ENGINE",
+      "width": 25
+    },
+    {
+      "angle": -180,
+      "contrailSize": 25,
+      "length": 73.5,
+      "location": [
+        -93,
+        -26
+      ],
+      "style": "SRD_ENGINE",
+      "width": 25
+    },
+    {
+      "angle": 180,
+      "contrailSize": 10,
+      "length": 38.5,
+      "location": [
+        -85.5,
+        58
+      ],
+      "style": "SRD_ENGINE",
+      "width": 10
+    },
+    {
+      "angle": -180,
+      "contrailSize": 10,
+      "length": 38.5,
+      "location": [
+        -85.5,
+        -58
+      ],
+      "style": "SRD_ENGINE",
+      "width": 10
+    },
+    {
+      "angle": 180,
+      "contrailSize": 9,
+      "length": 44.5,
+      "location": [
+        -88,
+        50
+      ],
+      "style": "SRD_ENGINE",
+      "width": 9
+    },
+    {
+      "angle": -180,
+      "contrailSize": 9,
+      "length": 44.5,
+      "location": [
+        -88,
+        -50
+      ],
+      "style": "SRD_ENGINE",
+      "width": 9
+    },
+    {
+      "angle": 180,
+      "contrailSize": 9,
+      "length": 50.5,
+      "location": [
+        -90,
+        41.5
+      ],
+      "style": "SRD_ENGINE",
+      "width": 9
+    },
+    {
+      "angle": -180,
+      "contrailSize": 9,
+      "length": 50.5,
+      "location": [
+        -90,
+        -41.5
+      ],
+      "style": "SRD_ENGINE",
+      "width": 9
+    }
+  ],
+  "height": 198,
+  "hullId": "SRD_Synastry",
+  "hullName": "Synastry",
+  "hullSize": "CRUISER",
+  "shieldCenter": [
+    0,
+    -0
+  ],
+  "shieldRadius": 138,
+  "spriteName": "graphics/sylphon/ships/SRD_Synastry.png",
+  "style": "SRD_TECH",
+  "viewOffset": 0,
+  "weaponSlots": [
+    {
+      "angle": 0,
+      "arc": 139,
+      "id": "WS0001",
+      "locations": [
+        -22.5,
+        45.5
+      ],
+      "mount": "TURRET",
+      "size": "LARGE",
+      "type": "BUILT_IN"
+    },
+    {
+      "angle": -16.5,
+      "arc": 99,
+      "id": "WS0002",
+      "locations": [
+        -22.5,
+        -46
+      ],
+      "mount": "TURRET",
+      "size": "LARGE",
+      "type": "ENERGY"
+    },
+    {
+      "angle": -90,
+      "arc": 214,
+      "id": "WS0005",
+      "locations": [
+        29.5,
+        -58
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "ENERGY"
+    },
+    {
+      "angle": 90,
+      "arc": 214,
+      "id": "WS0006",
+      "locations": [
+        29.5,
+        58
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "ENERGY"
+    },
+    {
+      "angle": 0,
+      "arc": 109,
+      "id": "WS0003",
+      "locations": [
+        71.5,
+        -36
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "ENERGY"
+    },
+    {
+      "angle": -0,
+      "arc": 109,
+      "id": "WS0004",
+      "locations": [
+        71.5,
+        36
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "ENERGY"
+    },
+    {
+      "angle": -0,
+      "arc": 5,
+      "id": "WS0008",
+      "locations": [
+        58.5,
+        59
+      ],
+      "mount": "HARDPOINT",
+      "size": "MEDIUM",
+      "type": "SYNERGY"
+    },
+    {
+      "angle": 0,
+      "arc": 5,
+      "id": "WS0009",
+      "locations": [
+        58.5,
+        -59
+      ],
+      "mount": "HARDPOINT",
+      "size": "MEDIUM",
+      "type": "SYNERGY"
+    },
+    {
+      "angle": 173,
+      "arc": 47,
+      "id": "WS0007",
+      "locations": [
+        -42.5,
+        68.5
+      ],
+      "mount": "TURRET",
+      "size": "LARGE",
+      "type": "SYSTEM"
+    },
+    {
+      "angle": -173,
+      "arc": 47,
+      "id": "WS0010",
+      "locations": [
+        -42.5,
+        -68.5
+      ],
+      "mount": "TURRET",
+      "size": "LARGE",
+      "type": "SYSTEM"
+    }
+  ],
+  "width": 200
+}

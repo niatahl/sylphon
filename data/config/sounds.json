@@ -175,6 +175,11 @@
 			{"file":"sounds/sylphon/weapons/SRD_condemnation_loop.ogg","pitch":1,"volume":1.1},
         ],
     },
+	"SRD_adlo_loop":{
+        "sounds":[
+			{"file":"sounds/sylphon/weapons/SRD_condemnation_loop.ogg","pitch":0.4,"volume":1.1},
+        ],
+    },
 	"SRD_largesse_loop":{
         "sounds":[
 			{"file":"sounds/sylphon/weapons/SRD_largesse_loop.ogg","pitch":1.5,"volume":1},

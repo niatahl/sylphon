@@ -1,0 +1,54 @@
+{
+  "collisionClass": "RAY",
+  "collisionClassByFighter": "RAY_FIGHTER",
+  "coreColor": [
+    255,
+    255,
+    255,
+    185
+  ],
+  "fireSoundTwo": "SRD_apoc_loop",
+  "fringeColor": [
+    150,
+    50,
+    255,
+    225
+  ],
+  "glowColor": [
+    150,
+    100,
+    255,
+    155
+  ],
+  "hardpointAngleOffsets": [
+    0
+  ],
+  "hardpointOffsets": [
+    0,
+    0
+  ],
+  "hardpointSprite": "",
+  "hitGlowRadius": 0,
+  "id": "SRD_apoc",
+  "pixelsPerTexel": 1,
+  "size": "LARGE",
+  "specClass": "beam",
+  "textureScrollSpeed": 128,
+  "textureType": [
+    "graphics/fx/beamfringe.png",
+    "graphics/fx/beamcore.png"
+  ],
+  "turretAngleOffsets": [
+    0,
+    0
+  ],
+  "turretOffsets": [
+    1,
+    5.5,
+    1,
+    -5.5
+  ],
+  "turretSprite": "graphics/sylphon/weapons/SRD_apocatastasis_base.png",
+  "type": "ENERGY",
+  "width": 10
+}
