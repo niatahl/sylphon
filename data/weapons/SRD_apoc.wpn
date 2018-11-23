@@ -1,6 +1,10 @@
 {
   "collisionClass": "RAY",
   "collisionClassByFighter": "RAY_FIGHTER",
+  
+  "beamEffect":"data.scripts.weapons.SRD_ApocatastasisBeamScript",
+
+  "everyFrameEffect": "data.scripts.weapons.SRD_ApocatastasisEveryFrameScript",
   "coreColor": [
     255,
     255,
@@ -21,9 +25,12 @@
     155
   ],
   "hardpointAngleOffsets": [
+    0,
     0
   ],
   "hardpointOffsets": [
+    0,
+    0,
     0,
     0
   ],

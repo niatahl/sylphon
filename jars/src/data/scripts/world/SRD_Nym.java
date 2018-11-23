@@ -137,7 +137,6 @@ public class SRD_Nym {
                 5, // size of the market
                 new ArrayList<>(
                         Arrays.asList( // list of market conditions
-                                Conditions.FREE_PORT,
                                 Conditions.OUTPOST,
                                 Conditions.POPULATION_5)),
                 new ArrayList<>(

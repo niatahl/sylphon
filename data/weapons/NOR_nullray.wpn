@@ -8,6 +8,7 @@
     255
   ],
   "darkCore": true,
+  "beamEffect":"data.scripts.weapons.NOR_NullRayEffect",
   "fireSoundTwo": "NOR_nullray_loop",
   "fringeColor": [
     105,
