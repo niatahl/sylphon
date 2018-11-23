@@ -1,0 +1,39 @@
+{
+  "displayName": "Standard",
+  "fluxCapacitors": 10,
+  "fluxVents": 10,
+  "goalVariant": true,
+  "hullId": "SRD_Vril",
+  "hullMods": [
+    "SRD_prototype_nullpoint_shield"
+  ],
+  "permaMods": [],
+  "quality": 5,
+  "variantId": "SRD_Vril_standard",
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0005": "SRD_charity"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0003": "SRD_embrace",
+        "WS0004": "SRD_embrace"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "SRD_vedra",
+        "WS0002": "SRD_vedra"
+      }
+    }
+  ],
+  "wings": []
+}

@@ -3,7 +3,7 @@ name,id,designation,tech/manufacturer,system id,fleet pts,hitpoints,armor rating
 Furika,SRD_Furika,Gunship,Sylphon RnD,SRD_nullspace_shunt,5,2000,350,3000,2500,300,40,,140,190,130,60,120,240,FRONT,,270,0.3,0.9,,,5,15,40,20,1,20,10,16000,8,10,300,0.25,6,6,,sylphon_core_bp,0.4,2,2,59428
 Celika,SRD_Celika,Frigate,Sylphon RnD,SRD_nullpoint_barrier,5,2000,300,3000,2500,300,45,,140,180,120,60,120,250,OMNI,,360,0.3,0.7,,,0,0,20,20,1,20,10,15000,8,10,300,0.25,8,8,,sylphon_high_bp,0.4,2,2,59429
 Catora,SRD_Catora,Heavy Frigate,Sylphon RnD,SRD_armor_polarization,5,2000,500,3500,2500,200,55,,110,130,80,50,60,600,FRONT,,120,0.3,1,,,0,0,20,20,1,20,9,17000,8,10,240,0.25,6,6,,sylphon_high_bp,0.4,2,2,59429
-Vril,SRD_Vril,Frigate,Sylphon RnD,SRD_nullpoint_barrier,5,2400,350,5000,2500,400,60,,160,180,120,60,120,250,OMNI,,360,0.3,0.7,,,0,0,20,20,1,20,10,25000,8,10,300,0.25,12,12,,"sylphon_ex_bp, rare_bp",0.4,2,2,59429
+Vril,SRD_Vril,Frigate,Sylphon RnD,SRD_nullpoint_barrier,5,2400,350,5000,2500,400,50,,160,180,120,60,120,250,OMNI,,360,0.3,0.7,,,0,0,20,20,1,20,10,25000,8,10,300,0.25,12,12,,"sylphon_ex_bp, rare_bp",0.4,2,2,59429
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 #destroyers,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 Tarima,SRD_Tarima,Destroyer,Sylphon RnD,SRD_accelerated_capacitors,9,4000,400,5500,8333,450,70,,90,60,50,30,30,350,FRONT,,200,0.3,0.9,,,25,50,80,50,2,25,9,24000,5,15,300,0.25,11,11,,sylphon_core_bp,0.5,2,3,59432

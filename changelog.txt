@@ -1,4 +1,10 @@
-﻿0.9
+﻿0.9rc2
+Bugfixes:
+- Fixed Vril-related problems
+- Fixed certain built-ins showing up as modular weapons
+
+
+0.9rc1
 Additions:
 - Added 0.9 integration
 - Added a unique industry to Sylpheed Station allowing it to tech-mine Preatorium remotely (and some lore-gibble preventing Preatorium from being colonized/looted)
@@ -6,6 +12,7 @@ Additions:
 
 Changes:
 - Now uses and requires MagicLib; all old code which is included in MagicLib has been refactored and many old scripts have been removed
+
 
 0.8.3 [Never released]
 Additions:

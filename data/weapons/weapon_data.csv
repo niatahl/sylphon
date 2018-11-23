@@ -44,7 +44,7 @@ Ablution,SRD_ablution,1,1,1,500,,50,,5,0,0,,,,ENERGY,20,,,0.15,,,0.5,0.5,0.1,,,2
 Stricture S,SRD_stricture_s,3,0.5,15000,500,500,,,0,0,0,,,,HIGH_EXPLOSIVE,,500,0.5,0.5,0.5,3,,,,,10000,,,,,SYSTEM,"energy14, beam15",,,,,,,,,,,,,,1308
 Skallic Cannon,SRD_skallic_cannon,3,1,20000,1000,,200,75,50,10,0,,,,ENERGY,250,,0.2,1.5,1,0.2,0,0,0,0,,900,,,,SYSTEM,energy20,,,,,,,,,,,,,,1311
 Zealot S,SRD_zealot_s,2,1,3400,500,,20,10,5,35,0,,,,KINETIC,80,,0,0.8,3,0.1,,,,,,900,,,,SYSTEM,kinetic11,,,,,,,,,,,,,,1314
-Raphiel S,SRD_raphiel_single,1,1,400,1000,,600,300,50,30,4,1,,,KINETIC,0,,0,1,1,,0,0,0,,,700,100,2,150,DO_NOT_AIM,"missile8, strike3",,,,,,,,,,,,,true,1319
+Raphiel S,SRD_raphiel_single,1,1,400,1000,,600,300,50,30,4,1,,,KINETIC,0,,0,1,1,,0,0,0,,,700,100,2,150,"DO_NOT_AIM, SYSTEM","missile8, strike3",,,,,,,,,,,,,true,1319
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 #built_in,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
@@ -61,7 +61,7 @@ Axel Shooter,SRD_axel,1,1,10000,2000,,100,100,100,0,0,,,,ENERGY,1000,,,5,,,,,,,,
 Phira,SRD_phira_burst,3,0,9999,1000,,270,,50,10,24,,,,HIGH_EXPLOSIVE,330,,,1.7,3,0.2,,,,,,1200,,,,"SYSTEM, SHOW_IN_CODEX",he20,,Sylphon Outcast,,Multi-Purpose,,,,,,,,,,466
 Phira Impact,SRD_phira_impact,3,0,9999,1000,,230,,100,10,24,,,,KINETIC,300,,,1.7,3,0.2,,,,,,1200,,,,SYSTEM,kinetic20,,Sylphon Outcast,,,,,,,,,,,,454
 Phira Shock,SRD_phira_shock,3,0,9999,1000,,300,200,20,10,24,,,,ENERGY,350,,,1.7,3,0.2,0,0,0,0,,1200,,,,SYSTEM,energy20,,Sylphon Outcast,,,,,,,,,,,,467
-Vedra,SRD_vedra,1,,200,500,100,,,0,100,4,,,,ENERGY,,100,0,0.25,,,,,,,2400,,,,,PD,"pd7, beam7, SR",,Sylphon RnD,,Point Defense,,,,,,,,,,17
+Vedra,SRD_vedra,1,,200,500,100,,,0,100,4,,,,ENERGY,,100,0,0.25,,,,,,,2400,,,,,"PD, SYSTEM","pd7, beam7, SR",,Sylphon RnD,,Point Defense,,,,,,,,,,17
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 #joke,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 Götterdämmerung mkII,SRD_goetterdaemmerung_modular,3,0.5,9999999,1300,2500,,0,0,4,99,,,,ENERGY,,100,5,2,0.5,15,,,,,10000,,,,,SYSTEM,,,Sylphon RnD,,,,,,,,,,,,

@@ -20,6 +20,7 @@
 			
 		"SRD_Celika_P_standard":2,
 		"SRD_Celika_P_balanced":3,
+		"SRD_Vril_standard":3,
 	},
 	"combatMedium":{
 		"SRD_Silverhead_standard":10,
