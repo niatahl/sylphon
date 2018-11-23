@@ -62,7 +62,6 @@ public class SRD_ApocatastasisEveryFrameScript implements EveryFrameWeaponEffect
             }
 
             //Otherwise, we apply the damage bonus
-            engine.addFloatingDamageText(key.getLocation(), mainEffectMap.get(key)*100f, Color.WHITE, key, key);
             key.getMutableStats().getKineticDamageTakenMult().modifyMult(EFFECT_KEY+weapon.getId(), mainEffectMap.get(key)+1f);
             key.getMutableStats().getEnergyDamageTakenMult().modifyMult(EFFECT_KEY+weapon.getId(), mainEffectMap.get(key)+1f);
             key.getMutableStats().getHighExplosiveDamageTakenMult().modifyMult(EFFECT_KEY+weapon.getId(), mainEffectMap.get(key)+1f);
