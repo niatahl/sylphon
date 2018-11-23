@@ -175,7 +175,7 @@
 			{"file":"sounds/sylphon/weapons/SRD_condemnation_loop.ogg","pitch":1,"volume":1.1},
         ],
     },
-	"SRD_adlo_loop":{
+	"SRD_apoc_loop":{
         "sounds":[
 			{"file":"sounds/sylphon/weapons/SRD_condemnation_loop.ogg","pitch":0.4,"volume":1.1},
         ],
