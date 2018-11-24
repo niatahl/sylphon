@@ -57,7 +57,7 @@ Misja,SRD_Misja,Support Fighter,Sylphon Outcast,,,300,100,300,,60,0,,200,300,250
 Sura Tel,NOR_Sura_Tel,Messenger,,phaseteleporter,20,6000,500,12000,17000,800,130,,110,70,50,40,40,1200,FRONT,,270,0.3,0.7,,,0,0,100,60,1,35,9,100000,3,12,480,0.25,35,35,"UNBOARDABLE, HIDE_IN_CODEX",,0.5,2,3,59423
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 #Variants,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-Iridescent,SRD_Fulgent,Battlecarrier,,recalldevice,40,12000,1000,20000,31250,1100,280,6,40,30,20,10,10,3400,OMNI,,180,0.3,0.7,,,300,700,400,400,9,35,7,400000,4,20,720,0.25,50,50,"UNBOARDABLE, CARRIER, COMBAT, HIDE_IN_CODEX",remnant,0.6,2,5,59439
+Iridescent,SRD_Fulgent,Battlecarrier,Remnant,recalldevice,40,12000,1000,20000,31250,1100,280,6,40,30,20,10,10,3400,OMNI,,180,0.3,0.7,,,300,700,400,400,9,35,7,400000,4,20,720,0.25,40,40,"UNBOARDABLE, CARRIER, COMBAT, HIDE_IN_CODEX",remnant,0.6,2,5,59439
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 #Weird stuff,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 Omega Aeterna,SRD_Omega_Aeterna,Harbinger of the End,,SRD_nullpoint_barrier,40,40000,1600,50000,31250,2200,300,,30,20,10,15,10,3300,OMNI,,360,0.3,0.5,,,0,1000,500,500,10,30,7,9999999,4,20,900,0.25,80,80,"UNBOARDABLE, HIDE_IN_CODEX",,0.6,2,5,59431

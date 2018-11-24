@@ -29,8 +29,8 @@
 	"hullFrequency":{
 		"tags":{
 			"sylphon_core_bp":10,
-			"sylphon_high_bp":6,
-			"sylphon_ex_bp":2,
+			"sylphon_high_bp":8,
+			"sylphon_ex_bp":5,
 			"sylphon_outcast_bp":1,
 		},
 		"hulls":{
@@ -38,7 +38,7 @@
 	},
 	# ships the faction gets access to when importing S&W out-of-faction
 	"shipsWhenImporting":{
-		"tags":["sylphon_core_bp", "sylphon_high_bp", "sylphon_outcast_bp", "sylphon_ex_bp"],
+		"tags":["sylphon_core_bp", "sylphon_high_bp", "sylphon_ex_bp"],
 		"hulls":[
 		],
 	},
@@ -49,7 +49,7 @@
 	},
 	# listing ships here will make the faction mostly use them even if other hulls become available
 	"priorityShips":{
-		"tags":["sylphon_core_bp", "sylphon_high_bp"],
+		"tags":["sylphon_core_bp", "sylphon_high_bp", "sylphon_ex_bp"],
 		"hulls":[
 		],
 	},

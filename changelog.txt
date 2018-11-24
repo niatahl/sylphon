@@ -1,8 +1,15 @@
 ﻿0.9.1
 Additions:
 - Added the Synastry and its built-in weapon, the Apocatastasis [say *that* fast 5 times]
+
+Changes:
+- Moved multiple weapon blueprints into the rare category
+- Added new sprites for Sylpheed Station and Ozma Station
+- Random behind the scenes adjustments for stuff
+
 Bugfixes:
 - Ozma Station is no longer a freeport *twice* (don't ask how that works): only works on new saves, unfortunately, but it's not serious enough to make a new save over anyhow
+
 
 0.9rc2
 Bugfixes:
