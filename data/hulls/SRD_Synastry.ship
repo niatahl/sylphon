@@ -163,7 +163,7 @@
     100,
     97.5
   ],
-  "collisionRadius": 151,
+  "collisionRadius": 169.5,
   "engineSlots": [
     {
       "angle": 180,
@@ -262,7 +262,7 @@
     0,
     -0
   ],
-  "shieldRadius": 138,
+  "shieldRadius": 162.5,
   "spriteName": "graphics/sylphon/ships/SRD_Synastry.png",
   "style": "SRD_TECH",
   "viewOffset": 0,

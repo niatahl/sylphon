@@ -1,0 +1,60 @@
+{
+  "baseHullId": "SRD_Synastry",
+  "baseValueMult": 1.5,
+  "descriptionId": "SRD_Synastry",
+  "hullDesignation": "FRIGATE",
+  "hullName": "Cieve",
+  "ordnancePoints": 150, 
+  "restoreToBaseHull": false,
+  "skinHullId": "SRD_Synastry_cieve",
+  "spriteName": "graphics/sylphon/ships/skins/SRD_Synastry_cieve.png",
+  "systemId": "SRD_nullpoint_barrier",
+  "removeBuiltInWeapons": ["WS0001"],
+  "style": SRD_RH_TECH,
+  "weaponSlotChanges": {
+    "WS0001": {
+      "angle": 13,
+      "arc": 90,
+	  "type": HYBRID
+    },
+    "WS0002": {
+      "angle": -13,
+      "arc": 90,
+	  "type": HYBRID
+    },
+	"WS0008": {
+	  "type": UNIVERSAL
+	},
+	"WS0009": {
+	  "type": UNIVERSAL
+	},
+  },
+  "engineSlotChanges": {
+	"0":{
+	  "style": "SRD_RH_ENGINE"
+	},
+	"1":{
+	  "style": "SRD_RH_ENGINE"
+	},
+	"2":{
+	  "style": "SRD_RH_ENGINE"
+	},
+	"3":{
+	  "style": "SRD_RH_ENGINE"
+	},
+	"4":{
+	  "style": "SRD_RH_ENGINE"
+	},
+	"5":{
+	  "style": "SRD_RH_ENGINE"
+	},
+	"6":{
+	  "style": "SRD_RH_ENGINE"
+	},
+	"7":{
+	  "style": "SRD_RH_ENGINE"
+	}
+  }
+	
+  
+}
