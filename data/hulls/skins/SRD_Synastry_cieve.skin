@@ -2,7 +2,7 @@
   "baseHullId": "SRD_Synastry",
   "baseValueMult": 1.5,
   "descriptionId": "SRD_Synastry",
-  "hullDesignation": "FRIGATE",
+  "hullDesignation": "CRUISER",
   "hullName": "Cieve",
   "ordnancePoints": 150, 
   "restoreToBaseHull": false,
