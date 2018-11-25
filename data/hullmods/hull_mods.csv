@@ -36,6 +36,14 @@ Slots are also designed to be easily converted into additional launch bays for t
 ,,,,,,,,,,,,,,,,,
 Sylph Core,SRD_sylph_core,,,,,,,TRUE,,0,0,0,0,data.scripts.hullmods.SRD_SylphCore,"This ship has had a voluntary AI-core integrated into the mainframe by the Sylphon. While upkeep is increased by %s to keep the core operating under peak conditions, the ship %s. The ship's crew capacity is however reduced by %s due to installation requirements.%s",Automated ship,graphics/sylphon/hullmods/SRD_sylph_core.png
 ,,,,,,,,,,,,,,,,,
+Eccentric Core: Cieve,SRD_eccentric_core_cieve,,,,,,,TRUE,,0,0,0,0,data.scripts.hullmods.SRD_EccentricCoreCieve,"~~Flavor text about eccentrics~~
+
+Increases supply upkeep by %s, and reduces all crew capacity by %s. Counts as a %s.%s
+
+%s
+~~Specific flavor text about Cieve~~
+Reduces Ballistic weapon flux costs by %s, and increases all damage against missiles and fighters by %s. Has %s at all CR levels, and can correctly distinguish flares from actual targets.",Eccentric Sylph Core,graphics/sylphon/hullmods/SRD_sylph_core.png
+,,,,,,,,,,,,,,,,,
 Modular Nullspace Conduits,SRD_modular_nullspace_conduits,1,,"special, req_spaceport","Special, Requires Dock",8000,,,,3,5,10,20,data.scripts.hullmods.SRD_ModularNullspaceConduits,"A smaller, modular implementation of nullspace skimming technology. By using the ship's already-existing flux conduits for cooling and counter-balancing, it uses up only a fraction of the normal space required by such a device, but is significantly less efficient as a result.
 
 Functions as %s, but does not grant all the bonuses such conduits normally entail. The ship can skim nullspace, increasing its speed by up to %s while travelling in a straight line, but it takes %s as long to reach that speed compared to normal conduits.

@@ -10,6 +10,8 @@
   "spriteName": "graphics/sylphon/ships/skins/SRD_Synastry_cieve.png",
   "systemId": "SRD_nullpoint_barrier",
   "removeBuiltInWeapons": ["WS0001"],
+  "removeBuiltInMods": ["SRD_sylph_core"],
+  "builtInMods": ["SRD_eccentric_core_cieve"],
   "style": SRD_RH_TECH,
   "weaponSlotChanges": {
     "WS0001": {

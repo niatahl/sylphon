@@ -110,7 +110,7 @@ public class SRD_AIConversion extends BaseSubmarketPlugin {
     @Override
     public String getIllegalTransferText(FleetMemberAPI member, TransferAction action) {
         //Checks if the member being sold already has a Sylph Core
-        if (member.getVariant().getHullMods().contains("SRD_sylph_core")) {
+        if (member.getVariant().getHullMods().contains("SRD_sylph_core") || member.getVariant().getHullMods().contains("SRD_eccentric_core_cieve")) {
             return "This ship already has a Sylph Core installed";
         }
 

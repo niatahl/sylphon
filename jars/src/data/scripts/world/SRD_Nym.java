@@ -15,7 +15,10 @@ import com.fs.starfarer.api.impl.campaign.procgen.DefenderDataOverride;
 import com.fs.starfarer.api.impl.campaign.procgen.NebulaEditor;
 import com.fs.starfarer.api.impl.campaign.procgen.StarAge;
 import com.fs.starfarer.api.impl.campaign.procgen.StarSystemGenerator;
-import com.fs.starfarer.api.impl.campaign.procgen.themes.DerelictThemeGenerator;
+import com.fs.starfarer.api.impl.campaign.procgen.themes.BaseThemeGenerator;
+import com.fs.starfarer.api.impl.campaign.procgen.themes.SalvageSpecialAssigner;
+import com.fs.starfarer.api.impl.campaign.rulecmd.salvage.special.ShipRecoverySpecial;
+import com.fs.starfarer.api.impl.campaign.rulecmd.salvage.special.ShipRecoverySpecial.ShipCondition;
 import com.fs.starfarer.api.impl.campaign.terrain.*;
 import com.fs.starfarer.api.util.Misc;
 import java.util.ArrayList;
@@ -152,7 +155,8 @@ public class SRD_Nym {
                                 Industries.FUELPROD,
                                 Industries.PATROLHQ,
                                 Industries.HEAVYBATTERIES,
-                                Industries.WAYSTATION)),
+                                Industries.WAYSTATION,
+                                Industries.BATTLESTATION)),
                 0.3f, // tariff amount
                 true, // Free Port
                 true); //Has junk and chatter
