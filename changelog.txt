@@ -6,6 +6,8 @@ Changes:
 - Moved multiple weapon blueprints into the rare category
 - Added new sprites for Sylpheed Station and Ozma Station
 - Random behind the scenes adjustments for stuff
+- Minor system spawning adjustments
+- Added "Stable Locations" to the two Sylphon systems
 
 Bugfixes:
 - Ozma Station is no longer a freeport *twice* (don't ask how that works): only works on new saves, unfortunately, but it's not serious enough to make a new save over anyhow
