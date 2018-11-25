@@ -9,6 +9,7 @@ Changes:
 
 Bugfixes:
 - Ozma Station is no longer a freeport *twice* (don't ask how that works): only works on new saves, unfortunately, but it's not serious enough to make a new save over anyhow
+- Ozma Station now properly has a Low-tech battlestation (also only on new games, but honestly don't bother with it if you're in the middle of a save)
 
 
 0.9rc2

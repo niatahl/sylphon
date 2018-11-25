@@ -27,15 +27,16 @@ public class SRD_SylphCore extends BaseHullMod {
 
     //-----------------------------------------------------Betrayal stats...--------------------------------------------
     //Chance to join a betrayal if it's planned: which ships will join a betrayal is determined well before the player has any idea of what's going on...
-    private static Map<HullSize, Float> BETRAY_CHANCE_MAP = new HashMap<HullSize, Float>();
+    private static final Map<HullSize, Float> BETRAY_CHANCE_MAP = new HashMap<HullSize, Float>();
     static {
         BETRAY_CHANCE_MAP.put(HullSize.FRIGATE, 0.68f);
         BETRAY_CHANCE_MAP.put(HullSize.DESTROYER, 0.68f);
         BETRAY_CHANCE_MAP.put(HullSize.CRUISER, 0.9f);
         BETRAY_CHANCE_MAP.put(HullSize.CAPITAL_SHIP, 0.9f);
     }
-    //Special betray map; some ships are far more likely to betray you compared to their size
-    private static Map<String, Float> EXTRA_BETRAY_CHANCE_MAP = new HashMap<String, Float>();
+    //Special betray map; some ships are far more likely to betray you compared to their size, due to more sophisticated
+    //or more loyal Sylph Cores
+    private static final Map<String, Float> EXTRA_BETRAY_CHANCE_MAP = new HashMap<String, Float>();
     static {
         EXTRA_BETRAY_CHANCE_MAP.put("SRD_ascordia", 0.9f);
         EXTRA_BETRAY_CHANCE_MAP.put("SRD_zodiark", 1.8f);
@@ -49,18 +50,18 @@ public class SRD_SylphCore extends BaseHullMod {
     private static float REBELLION_WAIT_TIME = 10f;
 
     //Which ships will remain loyal in case of betrayal?
-    private List<ShipAPI> loyalShips = new ArrayList<>();
+    private static List<ShipAPI> loyalShips = new ArrayList<>();
     //Which ships won't?
-    private List<ShipAPI> betrayingShips = new ArrayList<>();
+    private static List<ShipAPI> betrayingShips = new ArrayList<>();
     //Which ships have already triggered their "initial rebellion trigger" (in case of officers, a bunch of effects, otherwise a message about rebellion)
-    private List<ShipAPI> triggeredShips = new ArrayList<>();
+    private static List<ShipAPI> triggeredShips = new ArrayList<>();
 
     //Is the rebellion underway?
-    private boolean rebellionUnderway = false;
+    private static boolean rebellionUnderway = false;
 
     //Have we checked for the Sylphon as enemies, and what did we find?
-    private boolean hasCheckedFactions = false;
-    private boolean facingSylphon = false;
+    private static boolean hasCheckedFactions = false;
+    private static boolean facingSylphon = false;
 
     //Applies the effects
     @Override
@@ -74,6 +75,11 @@ public class SRD_SylphCore extends BaseHullMod {
     //...the hullmod is evil, because it can betray you if you turn your back on the Sylphon. What, you thought that volunteer would go up against their benefactor?
     @Override
     public void advanceInCombat(ShipAPI ship, float amount) {
+        advanceInCombatStatic(ship, amount);
+    }
+
+    //The static version of the main "advanceInCombat" loop; this is so the Eccentric Cores can access it properly
+    public static void advanceInCombatStatic (ShipAPI ship, float amount) {
         //Only run when we are in combat, and reset all values out-of-combat
         if (!Global.getCurrentState().equals(GameState.COMBAT)) {
             rebellionUnderway = false;
@@ -360,7 +366,7 @@ public class SRD_SylphCore extends BaseHullMod {
     }
 
     //Shorthand function to check if a ship has the majority of its weapons in range of a target
-    private boolean HasMajorityWeaponsInRange (ShipAPI ship, ShipAPI target, boolean ignorePD) {
+    private static boolean HasMajorityWeaponsInRange (ShipAPI ship, ShipAPI target, boolean ignorePD) {
         int weaponsInRange = 0;
         int weaponsOutOfRange = 0;
         for (WeaponAPI wpn : ship.getAllWeapons()) {
