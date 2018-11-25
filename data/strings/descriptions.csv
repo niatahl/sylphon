@@ -71,8 +71,16 @@ SRD_Myrigo,SHIP,Advanced fighter-bomber carrying 6 Harrow-type missiles capable 
 SRD_Misja,SHIP,"A versatile drone employed by the Outcast, coming in configurations for various support roles.",,,
 SRD_Nalka,SHIP,"Outfitted with a pair of downsized rail accelerators, the Nalka is designed to suppress shielded targets in advance of an assault.",,,
 SRD_Infel,SHIP,"A high-performance fighter designed for the Replekia, its autofactory is fully integrated and incompatible with other ships. ",,,
+SRD_Vril,SHIP,"An advanced frigate, recently put into service by Sylphon RnD, its true capabilities are still unknown.
+",,,
+SRD_Synastry,SHIP,"The Synastry is an advanced EWAR-Cruiser rarely seen in Sylphon's fleets. Their reliance on alpha-level AI cores as central control unit makes these ship expensive to build and difficult to find willing operators for. Their effectiveness, however, cannot be denied as the Synastry is capable of providing a wide range of fleet support in and out of battle.
+
+The first of these vessels were initially constructed in the early years after the First AI War from the recovered hulls of Brilliant-class cruisers. Originally intended as a makeshift surveying vessel in this new post-collapse world, the Synastry fulfilled its role better than initially expected. Following this initial success, a number of overhauls for the class were greenlit to turn what was once a makeshift vessel into a military-grade EWAR platform. While the increased complexity of these extensive upgrades eventually necessitated the integration of alpha-level cores to provide enough processing power to handle all its systems, the increased difficulty of finding willing alphas was a price well worth paying.",,,
+SRD_Vetra,SHIP,"A basic missile drone, carrying a single Raphiel-class missile. Simple but effective when supporting other strike craft to soften up targets.",,,
 ,,,,,
-SRD_Fulgent,SHIP,"Adapted by the Remnant from a captured prototype for the Frelia-class carrier, the Fulgent can rarely be seen in Remnant strike groups as only few have been produced in their autofactories as of yet. Their combat performance, however, makes it likely it is here to stay.",,,
+SRD_Fulgent,SHIP,"A remnant of the autonomous AI fleets developed by the TriTachyon Corporation. Illegal under Domain (and Hegemony) law, and an abomination to the Church of Galactic Redemption, the First AI War saw these creations purged from the Sector. So the official histories say.
+
+Host to an endless swarm of drone fighters, the Iridescent is a flying factory, projecting devastating fighter screens across any battle. Housing the fighter complement of a dedicated supercarrier, one wouldn't expect this ship to have much room for direct firepower. A wrong thought.",,,
 ,,,,,
 SRD_Sura_Tel,SHIP,"""You should not be here. Return to your wretched realm or be smitten by nihility.""",,,
 ,,,,,
@@ -123,7 +131,8 @@ SRD_paja,WEAPON,A standard point-defense weapon as used by Outcast vessels.,Poin
 SRD_arciel,WEAPON,"A massive rail driver, firing heavy metal spike equipped with a small plasma warhead for somewhat increased effectiveness against armor.",Fire Support,,
 SRD_qoga,WEAPON,"Downscaled from the Ar Ciel, this medium-sized rail driver fires high velocity metal spikes equipped with small plasma warheads.",Fire Support,,
 SRD_harmonius,WEAPON,Massive plasma drivers boasting an atypically long range for weapons of their kind.,Fire Support,,
-,,,,,
+SRD_vedra,WEAPON,"The Vril's integrated PD-solution. While a simple design, its beams are of a high intensity for PD weapons and often employed offensively at short range.",,,
+SRD_apoc,WEAPON,"A high-powered multi-spectrum scanner, linked to the Synastry's EWAR suite. While primarily designed for long distance scans, it can also be utilised in combat. The intensity of the scanning beams alone makes them a destructive weapon, but the scanner's ability to quickly analyze a target's structure and transmit weakpoint data to allies is its real benefit.",,,
 ,,,,,
 ,,,,,
 # Ship Systems,,,,,
@@ -164,3 +173,4 @@ SRD_ozma_station,CUSTOM,What once started as an orbital gas refinery to fuel Syl
 SRD_sylpheed_station,CUSTOM,"The Sylphon RnD headquarters, orbiting the dead moon Praetorium currently, it is said the whole station is capable of interstellar travel should the need arise.",,"A veritable space fortress, the massive headquarters of Sylphon RnD welcome you with an unexpected friendliness. Stepping out of your ship you enter the white halls of the station, an almost surreal place in its almost alien design. Fractal images decorate the walls and robotic guides stand ready to assist you with any business.",
 ,,,,,
 SRD_rofocale_relay,CUSTOM,"A modified comms relay hidden deep within the belt, keeping Sylpheed Station in contact with the core worlds.",,"A modified comms relay hidden deep within the belt, keeping Sylpheed Station in contact with the core worlds.",
+,,,,,
