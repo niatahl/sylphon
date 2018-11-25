@@ -21,6 +21,8 @@ import com.fs.starfarer.api.impl.campaign.rulecmd.salvage.special.ShipRecoverySp
 import com.fs.starfarer.api.impl.campaign.rulecmd.salvage.special.ShipRecoverySpecial.ShipCondition;
 import com.fs.starfarer.api.impl.campaign.terrain.*;
 import com.fs.starfarer.api.util.Misc;
+import org.lazywizard.lazylib.MathUtils;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 
@@ -233,6 +235,10 @@ public class SRD_Nym {
                 5200, // radius to start adding at
                 3, // name offset - next planet will be <system name> <roman numeral of this parameter + 1>
                 true); // whether to use custom or system-name based names
+
+        //Stable location outside the procgen
+        SectorEntityToken stableLoc1 = system.addCustomEntity("SRD_nym_stable_location", "Stable Location", "stable_location", Factions.NEUTRAL);
+        stableLoc1.setCircularOrbit(nym_star, MathUtils.getRandomNumberInRange(0, 360f), radiusAfter+MathUtils.getRandomNumberInRange(700f, 1100f), MathUtils.getRandomNumberInRange(900, 1200));
 
         // generates hyperspace destinations for in-system jump points
         system.autogenerateHyperspaceJumpPoints(true, true);

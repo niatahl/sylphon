@@ -7,26 +7,24 @@ import com.fs.starfarer.api.campaign.econ.EconomyAPI;
 import com.fs.starfarer.api.campaign.econ.MarketAPI;
 import com.fs.starfarer.api.combat.BaseHullMod;
 import com.fs.starfarer.api.impl.campaign.econ.AICoreAdmin;
-import com.fs.starfarer.api.impl.campaign.ids.Conditions;
-import com.fs.starfarer.api.impl.campaign.ids.Industries;
-import com.fs.starfarer.api.impl.campaign.ids.Submarkets;
-import com.fs.starfarer.api.impl.campaign.ids.Terrain;
-import com.fs.starfarer.api.impl.campaign.procgen.NebulaEditor;
-import com.fs.starfarer.api.impl.campaign.procgen.PlanetConditionGenerator;
-import com.fs.starfarer.api.impl.campaign.procgen.StarAge;
-import com.fs.starfarer.api.impl.campaign.procgen.StarSystemGenerator;
+import com.fs.starfarer.api.impl.campaign.ids.*;
+import com.fs.starfarer.api.impl.campaign.procgen.*;
 import com.fs.starfarer.api.impl.campaign.rulecmd.salvage.AICores;
+import com.fs.starfarer.api.impl.campaign.rulecmd.salvage.special.ShipRecoverySpecial;
 import com.fs.starfarer.api.impl.campaign.terrain.AsteroidFieldTerrainPlugin;
 import com.fs.starfarer.api.impl.campaign.terrain.DebrisFieldTerrainPlugin;
 import com.fs.starfarer.api.impl.campaign.terrain.HyperspaceTerrainPlugin;
 import com.fs.starfarer.api.util.Misc;
+import com.fs.starfarer.api.util.Pair;
 import data.scripts.campaignPlugins.SRD_AIConversionFleetUpgraderPlugin;
+import data.scripts.utils.SRD_CampaignUtils;
 import org.jetbrains.annotations.Nullable;
 import org.lazywizard.lazylib.MathUtils;
 
 import java.awt.*;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
 
 public class SRD_Rofocale {
     //Main generation function
@@ -122,8 +120,13 @@ public class SRD_Rofocale {
                 false, // Free Port
                 true); //Has junk and chatter
 
+
+        //Stable location almost exactly opposite of Castrum
+        SectorEntityToken stableLoc1 = system.addCustomEntity("SRD_rofocale_stable_location_1", "Stable Location", "stable_location", Factions.NEUTRAL);
+        stableLoc1.setCircularOrbit(rofocale_star,  150, 13000, 480);
+
         // The moon Sylphon HQ orbits
-        PlanetAPI rofocale4a = system.addPlanet("SRD_planet_rofocale4a", rofocale4, "Praetorium", "barren", 360*(float)Math.random(), 80, 680, 95f);
+        PlanetAPI rofocale4a = system.addPlanet("SRD_planet_rofocale4a", rofocale4, "Praetorium", "barren", 360*(float)Math.random(), 80, 1080, 95f);
         rofocale4a.getSpec().setTexture(Global.getSettings().getSpriteName("planets", "barren02"));
         // Add fixed conditions to the moon
         Misc.initConditionMarket(rofocale4a);
@@ -171,7 +174,6 @@ public class SRD_Rofocale {
         sylpheed_station.setCustomDescriptionId("SRD_sylpheed_station");
         sylpheed_station_market.getMemoryWithoutUpdate().set("$SRD_SylpheedTechMiningPlanet", rofocale4a.getMarket());
 
-
         // Some trojans for the inhabited planet
         SectorEntityToken rofocale4_troj = system.addTerrain(Terrain.ASTEROID_FIELD,
                 new AsteroidFieldTerrainPlugin.AsteroidFieldParams(
@@ -183,6 +185,11 @@ public class SRD_Rofocale {
                         17f, // max asteroid radius
                         "")); // null for default name
         rofocale4_troj.setCircularOrbit(rofocale_star, 60f, 6500, 480);
+
+
+        //Stable location far outside the system
+        SectorEntityToken stableLoc2 = system.addCustomEntity("SRD_rofocale_stable_location_2", "Stable Location", "stable_location", Factions.NEUTRAL);
+        stableLoc2.setCircularOrbit(rofocale_star,  MathUtils.getRandomNumberInRange(0f, 360f), 18000, 810);
 
         // Jump point for the main base ---------------
         JumpPointAPI jumpPoint1 = Global.getFactory().createJumpPoint("SRD_rofocale_base_jump", "Rofocale Rift");
