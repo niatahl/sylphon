@@ -14,7 +14,7 @@ import java.util.ArrayList;
 
 public class SRD_SuperweaponBayConversion extends BaseHullMod {
     //How much cheaper are energy weapons to mount (we want to slightly incentivize them, as they aren't as good as Ballistic or Missile at many things)
-    public final static float OP_COST_BONUS = -5f;
+    public final static float OP_COST_BONUS = -10f;
 
     //Affects OP costs, those effects must be in applyBeforeShipCreation
     @Override
@@ -97,7 +97,7 @@ public class SRD_SuperweaponBayConversion extends BaseHullMod {
     //Adds the description strings
     public String getDescriptionParam(int index, HullSize hullSize) {
         if (index == 0) return "one additional fighter bay";
-        if (index == 1) return "" + (-OP_COST_BONUS) + "less OP";
+        if (index == 1) return "" + Math.round(-OP_COST_BONUS) + " less OP";
         return null;
     }
 }

@@ -30,7 +30,7 @@ Enkindle ESM,SRD_enkindle,1,,500,1500,,100,1000,15,30,5,,,,ENERGY,10,,0,20,1,,0,
 Enochian,SRD_enochian,3,0.2,25000,1000,,500,,100,5,28,6,0.8,3,ENERGY,600,,0,0.1,99999,0.5,2,5,2,1,,2500,,,500,,"kinetic20, LR, sylphon_ecc_bp, rare_bp",,Sylphon RnD,,Strike,,,,,Semi-automatic fire,,,,,645454
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 #Super-Heavy,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-Harmonius,SRD_harmonius,3,1,50000,120,,1000,1000,200,4,10000,,,,ENERGY,1500,,0.5,4,1,,0,0,0,0,,1200,,,500,"SYSTEM","energy30, NICTOY_SUPERHEAVY",,Sylphon RnD,,,,,,,Built-In Only,,,,,1318
+#Harmonius,SRD_harmonius,3,1,50000,120,,1000,1000,200,4,10000,,,,ENERGY,1500,,0.5,4,1,,0,0,0,0,,1200,,,500,SYSTEM,"energy30, NICTOY_SUPERHEAVY",,Sylphon RnD,,,,,,,Built-In Only,,,,,1318
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 #Outcast,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 Arphage,SRD_arphage,3,0.3,5000,1000,,500,100,50,10,13,,,,HIGH_EXPLOSIVE,700,,0.3,3,1,,,,,,,1500,,,300,,"kinetic15, LR, sylphon_outcast_bp, rare_bp",,Sylphon Outcast,,Anti Armor,,,,,"Linked to variable ammo loader ship system, allowing the firing of different ammo types",,,,,5.5

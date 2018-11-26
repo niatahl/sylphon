@@ -4,7 +4,7 @@ Additions:
 - Added eccentric Synastry "Cieve"
 
 Changes:
-- The Frelia no longer has super-heavy mount points; instead, it has two Universal slots (which can still be turned to fighter bays if left empty)
+- The Frelia no longer has super-heavy mount points; instead, it has two large energy slots (which can still be turned to fighter bays if left empty)
 - Moved multiple weapon blueprints into the rare category
 - Added new sprites for Sylpheed Station and Ozma Station
 - Random behind the scenes adjustments for stuff

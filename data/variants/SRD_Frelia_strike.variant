@@ -1,25 +1,19 @@
 {
     "displayName": "Strike",
     "fluxCapacitors": 0,
-    "fluxVents": 47,
-	"goalVariant": true,
+    "fluxVents": 33,
     "hullId": "SRD_Frelia",
-    "hullMods": ["targetingunit"],
+    "hullMods": [
+        "targetingunit",
+        "SRD_hiddenmod_extra_carrier_bays_2"
+    ],
     "permaMods": [],
-    "quality": 0.5,
+	"goalVariant": true,
     "variantId": "SRD_Frelia_strike",
     "weaponGroups": [
         {
             "autofire": false,
-            "mode": "LINKED",
-            "weapons": {
-                "WS0005": "SRD_harmonius",
-                "WS0006": "SRD_harmonius"
-            }
-        },
-        {
-            "autofire": true,
-            "mode": "LINKED",
+            "mode": "ALTERNATING",
             "weapons": {
                 "WS0009": "SRD_raphiel",
                 "WS0010": "SRD_raphiel",
@@ -28,16 +22,8 @@
             }
         },
         {
-            "autofire": true,
-            "mode": "LINKED",
-            "weapons": {
-                "WS0001": "SRD_charity",
-                "WS0002": "SRD_charity"
-            }
-        },
-        {
-            "autofire": true,
-            "mode": "LINKED",
+            "autofire": false,
+            "mode": "ALTERNATING",
             "weapons": {
                 "WS0013": "SRD_enkindle",
                 "WS0014": "SRD_enkindle"
@@ -47,17 +33,33 @@
             "autofire": true,
             "mode": "LINKED",
             "weapons": {
+                "WS0001": "SRD_largesse",
+                "WS0002": "SRD_largesse"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
                 "WS0003": "SRD_clemency",
-                "WS0004": "SRD_clemency",
+                "WS0004": "SRD_clemency"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
                 "WS0007": "SRD_venn",
                 "WS0008": "SRD_venn"
             }
         }
     ],
     "wings": [
-        "SRD_Vetra_bomber_wing",
         "SRD_Sadri_bomber_wing",
         "SRD_Sadri_bomber_wing",
-        "SRD_Sadri_bomber_wing"
+        "SRD_Sadri_bomber_wing",
+        "SRD_Sadri_bomber_wing",
+        "SRD_Eos_fighter_wing",
+        "SRD_Eos_fighter_wing"
     ]
 }
