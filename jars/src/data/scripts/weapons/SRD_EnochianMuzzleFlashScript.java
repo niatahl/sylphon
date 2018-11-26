@@ -92,7 +92,7 @@ public class SRD_EnochianMuzzleFlashScript implements EveryFrameWeaponEffectPlug
     //What color does the particles have?
     private static final Map<String, Color> PARTICLE_COLOR = new HashMap<>();
     static {
-        PARTICLE_COLOR.put("default", new Color(45, 135, 255, 185));
+        PARTICLE_COLOR.put("default", new Color(45, 135, 255, 165));
     }
 
     //What's the smallest size the particles can have?

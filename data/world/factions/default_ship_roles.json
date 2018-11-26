@@ -21,6 +21,8 @@
 		"SRD_Celika_P_standard":2,
 		"SRD_Celika_P_balanced":3,
 		"SRD_Vril_standard":3,
+		
+		"SRD_Celika_uv_racer":2,
 	},
 	"combatMedium":{
 		"SRD_Silverhead_standard":10,
@@ -44,6 +46,8 @@
 			
 		"SRD_Eagle_P_standard":2,
 		"SRD_Eagle_P_balanced":3,
+		
+		"SRD_Synastry_cieve_combat":1,
 		},
 	"combatCapital":{
 		"SRD_Equilibrium_standard":10,
@@ -86,6 +90,7 @@
 			"SRD_Frelia_combat":10,
 			"SRD_Frelia_strike":10,
 			"SRD_Fulgent_standard":10,
+			"SRD_Fulgent_beamer":10,
 	},
 
 	# phase ships
