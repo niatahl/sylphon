@@ -32,6 +32,7 @@
 			"projectile_trail_helix":"graphics/sylphon/fx/SRD_trail_helix.png",
 			"projectile_trail_core":"graphics/sylphon/fx/SRD_largesse_trail_core.png",
 			"projectile_trail_fringe":"graphics/sylphon/fx/SRD_largesse_trail_fringe.png",
+			"projectile_trail_zappy":"graphics/sylphon/fx/SRD_zappy_trail.png",
 			"laser_targeter":"graphics/sylphon/fx/SRD_laser_targeter_sprite.png",
 			"lens_flare":"graphics/sylphon/fx/SRD_lens_flare.png",
 			"divinity_shot_glow":"graphics/sylphon/missiles/SRD_divinity_shot_glow.png",

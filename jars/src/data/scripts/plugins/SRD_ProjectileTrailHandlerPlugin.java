@@ -35,6 +35,7 @@ public class SRD_ProjectileTrailHandlerPlugin extends BaseEveryFrameCombatPlugin
         TRAIL_SPRITES.put("SRD_qoga_shot", "projectile_trail_standard");
         TRAIL_SPRITES.put("SRD_arciel_shot", "projectile_trail_standard");
         TRAIL_SPRITES.put("SRD_harmonius_shot", "projectile_trail_core");
+        TRAIL_SPRITES.put("SRD_enochian_shot", "projectile_trail_zappy");
     }
 
     //A map for known projectiles and their IDs: should be cleared in init
@@ -64,6 +65,7 @@ public class SRD_ProjectileTrailHandlerPlugin extends BaseEveryFrameCombatPlugin
         TRAIL_DURATIONS_IN.put("SRD_qoga_shot", 0f);
         TRAIL_DURATIONS_IN.put("SRD_arciel_shot", 0f);
         TRAIL_DURATIONS_IN.put("SRD_harmonius_shot", 0f);
+        TRAIL_DURATIONS_IN.put("SRD_enochian_shot", 0f);
     }
     private static final Map<String, Float> TRAIL_DURATIONS_MAIN = new HashMap<>();
     static {
@@ -82,6 +84,7 @@ public class SRD_ProjectileTrailHandlerPlugin extends BaseEveryFrameCombatPlugin
         TRAIL_DURATIONS_MAIN.put("SRD_qoga_shot", 0f);
         TRAIL_DURATIONS_MAIN.put("SRD_arciel_shot", 0f);
         TRAIL_DURATIONS_MAIN.put("SRD_harmonius_shot", 0f);
+        TRAIL_DURATIONS_MAIN.put("SRD_enochian_shot", 0f);
     }
     private static final Map<String, Float> TRAIL_DURATIONS_OUT = new HashMap<>();
     static {
@@ -100,6 +103,7 @@ public class SRD_ProjectileTrailHandlerPlugin extends BaseEveryFrameCombatPlugin
         TRAIL_DURATIONS_OUT.put("SRD_qoga_shot", 1f);
         TRAIL_DURATIONS_OUT.put("SRD_arciel_shot", 1.3f);
         TRAIL_DURATIONS_OUT.put("SRD_harmonius_shot", 1.5f);
+        TRAIL_DURATIONS_OUT.put("SRD_enochian_shot", 0.4f);
     }
     private static final Map<String, Float> START_SIZES = new HashMap<>();
     static {
@@ -118,6 +122,7 @@ public class SRD_ProjectileTrailHandlerPlugin extends BaseEveryFrameCombatPlugin
         START_SIZES.put("SRD_qoga_shot", 2f);
         START_SIZES.put("SRD_arciel_shot", 4f);
         START_SIZES.put("SRD_harmonius_shot", 20f);
+        START_SIZES.put("SRD_enochian_shot", 8f);
     }
     private static final Map<String, Float> END_SIZES = new HashMap<>();
     static {
@@ -136,6 +141,7 @@ public class SRD_ProjectileTrailHandlerPlugin extends BaseEveryFrameCombatPlugin
         END_SIZES.put("SRD_qoga_shot", 1f);
         END_SIZES.put("SRD_arciel_shot", 2f);
         END_SIZES.put("SRD_harmonius_shot", 20f);
+        END_SIZES.put("SRD_enochian_shot", 5f);
     }
     private static final Map<String, Color> TRAIL_START_COLORS = new HashMap<>();
     static {
@@ -154,6 +160,7 @@ public class SRD_ProjectileTrailHandlerPlugin extends BaseEveryFrameCombatPlugin
         TRAIL_START_COLORS.put("SRD_qoga_shot", new Color(255,220,220));
         TRAIL_START_COLORS.put("SRD_arciel_shot", new Color(255,255,255));
         TRAIL_START_COLORS.put("SRD_harmonius_shot", new Color(205,130,255));
+        TRAIL_START_COLORS.put("SRD_enochian_shot", new Color(115,185,255));
     }
     private static final Map<String, Color> TRAIL_END_COLORS = new HashMap<>();
     static {
@@ -172,6 +179,7 @@ public class SRD_ProjectileTrailHandlerPlugin extends BaseEveryFrameCombatPlugin
         TRAIL_END_COLORS.put("SRD_qoga_shot", new Color(255,0,0));
         TRAIL_END_COLORS.put("SRD_arciel_shot", new Color(255,0,0));
         TRAIL_END_COLORS.put("SRD_harmonius_shot", new Color(205,130,255));
+        TRAIL_END_COLORS.put("SRD_enochian_shot", new Color(85,185,255));
     }
     private static final Map<String, Float> TRAIL_OPACITIES = new HashMap<>();
     static {
@@ -190,6 +198,7 @@ public class SRD_ProjectileTrailHandlerPlugin extends BaseEveryFrameCombatPlugin
         TRAIL_OPACITIES.put("SRD_qoga_shot", 0.5f);
         TRAIL_OPACITIES.put("SRD_arciel_shot", 0.5f);
         TRAIL_OPACITIES.put("SRD_harmonius_shot", 0.5f);
+        TRAIL_OPACITIES.put("SRD_enochian_shot", 0.6f);
     }
     private static final Map<String, Integer> TRAIL_BLEND_SRC = new HashMap<>();
     static {
@@ -208,6 +217,7 @@ public class SRD_ProjectileTrailHandlerPlugin extends BaseEveryFrameCombatPlugin
         TRAIL_BLEND_SRC.put("SRD_qoga_shot", GL_SRC_ALPHA);
         TRAIL_BLEND_SRC.put("SRD_arciel_shot", GL_SRC_ALPHA);
         TRAIL_BLEND_SRC.put("SRD_harmonius_shot", GL_SRC_ALPHA);
+        TRAIL_BLEND_SRC.put("SRD_enochian_shot", GL_SRC_ALPHA);
     }
     private static final Map<String, Integer> TRAIL_BLEND_DEST = new HashMap<>();
     static {
@@ -226,6 +236,7 @@ public class SRD_ProjectileTrailHandlerPlugin extends BaseEveryFrameCombatPlugin
         TRAIL_BLEND_DEST.put("SRD_qoga_shot", GL_ONE);
         TRAIL_BLEND_DEST.put("SRD_arciel_shot", GL_ONE);
         TRAIL_BLEND_DEST.put("SRD_harmonius_shot", GL_ONE);
+        TRAIL_BLEND_DEST.put("SRD_enochian_shot", GL_ONE);
     }
     private static final Map<String, Float> TRAIL_LOOP_LENGTHS = new HashMap<>();
     static {
@@ -244,6 +255,7 @@ public class SRD_ProjectileTrailHandlerPlugin extends BaseEveryFrameCombatPlugin
         TRAIL_LOOP_LENGTHS.put("SRD_qoga_shot", -1f);
         TRAIL_LOOP_LENGTHS.put("SRD_arciel_shot", 200f);
         TRAIL_LOOP_LENGTHS.put("SRD_harmonius_shot", 200f);
+        TRAIL_LOOP_LENGTHS.put("SRD_enochian_shot", 400f);
     }
     private static final Map<String, Float> TRAIL_SCROLL_SPEEDS = new HashMap<>();
     static {
@@ -262,6 +274,7 @@ public class SRD_ProjectileTrailHandlerPlugin extends BaseEveryFrameCombatPlugin
         TRAIL_SCROLL_SPEEDS.put("SRD_qoga_shot", 0f);
         TRAIL_SCROLL_SPEEDS.put("SRD_arciel_shot", 300f);
         TRAIL_SCROLL_SPEEDS.put("SRD_harmonius_shot", 300f);
+        TRAIL_SCROLL_SPEEDS.put("SRD_enochian_shot", 400f);
     }
     private static final Map<String, Float> TRAIL_SPAWN_OFFSETS = new HashMap<>();
     static {
@@ -280,6 +293,7 @@ public class SRD_ProjectileTrailHandlerPlugin extends BaseEveryFrameCombatPlugin
         TRAIL_SPAWN_OFFSETS.put("SRD_qoga_shot", 0f);
         TRAIL_SPAWN_OFFSETS.put("SRD_arciel_shot", 0f);
         TRAIL_SPAWN_OFFSETS.put("SRD_harmonius_shot", 0f);
+        TRAIL_SPAWN_OFFSETS.put("SRD_enochian_shot", 5f);
     }
 
     @Override

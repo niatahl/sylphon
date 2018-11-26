@@ -61,6 +61,13 @@
 			{"file":"sounds/sylphon/weapons/SRD_benison_fire.ogg","pitch":0.95,"volume":1},
         ],
     },
+	"SRD_enochian_fire":{
+        "sounds":[
+           	{"file":"sounds/sylphon/weapons/SRD_benison_fire.ogg","pitch":2.05,"volume":1.2},
+			{"file":"sounds/sylphon/weapons/SRD_benison_fire.ogg","pitch":2,"volume":1.2},
+			{"file":"sounds/sylphon/weapons/SRD_benison_fire.ogg","pitch":1.95,"volume":1.2},
+        ],
+    },
 	"SRD_ablution_fire":{
         "sounds":[
            	{"file":"sounds/sylphon/weapons/SRD_benison_fire.ogg","pitch":1.35,"volume":0.6},

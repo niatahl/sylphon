@@ -1,0 +1,48 @@
+{
+  "animationType": "MUZZLE_FLASH",
+  "barrelMode": "ALTERNATING",
+  "fireSoundTwo": "SRD_enochian_fire",
+  "hardpointAngleOffsets": [
+    0
+  ],
+  "hardpointGunSprite": "graphics/sylphon/weapons/SRD_enochian_hp_recoil.png",
+  "hardpointOffsets": [
+    48.5,
+    0
+  ],
+  "hardpointSprite": "graphics/sylphon/weapons/SRD_enochian_hp_base.png",
+  "id": "SRD_enochian",
+  "interruptibleBurst": true,
+  "muzzleFlashSpec": {
+    "length": 50,
+    "particleColor": [
+      55,
+      155,
+      255,
+      205
+    ],
+    "particleCount": 20,
+    "particleDuration": 1,
+    "particleSizeMin": 10,
+    "particleSizeRange": 15,
+    "spread": 20
+  },
+  "projectileSpecId": "SRD_enochian_shot",
+  "renderHints": [
+    "RENDER_BARREL_BELOW"
+  ],
+  "size": "LARGE",
+  "specClass": "projectile",
+  "textureType": ROUGH,
+  "turretAngleOffsets": [
+    0
+  ],
+  "turretGunSprite": "graphics/sylphon/weapons/SRD_enochian_turret_recoil.png",
+  "turretOffsets": [
+    40,
+    0
+  ],
+  "turretSprite": "graphics/sylphon/weapons/SRD_enochian_turret_base.png",
+  "type": "BALLISTIC",
+  "visualRecoil": 5
+}
