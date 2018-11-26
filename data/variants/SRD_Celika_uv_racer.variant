@@ -1,0 +1,31 @@
+{
+    "displayName": "Racer",
+    "fluxCapacitors": 1,
+    "fluxVents": 10,
+    "hullId": "SRD_Celika_uv",
+	"goalVariant": true,
+    "hullMods": [
+        "unstable_injector",
+        "SRD_prototype_nullpoint_shield"
+    ],
+    "permaMods": [],
+    "variantId": "SRD_Celika_uv_racer",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0003": "SRD_excogitation",
+                "WS0004": "SRD_excogitation"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0001": "SRD_embrace",
+                "WS0002": "SRD_embrace"
+            }
+        }
+    ]
+}

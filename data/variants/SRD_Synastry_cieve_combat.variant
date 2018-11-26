@@ -1,0 +1,38 @@
+{
+    "displayName": "Combat",
+    "fluxCapacitors": 1,
+    "fluxVents": 30,
+    "hullId": "SRD_Synastry_cieve",
+    "hullMods": ["targetingunit"],
+    "permaMods": [],
+	"goalVariant": true,
+    "variantId": "SRD_Synastry_cieve_combat",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS0001": "SRD_enochian",
+                "WS0002": "SRD_enochian"
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS0008": "SRD_raphiel_pod",
+                "WS0009": "SRD_raphiel_pod"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0003": "SRD_venn",
+                "WS0004": "SRD_venn",
+                "WS0005": "SRD_venn",
+                "WS0006": "SRD_venn"
+            }
+        }
+    ]
+}
