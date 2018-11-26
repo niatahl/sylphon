@@ -1,5 +1,5 @@
 //By Nicke535
-//This hullmod converts all Large energy weapon slots into Super Large energy weapon slots (by cheating a bit with OP costs), as well as adds 1 fighter bay for each un-fitted Super Large slot
+//NEW EFFECT: Adds one fighter bay for each un-filled Large mount on the ship, and gives a 5 OP discount for large Energy weapons
 package data.scripts.hullmods;
 
 import com.fs.starfarer.api.Global;
@@ -13,16 +13,13 @@ import com.fs.starfarer.api.loading.WeaponSpecAPI;
 import java.util.ArrayList;
 
 public class SRD_SuperweaponBayConversion extends BaseHullMod {
-    //How many times more OP does a superweapon cost? Preferably use something higher than x100, since there *might* be ships capable of fitting that
-    public final static float OP_COST_MULT = 1000f;
-
-    //Used for saving data, this is dangerously volatile stuff
-
+    //How much cheaper are energy weapons to mount (we want to slightly incentivize them, as they aren't as good as Ballistic or Missile at many things)
+    public final static float OP_COST_BONUS = -5f;
 
     //Affects OP costs, those effects must be in applyBeforeShipCreation
     @Override
     public void applyEffectsBeforeShipCreation(HullSize hullSize, MutableShipStatsAPI stats, String id) {
-        stats.getDynamic().getMod(Stats.LARGE_ENERGY_MOD).modifyMult(id, 1f/OP_COST_MULT);
+        stats.getDynamic().getMod(Stats.LARGE_ENERGY_MOD).modifyFlat(id, OP_COST_BONUS);
     }
 
     //Most of our bonuses and effects needs to be set in applyEffectsAfterShipCreation, due to depending on weapon loadout
@@ -31,21 +28,11 @@ public class SRD_SuperweaponBayConversion extends BaseHullMod {
         //Used for tracking how many additional bays we want; starts at the maximum number of slots we have
         int emptySlots = 2;
 
-        //Removes non-super-heavy weapons from our super-heavy slots
-        ArrayList<String> removeList = new ArrayList<String>();
-        for (String slotID : ship.getVariant().getNonBuiltInWeaponSlots()) {
-            //Only care about Large Energy slots
-            if (ship.getVariant().getSlot(slotID).getSlotSize().equals(WeaponAPI.WeaponSize.LARGE) && ship.getVariant().getSlot(slotID).getWeaponType().equals(WeaponAPI.WeaponType.ENERGY)) {
-                //Checks for our unique tag; this *could* be used by other mods, if they are insane enough to follow my methodology. Remove all weapons that lack it, and any weapon that has it contributes to a non-empty slot
-                if (!ship.getVariant().getWeaponSpec(slotID).hasTag("NICTOY_SUPERHEAVY")) {
-                    removeList.add(slotID);
-                } else if (ship.getVariant().getWeaponSpec(slotID).hasTag("NICTOY_SUPERHEAVY")) {
-                    emptySlots--;
-                }
+        //Checks how many of our Large slots are filled
+        for (String slotID : ship.getVariant().getFittedWeaponSlots()) {
+            if (ship.getVariant().getSlot(slotID).getSlotSize().equals(WeaponAPI.WeaponSize.LARGE)) {
+                emptySlots--;
             }
-        }
-        for (String s : removeList) {
-            ship.getVariant().clearSlot(s);
         }
 
         //If we have too few clear slots, we delete some fighter LPCs due to a vanilla bug that triggers when removing fighter bays via hullmod
@@ -109,9 +96,8 @@ public class SRD_SuperweaponBayConversion extends BaseHullMod {
 
     //Adds the description strings
     public String getDescriptionParam(int index, HullSize hullSize) {
-        if (index == 0) return "super-large mounts";
-        if (index == 1) return "Harmonius";
-        if (index == 2) return "one additional fighter bay";
+        if (index == 0) return "one additional fighter bay";
+        if (index == 1) return "" + (-OP_COST_BONUS) + "less OP";
         return null;
     }
 }
