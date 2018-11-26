@@ -9,6 +9,7 @@ import com.fs.starfarer.api.combat.ShipAPI;
 import com.fs.starfarer.api.combat.WeaponAPI;
 
 import java.awt.*;
+import java.util.HashMap;
 import java.util.Map;
 import java.util.WeakHashMap;
 
@@ -30,7 +31,7 @@ public class SRD_ApocatastasisEveryFrameScript implements EveryFrameWeaponEffect
     private float currentPos = 0f;
 
     //A map of ships and their current damage-taken-increase, due to the on-hit effect of the weapon
-    private Map<ShipAPI, Float> mainEffectMap = new WeakHashMap<>();
+    private Map<ShipAPI, Float> mainEffectMap = new HashMap<>();
 
     //The key we use to identify effects from this script on MutableStats
     private static final String EFFECT_KEY = "SRD_KEY_FOR_APOCATASTASIS";
