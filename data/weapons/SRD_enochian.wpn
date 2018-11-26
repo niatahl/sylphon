@@ -10,22 +10,23 @@
     48.5,
     0
   ],
+  "everyFrameEffect": "data.scripts.weapons.SRD_EnochianMuzzleFlashScript",
   "hardpointSprite": "graphics/sylphon/weapons/SRD_enochian_hp_base.png",
   "id": "SRD_enochian",
   "interruptibleBurst": true,
   "muzzleFlashSpec": {
-    "length": 50,
+    "length": 40,
     "particleColor": [
-      55,
-      155,
+      45,
+      135,
       255,
-      205
+      185
     ],
-    "particleCount": 20,
+    "particleCount": 30,
     "particleDuration": 1,
-    "particleSizeMin": 10,
-    "particleSizeRange": 15,
-    "spread": 20
+    "particleSizeMin": 15,
+    "particleSizeRange": 20,
+    "spread": 10
   },
   "projectileSpecId": "SRD_enochian_shot",
   "renderHints": [

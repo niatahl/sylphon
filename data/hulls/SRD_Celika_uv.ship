@@ -1,0 +1,202 @@
+{
+  "bounds": [
+    -35,
+    -11.5,
+    -41.5,
+    -18.5,
+    -41,
+    -29,
+    -36.5,
+    -34.5,
+    -21,
+    -38.5,
+    -15.5,
+    -47.5,
+    -5.5,
+    -47.5,
+    7,
+    -40.5,
+    11.5,
+    -25.5,
+    41.5,
+    -15.5,
+    34.5,
+    -8,
+    34.5,
+    8,
+    41.5,
+    15.5,
+    11.5,
+    25.5,
+    7,
+    40.5,
+    -5.5,
+    47.5,
+    -15.5,
+    47.5,
+    -21,
+    38.5,
+    -36.5,
+    34.5,
+    -41,
+    29,
+    -41.5,
+    18.5,
+    -35,
+    11.5
+  ],
+  "builtInMods": [
+    "SRD_sylph_core",
+    "SRD_nullspace_conduits"
+  ],
+  "builtInWings": [],
+  "center": [
+    49,
+    44
+  ],
+  "collisionRadius": 79,
+  "engineSlots": [
+    {
+      "angle": 180,
+      "contrailSize": 128,
+      "length": 85,
+      "location": [
+        -37,
+        -0
+      ],
+      "style": "HIGH_TECH",
+      "width": 38
+    },
+    {
+      "angle": 180,
+      "contrailSize": 17,
+      "length": 39.5,
+      "location": [
+        -43,
+        23
+      ],
+      "style": "SRD_ENGINE",
+      "width": 17
+    },
+    {
+      "angle": -180,
+      "contrailSize": 17,
+      "length": 39.5,
+      "location": [
+        -43,
+        -23
+      ],
+      "style": "SRD_ENGINE",
+      "width": 17
+    },
+    {
+      "angle": 167.5,
+      "contrailSize": 128,
+      "length": 60,
+      "location": [
+        -37.5,
+        4.5
+      ],
+      "style": "HIGH_TECH",
+      "width": 10
+    },
+    {
+      "angle": -167.5,
+      "contrailSize": 128,
+      "length": 60,
+      "location": [
+        -37.5,
+        -4.5
+      ],
+      "style": "HIGH_TECH",
+      "width": 10
+    }
+  ],
+  "height": 88,
+  "hullId": "SRD_Celika_uv",
+  "hullName": "Celika Ultra-V",
+  "hullSize": "FRIGATE",
+  "shieldCenter": [
+    0,
+    0
+  ],
+  "shieldRadius": 75.5,
+  "spriteName": "graphics/sylphon/ships/eccentrics/SRD_Celika_Ultra_V.png",
+  "style": "SRD_TECH",
+  "viewOffset": 0,
+  "weaponSlots": [
+    {
+      "angle": 22,
+      "arc": 220,
+      "id": "WS0001",
+      "locations": [
+        -7,
+        27
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "ENERGY"
+    },
+    {
+      "angle": -22,
+      "arc": 220,
+      "id": "WS0002",
+      "locations": [
+        -7,
+        -27
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "ENERGY"
+    },
+    {
+      "angle": 0,
+      "arc": 5,
+      "id": "WS0003",
+      "locations": [
+        8,
+        36
+      ],
+      "mount": "HARDPOINT",
+      "size": "SMALL",
+      "type": "SYNERGY"
+    },
+    {
+      "angle": -0,
+      "arc": 5,
+      "id": "WS0004",
+      "locations": [
+        8,
+        -36
+      ],
+      "mount": "HARDPOINT",
+      "size": "SMALL",
+      "type": "SYNERGY"
+    },
+    {
+      "angle": 154,
+      "arc": 33,
+      "id": "WS0005",
+      "locations": [
+        -14,
+        41.5
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "SYSTEM"
+    },
+    {
+      "angle": -154,
+      "arc": 33,
+      "id": "WS0006",
+      "locations": [
+        -14,
+        -41.5
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "SYSTEM"
+    }
+  ],
+  "width": 98
+}
