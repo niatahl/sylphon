@@ -1,7 +1,7 @@
 {
     "displayName": "Combat",
     "fluxCapacitors": 1,
-    "fluxVents": 30,
+    "fluxVents": 26,
     "hullId": "SRD_Synastry_cieve",
     "hullMods": ["targetingunit"],
     "permaMods": [],

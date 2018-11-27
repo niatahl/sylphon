@@ -2,7 +2,7 @@
 	"id":"SRD_enochian_shot",
 	"specClass":"projectile",
 	"spawnType":"BALLISTIC",
-	#"onHitEffect":"data.scripts.weapons.SRD_ArCielOnHitEffect",
+	"onHitEffect":"data.scripts.weapons.SRD_EnochianOnHitEffect",
 	"collisionClass":"PROJECTILE_FF",
 	"collisionClassByFighter":"PROJECTILE_FIGHTER",	
 	"length":50.0,

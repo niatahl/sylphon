@@ -133,6 +133,8 @@ SRD_qoga,WEAPON,"Downscaled from the Ar Ciel, this medium-sized rail driver fire
 SRD_harmonius,WEAPON,Massive plasma drivers boasting an atypically long range for weapons of their kind.,Fire Support,,
 SRD_vedra,WEAPON,"The Vril's integrated PD-solution. While a simple design, its beams are of a high intensity for PD weapons and often employed offensively at short range.",,,
 SRD_apoc,WEAPON,"A high-powered multi-spectrum scanner, linked to the Synastry's EWAR suite. While primarily designed for long distance scans, it can also be utilised in combat. The intensity of the scanning beams alone makes them a destructive weapon, but the scanner's ability to quickly analyze a target's structure and transmit weakpoint data to allies is its real benefit.",,,
+SRD_enochian,WEAPON,"The Enochian is high-powered railgun linked to set of independent capacitors, designed to be discharged individually to allow the weapon to be fired as fast one could tap the trigger, leading to a highly flexible design with impressive burst potential. The penetrator rounds fired this weapon are based on the Ar Ciel design, carrying a newer plasma detonator capable of inflicting considerable damage to armor and hull.
+Arguably the most advanced railgun design ever developed by Sylphon RnD, the project was abandoned in favor of the Adloquium as it proved incompatible with the energy mounts of Sylphon ship designs. It was later revived by the eccentric Cieve to complement her unique Synastry modification which had been upgraded with compatible hybrid mounts. ",,,
 ,,,,,
 ,,,,,
 # Ship Systems,,,,,

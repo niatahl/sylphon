@@ -8,10 +8,10 @@ import com.fs.starfarer.api.combat.EveryFrameWeaponEffectPlugin;
 import com.fs.starfarer.api.combat.ShipAPI;
 import com.fs.starfarer.api.combat.WeaponAPI;
 
-import java.awt.*;
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
-import java.util.WeakHashMap;
 
 public class SRD_ApocatastasisEveryFrameScript implements EveryFrameWeaponEffectPlugin {
     //The maximum distance the beams can go towards each side
@@ -44,13 +44,14 @@ public class SRD_ApocatastasisEveryFrameScript implements EveryFrameWeaponEffect
         }
 
         /*  ---ON-HIT EFFECT HANDLING---  */
+        List<ShipAPI> shouldBeRemoved = new ArrayList<>();
         for (ShipAPI key : mainEffectMap.keySet()) {
             //Ignore if the key doesn't have an associated value
             if (mainEffectMap.get(key) == null) {
                 return;
             }
 
-            //Tick down the damage bonus, and remove the effect if it's too low
+            //Tick down the damage bonus, and remove the effect if it's too low (or rather, flag it for removal)
             mainEffectMap.put(key, mainEffectMap.get(key)-(DAMAGE_BONUS_LOSS_PER_SECOND*amount));
             if (mainEffectMap.get(key) <= 0f) {
                 key.getMutableStats().getKineticDamageTakenMult().unmodify(EFFECT_KEY+weapon.getId());
@@ -58,7 +59,7 @@ public class SRD_ApocatastasisEveryFrameScript implements EveryFrameWeaponEffect
                 key.getMutableStats().getHighExplosiveDamageTakenMult().unmodify(EFFECT_KEY+weapon.getId());
                 key.getMutableStats().getFragmentationDamageTakenMult().unmodify(EFFECT_KEY+weapon.getId());
                 key.getMutableStats().getShieldDamageTakenMult().unmodify(EFFECT_KEY+weapon.getId());
-                mainEffectMap.remove(key);
+                shouldBeRemoved.add(key);
                 continue;
             }
 
@@ -73,6 +74,10 @@ public class SRD_ApocatastasisEveryFrameScript implements EveryFrameWeaponEffect
             if (key == engine.getPlayerShip()) {
                 Global.getCombatEngine().maintainStatusForPlayerShip(EFFECT_KEY + "_TOOLTIP", "graphics/icons/hullsys/entropy_amplifier.png", "Analyzed", "Taking additional damage", true);
             }
+        }
+        //ACTUALLY remove the effect, since we can't remove inside a loop like an idiot *ahem* definitely not a bugfix *ahem*
+        for (ShipAPI key : shouldBeRemoved) {
+            mainEffectMap.remove(key);
         }
 
         /*  ---MOVING OFFSET HANDLING---  */
