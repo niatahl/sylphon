@@ -5,6 +5,9 @@ import com.fs.starfarer.api.Global;
 import com.fs.starfarer.api.combat.*;
 import com.fs.starfarer.api.graphics.SpriteAPI;
 import com.fs.starfarer.api.input.InputEventAPI;
+import com.fs.starfarer.api.loading.ProjectileSpawnType;
+import com.sun.org.apache.xpath.internal.operations.Bool;
+import org.lazywizard.lazylib.FastTrig;
 import org.lazywizard.lazylib.MathUtils;
 import org.lazywizard.lazylib.VectorUtils;
 import org.lwjgl.util.vector.Vector2f;
@@ -296,6 +299,71 @@ public class SRD_ProjectileTrailHandlerPlugin extends BaseEveryFrameCombatPlugin
         TRAIL_SPAWN_OFFSETS.put("SRD_harmonius_shot", 0f);
         TRAIL_SPAWN_OFFSETS.put("SRD_enochian_shot", 5f);
     }
+    //NEW: compensates for lateral movement of a projectile. Should generally be 0f in most cases, due to some oddities
+    //in behaviour with direction-changing scripts, but can be helpful for aligning certain projectiles
+    private static final Map<String, Float> LATERAL_COMPENSATION_MULT = new HashMap<>();
+    static {
+        LATERAL_COMPENSATION_MULT.put("SRD_adloquium_shot", 0f);
+        LATERAL_COMPENSATION_MULT.put("SRD_adloquium_fake_shot", 0f);
+        LATERAL_COMPENSATION_MULT.put("SRD_skalla_shot", 1f);
+        LATERAL_COMPENSATION_MULT.put("SRD_phira_shock_shot", 1f);
+        LATERAL_COMPENSATION_MULT.put("SRD_benediction_msl", 0f);
+        LATERAL_COMPENSATION_MULT.put("SRD_divinity_shot", 1f);
+        LATERAL_COMPENSATION_MULT.put("SRD_equity_shot", 1f);
+        LATERAL_COMPENSATION_MULT.put("SRD_phira_impact_shot", 0f);
+        LATERAL_COMPENSATION_MULT.put("SRD_phira_burst_shot", 0f);
+        LATERAL_COMPENSATION_MULT.put("SRD_excogitation_shot", 0f);
+        LATERAL_COMPENSATION_MULT.put("SRD_arphage_shot", 0f);
+        LATERAL_COMPENSATION_MULT.put("SRD_veda_shot", 0f);
+        LATERAL_COMPENSATION_MULT.put("SRD_qoga_shot", 0f);
+        LATERAL_COMPENSATION_MULT.put("SRD_arciel_shot", 0f);
+        LATERAL_COMPENSATION_MULT.put("SRD_harmonius_shot", 1f);
+        LATERAL_COMPENSATION_MULT.put("SRD_enochian_shot", 0f);
+    }
+    //NEW: whether a shot's trail loses opacity as the projectile fades out. Should generally be true, but may need to
+    //be set to false on some scripted weapons. Has no real effect on flak rounds or missiles, and should thus be set
+    //false for those
+    private static final Map<String, Boolean> FADE_OUT_FADES_TRAIL = new HashMap<>();
+    static {
+        FADE_OUT_FADES_TRAIL.put("SRD_adloquium_shot", true);
+        FADE_OUT_FADES_TRAIL.put("SRD_adloquium_fake_shot", true);
+        FADE_OUT_FADES_TRAIL.put("SRD_skalla_shot", true);
+        FADE_OUT_FADES_TRAIL.put("SRD_phira_shock_shot", true);
+        FADE_OUT_FADES_TRAIL.put("SRD_benediction_msl", false);
+        FADE_OUT_FADES_TRAIL.put("SRD_divinity_shot", true);
+        FADE_OUT_FADES_TRAIL.put("SRD_equity_shot", true);
+        FADE_OUT_FADES_TRAIL.put("SRD_phira_impact_shot", true);
+        FADE_OUT_FADES_TRAIL.put("SRD_phira_burst_shot", false);
+        FADE_OUT_FADES_TRAIL.put("SRD_excogitation_shot", true);
+        FADE_OUT_FADES_TRAIL.put("SRD_arphage_shot", true);
+        FADE_OUT_FADES_TRAIL.put("SRD_veda_shot", true);
+        FADE_OUT_FADES_TRAIL.put("SRD_qoga_shot", true);
+        FADE_OUT_FADES_TRAIL.put("SRD_arciel_shot", true);
+        FADE_OUT_FADES_TRAIL.put("SRD_harmonius_shot", true);
+        FADE_OUT_FADES_TRAIL.put("SRD_enochian_shot", true);
+    }
+    //NEW: whether a shot should have its direction adjusted to face the same way as its velocity vector, thus
+    //helping with trail alignment for projectiles without using lateral compensation. DOES NOT WORK FOR
+    //PROJECTILES SPAWNED WITH BALLISTIC_AS_BEAM AS SPAWNTYPE, and should not be used on missiles
+    private static final Map<String, Boolean> PROJECTILE_ANGLE_ADJUSTMENT = new HashMap<>();
+    static {
+        PROJECTILE_ANGLE_ADJUSTMENT.put("SRD_adloquium_shot", true);
+        PROJECTILE_ANGLE_ADJUSTMENT.put("SRD_adloquium_fake_shot", true);
+        PROJECTILE_ANGLE_ADJUSTMENT.put("SRD_skalla_shot", false);
+        PROJECTILE_ANGLE_ADJUSTMENT.put("SRD_phira_shock_shot", false);
+        PROJECTILE_ANGLE_ADJUSTMENT.put("SRD_benediction_msl", false);
+        PROJECTILE_ANGLE_ADJUSTMENT.put("SRD_divinity_shot", false);
+        PROJECTILE_ANGLE_ADJUSTMENT.put("SRD_equity_shot", false);
+        PROJECTILE_ANGLE_ADJUSTMENT.put("SRD_phira_impact_shot", true);
+        PROJECTILE_ANGLE_ADJUSTMENT.put("SRD_phira_burst_shot", true);
+        PROJECTILE_ANGLE_ADJUSTMENT.put("SRD_excogitation_shot", true);
+        PROJECTILE_ANGLE_ADJUSTMENT.put("SRD_arphage_shot", true);
+        PROJECTILE_ANGLE_ADJUSTMENT.put("SRD_veda_shot", true);
+        PROJECTILE_ANGLE_ADJUSTMENT.put("SRD_qoga_shot", true);
+        PROJECTILE_ANGLE_ADJUSTMENT.put("SRD_arciel_shot", true);
+        PROJECTILE_ANGLE_ADJUSTMENT.put("SRD_harmonius_shot", false);
+        PROJECTILE_ANGLE_ADJUSTMENT.put("SRD_enochian_shot", true);
+    }
 
     @Override
     public void init(CombatEngineAPI engine) {
@@ -318,41 +386,57 @@ public class SRD_ProjectileTrailHandlerPlugin extends BaseEveryFrameCombatPlugin
             if (proj.getProjectileSpecId() == null || proj.didDamage()) {
                 continue;
             }
-
-            //-------------------------------------------For visual effects---------------------------------------------
             if (!TRAIL_SPRITES.keySet().contains(proj.getProjectileSpecId())) {
                 continue;
             }
+
+            //-------------------------------------------For visual effects---------------------------------------------
             String specID = proj.getProjectileSpecId();
             SpriteAPI spriteToUse = Global.getSettings().getSprite("SRD_fx", TRAIL_SPRITES.get(specID));
+            Vector2f projVel = new Vector2f(proj.getVelocity());
+
+            //If we use angle adjustment, do that here
+            if (PROJECTILE_ANGLE_ADJUSTMENT.get(specID) && projVel.length() > 0.1f && !proj.getSpawnType().equals(ProjectileSpawnType.BALLISTIC_AS_BEAM)) {
+                proj.setFacing(VectorUtils.getAngle(new Vector2f(0f, 0f), projVel));
+            }
 
             //If we haven't already started a trail for this projectile, get an ID for it
             if (projectileTrailIDs.get(proj) == null) {
                 projectileTrailIDs.put(proj, MagicTrailPlugin.getUniqueID());
+
+                //Fix for some first-frame error shenanigans
+                if (projVel.length() < 0.1f && proj.getSource() != null) {
+                    projVel = new Vector2f(proj.getSource().getVelocity());
+                }
             }
 
             //Gets a custom "offset" position, so we can slightly alter the spawn location to account for "natural fade-in", and add that to our spawn position
             Vector2f offsetPoint = new Vector2f((float)Math.cos(Math.toRadians(proj.getFacing())) * TRAIL_SPAWN_OFFSETS.get(specID), (float)Math.sin(Math.toRadians(proj.getFacing())) * TRAIL_SPAWN_OFFSETS.get(specID));
             Vector2f spawnPosition = new Vector2f(offsetPoint.x + proj.getLocation().x, offsetPoint.y + proj.getLocation().y);
 
-            //lateral offset
-            Vector2f projVel = new Vector2f(proj.getVelocity());
+            //Sideway offset velocity, for projectiles that use it
             Vector2f projBodyVel = VectorUtils.rotate(projVel, -proj.getFacing());
             Vector2f projLateralBodyVel = new Vector2f(0f, projBodyVel.getY());
-            Vector2f projLateralVel = VectorUtils.rotate(projLateralBodyVel, proj.getFacing());
+            Vector2f sidewayVel = (Vector2f)VectorUtils.rotate(projLateralBodyVel, proj.getFacing()).scale(LATERAL_COMPENSATION_MULT.get(specID));
+
+            //Opacity adjustment for fade-out, if the projectile uses it
+            float opacityMult = 1f;
+            if (FADE_OUT_FADES_TRAIL.get(specID)) {
+                opacityMult = proj.getDamageAmount() / proj.getBaseDamageAmount();
+            }
 
             //CUSTOM: The Benediciton's missiles use a different trail, with randomness to the end
             if (specID.contains("SRD_benediction_msl")) {
                 MagicTrailPlugin.AddTrailMemberAdvanced(proj, projectileTrailIDs.get(proj), spriteToUse, spawnPosition, 0f, MathUtils.getRandomNumberInRange(0f, 105f), proj.getFacing() - 180f,
                         0f, MathUtils.getRandomNumberInRange(-330f, 330f), START_SIZES.get(specID), END_SIZES.get(specID), TRAIL_START_COLORS.get(specID), TRAIL_END_COLORS.get(specID),
-                        TRAIL_OPACITIES.get(specID), TRAIL_DURATIONS_IN.get(specID), TRAIL_DURATIONS_MAIN.get(specID), TRAIL_DURATIONS_OUT.get(specID), TRAIL_BLEND_SRC.get(specID),
-                        TRAIL_BLEND_DEST.get(specID), TRAIL_LOOP_LENGTHS.get(specID), TRAIL_SCROLL_SPEEDS.get(specID),projLateralVel, null);
+                        TRAIL_OPACITIES.get(specID) * opacityMult, TRAIL_DURATIONS_IN.get(specID), TRAIL_DURATIONS_MAIN.get(specID), TRAIL_DURATIONS_OUT.get(specID), TRAIL_BLEND_SRC.get(specID),
+                        TRAIL_BLEND_DEST.get(specID), TRAIL_LOOP_LENGTHS.get(specID), TRAIL_SCROLL_SPEEDS.get(specID),sidewayVel, null);
             } else {
                 //Then, actually spawn a trail
                 MagicTrailPlugin.AddTrailMemberAdvanced(proj, projectileTrailIDs.get(proj), spriteToUse, spawnPosition, 0f, 0f, proj.getFacing() - 180f,
                         0f, 0f, START_SIZES.get(specID), END_SIZES.get(specID), TRAIL_START_COLORS.get(specID), TRAIL_END_COLORS.get(specID),
-                        TRAIL_OPACITIES.get(specID), TRAIL_DURATIONS_IN.get(specID), TRAIL_DURATIONS_MAIN.get(specID), TRAIL_DURATIONS_OUT.get(specID), TRAIL_BLEND_SRC.get(specID),
-                        TRAIL_BLEND_DEST.get(specID), TRAIL_LOOP_LENGTHS.get(specID), TRAIL_SCROLL_SPEEDS.get(specID), projLateralVel, null);
+                        TRAIL_OPACITIES.get(specID) * opacityMult, TRAIL_DURATIONS_IN.get(specID), TRAIL_DURATIONS_MAIN.get(specID), TRAIL_DURATIONS_OUT.get(specID), TRAIL_BLEND_SRC.get(specID),
+                        TRAIL_BLEND_DEST.get(specID), TRAIL_LOOP_LENGTHS.get(specID), TRAIL_SCROLL_SPEEDS.get(specID), sidewayVel, null);
 
                 //The Purgatory uses dual-core blending
                 if (specID.contains("SRD_skalla_shot")) {
@@ -362,8 +446,8 @@ public class SRD_ProjectileTrailHandlerPlugin extends BaseEveryFrameCombatPlugin
                     }
                     MagicTrailPlugin.AddTrailMemberAdvanced(proj, projectileTrailIDs2.get(proj), spriteToUse, spawnPosition, 0f, 0f, proj.getFacing() - 180f,
                             0f, 0f, START_SIZES.get(specID) / 2f, END_SIZES.get(specID) / 2f, Color.white, Color.white,
-                            TRAIL_OPACITIES.get(specID), TRAIL_DURATIONS_IN.get(specID), TRAIL_DURATIONS_MAIN.get(specID), TRAIL_DURATIONS_OUT.get(specID), TRAIL_BLEND_SRC.get(specID),
-                            TRAIL_BLEND_DEST.get(specID), TRAIL_LOOP_LENGTHS.get(specID), TRAIL_SCROLL_SPEEDS.get(specID), projLateralVel, null);
+                            TRAIL_OPACITIES.get(specID) * opacityMult, TRAIL_DURATIONS_IN.get(specID), TRAIL_DURATIONS_MAIN.get(specID), TRAIL_DURATIONS_OUT.get(specID), TRAIL_BLEND_SRC.get(specID),
+                            TRAIL_BLEND_DEST.get(specID), TRAIL_LOOP_LENGTHS.get(specID), TRAIL_SCROLL_SPEEDS.get(specID), sidewayVel, null);
                 }
 
                 //Making the Adlo a bit fancier
@@ -374,8 +458,8 @@ public class SRD_ProjectileTrailHandlerPlugin extends BaseEveryFrameCombatPlugin
                     }
                     MagicTrailPlugin.AddTrailMemberAdvanced(proj, projectileTrailIDs2.get(proj), Global.getSettings().getSprite("SRD_fx", "projectile_trail_fringe"), spawnPosition, 0f, 0f, proj.getFacing() - 180f,
                             0f, 0f, START_SIZES.get(specID) * 2f, END_SIZES.get(specID) * 2f, new Color(67, 53,215), new Color(67,53,215),
-                            0.4f, TRAIL_DURATIONS_IN.get(specID), TRAIL_DURATIONS_MAIN.get(specID), TRAIL_DURATIONS_OUT.get(specID)*1.5f, TRAIL_BLEND_SRC.get(specID),
-                            TRAIL_BLEND_DEST.get(specID), TRAIL_LOOP_LENGTHS.get(specID), TRAIL_SCROLL_SPEEDS.get(specID), projLateralVel, null);
+                            0.4f * opacityMult, TRAIL_DURATIONS_IN.get(specID), TRAIL_DURATIONS_MAIN.get(specID), TRAIL_DURATIONS_OUT.get(specID)*1.5f, TRAIL_BLEND_SRC.get(specID),
+                            TRAIL_BLEND_DEST.get(specID), TRAIL_LOOP_LENGTHS.get(specID), TRAIL_SCROLL_SPEEDS.get(specID), sidewayVel, null);
                 }
 
                 if (specID.contains("SRD_adloquium_fake_shot")) {
@@ -385,8 +469,8 @@ public class SRD_ProjectileTrailHandlerPlugin extends BaseEveryFrameCombatPlugin
                     }
                     MagicTrailPlugin.AddTrailMemberAdvanced(proj, projectileTrailIDs2.get(proj), Global.getSettings().getSprite("SRD_fx", "projectile_trail_fringe"), spawnPosition, 0f, 0f, proj.getFacing() - 180f,
                             0f, 0f, START_SIZES.get(specID) * 2f, END_SIZES.get(specID) * 2f, new Color(67,53,215), new Color(67,53,215),
-                            0.4f, TRAIL_DURATIONS_IN.get(specID), TRAIL_DURATIONS_MAIN.get(specID), TRAIL_DURATIONS_OUT.get(specID)*1.5f, TRAIL_BLEND_SRC.get(specID),
-                            TRAIL_BLEND_DEST.get(specID), TRAIL_LOOP_LENGTHS.get(specID), TRAIL_SCROLL_SPEEDS.get(specID), projLateralVel, null);
+                            0.4f * opacityMult, TRAIL_DURATIONS_IN.get(specID), TRAIL_DURATIONS_MAIN.get(specID), TRAIL_DURATIONS_OUT.get(specID)*1.5f, TRAIL_BLEND_SRC.get(specID),
+                            TRAIL_BLEND_DEST.get(specID), TRAIL_LOOP_LENGTHS.get(specID), TRAIL_SCROLL_SPEEDS.get(specID), sidewayVel, null);
                 }
 
                 //The Phira is an evil Purgatory that I just hacked together from the purgatory trail code  -Nia
@@ -397,8 +481,8 @@ public class SRD_ProjectileTrailHandlerPlugin extends BaseEveryFrameCombatPlugin
                     }
                     MagicTrailPlugin.AddTrailMemberAdvanced(proj, projectileTrailIDs2.get(proj), spriteToUse, spawnPosition, 0f, 0f, proj.getFacing() - 180f,
                             0f, 0f, START_SIZES.get(specID) / 2f, END_SIZES.get(specID) / 2f, Color.white, Color.white,
-                            TRAIL_OPACITIES.get(specID), TRAIL_DURATIONS_IN.get(specID), TRAIL_DURATIONS_MAIN.get(specID), TRAIL_DURATIONS_OUT.get(specID), TRAIL_BLEND_SRC.get(specID),
-                            TRAIL_BLEND_DEST.get(specID), TRAIL_LOOP_LENGTHS.get(specID), TRAIL_SCROLL_SPEEDS.get(specID), projLateralVel, null);
+                            TRAIL_OPACITIES.get(specID) * opacityMult, TRAIL_DURATIONS_IN.get(specID), TRAIL_DURATIONS_MAIN.get(specID), TRAIL_DURATIONS_OUT.get(specID), TRAIL_BLEND_SRC.get(specID),
+                            TRAIL_BLEND_DEST.get(specID), TRAIL_LOOP_LENGTHS.get(specID), TRAIL_SCROLL_SPEEDS.get(specID), sidewayVel, null);
                 }
 
                 //The Equity has a whopping 3 trails, with custom behaviour to boot!
@@ -409,8 +493,8 @@ public class SRD_ProjectileTrailHandlerPlugin extends BaseEveryFrameCombatPlugin
                     }
                     MagicTrailPlugin.AddTrailMemberAdvanced(proj, projectileTrailIDs2.get(proj), spriteToUse, spawnPosition, MathUtils.getRandomNumberInRange(0f, 200f), MathUtils.getRandomNumberInRange(0f, 500f), proj.getFacing() - 180f,
                             MathUtils.getRandomNumberInRange(-200f, 200f), MathUtils.getRandomNumberInRange(-500f, 500f), START_SIZES.get(specID) * 2f, END_SIZES.get(specID) * 2f, TRAIL_START_COLORS.get(specID), TRAIL_END_COLORS.get(specID),
-                            TRAIL_OPACITIES.get(specID), TRAIL_DURATIONS_IN.get(specID) * 0.4f, TRAIL_DURATIONS_MAIN.get(specID) * 0.5f, TRAIL_DURATIONS_OUT.get(specID) * 0.5f, TRAIL_BLEND_SRC.get(specID),
-                            TRAIL_BLEND_DEST.get(specID), TRAIL_LOOP_LENGTHS.get(specID), TRAIL_SCROLL_SPEEDS.get(specID), projLateralVel, null);
+                            TRAIL_OPACITIES.get(specID) * opacityMult, TRAIL_DURATIONS_IN.get(specID) * 0.4f, TRAIL_DURATIONS_MAIN.get(specID) * 0.5f, TRAIL_DURATIONS_OUT.get(specID) * 0.5f, TRAIL_BLEND_SRC.get(specID),
+                            TRAIL_BLEND_DEST.get(specID), TRAIL_LOOP_LENGTHS.get(specID), TRAIL_SCROLL_SPEEDS.get(specID), sidewayVel, null);
 
                     //If we haven't already started a third trail for this projectile, get an ID for it
                     if (projectileTrailIDs3.get(proj) == null) {
@@ -418,8 +502,8 @@ public class SRD_ProjectileTrailHandlerPlugin extends BaseEveryFrameCombatPlugin
                     }
                     MagicTrailPlugin.AddTrailMemberAdvanced(proj, projectileTrailIDs3.get(proj), spriteToUse, spawnPosition, MathUtils.getRandomNumberInRange(0f, 220f), MathUtils.getRandomNumberInRange(0f, 600f), proj.getFacing() - 180f,
                             MathUtils.getRandomNumberInRange(-220f, 220f), MathUtils.getRandomNumberInRange(-500f, 500f), START_SIZES.get(specID) * 2f, END_SIZES.get(specID) * 2f, TRAIL_START_COLORS.get(specID), TRAIL_END_COLORS.get(specID),
-                            TRAIL_OPACITIES.get(specID), TRAIL_DURATIONS_IN.get(specID) * 0.25f, TRAIL_DURATIONS_MAIN.get(specID) * 0.25f, TRAIL_DURATIONS_OUT.get(specID) * 0.25f, TRAIL_BLEND_SRC.get(specID),
-                            TRAIL_BLEND_DEST.get(specID), TRAIL_LOOP_LENGTHS.get(specID), TRAIL_SCROLL_SPEEDS.get(specID), projLateralVel, null);
+                            TRAIL_OPACITIES.get(specID) * opacityMult, TRAIL_DURATIONS_IN.get(specID) * 0.25f, TRAIL_DURATIONS_MAIN.get(specID) * 0.25f, TRAIL_DURATIONS_OUT.get(specID) * 0.25f, TRAIL_BLEND_SRC.get(specID),
+                            TRAIL_BLEND_DEST.get(specID), TRAIL_LOOP_LENGTHS.get(specID), TRAIL_SCROLL_SPEEDS.get(specID), sidewayVel, null);
                 }
 
                 //The Ar Ciel is one angry gun it so needs some angry trails
@@ -429,16 +513,16 @@ public class SRD_ProjectileTrailHandlerPlugin extends BaseEveryFrameCombatPlugin
                     }
                     MagicTrailPlugin.AddTrailMemberAdvanced(proj, projectileTrailIDs2.get(proj), spriteToUse, spawnPosition, 20f, MathUtils.getRandomNumberInRange(0f, 105f), proj.getFacing() - 160f,
                             0f, MathUtils.getRandomNumberInRange(-330f, 330f), START_SIZES.get(specID), END_SIZES.get(specID), TRAIL_START_COLORS.get(specID), TRAIL_END_COLORS.get(specID),
-                            0.4f, TRAIL_DURATIONS_IN.get(specID), TRAIL_DURATIONS_MAIN.get(specID), TRAIL_DURATIONS_OUT.get(specID), TRAIL_BLEND_SRC.get(specID),
-                            TRAIL_BLEND_DEST.get(specID), TRAIL_LOOP_LENGTHS.get(specID), TRAIL_SCROLL_SPEEDS.get(specID), projLateralVel, null);
+                            0.4f * opacityMult, TRAIL_DURATIONS_IN.get(specID), TRAIL_DURATIONS_MAIN.get(specID), TRAIL_DURATIONS_OUT.get(specID), TRAIL_BLEND_SRC.get(specID),
+                            TRAIL_BLEND_DEST.get(specID), TRAIL_LOOP_LENGTHS.get(specID), TRAIL_SCROLL_SPEEDS.get(specID), sidewayVel, null);
 
                     if (projectileTrailIDs3.get(proj) == null) {
                         projectileTrailIDs3.put(proj, MagicTrailPlugin.getUniqueID());
                     }
                     MagicTrailPlugin.AddTrailMemberAdvanced(proj, projectileTrailIDs3.get(proj), spriteToUse, spawnPosition, 20f, MathUtils.getRandomNumberInRange(0f, 105f), proj.getFacing() - 200f,
                             0f, MathUtils.getRandomNumberInRange(-330f, 330f), START_SIZES.get(specID), END_SIZES.get(specID), TRAIL_START_COLORS.get(specID), TRAIL_END_COLORS.get(specID),
-                            0.4f, TRAIL_DURATIONS_IN.get(specID), TRAIL_DURATIONS_MAIN.get(specID), TRAIL_DURATIONS_OUT.get(specID), TRAIL_BLEND_SRC.get(specID),
-                            TRAIL_BLEND_DEST.get(specID), TRAIL_LOOP_LENGTHS.get(specID), TRAIL_SCROLL_SPEEDS.get(specID), projLateralVel, null);
+                            0.4f * opacityMult, TRAIL_DURATIONS_IN.get(specID), TRAIL_DURATIONS_MAIN.get(specID), TRAIL_DURATIONS_OUT.get(specID), TRAIL_BLEND_SRC.get(specID),
+                            TRAIL_BLEND_DEST.get(specID), TRAIL_LOOP_LENGTHS.get(specID), TRAIL_SCROLL_SPEEDS.get(specID), sidewayVel, null);
 
                 }
 
@@ -449,8 +533,8 @@ public class SRD_ProjectileTrailHandlerPlugin extends BaseEveryFrameCombatPlugin
                     }
                     MagicTrailPlugin.AddTrailMemberAdvanced(proj, projectileTrailIDs2.get(proj), spriteToUse, spawnPosition, 0f, MathUtils.getRandomNumberInRange(0f, 105f), proj.getFacing() - 180f,
                             0f, MathUtils.getRandomNumberInRange(-330f, 330f), START_SIZES.get(specID), END_SIZES.get(specID), TRAIL_START_COLORS.get(specID), TRAIL_END_COLORS.get(specID),
-                            TRAIL_OPACITIES.get(specID), TRAIL_DURATIONS_IN.get(specID), TRAIL_DURATIONS_MAIN.get(specID), TRAIL_DURATIONS_OUT.get(specID), TRAIL_BLEND_SRC.get(specID),
-                            TRAIL_BLEND_DEST.get(specID), TRAIL_LOOP_LENGTHS.get(specID), TRAIL_SCROLL_SPEEDS.get(specID), projLateralVel, null);
+                            TRAIL_OPACITIES.get(specID) * opacityMult, TRAIL_DURATIONS_IN.get(specID), TRAIL_DURATIONS_MAIN.get(specID), TRAIL_DURATIONS_OUT.get(specID), TRAIL_BLEND_SRC.get(specID),
+                            TRAIL_BLEND_DEST.get(specID), TRAIL_LOOP_LENGTHS.get(specID), TRAIL_SCROLL_SPEEDS.get(specID), sidewayVel, null);
 
                 }
 
@@ -461,8 +545,8 @@ public class SRD_ProjectileTrailHandlerPlugin extends BaseEveryFrameCombatPlugin
                     }
                     MagicTrailPlugin.AddTrailMemberAdvanced(proj, projectileTrailIDs2.get(proj), spriteToUse, spawnPosition, 0f, MathUtils.getRandomNumberInRange(0f, 105f), proj.getFacing() - 180f,
                             0f, MathUtils.getRandomNumberInRange(-330f, 330f), 10f, 10f, new Color(205,100,255), new Color(205,100,255),
-                            TRAIL_OPACITIES.get(specID), TRAIL_DURATIONS_IN.get(specID), 0.5f, TRAIL_DURATIONS_OUT.get(specID), TRAIL_BLEND_SRC.get(specID),
-                            TRAIL_BLEND_DEST.get(specID), TRAIL_LOOP_LENGTHS.get(specID), TRAIL_SCROLL_SPEEDS.get(specID), projLateralVel, null);
+                            TRAIL_OPACITIES.get(specID) * opacityMult, TRAIL_DURATIONS_IN.get(specID), 0.5f, TRAIL_DURATIONS_OUT.get(specID), TRAIL_BLEND_SRC.get(specID),
+                            TRAIL_BLEND_DEST.get(specID), TRAIL_LOOP_LENGTHS.get(specID), TRAIL_SCROLL_SPEEDS.get(specID), sidewayVel, null);
                 }
             }
         }
