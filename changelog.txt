@@ -12,6 +12,7 @@ Changes:
 - Added "Stable Locations" to the two Sylphon systems
 - Adjusted blueprint rarities for most ships
 - Removed Sylphon experimental BP package
+- Updated autofit tags for most weapons
 
 Bugfixes:
 - Ozma Station is no longer a freeport *twice* (don't ask how that works): only works on new saves, unfortunately, but it's not serious enough to make a new save over anyhow
