@@ -6,6 +6,7 @@ import com.fs.starfarer.api.Global;
 import com.fs.starfarer.api.combat.*;
 import com.fs.starfarer.api.graphics.SpriteAPI;
 import com.fs.starfarer.api.input.InputEventAPI;
+import data.scripts.util.MagicRender;
 import org.lazywizard.lazylib.MathUtils;
 import org.lazywizard.lazylib.VectorUtils;
 import org.lwjgl.util.vector.Vector2f;
@@ -123,8 +124,7 @@ public class SRD_FakeSmokePlugin extends BaseEveryFrameCombatPlugin {
 
                         render(
                                 sprite, //Sprite to draw
-                                entry.get("s") * sizeMod, //Width entry
-                                entry.get("s") * sizeMod, //Height entry
+                                entry.get("s") * sizeMod, //Size entry
                                 entry.get("a"), //Angle entry
                                 opacity, //opacity duh!
                                 entry.get("x"), //X position entry
@@ -149,7 +149,7 @@ public class SRD_FakeSmokePlugin extends BaseEveryFrameCombatPlugin {
     }
 
     //The render function
-    private void render ( SpriteAPI sprite, float width, float height, float angle, float opacity, float posX, float posY, Color renderColor){
+    private void render ( SpriteAPI sprite, float width, float angle, float opacity, float posX, float posY, Color renderColor){
         //This part instantiates OpenGL
         glEnable(GL_BLEND);
         glEnable(GL_TEXTURE_2D);
