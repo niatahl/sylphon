@@ -1,0 +1,337 @@
+{
+  "bounds": [
+    -55,
+    -6.5,
+    -75,
+    -5.5,
+    -89.5,
+    -23,
+    -68.5,
+    -39,
+    -48,
+    -39,
+    -48,
+    -79,
+    -41.5,
+    -82.5,
+    2.5,
+    -78.5,
+    -10,
+    -73.5,
+    4.5,
+    -42.5,
+    15.5,
+    -42.5,
+    36.5,
+    -30.5,
+    64,
+    -30.5,
+    79,
+    -25.5,
+    79,
+    -25.5,
+    89,
+    -11.5,
+    64,
+    -11.5,
+    76,
+    -5.5,
+    57,
+    -0,
+    76,
+    5.5,
+    64,
+    11.5,
+    89,
+    11.5,
+    79,
+    25.5,
+    79,
+    25.5,
+    64,
+    30.5,
+    36.5,
+    30.5,
+    15.5,
+    42.5,
+    4.5,
+    42.5,
+    -10,
+    73.5,
+    2.5,
+    78.5,
+    -41.5,
+    82.5,
+    -48,
+    79,
+    -48,
+    39,
+    -68.5,
+    39,
+    -89.5,
+    23,
+    -75,
+    5.5,
+    -55,
+    6.5
+  ],
+  "builtInMods": [
+    "SRD_nullspace_conduits",
+    "SRD_sylph_core"
+  ],
+  "builtInWeapons": {
+    "WS0005": "SRD_harmonius"
+  },
+  "builtInWings": [],
+  "center": [
+    84,
+    90.5
+  ],
+  "collisionRadius": 141.5,
+  "engineSlots": [
+    {
+      "angle": 180,
+      "contrailSize": 15,
+      "length": 52,
+      "location": [
+        -48.5,
+        76
+      ],
+      "style": "SRD_ENGINE",
+      "width": 15
+    },
+    {
+      "angle": -180,
+      "contrailSize": 15,
+      "length": 52,
+      "location": [
+        -48.5,
+        -76
+      ],
+      "style": "SRD_ENGINE",
+      "width": 15
+    },
+    {
+      "angle": 180,
+      "contrailSize": 9,
+      "length": 39,
+      "location": [
+        -49.5,
+        68
+      ],
+      "style": "SRD_ENGINE",
+      "width": 9
+    },
+    {
+      "angle": -180,
+      "contrailSize": 9,
+      "length": 39,
+      "location": [
+        -49.5,
+        -68
+      ],
+      "style": "SRD_ENGINE",
+      "width": 9
+    },
+    {
+      "angle": 180,
+      "contrailSize": 9,
+      "length": 39,
+      "location": [
+        -49.5,
+        62
+      ],
+      "style": "SRD_ENGINE",
+      "width": 9
+    },
+    {
+      "angle": -180,
+      "contrailSize": 9,
+      "length": 39,
+      "location": [
+        -49.5,
+        -62
+      ],
+      "style": "SRD_ENGINE",
+      "width": 9
+    },
+    {
+      "angle": 180,
+      "contrailSize": 12,
+      "length": 36,
+      "location": [
+        -48.5,
+        53.5
+      ],
+      "style": "SRD_ENGINE",
+      "width": 12
+    },
+    {
+      "angle": -180,
+      "contrailSize": 12,
+      "length": 36,
+      "location": [
+        -48.5,
+        -53.5
+      ],
+      "style": "SRD_ENGINE",
+      "width": 12
+    },
+    {
+      "angle": 180,
+      "contrailSize": 21,
+      "length": 70.5,
+      "location": [
+        -57.5,
+        -0
+      ],
+      "style": "SRD_ENGINE",
+      "width": 21
+    },
+    {
+      "angle": 173.5,
+      "contrailSize": 9.192904,
+      "length": 34.743671,
+      "location": [
+        -56.5,
+        5.5
+      ],
+      "style": "SRD_ENGINE",
+      "width": 9.192904
+    },
+    {
+      "angle": -173.5,
+      "contrailSize": 9.192904,
+      "length": 34.743671,
+      "location": [
+        -56.5,
+        -5.5
+      ],
+      "style": "SRD_ENGINE",
+      "width": 9.192904
+    }
+  ],
+  "height": 181,
+  "hullId": "SRD_Ascordia_deadeye",
+  "hullName": "Deadeye",
+  "hullSize": "DESTROYER",
+  "shieldCenter": [
+    0,
+    0
+  ],
+  "shieldRadius": 126,
+  "spriteName": "graphics/sylphon/ships/eccentrics/SRD_Ascordia_deadeye.png",
+  "style": "SRD_TECH",
+  "viewOffset": 0,
+  "weaponSlots": [
+    {
+      "angle": 0,
+      "arc": 5,
+      "id": "WS0001",
+      "locations": [
+        -1.5,
+        50
+      ],
+      "mount": "HARDPOINT",
+      "size": "MEDIUM",
+      "type": "UNIVERSAL"
+    },
+    {
+      "angle": -0,
+      "arc": 5,
+      "id": "WS0002",
+      "locations": [
+        -1.5,
+        -50
+      ],
+      "mount": "HARDPOINT",
+      "size": "MEDIUM",
+      "type": "UNIVERSAL"
+    },
+    {
+      "angle": 68,
+      "arc": 258,
+      "id": "WS0003",
+      "locations": [
+        -23,
+        60
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "ENERGY"
+    },
+    {
+      "angle": -68,
+      "arc": 258,
+      "id": "WS0004",
+      "locations": [
+        -23,
+        -60
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "ENERGY"
+    },
+    {
+      "angle": 0,
+      "arc": 5,
+      "id": "WS0005",
+      "locations": [
+        36.5,
+        -0
+      ],
+      "mount": "HIDDEN",
+      "size": "LARGE",
+      "type": "BUILT_IN"
+    },
+    {
+      "angle": 180,
+      "arc": 66,
+      "id": "WS0006",
+      "locations": [
+        -45.5,
+        44
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "SYSTEM"
+    },
+    {
+      "angle": -180,
+      "arc": 66,
+      "id": "WS0007",
+      "locations": [
+        -45.5,
+        -44
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "SYSTEM"
+    },
+    {
+      "angle": 0,
+      "arc": 5,
+      "id": "WS0008",
+      "locations": [
+        -1.5,
+        70
+      ],
+      "mount": "HARDPOINT",
+      "size": "SMALL",
+      "type": "ENERGY"
+    },
+    {
+      "angle": -0,
+      "arc": 5,
+      "id": "WS0009",
+      "locations": [
+        -1.5,
+        -70
+      ],
+      "mount": "HARDPOINT",
+      "size": "SMALL",
+      "type": "ENERGY"
+    }
+  ],
+  "width": 168
+}
