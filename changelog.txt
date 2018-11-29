@@ -1,7 +1,7 @@
 ﻿0.9.1
 Additions:
 - Added the Synastry and its built-in weapon, the Apocatastasis [say *that* fast 5 times]
-- Added eccentric Synastry "Cieve"
+- Added some secret things that aren't yet obtainable
 
 Changes:
 - The Frelia no longer has super-heavy mount points; instead, it has two large energy slots (which can still be turned to fighter bays if left empty)

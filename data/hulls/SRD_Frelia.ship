@@ -170,7 +170,7 @@
         -77.5,
         104
       ],
-      "style": "SRD_ENGINE",
+      "style": "HIGH_TECH",
       "width": 22
     },
     {
@@ -181,7 +181,7 @@
         -77.5,
         -104
       ],
-      "style": "SRD_ENGINE",
+      "style": "HIGH_TECH",
       "width": 22
     },
     {
@@ -192,7 +192,7 @@
         -78.5,
         92.5
       ],
-      "style": "SRD_ENGINE",
+      "style": "HIGH_TECH",
       "width": 21
     },
     {
@@ -203,7 +203,7 @@
         -78.5,
         -92.5
       ],
-      "style": "SRD_ENGINE",
+      "style": "HIGH_TECH",
       "width": 21
     },
     {
@@ -214,7 +214,7 @@
         -79,
         82
       ],
-      "style": "SRD_ENGINE",
+      "style": "HIGH_TECH",
       "width": 18
     },
     {
@@ -225,7 +225,7 @@
         -79,
         -82
       ],
-      "style": "SRD_ENGINE",
+      "style": "HIGH_TECH",
       "width": 18
     }
   ],
@@ -239,7 +239,7 @@
   ],
   "shieldRadius": 207.5,
   "spriteName": "graphics/sylphon/ships/SRD_Frelia.png",
-  "style": "SRD_TECH",
+  "style": "HIGH_TECH",
   "viewOffset": 0,
   "weaponSlots": [
     {

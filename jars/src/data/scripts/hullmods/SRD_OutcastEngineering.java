@@ -52,7 +52,7 @@ public class SRD_OutcastEngineering extends BaseHullMod {
     private static final float SMOKE_MAXIMUM_SPEED_NORMAL = 240f;
     private static final float SMOKE_MAXIMUM_SPEED_VENTING = 240f;
     private static final float SMOKE_ANGLE = 0.9f;
-    private static final float SMOKE_OPACITY = 1f;
+    private static final float SMOKE_OPACITY = 0.6f;
     private static final float SMOKE_START_SIZE = 17f;
     private static final float SMOKE_END_SIZE = 34f;
 

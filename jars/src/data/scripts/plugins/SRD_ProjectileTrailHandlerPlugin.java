@@ -421,7 +421,7 @@ public class SRD_ProjectileTrailHandlerPlugin extends BaseEveryFrameCombatPlugin
 
             //Opacity adjustment for fade-out, if the projectile uses it
             float opacityMult = 1f;
-            if (FADE_OUT_FADES_TRAIL.get(specID)) {
+            if (FADE_OUT_FADES_TRAIL.get(specID) && proj.isFading()) {
                 opacityMult = proj.getDamageAmount() / proj.getBaseDamageAmount();
             }
 
