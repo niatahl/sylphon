@@ -5,7 +5,7 @@
 		"SRD_NullspaceMissileTrackerPlugin":"data.scripts.plugins.SRD_NullspaceMissileTrackerPlugin",
 		"SRD_ProjectileTrailHandlerPlugin":"data.scripts.plugins.SRD_ProjectileTrailHandlerPlugin",
 		"SRD_LensFlarePlugin":"data.scripts.plugins.SRD_LensFlarePlugin",
-		"SRD_ProjectileCustomGlowPlugin":"data.scripts.plugins.SRD_ProjectileCustomGlowPlugin",
+		#"SRD_ProjectileCustomGlowPlugin":"data.scripts.plugins.SRD_ProjectileCustomGlowPlugin",
 		},  
 	"designTypeColors":{
             "Sylphon RnD":[190,0,255,255],
@@ -33,6 +33,7 @@
 			"projectile_trail_core":"graphics/sylphon/fx/SRD_largesse_trail_core.png",
 			"projectile_trail_fringe":"graphics/sylphon/fx/SRD_largesse_trail_fringe.png",
 			"projectile_trail_zappy":"graphics/sylphon/fx/SRD_zappy_trail.png",
+			"projectile_trail_glow":"graphics/sylphon/fx/SRD_projectile_glow.png",
 			"laser_targeter":"graphics/sylphon/fx/SRD_laser_targeter_sprite.png",
 			"lens_flare":"graphics/sylphon/fx/SRD_lens_flare.png",
 			"divinity_shot_glow":"graphics/sylphon/missiles/SRD_divinity_shot_glow.png",

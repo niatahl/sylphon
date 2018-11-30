@@ -29,7 +29,7 @@ public class SRD_ProjectileTrailHandlerPlugin extends BaseEveryFrameCombatPlugin
         TRAIL_SPRITES.put("SRD_skalla_shot", "projectile_trail_fuzzy");
         TRAIL_SPRITES.put("SRD_phira_shock_shot", "projectile_trail_fuzzy");
         TRAIL_SPRITES.put("SRD_benediction_msl", "projectile_trail_standard");
-        TRAIL_SPRITES.put("SRD_divinity_shot", "projectile_trail_fuzzy");
+        TRAIL_SPRITES.put("SRD_divinity_shot", "projectile_trail_glow");
         TRAIL_SPRITES.put("SRD_equity_shot", "projectile_trail_standard");
         TRAIL_SPRITES.put("SRD_phira_impact_shot", "projectile_trail_standard");
         TRAIL_SPRITES.put("SRD_phira_burst_shot", "projectile_trail_fuzzy");
@@ -59,7 +59,7 @@ public class SRD_ProjectileTrailHandlerPlugin extends BaseEveryFrameCombatPlugin
         TRAIL_DURATIONS_IN.put("SRD_skalla_shot", 0f);
         TRAIL_DURATIONS_IN.put("SRD_phira_shock_shot", 0f);
         TRAIL_DURATIONS_IN.put("SRD_benediction_msl", 0.1f);
-        TRAIL_DURATIONS_IN.put("SRD_divinity_shot", 0f);
+        TRAIL_DURATIONS_IN.put("SRD_divinity_shot", 0.05f);
         TRAIL_DURATIONS_IN.put("SRD_equity_shot", 0f);
         TRAIL_DURATIONS_IN.put("SRD_phira_impact_shot", 0f);
         TRAIL_DURATIONS_IN.put("SRD_phira_burst_shot", 0f);
@@ -78,7 +78,7 @@ public class SRD_ProjectileTrailHandlerPlugin extends BaseEveryFrameCombatPlugin
         TRAIL_DURATIONS_MAIN.put("SRD_skalla_shot", 0.50f);
         TRAIL_DURATIONS_MAIN.put("SRD_phira_shock_shot", 0.50f);
         TRAIL_DURATIONS_MAIN.put("SRD_benediction_msl", 0.1f);
-        TRAIL_DURATIONS_MAIN.put("SRD_divinity_shot", 0.08f);
+        TRAIL_DURATIONS_MAIN.put("SRD_divinity_shot", 0.05f);
         TRAIL_DURATIONS_MAIN.put("SRD_equity_shot", 0.2f);
         TRAIL_DURATIONS_MAIN.put("SRD_phira_impact_shot", 0f);
         TRAIL_DURATIONS_MAIN.put("SRD_phira_burst_shot", 0f);
@@ -97,7 +97,7 @@ public class SRD_ProjectileTrailHandlerPlugin extends BaseEveryFrameCombatPlugin
         TRAIL_DURATIONS_OUT.put("SRD_skalla_shot", 0.4f);
         TRAIL_DURATIONS_OUT.put("SRD_phira_shock_shot", 0.4f);
         TRAIL_DURATIONS_OUT.put("SRD_benediction_msl", 0.3f);
-        TRAIL_DURATIONS_OUT.put("SRD_divinity_shot", 0.08f);
+        TRAIL_DURATIONS_OUT.put("SRD_divinity_shot", 0.1f);
         TRAIL_DURATIONS_OUT.put("SRD_equity_shot", 0.4f);
         TRAIL_DURATIONS_OUT.put("SRD_phira_impact_shot", 1f);
         TRAIL_DURATIONS_OUT.put("SRD_phira_burst_shot", 0.5f);
@@ -116,7 +116,7 @@ public class SRD_ProjectileTrailHandlerPlugin extends BaseEveryFrameCombatPlugin
         START_SIZES.put("SRD_skalla_shot", 9f);
         START_SIZES.put("SRD_phira_shock_shot", 9f);
         START_SIZES.put("SRD_benediction_msl", 9f);
-        START_SIZES.put("SRD_divinity_shot", 14f);
+        START_SIZES.put("SRD_divinity_shot", 40f);
         START_SIZES.put("SRD_equity_shot", 18f);
         START_SIZES.put("SRD_phira_impact_shot", 8f);
         START_SIZES.put("SRD_phira_burst_shot", 12f);
@@ -135,7 +135,7 @@ public class SRD_ProjectileTrailHandlerPlugin extends BaseEveryFrameCombatPlugin
         END_SIZES.put("SRD_skalla_shot", 9f);
         END_SIZES.put("SRD_phira_shock_shot", 9f);
         END_SIZES.put("SRD_benediction_msl", 5f);
-        END_SIZES.put("SRD_divinity_shot", 3f);
+        END_SIZES.put("SRD_divinity_shot", 35f);
         END_SIZES.put("SRD_equity_shot", 7f);
         END_SIZES.put("SRD_phira_impact_shot", 4f);
         END_SIZES.put("SRD_phira_burst_shot", 8f);
@@ -154,7 +154,7 @@ public class SRD_ProjectileTrailHandlerPlugin extends BaseEveryFrameCombatPlugin
         TRAIL_START_COLORS.put("SRD_skalla_shot", new Color(70,150,255));
         TRAIL_START_COLORS.put("SRD_phira_shock_shot", new Color(255,100,50));
         TRAIL_START_COLORS.put("SRD_benediction_msl", new Color(255,55,185));
-        TRAIL_START_COLORS.put("SRD_divinity_shot", new Color(130,230,255));
+        TRAIL_START_COLORS.put("SRD_divinity_shot", new Color(255,55,185));
         TRAIL_START_COLORS.put("SRD_equity_shot", new Color(150,50,255));
         TRAIL_START_COLORS.put("SRD_phira_impact_shot", new Color(255,50,50));
         TRAIL_START_COLORS.put("SRD_phira_burst_shot", new Color(255,100,30));
@@ -173,7 +173,7 @@ public class SRD_ProjectileTrailHandlerPlugin extends BaseEveryFrameCombatPlugin
         TRAIL_END_COLORS.put("SRD_skalla_shot", new Color(70,150,255));
         TRAIL_END_COLORS.put("SRD_phira_shock_shot", new Color(255,100,50));
         TRAIL_END_COLORS.put("SRD_benediction_msl", new Color(255,55,185));
-        TRAIL_END_COLORS.put("SRD_divinity_shot", new Color(130,230,255));
+        TRAIL_END_COLORS.put("SRD_divinity_shot", new Color(255,55,185));
         TRAIL_END_COLORS.put("SRD_equity_shot", new Color(150,50,255));
         TRAIL_END_COLORS.put("SRD_phira_impact_shot", new Color(255,0,0));
         TRAIL_END_COLORS.put("SRD_phira_burst_shot", new Color(255,0,0));
@@ -192,7 +192,7 @@ public class SRD_ProjectileTrailHandlerPlugin extends BaseEveryFrameCombatPlugin
         TRAIL_OPACITIES.put("SRD_skalla_shot", 0.9f);
         TRAIL_OPACITIES.put("SRD_phira_shock_shot", 0.9f);
         TRAIL_OPACITIES.put("SRD_benediction_msl", 0.9f);
-        TRAIL_OPACITIES.put("SRD_divinity_shot", 0.7f);
+        TRAIL_OPACITIES.put("SRD_divinity_shot", 0.3f);
         TRAIL_OPACITIES.put("SRD_equity_shot", 0.7f);
         TRAIL_OPACITIES.put("SRD_phira_impact_shot", 0.5f);
         TRAIL_OPACITIES.put("SRD_phira_burst_shot", 0.7f);
@@ -249,7 +249,7 @@ public class SRD_ProjectileTrailHandlerPlugin extends BaseEveryFrameCombatPlugin
         TRAIL_LOOP_LENGTHS.put("SRD_skalla_shot", 500f);
         TRAIL_LOOP_LENGTHS.put("SRD_phira_shock_shot", 500f);
         TRAIL_LOOP_LENGTHS.put("SRD_benediction_msl", 400f);
-        TRAIL_LOOP_LENGTHS.put("SRD_divinity_shot", 700f);
+        TRAIL_LOOP_LENGTHS.put("SRD_divinity_shot", -1f);
         TRAIL_LOOP_LENGTHS.put("SRD_equity_shot", -1f);
         TRAIL_LOOP_LENGTHS.put("SRD_phira_impact_shot", -1f);
         TRAIL_LOOP_LENGTHS.put("SRD_phira_burst_shot", 100f);
@@ -268,7 +268,7 @@ public class SRD_ProjectileTrailHandlerPlugin extends BaseEveryFrameCombatPlugin
         TRAIL_SCROLL_SPEEDS.put("SRD_skalla_shot", 400f);
         TRAIL_SCROLL_SPEEDS.put("SRD_phira_shock_shot", 400f);
         TRAIL_SCROLL_SPEEDS.put("SRD_benediction_msl", 600f);
-        TRAIL_SCROLL_SPEEDS.put("SRD_divinity_shot", 300f);
+        TRAIL_SCROLL_SPEEDS.put("SRD_divinity_shot", 0f);
         TRAIL_SCROLL_SPEEDS.put("SRD_equity_shot", 0f);
         TRAIL_SCROLL_SPEEDS.put("SRD_phira_impact_shot", 0f);
         TRAIL_SCROLL_SPEEDS.put("SRD_phira_burst_shot", 300f);
@@ -287,7 +287,7 @@ public class SRD_ProjectileTrailHandlerPlugin extends BaseEveryFrameCombatPlugin
         TRAIL_SPAWN_OFFSETS.put("SRD_skalla_shot", 0f);
         TRAIL_SPAWN_OFFSETS.put("SRD_phira_shock_shot", 0f);
         TRAIL_SPAWN_OFFSETS.put("SRD_benediction_msl", 0f);
-        TRAIL_SPAWN_OFFSETS.put("SRD_divinity_shot", 0f);
+        TRAIL_SPAWN_OFFSETS.put("SRD_divinity_shot", 70f);
         TRAIL_SPAWN_OFFSETS.put("SRD_equity_shot", 0f);
         TRAIL_SPAWN_OFFSETS.put("SRD_phira_impact_shot", 0f);
         TRAIL_SPAWN_OFFSETS.put("SRD_phira_burst_shot", 0f);

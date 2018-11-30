@@ -22,7 +22,7 @@ Hubris,SRD_Hubris,Battlecarrier,Sylphon RnD,targetingfeed,20,6000,500,10000,1700
 Valestri,SRD_Valestri,Superheavy Cruiser,Sylphon RnD,SRD_nullspace_shunt,30,8000,800,14000,,700,190,2,50,20,15,10,10,2400,FRONT,,160,0.3,1,,,120,180,120,100,3,25,7,75000,3,20,300,0.25,30,30,,sylphon_core_bp,,0.5,2,3,59432
 Okarra,SRD_Okarra,Heavy Cruiser,Sylphon RnD,SRD_armor_polarization,15,10000,1200,16000,9000,600,180,,55,15,8,12,12,2250,FRONT,,180,0.3,0.9,,,100,150,150,150,5,30,8,70000,4,12,540,0.25,28,28,,sylphon_high_bp,,0.4,2,3,59439
 Eolia,SRD_Eolia,Drone Carrier,Sylphon RnD,SRD_nullfield_catalyst,20,6000,500,12000,17000,600,170,3,60,35,20,15,15,1700,OMNI,,180,0.3,0.8,,,100,300,150,100,3,35,8,50000,3,20,540,0.25,26,26,"CARRIER, COMBAT",sylphon_high_bp,,0.5,2,3,59430
-Synastry,SRD_Synastry,EWAR Cruiser,Sylphon RnD,SRD_nullpoint_barrier,25,7000,500,12000,,700,110,,70,80,40,30,30,1600,FRONT,,250,0.3,0.8,,,0,100,150,120,3,40,9,80000,3,20,480,0.25,30,30,,"sylphon_ex_bp, rare_bp",0.5,0.5,2,3,55813
+Synastry,SRD_Synastry,EWAR Cruiser,Sylphon RnD,interdictor,25,7000,500,12000,,700,110,,70,80,40,30,30,1600,FRONT,,250,0.3,0.8,,,0,100,150,120,3,40,9,80000,3,20,480,0.25,30,30,,"sylphon_ex_bp, rare_bp",0.5,0.5,2,3,55813
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 #capitals,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 Equilibrium,SRD_Equilibrium,Battleship,Sylphon RnD,SRD_nullspace_skip,40,16000,1100,24000,31250,1200,280,2,40,30,20,10,10,3300,FRONT,,120,0.3,0.6,,,200,400,500,500,10,30,7,400000,4,20,720,0.25,50,50,,"sylphon_ex_bp, rare_bp",0.8,0.6,2,5,59422
