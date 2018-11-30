@@ -9,7 +9,7 @@
   "restoreToBaseHull": false,
   "skinHullId": "SRD_Synastry_cieve",
   "spriteName": "graphics/sylphon/ships/eccentrics/SRD_Synastry_cieve.png",
-  "systemId": "displacer",
+  "systemId": "SRD_skimmer",
   "removeBuiltInWeapons": ["WS0001"],
   "removeBuiltInMods": ["SRD_sylph_core"],
   #"removeTags": ["sylphon_ex_bp"],
