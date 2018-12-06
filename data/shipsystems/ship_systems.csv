@@ -14,4 +14,4 @@ Variable Ammo,SRD_variable_ammo,,,0,,,,,3,0,0.15,,0,0.05,,,,,,,,,,graphics/sylph
 Slip Drive,SRD_slip_drive,,,,,,0.08,,3,0.15,0.05,0.35,0,0.4,,TRUE,,TRUE,TRUE,,,,,,graphics/icons/hullsys/displacer.png
 Nullspace Entry,SRD_nullspace_entry,1,,,,,,,1,,0,0.7,0.1,,,,,,TRUE,TRUE,TRUE,,TRUE,TRUE,graphics/icons/hullsys/displacer.png
 Nullfield Catalyst,SRD_nullfield_catalyst,1,,,,,0.3,,,,0,1.7,0.1,14,,,,,,,,,,TRUE,graphics/icons/hullsys/displacer.png
-Nullspace Skimmer,SRD_skimmer,,,,,,,,4,0.15,0.25,,0.25,0,,TRUE,,TRUE,,,,,,,graphics/icons/hullsys/displacer.png
+Nullspace Skimmer,SRD_skimmer,,,,,,,,3,0.25,0.25,,0.25,0,,TRUE,,TRUE,,,,,,,graphics/icons/hullsys/displacer.png

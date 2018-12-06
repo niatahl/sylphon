@@ -422,7 +422,7 @@ public class SRD_ProjectileTrailHandlerPlugin extends BaseEveryFrameCombatPlugin
             //Opacity adjustment for fade-out, if the projectile uses it
             float opacityMult = 1f;
             if (FADE_OUT_FADES_TRAIL.get(specID) && proj.isFading()) {
-                opacityMult = proj.getDamageAmount() / proj.getBaseDamageAmount();
+                opacityMult = Math.max(0,Math.min(1,proj.getDamageAmount() / proj.getBaseDamageAmount()));
             }
 
             //CUSTOM: The Benediciton's missiles use a different trail, with randomness to the end
