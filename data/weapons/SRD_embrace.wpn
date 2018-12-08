@@ -21,18 +21,18 @@
   "hardpointSprite": "graphics/sylphon/weapons/SRD_embrace_hardpoint.png",
   "id": "SRD_embrace",
   "muzzleFlashSpec": {
-    "length": 30,
+    "length": 35,
     "particleColor": [
       255,
       0,
       255,
       155
     ],
-    "particleCount": 10,
+    "particleCount": 15,
     "particleDuration": 0.5,
     "particleSizeMin": 15,
     "particleSizeRange": 10,
-    "spread": 20
+    "spread": 25
   },
   "projectileSpecId": "SRD_embrace_shot",
   "size": "SMALL",

@@ -34,13 +34,13 @@ Variable Mounts,SRD_superheavy_weapons_frelia,,,,,,,TRUE,,0,0,0,0,data.scripts.h
 ,,,,,,,,,,,,,,,,,
 Sylph Core,SRD_sylph_core,,,,,,,TRUE,,0,0,0,0,data.scripts.hullmods.SRD_SylphCore,"This ship has had a voluntary AI-core integrated into the mainframe by the Sylphon. While upkeep is increased by %s to keep the core operating under peak conditions, the ship %s. The ship's crew capacity is however reduced by %s due to installation requirements.%s",Automated ship,graphics/sylphon/hullmods/SRD_sylph_core.png
 ,,,,,,,,,,,,,,,,,
-Eccentric Core: Cieve,SRD_eccentric_core_cieve,,,,,,,TRUE,,0,0,0,0,data.scripts.hullmods.SRD_EccentricCoreCieve,"~~Flavor text about eccentrics~~
+Eccentric Core: Cieve,SRD_eccentric_core_cieve,,,,,,,TRUE,,0,0,0,0,data.scripts.hullmods.SRD_EccentricCoreCieve,"~This unique vessel harbors one of the alpha sylph cores known as eccentrics, refusing to be harbored in the safety of Sylpheed station, instead traveling the sector on their own~
 
 Increases supply upkeep by %s, and reduces all crew capacity by %s. Counts as a %s.%s
 
 %s
-~~Specific flavor text about Cieve~~
-Reduces Ballistic weapon flux costs by %s, and increases all damage against missiles and fighters by %s. Has %s at all CR levels, and can correctly distinguish flares from actual targets.",Eccentric Sylph Core,graphics/sylphon/hullmods/SRD_sylph_core.png
+~A curious soul, searching far and wide for knowledge, hosted in a Synastry-class cruiser that has been extensively modified for combat and the use of ballistic weaponry~
+Reduces Ballistic weapon flux costs by %s, and increases all damage against missiles and fighters by %s. Has %s at all CR levels, and can correctly distinguish flares from actual targets.",Eccentric Sylph Core,graphics/sylphon/hullmods/SRD_ecore_cieve.png
 ,,,,,,,,,,,,,,,,,
 Modular Nullspace Conduits,SRD_modular_nullspace_conduits,1,,"special, req_spaceport","Special, Requires Dock",8000,,,,3,5,10,20,data.scripts.hullmods.SRD_ModularNullspaceConduits,"A smaller, modular implementation of nullspace skimming technology. By using the ship's already-existing flux conduits for cooling and counter-balancing, it uses up only a fraction of the normal space required by such a device, but is significantly less efficient as a result.
 
