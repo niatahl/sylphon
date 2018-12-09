@@ -1,0 +1,11 @@
+{
+  "baseHullId": "SRD_Equilibrium",
+  "baseValueMult": 1.2,
+  "descriptionId": "SRD_Equilibrium",
+  "descriptionPrefix": "Upgraded with a fully integrated Sylph Core",
+  "hullName": "Equilibrium (SC)",
+  "restoreToBaseHull": false,
+  "skinHullId": "SRD_Equilibrium_sc",
+  "spriteName": "graphics/sylphon/ships/SC/SRD_Equilibrium_sc.png",
+  "builtInMods":["SRD_sylph_core"],
+}

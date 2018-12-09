@@ -1,0 +1,11 @@
+{
+  "baseHullId": "SRD_Okarra",
+  "baseValueMult": 1.2,
+  "descriptionId": "SRD_Okarra",
+  "descriptionPrefix": "Upgraded with a fully integrated Sylph Core",
+  "hullName": "Okarra (SC)",
+  "restoreToBaseHull": false,
+  "skinHullId": "SRD_Okarra_sc",
+  "spriteName": "graphics/sylphon/ships/SC/SRD_Okarra_sc.png",
+  "builtInMods":["SRD_sylph_core"],
+}

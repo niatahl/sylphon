@@ -1,0 +1,11 @@
+{
+  "baseHullId": "SRD_Silverhead",
+  "baseValueMult": 1.2,
+  "descriptionId": "SRD_Silverhead",
+  "descriptionPrefix": "Upgraded with a fully integrated Sylph Core",
+  "hullName": "Silverhead (SC)",
+  "restoreToBaseHull": false,
+  "skinHullId": "SRD_Silverhead_sc",
+  "spriteName": "graphics/sylphon/ships/SC/SRD_Silverhead_sc.png",
+  "builtInMods":["SRD_sylph_core"],
+}

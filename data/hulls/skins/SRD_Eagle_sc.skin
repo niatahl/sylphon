@@ -1,0 +1,11 @@
+{
+  "baseHullId": "SRD_Eagle",
+  "baseValueMult": 1.2,
+  "descriptionId": "SRD_Eagle",
+  "descriptionPrefix": "Upgraded with a fully integrated Sylph Core",
+  "hullName": "Dread Eagle (SC)",
+  "restoreToBaseHull": false,
+  "skinHullId": "SRD_Eagle_sc",
+  "spriteName": "graphics/sylphon/ships/SC/SRD_Eagle_sc.png",
+  "builtInMods":["SRD_sylph_core"],
+}

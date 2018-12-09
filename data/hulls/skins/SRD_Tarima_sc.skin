@@ -1,0 +1,11 @@
+{
+  "baseHullId": "SRD_Tarima",
+  "baseValueMult": 1.2,
+  "descriptionId": "SRD_Tarima",
+  "descriptionPrefix": "Upgraded with a fully integrated Sylph Core",
+  "hullName": "Tarima (SC)",
+  "restoreToBaseHull": false,
+  "skinHullId": "SRD_Tarima_sc",
+  "spriteName": "graphics/sylphon/ships/SC/SRD_Tarima_sc.png",
+  "builtInMods":["SRD_sylph_core"],
+}

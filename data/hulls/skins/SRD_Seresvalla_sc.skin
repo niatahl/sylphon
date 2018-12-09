@@ -1,0 +1,11 @@
+{
+  "baseHullId": "SRD_Seresvalla",
+  "baseValueMult": 1.2,
+  "descriptionId": "SRD_Seresvalla",
+  "descriptionPrefix": "Upgraded with a fully integrated Sylph Core",
+  "hullName": "Seresvalla (SC)",
+  "restoreToBaseHull": false,
+  "skinHullId": "SRD_Seresvalla_sc",
+  "spriteName": "graphics/sylphon/ships/SC/SRD_Seresvalla_sc.png",
+  "builtInMods":["SRD_sylph_core"],
+}

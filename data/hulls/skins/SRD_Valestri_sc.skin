@@ -1,0 +1,11 @@
+{
+  "baseHullId": "SRD_Valestri",
+  "baseValueMult": 1.2,
+  "descriptionId": "SRD_Valestri",
+  "descriptionPrefix": "Upgraded with a fully integrated Sylph Core",
+  "hullName": "Valestri (SC)",
+  "restoreToBaseHull": false,
+  "skinHullId": "SRD_Valestri_sc",
+  "spriteName": "graphics/sylphon/ships/SC/SRD_Valestri_sc.png",
+  "builtInMods":["SRD_sylph_core"],
+}

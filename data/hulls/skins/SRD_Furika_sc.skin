@@ -1,0 +1,11 @@
+{
+  "baseHullId": "SRD_Furika",
+  "baseValueMult": 1.2,
+  "descriptionId": "SRD_Furika",
+  "descriptionPrefix": "Upgraded with a fully integrated Sylph Core",
+  "hullName": "Furika (SC)",
+  "restoreToBaseHull": false,
+  "skinHullId": "SRD_Furika_sc",
+  "spriteName": "graphics/sylphon/ships/SC/SRD_Furika_sc.png",
+  "builtInMods":["SRD_sylph_core"],
+}
