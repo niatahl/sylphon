@@ -190,7 +190,7 @@
   ],
   "shieldRadius": 199,
   "spriteName": "graphics/sylphon/ships/skins/SRD_Fulgent.png",
-  "style": "SRD_TECH",
+  "style": "HIGH_TECH",
   "viewOffset": 0,
   "weaponSlots": [
     {
