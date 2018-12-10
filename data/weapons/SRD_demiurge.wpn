@@ -1,0 +1,53 @@
+{
+  "collisionClass": "RAY",
+  "collisionClassByFighter": "RAY_FIGHTER",
+  "coreColor": [
+    155,
+    20,
+    250,
+    255
+  ],
+  "fireSoundTwo": "SRD_stricture_loop",
+  "fringeColor": [
+    255,
+    255,
+    255,
+    185
+  ],
+  "glowColor": [
+    155,
+    20,
+    250,
+    185
+  ],
+  "hardpointAngleOffsets": [
+    0
+  ],
+  "hardpointGlowSprite": "graphics/sylphon/weapons/SRD_demiurge_glow.png",
+  "hardpointOffsets": [
+    -10,
+    0
+  ],
+  "hardpointSprite": "graphics/sylphon/weapons/SRD_demiurge_base.png",
+  "hitGlowRadius": 0,
+  "id": "SRD_demiurge",
+  "pixelsPerTexel": 1,
+  "size": "LARGE",
+  "specClass": "beam",
+  "textureScrollSpeed": 500,
+  "textureType": [
+    "graphics/sylphon/fx/SRD_paratach_beam_core.png",
+    "graphics/sylphon/fx/SRD_paratach_beam_fringe.png"
+  ],
+  "turretAngleOffsets": [
+    0
+  ],
+  "turretGlowSprite": "graphics/sylphon/weapons/SRD_demiurge_glow.png",
+  "turretOffsets": [
+    -20.5,
+    0
+  ],
+  "turretSprite": "graphics/sylphon/weapons/SRD_demiurge_base.png",
+  "type": "ENERGY",
+  "width": 50
+}

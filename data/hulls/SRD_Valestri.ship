@@ -78,7 +78,8 @@
     3.5
   ],
   "builtInMods": [
-    "SRD_nullspace_conduits"
+    "SRD_nullspace_conduits",
+    "SRD_nanolaminate_armor"
   ],
   "builtInWeapons": {
     "WS0007": "SRD_venn",
@@ -241,8 +242,8 @@
   "viewOffset": 0,
   "weaponSlots": [
     {
-      "angle": 45,
-      "arc": 80,
+      "angle": 59.5,
+      "arc": 138,
       "id": "WS0003",
       "locations": [
         32,
@@ -253,8 +254,8 @@
       "type": "ENERGY"
     },
     {
-      "angle": -45,
-      "arc": 80,
+      "angle": -59.5,
+      "arc": 138,
       "id": "WS0004",
       "locations": [
         32,
@@ -265,56 +266,8 @@
       "type": "ENERGY"
     },
     {
-      "angle": 0,
-      "arc": 90,
-      "id": "WS0005",
-      "locations": [
-        47,
-        58
-      ],
-      "mount": "TURRET",
-      "size": "SMALL",
-      "type": "ENERGY"
-    },
-    {
-      "angle": -0,
-      "arc": 90,
-      "id": "WS0006",
-      "locations": [
-        47,
-        -58
-      ],
-      "mount": "TURRET",
-      "size": "SMALL",
-      "type": "ENERGY"
-    },
-    {
-      "angle": 45,
-      "arc": 120,
-      "id": "WS0001",
-      "locations": [
-        25,
-        106
-      ],
-      "mount": "TURRET",
-      "size": "SMALL",
-      "type": "ENERGY"
-    },
-    {
-      "angle": -45,
-      "arc": 120,
-      "id": "WS0002",
-      "locations": [
-        25,
-        -106
-      ],
-      "mount": "TURRET",
-      "size": "SMALL",
-      "type": "ENERGY"
-    },
-    {
-      "angle": 135,
-      "arc": 180,
+      "angle": 58,
+      "arc": 259,
       "id": "WS0007",
       "locations": [
         -0.5,
@@ -325,8 +278,8 @@
       "type": "BUILT_IN"
     },
     {
-      "angle": -135,
-      "arc": 180,
+      "angle": -58,
+      "arc": 259,
       "id": "WS0008",
       "locations": [
         -0.5,
@@ -410,7 +363,7 @@
     },
     {
       "angle": 0,
-      "arc": 60,
+      "arc": 90,
       "id": "WS0015",
       "locations": [
         25,
@@ -422,7 +375,7 @@
     },
     {
       "angle": -0,
-      "arc": 60,
+      "arc": 90,
       "id": "WS0016",
       "locations": [
         25,
