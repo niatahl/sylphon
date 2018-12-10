@@ -17,8 +17,14 @@ import java.util.List;
 
 public class SRD_ModPlugin extends BaseModPlugin {
 
+    //All hullmods related to shields, saved in a convenient list
     public static List<String> SHIELD_HULLMODS = new ArrayList<String>();
+
+    //All hullmods that count as Nullspace Conduits, for use in other scripts
     public static List<String> NULLSPACE_CONDUIT_HULLMODS = new ArrayList<String>();
+
+    //All hullmods that count as Sylph Cores (so, the eccentrics and the Sylph Core), for use in other scripts
+    public static List<String> SYLPH_CORE_HULLMODS = new ArrayList<String>();
 
     @Override
     public void onApplicationLoad() {
@@ -26,12 +32,17 @@ public class SRD_ModPlugin extends BaseModPlugin {
         if (!hasLazyLib) {
             throw new RuntimeException("Sylphon RnD requires LazyLib by LazyWizard");
         }
+        boolean hasMagicLib = Global.getSettings().getModManager().isModEnabled("lw_lazylib");
+        if (!hasMagicLib) {
+            throw new RuntimeException("Sylphon RnD requires MagicLib!");
+        }
         boolean hasSSFX = Global.getSettings().getModManager().isModEnabled("xxx_ss_FX_mod");
         if (hasSSFX) {
             throw new RuntimeException("Sylphon RnD is not compatible with Starsector FX");
         }
 
 
+        //Adds shield hullmods
         for (HullModSpecAPI hullModSpecAPI : Global.getSettings().getAllHullModSpecs()) {
             if (hullModSpecAPI.hasTag("shields") && !SHIELD_HULLMODS.contains(hullModSpecAPI.getId())) {
                 SHIELD_HULLMODS.add(hullModSpecAPI.getId());
@@ -40,10 +51,15 @@ public class SRD_ModPlugin extends BaseModPlugin {
             }
         }
 
+        //Adds nullspace conduit hullmods
         NULLSPACE_CONDUIT_HULLMODS.add("SRD_nullspace_conduits");
         NULLSPACE_CONDUIT_HULLMODS.add("SRD_modular_nullspace_conduits");
         NULLSPACE_CONDUIT_HULLMODS.add("SRD_nullspace_stabilizer");
         NULLSPACE_CONDUIT_HULLMODS.add("SRD_outcast_engineering");
+
+        //Adds sylph core hullmods
+        SYLPH_CORE_HULLMODS.add("SRD_sylph_core");
+        SYLPH_CORE_HULLMODS.add("SRD_eccentric_core_cieve");
     }
 
 
@@ -54,5 +70,26 @@ public class SRD_ModPlugin extends BaseModPlugin {
         new SRD_Nym().generate(sector);
         new SRD_Rofocale().generate(sector);
         SRD_FactionRelationPlugin.initFactionRelationships(sector);
+    }
+
+    /*-----------------------------------Convenience functions down here!---------------------------------------------*/
+    //Checks a list of hullmods and returns true if any of them is a hullmod classed as a Sylph Core
+    public static boolean hasSylphCoreInstalled(List<String> hullmods) {
+        for (String s : hullmods) {
+            if (SYLPH_CORE_HULLMODS.contains(s)) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    //Checks a list of hullmods and returns true if any of them is a hullmod classed as a Nullspace Conduit
+    public static boolean hasNullspaceConduits(List<String> hullmods) {
+        for (String s : hullmods) {
+            if (NULLSPACE_CONDUIT_HULLMODS.contains(s)) {
+                return true;
+            }
+        }
+        return false;
     }
 }

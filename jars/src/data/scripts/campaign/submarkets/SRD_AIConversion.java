@@ -10,12 +10,11 @@ import com.fs.starfarer.api.combat.ShipVariantAPI;
 import com.fs.starfarer.api.fleet.FleetMemberAPI;
 import com.fs.starfarer.api.impl.campaign.ids.Commodities;
 import com.fs.starfarer.api.impl.campaign.ids.Factions;
-import com.fs.starfarer.api.impl.campaign.shared.PlayerTradeProfitabilityData;
 import com.fs.starfarer.api.impl.campaign.submarkets.BaseSubmarketPlugin;
 import com.fs.starfarer.api.loading.VariantSource;
 import com.fs.starfarer.api.util.Highlights;
 import com.fs.starfarer.api.util.Misc;
-import data.scripts.campaignPlugins.SRD_KeepTrackOfSylphCorePlugin;
+import data.scripts.SRD_ModPlugin;
 import data.scripts.campaignPlugins.SRD_SylphCoreUpgradeTracker;
 
 import java.util.*;
@@ -103,30 +102,35 @@ public class SRD_AIConversion extends BaseSubmarketPlugin {
             return "Sylph-core installation services does not conduct commodity trade.";
         }
 
-        return "AN ERROR OCURRED IN SRD_AIConversion.java: CONTACT THE MOD AUTHOR";
+        return "AN ERROR OCURRED IN SRD_AIConversion.java: CONTACT THE MOD AUTHOR (Nicke535)";
     }
 
     //Description text for trying to sell a ship to the submarket that you, for some reason, can't
     @Override
     public String getIllegalTransferText(FleetMemberAPI member, TransferAction action) {
         //Checks if the member being sold already has a Sylph Core
-        if (member.getVariant().getHullMods().contains("SRD_sylph_core") || member.getVariant().getHullMods().contains("SRD_eccentric_core_cieve")) {
+        if (SRD_ModPlugin.hasSylphCoreInstalled(new ArrayList<>(member.getVariant().getHullMods()))) {
             return "This ship already has a Sylph Core installed";
         }
 
         //Check if we are not a proper sylphon design
-        if (!IsValidSylphonDesign(member)) {
+        if (!isValidSylphonDesign(member)) {
             return "You can only mount Sylph Cores on Sylphon designs";
         }
 
+        //Check if the design simply doesn't have an upgrade
+        if (!hasSylphCoreUpgrade(member)) {
+            return "This ship cannot be upgraded with a Sylph Core";
+        }
+
         //Check if we have a proper ship, but not the proper reputation level to upgrade it
-        if (IsValidSylphonDesign(member) && !Global.getSector().getPlayerFaction().isAtWorst(submarket.getFaction(), REPUTATION_TABLE.get(member.getHullSpec().getHullSize()))) {
+        if (isValidSylphonDesign(member) && !Global.getSector().getPlayerFaction().isAtWorst(submarket.getFaction(), REPUTATION_TABLE.get(member.getHullSpec().getHullSize()))) {
             return "Req: " + submarket.getFaction().getDisplayName() + " - " +
                     REPUTATION_TABLE.get(member.getHullSpec().getHullSize()).getDisplayName().toLowerCase();
         }
 
         //If we can't afford the conversion, tell the player
-        if (!PlayerCanAffordShip(member)) {
+        if (!playerCanAffordShip(member)) {
             return "You need 1 " + Global.getSettings().getCommoditySpec(COST_TABLE.get(member.getHullSpec().getHullSize())).getName() + " for this transaction, but you have none.";
         }
 
@@ -184,7 +188,7 @@ public class SRD_AIConversion extends BaseSubmarketPlugin {
     public boolean isIllegalOnSubmarket(FleetMemberAPI member, TransferAction action) {
         if (action == TransferAction.PLAYER_SELL) {
             //If the member already has a sylph core, it's illegal
-            if (member.getVariant().getHullMods().contains("SRD_sylph_core")) {
+            if (SRD_ModPlugin.hasSylphCoreInstalled(new ArrayList<>(member.getVariant().getHullMods()))) {
                 return true;
             }
 
@@ -194,12 +198,17 @@ public class SRD_AIConversion extends BaseSubmarketPlugin {
             }
 
             //If the ship isn't a valid Sylphon design, it's illegal
-            if (!IsValidSylphonDesign(member)) {
+            if (!isValidSylphonDesign(member)) {
+                return true;
+            }
+
+            //If the design doesn't have an upgrade, it's illegal
+            if (!hasSylphCoreUpgrade(member)) {
                 return true;
             }
 
             //Otherwise, check if we can afford it: if we can, it's legal. If we can't, it's illegal
-            return !PlayerCanAffordShip(member);
+            return !playerCanAffordShip(member);
         }
 
         //If this wasn't a player selling something, the transaction is legal: we're just getting our stuff back!
@@ -231,7 +240,7 @@ public class SRD_AIConversion extends BaseSubmarketPlugin {
     }
 
     //Shorthand function to check if a ship is *actually* a Sylphon ship, and not an Outcast or Null Order ship (Null Order not yet implemented)
-    private static boolean IsValidSylphonDesign (FleetMemberAPI member) {
+    private static boolean isValidSylphonDesign(FleetMemberAPI member) {
         if (!member.getHullSpec().getBaseHullId().contains("SRD_")) {
             return false;
         } else if (member.getVariant().getHullMods().contains("SRD_outcast_engineering")) {
@@ -241,8 +250,19 @@ public class SRD_AIConversion extends BaseSubmarketPlugin {
         }
     }
 
+    //Shorthand function to check if a ship has the skin required to be upgraded with a Sylph Core
+    private static boolean hasSylphCoreUpgrade (FleetMemberAPI member) {
+        if (SRD_ModPlugin.hasSylphCoreInstalled(new ArrayList<>(member.getVariant().getHullMods()))) {
+            return false;
+        } else if (Global.getSettings().getHullSpec(member.getHullSpec().getBaseHullId()+"_sc") == null) {
+            return false;
+        } else {
+            return true;
+        }
+    }
+
     //Shorthand function to check if the player can afford upgrading a specific ship
-    private static boolean PlayerCanAffordShip (FleetMemberAPI member) {
+    private static boolean playerCanAffordShip(FleetMemberAPI member) {
         if (Global.getSector().getPlayerFleet().getCargo().getCommodityQuantity(COST_TABLE.get(member.getHullSpec().getHullSize())) >= 1) {
             return true;
         } else {
