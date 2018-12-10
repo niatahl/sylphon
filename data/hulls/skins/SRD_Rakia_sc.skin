@@ -1,0 +1,11 @@
+{
+  "baseHullId": "SRD_Rakia",
+  "baseValueMult": 1.2,
+  "descriptionId": "SRD_Rakia",
+  "descriptionPrefix": "Upgraded with a fully integrated Sylph Core",
+  "hullName": "Dread Rakia (SC)",
+  "restoreToBaseHull": false,
+  "skinHullId": "SRD_Rakia_sc",
+  "spriteName": "graphics/sylphon/ships/SC/SRD_Rakia_sc.png",
+  "builtInMods":["SRD_sylph_core"],
+}

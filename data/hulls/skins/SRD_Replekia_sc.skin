@@ -1,0 +1,11 @@
+{
+  "baseHullId": "SRD_Replekia",
+  "baseValueMult": 1.2,
+  "descriptionId": "SRD_Replekia",
+  "descriptionPrefix": "Upgraded with a fully integrated Sylph Core",
+  "hullName": "Dread Replekia (SC)",
+  "restoreToBaseHull": false,
+  "skinHullId": "SRD_Replekia_sc",
+  "spriteName": "graphics/sylphon/ships/SC/SRD_Replekia_sc.png",
+  "builtInMods":["SRD_sylph_core"],
+}
