@@ -1,9 +1,11 @@
 ﻿0.9.1
 Additions:
 - Added the Synastry and its built-in weapon, the Apocatastasis [say *that* fast 5 times]
+- Added the Networked Targeting Linkup hullmod, which is exclusive to Sylph Core ships
 - Added some secret things that aren't yet obtainable
 
 Changes:
+- Reworked the Sylph Core installation code so that it now uses skins instead of wierd behind-the-scenes magic
 - The Frelia no longer has super-heavy mount points; instead, it has two large energy slots (which can still be turned to fighter bays if left empty)
 - Moved multiple weapon blueprints into the rare category
 - Added new sprites for Sylpheed Station and Ozma Station
