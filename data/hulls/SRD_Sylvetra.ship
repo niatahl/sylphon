@@ -1,0 +1,329 @@
+{
+  "bounds": [
+    -56,
+    -14,
+    -67.5,
+    -24,
+    -115.5,
+    -25.5,
+    -107.5,
+    -35,
+    -44.5,
+    -49,
+    -42,
+    -81,
+    -25,
+    -85.5,
+    -15,
+    -93,
+    16,
+    -87.5,
+    38.5,
+    -74,
+    95,
+    -57.5,
+    96,
+    -37.5,
+    50,
+    -18,
+    50,
+    18,
+    96,
+    37.5,
+    95,
+    57.5,
+    38.5,
+    74,
+    16,
+    87.5,
+    -15,
+    93,
+    -25,
+    85.5,
+    -42,
+    81,
+    -44.5,
+    49,
+    -107.5,
+    35,
+    -115.5,
+    25.5,
+    -67.5,
+    24,
+    -56,
+    14
+  ],
+  "builtInMods": [
+    "SRD_sylph_core",
+    "SRD_nullspace_conduits"
+  ],
+  "builtInWings": [],
+  "center": [
+    97,
+    118
+  ],
+  "collisionRadius": 159,
+  "engineSlots": [
+    {
+      "angle": 180,
+      "contrailSize": 15,
+      "length": 63.5,
+      "location": [
+        -47,
+        -52
+      ],
+      "style": "SRD_ENGINE",
+      "width": 15
+    },
+    {
+      "angle": -180,
+      "contrailSize": 15,
+      "length": 63.5,
+      "location": [
+        -47,
+        52
+      ],
+      "style": "SRD_ENGINE",
+      "width": 15
+    },
+    {
+      "angle": 180,
+      "contrailSize": 17,
+      "length": 52.5,
+      "location": [
+        -46,
+        62.5
+      ],
+      "style": "SRD_ENGINE",
+      "width": 17
+    },
+    {
+      "angle": -180,
+      "contrailSize": 17,
+      "length": 52.5,
+      "location": [
+        -46,
+        -62.5
+      ],
+      "style": "SRD_ENGINE",
+      "width": 17
+    },
+    {
+      "angle": 180,
+      "contrailSize": 19,
+      "length": 45,
+      "location": [
+        -44.5,
+        74
+      ],
+      "style": "SRD_ENGINE",
+      "width": 19
+    },
+    {
+      "angle": -180,
+      "contrailSize": 19,
+      "length": 45,
+      "location": [
+        -44.5,
+        -74
+      ],
+      "style": "SRD_ENGINE",
+      "width": 19
+    }
+  ],
+  "height": 222,
+  "hullId": "SRD_Sylvetra",
+  "hullName": "Sylvetra",
+  "hullSize": "CRUISER",
+  "shieldCenter": [
+    0,
+    -0
+  ],
+  "shieldRadius": 146,
+  "spriteName": "graphics/sylphon/ships/SRD_Sylvetra.png",
+  "style": "SRD_TECH",
+  "viewOffset": 0,
+  "weaponSlots": [
+    {
+      "angle": 23,
+      "arc": 95,
+      "id": "WS0003",
+      "locations": [
+        42,
+        44
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "ENERGY"
+    },
+    {
+      "angle": -23,
+      "arc": 95,
+      "id": "WS0004",
+      "locations": [
+        42,
+        -44
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "ENERGY"
+    },
+    {
+      "angle": 141.5,
+      "arc": 131,
+      "id": "WS0001",
+      "locations": [
+        -5,
+        66
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "ENERGY"
+    },
+    {
+      "angle": -141.5,
+      "arc": 131,
+      "id": "WS0002",
+      "locations": [
+        -5,
+        -66
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "ENERGY"
+    },
+    {
+      "angle": 0,
+      "arc": 5,
+      "id": "WS0007",
+      "locations": [
+        98,
+        50
+      ],
+      "mount": "HARDPOINT",
+      "size": "SMALL",
+      "type": "MISSILE"
+    },
+    {
+      "angle": -0,
+      "arc": 5,
+      "id": "WS0008",
+      "locations": [
+        98,
+        -50
+      ],
+      "mount": "HARDPOINT",
+      "size": "SMALL",
+      "type": "MISSILE"
+    },
+    {
+      "angle": 0,
+      "arc": 5,
+      "id": "WS0009",
+      "locations": [
+        49,
+        14
+      ],
+      "mount": "HARDPOINT",
+      "size": "SMALL",
+      "type": "MISSILE"
+    },
+    {
+      "angle": -0,
+      "arc": 5,
+      "id": "WS0010",
+      "locations": [
+        49,
+        -14
+      ],
+      "mount": "HARDPOINT",
+      "size": "SMALL",
+      "type": "MISSILE"
+    },
+    {
+      "angle": 90,
+      "arc": 5,
+      "id": "WS0011",
+      "locations": [
+        -4,
+        87
+      ],
+      "mount": "HARDPOINT",
+      "size": "MEDIUM",
+      "type": "MISSILE"
+    },
+    {
+      "angle": -90,
+      "arc": 5,
+      "id": "WS0012",
+      "locations": [
+        -4,
+        -87
+      ],
+      "mount": "HARDPOINT",
+      "size": "MEDIUM",
+      "type": "MISSILE"
+    },
+    {
+      "angle": 158.5,
+      "arc": 58,
+      "id": "WS0005",
+      "locations": [
+        -23.5,
+        82.5
+      ],
+      "mount": "HARDPOINT",
+      "size": "MEDIUM",
+      "type": "SYSTEM"
+    },
+    {
+      "angle": -158.5,
+      "arc": 58,
+      "id": "WS0006",
+      "locations": [
+        -23.5,
+        -82.5
+      ],
+      "mount": "HARDPOINT",
+      "size": "MEDIUM",
+      "type": "SYSTEM"
+    },
+    {
+      "angle": 180,
+      "arc": 58,
+      "id": "WS0013",
+      "locations": [
+        -49.5,
+        -16
+      ],
+      "mount": "HARDPOINT",
+      "size": "MEDIUM",
+      "type": "SYSTEM"
+    },
+    {
+      "angle": -180,
+      "arc": 58,
+      "id": "WS0014",
+      "locations": [
+        -49.5,
+        16
+      ],
+      "mount": "HARDPOINT",
+      "size": "MEDIUM",
+      "type": "SYSTEM"
+    },
+    {
+      "angle": 180,
+      "arc": 83,
+      "id": "WS0015",
+      "locations": [
+        -47,
+        -0
+      ],
+      "mount": "HARDPOINT",
+      "size": "MEDIUM",
+      "type": "SYSTEM"
+    }
+  ],
+  "width": 194
+}

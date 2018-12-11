@@ -22,6 +22,8 @@ Dread Eagle,SRD_Eagle,Cruiser,Sylphon RnD,SRD_creeper_device,17,8000,500,10000,1
 Valestri,SRD_Valestri,Heavy Cruiser,Sylphon RnD,SRD_armor_polarization,30,10000,1200,15000,,700,170,2,50,20,15,10,10,2400,FRONT,,160,0.3,0.9,,,120,180,120,100,3,25,7,75000,3,20,540,0.25,30,30,,sylphon_core_bp,,0.5,2,3,59432
 #Okarra,SRD_Okarra,Heavy Cruiser,Sylphon RnD,SRD_armor_polarization,15,10000,1200,16000,9000,600,180,,55,15,8,12,12,2250,FRONT,,180,0.3,0.9,,,100,150,150,150,5,30,8,70000,4,12,540,0.25,28,28,,sylphon_high_bp,,0.4,2,3,59439
 Eolia,SRD_Eolia,Drone Carrier,Sylphon RnD,SRD_nullfield_catalyst,20,6000,500,12000,17000,600,170,3,60,35,20,15,15,1700,OMNI,,180,0.3,0.8,,,100,300,150,100,3,35,8,50000,3,20,540,0.25,26,26,"CARRIER, COMBAT",sylphon_high_bp,,0.5,2,3,59430
+Scaradi,SRD_Scaradi,Drone Controller,Sylphon RnD,SRD_skimmer,20,5000,500,12000,17000,400,90,4,70,40,20,20,20,1500,OMNI,,360,0.3,0.8,,,0,100,150,100,3,35,8,90000,3,20,540,0.25,30,30,CARRIER,sylphon_ex_bp,,0.5,2,3,59430
+Sylvetra,SRD_Sylvetra,Missile Cruiser,Sylphon RnD,SRD_autoforge,20,5000,500,10000,17000,300,120,,70,55,35,25,20,1500,OMNI,,140,0.3,0.8,,,0,100,150,100,3,35,8,90000,3,20,540,0.25,30,30,,sylphon_ex_bp,,0.5,2,3,59430
 Synastry,SRD_Synastry,EWAR Cruiser,Sylphon RnD,interdictor,20,6000,500,12000,,700,110,,60,70,40,30,30,1600,FRONT,,250,0.3,0.9,,,0,100,150,120,3,40,9,80000,3,20,480,0.25,30,30,,"sylphon_ex_bp, rare_bp",0.5,0.5,2,3,55813
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 #capitals,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
@@ -45,6 +47,7 @@ Sadri,SRD_Sadri,Bomber,Sylphon RnD,SRD_armor_polarization,,300,10,300,,50,0,,150
 Skallic Drone,SRD_Skallic_drone,Barrage Drone,Sylphon RnD,SRD_nullspace_entry,,500,50,500,,50,0,,20,50,50,100,200,30,OMNI,,360,0,1,,,0,0,,,,,,,,,,,,,,,,0,,,59435
 Nalka,SRD_Nalka,Fighter,Sylphon RnD,,,300,50,350,,80,0,,190,350,300,90,180,30,FRONT,,90,0,1,,,0,0,,,,,,,,,,,,,,,,0,,,11554
 Vetra,SRD_Vetra,Bomber,Sylphon RnD,,,400,50,500,,100,0,,180,380,350,90,180,30,OMNI,,180,0,1,,,0,0,,,,,,,,,,,,,,,,0,,,54442
+Breus,SRD_Breus,Drone Corvette,Sylphon RnD,SRD_nullpoint_barrier,,1000,200,3000,2500,150,0,,140,130,80,70,70,200,OMNI,,360,0.3,1,,,0,0,,,,,,,,,,,,,,,,0,,,45412
 Infel,SRD_Infel,Fighter,Sylphon RnD,,,400,80,350,,80,0,,190,350,300,90,180,30,FRONT,,90,0,1,,,1,1,,,,,,,,,,,,,,,,0,,,11554
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 #Eccentrics,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,

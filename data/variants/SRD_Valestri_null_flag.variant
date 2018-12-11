@@ -20,12 +20,8 @@
             "autofire": true,
             "mode": "LINKED",
             "weapons": {
-                "WS0001": "SRD_embrace",
-                "WS0002": "SRD_embrace",
                 "WS0003": "SRD_clemency",
                 "WS0004": "SRD_clemency",
-                "WS0005": "SRD_embrace",
-                "WS0006": "SRD_embrace",
                 "WS0017": "SRD_charity"
             }
         },
