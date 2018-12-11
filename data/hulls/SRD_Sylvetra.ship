@@ -55,13 +55,14 @@
   ],
   "builtInMods": [
     "SRD_sylph_core",
-    "SRD_nullspace_conduits"
+    "SRD_nullspace_conduits",
+    "targetingunit"
   ],
   "builtInWeapons": {
-    "WS0001": "SRD_vedra",
-    "WS0002": "SRD_vedra",
-    "WS0003": "SRD_vedra",
-    "WS0004": "SRD_vedra"
+    "WS0001": "SRD_dekris",
+    "WS0002": "SRD_dekris",
+    "WS0003": "SRD_dekris",
+    "WS0004": "SRD_dekris"
   },
   "builtInWings": [],
   "center": [
@@ -159,7 +160,7 @@
         44
       ],
       "mount": "TURRET",
-      "size": "MEDIUM",
+      "size": "SMALL",
       "type": "BUILT_IN"
     },
     {
@@ -171,7 +172,7 @@
         -44
       ],
       "mount": "TURRET",
-      "size": "MEDIUM",
+      "size": "SMALL",
       "type": "BUILT_IN"
     },
     {
@@ -183,7 +184,7 @@
         66
       ],
       "mount": "TURRET",
-      "size": "MEDIUM",
+      "size": "SMALL",
       "type": "BUILT_IN"
     },
     {
@@ -195,7 +196,7 @@
         -66
       ],
       "mount": "TURRET",
-      "size": "MEDIUM",
+      "size": "SMALL",
       "type": "BUILT_IN"
     },
     {

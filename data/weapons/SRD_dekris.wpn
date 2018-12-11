@@ -1,24 +1,24 @@
 {
   "collisionClass": "RAY",
   "collisionClassByFighter": "RAY_FIGHTER",
+  "convergeOnPoint": true,
   "coreColor": [
-    0,
-    0,
-    0,
+    20,
+    20,
+    20,
     255
   ],
   "darkCore": true,
-  "beamEffect":"data.scripts.weapons.NOR_NullRayEffect",
-  "fireSoundTwo": "NOR_nullray_loop",
+  "fireSoundTwo": "pd_laser_loop",
   "fringeColor": [
-    105,
+    95,
     0,
-    255,
+    155,
     255
   ],
   "glowColor": [
-    105,
-    0,
+    255,
+    255,
     255,
     255
   ],
@@ -31,24 +31,23 @@
   ],
   "hardpointSprite": "",
   "hitGlowRadius": 0,
-  "id": "NOR_nullray",
+  "id": "SRD_dekris",
   "pixelsPerTexel": 1,
-  "size": "LARGE",
+  "size": "SMALL",
   "specClass": "beam",
-  "textureScrollSpeed": 128,
- "textureType": [
-	"graphics/sylphon/fx/SRD_largesse_beam_core.png",
-    "graphics/sylphon/fx/SRD_largesse_beam_fringe.png"
-    
+  "textureScrollSpeed": 64,
+  "textureType": [
+    "graphics/sylphon/fx/SRD_paratach_beam_fringe.png",
+    "graphics/sylphon/fx/SRD_nanite_beam.png"
   ],
   "turretAngleOffsets": [
     0
   ],
   "turretOffsets": [
-    9,
+    -2,
     0
   ],
-  "turretSprite": "graphics/sylphon/weapons/NOV/NOV_Sura_Tel_weapon.png",
+  "turretSprite": "graphics/sylphon/weapons/SRD_dekris_base.png",
   "type": "ENERGY",
-  "width": 50
+  "width": 15
 }
