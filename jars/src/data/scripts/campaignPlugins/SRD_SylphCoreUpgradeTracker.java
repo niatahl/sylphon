@@ -13,14 +13,16 @@ public class SRD_SylphCoreUpgradeTracker implements EveryFrameScript {
 
     private final CargoAPI cargo;
     private final FleetMemberAPI member;
+    private String variantToUpgradeTo = "ERROR";
     private boolean started = false;
     private String marketName = "ERROR";
     private float time;
 
     //Initializer, called when creating the script
-    public SRD_SylphCoreUpgradeTracker(float days, FleetMemberAPI member, CargoAPI cargo, String marketName) {
+    public SRD_SylphCoreUpgradeTracker(float days, FleetMemberAPI member, String variantToUpgradeTo, CargoAPI cargo, String marketName) {
         time = days;
         this.member = member;
+        this.variantToUpgradeTo = variantToUpgradeTo;
         this.cargo = cargo;
         this.marketName = marketName;
     }
@@ -41,13 +43,18 @@ public class SRD_SylphCoreUpgradeTracker implements EveryFrameScript {
         if (time > 0f) {
             time -= Global.getSector().getClock().convertToDays(amount);
             if (time <= 0f) {
+                //Generate a new ship
+                FleetMemberAPI newMember = Global.getFactory().createFleetMember(FleetMemberType.SHIP, variantToUpgradeTo);
+                newMember.setShipName(member.getShipName());
+
+                //Then, add it to the market and alert the player of this
                 Global.getSector().getCampaignUI().addMessage(
-                        marketName + ": " + member.getShipName() + " has completed installation of its Sylph Core",
+                        marketName + ": " + newMember.getShipName() + " has completed installation of its Sylph Core",
                         Global.getSettings().getColor("standardTextColor"),
-                        member.getShipName(), "Sylph Core",
+                        newMember.getShipName(), "Sylph Core",
                         Global.getSettings().getColor("textFriendColor"),
                         Global.getSettings().getColor("yellowTextColor"));
-                cargo.getMothballedShips().addFleetMember(member);
+                cargo.getMothballedShips().addFleetMember(newMember);
             }
         }
     }

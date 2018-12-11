@@ -3,6 +3,7 @@ package data.scripts;
 import com.fs.starfarer.api.BaseModPlugin;
 import com.fs.starfarer.api.Global;
 import com.fs.starfarer.api.campaign.SectorAPI;
+import com.fs.starfarer.api.combat.ShipHullSpecAPI;
 import com.fs.starfarer.api.impl.campaign.shared.SharedData;
 import com.fs.starfarer.api.loading.HullModSpecAPI;
 import com.fs.starfarer.api.util.Misc;
@@ -11,6 +12,7 @@ import data.scripts.campaignPlugins.SRD_KeepTrackOfSylphCorePlugin;
 import data.scripts.world.SRD_FactionRelationPlugin;
 import data.scripts.world.SRD_Nym;
 import data.scripts.world.SRD_Rofocale;
+import org.lazywizard.lazylib.campaign.CampaignUtils;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -87,6 +89,16 @@ public class SRD_ModPlugin extends BaseModPlugin {
     public static boolean hasNullspaceConduits(List<String> hullmods) {
         for (String s : hullmods) {
             if (NULLSPACE_CONDUIT_HULLMODS.contains(s)) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    //Checks the games loaded files and sees if a given hullspec ID exists
+    public static boolean hullspecExists (String hullspecID) {
+        for (ShipHullSpecAPI shipHullSpecAPI : Global.getSettings().getAllShipHullSpecs()) {
+            if (shipHullSpecAPI.getHullId().equals(hullspecID)) {
                 return true;
             }
         }

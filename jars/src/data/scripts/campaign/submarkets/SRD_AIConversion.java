@@ -6,6 +6,7 @@ import com.fs.starfarer.api.Global;
 import com.fs.starfarer.api.campaign.*;
 import com.fs.starfarer.api.campaign.econ.SubmarketAPI;
 import com.fs.starfarer.api.combat.ShipAPI;
+import com.fs.starfarer.api.combat.ShipHullSpecAPI;
 import com.fs.starfarer.api.combat.ShipVariantAPI;
 import com.fs.starfarer.api.fleet.FleetMemberAPI;
 import com.fs.starfarer.api.impl.campaign.ids.Commodities;
@@ -223,23 +224,19 @@ public class SRD_AIConversion extends BaseSubmarketPlugin {
             FleetMemberAPI member = info.getMember();
             if (member == null) {continue;}
 
-            //Add a permanent hullmod to the member (namely, the Sylph Core). Remember to clone the variant first, or it won't be permanent properly
-            ShipVariantAPI variant = member.getVariant();
-            variant = variant.clone();
-            variant.addPermaMod("SRD_sylph_core");
-            variant.setSource(VariantSource.REFIT);
-            member.setVariant(variant, false, false);
+            //Get the sylphcore-upgraded skin for the ship, and ensure it's the base variant
+            String variantToUpgradeTo = member.getHullSpec().getBaseHullId() + "_sc_Hull";
 
             //...and remove a core from the player's inventory
             Global.getSector().getPlayerFleet().getCargo().removeCommodity(COST_TABLE.get(member.getHullSpec().getHullSize()), 1);
 
             //Then, add it to the "delay" plugin, so it takes a while for the refit to complete (while also removing the member from the market)
-            Global.getSector().addScript(new SRD_SylphCoreUpgradeTracker(TIME_TABLE.get(member.getHullSpec().getHullSize()), member, submarket.getCargo(), market.getPrimaryEntity().getName()));
+            Global.getSector().addScript(new SRD_SylphCoreUpgradeTracker(TIME_TABLE.get(member.getHullSpec().getHullSize()), member, variantToUpgradeTo, submarket.getCargo(), market.getPrimaryEntity().getName()));
             submarket.getCargo().getMothballedShips().removeFleetMember(member);
         }
     }
 
-    //Shorthand function to check if a ship is *actually* a Sylphon ship, and not an Outcast or Null Order ship (Null Order not yet implemented)
+    //Shorthand function to check if a ship is *actually* a Sylphon ship, and not an Outcast ship
     private static boolean isValidSylphonDesign(FleetMemberAPI member) {
         if (!member.getHullSpec().getBaseHullId().contains("SRD_")) {
             return false;
@@ -254,7 +251,7 @@ public class SRD_AIConversion extends BaseSubmarketPlugin {
     private static boolean hasSylphCoreUpgrade (FleetMemberAPI member) {
         if (SRD_ModPlugin.hasSylphCoreInstalled(new ArrayList<>(member.getVariant().getHullMods()))) {
             return false;
-        } else if (Global.getSettings().getHullSpec(member.getHullSpec().getBaseHullId()+"_sc") == null) {
+        } else if (!SRD_ModPlugin.hullspecExists(member.getHullSpec().getBaseHullId()+"_sc")) {
             return false;
         } else {
             return true;
