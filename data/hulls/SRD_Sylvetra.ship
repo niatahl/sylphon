@@ -252,7 +252,7 @@
       "id": "WS0011",
       "locations": [
         -4,
-        87
+        83
       ],
       "mount": "HARDPOINT",
       "size": "MEDIUM",
@@ -264,7 +264,7 @@
       "id": "WS0012",
       "locations": [
         -4,
-        -87
+        -83
       ],
       "mount": "HARDPOINT",
       "size": "MEDIUM",
