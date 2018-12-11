@@ -57,6 +57,12 @@
     "SRD_sylph_core",
     "SRD_nullspace_conduits"
   ],
+  "builtInWeapons": {
+    "WS0001": "SRD_vedra",
+    "WS0002": "SRD_vedra",
+    "WS0003": "SRD_vedra",
+    "WS0004": "SRD_vedra"
+  },
   "builtInWings": [],
   "center": [
     97,
@@ -153,8 +159,8 @@
         44
       ],
       "mount": "TURRET",
-      "size": "SMALL",
-      "type": "ENERGY"
+      "size": "MEDIUM",
+      "type": "BUILT_IN"
     },
     {
       "angle": -23,
@@ -165,11 +171,11 @@
         -44
       ],
       "mount": "TURRET",
-      "size": "SMALL",
-      "type": "ENERGY"
+      "size": "MEDIUM",
+      "type": "BUILT_IN"
     },
     {
-      "angle": 141.5,
+      "angle": 52.5,
       "arc": 131,
       "id": "WS0001",
       "locations": [
@@ -177,11 +183,11 @@
         66
       ],
       "mount": "TURRET",
-      "size": "SMALL",
-      "type": "ENERGY"
+      "size": "MEDIUM",
+      "type": "BUILT_IN"
     },
     {
-      "angle": -141.5,
+      "angle": -52.5,
       "arc": 131,
       "id": "WS0002",
       "locations": [
@@ -189,16 +195,16 @@
         -66
       ],
       "mount": "TURRET",
-      "size": "SMALL",
-      "type": "ENERGY"
+      "size": "MEDIUM",
+      "type": "BUILT_IN"
     },
     {
       "angle": 0,
       "arc": 5,
       "id": "WS0007",
       "locations": [
-        98,
-        50
+        90,
+        45
       ],
       "mount": "HARDPOINT",
       "size": "SMALL",
@@ -209,8 +215,8 @@
       "arc": 5,
       "id": "WS0008",
       "locations": [
-        98,
-        -50
+        90,
+        -45
       ],
       "mount": "HARDPOINT",
       "size": "SMALL",
