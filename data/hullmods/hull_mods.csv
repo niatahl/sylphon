@@ -47,7 +47,9 @@ Increases supply upkeep by %s, and reduces all crew capacity by %s. Counts as a 
 
 %s
 ""High Admiral of the Sylphon fleet and its flagship in one, the Balance Unto All is perhaps the most powerful ship ever built by Sylphon""
-Equipped with an enhanced shield generator, it can deploy its shield %s faster than a normal Equilibrium. Furthermore, acting as fleet control, CP recovery is increased by %s and the capabilities of all linked Sylph Cores are improved.",Eccentric Sylph Core,graphics/sylphon/hullmods/SRD_ecore_cieve.png
+Equipped with an enhanced shield generator, it can deploy its shield %s faster than a normal Equilibrium. Furthermore, acting as fleet control, CP recovery is increased by %s and the capabilities of all linked %s Sylph Cores are improved, increasing all weapon ranges by %s.
+
+The atypical shield generator renders the ship %s.",Eccentric Sylph Core,graphics/sylphon/hullmods/SRD_ecore_cieve.png
 ,,,,,,,,,,,,,,,,,
 Networked Targeting Linkup,SRD_targeting_linkup,1,,special,Special,6500,,,,5,9,18,28,data.scripts.hullmods.SRD_TargetingLinkup,"Links the ship's Sylph Core to a fleet-wide targeting grid, relaying info to other ships hooked up to the same system.
 
