@@ -114,7 +114,7 @@
   "builtInMods": [
     "hardenedshieldemitter",
     "SRD_nullspace_conduits",
-    "SRD_sylph_core"
+    "SRD_eccentric_core_balance"
   ],
   "builtInWeapons": {
     "WS0027": "SRD_demiurge",

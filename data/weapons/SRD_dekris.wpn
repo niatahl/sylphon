@@ -3,22 +3,22 @@
   "collisionClassByFighter": "RAY_FIGHTER",
   "convergeOnPoint": true,
   "coreColor": [
-    20,
-    20,
-    20,
+    120,
+    120,
+    120,
     255
   ],
   "darkCore": true,
   "fireSoundTwo": "pd_laser_loop",
   "fringeColor": [
-    95,
-    0,
-    155,
+    120,
+    50,
+    180,
     255
   ],
   "glowColor": [
     255,
-    255,
+    150,
     255,
     255
   ],
@@ -35,9 +35,9 @@
   "pixelsPerTexel": 1,
   "size": "SMALL",
   "specClass": "beam",
-  "textureScrollSpeed": 64,
+  "textureScrollSpeed": 500,
   "textureType": [
-    "graphics/sylphon/fx/SRD_paratach_beam_fringe.png",
+    "graphics/sylphon/fx/SRD_gd_beam_fringe.png",
     "graphics/sylphon/fx/SRD_nanite_beam.png"
   ],
   "turretAngleOffsets": [
@@ -49,5 +49,5 @@
   ],
   "turretSprite": "graphics/sylphon/weapons/SRD_dekris_base.png",
   "type": "ENERGY",
-  "width": 15
+  "width": 12
 }

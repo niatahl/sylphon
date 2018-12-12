@@ -38,8 +38,9 @@ public class SRD_SylphCore extends BaseHullMod {
     //or more loyal Sylph Cores
     private static final Map<String, Float> EXTRA_BETRAY_CHANCE_MAP = new HashMap<String, Float>();
     static {
-        EXTRA_BETRAY_CHANCE_MAP.put("SRD_ascordia", 0.9f);
-        EXTRA_BETRAY_CHANCE_MAP.put("SRD_zodiark", 1.8f);
+        EXTRA_BETRAY_CHANCE_MAP.put("SRD_Ascordia", 0.9f);
+        EXTRA_BETRAY_CHANCE_MAP.put("SRD_Zodiark", 1.8f);
+        EXTRA_BETRAY_CHANCE_MAP.put("SRD_Synastry", 1f);
     }
 
     //The "intelligence steps" we have; below Low, it can't start a rebellion, above High, it uses more sophisticated calculations to start one

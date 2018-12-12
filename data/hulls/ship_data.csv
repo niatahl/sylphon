@@ -22,7 +22,7 @@ Dread Eagle,SRD_Eagle,Cruiser,Sylphon RnD,SRD_creeper_device,17,8000,500,10000,1
 Valestri,SRD_Valestri,Heavy Cruiser,Sylphon RnD,SRD_armor_polarization,30,10000,1200,15000,,700,170,2,50,20,15,10,10,2400,FRONT,,160,0.3,0.9,,,120,180,120,100,3,25,7,75000,3,20,540,0.25,30,30,,sylphon_core_bp,,0.5,2,3,59432
 #Okarra,SRD_Okarra,Heavy Cruiser,Sylphon RnD,SRD_armor_polarization,15,10000,1200,16000,9000,600,180,,55,15,8,12,12,2250,FRONT,,180,0.3,0.9,,,100,150,150,150,5,30,8,70000,4,12,540,0.25,28,28,,sylphon_high_bp,,0.4,2,3,59439
 Eolia,SRD_Eolia,Drone Carrier,Sylphon RnD,SRD_nullfield_catalyst,20,6000,500,12000,17000,600,170,3,60,35,20,15,15,1700,OMNI,,180,0.3,0.8,,,100,300,150,100,3,35,8,50000,3,20,540,0.25,26,26,"CARRIER, COMBAT",sylphon_high_bp,,0.5,2,3,59430
-Sylvetra,SRD_Sylvetra,Missile Cruiser,Sylphon RnD,SRD_autoforge,20,5000,500,10000,17000,300,120,,70,55,35,25,20,1500,OMNI,,140,0.3,0.8,,,0,100,150,100,3,35,8,90000,3,20,540,0.25,30,30,,sylphon_ex_bp,,0.5,2,3,59430
+Sylvetra,SRD_Sylvetra,Missile Cruiser,Sylphon RnD,SRD_autoforge,20,8000,1000,8000,17000,300,100,,70,55,35,25,20,1500,OMNI,,50,0.3,0.8,,,0,100,150,100,3,35,8,90000,3,20,540,0.25,30,30,,sylphon_ex_bp,,0.5,2,3,59430
 Synastry,SRD_Synastry,EWAR Cruiser,Sylphon RnD,interdictor,20,6000,500,12000,,700,110,,60,70,40,30,30,1600,FRONT,,250,0.3,0.9,,,0,100,150,120,3,40,9,80000,3,20,480,0.25,30,30,,"sylphon_ex_bp, rare_bp",0.5,0.5,2,3,55813
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 #capitals,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
@@ -30,6 +30,7 @@ Equilibrium,SRD_Equilibrium,Battleship,Sylphon RnD,SRD_nullspace_skip,40,16000,1
 Seresvalla,SRD_Seresvalla,Battlecruiser,Sylphon RnD,SRD_flux_exchanger,25,10000,900,18000,25000,800,220,1,80,50,30,15,15,2000,OMNI,,180,0.3,0.8,,,100,200,250,250,8,45,8,250000,4,20,600,0.25,40,40,,"sylphon_ex_bp, rare_bp",0.5,0.6,2,4,59434
 Finis Astra,SRD_Finis_Astra,Siege Platform,Sylphon RnD,SRD_nullspace_anchor,30,12000,800,30000,,600,165,,40,10,3,5,5,3000,OMNI,,160,0.3,0.8,,,150,300,100,80,12,30,6,600000,3,25,420,0.25,40,40,,"sylphon_ex_bp, rare_bp",0.2,0.4,2,4,59430
 Replekia,SRD_Replekia,Battleship,Sylphon RnD,SRD_armor_polarization,50,15000,1400,24000,,900,310,1,50,50,30,15,10,3200,OMNI,,200,0.3,0.9,,,250,600,400,400,10,40,8,450000,4,20,780,0.25,50,50,,"sylphon_ex_bp, rare_bp",0.5,0.5,2,5,2202
+Replekia Ultra,SRD_Replekia_ultra,Super Battleship,Sylphon RnD,SRD_armor_polarization,50,15000,1500,24000,,1500,410,1,80,50,30,15,10,3200,OMNI,,200,0.3,0.9,,,250,600,400,400,10,40,8,450000,4,20,780,0.25,50,50,,"sylphon_ex_bp, rare_bp",0.5,0.5,2,5,2202
 Frelia,SRD_Frelia,Battlecarrier,Sylphon RnD,SRD_skallic_drones,40,12000,1100,18000,31250,900,230,4,40,30,20,10,10,3400,FRONT,,200,0.3,0.7,,,300,700,400,400,9,35,7,400000,4,20,720,0.25,50,50,"CARRIER, COMBAT","sylphon_ex_bp, rare_bp",0.8,0.6,2,5,59439
 Mariana (Fuel),SRD_Mariana_fuel,Modular Tanker,Sylphon RnD,drone_pd_x2,7,7000,500,5000,5000,300,60,,30,5,5,10,5,4500,OMNI,,360,0.3,1,,,40,120,300,2500,10,40,6,60000,2,20,720,0.25,10,10,"CIVILIAN, TANKER",sylphon_core_bp,,0.7,2,4,59438
 Mariana (Cargo),SRD_Mariana_cargo,Modular Freighter,Sylphon RnD,drone_pd_x2,7,7000,500,5000,5000,300,60,,30,5,5,10,5,4500,OMNI,,360,0.3,1,,,40,120,1800,350,10,40,6,60000,2,20,720,0.25,10,10,"CIVILIAN, FREIGHTER",sylphon_core_bp,,0.7,2,4,59437

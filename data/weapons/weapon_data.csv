@@ -30,11 +30,11 @@ Enkindle ESM,SRD_enkindle,1,,500,1500,,100,1000,15,30,5,,,,ENERGY,10,,0,20,1,,0,
 Enochian,SRD_enochian,3,0.2,25000,1000,,300,,100,5,30,6,0.7,3,KINETIC,450,,0,0.1,99999,0.5,2,5,2,1,,2500,,,500,,"kinetic20, LR, sylphon_ecc_bp, rare_bp",,Sylphon RnD,,Strike,,,,,Deals %s additional damage as %s when hitting armor or hull,100 | High-Explosive,Semi-automatic operation,,,645454
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 #Outcast,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-Arphage,SRD_arphage,3,0.3,5000,1000,,500,100,50,10,13,,,,HIGH_EXPLOSIVE,700,,0.3,3,1,,,,,,,1500,,,300,,"kinetic15, LR, sylphon_outcast_bp, rare_bp",,Sylphon Outcast,,Anti Armor,,,,,"Linked to variable ammo loader ship system, allowing the firing of different ammo types",,,,,5.5
-Veda,SRD_veda,3,0.5,1000,700,,50,,5,30,7,,,,KINETIC,60,,0.1,0.2,1,,0,4,1,2,,1300,,,50,,"kinetic8, LR, sylphon_outcast_bp, rare_bp",,Sylphon Outcast,,Anti Shield,,,,,,,,,,3.75
-Paja,SRD_paja,2,1,500,450,,30,,,120,5,,,,FRAGMENTATION,7,,0,1.3,10,0.05,3,10,4,3,,1100,,,,"PD, ANTI_FTR","pd10, sylphon_outcast_bp, rare_bp",,Sylphon Outcast,,Point Defense,,,,,,,,,,44
-Ar Ciel,SRD_arciel,3,0.2,25000,1200,,1000,,200,5,28,,,,KINETIC,1400,,0.5,4,1,,,,,,,2200,,,500,,"kinetic20, LR, sylphon_outcast_bp, rare_bp",,Sylphon Outcast,,Anti Shield,,,,,Deals %s percent extra damage as High Explosive on direct hits,20,,,,454
-Qoga,SRD_qoga,3,0.3,5000,1000,,500,,50,10,14,,,,KINETIC,700,,0.5,3.5,1,,,,,,,2000,,,300,,"kinetic15, LR, sylphon_outcast_bp, rare_bp",,Sylphon Outcast,,Anti Shield,,,,,Deals %s percent extra damage as High Explosive on direct hits,20,,,,4.50
+Arphage,SRD_arphage,4,0.3,5000,1000,,500,100,50,10,13,,,,HIGH_EXPLOSIVE,700,,0.3,3,1,,,,,,,1500,,,300,,"kinetic15, LR, sylphon_outcast_bp, rare_bp",,Sylphon Outcast,,Anti Armor,,,,,"Linked to variable ammo loader ship system, allowing the firing of different ammo types",,,,,5.5
+Veda,SRD_veda,4,0.5,1000,700,,50,,5,30,7,,,,KINETIC,60,,0.1,0.2,1,,0,4,1,2,,1300,,,50,,"kinetic8, LR, sylphon_outcast_bp, rare_bp",,Sylphon Outcast,,Anti Shield,,,,,,,,,,3.75
+Paja,SRD_paja,4,1,500,450,,30,,,120,5,,,,FRAGMENTATION,7,,0,1.3,10,0.05,3,10,4,3,,1100,,,,"PD, ANTI_FTR","pd10, sylphon_outcast_bp, rare_bp",,Sylphon Outcast,,Point Defense,,,,,,,,,,44
+Ar Ciel,SRD_arciel,4,0.2,25000,1200,,1000,,200,5,28,,,,KINETIC,1400,,0.5,4,1,,,,,,,2200,,,500,,"kinetic20, LR, sylphon_outcast_bp, rare_bp",,Sylphon Outcast,,Anti Shield,,,,,Deals %s percent extra damage as High Explosive on direct hits,20,,,,454
+Qoga,SRD_qoga,4,0.3,5000,1000,,500,,50,10,14,,,,KINETIC,700,,0.5,3.5,1,,,,,,,2000,,,300,,"kinetic15, LR, sylphon_outcast_bp, rare_bp",,Sylphon Outcast,,Anti Shield,,,,,Deals %s percent extra damage as High Explosive on direct hits,20,,,,4.50
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 #fighters,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 Harrow S,SRD_harrow_s,1,1,10000,700,,200,100,20,0,0,1,,,HIGH_EXPLOSIVE,,,,1,1,,,,,,,600,100,1.5,100,SYSTEM,missile5,,,,,,,,,,,,,,1305
