@@ -56,7 +56,7 @@
   "builtInMods": [
     "SRD_sylph_core",
     "SRD_nullspace_conduits",
-    "targetingunit"
+    "pointdefenseai"
   ],
   "builtInWeapons": {
     "WS0001": "SRD_dekris",
