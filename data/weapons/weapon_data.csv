@@ -102,6 +102,8 @@ Frelia Bonus Hangar L,SRD_Frelia_extrabayL,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,SYSTEM,,
 Frelia Bonus Hangar R,SRD_Frelia_extrabayR,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,SYSTEM,,,,,,,,,,,,,,,1409
 Vril PlateR,SRD_vril_plateR,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 Vril PlateL,SRD_vril_plateL,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,SRD_Pthruster,,,,1,1,,,,,,,,,,,,,10,,,,,,,,,,,,SYSTEM,,666,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 #Outcast Armor,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 Metafalica Deco Glow,SRD_metafalica_glow_deco,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,SYSTEM,,,,,,,,,,,,,,,1401

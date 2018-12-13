@@ -5,6 +5,11 @@ Additions:
 - Added some secret things that aren't yet obtainable
 - Added the Sylvetra nanotech cruiser
 
+Removals:
+- Removed Okarra
+- Removed Hymnon
+- Removed Hubris
+
 Changes:
 - Reworked the Sylph Core installation code so that it now uses skins instead of wierd behind-the-scenes magic
 - The Frelia no longer has super-heavy mount points; instead, it has two large energy slots (which can still be turned to fighter bays if left empty)
@@ -16,6 +21,8 @@ Changes:
 - Adjusted blueprint rarities for most ships
 - Removed Sylphon experimental BP package
 - Updated autofit tags for most weapons
+- Upgraded Replekia with fancy vernier thrusters
+- Reworked Valestri to fit the Okarra's now vacant role as anvil
 
 Bugfixes:
 - Ozma Station is no longer a freeport *twice* (don't ask how that works): only works on new saves, unfortunately, but it's not serious enough to make a new save over anyhow

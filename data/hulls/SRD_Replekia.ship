@@ -99,6 +99,12 @@
     "SRD_nullspace_conduits",
     "SRD_nanolaminate_armor"
   ],
+  "builtInWeapons": {
+    "WS0024": "SRD_Pthruster",
+    "WS0025": "SRD_Pthruster",
+    "WS0026": "SRD_Pthruster",
+    "WS0027": "SRD_Pthruster"
+  },
   "builtInWings": [
     "SRD_Infel_cosmo_wing"
   ],
@@ -186,26 +192,48 @@
       "width": 16
     },
     {
-      "angle": 143,
-      "contrailSize": 128,
-      "length": 18.5,
+      "angle": 90,
+      "contrailSize": 5,
+      "length": 1,
       "location": [
-        158.5,
-        32
+        -181.5,
+        47.5
       ],
       "style": "SRD_ENGINE",
-      "width": 10
+      "width": 5
     },
     {
-      "angle": -143,
-      "contrailSize": 128,
-      "length": 18.5,
+      "angle": -90,
+      "contrailSize": 5,
+      "length": 1,
       "location": [
-        158.5,
-        -32
+        -181.5,
+        -47.5
       ],
       "style": "SRD_ENGINE",
-      "width": 10
+      "width": 5
+    },
+    {
+      "angle": 90,
+      "contrailSize": 5,
+      "length": 1,
+      "location": [
+        158.5,
+        31
+      ],
+      "style": "SRD_ENGINE",
+      "width": 5
+    },
+    {
+      "angle": -90,
+      "contrailSize": 5,
+      "length": 1,
+      "location": [
+        158.5,
+        -31
+      ],
+      "style": "SRD_ENGINE",
+      "width": 5
     }
   ],
   "height": 406,
@@ -450,7 +478,7 @@
       "type": "SYNERGY"
     },
     {
-      "angle": 142,
+      "angle": 174.5,
       "arc": 80,
       "id": "WS0020",
       "locations": [
@@ -512,6 +540,54 @@
       "mount": "HIDDEN",
       "size": "LARGE",
       "type": "LAUNCH_BAY"
+    },
+    {
+      "angle": 90,
+      "arc": 0,
+      "id": "WS0024",
+      "locations": [
+        -181.5,
+        47
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "DECORATIVE"
+    },
+    {
+      "angle": -90,
+      "arc": 0,
+      "id": "WS0025",
+      "locations": [
+        -181.5,
+        -47
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "DECORATIVE"
+    },
+    {
+      "angle": 90,
+      "arc": 0,
+      "id": "WS0026",
+      "locations": [
+        158.5,
+        31
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "DECORATIVE"
+    },
+    {
+      "angle": -90,
+      "arc": 0,
+      "id": "WS0027",
+      "locations": [
+        158.5,
+        -31
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "DECORATIVE"
     }
   ],
   "width": 184
