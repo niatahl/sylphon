@@ -2,6 +2,7 @@
   "collisionClass": "RAY",
   "collisionClassByFighter": "RAY_FIGHTER",
   "convergeOnPoint": true,
+  "beamEffect":"data.scripts.weapons.SRD_NanobotBeamEffect",
   "coreColor": [
     120,
     120,
