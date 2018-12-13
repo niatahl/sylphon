@@ -1,4 +1,21 @@
-﻿0.9.1
+﻿0.9.2
+Additions:
+- Added the Networked Targeting Linkup hullmod, which is exclusive to Sylph Core ships
+- Added the Sylvetra nanotech cruiser
+- More not yet available additions (unless you console them in)
+
+Removals:
+- Removed Okarra
+- Removed Hymnon
+- Removed Hubris
+
+Changes:
+- Reworked the Sylph Core installation code so that it now uses skins instead of wierd behind-the-scenes magic
+- Upgraded Replekia with fancy vernier thrusters
+- Reworked Valestri to fit the Okarra's now vacant role as anvil
+
+
+0.9.1
 Additions:
 - Added the Synastry and its built-in weapon, the Apocatastasis [say *that* fast 5 times]
 - Added the Networked Targeting Linkup hullmod, which is exclusive to Sylph Core ships
