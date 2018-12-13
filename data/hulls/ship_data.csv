@@ -51,7 +51,7 @@ Infel,SRD_Infel,Fighter,Sylphon RnD,,,400,80,350,,80,0,,190,350,300,90,180,30,FR
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 #Eccentrics,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 Deadeye,SRD_Ascordia_deadeye,Sniper,Sylphon RnD,SRD_nullspace_shunt,20,6000,400,14000,17000,600,100,,100,70,50,40,40,1200,FRONT,,120,0.3,0.8,,,0,0,100,60,1,35,9,120000,3,12,480,0.25,35,35,"UNBOARDABLE, HIDE_IN_CODEX",sylphon_ecc_bp,0.5,0.5,2,3,4221
-Celika Ultra-V,SRD_Celika_uv,Racer,Sylphon RnD,microburn,7,1800,250,3200,2500,300,45,,180,240,120,60,120,250,FRONT,,260,0.3,0.7,,,0,0,20,20,1,20,10,30000,8,10,300,0.25,10,10,"UNBOARDABLE, HIDE_IN_CODEX",sylphon_ecc_bp,0.2,0.4,2,2,4455
+Celika Ultra-V,SRD_Celika_uv,Racer,Sylphon RnD,microburn,7,1800,250,3200,2500,300,45,,160,240,120,60,120,250,FRONT,,260,0.3,0.7,,,0,0,20,20,1,20,10,30000,8,10,300,0.25,10,10,"UNBOARDABLE, HIDE_IN_CODEX",sylphon_ecc_bp,0.2,0.4,2,2,4455
 Balance Unto All,SRD_Equilibrium_balance,Flagship,Sylphon RnD,SRD_nullspace_skip,40,17000,1200,24000,31250,1200,300,2,40,30,20,10,10,3300,FRONT,,120,0.3,0.6,,,200,400,500,500,10,30,7,400000,4,20,720,0.25,50,50,"UNBOARDABLE, HIDE_IN_CODEX","sylphon_ex_bp, rare_bp",0.8,0.6,2,5,59422
 Cieve,SRD_Synastry_cieve,Advanced Cruiser,Sylphon RnD,SRD_skimmer,25,7000,500,12000,,800,150,,70,80,40,30,30,1600,FRONT,,250,0.3,0.8,,,0,100,150,120,3,40,9,140000,3,20,540,0.25,35,35,"UNBOARDABLE, HIDE_IN_CODEX",sylphon_ecc_bp,0.5,0.5,2,3,55813
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
