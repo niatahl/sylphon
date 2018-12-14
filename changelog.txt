@@ -3,6 +3,7 @@ Additions:
 - Added the Networked Targeting Linkup hullmod, which is exclusive to Sylph Core ships
 - Added the Sylvetra nanotech cruiser
 - More not yet available additions (unless you console them in)
+- Added GraphicsLib support
 
 Removals:
 - Removed Okarra
@@ -13,6 +14,9 @@ Changes:
 - Reworked the Sylph Core installation code so that it now uses skins instead of wierd behind-the-scenes magic
 - Upgraded Replekia with fancy vernier thrusters
 - Reworked Valestri to fit the Okarra's now vacant role as anvil
+
+Balancing:
+- Increased Equilibrium supply costs to 55/55
 
 
 0.9.1

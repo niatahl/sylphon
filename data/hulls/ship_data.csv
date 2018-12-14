@@ -26,11 +26,10 @@ Sylvetra,SRD_Sylvetra,Missile Cruiser,Sylphon RnD,SRD_autoforge,20,8000,1000,800
 Synastry,SRD_Synastry,EWAR Cruiser,Sylphon RnD,interdictor,20,6000,500,12000,,700,110,,60,70,40,30,30,1600,FRONT,,250,0.3,0.9,,,0,100,150,120,3,40,9,80000,3,20,480,0.25,30,30,,"sylphon_ex_bp, rare_bp",0.5,0.5,2,3,55813
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 #capitals,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-Equilibrium,SRD_Equilibrium,Battleship,Sylphon RnD,SRD_nullspace_skip,40,16000,1100,24000,31250,1200,280,2,40,30,20,10,10,3300,FRONT,,120,0.3,0.6,,,200,400,500,500,10,30,7,400000,4,20,720,0.25,50,50,,"sylphon_ex_bp, rare_bp",0.8,0.6,2,5,59422
+Equilibrium,SRD_Equilibrium,Battleship,Sylphon RnD,SRD_nullspace_skip,40,16000,1100,24000,31250,1200,280,2,40,30,20,10,10,3300,FRONT,,120,0.3,0.6,,,200,400,500,500,10,30,7,400000,4,20,720,0.25,55,55,,"sylphon_ex_bp, rare_bp",0.8,0.6,2,5,59422
 Seresvalla,SRD_Seresvalla,Battlecruiser,Sylphon RnD,SRD_flux_exchanger,25,10000,900,18000,25000,800,220,1,80,50,30,15,15,2000,OMNI,,180,0.3,0.8,,,100,200,250,250,8,45,8,250000,4,20,600,0.25,40,40,,"sylphon_ex_bp, rare_bp",0.5,0.6,2,4,59434
 Finis Astra,SRD_Finis_Astra,Siege Platform,Sylphon RnD,SRD_nullspace_anchor,30,12000,800,30000,,600,165,,40,10,3,5,5,3000,OMNI,,160,0.3,0.8,,,150,300,100,80,12,30,6,600000,3,25,420,0.25,40,40,,"sylphon_ex_bp, rare_bp",0.2,0.4,2,4,59430
 Replekia,SRD_Replekia,Battleship,Sylphon RnD,SRD_armor_polarization,50,15000,1400,24000,,900,310,1,50,50,30,15,10,3200,OMNI,,200,0.3,0.9,,,250,600,400,400,10,40,8,450000,4,20,780,0.25,50,50,,"sylphon_ex_bp, rare_bp",0.5,0.5,2,5,2202
-Replekia Ultra,SRD_Replekia_ultra,Super Battleship,Sylphon RnD,SRD_armor_polarization,50,15000,1500,24000,,1500,410,1,80,50,30,15,10,3200,OMNI,,200,0.3,0.9,,,250,600,400,400,10,40,8,450000,4,20,780,0.25,50,50,,"sylphon_ex_bp, rare_bp",0.5,0.5,2,5,2202
 Frelia,SRD_Frelia,Battlecarrier,Sylphon RnD,SRD_skallic_drones,40,12000,1100,18000,31250,900,230,4,40,30,20,10,10,3400,FRONT,,200,0.3,0.7,,,300,700,400,400,9,35,7,400000,4,20,720,0.25,50,50,"CARRIER, COMBAT","sylphon_ex_bp, rare_bp",0.8,0.6,2,5,59439
 Mariana (Fuel),SRD_Mariana_fuel,Modular Tanker,Sylphon RnD,drone_pd_x2,7,7000,500,5000,5000,300,60,,30,5,5,10,5,4500,OMNI,,360,0.3,1,,,40,120,300,2500,10,40,6,60000,2,20,720,0.25,10,10,"CIVILIAN, TANKER",sylphon_core_bp,,0.7,2,4,59438
 Mariana (Cargo),SRD_Mariana_cargo,Modular Freighter,Sylphon RnD,drone_pd_x2,7,7000,500,5000,5000,300,60,,30,5,5,10,5,4500,OMNI,,360,0.3,1,,,40,120,1800,350,10,40,6,60000,2,20,720,0.25,10,10,"CIVILIAN, FREIGHTER",sylphon_core_bp,,0.7,2,4,59437
@@ -52,7 +51,7 @@ Infel,SRD_Infel,Fighter,Sylphon RnD,,,400,80,350,,80,0,,190,350,300,90,180,30,FR
 #Eccentrics,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 Deadeye,SRD_Ascordia_deadeye,Sniper,Sylphon RnD,SRD_nullspace_shunt,20,6000,400,14000,17000,600,100,,100,70,50,40,40,1200,FRONT,,120,0.3,0.8,,,0,0,100,60,1,35,9,120000,3,12,480,0.25,35,35,"UNBOARDABLE, HIDE_IN_CODEX",sylphon_ecc_bp,0.5,0.5,2,3,4221
 Celika Ultra-V,SRD_Celika_uv,Racer,Sylphon RnD,microburn,7,1800,250,3200,2500,300,45,,160,240,120,60,120,250,FRONT,,260,0.3,0.7,,,0,0,20,20,1,20,10,30000,8,10,300,0.25,10,10,"UNBOARDABLE, HIDE_IN_CODEX",sylphon_ecc_bp,0.2,0.4,2,2,4455
-Balance Unto All,SRD_Equilibrium_balance,Flagship,Sylphon RnD,SRD_nullspace_skip,40,17000,1200,24000,31250,1200,300,2,40,30,20,10,10,3300,FRONT,,120,0.3,0.6,,,200,400,500,500,10,30,7,400000,4,20,720,0.25,50,50,"UNBOARDABLE, HIDE_IN_CODEX","sylphon_ex_bp, rare_bp",0.8,0.6,2,5,59422
+Balance Unto All,SRD_Equilibrium_balance,Flagship,Sylphon RnD,SRD_nullspace_skip,40,17000,1200,24000,31250,1200,300,2,40,30,20,10,10,3300,FRONT,,120,0.3,0.6,,,200,400,500,500,10,30,7,400000,4,20,720,0.25,60,60,"UNBOARDABLE, HIDE_IN_CODEX","sylphon_ex_bp, rare_bp",0.8,0.6,2,5,59422
 Cieve,SRD_Synastry_cieve,Advanced Cruiser,Sylphon RnD,SRD_skimmer,25,7000,500,12000,,800,150,,70,80,40,30,30,1600,FRONT,,250,0.3,0.8,,,0,100,150,120,3,40,9,140000,3,20,540,0.25,35,35,"UNBOARDABLE, HIDE_IN_CODEX",sylphon_ecc_bp,0.5,0.5,2,3,55813
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 #Outcast,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
