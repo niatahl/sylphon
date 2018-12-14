@@ -3,12 +3,7 @@
   "autocharge": true,
   "barrelMode": "ALTERNATING",
   "fireSoundTwo": "SRD_arciel_fire",
-  "glowColor": [
-    255,
-    0,
-    0,
-    255
-  ],
+  "glowColor": [255,0,0,255],
   "hardpointAngleOffsets": [
     0
   ],

@@ -12,6 +12,9 @@ import data.scripts.campaignPlugins.SRD_KeepTrackOfSylphCorePlugin;
 import data.scripts.world.SRD_FactionRelationPlugin;
 import data.scripts.world.SRD_Nym;
 import data.scripts.world.SRD_Rofocale;
+import org.dark.shaders.light.LightData;
+import org.dark.shaders.util.ShaderLib;
+import org.dark.shaders.util.TextureData;
 import org.lazywizard.lazylib.campaign.CampaignUtils;
 
 import java.util.ArrayList;
@@ -42,6 +45,15 @@ public class SRD_ModPlugin extends BaseModPlugin {
         if (hasSSFX) {
             throw new RuntimeException("Sylphon RnD is not compatible with Starsector FX");
         }
+
+        boolean hasGraphicsLib = Global.getSettings().getModManager().isModEnabled("shaderLib");
+
+            if (hasGraphicsLib) {
+                ShaderLib.init();
+                LightData.readLightDataCSV("data/lights/SRD_lights.csv");
+                TextureData.readTextureDataCSV("data/lights/SRD_texture.csv");
+            }
+
 
 
         //Adds shield hullmods
