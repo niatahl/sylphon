@@ -16,4 +16,5 @@ Nullspace Entry,SRD_nullspace_entry,1,,,,,,,1,,0,0.7,0.1,,,,,,TRUE,TRUE,TRUE,,TR
 Nullfield Catalyst,SRD_nullfield_catalyst,1,,,,,0.3,,,,0,1.7,0.1,14,,,,,,,,,,TRUE,graphics/icons/hullsys/displacer.png
 Nullspace Skimmer,SRD_skimmer,,,,,,,,3,0.25,0.25,,0.25,0,,TRUE,,TRUE,,,,,,,graphics/icons/hullsys/displacer.png
 Advanced Autoforge,SRD_autoforge,,,,,,0.5,,,,1,5,0,30,,TRUE,,,TRUE,,,,,TRUE,graphics/icons/hullsys/missile_autoforge.png
+Nanobot Swarm,SRD_nanobot_swarm,,,,,,,,,,1,10,1,15,,,,,TRUE,,,,TRUE,TRUE,graphics/icons/hullsys/damper_field.png
 ,,,,,,,,,,,,,,,,,,,,,,,,,

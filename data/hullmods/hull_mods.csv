@@ -58,7 +58,7 @@ Increases supply upkeep by %s and counts as a %s.%s
 
 %s
 ""Originally working in engine development, this peculiar AI has developed a passion for speed and the sound of eurobeat""
-It's custom engine assembly has been toughened to take any punishment, reducing all engine damage by %s. In combat the massive booster engine enters an overdrive mode, increasing its top speed and acceleration power by %s of their base value every %s up to a maximum boost of %s.",Eccentric Sylph Core,graphics/sylphon/hullmods/SRD_ecore_cieve.png
+Its custom engine assembly has been toughened to take any punishment, reducing all engine damage by %s. In combat the massive booster engine enters an overdrive mode, increasing its top speed and acceleration power by %s of their base value every %s up to a maximum boost of %s.",Eccentric Sylph Core,graphics/sylphon/hullmods/SRD_ecore_cieve.png
 ,,,,,,,,,,,,,,,,,
 Networked Targeting Linkup,SRD_targeting_linkup,1,,special,Special,6500,,,,5,9,18,28,data.scripts.hullmods.SRD_TargetingLinkup,"Links the ship's Sylph Core to a fleet-wide targeting grid, relaying info to other ships hooked up to the same system.
 

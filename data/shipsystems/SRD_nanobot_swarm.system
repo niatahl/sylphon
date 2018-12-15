@@ -1,0 +1,31 @@
+{
+	"id":"SRD_nanobot_swarm",
+	"type":"STAT_MOD",
+	"aiType":"DAMPER_FIELD",
+	
+	"statsScript":"data.scripts.shipsystems.SRD_NanoBotSwarm",
+
+	"runScriptWhilePaused":false, # only for the player's ship
+	"runScriptWhileIdle":true,  # this means unapply() never gets called
+	
+	#"weaponGlowColor":[255,165,90,0],
+	#"weaponTypes":[ENERGY, BALLISTIC, MISSILE],
+	
+	#"engineGlowColor":[255,90,255,255],
+	
+	"soundFilterType":"LOWPASS",
+	"soundFilterGain":0.15,
+	"soundFilterGainHF":0.10,
+
+	"fadeActivationSoundOnChargedown":true,
+	"useSound":"system_damper",
+	"loopSound":"system_damper_loop",
+	"deactivateSound":"system_damper_off",
+	"outOfUsesSound":"gun_out_of_ammo",
+	
+	"aiHints":{
+	}
+}
+
+
+

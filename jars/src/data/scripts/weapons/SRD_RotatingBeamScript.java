@@ -59,6 +59,8 @@ public class SRD_RotatingBeamScript implements EveryFrameWeaponEffectPlugin {
         } else if (weapon.getSpec().getTags().contains("SRD_ROTATING_BEAM_FULL_CONVERGE")) {
             angleMin = 0f;
             physicalOffset = false;
+        } else if (weapon.getSpec().getTags().contains("SRD_ROTATING_BEAM_FULL_CONVERGE_OFFSET")) {
+            angleMin = 0f;
         } else if (weapon.getSpec().getTags().contains("SRD_ROTATING_BEAM_CENTER_BEAM")) {
             startMod = 1;
         }

@@ -28,7 +28,7 @@ public class SRD_NanobotsPlugin extends BaseEveryFrameCombatPlugin {
         //  And if you're wondering: Misc.ZERO is just "new Vector2f(0f, 0f)" more compactly written
         MagicTrailPlugin.AddTrailMemberAdvanced(null, nanobotTrailMap.get(bot), Global.getSettings().getSprite("SRD_fx", "nanobot_trail"),
                 bot.position, 0f, 0f, bot.currentAngle, 0f, 0f, bot.carriedMass*SIZE_MULT,
-                bot.carriedMass*SIZE_MULT, Color.WHITE, Color.WHITE, 0.8f, 0f, 0.5f, 0.1f, GL_SRC_ALPHA,
+                bot.carriedMass*SIZE_MULT, Color.WHITE, Color.WHITE, 0.8f, 0f, 0.30f, 0.1f, GL_SRC_ALPHA,
                 GL_ONE_MINUS_SRC_ALPHA,128f, -300f, Misc.ZERO, null);
     }
 
@@ -37,13 +37,13 @@ public class SRD_NanobotsPlugin extends BaseEveryFrameCombatPlugin {
 
     //The volume of the arrival sound, this is then multiplied by x/100, where x is the amount of "metal"
     //carried by the swarm
-    private static final float SOUND_VOLUME_SCALE = 0.1f;
+    private static final float SOUND_VOLUME_SCALE = 0.07f;
 
     //The size of a given nanobot swarm's width, in SU, per piece of "metal" it has
-    private static final float SIZE_MULT = 0.75f;
+    private static final float SIZE_MULT = 0.9f;
 
     //The ID used for storing all "metal" as used in the plugin
-    private static final String EFFECT_METAL_ID = "SRD_NanobotsMetalEffectID";
+    public static final String EFFECT_METAL_ID = "SRD_NanobotsMetalEffectID";
 
     //In-script variable; keeps track of our nanobots
     private List<NanobotData> nanobotList = new ArrayList<>();
@@ -142,8 +142,8 @@ public class SRD_NanobotsPlugin extends BaseEveryFrameCombatPlugin {
             //If we're really close to the weapon, increase our turn rate to more easily hit it
             float distanceToGun = MathUtils.getDistance(position, associatedWeapon.getLocation());
             float extraTurnMult = 1f;
-            if (distanceToGun < 100f) {
-                extraTurnMult = 3f - ((100f+distanceToGun)/100f);
+            if (distanceToGun < 300f) {
+                extraTurnMult = 4f - 3f*((distanceToGun)/300f);
             }
 
             //Gets the shortest rotation to our target, and clamps that rotation to our current turn rate
@@ -182,7 +182,7 @@ public class SRD_NanobotsPlugin extends BaseEveryFrameCombatPlugin {
                 }
 
                 //Also, spawn a little sound effect
-                Global.getSoundPlayer().playSound(ARRIVAL_SOUND, MathUtils.getRandomNumberInRange(0.9f, 1.1f), SOUND_VOLUME_SCALE, position, ship.getVelocity());
+                Global.getSoundPlayer().playSound(ARRIVAL_SOUND, MathUtils.clamp(1.3f-(carriedMass/10f),0.5f, 1.3f), SOUND_VOLUME_SCALE, position, ship.getVelocity());
             }
         }
     }

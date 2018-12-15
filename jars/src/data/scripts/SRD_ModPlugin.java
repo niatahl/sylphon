@@ -4,18 +4,13 @@ import com.fs.starfarer.api.BaseModPlugin;
 import com.fs.starfarer.api.Global;
 import com.fs.starfarer.api.campaign.SectorAPI;
 import com.fs.starfarer.api.combat.ShipHullSpecAPI;
-import com.fs.starfarer.api.impl.campaign.shared.SharedData;
 import com.fs.starfarer.api.loading.HullModSpecAPI;
-import com.fs.starfarer.api.util.Misc;
-import data.scripts.campaignPlugins.SRD_AIConversionNexerelinAdderPlugin;
-import data.scripts.campaignPlugins.SRD_KeepTrackOfSylphCorePlugin;
 import data.scripts.world.SRD_FactionRelationPlugin;
 import data.scripts.world.SRD_Nym;
 import data.scripts.world.SRD_Rofocale;
 import org.dark.shaders.light.LightData;
 import org.dark.shaders.util.ShaderLib;
 import org.dark.shaders.util.TextureData;
-import org.lazywizard.lazylib.campaign.CampaignUtils;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -46,13 +41,14 @@ public class SRD_ModPlugin extends BaseModPlugin {
             throw new RuntimeException("Sylphon RnD is not compatible with Starsector FX");
         }
 
+        /* VERY TEMP
         boolean hasGraphicsLib = Global.getSettings().getModManager().isModEnabled("shaderLib");
-
-            if (hasGraphicsLib) {
-                ShaderLib.init();
-                LightData.readLightDataCSV("data/lights/SRD_lights.csv");
-                TextureData.readTextureDataCSV("data/lights/SRD_texture.csv");
-            }
+        if (hasGraphicsLib) {
+            ShaderLib.init();
+            LightData.readLightDataCSV("data/lights/SRD_lights.csv");
+            TextureData.readTextureDataCSV("data/lights/SRD_texture.csv");
+        }
+        */
 
 
 

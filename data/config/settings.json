@@ -43,6 +43,9 @@
 			"lens_flare":"graphics/sylphon/fx/SRD_lens_flare.png",
 			"divinity_shot_glow":"graphics/sylphon/missiles/SRD_divinity_shot_glow.png",
 			"nanobot_trail":"graphics/sylphon/fx/SRD_nanite_trail.png",
+			"nanobot_swarm_circle_low":"graphics/sylphon/fx/SRD_nanite_shroud_base.png",
+			"nanobot_swarm_circle_mid":"graphics/sylphon/fx/SRD_nanite_shroud_core.png",
+			"nanobot_swarm_circle_top":"graphics/sylphon/fx/SRD_nanite_shroud_top.png",
 		},
 		"SRD_veritas_shots":{
 			"1":"graphics/sylphon/missiles/SRD_adloquium_slug.png",

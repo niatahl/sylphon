@@ -22,7 +22,7 @@ Dread Eagle,SRD_Eagle,Cruiser,Sylphon RnD,SRD_creeper_device,17,8000,500,10000,1
 Valestri,SRD_Valestri,Heavy Cruiser,Sylphon RnD,SRD_armor_polarization,30,10000,1200,15000,,700,170,2,50,20,15,10,10,2400,FRONT,,160,0.3,0.9,,,120,180,120,100,3,25,7,75000,3,20,540,0.25,30,30,,sylphon_core_bp,,0.5,2,3,59432
 #Okarra,SRD_Okarra,Heavy Cruiser,Sylphon RnD,SRD_armor_polarization,15,10000,1200,16000,9000,600,180,,55,15,8,12,12,2250,FRONT,,180,0.3,0.9,,,100,150,150,150,5,30,8,70000,4,12,540,0.25,28,28,,sylphon_high_bp,,0.4,2,3,59439
 Eolia,SRD_Eolia,Drone Carrier,Sylphon RnD,SRD_nullfield_catalyst,20,6000,500,12000,17000,600,170,3,60,35,20,15,15,1700,OMNI,,180,0.3,0.8,,,100,300,150,100,3,35,8,50000,3,20,540,0.25,26,26,"CARRIER, COMBAT",sylphon_high_bp,,0.5,2,3,59430
-Sylvetra,SRD_Sylvetra,Missile Cruiser,Sylphon RnD,SRD_autoforge,20,8000,1000,8000,17000,300,100,,70,55,35,25,20,1500,OMNI,,50,0.3,0.8,,,0,100,150,100,3,35,8,90000,3,20,540,0.25,30,30,,sylphon_ex_bp,,0.5,2,3,59430
+Sylvetra,SRD_Sylvetra,Missile Cruiser,Sylphon RnD,SRD_nanobot_swarm,20,8000,1000,8000,17000,300,100,,70,55,35,25,20,1500,OMNI,,50,0.3,0.8,,,0,100,150,100,3,35,8,90000,3,20,540,0.25,30,30,,sylphon_ex_bp,,0.5,2,3,59430
 Synastry,SRD_Synastry,EWAR Cruiser,Sylphon RnD,interdictor,20,6000,500,12000,,700,110,,60,70,40,30,30,1600,FRONT,,250,0.3,0.9,,,0,100,150,120,3,40,9,80000,3,20,480,0.25,30,30,,"sylphon_ex_bp, rare_bp",0.5,0.5,2,3,55813
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 #capitals,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,

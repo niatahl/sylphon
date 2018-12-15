@@ -75,9 +75,9 @@ public class SRD_NanobotBeamEffect implements BeamEffectPlugin {
 
                 //And spawn a swarm with our tasty, tasty metal
                 float angleToSpawnAt = VectorUtils.getAngle(beam.getTo(), beam.getFrom());
-                angleToSpawnAt += MathUtils.getRandomNumberInRange(-60f, 60f);
-                SRD_NanobotsPlugin.SpawnNanobotSwarm(weapon, damageMult*EXTRA_DPS*counter*LOOT_MULT, angleToSpawnAt, MathUtils.getRandomNumberInRange(90f, 130f),
-                        MathUtils.getRandomNumberInRange(500f, 700f), new Vector2f(beam.getTo()));
+                angleToSpawnAt += MathUtils.getRandomNumberInRange(-65f, 65f);
+                SRD_NanobotsPlugin.SpawnNanobotSwarm(weapon, damageMult*EXTRA_DPS*counter*LOOT_MULT, angleToSpawnAt, MathUtils.getRandomNumberInRange(150f, 190f),
+                        MathUtils.getRandomNumberInRange(550f, 700f), new Vector2f(beam.getTo()));
 
                 //Oh, and reset that counter. Important.
                 counter = 0f;
@@ -89,9 +89,9 @@ public class SRD_NanobotBeamEffect implements BeamEffectPlugin {
 
                 //And spawn a swarm
                 float angleToSpawnAt = VectorUtils.getAngle(beam.getTo(), beam.getFrom());
-                angleToSpawnAt += MathUtils.getRandomNumberInRange(-60f, 60f);
-                SRD_NanobotsPlugin.SpawnNanobotSwarm(weapon, EXTRA_DPS*counter*LOOT_MULT, angleToSpawnAt, MathUtils.getRandomNumberInRange(90f, 130f),
-                        MathUtils.getRandomNumberInRange(500f, 700f), new Vector2f(beam.getTo()));
+                angleToSpawnAt += MathUtils.getRandomNumberInRange(-65f, 65f);
+                SRD_NanobotsPlugin.SpawnNanobotSwarm(weapon, EXTRA_DPS*counter*LOOT_MULT, angleToSpawnAt, MathUtils.getRandomNumberInRange(150f, 190f),
+                        MathUtils.getRandomNumberInRange(550f, 700f), new Vector2f(beam.getTo()));
 
                 //Oh, and reset that counter. Important.
                 counter = 0f;
