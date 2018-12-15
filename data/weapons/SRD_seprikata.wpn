@@ -25,6 +25,7 @@
     0,
     0,
     0,
+    0,
     0
   ],
   "hardpointGlowSprite": "graphics/sylphon/weapons/SRD_seprikata_hardpoint_glow.png",
@@ -35,6 +36,8 @@
     0,
     14,
     -0,
+    14,
+    0,
     14,
     0
   ],
@@ -60,6 +63,7 @@
     0,
     0,
     0,
+    0,
     0
   ],
   "turretGlowSprite": "graphics/sylphon/weapons/SRD_seprikata_turret_glow.png",
@@ -67,11 +71,13 @@
     8.5,
     0,
     8.5,
-    -0,
+    0,
     8.5,
     0,
     8.5,
-    -0
+    0,
+    8.5,
+    0
   ],
   "turretSprite": "graphics/sylphon/weapons/SRD_seprikata_turret.png",
   "type": "ENERGY",

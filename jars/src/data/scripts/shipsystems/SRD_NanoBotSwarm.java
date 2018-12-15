@@ -23,22 +23,26 @@ import java.util.Map;
 
 public class SRD_NanoBotSwarm extends BaseShipSystemScript {
     /* - GENERAL STATS FOR NANOBOTS - */
-    //How much "base" metal do we need per OP of missile weapon refilled?
-    private static final float BASE_METAL_COST_PER_OP = 80f;
+    //How much "base" metal do we need per OP of missile weapon refilled? THe "final" refill cost depends on the maximum
+    //ammo of the missile; more ammo=less cost per missile (but not linearly, only x^0.75 effect).
+    private static final float BASE_METAL_COST_PER_OP = 180f;
 
-    //How much "base" metal do we need per % of armor restored (in a single armor cell)?
-    private static final float BASE_METAL_COST_PER_ARMOR_PERCENT = 7f;
+    //How much "base" metal do we need per point of armor restored (in a single armor cell)?
+    private static final float BASE_METAL_COST_PER_ARMOR = 0.25f;
+
+    //How high can the armor be repaired, at most, in an armor cell? Counted as a fraction
+    private static final float MAX_ARMOR_REPAIR = 0.5f;
 
 
     /* - SWARM STATS - */
     //How big is the effect's AoE (in radius)? This both affects visuals and actual calculations
-    private static final float NANOBOT_AOE = 400f;
+    private static final float NANOBOT_AOE = 370f;
 
     //How "thick" is the AoE? IE how far inwards does it go from its outer limit?
-    private static final float NANOBOT_AOE_THICKNESS = 275f;
+    private static final float NANOBOT_AOE_THICKNESS = 160f;
 
     //How much less damage do we do to "proper" (non-fighter, non-missile, non-asteroid) ships?
-    private static final float BIG_DAMAGE_MULT = 0.35f;
+    private static final float BIG_DAMAGE_MULT = 0.45f;
 
     //How large a percentage of our damage is returned as "metal"
     private static final float LOOT_MULT = 0.35f;
@@ -49,8 +53,8 @@ public class SRD_NanoBotSwarm extends BaseShipSystemScript {
     //How much the damage varies; it feels more natural this way.
     private static final float NANOBOT_DAMAGE_VARIATION = 0.25f;
 
-    //The chance to hit each frame, setting this higher indirectly lowers metal/bot swarm
-    private static final float HIT_RATE_MULT = 0.15f;
+    //The chance to hit each frame, setting this higher indirectly lowers metal per individual return swarm
+    private static final float HIT_RATE_MULT = 0.13f;
 
     //The angle between individual hit checks against non-fighter ships: higher means less accurate hit-checking, less
     //damage to large ships (should be handled in BIG_DAMAGE_MULT instead) and bigger distance between hit locations
@@ -62,6 +66,9 @@ public class SRD_NanoBotSwarm extends BaseShipSystemScript {
 
 
     /* - VISUALS - */
+    //How much "bigger" is the total sprite compared to the actual area encompassed by the swarm?
+    private static final float VISUAL_SIZE_INCREASE = 40f;
+
     //How fast does the bottom layer spin (in degrees/second)?
     private static final float VISUAL_SPIN_BOT = 200f;
 
@@ -119,15 +126,15 @@ public class SRD_NanoBotSwarm extends BaseShipSystemScript {
         spinCounterTop += amount * VISUAL_SPIN_TOP;
         Color colorToUse = new Color (1f, 1f, 1f, effectLevel*0.5f);
         MagicRender.objectspace(Global.getSettings().getSprite("SRD_fx", "nanobot_swarm_circle_low"), ship, Misc.ZERO,
-                Misc.ZERO, new Vector2f(NANOBOT_AOE*2f*effectLevel, NANOBOT_AOE*2f*effectLevel), Misc.ZERO, spinCounterBot,
-                VISUAL_SPIN_BOT, true, colorToUse, false, 0f, 0.02f, 0.04f, true);
+                Misc.ZERO, new Vector2f((NANOBOT_AOE+VISUAL_SIZE_INCREASE)*2f*effectLevel, NANOBOT_AOE*2f*effectLevel), Misc.ZERO,
+                spinCounterBot, VISUAL_SPIN_BOT, true, colorToUse, false, 0f, 0.02f, 0.04f, true);
         MagicRender.objectspace(Global.getSettings().getSprite("SRD_fx", "nanobot_swarm_circle_mid"), ship, Misc.ZERO,
-                Misc.ZERO, new Vector2f(NANOBOT_AOE*2f*effectLevel, NANOBOT_AOE*2f*effectLevel), Misc.ZERO, spinCounterMid,
-                VISUAL_SPIN_MID, true, colorToUse, false, 0f, 0.02f, 0.04f, true);
+                Misc.ZERO, new Vector2f((NANOBOT_AOE+VISUAL_SIZE_INCREASE)*2f*effectLevel, NANOBOT_AOE*2f*effectLevel), Misc.ZERO,
+                spinCounterMid, VISUAL_SPIN_MID, true, colorToUse, false, 0f, 0.02f, 0.04f, true);
         MagicRender.objectspace(Global.getSettings().getSprite("SRD_fx", "nanobot_swarm_circle_top"), ship, Misc.ZERO,
-                Misc.ZERO, new Vector2f(NANOBOT_AOE*2f*effectLevel, NANOBOT_AOE*2f*effectLevel), Misc.ZERO, spinCounterTop,
-                VISUAL_SPIN_TOP, true, colorToUse, false, 0f, 0.02f, 0.04f, true);
-        /*
+                Misc.ZERO, new Vector2f((NANOBOT_AOE+VISUAL_SIZE_INCREASE)*2f*effectLevel, NANOBOT_AOE*2f*effectLevel), Misc.ZERO,
+                spinCounterTop, VISUAL_SPIN_TOP, true, colorToUse, false, 0f, 0.02f, 0.04f, true);
+        /* OLD, DEPRECATED VISUALS
         MagicRender.singleframe(Global.getSettings().getSprite("SRD_fx", "nanobot_swarm_circle_low"), ship.getLocation(),
                 new Vector2f(NANOBOT_AOE*2f*effectLevel, NANOBOT_AOE*2f*effectLevel), spinCounterBot, colorToUse, false);
         MagicRender.singleframe(Global.getSettings().getSprite("SRD_fx", "nanobot_swarm_circle_mid"), ship.getLocation(),
@@ -159,11 +166,8 @@ public class SRD_NanoBotSwarm extends BaseShipSystemScript {
     }
 
 
-    //Status data
+    //Status data : we don't really have any to display, just return null
     public StatusData getStatusData(int index, State state, float effectLevel) {
-        if (index == 0 ) {
-            return new StatusData("Nanobot Swarm: Deployed", false);
-        }
         return null;
     }
 
@@ -197,29 +201,35 @@ public class SRD_NanoBotSwarm extends BaseShipSystemScript {
                 mslWeapons.add(wep);
             }
 
-            //If we have no weapons needing ammo, start repairing armor (up to a maximum)
+            //If we have no weapons needing ammo, start repairing armor at 100% metal (up to a maximum), instead
+            //of using 70% for ammo instead
+            float metalToDisposeArmor = metalToDispose * 0.3f;
+            float metalToDisposeAmmo = metalToDispose * 0.7f;
             if (mslWeapons.isEmpty()) {
-                //Gets the size of the armor grid
-                ArmorGridAPI grid = ship.getArmorGrid();
-                int maxX = grid.getLeftOf() + grid.getRightOf();
-                int maxY = grid.getAbove() + grid.getBelow();
+                metalToDisposeArmor = metalToDispose;
+                metalToDisposeAmmo = 0f;
+            }
 
-                //Iterate through the entire grid
-                for (int i1 = 0 ; i1 < maxX ; i1++) {
-                    for (int i2 = 0 ; i2 < maxY ; i2++) {
-                        //If this armor grid is below half, repair
-                        if (grid.getArmorValue(i1, i2) < 0.5f) {
-                            //Calculates a new value, but ensure it's within 0f-0.5f
-                            float newValue = grid.getArmorValue(i1, i2) + metalToDispose / (BASE_METAL_COST_PER_ARMOR_PERCENT*100f*maxX*maxY);
-                            newValue = Math.max(0f, Math.min(0.5f, newValue));
-                            grid.setArmorValue(i1, i2, newValue);
-                        }
+            //Armor repair; gets the size of the armor grid
+            ArmorGridAPI grid = ship.getArmorGrid();
+            int maxX = grid.getLeftOf() + grid.getRightOf();
+            int maxY = grid.getAbove() + grid.getBelow();
+
+            //And iterate through the entire grid
+            for (int i1 = 0 ; i1 < maxX ; i1++) {
+                for (int i2 = 0 ; i2 < maxY ; i2++) {
+                    //If this armor grid is below the repair maximum, repair
+                    if (grid.getArmorValue(i1, i2) < grid.getMaxArmorInCell()*MAX_ARMOR_REPAIR) {
+                        //Calculates a new value, but ensure it's within 0f and MAX_ARMOR_REPAIRED
+                        float newValue = grid.getArmorValue(i1, i2) + metalToDisposeArmor / (BASE_METAL_COST_PER_ARMOR*maxX*maxY);
+                        newValue = Math.max(0f, Math.min(grid.getMaxArmorInCell()*MAX_ARMOR_REPAIR, newValue));
+                        grid.setArmorValue(i1, i2, newValue);
                     }
                 }
             }
 
-            //Otherwise, we allocate our metal as ammo to our missile weapons
-            else {
+            //Don't try to iterate through missile weapons if we don't have any
+            if (!mslWeapons.isEmpty()) {
                 for (WeaponAPI wep : mslWeapons) {
                     //Bonus partial ammo left over from previous frames
                     float previousAmmo = 0f;
@@ -228,11 +238,14 @@ public class SRD_NanoBotSwarm extends BaseShipSystemScript {
                     }
 
                     //Get the OP cost and max ammo of the weapon: these are the core factors for determining metal cost
+                    //Note that maxAmmoCalc is max ammo for the purpose of calculating metal cost; it doesn't scale
+                    //linearly. It's also reduced by extended missile racks, since those increase missile max ammo
                     float OP = wep.getSpec().getOrdnancePointCost(ship.getCaptain().getStats());
-                    float maxAmmo = wep.getSpec().getMaxAmmo();
+                    float maxAmmoCalc = (float)Math.pow(wep.getSpec().getMaxAmmo(), 0.75f);
+                    if (ship.getVariant().getHullMods().contains("missleracks")) { maxAmmoCalc /= 2f; }
 
                     //Now, refill ammo by a fraction depending on our our metal cost
-                    float newAmmo = wep.getAmmo() + (maxAmmo * metalToDispose) / (mslWeapons.size() * BASE_METAL_COST_PER_OP * OP) + previousAmmo;
+                    float newAmmo = wep.getAmmo() + (maxAmmoCalc * metalToDisposeAmmo) / (mslWeapons.size() * BASE_METAL_COST_PER_OP * OP) + previousAmmo;
                     if (newAmmo > wep.getMaxAmmo()) { newAmmo = wep.getMaxAmmo(); }
                     wep.setAmmo((int)Math.floor(newAmmo));
 
@@ -269,6 +282,7 @@ public class SRD_NanoBotSwarm extends BaseShipSystemScript {
                 }
 
                 //And reduce projectile damage; note that we can never reduce projectiles entirely, just down to 10% of their max
+                spawnSpark(damageReduction, MathUtils.getRandomPointInCircle(target.getLocation(), target.getCollisionRadius()), new Vector2f(target.getVelocity()));
                 ((DamagingProjectileAPI) target).setDamageAmount(Math.max(((DamagingProjectileAPI) target).getBaseDamageAmount()*0.1f,
                         ((DamagingProjectileAPI) target).getDamageAmount()-damageReduction));
             } else {
@@ -294,6 +308,7 @@ public class SRD_NanoBotSwarm extends BaseShipSystemScript {
             }
 
             //Alright, no shields... just deal damage and spawn swarms!
+            spawnSpark(damageToDeal, MathUtils.getRandomPointInCircle(target.getLocation(), target.getCollisionRadius()), new Vector2f(target.getVelocity()));
             Global.getCombatEngine().applyDamage(target, target.getLocation(), damageToDeal, DamageType.FRAGMENTATION, 0f, true,
                     false, ship, true);
 
@@ -374,6 +389,7 @@ public class SRD_NanoBotSwarm extends BaseShipSystemScript {
             angleToSpawnAt += MathUtils.getRandomNumberInRange(-55f, 55f);
             SRD_NanobotsPlugin.SpawnNanobotSwarm(getRandomNanobotWeapon(ship), damageToDeal*LOOT_MULT, angleToSpawnAt, MathUtils.getRandomNumberInRange(190f, 240f),
                     MathUtils.getRandomNumberInRange(475f, 600f), hitLocation);
+            spawnSpark(damageToDeal, hitLocation, new Vector2f(target.getVelocity()));
             Global.getCombatEngine().applyDamage(target, hitLocation, damageToDeal, DamageType.FRAGMENTATION, 0f, true,
                     false, ship, true);
         }
@@ -391,5 +407,10 @@ public class SRD_NanoBotSwarm extends BaseShipSystemScript {
         }
 
         return (validGuns.get(MathUtils.getRandomNumberInRange(0, validGuns.size()-1)));
+    }
+
+    //Mini-function for spawning a spark. I just wanted to out-source the thing, there's no good reason for having it out here
+    private void spawnSpark (float damage, Vector2f position, Vector2f targetVelocity) {
+        Global.getCombatEngine().addHitParticle(position, targetVelocity, (float)Math.sqrt(damage), 1f, 0.1f, Color.ORANGE);
     }
 }

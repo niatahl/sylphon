@@ -41,14 +41,12 @@ public class SRD_ModPlugin extends BaseModPlugin {
             throw new RuntimeException("Sylphon RnD is not compatible with Starsector FX");
         }
 
-        /* VERY TEMP
         boolean hasGraphicsLib = Global.getSettings().getModManager().isModEnabled("shaderLib");
         if (hasGraphicsLib) {
             ShaderLib.init();
             LightData.readLightDataCSV("data/lights/SRD_lights.csv");
             TextureData.readTextureDataCSV("data/lights/SRD_texture.csv");
         }
-        */
 
 
 

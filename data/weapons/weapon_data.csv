@@ -2,7 +2,7 @@ name,id,tier,rarity,base value,range,damage/second,damage/shot,emp,impact,turn r
 Condemnation,SRD_paratach,3,0.5,20000,800,2000,,,0,7,22,,,,HIGH_EXPLOSIVE,,2000,0.5,0.5,0.5,4,,,,,10000,,,,,,"he18, beam15, sylphon_ex_bp, rare_bp",,Sylphon RnD,,Anti Armor,,,,,,,,,,1308
 Purgatory,SRD_skalla,3,1,22000,800,,300,200,20,10,24,,,,ENERGY,350,,,1.7,3,0.2,0,0,0,0,,1000,,,,,"energy16, sylphon_high_bp",,Sylphon RnD,,General,,,,,Has a %s chance to generate 1-4 EMP arcs on direct hits,25%,,,,1311
 Disavowal PD,SRD_venn,2,1,500,500,350,,,0,100,7,3,1,,ENERGY,,100,0.1,0,0.3,0.05,,,,,10000,,,,,PD,"pd9, beam6, sylphon_ex_bp, rare_bp",,Sylphon RnD,,Point Defense,,,,,,,,,,1312
-Radiant Dawn,SRD_seprikata,3,1,9000,850,600,,,5,15,19,,,,ENERGY,,600,2,1,,,,,,,2400,,,,,,"beam15, SRD_ROTATING_BEAM_FULL_CONVERGE, SRD_ROTATING_BEAM_CENTER_BEAM, sylphon_high_bp",,Sylphon RnD,,Anti Shield,,,,,,,,,,1313
+Radiant Dawn,SRD_seprikata,3,1,9000,850,600,,,5,15,19,,,,ENERGY,,600,2,1,,,,,,,2400,,,,,,"beam15, SRD_ROTATING_BEAM_FULL_CONVERGE_OFFSET, SRD_ROTATING_BEAM_CENTER_BEAM, sylphon_high_bp",,Sylphon RnD,,Anti Shield,,,,,,,,,,1313
 Zealot Repeater,SRD_zealot,2,1,3400,800,,20,10,5,35,12,,,,KINETIC,20,,0,0.8,3,0.1,,,,,,900,,,,,"kinetic11, sylphon_core_bp",,Sylphon RnD,,Anti Shield,,,,,,,,,,1314
 Clemency Pulse,SRD_clemency,2,1,4000,500,,400,400,,40,12,,,,FRAGMENTATION,300,,0.1,1,,,1,1,1,1,,5000,,,100,PD,"pd16, sylphon_ex_bp, rare_bp",,Sylphon RnD,,Point Defense,,,,,Shots chain remaining damage to nearby secondary targets,,,,,1315
 Adloquium,SRD_adloquium,3,0.4,21000,800,,500,,50,15,24,,,,ENERGY,600,,0.2,7,3,0.5,,,,1,10000,1500,,,20,,"energy17, sylphon_ex_bp, rare_bp",,Sylphon RnD,,General,,,,,Deals %s damage with its first two shots and %s damage with its final shot,750 | 1500,,,,1317
