@@ -42,10 +42,13 @@ public class SRD_NanoBotSwarm extends BaseShipSystemScript {
     private static final float NANOBOT_AOE_THICKNESS = 160f;
 
     //How much less damage do we do to "proper" (non-fighter, non-missile, non-asteroid) ships?
-    private static final float BIG_DAMAGE_MULT = 0.45f;
+    private static final float BIG_DAMAGE_MULT = 0.75f;
 
     //How large a percentage of our damage is returned as "metal"
     private static final float LOOT_MULT = 0.35f;
+
+    //How much less metal do we get from ships and fighters?
+    private static final float SHIP_LOOT_MULT = 0.30f;
 
     //Damage per second against each target
     private static final float NANOBOT_DPS = 400f;
@@ -314,7 +317,7 @@ public class SRD_NanoBotSwarm extends BaseShipSystemScript {
 
             float angleToSpawnAt = VectorUtils.getAngle(target.getLocation(), ship.getLocation());
             angleToSpawnAt += MathUtils.getRandomNumberInRange(-55f, 55f);
-            SRD_NanobotsPlugin.SpawnNanobotSwarm(getRandomNanobotWeapon(ship), damageToDeal*LOOT_MULT, angleToSpawnAt, MathUtils.getRandomNumberInRange(190f, 240f),
+            SRD_NanobotsPlugin.SpawnNanobotSwarm(getRandomNanobotWeapon(ship), damageToDeal*LOOT_MULT*SHIP_LOOT_MULT, angleToSpawnAt, MathUtils.getRandomNumberInRange(190f, 240f),
                     MathUtils.getRandomNumberInRange(475f, 600f), new Vector2f(target.getLocation()));
         }
     }
@@ -387,7 +390,7 @@ public class SRD_NanoBotSwarm extends BaseShipSystemScript {
             float damageToDeal = MathUtils.getRandomNumberInRange(1f-NANOBOT_DAMAGE_VARIATION, 1f+NANOBOT_DAMAGE_VARIATION)*NANOBOT_DPS*BIG_DAMAGE_MULT*amount/(HIT_RATE_MULT);
             float angleToSpawnAt = VectorUtils.getAngle(hitLocation, ship.getLocation());
             angleToSpawnAt += MathUtils.getRandomNumberInRange(-55f, 55f);
-            SRD_NanobotsPlugin.SpawnNanobotSwarm(getRandomNanobotWeapon(ship), damageToDeal*LOOT_MULT, angleToSpawnAt, MathUtils.getRandomNumberInRange(190f, 240f),
+            SRD_NanobotsPlugin.SpawnNanobotSwarm(getRandomNanobotWeapon(ship), damageToDeal*LOOT_MULT*SHIP_LOOT_MULT, angleToSpawnAt, MathUtils.getRandomNumberInRange(190f, 240f),
                     MathUtils.getRandomNumberInRange(475f, 600f), hitLocation);
             spawnSpark(damageToDeal, hitLocation, new Vector2f(target.getVelocity()));
             Global.getCombatEngine().applyDamage(target, hitLocation, damageToDeal, DamageType.FRAGMENTATION, 0f, true,

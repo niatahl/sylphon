@@ -12,13 +12,13 @@ import java.awt.*;
 
 public class SRD_NanobotBeamEffect implements BeamEffectPlugin {
     //How large a percentage of our damage is returned as "metal"
-    private static final float LOOT_MULT = 0.5f;
+    private static final float LOOT_MULT = 0.6f;
 
     //How much less damage do we do to "proper" (non-fighter, non-missile, non-asteroid) ships?
-    private static final float BIG_DAMAGE_MULT = 0.4f;
+    private static final float BIG_DAMAGE_MULT = 0.35f;
 
     //How much extra damage does our beam do as "disassembly damage" per second
-    private static final float EXTRA_DPS = 200f;
+    private static final float EXTRA_DPS = 400f;
 
     //The shortest allowed time between two nanobot swarms spawning
     private static final float MIN_WAIT = 0.10f;
