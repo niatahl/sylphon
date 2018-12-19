@@ -371,6 +371,11 @@ public class SRD_NanoBotSwarm extends BaseShipSystemScript {
 
             //If this hit missed completely, try another point further away in the AOE
             if (!CollisionUtils.isPointWithinBounds(hitLocation, target)) {
+                hitLocation = MathUtils.getPoint(ship.getLocation(), NANOBOT_AOE-(NANOBOT_AOE_THICKNESS*0.5f), angleToTarget+ang);
+            }
+
+            //If this hit *also* missed completely, try *another* point *even further* away in the AOE
+            if (!CollisionUtils.isPointWithinBounds(hitLocation, target)) {
                 hitLocation = MathUtils.getPoint(ship.getLocation(), NANOBOT_AOE, angleToTarget+ang);
             }
 
