@@ -61,7 +61,7 @@ Phira,SRD_phira_burst,3,0,9999,1000,,270,,50,10,24,,,,HIGH_EXPLOSIVE,330,,,1.7,3
 Phira Impact,SRD_phira_impact,3,0,9999,1000,,230,,100,10,24,,,,KINETIC,300,,,1.7,3,0.2,,,,,,1200,,,,SYSTEM,kinetic20,,Sylphon Outcast,,,,,,,,,,,,454
 Phira Shock,SRD_phira_shock,3,0,9999,1000,,300,200,20,10,24,,,,ENERGY,350,,,1.7,3,0.2,0,0,0,0,,1200,,,,SYSTEM,energy20,,Sylphon Outcast,,,,,,,,,,,,467
 Vedra,SRD_vedra,1,,200,500,100,,,0,100,4,,,,ENERGY,,100,0,0.25,,,,,,,2400,,,,,"PD, SYSTEM","pd7, beam7, SR",,Sylphon RnD,,Point Defense,,,,,,,,,,17
-Dekris,SRD_dekris,1,,200,600,125,,,0,100,4,,,,ENERGY,,250,0,0.25,,,,,,,2400,,,,,"PD, SYSTEM","pd7, beam7, SR",,Sylphon RnD,,Point Defense,,,,,,,,,,17
+Dekris,SRD_dekris,1,,200,600,200,,,0,100,4,,,,ENERGY,,200,0,0.25,,,,,,,2400,,,,,"PD, SYSTEM","pd7, beam7, SR",,Sylphon RnD,,Point Defense,,,,,,,,,,17
 Apocatastasis,SRD_apoc,3,0.5,20000,1000,400,,500,10,7,22,,,,ENERGY,,600,0,0,3,6,,,,,10000,,,,,SYSTEM,"energy20, beam15",,Sylphon RnD,,Support,,,,,Increases target's damage taken while beam is connecting,,,,,1308
 Harmonius,SRD_harmonius,3,1,50000,1500,,1000,1000,200,4,30,,,,ENERGY,1500,,0.5,4,1,,0,0,0,0,,1500,,,500,SYSTEM,energy30,,Sylphon RnD,,,,,,,Built-In Only,,,,,1318
 Demiurge,SRD_demiurge,3,0.5,15000,700,1000,,,0,14,14,1,0.1,,ENERGY,,1000,0.5,0.5,1,1,,,,,10000,,,,,SYSTEM,energy20,,Sylphon RnD,,Anti Armor,,,,,,,,,,1308

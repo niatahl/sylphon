@@ -14,6 +14,7 @@ Changes:
 - Reworked the Sylph Core installation code so that it now uses skins instead of wierd behind-the-scenes magic
 - Upgraded Replekia with fancy vernier thrusters
 - Reworked Valestri to fit the Okarra's now vacant role as anvil
+- Changed the sounds of the Götterdämmerung (credits to MesoTroniK)
 
 Balancing:
 - Increased Equilibrium supply costs to 55/55
@@ -22,17 +23,9 @@ Balancing:
 0.9.1
 Additions:
 - Added the Synastry and its built-in weapon, the Apocatastasis [say *that* fast 5 times]
-- Added the Networked Targeting Linkup hullmod, which is exclusive to Sylph Core ships
 - Added some secret things that aren't yet obtainable
-- Added the Sylvetra nanotech cruiser
-
-Removals:
-- Removed Okarra
-- Removed Hymnon
-- Removed Hubris
 
 Changes:
-- Reworked the Sylph Core installation code so that it now uses skins instead of wierd behind-the-scenes magic
 - The Frelia no longer has super-heavy mount points; instead, it has two large energy slots (which can still be turned to fighter bays if left empty)
 - Moved multiple weapon blueprints into the rare category
 - Added new sprites for Sylpheed Station and Ozma Station
@@ -42,8 +35,6 @@ Changes:
 - Adjusted blueprint rarities for most ships
 - Removed Sylphon experimental BP package
 - Updated autofit tags for most weapons
-- Upgraded Replekia with fancy vernier thrusters
-- Reworked Valestri to fit the Okarra's now vacant role as anvil
 
 Bugfixes:
 - Ozma Station is no longer a freeport *twice* (don't ask how that works): only works on new saves, unfortunately, but it's not serious enough to make a new save over anyhow

@@ -207,6 +207,11 @@
 			{"file":"sounds/sylphon/weapons/SRD_gotterdammerung_fire.ogg","pitch":1.0,"volume":1.0},
 		],
 	},
+	"SRD_gotterdammerung_onhit":{
+		"sounds":[
+			{"file":"sounds/sylphon/weapons/SRD_gotterdammerung_onhit.ogg","pitch":1.0,"volume":1.0},
+		],
+	},
 
 	"SRD_nullspace_lightning_impact":[
 		{"file":"sounds/sylphon/nullspace_fx/SRD_nullspace_lightning_1.ogg","pitch":1.15,"volume":0.35},

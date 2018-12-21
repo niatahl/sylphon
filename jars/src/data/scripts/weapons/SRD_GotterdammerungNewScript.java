@@ -16,6 +16,7 @@ public class SRD_GotterdammerungNewScript implements BeamEffectPlugin {
 
     private final String CHARGE_SOUND_ID = "SRD_gotterdammerung_chargeup";
     private final String FIRE_SOUND_ID = "SRD_gotterdammerung_fire";
+    private final String ONHIT_SOUND_ID = "SRD_gotterdammerung_onhit";
 
     private final Color MUZZLE_FLASH_COLOR = new Color(255, 50, 240, 255);
     private final Color MUZZLE_FLASH_COLOR_BRIGHT = new Color(255, 150, 240, 255);
@@ -116,6 +117,9 @@ public class SRD_GotterdammerungNewScript implements BeamEffectPlugin {
 
                 //Spawns a bigger on-hit particle
                 engine.addHitParticle(beam.getTo(), new Vector2f(0f, 0f), 400f, 0.2f, 0.35f, MUZZLE_FLASH_COLOR);
+
+                //TEST: And plays a neat sound for the on-hit
+                Global.getSoundPlayer().playSound(ONHIT_SOUND_ID, 1f, 1.25f, beam.getTo(), new Vector2f(0f, 0f));
             }
         }
 
