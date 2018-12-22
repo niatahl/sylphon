@@ -1,0 +1,47 @@
+{
+  "displayName": "Standard",
+  "fluxCapacitors": 5,
+  "fluxVents": 11,
+  "goalVariant": true,
+  "hullId": "SRD_Sylvetra",
+  "hullMods": [
+    "eccm",
+    "missleracks",
+    "targetingunit",
+    "turretgyros"
+  ],
+  "permaMods": [],
+  "quality": 0,
+  "variantId": "SRD_Sylvetra_standard",
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0011": "SRD_raphiel_pod",
+        "WS0012": "SRD_raphiel_pod"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0007": "SRD_iphrail",
+        "WS0008": "SRD_iphrail",
+        "WS0009": "SRD_iphrail",
+        "WS0010": "SRD_iphrail"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "SRD_dekris",
+        "WS0002": "SRD_dekris",
+        "WS0003": "SRD_dekris",
+        "WS0004": "SRD_dekris"
+      }
+    }
+  ],
+  "wings": []
+}
