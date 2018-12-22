@@ -77,6 +77,7 @@ SRD_Synastry,SHIP,"The Synastry is an advanced EWAR-Cruiser rarely seen in Sylph
 
 The first of these vessels were initially constructed in the early years after the First AI War from the recovered hulls of Brilliant-class cruisers. Originally intended as a makeshift surveying vessel in this new post-collapse world, the Synastry fulfilled its role better than initially expected. Following this initial success, a number of overhauls for the class were greenlit to turn what was once a makeshift vessel into a military-grade EWAR platform. While the increased complexity of these extensive upgrades eventually necessitated the integration of alpha-level cores to provide enough processing power to handle all its systems, the increased difficulty of finding willing alphas was a price well worth paying.",,,
 SRD_Vetra,SHIP,"A basic missile drone, carrying a single Raphiel-class missile. Simple but effective when supporting other strike craft to soften up targets.",,,
+SRD_Sylvetra,SHIP,"An experimental design, pushed into service only recently. In essence a massive nanomachine control unit, it is lightly armed and relies on its nanobot swarms for combat effectiveness, reusing disassembled enemy munitions to construct new missiles and repair armor damage.",,,
 ,,,,,
 SRD_Synastry_cieve,SHIP,"Once a member of the board of directors for many years, Cieve was often one of the rare AIs who regularly disagreed with the consensus, objecting to many of the corporation's isolationist policies. Whether it was a particular issue that caused her to leave the board is not known, but soon after she set out on her own in a Synastry-class cruiser to explore the sector by her own.
 
@@ -145,6 +146,8 @@ SRD_vedra,WEAPON,"The Vril's integrated PD-solution. While a simple design, its 
 SRD_apoc,WEAPON,"A high-powered multi-spectrum scanner, linked to the Synastry's EWAR suite. While primarily designed for long distance scans, it can also be utilised in combat. The intensity of the scanning beams alone makes them a destructive weapon, but the scanner's ability to quickly analyze a target's structure and transmit weakpoint data to allies is its real benefit.",,,
 SRD_enochian,WEAPON,"The Enochian is high-powered railgun linked to set of independent capacitors, designed to be discharged individually to allow the weapon to be fired as fast one could tap the trigger, leading to a highly flexible design with impressive burst potential. The penetrator rounds fired this weapon are based on the Ar Ciel design, carrying a newer plasma detonator capable of inflicting considerable damage to armor and hull.
 Arguably the most advanced railgun design ever developed by Sylphon RnD, the project was abandoned in favor of the Adloquium as it proved incompatible with the energy mounts of Sylphon ship designs. It was later revived by the eccentric Cieve to complement her unique Synastry modification which had been upgraded with compatible hybrid mounts. ",,,
+SRD_dekris,WEAPON,"Integral to the Sylvetra's function, these nanobot deployment units send out a steady stream of nanobots that will disassemble any enemy they come in contact with. As military-grade armor takes longer to disassemble, they will prioritize soft targets like missiles and strikecraft.",,,
+SRD_demiurge,WEAPON,"A massive counterforce discharge array linked to the Balance Unto All's conduit grid, the Demiurge is one of the first successful attempts to weaponize nullspace counterforce, to devastating effect.",,,
 ,,,,,
 ,,,,,
 # Ship Systems,,,,,
@@ -165,7 +168,8 @@ Type-3 Burst shells are high explosive proximity fuse shells, effective as PD an
 Impact Driver rounds possess high kinetic damage, ideal for shield suppression.
 Shock Cannon mode fires energy beams with high damage and EMP, effective against all targets.",Assault,Switch between 3 ammo types used by main cannons. Temporarily locks after firing.,
 SRD_slip_drive,SHIP_SYSTEM,Slip a short distance through nullspace.,Movement,Slip a short distance through nullspace.,
-SRD_nullfield_catalyst,SHIP_SYSTEM,"Project nullfield around fighters, boosting their agility and making them intangible.",Utility,Temporarily give fighters nullspace flight,
+SRD_nullfield_catalyst,SHIP_SYSTEM,"Project nullfield around fighters, boosting their agility and making them intangible.",Utility,Temporarily give fighters nullspace flight.,
+SRD_nanobot_swarm,SHIP_SYSTEM,"Deploys a large nanobot swarm to circle the Sylvetra, disassembling anything they come in contact with, including enemy projectiles, reducing their damage or destroying them entirely.",Defense,Deploy defensive nanobot swarm.,
 ,,,,,
 ,,,,,
 # Campaign,,,,,
