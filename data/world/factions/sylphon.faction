@@ -31,7 +31,8 @@
 			"sylphon_core_bp":10,
 			"sylphon_high_bp":8,
 			"sylphon_ex_bp":5,
-			"sylphon_outcast_bp":1,
+			"sylphon_outcast_bp":2,
+			"sylphon_ecc_bp":1,
 		},
 		"hulls":{
 		},
@@ -43,7 +44,7 @@
 		],
 	},
 	"knownShips":{
-		"tags":["sylphon_core_bp", "sylphon_high_bp", "sylphon_outcast_bp", "sylphon_ex_bp"],
+		"tags":["sylphon_core_bp", "sylphon_high_bp", "sylphon_outcast_bp", "sylphon_ex_bp", "sylphon_ecc_bp"],
 		"hulls":[
 		],
 	},
@@ -64,12 +65,12 @@
 		],
 	},
 	"knownWeapons":{
-		"tags":["missile_bp", "sylphon_core_bp", "sylphon_high_bp", "sylphon_outcast_bp", "sylphon_ex_bp"],
+		"tags":["missile_bp", "sylphon_core_bp", "sylphon_high_bp", "sylphon_outcast_bp", "sylphon_ex_bp", "sylphon_ecc_bp"],
 		"weapons":[
 		],
 	},
 	"priorityWeapons":{
-		"tags":["missile_bp", "sylphon_core_bp", "sylphon_high_bp"],
+		"tags":["missile_bp", "sylphon_core_bp", "sylphon_high_bp", "sylphon_ex_bp"],
 		"weapons":[
 		],
 	},
@@ -99,7 +100,8 @@
 			"SRD_modular_nullspace_conduits",
 			"SRD_prototype_miniature_nullspace_shunt",
 			"SRD_prototype_nullpoint_shield",
-			"SRD_prototype_local_stabilizer"
+			"SRD_prototype_local_stabilizer",
+			"SRD_targeting_linkup"
 		],
 	},
 	"factionDoctrine":{

@@ -3,7 +3,8 @@ Additions:
 - Added the Networked Targeting Linkup hullmod, which is exclusive to Sylph Core ships
 - Added the Sylvetra nanotech cruiser
 - More not yet available additions (unless you console them in)
-- Added GraphicsLib support
+- Added GraphicsLib support (GraphicsLib still won't be required, though. Things will just look nicer if you have it now)
+- Added a number of of special ships you may for now encounter randomly in Sylphon fleets on rare occasions
 
 Removals:
 - Removed Okarra
@@ -12,12 +13,18 @@ Removals:
 
 Changes:
 - Reworked the Sylph Core installation code so that it now uses skins instead of wierd behind-the-scenes magic
+- Sylph Core variants now have unique sprites
+- Updates to some sprites
 - Upgraded Replekia with fancy vernier thrusters
 - Reworked Valestri to fit the Okarra's now vacant role as anvil
 - Changed the sounds of the Götterdämmerung (credits to MesoTroniK)
 
 Balancing:
 - Increased Equilibrium supply costs to 55/55
+- Lowered Dread Eagle's dissipation from 750 to 500 and increased flux capacity from 10000 to 16000 (This is an experimental change to more firmly establish the Dread Eagle as a hit-and-run skirmisher. The Scourge Eagle remains unchanged as it's meant to be a different kind of ship)
+
+Known Issues:
+- Apocatastasis special effect doesn't apply properly, granting basically no damage bonus whatsoever (Laserboi is on the case)
 
 
 0.9.1
