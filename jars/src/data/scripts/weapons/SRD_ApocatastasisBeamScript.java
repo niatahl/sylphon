@@ -17,31 +17,28 @@ public class SRD_ApocatastasisBeamScript implements BeamEffectPlugin {
             return;
         }
 
-        if (beam.didDamageThisFrame()) {
+        //Saves well-used variables beforehand
+        WeaponAPI weapon = beam.getWeapon();
+        ShipAPI ship = weapon.getShip();
+        CombatEntityAPI target = beam.getDamageTarget();
 
-            //Saves well-used variables beforehand
-            WeaponAPI weapon = beam.getWeapon();
-            ShipAPI ship = weapon.getShip();
-            CombatEntityAPI target = beam.getDamageTarget();
-
-            //Only care about ships being hit
-            if (!(target instanceof ShipAPI)) {
-                return;
-            }
-            ShipAPI beamTarget = (ShipAPI) target;
-
-            //Checks if we hit shields or not
-            boolean hitShields = false;
-            if (beamTarget.getShield() != null && beamTarget.getShield().isOn() && beamTarget.getShield().isWithinArc(beam.getTo())) {
-                hitShields = true;
-            }
-
-            //Handle the effect via our everyFrameScript on the weapon
-            float effectToAdd = amount * DAMAGE_INCREASE_PER_SECOND_HULL;
-            if (hitShields) {
-                effectToAdd = amount * DAMAGE_INCREASE_PER_SECOND_SHIELDS;
-            }
-            ((SRD_ApocatastasisEveryFrameScript) weapon.getEffectPlugin()).addEffect(beamTarget, (effectToAdd+(SRD_ApocatastasisEveryFrameScript.DAMAGE_BONUS_LOSS_PER_SECOND*amount))/2f); //Divide by 2: 2 beams on the thing!
+        //Only care about ships being hit
+        if (!(target instanceof ShipAPI)) {
+            return;
         }
+        ShipAPI beamTarget = (ShipAPI) target;
+
+        //Checks if we hit shields or not
+        boolean hitShields = false;
+        if (beamTarget.getShield() != null && beamTarget.getShield().isOn() && beamTarget.getShield().isWithinArc(beam.getTo())) {
+            hitShields = true;
+        }
+
+        //Handle the effect via our everyFrameScript on the weapon
+        float effectToAdd = amount * DAMAGE_INCREASE_PER_SECOND_HULL;
+        if (hitShields) {
+            effectToAdd = amount * DAMAGE_INCREASE_PER_SECOND_SHIELDS;
+        }
+        ((SRD_ApocatastasisEveryFrameScript) weapon.getEffectPlugin()).addEffect(beamTarget, (effectToAdd+(SRD_ApocatastasisEveryFrameScript.DAMAGE_BONUS_LOSS_PER_SECOND*amount))/2f); //Divide by 2: 2 beams on the thing!
     }
 }

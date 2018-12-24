@@ -21,7 +21,7 @@ public class SRD_ApocatastasisEveryFrameScript implements EveryFrameWeaponEffect
     public static final float SLIDE_SPEED = 24f;
 
     //How fast the damage bonus from our on-hit script fades: defined in percent-per-second
-    public static final float DAMAGE_BONUS_LOSS_PER_SECOND = 0.15f;
+    public static final float DAMAGE_BONUS_LOSS_PER_SECOND = 0.25f;
 
     //Maximum damage increase we can have at a time
     public static final float MAX_DAMAGE_BONUS = 1f;
@@ -63,16 +63,18 @@ public class SRD_ApocatastasisEveryFrameScript implements EveryFrameWeaponEffect
                 continue;
             }
 
-            //Otherwise, we apply the damage bonus
+            //Otherwise, we apply the damage bonus, and display visual flair
             key.getMutableStats().getKineticDamageTakenMult().modifyMult(EFFECT_KEY+weapon.getId(), mainEffectMap.get(key)+1f);
             key.getMutableStats().getEnergyDamageTakenMult().modifyMult(EFFECT_KEY+weapon.getId(), mainEffectMap.get(key)+1f);
             key.getMutableStats().getHighExplosiveDamageTakenMult().modifyMult(EFFECT_KEY+weapon.getId(), mainEffectMap.get(key)+1f);
             key.getMutableStats().getFragmentationDamageTakenMult().modifyMult(EFFECT_KEY+weapon.getId(), mainEffectMap.get(key)+1f);
             key.getMutableStats().getShieldDamageTakenMult().modifyMult(EFFECT_KEY+weapon.getId(), (mainEffectMap.get(key)/2f)+1f);
+            key.setJitter(this, weapon.getSpec().getGlowColor(), mainEffectMap.get(key)*0.2f, Math.round(mainEffectMap.get(key)*8), mainEffectMap.get(key)*20f);
 
             //If this key is also the player ship, indicate that we're taking more damage
             if (key == engine.getPlayerShip()) {
-                Global.getCombatEngine().maintainStatusForPlayerShip(EFFECT_KEY + "_TOOLTIP", "graphics/icons/hullsys/entropy_amplifier.png", "Analyzed", "Taking additional damage", true);
+                Global.getCombatEngine().maintainStatusForPlayerShip(EFFECT_KEY + "_TOOLTIP", "graphics/icons/hullsys/entropy_amplifier.png",
+                        "Analyzed", "Taking " + Math.round(mainEffectMap.get(key)*100f) +  "% additional damage", true);
             }
         }
         //ACTUALLY remove the effect, since we can't remove inside a loop like an idiot *ahem* definitely not a bugfix *ahem*
