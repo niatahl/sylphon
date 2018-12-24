@@ -21,9 +21,9 @@ public class SRD_NanobotBeamEffect implements BeamEffectPlugin {
     private static final float EXTRA_DPS = 400f;
 
     //The shortest allowed time between two nanobot swarms spawning
-    private static final float MIN_WAIT = 0.10f;
+    private static final float MIN_WAIT = 0.05f;
     //The longest allowed time between two nanobot swarms spawning
-    private static final float MAX_WAIT = 0.18f;
+    private static final float MAX_WAIT = 0.09f;
 
     //Counters, to ensure we don't trigger too often, but still keep our DPS
     private float counter = 0f;
