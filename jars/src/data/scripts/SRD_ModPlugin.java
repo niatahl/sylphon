@@ -68,6 +68,8 @@ public class SRD_ModPlugin extends BaseModPlugin {
         //Adds sylph core hullmods
         SYLPH_CORE_HULLMODS.add("SRD_sylph_core");
         SYLPH_CORE_HULLMODS.add("SRD_eccentric_core_cieve");
+        SYLPH_CORE_HULLMODS.add("SRD_eccentric_core_balance");
+        SYLPH_CORE_HULLMODS.add("SRD_eccentric_core_takumi");
     }
 
 
