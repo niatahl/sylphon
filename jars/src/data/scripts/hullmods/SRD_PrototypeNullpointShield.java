@@ -84,7 +84,7 @@ public class SRD_PrototypeNullpointShield extends BaseHullMod {
         //Changes shield type to Frontal, if it isn't already. If it is already frontal, we decrease its arc
         if (ship.getShield().getType() == ShieldAPI.ShieldType.OMNI) {
             ship.getShield().setType(ShieldAPI.ShieldType.FRONT);
-        } else {
+        } else if (ship.getShield().getType() == ShieldAPI.ShieldType.FRONT) {
             ship.getShield().setArc(ship.getShield().getArc() * ARC_MULT_FRONT);
         }
     }
