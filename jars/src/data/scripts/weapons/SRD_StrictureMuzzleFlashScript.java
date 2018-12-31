@@ -2,6 +2,7 @@
 // Spawns particles from a weapon in different firing states, as determined by the user.
 package data.scripts.weapons;
 
+import com.fs.starfarer.api.Global;
 import com.fs.starfarer.api.combat.CombatEngineAPI;
 import com.fs.starfarer.api.combat.WeaponAPI;
 import org.lazywizard.lazylib.MathUtils;
@@ -152,6 +153,14 @@ public class SRD_StrictureMuzzleFlashScript {
         PARTICLE_ARC_FACING.put("default", 0f);
     }
 
+    //How far away from the screen's edge the particles are allowed to spawn. Lower values mean better performance, but
+    //too low values will cause pop-in of particles. Generally, the longer the particle's lifetime, the higher this
+    //value should be
+    private static final Map<String, Float> PARTICLE_SCREENSPACE_CULL_DISTANCE = new HashMap<>();
+    static {
+        PARTICLE_SCREENSPACE_CULL_DISTANCE.put("default", 450f);
+    }
+
 
     //-----------------------------------------------------------You don't need to touch stuff beyond this point!------------------------------------------------------------
 
@@ -192,7 +201,13 @@ public class SRD_StrictureMuzzleFlashScript {
         shouldOffsetBarrelExtra = sequenceState.contains("CHARGEDOWN") || sequenceState.contains("COOLDOWN");
 
         //We go through each of our particle systems and handle their particle spawning
+        //The screenspace is hard-coded for simplicity: if it somehow starts causing issues,
         for (String ID : USED_IDS) {
+            //Screenspace check: simplified but should do the trick 99% of the time
+            float screenspaceCullingDistance = PARTICLE_SCREENSPACE_CULL_DISTANCE.get("default");
+            if (PARTICLE_SCREENSPACE_CULL_DISTANCE.keySet().contains(ID)) { screenspaceCullingDistance = PARTICLE_SCREENSPACE_CULL_DISTANCE.get(ID); }
+            if (!engine.getViewport().isNearViewport(weapon.getLocation(), screenspaceCullingDistance)) {continue;}
+
             //Store all the values used for this check, and use default values if we don't have specific values for our ID specified
             //Note that particle count, specifically, is not declared here and is only used in more local if-cases
             boolean affectedByChargeLevel = AFFECTED_BY_CHARGELEVEL.get("default");
