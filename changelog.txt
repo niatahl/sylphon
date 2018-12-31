@@ -1,6 +1,29 @@
 ﻿0.9.2a
+Changes:
+- Catharsis is now a drone fighter
+
 Balancing:
 - The Nanobot Beam now deals its extra damage in smaller amounts at a time (same overall DPS)
+- Nerfed Catharsis across the board 
+- Furika dissipation lowered from 300 to 250
+- Replekia OP reduced from 310 to 260
+- Catora OP reduced from 55 to 50
+- Silverhead 
+	- dissipation reduced from 450 to 400
+	- top speed reduced to 70
+	- acceleration reduced to 60
+- Etrika top speed reduced to 60
+- Dread Eagle top speed reduced to 60
+- Eolia dissipation reduced to 400
+- Tilia dissipation reduced to 200
+- Tarima dissipation reduced to 350
+- Replekia dissipation reduced to 800
+- Ravana 
+	- hitpoints reduced to 400
+	- weapons changed to miniature Embrace with lower damage and without EMP cycler feature
+- Valestri dissipation reduced to 600
+- Lowered Stricture S damage by 20%
+
 
 Bugfixes:
 - The Apocastasis' secondary effect now works as intended (broke during some unknown patch, maybe even at release)

@@ -100,6 +100,14 @@
     "SRD_nanolaminate_armor"
   ],
   "builtInWeapons": {
+    "WS0010": "SRD_vacuity",
+    "WS0011": "SRD_vacuity",
+    "WS0012": "SRD_vacuity",
+    "WS0013": "SRD_vacuity",
+    "WS0014": "SRD_vacuity",
+    "WS0015": "SRD_vacuity",
+    "WS0016": "SRD_vacuity",
+    "WS0017": "SRD_vacuity",
     "WS0024": "SRD_Pthruster",
     "WS0025": "SRD_Pthruster",
     "WS0026": "SRD_Pthruster",
@@ -367,7 +375,7 @@
       ],
       "mount": "TURRET",
       "size": "SMALL",
-      "type": "ENERGY"
+      "type": "BUILT_IN"
     },
     {
       "angle": -52,
@@ -379,7 +387,7 @@
       ],
       "mount": "TURRET",
       "size": "SMALL",
-      "type": "ENERGY"
+      "type": "BUILT_IN"
     },
     {
       "angle": 74,
@@ -391,7 +399,7 @@
       ],
       "mount": "TURRET",
       "size": "SMALL",
-      "type": "ENERGY"
+      "type": "BUILT_IN"
     },
     {
       "angle": -74,
@@ -403,7 +411,7 @@
       ],
       "mount": "TURRET",
       "size": "SMALL",
-      "type": "ENERGY"
+      "type": "BUILT_IN"
     },
     {
       "angle": 105.5,
@@ -415,7 +423,7 @@
       ],
       "mount": "TURRET",
       "size": "SMALL",
-      "type": "ENERGY"
+      "type": "BUILT_IN"
     },
     {
       "angle": -105.5,
@@ -427,7 +435,7 @@
       ],
       "mount": "TURRET",
       "size": "SMALL",
-      "type": "ENERGY"
+      "type": "BUILT_IN"
     },
     {
       "angle": 133,
@@ -439,7 +447,7 @@
       ],
       "mount": "TURRET",
       "size": "SMALL",
-      "type": "ENERGY"
+      "type": "BUILT_IN"
     },
     {
       "angle": -133,
@@ -451,7 +459,7 @@
       ],
       "mount": "TURRET",
       "size": "SMALL",
-      "type": "ENERGY"
+      "type": "BUILT_IN"
     },
     {
       "angle": 70.5,
