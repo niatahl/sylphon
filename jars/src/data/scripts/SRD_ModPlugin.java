@@ -5,9 +5,11 @@ import com.fs.starfarer.api.Global;
 import com.fs.starfarer.api.campaign.SectorAPI;
 import com.fs.starfarer.api.combat.ShipHullSpecAPI;
 import com.fs.starfarer.api.loading.HullModSpecAPI;
+import data.scripts.campaignPlugins.SRD_AIConversionNexerelinAdderPlugin;
 import data.scripts.world.SRD_FactionRelationPlugin;
 import data.scripts.world.SRD_Nym;
 import data.scripts.world.SRD_Rofocale;
+import exerelin.campaign.SectorManager;
 import org.dark.shaders.light.LightData;
 import org.dark.shaders.util.ShaderLib;
 import org.dark.shaders.util.TextureData;
@@ -77,9 +79,20 @@ public class SRD_ModPlugin extends BaseModPlugin {
     public void onNewGame() {
         SectorAPI sector = Global.getSector();
 
-        new SRD_Nym().generate(sector);
-        new SRD_Rofocale().generate(sector);
-        SRD_FactionRelationPlugin.initFactionRelationships(sector);
+        //If we have Nexerelin and random worlds enabled, don't spawn our manual systems
+        boolean haveNexerelin = Global.getSettings().getModManager().isModEnabled("nexerelin");
+        if (!haveNexerelin || SectorManager.getCorvusMode()){
+            new SRD_Nym().generate(sector);
+            new SRD_Rofocale().generate(sector);
+        } //else {
+            //If we have a random sector, we add the AI conversion submarket to the headquarters
+            //Global.getSector().addScript(new SRD_AIConversionNexerelinAdderPlugin());
+        //}
+
+        //Only run custom faction relations if Nexerelin is not active
+        if (!haveNexerelin) {
+            SRD_FactionRelationPlugin.initFactionRelationships(sector);
+        }
     }
 
     /*-----------------------------------Convenience functions down here!---------------------------------------------*/

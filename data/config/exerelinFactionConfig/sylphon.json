@@ -1,19 +1,19 @@
 {
     	"playableFaction":true,
     	"corvusCompatible":true,
-		
+
 		"directoryUseShortName":true,
-    
+
     	"baseFleetCostMultiplier":1.1,
 
     	"customRebelFaction":"",
     	"customRebelFleetId":"",
     	"rebelFleetSuffix":"Rebel",
-    
+
     	"marketSpawnWeight":0.85,
-    
+
     	"invasionPointMult": 0.85,
-    
+
     	"allowPrisoners": true,
     	"dropPrisoners": false,
 
@@ -21,7 +21,9 @@
     	"defenceFleetName": "Guardian Fleet",
     	"vengeanceFleetNames":["Purging Fleet"],
     	"vengeanceFleetNamesSingle":["a Purging Fleet"],
-	
+
+		"marketSpawnWeight": 0.6,
+
 	"startRelationships":{
 		"hegemony": -0.20, #They don't like AIs, but they are also big and scary
 		"tritachyon": 0.60, #Long time business partners
@@ -48,7 +50,7 @@
         "sad": -0.70, #weird pirates
         "dassault_mikoyan": 0.50, #science buddies
         "blade_breakers": -0.70, #they have style, sad they are assholes
-        "blackrock_driveyards": 0.20, #team weird interdimensional technology 
+        "blackrock_driveyards": 0.20, #team weird interdimensional technology
         "crystanite": 0.20, #shiny
         "vass_shipyards": 0.40, #can't hurt to be friends with the time travelers
 		"exlane": -0.50, #removing that green paintjob with laser burns if need be
@@ -72,22 +74,54 @@
 		"exigency": 1.5, #stubborn people that
 		"exlane": 1.5, #that green is just irritating
 	};
-	"morality":"neutral",	
-    
-    	"alignments":{
-        	"technocratic":1.0,
-        	"corporate":0.5,
-        	"diplomatic":0.3,
-    	},
-    
-		"startShipsSolo":["SRD_Furika_standard"],
-    	"startShipsCombatSmall":["SRD_Silverhead_standard", "SRD_Catora_standard", "SRD_Catora_standard"],
-		"startShipsCarrierSmall":["SRD_Tilia_standard", "SRD_Catora_standard", "SRD_Celika_beamer"],
-    	"startShipsTradeSmall":["SRD_Buffalo_standard", "SRD_Hymnon_escort"],
-    	"startShipsCombatLarge":["SRD_Eagle_standard", "SRD_Tarima_standard", "SRD_Celika_standard"],
-		"startShipsCarrierLarge":["SRD_Eolia_standard", "SRD_Silverhead_standard", "SRD_Furika_standard", "SRD_Celika_heavy"],
-    	"startShipsTradeLarge":["SRD_Mariana_cargo_standard", "SRD_Mariana_fuel_standard", "SRD_Hubris_support", "SRD_Hymnon_escort", "SRD_Hymnon_escort"],
-		"startShipsSuper":[["SRD_Ascordia_prototype"],["SRD_Rakia_flag","SRD_Buffalo_standard"],["SRD_Eagle_P_balanced"]],
-		
-		"defenceStations":["remnant_station2_sylphon"],
+
+	"morality":"amoral",
+
+    "alignments":{
+       	"technocratic":1.0,
+       	"corporate":0.5,
+       	"diplomatic":0.3,
+		"ideological":-0.5,
+    },
+
+	"startShipsSolo":[
+		["SRD_Furika_standard"],
+	],
+
+    "startShipsCombatSmall":[
+		["SRD_Silverhead_standard", "SRD_Catora_standard", "SRD_Catora_standard"],
+	],
+
+	"startShipsCarrierSmall":[
+		["SRD_Tilia_standard", "SRD_Catora_standard", "SRD_Celika_beamer"],
+	],
+    "startShipsTradeSmall":[
+		["SRD_Buffalo_standard", "SRD_Hymnon_escort"],
+	],
+    "startShipsCombatLarge":[
+		["SRD_Eagle_standard", "SRD_Tarima_standard", "SRD_Celika_standard"],
+	],
+	"startShipsCarrierLarge":[
+		["SRD_Eolia_standard", "SRD_Silverhead_standard", "SRD_Furika_standard", "SRD_Celika_heavy"],
+	],
+    "startShipsTradeLarge":[
+		["SRD_Mariana_cargo_standard", "SRD_Mariana_fuel_standard", "SRD_Hubris_support", "SRD_Hymnon_escort", "SRD_Hymnon_escort"],
+	],
+	"startShipsSuper":[
+		["SRD_Ascordia_prototype"],
+		["SRD_Rakia_flag","SRD_Buffalo_standard"],
+		["SRD_Eagle_P_balanced"],
+	],
+
+	"defenceStations":[
+		{"ids":["orbitalstation_high", "battlestation_high", "starfortress_high"]},
+	],
+
+	"invasionPointMult":0.7,
+
+	"industrySeeds":[
+        {"id":"orbitalworks", "mult":0.1},
+        {"id":"lightindustry", "mult":0.1},
+	],
+
 }
