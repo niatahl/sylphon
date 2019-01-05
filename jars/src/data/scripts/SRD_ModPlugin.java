@@ -84,10 +84,10 @@ public class SRD_ModPlugin extends BaseModPlugin {
         if (!haveNexerelin || SectorManager.getCorvusMode()){
             new SRD_Nym().generate(sector);
             new SRD_Rofocale().generate(sector);
-        } //else {
+        } else {
             //If we have a random sector, we add the AI conversion submarket to the headquarters
-            //Global.getSector().addScript(new SRD_AIConversionNexerelinAdderPlugin());
-        //}
+            sector.addScript(new SRD_AIConversionNexerelinAdderPlugin());
+        }
 
         //Only run custom faction relations if Nexerelin is not active
         if (!haveNexerelin) {

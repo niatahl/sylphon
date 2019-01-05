@@ -34,12 +34,10 @@ public class SRD_AIConversionNexerelinAdderPlugin implements EveryFrameScript {
                     if (hasCreatedMarket) {break;}
 
                     if (token.getMarket() != null && token.getMarket().getFactionId().equals("sylphon")) {
-                        //We have found a sylphon market; if it's our main market (has headquarters) add the submarket to it, register the location in our special upgrading script and be on our jolly way
-                        if (token.getMarket().hasCondition("headquarters")) {
-                            token.getMarket().addSubmarket("SRD_ai_conversion");
-                            hasCreatedMarket = true;
-                            sector.addScript(new SRD_AIConversionFleetUpgraderPlugin(loc));
-                        }
+                        //We have found a Sylphon market; add the submarket to it and be on our jolly way
+                        token.getMarket().addSubmarket("SRD_ai_conversion");
+                        hasCreatedMarket = true;
+                        //sector.addScript(new SRD_AIConversionFleetUpgraderPlugin(loc)); DEPRECATED; USE VARIANTS NOW
                     }
                 }
             }
