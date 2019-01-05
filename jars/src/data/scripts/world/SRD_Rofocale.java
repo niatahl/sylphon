@@ -105,10 +105,9 @@ public class SRD_Rofocale {
                                 Submarkets.SUBMARKET_OPEN,
                                 "SRD_ai_conversion", //Special submarket for upgrading ships with Sylph Cores
                                 Submarkets.SUBMARKET_STORAGE)),
-                new ArrayList<String>(
+                new ArrayList<>(
                         Arrays.asList( // Which industries we have on the market
                                 Industries.POPULATION,
-                                Industries.HEAVYINDUSTRY,
                                 Industries.LIGHTINDUSTRY,
                                 Industries.MINING,
                                 Industries.REFINING,
@@ -119,6 +118,15 @@ public class SRD_Rofocale {
                 0.3f, // tariff amount
                 false, // Free Port
                 true); //Has junk and chatter
+
+        //We're the Sylphon: obviously, we want to add on AI cores
+        rofocale4_market.getIndustry(Industries.ORBITALWORKS).setAICoreId(Commodities.ALPHA_CORE);
+        rofocale4_market.getIndustry(Industries.BATTLESTATION_HIGH).setAICoreId(Commodities.ALPHA_CORE);
+        rofocale4_market.getIndustry(Industries.HEAVYBATTERIES).setAICoreId(Commodities.BETA_CORE);
+        rofocale4_market.getIndustry(Industries.REFINING).setAICoreId(Commodities.BETA_CORE);
+        rofocale4_market.getIndustry(Industries.LIGHTINDUSTRY).setAICoreId(Commodities.GAMMA_CORE);
+        rofocale4_market.getIndustry(Industries.MINING).setAICoreId(Commodities.GAMMA_CORE);
+        rofocale4_market.getIndustry(Industries.POPULATION).setAICoreId(Commodities.GAMMA_CORE);
 
 
         //Stable location almost exactly opposite of Castrum
@@ -161,18 +169,28 @@ public class SRD_Rofocale {
                 new ArrayList<String>(
                         Arrays.asList( // Which industries we have on the market
                                 Industries.POPULATION,
-                                Industries.FARMING,
                                 Industries.MEGAPORT,
                                 Industries.STARFORTRESS_HIGH,
                                 Industries.HIGHCOMMAND,
                                 Industries.ORBITALWORKS,
                                 Industries.HEAVYBATTERIES,
+                                "SRD_sylpheed_station_hydroponics",
                                 "SRD_sylpheed_station_tech_mining")),
                 0.3f, // tariff amount
                 false,// Free Port
                 false); //No junk and chatter with Sylpheed station: the junk looks off
         sylpheed_station.setCustomDescriptionId("SRD_sylpheed_station");
         sylpheed_station_market.getMemoryWithoutUpdate().set("$SRD_SylpheedTechMiningPlanet", rofocale4a.getMarket());
+
+        //We're the Sylphon: obviously, we want to add on AI cores
+        sylpheed_station_market.getIndustry(Industries.STARFORTRESS_HIGH).setAICoreId(Commodities.ALPHA_CORE);
+        sylpheed_station_market.getIndustry(Industries.HIGHCOMMAND).setAICoreId(Commodities.ALPHA_CORE);
+        sylpheed_station_market.getIndustry(Industries.ORBITALWORKS).setAICoreId(Commodities.BETA_CORE);
+        sylpheed_station_market.getIndustry(Industries.MEGAPORT).setAICoreId(Commodities.BETA_CORE);
+        sylpheed_station_market.getIndustry(Industries.HEAVYBATTERIES).setAICoreId(Commodities.BETA_CORE);
+        sylpheed_station_market.getIndustry("SRD_sylpheed_station_tech_mining").setAICoreId(Commodities.BETA_CORE);
+        sylpheed_station_market.getIndustry("SRD_sylpheed_station_hydroponics").setAICoreId(Commodities.GAMMA_CORE);
+        sylpheed_station_market.getIndustry(Industries.POPULATION).setAICoreId(Commodities.GAMMA_CORE);
 
         // Some trojans for the inhabited planet
         SectorEntityToken rofocale4_troj = system.addTerrain(Terrain.ASTEROID_FIELD,

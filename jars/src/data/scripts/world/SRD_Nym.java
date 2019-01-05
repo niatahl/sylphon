@@ -165,6 +165,12 @@ public class SRD_Nym {
 
         ozmaStation.setCustomDescriptionId("SRD_ozma_station");
 
+        //We're the Sylphon: obviously, we want to add on AI cores
+        ozmaMarket.getIndustry(Industries.BATTLESTATION).setAICoreId(Commodities.ALPHA_CORE);
+        ozmaMarket.getIndustry(Industries.PATROLHQ).setAICoreId(Commodities.BETA_CORE);
+        ozmaMarket.getIndustry(Industries.FUELPROD).setAICoreId(Commodities.GAMMA_CORE);
+        ozmaMarket.getIndustry(Industries.HEAVYBATTERIES).setAICoreId(Commodities.GAMMA_CORE);
+
         // First moon.
         PlanetAPI nym2a = system.addPlanet("SRD_planet_nym2a", nym2, "Mhach A", "barren", 360*(float)Math.random(), 90, 540, 90f);
         nym2a.getSpec().setTexture(Global.getSettings().getSpriteName("planets", "barren02"));

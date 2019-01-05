@@ -8,6 +8,7 @@ import com.fs.starfarer.api.combat.ShipAPI.HullSize;
 import com.fs.starfarer.api.combat.WeaponAPI;
 import com.fs.starfarer.api.combat.WeaponAPI.WeaponSize;
 import com.fs.starfarer.api.combat.WeaponAPI.WeaponType;
+import data.scripts.SRD_ModPlugin;
 
 import java.util.HashMap;
 import java.util.Map;
