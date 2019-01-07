@@ -2,19 +2,16 @@
 package data.scripts.hullmods;
 
 import com.fs.starfarer.api.Global;
-import com.fs.starfarer.api.campaign.BuffManagerAPI;
-import com.fs.starfarer.api.combat.BaseHullMod;
-import com.fs.starfarer.api.combat.CombatEngineAPI;
-import com.fs.starfarer.api.combat.DamagingProjectileAPI;
-import com.fs.starfarer.api.combat.ShipAPI;
+import com.fs.starfarer.api.combat.*;
 import com.fs.starfarer.api.combat.ShipAPI.HullSize;
-import com.fs.starfarer.api.combat.WeaponAPI;
+import com.fs.starfarer.api.ui.Alignment;
+import com.fs.starfarer.api.ui.TooltipMakerAPI;
+import com.fs.starfarer.api.util.Misc;
 import org.lazywizard.lazylib.MathUtils;
-import org.lazywizard.lazylib.VectorUtils;
 import org.lazywizard.lazylib.combat.CombatUtils;
 import org.lwjgl.util.vector.Vector2f;
+import java.awt.Color;
 
-import java.awt.*;
 import java.lang.String;
 import java.util.ArrayList;
 import java.util.List;
@@ -34,9 +31,13 @@ public class SRD_VariableAmmoLoader extends BaseHullMod {
     public final float T2_SPEED_VARIATION = 0.02f;
     public final Color T2_MUZZLE_COLOR = new Color(255,60,30);
 
-    public final String T3_WEAPON_NAME = "SRD_phira_burst";
-    public final float T3_INACCURACY = 6f;
-    public final float T3_SPEED_VARIATION = 0.03f;
+    public final String T3_PRIMARY_WEAPON_NAME = "SRD_phira_burst";
+    public final String T3_SPLIT_WEAPON_NAME = "SRD_phira_burst_split";
+    public final float T3_PRIMARY_INACCURACY = 4f;
+    public final float T3_SPLIT_INACCURACY = 20f;
+    public final float T3_PRIMARY_SPEED_VARIATION = 0.03f;
+    public final float T3_SPLIT_SPEED_VARIATION = 0.3f;
+    public final int T3_SPLIT_COUNT = 15;
     public final Color T3_MUZZLE_COLOR = new Color(255,130,50);
 
     //Hacky, but it works: register which projectiles don't need swapping, since they were fired when we were in "burst" mode (type-3 shells)
@@ -81,6 +82,57 @@ public class SRD_VariableAmmoLoader extends BaseHullMod {
                     engine.getCustomData().put("SRD_VariableAmmoExtraCooldown" + ship.getId(), cooldownRemaining);
                 }
             }
+        }
+
+        //List for cleaning up dead projectiles from memory
+        List<DamagingProjectileAPI> cleanList = new ArrayList<>();
+
+        //Splits shots that should be splitting
+        for (DamagingProjectileAPI proj : registeredProjectiles) {
+            //Only split burst shots
+            if (proj.getProjectileSpecId().contains("SRD_phira_burst_shot")) {
+                //Calculates split range : hard-coded to match up with range properly
+                WeaponAPI weapon = proj.getWeapon();
+                Vector2f loc = proj.getLocation();
+                float projAngle = proj.getFacing();
+                float projDamage = proj.getDamageAmount();
+                float splitDuration = (weapon.getRange() / weapon.getProjectileSpeed()) * 0.4f;
+
+                //Split once our duration has passed; spawn a bunch of shots
+                if (proj.getElapsed() > splitDuration) {
+                    //Hide the explosion with some muzzle flash
+                    spawnDecoParticles(loc, projAngle, Misc.ZERO, engine, T3_MUZZLE_COLOR, 1.3f, 0.45f);
+
+                    //Actually spawn shots
+                    for (int i = 0; i < T3_SPLIT_COUNT; i++) {
+                        //Spawns the shot, with some inaccuracy
+                        float angleOffset = MathUtils.getRandomNumberInRange(-T3_SPLIT_INACCURACY / 2, T3_SPLIT_INACCURACY / 2) + MathUtils.getRandomNumberInRange(-T3_SPLIT_INACCURACY / 2, T3_SPLIT_INACCURACY / 2);
+                        DamagingProjectileAPI newProj = (DamagingProjectileAPI) engine.spawnProjectile(ship, weapon, T3_SPLIT_WEAPON_NAME, loc, projAngle + angleOffset, ship.getVelocity());
+                        //Varies the speed slightly, for a more artillery-esque look
+                        float rand = MathUtils.getRandomNumberInRange(1 - T3_SPLIT_SPEED_VARIATION, 1 + T3_SPLIT_SPEED_VARIATION);
+                        newProj.getVelocity().x *= rand;
+                        newProj.getVelocity().y *= rand;
+                        //Splits up the damage
+                        newProj.setDamageAmount(projDamage / (float) T3_SPLIT_COUNT);
+                        ProximityFuseAIAPI AI = (ProximityFuseAIAPI)(newProj.getAI());
+                        AI.updateDamage();
+                        //Removes the original projectile
+                        engine.removeEntity(proj);
+                    }
+                    cleanList.add(proj);
+                    continue;
+                }
+            }
+
+            //If this projectile is not loaded in memory, cleaning time!
+            if (!engine.isEntityInPlay(proj)) {
+                cleanList.add(proj);
+            }
+        }
+
+        //Runs the cleaning
+        for (DamagingProjectileAPI proj : cleanList) {
+            registeredProjectiles.remove(proj);
         }
 
         //Finds all projectiles within a a short range from our ship
@@ -156,16 +208,16 @@ public class SRD_VariableAmmoLoader extends BaseHullMod {
                     continue;
                 }
 
-                //If we have type-3 ammo loaded, spawn shots from our *own* weapon, but do not adjust damage
+                //If we have type-3 ammo loaded, spawn shots from our *own* weapon and prepare them for turning into submunitions, but do not adjust damage
                 if (ship.getSystem().getAmmo() == 3) {
                     //Muzzle flash!
                     spawnDecoParticles(loc, projAngle, ship.getVelocity(), engine, T3_MUZZLE_COLOR, 2.5f, 1f);
 
                     //Spawns the shot, with some inaccuracy
-                    float angleOffset = MathUtils.getRandomNumberInRange(-T3_INACCURACY / 2, T3_INACCURACY / 2) + MathUtils.getRandomNumberInRange(-T3_INACCURACY / 2, T3_INACCURACY / 2);
-                    DamagingProjectileAPI newProj = (DamagingProjectileAPI)engine.spawnProjectile(ship, weapon, T3_WEAPON_NAME, loc, projAngle + angleOffset, ship.getVelocity());
+                    float angleOffset = MathUtils.getRandomNumberInRange(-T3_PRIMARY_INACCURACY / 2, T3_PRIMARY_INACCURACY / 2) + MathUtils.getRandomNumberInRange(-T3_PRIMARY_INACCURACY / 2, T3_PRIMARY_INACCURACY / 2);
+                    DamagingProjectileAPI newProj = (DamagingProjectileAPI)engine.spawnProjectile(ship, weapon, T3_PRIMARY_WEAPON_NAME, loc, projAngle + angleOffset, ship.getVelocity());
                     //Varies the speed slightly, for a more artillery-esque look
-                    float rand = MathUtils.getRandomNumberInRange(1-T3_SPEED_VARIATION, 1+T3_SPEED_VARIATION);
+                    float rand = MathUtils.getRandomNumberInRange(1-T3_PRIMARY_SPEED_VARIATION, 1+T3_PRIMARY_SPEED_VARIATION);
                     newProj.getVelocity().x *= rand;
                     newProj.getVelocity().y *= rand;
                     //Removes the original projectile
@@ -184,14 +236,35 @@ public class SRD_VariableAmmoLoader extends BaseHullMod {
 
     //A whole bunch of descriptions, most unused for now
     public String getDescriptionParam(int index, HullSize hullSize) {
-        if (index == 0) return "perfect accuracy";
-        if (index == 1) return "" + (int)((T1_DAMAGE_BONUS*100f)) + "%";
-        if (index == 2) return "Energy";
-        if (index == 3) return "additional EMP damage";
-        if (index == 4) return "" + (int)((T2_DAMAGE_BONUS*-100f)) + "%";
-        if (index == 5) return "Kinetic";
-        if (index == 6) return "area damage";
         return null;
+    }
+
+    //For the cool extra description section
+    @Override
+    public void addPostDescriptionSection(TooltipMakerAPI tooltip, ShipAPI.HullSize hullSize, ShipAPI ship, float width, boolean isForModSpec) {
+        float pad = 10f;
+        tooltip.addSectionHeading("Details", Alignment.MID, pad);
+
+        //Shock cannons
+        TooltipMakerAPI text = tooltip.beginImageWithText("graphics/sylphon/hullmods/ammo_shockcannon_icon.png", 36);
+        text.addPara("Shock Cannons", 0, Color.ORANGE, "Shock Cannons");
+        text.addPara("Energy damage, deals bonus EMP damage against hull", 0, Color.CYAN, "Energy");
+        text.addPara(Math.round((T1_DAMAGE_BONUS*100f)) + " percent additional damage.", 0, Color.YELLOW, "" + Math.round((T1_DAMAGE_BONUS*100f)));
+        tooltip.addImageWithText(pad);
+
+        //Impact Drivers
+        text = tooltip.beginImageWithText("graphics/sylphon/hullmods/ammo_impactdriver_icon.png", 36);
+        text.addPara("Impact Driver", 0, Color.ORANGE, "Impact Driver");
+        text.addPara("Kinetic Damage.", 0, Color.YELLOW, "Kinetic");
+        text.addPara(Math.round((T2_DAMAGE_BONUS*-100f)) + " percent reduced damage.", 0, Color.YELLOW, "" + Math.round((T2_DAMAGE_BONUS*-100f)));
+        tooltip.addImageWithText(pad);
+
+        //Type-3 Shells
+        text = tooltip.beginImageWithText("graphics/sylphon/hullmods/ammo_type3_icon.png", 36);
+        text.addPara("Type-3 Shells", 0, Color.ORANGE, "Type-3 Shells");
+        text.addPara("High-Explosive Damage." + "\n"
+                + "Splits into a cluster of AoE shells.", 0, Color.RED, "High-Explosive");
+        tooltip.addImageWithText(pad);
     }
 
     //For spawning muzzle flash
