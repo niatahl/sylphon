@@ -4,9 +4,6 @@ import com.fs.starfarer.api.combat.*;
 import com.fs.starfarer.api.combat.ShipAPI.HullSize;
 import data.scripts.SRD_ModPlugin;
 
-import java.util.HashMap;
-import java.util.Map;
-
 public class SRD_PrototypeLocalStabilizer extends BaseHullMod {
 
     private static int BURN_LEVEL_BONUS = 1;
@@ -36,7 +33,6 @@ public class SRD_PrototypeLocalStabilizer extends BaseHullMod {
             ship.getVariant().removeMod("SRD_prototype_local_stabilizer");
         }
     }
-
 
     //Handles applicability
     @Override

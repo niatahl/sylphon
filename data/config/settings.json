@@ -66,6 +66,9 @@
 			"SRD_nullspace_agitator_icon":"graphics/sylphon/icons/hullsys/SRD_nullspace_agitator.png",
 			"SRD_nullpoint_shield_icon":"graphics/sylphon/icons/hullsys/SRD_nullpoint_barrier.png",
 			"SRD_subprocess_linkup_icon":"graphics/sylphon/icons/hullsys/ai_network.png",
+			"SRD_shockcannon_icon":"graphics/sylphon/hullmods/ammo_shockcannon_icon.png",
+			"SRD_ammo_impactdriver_icon":"graphics/sylphon/hullmods/ammo_impactdriver_icon.png",
+			"SRD_type3_icon":"graphics/sylphon/hullmods/ammo_type3_icon.png",
 		},
 		"blueprint_packages":{
 			"sylphon_core_package":"graphics/sylphon/icons/cargo/package_sylphon.png",
