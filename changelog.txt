@@ -3,6 +3,10 @@ Changes:
 - The Metafalica's Type-3 shells are now splitter-shells
 - Updated the hullmod description for the Variable Ammo Loader
 
+Bugfixes:
+- Fixed the Frelia having incorrect shield color
+
+
 0.9.2a
 Additions:
 - Added a new Hydroponics industry exclusive to Sylpheed Station, which replaces its old Farming industry
@@ -32,7 +36,6 @@ Balancing:
 	- weapons changed to miniature Embrace with lower damage and without EMP cycler feature
 - Valestri dissipation reduced to 600
 - Lowered Stricture S damage by 20%
-
 
 Bugfixes:
 - The Apocastasis' secondary effect now works as intended (broke during some unknown patch, maybe even at release)
