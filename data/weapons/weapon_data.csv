@@ -44,7 +44,7 @@ Stricture S,SRD_stricture_s,3,0.5,15000,500,400,,,0,0,0,,,,HIGH_EXPLOSIVE,,400,0
 Skallic Cannon,SRD_skallic_cannon,3,1,20000,1000,,200,75,50,10,0,,,,ENERGY,250,,0.2,1.5,1,0.2,0,0,0,0,,900,,,,SYSTEM,energy20,,,,,,,,,,,,,,1311
 Zealot S,SRD_zealot_s,2,1,3400,500,,20,10,5,35,0,,,,KINETIC,80,,0,0.8,3,0.1,,,,,,900,,,,SYSTEM,kinetic11,,,,,,,,,,,,,,1314
 Raphiel S,SRD_raphiel_single,1,1,400,1000,,600,300,50,30,4,1,,,KINETIC,0,,0,1,1,,0,0,0,,,700,100,2,150,"DO_NOT_AIM, SYSTEM","missile8, strike3",,,,,,,,,,,,,true,1319
-Embrace S,SRD_embrace_s,1,0.6,500,500,,30,,0,50,5,,,,ENERGY,30,,0.33,0,,,,,,,,1000,,,,,"energy8, sylphon_core_bp",,Sylphon RnD,,General,,,,,"Every 5th shot is supercharged, dealing %s damage and %s EMP damage",60 | 300,,,,1323
+Embrace S,SRD_embrace_s,1,0.6,500,500,,30,,0,50,5,,,,ENERGY,30,,0.33,0,,,,,,,,1000,,,,SYSTEM,"energy8, sylphon_core_bp",,Sylphon RnD,,General,,,,,"Every 5th shot is supercharged, dealing %s damage and %s EMP damage",60 | 300,,,,1323
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 #built_in,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
