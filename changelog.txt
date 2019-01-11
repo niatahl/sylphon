@@ -2,6 +2,8 @@
 Changes:
 - The Metafalica's Type-3 shells are now splitter-shells
 - Updated the hullmod description for the Variable Ammo Loader
+- The Sylvetra's nanobots have had their metal-to-ammo gain rebalanced; they are now slightly better at refilling high-ammo weapons and slightly worse at refilling low-OP weapons (most notable on Reaper-like torpedoes)
+- Added a small sound effect to the Sylvetra's nanobots when refilling a missile
 
 Bugfixes:
 - Fixed the Frelia having incorrect shield color

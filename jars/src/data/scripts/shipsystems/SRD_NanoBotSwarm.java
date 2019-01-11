@@ -67,6 +67,9 @@ public class SRD_NanoBotSwarm extends BaseShipSystemScript {
     //overkill, since the ship would have to be effectively *on top* of you for you to notice a difference
     private static final float ANGLE_HITCHECK_SIZE = 80f;
 
+    //The sound made when a missile weapon gets a new missile reloaded. Plays at lower volume and higher pitch for high-ammo weapons
+    private static final String REFILL_SOUND = "ui_cargo_raremetals";
+
 
     /* - VISUALS - */
     //How much "bigger" is the total sprite compared to the actual area encompassed by the swarm?
@@ -241,20 +244,27 @@ public class SRD_NanoBotSwarm extends BaseShipSystemScript {
                     }
 
                     //Get the OP cost and max ammo of the weapon: these are the core factors for determining metal cost
-                    //Note that maxAmmoCalc is max ammo for the purpose of calculating metal cost; it doesn't scale
-                    //linearly. It's also reduced by extended missile racks, since those increase missile max ammo
-                    float OP = wep.getSpec().getOrdnancePointCost(ship.getCaptain().getStats());
-                    float maxAmmoCalc = (float)Math.pow(wep.getSpec().getMaxAmmo(), 0.75f);
+                    //  OP is bottom-clamped to ensure it's not too beneficial to bring reapers and the likes
+                    float OP = Math.max(wep.getSpec().getOrdnancePointCost(ship.getCaptain().getStats()), 5f);
+                    float maxAmmoCalc = wep.getMaxAmmo();
                     if (ship.getVariant().getHullMods().contains("missleracks")) { maxAmmoCalc /= 2f; }
 
                     //Now, refill ammo by a fraction depending on our our metal cost
-                    float newAmmo = wep.getAmmo() + (maxAmmoCalc * metalToDisposeAmmo) / (mslWeapons.size() * BASE_METAL_COST_PER_OP * OP) + previousAmmo;
+                    float ammoToAdd = (maxAmmoCalc * metalToDisposeAmmo) / (mslWeapons.size() * BASE_METAL_COST_PER_OP * OP) + previousAmmo;
+                    float newAmmo = wep.getAmmo() + ammoToAdd;
                     if (newAmmo > wep.getMaxAmmo()) { newAmmo = wep.getMaxAmmo(); }
                     wep.setAmmo((int)Math.floor(newAmmo));
 
                     //We can reload "partial" shots in a frame, store those
                     float leftOver = newAmmo - (float)Math.floor(newAmmo);
                     leftoverAmmo.put(wep, leftOver);
+
+                    //If we refilled at least one missile this frame, play a small sound depending on the weapon's max ammo
+                    if (ammoToAdd >= 1f) {
+                        float volumeMult = MathUtils.clamp((OP/10f)/(float)Math.pow(maxAmmoCalc, 0.25),0.05f, 0.75f);
+                        float pitchMult = (0.9f - volumeMult) * 3f;
+                        Global.getSoundPlayer().playSound(REFILL_SOUND, pitchMult, volumeMult, wep.getLocation(), ship.getVelocity());
+                    }
                 }
             }
         }
