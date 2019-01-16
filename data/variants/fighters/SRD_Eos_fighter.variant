@@ -13,8 +13,8 @@
       "autofire": false,
       "mode": "LINKED",
       "weapons": {
-        "WS0001": "SRD_embrace",
-        "WS0002": "SRD_embrace"
+        "WS0001": "SRD_embrace_s",
+        "WS0002": "SRD_embrace_s"
       }
     }
   ],
