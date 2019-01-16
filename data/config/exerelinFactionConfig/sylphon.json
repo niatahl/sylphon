@@ -4,8 +4,6 @@
 
 		"directoryUseShortName":true,
 
-    	"baseFleetCostMultiplier":1.1,
-
     	"customRebelFaction":"",
     	"customRebelFleetId":"",
     	"rebelFleetSuffix":"Rebel",

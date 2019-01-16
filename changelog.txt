@@ -3,6 +3,10 @@ Changes:
 - The Metafalica's Type-3 shells are now splitter-shells
 - Updated the hullmod description for the Variable Ammo Loader
 
+Balancing:
+- Adjusted the base prices of most weapons and some ships to be more within vanilla ranges
+- Reduced Valestri shield efficiency from 0.9 to 1.0 
+
 0.9.2a
 Additions:
 - Added a new Hydroponics industry exclusive to Sylpheed Station, which replaces its old Farming industry
