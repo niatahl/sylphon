@@ -6,10 +6,6 @@
     {
         "major":0,
         "minor":9,
-<<<<<<< HEAD
-        "patch":"2a"
-=======
         "patch":"3"
->>>>>>> 48f1ea9302e8c62adc82189587aeb7dc60de125f
     },
 }
