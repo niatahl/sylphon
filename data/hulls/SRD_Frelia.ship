@@ -239,7 +239,7 @@
   ],
   "shieldRadius": 207.5,
   "spriteName": "graphics/sylphon/ships/SRD_Frelia.png",
-  "style": "HIGH_TECH",
+  "style": "SRD_TECH",
   "viewOffset": 0,
   "weaponSlots": [
     {

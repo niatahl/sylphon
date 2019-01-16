@@ -2,10 +2,14 @@
 Changes:
 - The Metafalica's Type-3 shells are now splitter-shells
 - Updated the hullmod description for the Variable Ammo Loader
+- The Sylvetra's nanobots have had their metal-to-ammo gain rebalanced; they are now slightly better at refilling high-ammo weapons and slightly worse at refilling low-OP weapons (most notable on Reaper-like torpedoes)
+- Added a small sound effect to the Sylvetra's nanobots when refilling a missile
 
-Balancing:
-- Adjusted the base prices of most weapons and some ships to be more within vanilla ranges
-- Reduced Valestri shield efficiency from 0.9 to 1.0 
+Bugfixes:
+- Fixed the Frelia having incorrect shield color
+- The Ravana now properly uses two Embrace S instead of two Embraces
+- The Embrace S can no longer be gained from blueprints, and does not show up in refit
+
 
 0.9.2a
 Additions:
@@ -37,7 +41,6 @@ Balancing:
 	- weapons changed to miniature Embrace with lower damage and without EMP cycler feature
 - Valestri dissipation reduced to 600
 - Lowered Stricture S damage by 20%
-
 
 Bugfixes:
 - The Apocastasis' secondary effect now works as intended (broke during some unknown patch, maybe even at release)
