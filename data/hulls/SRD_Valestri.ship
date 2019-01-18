@@ -339,7 +339,7 @@
     },
     {
       "angle": -0,
-      "arc": 5,
+      "arc": 10,
       "id": "WS0013",
       "locations": [
         48,
@@ -351,7 +351,7 @@
     },
     {
       "angle": 0,
-      "arc": 5,
+      "arc": 10,
       "id": "WS0014",
       "locations": [
         48,

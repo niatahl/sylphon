@@ -82,16 +82,22 @@ public class SRD_PrototypeNullpointShield extends BaseHullMod {
         }
 
         //Changes shield type to Frontal, if it isn't already. If it is already frontal, we decrease its arc
-        if (ship.getShield().getType() == ShieldAPI.ShieldType.OMNI) {
-            ship.getShield().setType(ShieldAPI.ShieldType.FRONT);
-        } else if (ship.getShield().getType() == ShieldAPI.ShieldType.FRONT) {
-            ship.getShield().setArc(ship.getShield().getArc() * ARC_MULT_FRONT);
+        if (ship.getShield() != null && ship.getShield().getType() != ShieldAPI.ShieldType.PHASE && ship.getShield().getType() != ShieldAPI.ShieldType.NONE) {
+            if (ship.getShield().getType() == ShieldAPI.ShieldType.OMNI) {
+                ship.getShield().setType(ShieldAPI.ShieldType.FRONT);
+            } else if (ship.getShield().getType() == ShieldAPI.ShieldType.FRONT) {
+                ship.getShield().setArc(ship.getShield().getArc() * ARC_MULT_FRONT);
+            }
         }
     }
 
     //Main handling cycle
     @Override
     public void advanceInCombat(ShipAPI ship, float amount) {
+        //Sanity check
+        if (ship.getShield() == null || ship.getShield().getType() == ShieldAPI.ShieldType.PHASE || ship.getShield().getType() == ShieldAPI.ShieldType.NONE) {
+            return;
+        }
         //Don't run the rest of the code when paused
         if (Global.getCombatEngine().isPaused()) {
             return;

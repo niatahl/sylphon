@@ -1,4 +1,10 @@
-﻿0.9.3
+﻿0.9.3a
+Bugfixes:
+- Fixed crash that happens when installing Shield Bypass on a ship with a Nullpoint Shield
+- Improved AI handling of Exalts
+
+
+0.9.3
 Changes:
 - The Metafalica's Type-3 shells are now splitter-shells
 - Updated the hullmod description for the Variable Ammo Loader
