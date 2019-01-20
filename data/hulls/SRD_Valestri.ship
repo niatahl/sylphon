@@ -299,7 +299,7 @@
       ],
       "mount": "HARDPOINT",
       "size": "SMALL",
-      "type": "MISSILE"
+      "type": "ENERGY"
     },
     {
       "angle": -0,
@@ -311,7 +311,7 @@
       ],
       "mount": "HARDPOINT",
       "size": "SMALL",
-      "type": "MISSILE"
+      "type": "ENERGY"
     },
     {
       "angle": 0,
@@ -323,7 +323,7 @@
       ],
       "mount": "HARDPOINT",
       "size": "SMALL",
-      "type": "SYNERGY"
+      "type": "ENERGY"
     },
     {
       "angle": -0,
@@ -335,7 +335,7 @@
       ],
       "mount": "HARDPOINT",
       "size": "SMALL",
-      "type": "SYNERGY"
+      "type": "ENERGY"
     },
     {
       "angle": -0,
@@ -347,7 +347,7 @@
       ],
       "mount": "HARDPOINT",
       "size": "MEDIUM",
-      "type": "ENERGY"
+      "type": "MISSILE"
     },
     {
       "angle": 0,
@@ -359,7 +359,7 @@
       ],
       "mount": "HARDPOINT",
       "size": "MEDIUM",
-      "type": "ENERGY"
+      "type": "MISSILE"
     },
     {
       "angle": 0,
@@ -395,7 +395,7 @@
       ],
       "mount": "HARDPOINT",
       "size": "MEDIUM",
-      "type": "ENERGY"
+      "type": "MISSILE"
     },
     {
       "angle": 180,

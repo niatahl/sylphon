@@ -1,7 +1,7 @@
 {
   "displayName": "Standard",
   "fluxCapacitors": 0,
-  "fluxVents": 22,
+  "fluxVents": 21,
   "goalVariant": true,
   "hullId": "SRD_Valestri",
   "hullMods": [
@@ -13,16 +13,17 @@
   "weaponGroups": [
     {
       "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0013": "SRD_exalt_6",
+        "WS0014": "SRD_exalt_6",
+        "WS0017": "SRD_exalt_6"
+      }
+    },
+    {
+      "autofire": true,
       "mode": "LINKED",
       "weapons": {
-        "WS0003": "SRD_clemency",
-        "WS0004": "SRD_clemency",
-        "WS0009": "SRD_raphiel",
-        "WS0010": "SRD_raphiel",
-        "WS0011": "SRD_raphiel",
-        "WS0012": "SRD_raphiel",
-        "WS0013": "SRD_charity",
-        "WS0014": "SRD_charity",
         "WS0015": "SRD_skalla",
         "WS0016": "SRD_skalla"
       }
@@ -31,13 +32,11 @@
       "autofire": true,
       "mode": "LINKED",
       "weapons": {
-        "WS0017": "SRD_charity"
+        "WS0009": "SRD_embrace",
+        "WS0010": "SRD_embrace",
+        "WS0011": "SRD_embrace",
+        "WS0012": "SRD_embrace"
       }
-    },
-    {
-      "autofire": true,
-      "mode": "LINKED",
-      "weapons": {}
     },
     {
       "autofire": true,
@@ -48,9 +47,12 @@
       }
     },
     {
-      "autofire": false,
+      "autofire": true,
       "mode": "LINKED",
-      "weapons": {}
+      "weapons": {
+        "WS0003": "SRD_clemency",
+        "WS0004": "SRD_clemency"
+      }
     }
   ],
   "wings": []

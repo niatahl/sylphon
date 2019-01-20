@@ -1,54 +1,54 @@
 {
-    "displayName": "Outdated",
-    "fluxCapacitors": 6,
-    "fluxVents": 30,
-    "hullId": "SRD_Valestri",
-    "hullMods": [
-        "unstable_injector",
-        "magazines"
-    ],
-	"goalVariant": true,
-    "permaMods": [],
-    "quality": 0.5,
-    "variantId": "SRD_Valestri_outdated",
-    "weaponGroups": [
-        {
-            "autofire": false,
-            "mode": "LINKED",
-            "weapons": {
-                "WS0015": "autopulse",
-                "WS0016": "autopulse"
-            }
-        },
-        {
-            "autofire": false,
-            "mode": "ALTERNATING",
-            "weapons": {
-                "WS0009": "sabot",
-                "WS0010": "sabot",
-                "WS0011": "sabot",
-                "WS0012": "sabot"
-            }
-        },
-        {
-            "autofire": true,
-            "mode": "LINKED",
-            "weapons": {
-                "WS0013": "ionpulser",
-                "WS0014": "ionpulser",
-                "WS0017": "heavyblaster"
-            }
-        },
-        {
-            "autofire": true,
-            "mode": "LINKED",
-            "weapons": {
-                "WS0003": "heavyburst",
-                "WS0004": "heavyburst",
-                "WS0007": "SRD_venn",
-                "WS0008": "SRD_venn"
-            }
-        }
-    ],
-    "wings": []
+  "displayName": "Outdated",
+  "fluxCapacitors": 10,
+  "fluxVents": 30,
+  "goalVariant": true,
+  "hullId": "SRD_Valestri",
+  "hullMods": [
+    "unstable_injector",
+    "magazines"
+  ],
+  "permaMods": [],
+  "quality": 0.5,
+  "variantId": "SRD_Valestri_outdated",
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0013": "harpoonpod",
+        "WS0014": "harpoonpod",
+        "WS0017": "harpoonpod"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0015": "autopulse",
+        "WS0016": "autopulse"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0009": "taclaser",
+        "WS0010": "taclaser",
+        "WS0011": "taclaser",
+        "WS0012": "taclaser"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0003": "heavyburst",
+        "WS0004": "heavyburst",
+        "WS0007": "SRD_venn",
+        "WS0008": "SRD_venn"
+      }
+    }
+  ],
+  "wings": []
 }

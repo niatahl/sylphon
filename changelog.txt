@@ -1,9 +1,19 @@
-﻿0.9.3a
+﻿0.9.3c
+Changes:
+- Changed Valestri mount types around a bit. Medium hardpoints are now missile mounts while small hardpoints are now energy
+
+Balancing:
+- Increased Valestri's dissipation from 600 to 650
+- Some more minor adjustments to ship prices
+
+0.9.3b
+Bugfixes:
+- Fixed the Exalt fix
+
+0.9.3a
 Bugfixes:
 - Fixed crash that happens when installing Shield Bypass on a ship with a Nullpoint Shield
 - Improved AI handling of Exalts
-
-
 
 0.9.3
 Changes:
