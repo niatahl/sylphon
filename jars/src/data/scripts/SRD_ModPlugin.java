@@ -34,7 +34,7 @@ public class SRD_ModPlugin extends BaseModPlugin {
         if (!hasLazyLib) {
             throw new RuntimeException("Sylphon RnD requires LazyLib by LazyWizard");
         }
-        boolean hasMagicLib = Global.getSettings().getModManager().isModEnabled("lw_lazylib");
+        boolean hasMagicLib = Global.getSettings().getModManager().isModEnabled("MagicLib");
         if (!hasMagicLib) {
             throw new RuntimeException("Sylphon RnD requires MagicLib!");
         }

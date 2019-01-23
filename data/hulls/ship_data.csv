@@ -13,20 +13,20 @@ Buffalo (SRD),SRD_Buffalo,Freighter,Sylphon RnD,maneuveringjets,5,2500,100,3000,
 #Hymnon,SRD_Hymnon,Destroyer,Sylphon RnD,SRD_nullspace_shunt,11,3400,500,7000,6667,400,55,,80,60,40,40,80,400,OMNI,,120,0.3,0.8,,,20,40,50,40,2,20,9,30000,5,25,300,0.25,12,12,,sylphon_core_bp,,0.7,2,3,59427
 Tilia,SRD_Tilia,Light Carrier,Sylphon RnD,SRD_nullfield_catalyst,11,4250,300,4000,2813,200,60,3,80,50,30,25,25,450,OMNI,,180,0.3,0.8,,,0,50,90,50,2,20,9,30000,5,15,360,0.25,14,14,CARRIER,sylphon_high_bp,,0.5,2,3,318
 Raging Heart,SRD_Raging_Heart,Intelligent Device,Sylphon RnD,SRD_nullspace_shunt,30,10000,1000,20000,17000,1200,110,,120,100,100,50,80,1200,OMNI,,360,0.3,0.5,,,0,0,100,60,1,35,9,100000,3,12,720,0.25,50,50,HIDE_IN_CODEX,,,0.5,2,3,59423
-Ascordia,SRD_Ascordia,Hunterkiller,Sylphon RnD,SRD_nullspace_skip,20,6000,500,12000,17000,800,130,,110,70,50,40,40,1200,FRONT,,270,0.3,0.7,,,0,0,100,60,1,35,9,65000,3,12,480,0.25,35,35,,"sylphon_ex_bp, rare_bp",0.5,0.5,2,3,59423
+Ascordia,SRD_Ascordia,Hunterkiller,Sylphon RnD,SRD_nullspace_skip,20,6000,500,12000,17000,800,130,,110,70,50,40,40,1200,FRONT,,270,0.3,0.7,,,0,0,100,60,1,35,9,65000,3,12,480,0.25,30,30,,"sylphon_ex_bp, rare_bp",0.5,0.5,2,3,59423
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 #cruisers,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-Rakia,SRD_Rakia,Experimental Cruiser,Sylphon RnD,SRD_armor_polarization,17,6000,900,18000,20000,600,110,,80,60,40,45,50,1300,PHASE,SRD_rakia_phase,50,4,0.3,0.02,0.05,10,100,100,140,2.5,35,8,150000,3,20,360,0.25,35,35,,"sylphon_ex_bp, rare_bp",0.1,0.4,2,3,59421
-Dread Eagle,SRD_Eagle,Cruiser,Sylphon RnD,SRD_creeper_device,17,8000,500,16000,15000,500,150,,60,50,25,25,25,1800,FRONT,,270,0.3,0.8,,,80,120,150,100,3,33,8,55000,3,12,480,0.25,33,33,,sylphon_core_bp,,0.5,2,3,59423
+Rakia,SRD_Rakia,Experimental Cruiser,Sylphon RnD,SRD_armor_polarization,17,6000,900,18000,20000,500,110,,80,60,40,45,50,1300,PHASE,SRD_rakia_phase,50,4,0.3,0.02,0.05,10,100,100,140,2.5,35,8,150000,3,20,360,0.25,35,35,,"sylphon_ex_bp, rare_bp",0.1,0.4,2,3,59421
+Dread Eagle,SRD_Eagle,Cruiser,Sylphon RnD,SRD_creeper_device,17,8000,500,16000,15000,500,150,,60,50,25,25,25,1800,FRONT,,270,0.3,0.8,,,80,120,150,100,3,33,8,55000,3,12,480,0.25,30,30,,sylphon_core_bp,,0.5,2,3,59423
 #Hubris,SRD_Hubris,Battlecarrier,Sylphon RnD,targetingfeed,20,6000,500,10000,17000,600,150,2,50,30,20,15,15,1900,OMNI,,180,0.3,0.9,,,150,300,170,110,3,35,8,50000,3,20,540,0.25,24,24,"CARRIER, COMBAT",sylphon_core_bp,,0.5,2,3,59430
-Valestri,SRD_Valestri,Heavy Cruiser,Sylphon RnD,SRD_armor_polarization,30,10000,1200,15000,,650,170,2,50,20,15,10,10,2400,FRONT,,160,0.3,1,,,120,180,120,100,3,25,7,60000,3,20,540,0.25,30,30,,sylphon_core_bp,,0.5,2,3,59432
+Valestri,SRD_Valestri,Heavy Cruiser,Sylphon RnD,SRD_armor_polarization,30,10000,1200,15000,,650,170,2,50,20,15,10,10,2400,FRONT,,160,0.3,1,,,120,180,120,100,3,25,7,60000,3,20,540,0.25,28,28,,sylphon_core_bp,,0.5,2,3,59432
 #Okarra,SRD_Okarra,Heavy Cruiser,Sylphon RnD,SRD_armor_polarization,15,10000,1200,16000,9000,600,180,,55,15,8,12,12,2250,FRONT,,180,0.3,0.9,,,100,150,150,150,5,30,8,70000,4,12,540,0.25,28,28,,sylphon_high_bp,,0.4,2,3,59439
-Eolia,SRD_Eolia,Drone Carrier,Sylphon RnD,SRD_nullfield_catalyst,20,6000,500,12000,17000,400,170,3,60,35,20,15,15,1700,OMNI,,180,0.3,0.8,,,100,300,150,100,3,35,8,50000,3,20,540,0.25,26,26,"CARRIER, COMBAT",sylphon_high_bp,,0.5,2,3,59430
+Eolia,SRD_Eolia,Drone Carrier,Sylphon RnD,SRD_nullfield_catalyst,20,6000,500,12000,17000,400,170,3,60,35,20,15,15,1700,OMNI,,180,0.3,0.8,,,100,300,150,100,3,35,8,50000,3,20,540,0.25,25,25,"CARRIER, COMBAT",sylphon_high_bp,,0.5,2,3,59430
 Sylvetra,SRD_Sylvetra,Missile Cruiser,Sylphon RnD,SRD_nanobot_swarm,20,8000,1000,8000,17000,300,100,,70,55,35,25,20,1500,OMNI,,50,0.3,0.8,,,0,100,150,100,3,35,8,75000,3,20,540,0.25,30,30,,sylphon_ex_bp,,0.5,2,3,59430
 Synastry,SRD_Synastry,EWAR Cruiser,Sylphon RnD,interdictor,20,6000,500,12000,,700,110,,60,70,40,30,30,1600,FRONT,,250,0.3,0.9,,,0,100,150,120,3,40,9,60000,3,20,480,0.25,30,30,,"sylphon_ex_bp, rare_bp",0.5,0.5,2,3,55813
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 #capitals,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-Equilibrium,SRD_Equilibrium,Battleship,Sylphon RnD,SRD_nullspace_skip,40,16000,1100,24000,31250,1200,280,2,40,30,20,10,10,3300,FRONT,,120,0.3,0.6,,,200,400,500,500,10,30,7,280000,4,20,720,0.25,55,55,,"sylphon_ex_bp, rare_bp",0.8,0.6,2,5,59422
+Equilibrium,SRD_Equilibrium,Battleship,Sylphon RnD,SRD_nullspace_skip,40,16000,1100,24000,31250,1200,280,2,40,30,20,10,10,3300,FRONT,,120,0.3,0.6,,,200,400,500,500,10,30,7,280000,4,20,720,0.25,50,50,,"sylphon_ex_bp, rare_bp",0.8,0.6,2,5,59422
 Seresvalla,SRD_Seresvalla,Battlecruiser,Sylphon RnD,SRD_flux_exchanger,25,10000,900,18000,25000,800,220,1,80,50,30,15,15,2000,OMNI,,180,0.3,0.8,,,100,200,250,250,8,45,8,220000,4,20,600,0.25,40,40,,"sylphon_ex_bp, rare_bp",0.5,0.6,2,4,59434
 Finis Astra,SRD_Finis_Astra,Siege Platform,Sylphon RnD,SRD_nullspace_anchor,30,12000,800,30000,,600,165,,40,10,3,5,5,3000,OMNI,,160,0.3,0.8,,,150,300,100,80,12,30,6,350000,3,25,420,0.25,40,40,,"sylphon_ex_bp, rare_bp",0.2,0.4,2,4,59430
 Replekia,SRD_Replekia,Battleship,Sylphon RnD,SRD_armor_polarization,50,15000,1400,24000,,800,260,1,50,50,30,15,10,3200,OMNI,,200,0.3,0.9,,,250,600,400,400,10,40,8,270000,4,20,780,0.25,50,50,,"sylphon_ex_bp, rare_bp",0.5,0.5,2,5,2202
@@ -56,7 +56,7 @@ Cieve,SRD_Synastry_cieve,Advanced Cruiser,Sylphon RnD,SRD_skimmer,25,7000,500,12
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 #Outcast,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 Metafalica,SRD_Metafalica,Ghostship,Sylphon Outcast,SRD_variable_ammo,50,16000,1600,26000,,1200,250,1,60,50,30,15,10,3200,OMNI,,200,0.3,0.8,,,100,400,400,400,10,40,8,900000,4,20,780,0.25,60,60,HIDE_IN_CODEX,"sylphon_outcast_bp, rare_bp",0.05,0.5,2,5,2202
-Scourge Eagle,SRD_Eagle_P,Cruiser,Sylphon Outcast,SRD_slip_drive,20,8000,900,12000,17000,700,150,,80,60,35,25,25,1800,FRONT,,270,0.3,0.9,,,80,120,150,100,3,33,8,55000,3,12,480,0.25,36,36,HIDE_IN_CODEX,"sylphon_outcast_bp, rare_bp",0.2,0.5,2,3,59423
+Scourge Eagle,SRD_Eagle_P,Cruiser,Sylphon Outcast,SRD_slip_drive,20,8000,900,12000,17000,700,150,,80,60,35,25,25,1800,FRONT,,270,0.3,0.9,,,80,120,150,100,3,33,8,55000,3,12,480,0.25,35,35,HIDE_IN_CODEX,"sylphon_outcast_bp, rare_bp",0.2,0.5,2,3,59423
 Celika Rel,SRD_Celika_P,Frigate,Sylphon Outcast,SRD_nullspace_shunt,7,2000,500,3400,2500,280,45,,120,100,80,60,120,250,OMNI,,360,0.3,0.9,,,0,0,20,20,1,20,10,15000,8,10,300,0.25,10,10,HIDE_IN_CODEX,"sylphon_outcast_bp, rare_bp",0.2,0.4,2,2,59429
 Misja,SRD_Misja,Support Fighter,Sylphon Outcast,,,300,100,300,,60,0,,200,300,250,90,180,30,FRONT,,120,0,1,,,0,0,,,,,,,,,,,,,HIDE_IN_CODEX,,,0,,,565656
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,

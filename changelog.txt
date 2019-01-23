@@ -1,4 +1,18 @@
-﻿0.9.3c
+﻿0.9.3d
+Additions:
+- Added Vesperon support
+
+Changes:
+- Changed the Sylphon paintjob some
+
+Balancing:
+- Readjusted DP values for multiple ships
+
+Bugfixes:
+- Fixed broken MagicLib check on game load
+
+
+0.9.3c
 Changes:
 - Changed Valestri mount types around a bit. Medium hardpoints are now missile mounts while small hardpoints are now energy
 
