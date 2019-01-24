@@ -40,6 +40,8 @@ public class SRD_EccentricCoreTakumi extends BaseHullMod {
         stats.getMinCrewMod().modifyMult(id, 0f);
 
         stats.getEngineDamageTakenMult().modifyMult(id, ENGINE_DAMAGE_MULT);
+
+        stats.getDynamic().getMod("SRD_SylphCoreTChanceMult").modifyMult(id, INTELLIGENCE_MULT);
     }
 
 
@@ -70,7 +72,7 @@ public class SRD_EccentricCoreTakumi extends BaseHullMod {
                         "TakumiOverdrive",
                         "graphics/icons/hullsys/high_energy_focus.png",
                         "Booster Overdrive",
-                        "Running at "+Math.round(effectLevel*100)+"% power",
+                        "Engines running at " + (100+Math.round(effectLevel*50)) + "% power",
                         effectLevel < 0f);
             }
         }
@@ -94,7 +96,7 @@ public class SRD_EccentricCoreTakumi extends BaseHullMod {
         }
         if (index == 3) return "-Takumi";
         if (index == 4) return "90%";
-        if (index == 5) return "10%";
+        if (index == 5) return "20%";
         if (index == 6) return "30 seconds";
         if (index == 7) return "50%";
         return null;
