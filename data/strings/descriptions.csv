@@ -173,6 +173,7 @@ Shock Cannon mode fires energy beams with high damage and EMP, effective against
 SRD_slip_drive,SHIP_SYSTEM,Slip a short distance through nullspace.,Movement,Slip a short distance through nullspace.,
 SRD_nullfield_catalyst,SHIP_SYSTEM,"Project nullfield around fighters, boosting their agility and making them intangible.",Utility,"Project nullfield around fighters, boosting their agility and making them intangible.",
 SRD_nanobot_swarm,SHIP_SYSTEM,"Deploys a large nanobot swarm to circle the Sylvetra, disassembling anything they come in contact with, including enemy projectiles, reducing their damage or destroying them entirely.",Defense,"Deploys a large nanobot swarm to circle the Sylvetra, disassembling anything they come in contact with, including enemy projectiles, reducing their damage or destroying them entirely.",
+SRD_skimmer,SHIP_SYSTEM,Short-range teleport system.,Movement,Short-range teleport system.,
 ,,,,,
 ,,,,,
 # Campaign,,,,,

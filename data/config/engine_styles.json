@@ -1,6 +1,7 @@
 {
 	"SRD_ENGINE":{
-		"engineColor":[124,34,204,240],
+		#"engineColor":[124,34,204,240],
+		"engineColor":[80, 38, 255,240],
 		"contrailParticleSizeMult":5.0,
 		"contrailParticleDuration":2.0,
 		"contrailParticleFinalSizeMult":0,
