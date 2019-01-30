@@ -36,17 +36,26 @@ public class SRD_SmartBoltScript implements EveryFrameWeaponEffectPlugin {
             return;
         }
 
-        //Wait one frame if we are changing our projectile this frame, and ensure our spawned projectiles loose their collision after one frame (+reduce projectile speed)
+        //Wait one frame if we are changing our projectile this frame, and ensure our spawned projectiles loose their collision after one frame
+        //  BUGFIX: also registers projectiles so the lightning can't spawn multiple times on them
         if (!fireNextFrame) {
-            for (DamagingProjectileAPI proj : registeredLightningProjectiles) {
-            }
             for (DamagingProjectileAPI proj : CombatUtils.getProjectilesWithinRange(weapon.getLocation(), 100f)) {
                 if (proj.getProjectileSpecId() == null) { continue; }
                 if (proj.getWeapon() == weapon && !registeredLightningProjectiles.contains(proj)) {
-                    proj.setCollisionClass(CollisionClass.GAS_CLOUD); //GAS_CLOUD is essentially NONE, but most people don't ignore that class for targeting
+                    proj.setCollisionClass(CollisionClass.GAS_CLOUD); //GAS_CLOUD is essentially NONE, but most people don't ignore that class for AI
+                    registeredLightningProjectiles.add(proj);
                     fireNextFrame = true;
                     return;
                 }
+            }
+
+            //Cleanup to avoid memory leak
+            List<DamagingProjectileAPI> cleanUpList = new ArrayList<>();
+            for (DamagingProjectileAPI proj : registeredLightningProjectiles) {
+                if (!engine.isEntityInPlay(proj)) { cleanUpList.add(proj); }
+            }
+            for (DamagingProjectileAPI proj : cleanUpList) {
+                registeredLightningProjectiles.remove(proj);
             }
             return;
         }

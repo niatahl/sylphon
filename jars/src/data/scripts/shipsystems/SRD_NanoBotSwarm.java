@@ -245,7 +245,7 @@ public class SRD_NanoBotSwarm extends BaseShipSystemScript {
 
                     //Get the OP cost and max ammo of the weapon: these are the core factors for determining metal cost
                     //  OP is bottom-clamped to ensure it's not too beneficial to bring reapers and the likes
-                    float OP = Math.max(wep.getSpec().getOrdnancePointCost(ship.getCaptain().getStats()), 5f);
+                    float OP = Math.max(wep.getSpec().getOrdnancePointCost(null), 5f);
                     float maxAmmoCalc = wep.getMaxAmmo();
                     if (ship.getVariant().getHullMods().contains("missleracks")) { maxAmmoCalc /= 2f; }
 
