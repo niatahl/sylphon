@@ -1,4 +1,10 @@
-﻿0.9.4
+﻿0.9.4a
+Bugfixing:
+- Fixed Sylvetra crash error
+- Fixed chain-lightning style weapons such as the Clemency Ping triggering multiple times if the ship moved fast enough
+
+
+0.9.4
 Changes:
 - New engine colour for most ships
 - Changed Silverhead to skimmer system due to various issues with nullspace skip
@@ -7,6 +13,7 @@ Balancing:
 - Adjusted a few more ship prices
 - Lowered Rakia flux capacity from 18000 to 14000
 - Improved Harrow's tracking ability
+
 
 0.9.3d
 Additions:
