@@ -14,7 +14,7 @@ public class SRD_FreliaRightHangarDeco implements EveryFrameWeaponEffectPlugin {
         }
 
         //Checks if our dedicated weapon slot is empty; if so, we switch to our "active" sprite. Otherwise, we switch to our "empty" sprite
-        if (!ship.getVariant().getFittedWeaponSlots().contains("SLOT_SUPER_LEFT")) {
+        if (!ship.getVariant().getFittedWeaponSlots().contains("SLOT_SUPER_RIGHT")) {
             weapon.getAnimation().setFrame(1);
         } else {
             weapon.getAnimation().setFrame(0);
