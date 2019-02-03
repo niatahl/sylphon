@@ -29,6 +29,9 @@ public class SRD_DroneCarrier extends BaseHullMod {
     @Override
     public void applyEffectsAfterShipCreation(ShipAPI ship, String id) {
         //-----------------------------------------REMOVING FIGHTER WINGS-----------------------------------------------
+        //For error sound
+        boolean shouldSoundError = false;
+
         //If we happen to have automated our fighters via Seeker magic, they are all unaffected
         if (!ship.getVariant().getHullMods().contains("SKR_remote")) {
             //Attempt to go through all fighter wings on the ship
@@ -48,6 +51,7 @@ public class SRD_DroneCarrier extends BaseHullMod {
                         }
                     }
                     ship.getVariant().setWingId(i ,null);
+                    shouldSoundError = true;
                 }
 
                 //Finally, increase our iterator
@@ -69,10 +73,15 @@ public class SRD_DroneCarrier extends BaseHullMod {
         //Finally, deletes the hullmods we aren't allowed to have
         if (deletionList.size() > 0) {
             ship.getVariant().addMod("SRD_IncompatibleHullmodWarning");
-            Global.getSoundPlayer().playUISound(BAD_HULLMOD_NOTIFICATION_SOUND, 1f, 1f);
+            shouldSoundError = true;
         }
         for (String s : deletionList) {
             ship.getVariant().removeMod(s);
+        }
+
+        //...and plays an error sound if anything was removed
+        if (shouldSoundError) {
+            Global.getSoundPlayer().playUISound(BAD_HULLMOD_NOTIFICATION_SOUND, 0.7f, 1f);
         }
     }
 

@@ -293,7 +293,7 @@
     {
       "angle": 4,
       "arc": 45,
-      "id": "WS0005",
+      "id": "SLOT_SUPER_LEFT",
       "locations": [
         18.5,
         133
@@ -305,7 +305,7 @@
     {
       "angle": -4,
       "arc": 45,
-      "id": "WS0006",
+      "id": "SLOT_SUPER_RIGHT",
       "locations": [
         18.5,
         -133
