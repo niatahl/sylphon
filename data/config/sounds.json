@@ -1,4 +1,24 @@
 {
+	"music":{
+		"SRD_metafalica_theme":[
+			{"file":"SRD_metafalica_theme.ogg","source":"sounds/sylphon/music/","volume":0.5},
+		],
+		"SRD_takumi_theme":[
+			{"file":"SRD_takumi_theme.ogg","source":"sounds/sylphon/music/","volume":0.5},
+		],
+		
+	},
+	
+	"SRD_metafalica_theme":[
+			{"file":"sounds/sylphon/music/SRD_metafalica_theme.ogg","pitch":1,"volume":0.5},
+		],
+	"SRD_takumi_theme":[
+			{"file":"sounds/sylphon/music/SRD_takumi_theme.ogg","pitch":1,"volume":0.5},
+		],
+		
+	
+		
+		
 	"SRD_equity_shot":{
         "sounds":[
             {"file":"sounds/sylphon/weapons/SRD_equity_shot.ogg","pitch":0.9,"volume":1}
