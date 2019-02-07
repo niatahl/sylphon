@@ -1,4 +1,7 @@
 ﻿0.9.4a
+Changes:
+- Trails on Sylphon weapons are now considerably less CPU/GPU intesive at excessive time slowdown/speedup, at the cost of small amounts of visual pop-in at those moments for very fast projectiles
+
 Bugfixing:
 - Fixed some errors regarding the Frelia's convertable hangars
 - The Drone Carrier hullmod now properly sounds an error when mounting incompatible LPCs
