@@ -21,6 +21,10 @@ import static org.lwjgl.opengl.GL11.GL_SRC_ALPHA;
 
 public class SRD_ProjectileTrailHandlerPlugin extends BaseEveryFrameCombatPlugin {
 
+    //Sort of a performance-sanity option; projectile trails only spawn when this much *actual* engine time has passed (at least).
+    //  Still only spawns trails at most once per frame, but helps when high time-mult is in play
+    private static final float MINIMUM_ENGINE_TIME_WAIT = 1f/180f;
+
     //A map of all the trail sprites used (note that all the sprites must be under SRD_fx): ensure this one has the same keys as the other maps
     private static final Map<String, String> TRAIL_SPRITES = new HashMap<>();
     static {
@@ -382,12 +386,16 @@ public class SRD_ProjectileTrailHandlerPlugin extends BaseEveryFrameCombatPlugin
         PROJECTILE_ANGLE_ADJUSTMENT.put("SRD_enochian_shot", true);
     }
 
+    //Don't touch: this is for tracking our spawn delay at high time mults
+    float timer = 0f;
+
     @Override
     public void init(CombatEngineAPI engine) {
         //Reinitialize the lists
         projectileTrailIDs.clear();
         projectileTrailIDs2.clear();
         projectileTrailIDs3.clear();
+        timer = 0f;
     }
 
     @Override
@@ -396,6 +404,14 @@ public class SRD_ProjectileTrailHandlerPlugin extends BaseEveryFrameCombatPlugin
             return;
         }
         CombatEngineAPI engine = Global.getCombatEngine();
+
+        //Only run once our timer is finished
+        if (timer < MINIMUM_ENGINE_TIME_WAIT) {
+            timer += amount;
+            return;
+        } else {
+            timer = 0f;
+        }
 
         //Runs once on each projectile that matches one of the IDs specified in our maps
         for (DamagingProjectileAPI proj : engine.getProjectiles()) {

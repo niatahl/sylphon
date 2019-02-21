@@ -1,6 +1,9 @@
 ﻿0.9.4a
-Additions:
-- Added fancy things
+Changes:
+- Trails on Sylphon weapons are now considerably less CPU/GPU intesive at excessive time slowdown/speedup, at the cost of small amounts of visual pop-in at those moments for very fast projectiles
+- Added Ambush Spec hullmod to Dread Eagle, boosting active vent rate by 50%
+- Increased Dread Eagle flux capacaity from 16000 to 18000 and reduced dissipation from 500 to 400
+- Changed Paja to be magazine-based
 
 Bugfixing:
 - Fixed some errors regarding the Frelia's convertable hangars
