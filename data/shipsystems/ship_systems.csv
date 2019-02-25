@@ -1,5 +1,5 @@
 name,id,flux/second,f/s (base rate),f/s (base cap),flux/use,f/u (base rate),f/u (base cap),cr/u,max uses,regen,charge up,active,down,cooldown,toggle,noDissipation,noHardDissipation,hardFlux,noFiring,noTurning,noStrafing,noAccel,noShield,noVent,icon
-Nullspace Jaunt,SRD_creeper_device,,,,,,0.2,,,,0.5,1,0,12,,TRUE,,TRUE,TRUE,,,,,,graphics/icons/hullsys/displacer.png
+Nullspace Jaunt,SRD_creeper_device,,,,,,0.2,,,,0.5,1,0,15,,TRUE,,TRUE,TRUE,,,,,,graphics/icons/hullsys/displacer.png
 Nullspace Shunt,SRD_nullspace_shunt,,,,,,,,,,2,4,0.5,20,,,,,,,,,,TRUE,graphics/icons/hullsys/high_energy_focus.png
 Nullspace Skip,SRD_nullspace_skip,1,,,,,0.1,,,,0,1,0.1,6,,,TRUE,,TRUE,,,,TRUE,TRUE,graphics/icons/hullsys/displacer.png
 Nullpoint Barrier,SRD_nullpoint_barrier,100,,,,,,,,,0.5,2,0.5,8,TRUE,,,TRUE,TRUE,,,,,,graphics/sylphon/icons/hullsys/SRD_nullpoint_barrier.png

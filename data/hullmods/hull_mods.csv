@@ -97,8 +97,6 @@ However, instead of linking the conduit system to the ship's reactor, this ship 
 Also reduces the damage of harmful nullspace forces by %s.",Increases speed when traveling in a straight line. Bonus armor damage reduction at high flux. Damages anything nearby when overloading.,graphics/sylphon/hullmods/outcast_engineering.png
 Variable Ammo Loader,SRD_variable_ammo_loader,,,,offensive,Weapons,,,TRUE,,0,0,0,0,data.scripts.hullmods.SRD_VariableAmmoLoader,"The Metafalica has advanced ammo-switchers built into its main batteries, allowing the three Phira cannons on the ship to swap between different modes via the ship's shipsystem.",Main cannons can switch ammo types,graphics/sylphon/hullmods/SRD_variable_ammo.png
 ,,,,,,,,,,,,,,,,,,
-MusicBox,SRD_musicbox,,,,,,,,TRUE,TRUE,0,0,0,0,data.scripts.hullmods.SRD_MusicBox,(Hidden) Plays theme music in combat.,(Hidden) Plays theme music in combat.,graphics/tahlan/hullmods/tahlan_knightrefit.png
-,,,,,,,,,,,,,,,,,,
 HULLMOD CONFLICT,SRD_IncompatibleHullmodWarning,,,,,,,,TRUE,,0,0,0,0,data.scripts.hullmods.SRD_IncompatibleHullmodWarning,"%s, this hullmod conflict with another previously installed or built-in hullmod.",,graphics/icons/intel/investigation.png
 EXTRA FIGHTER BAYS 1,SRD_hiddenmod_extra_carrier_bays_1,,,,,,,,TRUE,TRUE,0,0,0,0,data.scripts.hullmods.SRD_FAKEMOD_HiddenExtraCarrierBays1,YOU SHOULDN'T BE SEEING THIS.,,graphics/icons/intel/investigation.png
 EXTRA FIGHTER BAYS 2,SRD_hiddenmod_extra_carrier_bays_2,,,,,,,,TRUE,TRUE,0,0,0,0,data.scripts.hullmods.SRD_FAKEMOD_HiddenExtraCarrierBays2,YOU SHOULDN'T BE SEEING THIS.,,graphics/icons/intel/investigation.png

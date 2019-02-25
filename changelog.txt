@@ -1,4 +1,12 @@
-﻿0.9.4a
+﻿0.9.3
+Balancing:
+- Lowered Adloquium's per-shot damage and lowered refire delay to make the burst damage less abusive
+- Lowered Catharsis armor and shield values
+- Lowered Disavowal range by 50su and fixed flux values
+- Lowered Celika's dissipation from 300 to 250 and shield efficiency from 0.7 to 0.9
+- Increased Nullspace Jaunt cooldown from 12 to 15 seconds 
+
+0.9.4a/b
 Changes:
 - Trails on Sylphon weapons are now considerably less CPU/GPU intesive at excessive time slowdown/speedup, at the cost of small amounts of visual pop-in at those moments for very fast projectiles
 - Added Ambush Spec hullmod to Dread Eagle, boosting active vent rate by 50%

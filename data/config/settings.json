@@ -6,7 +6,7 @@
 		"SRD_ProjectileTrailHandlerPlugin":"data.scripts.plugins.SRD_ProjectileTrailHandlerPlugin",
 		"SRD_LensFlarePlugin":"data.scripts.plugins.SRD_LensFlarePlugin",
 		"SRD_NanobotsPlugin":"data.scripts.plugins.SRD_NanobotsPlugin",
-		"SRD_MusicPlayerPlugin":"data.scripts.plugins.SRD_MusicPlayerPlugin",
+		#"SRD_MusicPlayerPlugin":"data.scripts.plugins.SRD_MusicPlayerPlugin",
 		#"SRD_ProjectileCustomGlowPlugin":"data.scripts.plugins.SRD_ProjectileCustomGlowPlugin",
 		},  
 	"designTypeColors":{
