@@ -4,14 +4,10 @@ package data.scripts.weapons;
 
 import com.fs.starfarer.api.Global;
 import com.fs.starfarer.api.combat.*;
-import com.sun.javafx.tk.quantum.GlassAppletWindow;
 import org.lazywizard.lazylib.combat.CombatUtils;
-import org.lwjgl.util.vector.Vector2f;
 
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 
 public class SRD_EMPCyclerScript implements EveryFrameWeaponEffectPlugin {
 
