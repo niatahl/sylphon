@@ -35,6 +35,7 @@
 			"sylphon_ecc_bp":0.1,
 		},
 		"hulls":{
+			"sylphon_Rakia":0.2,
 		},
 	},
 	# ships the faction gets access to when importing S&W out-of-faction

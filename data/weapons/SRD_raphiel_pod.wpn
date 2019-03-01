@@ -28,12 +28,7 @@
     "cloudDuration": 1,
     "cloudParticleCount": 3,
     "cloudRadius": 10,
-    "particleColor": [
-      0,
-      0,
-      0,
-      200
-    ],
+    "particleColor": [150,100,150,100],
     "particleSizeMin": 20,
     "particleSizeRange": 20
   },

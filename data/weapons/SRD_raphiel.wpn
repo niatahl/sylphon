@@ -24,7 +24,7 @@
 				 "blowbackDuration":2.0,
 				 "blowbackLength":30.0,
 				 "blowbackSpread":10.0,
-				 "particleColor":[150,100,150,200]},
+				 "particleColor":[150,100,150,100]},
 	"projectileSpecId":"SRD_raphiel_msl",
 	"fireSoundTwo":"SRD_raphiel_fire",
 }

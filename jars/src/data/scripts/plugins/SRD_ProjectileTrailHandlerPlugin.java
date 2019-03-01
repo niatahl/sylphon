@@ -406,8 +406,8 @@ public class SRD_ProjectileTrailHandlerPlugin extends BaseEveryFrameCombatPlugin
         CombatEngineAPI engine = Global.getCombatEngine();
 
         //Only run once our timer is finished
+        timer += amount;
         if (timer < MINIMUM_ENGINE_TIME_WAIT) {
-            timer += amount;
             return;
         } else {
             timer = 0f;
