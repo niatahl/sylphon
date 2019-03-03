@@ -151,6 +151,11 @@ public class SRD_NanoBotSwarm extends BaseShipSystemScript {
 
         //Then, get all targets in range and apply effects to them
         for (CombatEntityAPI target : CombatUtils.getEntitiesWithinRange(ship.getLocation(), NANOBOT_AOE*effectLevel)) {
+            //Ignore collision-less targets
+            if (target.getCollisionClass() == CollisionClass.NONE) {
+                continue;
+            }
+
             //If the target is *too* close, we ignore it
             if (MathUtils.getDistance(target.getLocation(), ship.getLocation()) + target.getCollisionRadius() < (NANOBOT_AOE-NANOBOT_AOE_THICKNESS)*effectLevel) {
                 continue;
