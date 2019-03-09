@@ -107,7 +107,7 @@ public class SRD_VariableAmmoLoader extends BaseHullMod {
                     for (int i = 0; i < T3_SPLIT_COUNT; i++) {
                         //Spawns the shot, with some inaccuracy
                         float angleOffset = MathUtils.getRandomNumberInRange(-T3_SPLIT_INACCURACY / 2, T3_SPLIT_INACCURACY / 2) + MathUtils.getRandomNumberInRange(-T3_SPLIT_INACCURACY / 2, T3_SPLIT_INACCURACY / 2);
-                        DamagingProjectileAPI newProj = (DamagingProjectileAPI) engine.spawnProjectile(ship, weapon, T3_SPLIT_WEAPON_NAME, loc, projAngle + angleOffset, ship.getVelocity());
+                        DamagingProjectileAPI newProj = (DamagingProjectileAPI) engine.spawnProjectile(ship, weapon, T3_SPLIT_WEAPON_NAME, loc, projAngle + angleOffset, new Vector2f(0,0));
                         //Varies the speed slightly, for a more artillery-esque look
                         float rand = MathUtils.getRandomNumberInRange(1 - T3_SPLIT_SPEED_VARIATION, 1 + T3_SPLIT_SPEED_VARIATION);
                         newProj.getVelocity().x *= rand;

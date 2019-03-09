@@ -1,6 +1,6 @@
 id,variant,tags,tier,rarity,fleet pts,op cost,formation,range,attackRunRange,attackPositionOffset,num,role,role desc,refit,base value,,,,,,,,,,,,,number
 SRD_Spectral_harrow_wing,SRD_Spectral_harrow,"no_drop, no_sell, high",0,,1,0,V,3000,500,,5,BOMBER,Fighter,3,2000,,,,,,,,,,,,,221122
-SRD_Catharsis_Elite_wing,SRD_Catharsis_Elite,"Interceptor5, interceptor, high, sylphon_core_bp",3,,15,24,V,5000,500,,1,INTERCEPTOR,Hunter,20,20000,,,,,,,,,,,,,123454
+SRD_Catharsis_Elite_wing,SRD_Catharsis_Elite,"Interceptor5, interceptor, high, sylphon_core_bp",3,,15,20,V,5000,500,,1,INTERCEPTOR,Hunter,20,20000,,,,,,,,,,,,,123454
 SRD_Spectral_defense_wing,SRD_Spectral_defense,"no_drop, no_sell, high",0,,1,2,V,3000,300,,5,SUPPORT,Support,4,3000,,,,,,,,,,,,,221122
 SRD_Cicerone_support_wing,SRD_Cicerone_support,"support3, fighter, high, sylphon_high_bp",2,,5,16,CLAW,4000,800,,3,SUPPORT,Support,15,11000,,,,,,,,,,,,,2
 SRD_Eos_fighter_wing,SRD_Eos_fighter,"fighter5, fighter, high, sylphon_core_bp",2,,8,14,V,4000,500,,3,FIGHTER,Fighter,15,8000,,,,,,,,,,,,,

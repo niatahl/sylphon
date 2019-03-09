@@ -321,23 +321,23 @@ public class SRD_ProjectileTrailHandlerPlugin extends BaseEveryFrameCombatPlugin
     //in behaviour with direction-changing scripts, but can be helpful for aligning certain projectiles
     private static final Map<String, Float> LATERAL_COMPENSATION_MULT = new HashMap<>();
     static {
-        LATERAL_COMPENSATION_MULT.put("SRD_adloquium_shot", 0f);
-        LATERAL_COMPENSATION_MULT.put("SRD_adloquium_fake_shot", 0f);
+        LATERAL_COMPENSATION_MULT.put("SRD_adloquium_shot", 1f);
+        LATERAL_COMPENSATION_MULT.put("SRD_adloquium_fake_shot", 1f);
         LATERAL_COMPENSATION_MULT.put("SRD_skalla_shot", 1f);
         LATERAL_COMPENSATION_MULT.put("SRD_phira_shock_shot", 1f);
-        LATERAL_COMPENSATION_MULT.put("SRD_benediction_msl", 0f);
+        LATERAL_COMPENSATION_MULT.put("SRD_benediction_msl", 1f);
         LATERAL_COMPENSATION_MULT.put("SRD_divinity_shot", 1f);
         LATERAL_COMPENSATION_MULT.put("SRD_equity_shot", 1f);
-        LATERAL_COMPENSATION_MULT.put("SRD_phira_impact_shot", 0f);
-        LATERAL_COMPENSATION_MULT.put("SRD_phira_burst_shot", 0f);
-        LATERAL_COMPENSATION_MULT.put("SRD_phira_burst_split_shot", 0f);
-        LATERAL_COMPENSATION_MULT.put("SRD_excogitation_shot", 0f);
-        LATERAL_COMPENSATION_MULT.put("SRD_arphage_shot", 0f);
-        LATERAL_COMPENSATION_MULT.put("SRD_veda_shot", 0f);
-        LATERAL_COMPENSATION_MULT.put("SRD_qoga_shot", 0f);
-        LATERAL_COMPENSATION_MULT.put("SRD_arciel_shot", 0f);
+        LATERAL_COMPENSATION_MULT.put("SRD_phira_impact_shot", 1f);
+        LATERAL_COMPENSATION_MULT.put("SRD_phira_burst_shot", 1f);
+        LATERAL_COMPENSATION_MULT.put("SRD_phira_burst_split_shot", 1f);
+        LATERAL_COMPENSATION_MULT.put("SRD_excogitation_shot", 1f);
+        LATERAL_COMPENSATION_MULT.put("SRD_arphage_shot", 1f);
+        LATERAL_COMPENSATION_MULT.put("SRD_veda_shot", 1f);
+        LATERAL_COMPENSATION_MULT.put("SRD_qoga_shot", 1f);
+        LATERAL_COMPENSATION_MULT.put("SRD_arciel_shot", 1f);
         LATERAL_COMPENSATION_MULT.put("SRD_harmonius_shot", 1f);
-        LATERAL_COMPENSATION_MULT.put("SRD_enochian_shot", 0f);
+        LATERAL_COMPENSATION_MULT.put("SRD_enochian_shot", 1f);
     }
     //NEW: whether a shot's trail loses opacity as the projectile fades out. Should generally be true, but may need to
     //be set to false on some scripted weapons. Has no real effect on flak rounds or missiles, and should thus be set
@@ -365,25 +365,26 @@ public class SRD_ProjectileTrailHandlerPlugin extends BaseEveryFrameCombatPlugin
     //NEW: whether a shot should have its direction adjusted to face the same way as its velocity vector, thus
     //helping with trail alignment for projectiles without using lateral compensation. DOES NOT WORK FOR
     //PROJECTILES SPAWNED WITH BALLISTIC_AS_BEAM AS SPAWNTYPE, and should not be used on missiles
+    //also breaks scripts and shit and I'm so done with dealing the issues it causes so this is going all false for everything now -Nia
     private static final Map<String, Boolean> PROJECTILE_ANGLE_ADJUSTMENT = new HashMap<>();
     static {
-        PROJECTILE_ANGLE_ADJUSTMENT.put("SRD_adloquium_shot", true);
-        PROJECTILE_ANGLE_ADJUSTMENT.put("SRD_adloquium_fake_shot", true);
+        PROJECTILE_ANGLE_ADJUSTMENT.put("SRD_adloquium_shot", false);
+        PROJECTILE_ANGLE_ADJUSTMENT.put("SRD_adloquium_fake_shot", false);
         PROJECTILE_ANGLE_ADJUSTMENT.put("SRD_skalla_shot", false);
         PROJECTILE_ANGLE_ADJUSTMENT.put("SRD_phira_shock_shot", false);
         PROJECTILE_ANGLE_ADJUSTMENT.put("SRD_benediction_msl", false);
         PROJECTILE_ANGLE_ADJUSTMENT.put("SRD_divinity_shot", false);
         PROJECTILE_ANGLE_ADJUSTMENT.put("SRD_equity_shot", false);
-        PROJECTILE_ANGLE_ADJUSTMENT.put("SRD_phira_impact_shot", true);
-        PROJECTILE_ANGLE_ADJUSTMENT.put("SRD_phira_burst_shot", true);
-        PROJECTILE_ANGLE_ADJUSTMENT.put("SRD_phira_burst_split_shot", true);
-        PROJECTILE_ANGLE_ADJUSTMENT.put("SRD_excogitation_shot", true);
-        PROJECTILE_ANGLE_ADJUSTMENT.put("SRD_arphage_shot", true);
-        PROJECTILE_ANGLE_ADJUSTMENT.put("SRD_veda_shot", true);
-        PROJECTILE_ANGLE_ADJUSTMENT.put("SRD_qoga_shot", true);
-        PROJECTILE_ANGLE_ADJUSTMENT.put("SRD_arciel_shot", true);
+        PROJECTILE_ANGLE_ADJUSTMENT.put("SRD_phira_impact_shot", false);
+        PROJECTILE_ANGLE_ADJUSTMENT.put("SRD_phira_burst_shot", false);
+        PROJECTILE_ANGLE_ADJUSTMENT.put("SRD_phira_burst_split_shot", false);
+        PROJECTILE_ANGLE_ADJUSTMENT.put("SRD_excogitation_shot", false);
+        PROJECTILE_ANGLE_ADJUSTMENT.put("SRD_arphage_shot", false);
+        PROJECTILE_ANGLE_ADJUSTMENT.put("SRD_veda_shot", false);
+        PROJECTILE_ANGLE_ADJUSTMENT.put("SRD_qoga_shot", false);
+        PROJECTILE_ANGLE_ADJUSTMENT.put("SRD_arciel_shot", false);
         PROJECTILE_ANGLE_ADJUSTMENT.put("SRD_harmonius_shot", false);
-        PROJECTILE_ANGLE_ADJUSTMENT.put("SRD_enochian_shot", true);
+        PROJECTILE_ANGLE_ADJUSTMENT.put("SRD_enochian_shot", false);
     }
 
     //Don't touch: this is for tracking our spawn delay at high time mults

@@ -1,4 +1,8 @@
-﻿0.9.3
+﻿0.9.3a
+Changes:
+- Added Core Blueprint Package to Nex starts
+
+0.9.3
 Changes:
 - Reworked Raphiel to fire in larger bursts with lower per-missile damage. Less effective against armour now, but gained a bit more firepower against shields.
 
@@ -6,10 +10,15 @@ Balancing:
 - Lowered Adloquium's per-shot damage and lowered refire delay to make the burst damage less abusive
 - Lowered Catharsis armor and shield values
 - Lowered Disavowal range by 50su and fixed flux values
-- Lowered Celika's dissipation from 300 to 250 and shield efficiency from 0.7 to 0.9
-- Increased Nullspace Jaunt cooldown from 12 to 15 seconds 
+- Lowered Celika's dissipation from 300 to 250 and shield efficiency from 0.7 to 0.9 
 - Removed Exalt ammo regeneration and upped base ammo to compensate (subject to further change depending on how they perform)
 - Halved RoF for Celemency pulse
+- Changed the Catharsis' missile battery to fragmentation damage
+
+Bugfixes:
+- Fixed an issue with the Metafalica's guns that caused them to fire off-target
+- Fixed an issue with the Metafalica's burst rounds that caused them to sometimes reorient 
+
 
 0.9.4a/b
 Changes:
