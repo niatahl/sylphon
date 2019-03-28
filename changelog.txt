@@ -1,8 +1,11 @@
-﻿0.9.3a
+﻿0.9.5a
 Changes:
 - Added Core Blueprint Package to Nex starts
 
-0.9.3
+Bugfixes:
+- Fixed Flux Exchanger using outdated code to check for nullspace conduits, which caused issues with Outcast ships
+
+0.9.5
 Changes:
 - Reworked Raphiel to fire in larger bursts with lower per-missile damage. Less effective against armour now, but gained a bit more firepower against shields.
 
