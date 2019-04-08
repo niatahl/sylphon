@@ -1,4 +1,5 @@
 ﻿0.9.5
+
 Changes:
 - Added Core Blueprint Package to Nex starts
 - Reworked nullspace skip system slightly and readded it to Ascordia and Silverhead
@@ -8,6 +9,9 @@ Balancing:
 - Increased Indulgence damage from 10 to 20, increased refire rate to 1.8s. Now more bursty and slightly improved dps
 - Increased ammo count of all Exalt missile launchers and lowered OP costs
 - Reduced Equilibrium base shield efficiency from 0.6 to 0.7
+
+Bugfixes:
+- Fixed Flux Exchanger using outdated code to check for nullspace conduits, which caused issues with Outcast ships
 
 0.9.4c
 Changes:

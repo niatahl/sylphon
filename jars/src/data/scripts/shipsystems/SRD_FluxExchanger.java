@@ -77,7 +77,7 @@ public class SRD_FluxExchanger extends BaseShipSystemScript {
                 if (target.getVariant() == null || target == ship || target.isPhased()) {
                     continue;
                 }
-                if (!target.getVariant().getHullMods().contains("SRD_nullspace_stabilizer") && !target.getVariant().getHullMods().contains("SRD_nullspace_conduits") && !target.getVariant().getHullMods().contains("SRD_modular_nullspace_conduits")) {
+                if (!SRD_ModPlugin.hasNullspaceConduits(new ArrayList<>(target.getVariant().getHullMods()))) {
                     continue;
                 }
 
@@ -163,14 +163,7 @@ public class SRD_FluxExchanger extends BaseShipSystemScript {
                 if (target.getVariant() == null || target == ship || target.isPhased()) {
                     continue;
                 }
-                boolean shouldContinue = false;
-                for (String s : target.getVariant().getHullMods()) {
-                    if (SRD_ModPlugin.NULLSPACE_CONDUIT_HULLMODS.contains(s)) {
-                        shouldContinue = true;
-                        break;
-                    }
-                }
-                if (shouldContinue) {
+                if (SRD_ModPlugin.hasNullspaceConduits(new ArrayList<>(target.getVariant().getHullMods()))) {
                     continue;
                 }
 
