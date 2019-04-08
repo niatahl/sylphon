@@ -159,8 +159,8 @@ public class SRD_RakiaPhaseStats extends BaseShipSystemScript {
             positionToSpawn.x += drillPositions[0].y;
             positionToSpawn = VectorUtils.rotateAroundPivot(positionToSpawn, ship.getLocation(), ship.getFacing(), new Vector2f(0f, 0f));
             MagicTrailPlugin.AddTrailMemberAdvanced(ship, drillTrailIDs[i], spriteToUse, positionToSpawn, drillSpeed, drillSpeed * 0.5f,
-                    (float)(FastTrig.sin(6f * drillCounter + (Math.toRadians(120 * i))) * 12f) + ship.getFacing() + 180f + drillAngles[0], 0f, 0f, 17f,
-                    32f, PHASE_COLOR, Color.BLACK, 0.8f * effectLevel, 0.1f, 0f, 0.35f, GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA,
+                    (float)(FastTrig.sin(6f * drillCounter + (Math.toRadians(120 * i))) * 12f) + ship.getFacing() + 180f + drillAngles[0], 0f, 0f, 12f,
+                    24f, PHASE_COLOR, Color.BLACK, 0.8f * effectLevel, 0.1f, 0f, 0.35f, GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA,
                     64f, 1550f, new Vector2f(0f, 0f), null);
         }
         for (int i = 0; i < 3; i++) {
@@ -169,8 +169,8 @@ public class SRD_RakiaPhaseStats extends BaseShipSystemScript {
             positionToSpawn.x += drillPositions[1].y;
             positionToSpawn = VectorUtils.rotateAroundPivot(positionToSpawn, ship.getLocation(), ship.getFacing(), new Vector2f(0f, 0f));
             MagicTrailPlugin.AddTrailMemberAdvanced(ship, drillTrailIDs[i+3], spriteToUse, positionToSpawn, drillSpeed, drillSpeed * 0.5f,
-                    (float)(FastTrig.sin(6f * drillCounter + (Math.toRadians(120 * i))) * 12f) + ship.getFacing() + 180f + drillAngles[1], 0f, 0f, 17f,
-                    32f, PHASE_COLOR, Color.BLACK, 0.8f * effectLevel, 0.1f, 0f, 0.35f, GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA,
+                    (float)(FastTrig.sin(6f * drillCounter + (Math.toRadians(120 * i))) * 12f) + ship.getFacing() + 180f + drillAngles[1], 0f, 0f, 12f,
+                    24f, PHASE_COLOR, Color.BLACK, 0.8f * effectLevel, 0.1f, 0f, 0.35f, GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA,
                     64f, 1550f, new Vector2f(0f, 0f), null);
         }
     }

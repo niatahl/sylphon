@@ -1,8 +1,15 @@
-﻿0.9.3a
+﻿0.9.5
 Changes:
 - Added Core Blueprint Package to Nex starts
+- Reworked nullspace skip system slightly and readded it to Ascordia and Silverhead
+- Iridescent will no longer spawn in Remnant fleets cause it sucks. Might rework it one day, but not now
 
-0.9.3
+Balancing:
+- Increased Indulgence damage from 10 to 20, increased refire rate to 1.8s. Now more bursty and slightly improved dps
+- Increased ammo count of all Exalt missile launchers and lowered OP costs
+- Reduced Equilibrium base shield efficiency from 0.6 to 0.7
+
+0.9.4c
 Changes:
 - Reworked Raphiel to fire in larger bursts with lower per-missile damage. Less effective against armour now, but gained a bit more firepower against shields.
 

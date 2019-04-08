@@ -16,11 +16,11 @@
 	"graphics":{
 		"SRD_fx":{
 			"SRD_Rakia_phantom":"graphics/sylphon/ships/SRD_Rakia_glow2.png",
-			"SRD_Equilibrium_phantom":"graphics/sylphon/ships/SRD_Equilibrium_glow.png",
-			"SRD_Equilibrium_balance_phantom":"graphics/sylphon/ships/SRD_Equilibrium_glow.png",
-			"SRD_Silverhead_phantom":"graphics/sylphon/ships/SRD_Silverhead_glow.png",
+			"SRD_Equilibrium_phantom":"graphics/sylphon/ships/SRD_Equilibrium_glow1.png",
+			"SRD_Equilibrium_balance_phantom":"graphics/sylphon/ships/SRD_Equilibrium_glow1.png",
+			"SRD_Silverhead_phantom":"graphics/sylphon/ships/SRD_Silverhead_glow1.png",
 			"SRD_Seresvalla_phantom":"graphics/sylphon/ships/SRD_Seresvalla_glow.png",
-			"SRD_Ascordia_phantom":"graphics/sylphon/ships/SRD_Ascordia_glow.png",
+			"SRD_Ascordia_phantom":"graphics/sylphon/ships/SRD_Ascordia_glow1.png",
 			"SRD_Eagle_phantom":"graphics/sylphon/ships/SRD_Eagle_glow.png",
 			"SRD_Eagle_P_phantom":"graphics/sylphon/ships/SRD_Eagle_glow.png",
 			"SRD_Skallic_drone_phantom":"graphics/sylphon/ships/fighters/SRD_Skallic_drone_glow.png",

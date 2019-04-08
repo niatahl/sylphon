@@ -20,7 +20,7 @@ public class SRD_AdloquiumScript implements EveryFrameWeaponEffectPlugin {
     public static final int SHOTS_FOR_SWITCH_2 = 6;
 
     public static final float DAMAGE_MULT_SUPERCHARGE = 1.5f;
-    public static final float DAMAGE_MULT_NORMAL = 0.75f;
+    public static final float DAMAGE_MULT_NORMAL = 1f;
 
     private static final Color EXPLOSION_COLOR = new Color(116, 50, 145);
     private static final Color PARTICLE_COLOR = new Color(214, 122, 231);

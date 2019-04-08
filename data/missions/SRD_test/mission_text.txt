@@ -1,3 +1,3 @@
 >SRD Testing Grounds
 
->Initiate combat performance tests
+>Test out all ships in the mod, including some experimental and unfinished designs not available in the campaign

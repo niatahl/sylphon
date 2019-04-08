@@ -1,26 +1,34 @@
 {
 	"id":"SRD_nullspace_skip",
-	"type":"ENGINE_MOD",
-	"aiType":"MANEUVERING_JETS",
+	"type":"PHASE_CLOAK",
+	"aiType":"PHASE_CLOAK",
 	
 	"statsScript":"data.scripts.shipsystems.SRD_NullspaceSkip",
+	"runScriptWhilePaused":false, # only for the player's ship
+	"runScriptWhileIdle":true,  # this means unapply() never gets called
+	"blockActionsWhileChargingDown":true,
 	
+	"phaseHighlight":"_glow2",
+	"phaseDiffuse":"_glow2",
+	
+	"effectColor1":[64,13,102,120],
+	"effectColor2":[64,13,102,45],
+	
+	"clampTurnRateAfter":true,
+	"clampMaxSpeedAfter":true,
+	
+	"engineGlowColor":[0,0,0,0],
+	"engineGlowContrailColor":[0,0,0,0],
 	"engineGlowLengthMult":0,
 	"engineGlowWidthMult":0,
 	"engineGlowGlowMult":0,
 	
-	"flameoutOnImpactChance":0,
-
-	"clampTurnRateAfter":true,
-	"clampMaxSpeedAfter":true,
-
-	#"useSound":"system_plasma_jets",
-	"loopSound":"SRD_nullspace_with_system",
-	"outOfUsesSound":"engine_disabled",
+	"soundFilterType":"LOWPASS",
+	"soundFilterGain":0.8,
+	"soundFilterGainHF":0.25,
 	
-	"aiHints":{
-		"activeSpeedIncrease":100,
-		"burstMovementPotential":300,
-		"averageSpeedIncrease":130,
-	}
+	"shipAlpha":1,
+	
+	"loopSound":"SRD_nullspace_with_system",
+	"outOfUsesSound":"system_phase_cloak_collision",
 }
