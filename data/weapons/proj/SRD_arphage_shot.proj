@@ -14,5 +14,6 @@
 	"hitGlowRadius":25,	
 	"textureScrollSpeed":32.0,
 	"pixelsPerTexel":10.0,
+	"passThroughMissiles":true,
 	"bulletSprite":"graphics/sylphon/missiles/SRD_zealot_slug.png"
 }

@@ -15,5 +15,6 @@
 	"hitGlowRadius":50,	
 	"textureScrollSpeed":32.0,
 	"pixelsPerTexel":10.0,
+	"passThroughMissiles":true,
 	"bulletSprite":"graphics/sylphon/missiles/SRD_adloquium_slug.png"
 }

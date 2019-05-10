@@ -6,15 +6,19 @@
 	"collisionClass":"RAY",
 	"collisionClassByFighter":"RAY_FIGHTER",
 	"length":200.0,
-	"width":35,
+	"width":50,
 	"fadeTime":0.1,
 	"fringeColor":[150,50,255,150],
 	"coreColor":[255,205,255,200],
     "glowColor":[130,25,255,150],
 	"glowRadius":50,
 	"hitGlowRadius":100,	
-	"textureType":"WEAVE",  # now also used for "BALLISTIC_AS_BEAM", if specified
-	#"textureType":["graphics/sylphon/fx/emp_arcs.png","graphics/sylphon/fx/emp_arcs.png"],
+	"passThroughMissiles":true,
+	#"textureType":"WEAVE",  # now also used for "BALLISTIC_AS_BEAM", if specified
+	"textureType": [
+    "graphics/sylphon/fx/SRD_paratach_beam_fringe.png",
+    "graphics/sylphon/fx/SRD_paratach_beam_core.png"
+  ],
 	"textureScrollSpeed":-64,
 	"pixelsPerTexel":1.0,
 }

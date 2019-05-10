@@ -16,5 +16,6 @@
 	"textureScrollSpeed":-256,
 	"pixelsPerTexel":1.0,
 	"textureType":"ROUGH",
+	"passThroughMissiles":true,
 	#"bulletSprite":"graphics/sylphon/missiles/SRD_adloquium_slug.png"
 }
