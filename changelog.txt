@@ -12,7 +12,9 @@ Balancing:
 - Adjusted ship prices in accordance with 0.9.1a values
 
 Bugfixes:
+- Fixed various Sylphon shipsystem graphics rendering incorrectly, which was introduced some 6 months back
 - Fixed Flux Exchanger using outdated code to check for nullspace conduits, which caused issues with Outcast ships
+
 
 0.9.4c
 Changes:

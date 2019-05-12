@@ -99,7 +99,7 @@ public class SRD_NullspaceMissileTrackerPlugin extends BaseEveryFrameCombatPlugi
                         MagicRender.battlespace(Global.getSettings().getSprite("SRD_fx", "" + proj.getProjectileSpecId() + "_phantom"), modifiedShadowPos, new Vector2f(0f, 0f),
                                 missileSizes.get(proj.getProjectileSpecId()),
                                 new Vector2f(0f, 0f), proj.getFacing() + angleDifference,
-                                0f, AFTERIMAGE_COLOR, true, 0.05f, 0f, 0.2f);
+                                0f, AFTERIMAGE_COLOR, true, 0.05f, 0f, 0.2f, CombatEngineLayers.ABOVE_SHIPS_AND_MISSILES_LAYER);
                     }
 
                     shadowDelayCounters.put(proj, shadowDelayCounters.get(proj) - SHADOW_DELAY);

@@ -12,14 +12,15 @@ import org.lazywizard.lazylib.VectorUtils;
 import org.lwjgl.util.vector.Vector2f;
 
 import java.awt.*;
-import java.util.ArrayList;
-import java.util.HashMap;
+import java.util.*;
 import java.util.List;
-import java.util.Map;
 
 import static org.lwjgl.opengl.GL11.*;
 
 public class SRD_FakeSmokePlugin extends BaseEveryFrameCombatPlugin {
+    //Affects which render layer all smoke is drawn on
+    static CombatEngineLayers SMOKE_RENDER_LAYER = CombatEngineLayers.CONTRAILS_LAYER;
+
     //SMOKE are the core of the script, storing all smoke particles' different attributes
     //A SMOKE Map, when added, contains:
     //  t - time, how long it takes for the smoke to fully dissipate
@@ -75,10 +76,13 @@ public class SRD_FakeSmokePlugin extends BaseEveryFrameCombatPlugin {
     public void init(CombatEngineAPI engine) {
         //reinitialize the map
         SMOKE.clear();
+
+        //Creates our layered render plugin and adds it to the engine
+        SRD_FakeSmokeRenderer renderer = new SRD_FakeSmokeRenderer(this);
+        engine.addLayeredRenderingPlugin(renderer);
     }
 
-    @Override
-    public void renderInWorldCoords(ViewportAPI view) {
+    public void renderAllSmoke(ViewportAPI view) {
         CombatEngineAPI engine = Global.getCombatEngine();
         if (engine == null){return;}
 
@@ -186,5 +190,40 @@ public class SRD_FakeSmokePlugin extends BaseEveryFrameCombatPlugin {
 
         //And finally stops OpenGL
         glEnd();
+    }
+}
+
+class SRD_FakeSmokeRenderer extends BaseCombatLayeredRenderingPlugin {
+    private SRD_FakeSmokePlugin parentPlugin;
+
+    //Constructor
+    SRD_FakeSmokeRenderer (SRD_FakeSmokePlugin parentPlugin) {
+        this.parentPlugin = parentPlugin;
+    }
+
+    //Render function; just here to time rendering and tell the main loop to run with a specific layer
+    @Override
+    public void render (CombatEngineLayers layer, ViewportAPI view) {
+        //Initial checks to see if required components exist
+        CombatEngineAPI engine = Global.getCombatEngine();
+        if (engine == null){
+            return;
+        }
+
+        //Only render on the proper layer
+        if (getActiveLayers().contains(layer))
+
+        //Calls our parent plugin's rendering function
+        parentPlugin.renderAllSmoke(view);
+    }
+
+    //We render everywhere, and on all layers (since we can't change these at runtime)
+    @Override
+    public float getRenderRadius() {
+        return 999999999999999f;
+    }
+    @Override
+    public EnumSet<CombatEngineLayers> getActiveLayers() {
+        return EnumSet.of(SRD_FakeSmokePlugin.SMOKE_RENDER_LAYER);
     }
 }

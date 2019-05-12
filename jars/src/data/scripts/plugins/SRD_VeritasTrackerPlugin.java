@@ -13,10 +13,8 @@ import org.lazywizard.lazylib.VectorUtils;
 import org.lwjgl.util.vector.Vector2f;
 
 import java.awt.*;
-import java.util.ArrayList;
-import java.util.HashMap;
+import java.util.*;
 import java.util.List;
-import java.util.Map;
 
 public class SRD_VeritasTrackerPlugin extends BaseEveryFrameCombatPlugin {
     //The color of the explosions
@@ -72,6 +70,10 @@ public class SRD_VeritasTrackerPlugin extends BaseEveryFrameCombatPlugin {
         SPIKES.clear();
         SHIPS.clear();
         CURRENT_ID = 0f;
+
+        //Creates our layered render plugin and adds it to the engine
+        SRD_VeritasRenderer renderer = new SRD_VeritasRenderer(this);
+        engine.addLayeredRenderingPlugin(renderer);
     }
 
     @Override
@@ -98,8 +100,7 @@ public class SRD_VeritasTrackerPlugin extends BaseEveryFrameCombatPlugin {
         }
     }
 
-    @Override
-    public void renderInWorldCoords(ViewportAPI view) {
+    void renderAllProjectiles(ViewportAPI view) {
         CombatEngineAPI engine = Global.getCombatEngine();
         if (engine == null){return;}
 
@@ -199,5 +200,40 @@ public class SRD_VeritasTrackerPlugin extends BaseEveryFrameCombatPlugin {
             }
             //Global.getSoundPlayer().playSound("nictoy_piercer_detonation", 1f, 1f, damagePos, new Vector2f(0f, 0f));
         }
+    }
+}
+
+class SRD_VeritasRenderer extends BaseCombatLayeredRenderingPlugin {
+    private SRD_VeritasTrackerPlugin parentPlugin;
+
+    //Constructor
+    SRD_VeritasRenderer (SRD_VeritasTrackerPlugin parentPlugin) {
+        this.parentPlugin = parentPlugin;
+    }
+
+    //Render function; just here to time rendering and tell the main loop to run with a specific layer
+    @Override
+    public void render (CombatEngineLayers layer, ViewportAPI view) {
+        //Initial checks to see if required components exist
+        CombatEngineAPI engine = Global.getCombatEngine();
+        if (engine == null){
+            return;
+        }
+
+        //Only render on the proper layer
+        if (getActiveLayers().contains(layer))
+
+            //Calls our parent plugin's rendering function
+            parentPlugin.renderAllProjectiles(view);
+    }
+
+    //We render everywhere, and on all layers (since we can't change these at runtime)
+    @Override
+    public float getRenderRadius() {
+        return 999999999999999f;
+    }
+    @Override
+    public EnumSet<CombatEngineLayers> getActiveLayers() {
+        return EnumSet.of(CombatEngineLayers.BELOW_INDICATORS_LAYER);
     }
 }
