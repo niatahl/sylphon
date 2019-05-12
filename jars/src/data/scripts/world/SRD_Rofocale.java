@@ -71,7 +71,7 @@ public class SRD_Rofocale {
         PlanetConditionGenerator.generateConditionsForPlanet(rofocale3, StarAge.YOUNG);
 
         // A dense asteroid field shielding outer planets from most of the radiation; also has several ring bands to give a nice feeling
-        system.addAsteroidBelt(rofocale_star, 3000, 8100, 1000, 170, 490, Terrain.ASTEROID_BELT, "The Great Divide");
+        system.addAsteroidBelt(rofocale_star, 1000, 8100, 1000, 170, 490, Terrain.ASTEROID_BELT, "The Great Divide");
         system.addRingBand(rofocale_star, "misc", "rings_asteroids0", 256f, 1, Color.gray, 256f, 7730, 200f);
         system.addRingBand(rofocale_star, "misc", "rings_asteroids0", 256f, 0, Color.gray, 256f, 7970, 400f);
         system.addRingBand(rofocale_star, "misc", "rings_asteroids0", 256f, 3, Color.gray, 256f, 8100, 220f);

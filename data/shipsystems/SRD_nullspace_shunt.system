@@ -6,7 +6,7 @@
 	"statsScript":"data.scripts.shipsystems.SRD_NullspaceShunt",
 	
 	"weaponGlowColor":[255,0,200,255],
-	"weaponTypes":[ENERGY],
+	"weaponTypes":[ENERGY,BALLISTIC],
 	
 	"useSound":"system_high_energy_focus_activate",
 	#"deactivateSound":"system_high_energy_focus_deactivate",
