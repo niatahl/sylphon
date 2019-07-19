@@ -30,7 +30,7 @@
 		"sindrian_diktat": -0.10, #dictators are sooo touchy
 		"remnant": 0.00, #family
 		"new_galactic_order": -0.49, #better stay quiet in your corner, Nazis
-		"interstellarimperium": -0.40, #aka the bitchy hegemony
+		"interstellarimperium": 0.00, #led by fellow AI, albeit more authoritarian
         "SCY": 0.00, #live and let live
         "shadow_industry": 0.25, #aesthetically pleasing and one of the Sylphon CEOs follows Shadowy's art blog
         "tiandong": 0.00, #we're professionals here
@@ -55,7 +55,6 @@
 		"hegemony": 0.00, #we can never be friends
 		"tritachyon": 0.70, #you just can't fully trust them
         "new_galactic_order": -0.40, #just stay quiet
-        "interstellarimperium": 0.00, #we can't be friends either
         "exigency": -0.60, #to the death
 	},
 	"diplomacyPositiveChance":{

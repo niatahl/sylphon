@@ -3,13 +3,18 @@
   "autocharge": true,
   "barrelMode": "ALTERNATING",
   "fireSoundTwo": "SRD_arciel_fire",
-  "glowColor": [255,0,0,255],
+  "glowColor": [
+    255,
+    0,
+    0,
+    255
+  ],
   "hardpointAngleOffsets": [
     0
   ],
   "hardpointGlowSprite": "graphics/sylphon/weapons/SRD_arciel_hp_glow.png",
   "hardpointOffsets": [
-    -4.5,
+    -1.5,
     0
   ],
   "hardpointSprite": "graphics/sylphon/weapons/SRD_arciel_hp_base.png",
@@ -37,7 +42,7 @@
   ],
   "turretGlowSprite": "graphics/sylphon/weapons/SRD_arciel_turret_glow.png",
   "turretOffsets": [
-    -5.5,
+    -6.5,
     0
   ],
   "turretSprite": "graphics/sylphon/weapons/SRD_arciel_turret_base.png",

@@ -21,7 +21,7 @@ import static org.lwjgl.opengl.GL11.GL_SRC_ALPHA;
 
 public class SRD_NullspaceSkip extends BaseShipSystemScript {
     //Main phase color
-    private static final Color PHASE_COLOR = new Color(0.45f, 0.05f, 0.45f, 0.6f);
+    private static final Color PHASE_COLOR = new Color(0.45f, 0.05f, 0.45f, 0.2f);
 
     //For nullspace phantoms
     private static final Color AFTERIMAGE_COLOR = new Color(0.25f, 0.05f, 0.40f, 0.3f);

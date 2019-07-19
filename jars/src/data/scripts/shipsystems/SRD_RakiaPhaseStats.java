@@ -20,7 +20,7 @@ import static org.lwjgl.opengl.GL11.*;
 
 public class SRD_RakiaPhaseStats extends BaseShipSystemScript {
     //Main phase color
-    private static final Color PHASE_COLOR = new Color(0.45f, 0.05f, 0.45f, 0.6f);
+    private static final Color PHASE_COLOR = new Color(0.45f, 0.05f, 0.45f, 0.5f);
 
     //For nullspace phantoms
     private static final Color AFTERIMAGE_COLOR = new Color(0.25f, 0.05f, 0.40f, 0.3f);
@@ -152,7 +152,7 @@ public class SRD_RakiaPhaseStats extends BaseShipSystemScript {
 
         //Then, spawn six trails, in two different positions, and offset them by angle
         drillCounter += amount;
-        SpriteAPI spriteToUse = Global.getSettings().getSprite("SRD_fx", "conduit_trails_stabilizer");
+        SpriteAPI spriteToUse = Global.getSettings().getSprite("SRD_fx", "projectile_trail_fringe");
         for (int i = 0; i < 3; i++) {
             Vector2f positionToSpawn = new Vector2f(ship.getLocation().x, ship.getLocation().y);
             positionToSpawn.y += drillPositions[0].x;   //Quite misleading: the sprite is turned 90 degrees incorrectly when considering coordinates and angles

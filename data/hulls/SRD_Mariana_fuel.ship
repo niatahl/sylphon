@@ -80,6 +80,9 @@
     12
   ],
   "builtInWings": [],
+  "builtInMods": [
+    "civgrade"
+  ],
   "center": [
     87,
     144

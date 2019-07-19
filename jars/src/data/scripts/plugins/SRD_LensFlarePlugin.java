@@ -3,18 +3,14 @@
 package data.scripts.plugins;
 
 import com.fs.starfarer.api.Global;
-import com.fs.starfarer.api.combat.BaseEveryFrameCombatPlugin;
-import com.fs.starfarer.api.combat.CombatEngineAPI;
-import com.fs.starfarer.api.combat.ViewportAPI;
+import com.fs.starfarer.api.combat.*;
 import com.fs.starfarer.api.graphics.SpriteAPI;
 import org.lazywizard.lazylib.MathUtils;
 import org.lwjgl.util.vector.Vector2f;
 
 import java.awt.*;
-import java.util.ArrayList;
-import java.util.HashMap;
+import java.util.*;
 import java.util.List;
-import java.util.Map;
 
 import static org.lwjgl.opengl.GL11.*;
 
@@ -64,10 +60,13 @@ public class SRD_LensFlarePlugin extends BaseEveryFrameCombatPlugin {
     public void init(CombatEngineAPI engine) {
         //reinitialize the map
         LENS_FLARES.clear();
+
+        //Creates our layered render plugin and adds it to the engine
+        SRD_LensFlareRenderer renderer = new SRD_LensFlareRenderer(this);
+        engine.addLayeredRenderingPlugin(renderer);
     }
 
-    @Override
-    public void renderInWorldCoords(ViewportAPI view) {
+    void renderAllFlares(ViewportAPI view) {
         CombatEngineAPI engine = Global.getCombatEngine();
         if (engine == null){return;}
 
@@ -181,5 +180,40 @@ public class SRD_LensFlarePlugin extends BaseEveryFrameCombatPlugin {
 
         //And finally stops OpenGL
         glEnd();
+    }
+}
+
+class SRD_LensFlareRenderer extends BaseCombatLayeredRenderingPlugin {
+    private SRD_LensFlarePlugin parentPlugin;
+
+    //Constructor
+    SRD_LensFlareRenderer (SRD_LensFlarePlugin parentPlugin) {
+        this.parentPlugin = parentPlugin;
+    }
+
+    //Render function; just here to time rendering and tell the main loop to run with a specific layer
+    @Override
+    public void render (CombatEngineLayers layer, ViewportAPI view) {
+        //Initial checks to see if required components exist
+        CombatEngineAPI engine = Global.getCombatEngine();
+        if (engine == null){
+            return;
+        }
+
+        //Only render on the proper layer
+        if (getActiveLayers().contains(layer))
+
+            //Calls our parent plugin's rendering function
+            parentPlugin.renderAllFlares(view);
+    }
+
+    //We render everywhere, and on all layers (since we can't change these at runtime)
+    @Override
+    public float getRenderRadius() {
+        return 999999999999999f;
+    }
+    @Override
+    public EnumSet<CombatEngineLayers> getActiveLayers() {
+        return EnumSet.of(CombatEngineLayers.ABOVE_SHIPS_AND_MISSILES_LAYER);
     }
 }

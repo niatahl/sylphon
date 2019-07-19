@@ -29,7 +29,7 @@ public class SRD_NanobotsPlugin extends BaseEveryFrameCombatPlugin {
         MagicTrailPlugin.AddTrailMemberAdvanced(null, nanobotTrailMap.get(bot), Global.getSettings().getSprite("SRD_fx", "nanobot_trail"),
                 bot.position, 0f, 0f, bot.currentAngle, 0f, 0f, bot.carriedMass*SIZE_MULT,
                 bot.carriedMass*SIZE_MULT, Color.WHITE, Color.WHITE, 0.8f, 0f, 0.30f, 0.1f, GL_SRC_ALPHA,
-                GL_ONE_MINUS_SRC_ALPHA,128f, -300f, Misc.ZERO, null);
+                GL_ONE_MINUS_SRC_ALPHA,128f, -300f, Misc.ZERO, null, CombatEngineLayers.CONTRAILS_LAYER);
     }
 
     //The sound bots make when arriving at their home ship and deliver their cargo

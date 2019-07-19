@@ -327,7 +327,8 @@ public class SRD_OutcastEngineering extends BaseHullMod {
                 }
                 MagicTrailPlugin.AddTrailMemberAdvanced((CombatEntityAPI)ship, associatedIDs.get(ship).get(testSlot), spriteToUse, positionOfSmoke, smokeSpeed, smokeSpeed * 0.5f, angleOfSmoke,
                         0f, endAngleVel, SMOKE_START_SIZE * sizeMod, SMOKE_END_SIZE * sizeMod, actualSmokeColor, SMOKE_COLOR, SMOKE_OPACITY, 0f,
-                        0.20f, 0.75f, GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA, 128f, 1950f, new Vector2f(0f, 0f), null);
+                        0.20f, 0.75f, GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA, 128f, 1950f, new Vector2f(0f, 0f), null,
+                        CombatEngineLayers.CAPITAL_SHIPS_LAYER);
             }
 
             //Handles afterimages

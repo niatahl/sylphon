@@ -1,4 +1,13 @@
-﻿0.9.5
+﻿0.9.5a
+Changes:
+- Added civilian grade hull to both Mariana variants
+
+Balancing:
+- Nerfed Rakia's flux stats across the board
+- Lowered Rakia ppt from 360s to 300s
+
+
+0.9.5
 Changes:
 - Added Core Blueprint Package to Nex starts
 - Reworked nullspace skip system slightly and readded it to Ascordia and Silverhead
@@ -12,7 +21,9 @@ Balancing:
 - Adjusted ship prices in accordance with 0.9.1a values
 
 Bugfixes:
+- Fixed various Sylphon shipsystem graphics rendering incorrectly, which was introduced some 6 months back
 - Fixed Flux Exchanger using outdated code to check for nullspace conduits, which caused issues with Outcast ships
+
 
 0.9.4c
 Changes:
