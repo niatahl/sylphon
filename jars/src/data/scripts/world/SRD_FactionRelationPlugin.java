@@ -72,8 +72,5 @@ public class SRD_FactionRelationPlugin implements SectorGeneratorPlugin {
 
         //Adds automatic adjustment of relations, so that Sylphon relations can never pass a certain point with some factions
         sector.addScript(new SRD_CampaignRelationsReadjustmentPlugin());
-
-        //Finally, allow the Sylphon to post bounties
-        SharedData.getData().getPersonBountyEventData().addParticipatingFaction("sylphon");
     }
 }

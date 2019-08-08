@@ -27,8 +27,8 @@ public class SRD_NullspaceConduits extends BaseHullMod {
     private static final String BAD_HULLMOD_NOTIFICATION_SOUND = "cr_allied_critical";
 
     //----------------------------------------PASSIVE BONUSES-----------------------------------------
-    public static final float ENERGY_FLUX_COST_PERCENT_DIFF = 0.8f;
-    public static final float BEAM_FLUX_COST_PERCENT_DIFF = 0.9f;
+    public static final float ENERGY_FLUX_COST_PERCENT_DIFF = 0.9f;
+    public static final float BEAM_FLUX_COST_PERCENT_DIFF = 0.95f;
     public static final float NULLSPACE_DAMAGE_REDUCTION = 0.4f;
 
     //--------------------------------------------------SPEED BOOST-----------------------------------------------------

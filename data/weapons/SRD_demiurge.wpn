@@ -49,5 +49,5 @@
   ],
   "turretSprite": "graphics/sylphon/weapons/SRD_demiurge_base.png",
   "type": "ENERGY",
-  "width": 50
+  "width": 30
 }

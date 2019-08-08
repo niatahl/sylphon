@@ -165,8 +165,8 @@
 		"offersCommissions":true,
 		"engagesInHostilities":false,
 		"buysAICores":true,
-		"AICoreValueMult":3.5,
-		"AICoreRepMult":2,
+		"AICoreValueMult":2,
+		"AICoreRepMult":2.5,
 		"buysSurveyData":true,
 		"hostilityImpactOnGrowth":true,
 		"punitiveExpeditionData":{

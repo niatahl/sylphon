@@ -1,6 +1,55 @@
-﻿0.9.5a
+﻿0.9.5c
+Balancing:
+- Increased Furika top speed from 110 to 130
+- Increased Celika top speed from 110 to 120
+- Lowered Dread Eagle shield efficiency from 0.8 to 1.0
+
+- Major tweaking of FP values for all ships. Too many to list here, but generally FP values went up, which should result in Sylphon fleets being less oversized.
+	- Celika DP 8 -> 7
+	- Etrika DP 18 -> 12
+	- Tilia DP 14 -> 12
+	- Synastry DP 30 -> 28
+	- Eolia DP 25 -> 22
+	- Equilibrium DP 50 -> 60
+	- Frelia DP 50 -> 45
+	
+
+0.9.5b
+Balancing:
+- Lowered energy weapon flux discount from nullspace conduits to 10% and 5% for projectile and beam weapons respectively
+- Ships:
+	- Equilibrium base shield efficiency lowered from 0.7 to 0.8
+	- Equilibrium dissipation lowered from 1200 to 1000
+	- Replekia shield efficiency lowered from 0.9 to 1.0
+	- Frelia shield efficiency lowered from 0.7 to 0.9
+	- Silverhead shield efficiency lowered from 0.7 to 0.8
+	- Furika top speed lowered from 140 to 110
+	- Celika top speed lowered from 140 to 110
+	- Ascordia top speed lowered from 110 to 100
+	- Dread Eagle flux capacity lowered from 18000 to 16000
+	- Valestri dissipation lowered from 650 to 600
+	- Sylvetra shield efficiency lowered from 0.8 to 1.0
+	- Synastry dissipation lowered from 700 to 600
+	- Frelia dissipation lowered from 900 to 700
+- Weapons:
+	- Lowered Adloquium per-shot damage and increased rate of fire to reduce burst potential
+	- Increased Embrace flux/shot from 45 to 50
+	- Increased Radiant Dawn range from 850 to 1000
+	- Lowered Purgatory range from 800 to 750
+	- Lowered Adloquium range from 800 to 700
+	- Increased Benison flux/shot from 300 to 330
+	- Increased Zealot flux/shot from 20 to 24
+	- Increased Zealot emp/shot from 10 to 20
+	- Reduced Raphiel EMP damage from 200 to 100
+	
+Bugfixes:
+- Fixed Sylphon not registering for the bounty system
+
+
+0.9.5a
 Changes:
 - Added civilian grade hull to both Mariana variants
+- Rewrote description for Seresvalla's system for better clarity
 
 Balancing:
 - Nerfed Rakia's flux stats across the board

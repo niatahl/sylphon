@@ -117,10 +117,10 @@
     "SRD_eccentric_core_balance"
   ],
   "builtInWeapons": {
+    "WS0005": "SRD_balance_halo",
     "WS0027": "SRD_demiurge",
     "WS0029": "SRD_demiurge"
   },
-  "builtInWings": [],
   "center": [
     237,
     170
@@ -686,6 +686,18 @@
       "mount": "HARDPOINT",
       "size": "LARGE",
       "type": "BUILT_IN"
+    },
+    {
+      "angle": 0,
+      "arc": 151,
+      "id": "WS0005",
+      "locations": [
+        18,
+        -0
+      ],
+      "mount": "TURRET",
+      "size": "LARGE",
+      "type": "DECORATIVE"
     }
   ],
   "width": 474

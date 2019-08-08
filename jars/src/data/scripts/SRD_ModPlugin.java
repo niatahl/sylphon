@@ -4,6 +4,7 @@ import com.fs.starfarer.api.BaseModPlugin;
 import com.fs.starfarer.api.Global;
 import com.fs.starfarer.api.campaign.SectorAPI;
 import com.fs.starfarer.api.combat.ShipHullSpecAPI;
+import com.fs.starfarer.api.impl.campaign.shared.SharedData;
 import com.fs.starfarer.api.loading.HullModSpecAPI;
 import data.scripts.campaignPlugins.SRD_AIConversionNexerelinAdderPlugin;
 import data.scripts.world.SRD_FactionRelationPlugin;
@@ -32,15 +33,11 @@ public class SRD_ModPlugin extends BaseModPlugin {
     public void onApplicationLoad() {
         boolean hasLazyLib = Global.getSettings().getModManager().isModEnabled("lw_lazylib");
         if (!hasLazyLib) {
-            throw new RuntimeException("Sylphon RnD requires LazyLib by LazyWizard");
+            throw new RuntimeException("Sylphon RnD requires LazyLib by LazyWizard!" + "\nGet it at http://fractalsoftworks.com/forum/index.php?topic=5444");
         }
         boolean hasMagicLib = Global.getSettings().getModManager().isModEnabled("MagicLib");
         if (!hasMagicLib) {
-            throw new RuntimeException("Sylphon RnD requires MagicLib!");
-        }
-        boolean hasSSFX = Global.getSettings().getModManager().isModEnabled("xxx_ss_FX_mod");
-        if (hasSSFX) {
-            throw new RuntimeException("Sylphon RnD is not compatible with Starsector FX");
+            throw new RuntimeException("Sylphon RnD requires MagicLib!" + "\nGet it at http://fractalsoftworks.com/forum/index.php?topic=13718");
         }
 
         boolean hasGraphicsLib = Global.getSettings().getModManager().isModEnabled("shaderLib");
@@ -93,6 +90,9 @@ public class SRD_ModPlugin extends BaseModPlugin {
         if (!haveNexerelin) {
             SRD_FactionRelationPlugin.initFactionRelationships(sector);
         }
+
+        //Finally, allow the Sylphon to post bounties
+        SharedData.getData().getPersonBountyEventData().addParticipatingFaction("sylphon");
     }
 
     /*-----------------------------------Convenience functions down here!---------------------------------------------*/
