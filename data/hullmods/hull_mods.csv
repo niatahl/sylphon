@@ -24,9 +24,10 @@ Nanolaminate Armor,SRD_nanolaminate_armor,2,,,"defensive, shields",Armor,9999,,T
 Each time the ship loses %s of its total armor (ignoring the damage reducing effect from %s) the ship's shield capacitors get supercharged; if the ship activates its shields within %s they will %s while firing harmful energy bolts at anything in the shield's arc.",Taking shield damage supercharges shields,graphics/sylphon/hullmods/SRD_nanolaminate_armor.png
 Masterwork Optics,SRD_masterwork_optics,2,,,special,Weapons,9999,,TRUE,,0,0,0,0,data.scripts.hullmods.SRD_MasterworkOptics,"These highly advanced optical lenses are instrumental in the Götterdämmerung's firing mechanism. While hard to maintain and service, they allow beams to keep their coherency for far longer than any comparable alternative; all beam weapons on the ship gains %s SU longer range.
 
-Being a planet cracker class weapon, the Götterdämmerung can be used for orbital bombardment with a fighterpower equaling %s.
+Being a planet cracker class weapon, the Götterdämmerung can be used for orbital bombardment with a fighterpower equivalent to %s and can provide orbital firesupport, increasing the effective strength of ground operations by %s, up to the total number of marines in the fleet.
 
-Increases the monthly maintainance supply cost by %s, and increases recovery costs after deployment by %s.",Vastly increased beam range. Higher upkeep,graphics/sylphon/hullmods/SRD_masterwork_optics.png
+Increases the monthly maintainance supply cost by %s, and increases recovery costs after deployment by %s.
+Furthermore doubles the rate of CR degradation after peak perfomance time has run out.","Vastly increased beam range, bombardment and ground support boosts and higher upkeep",graphics/sylphon/hullmods/SRD_masterwork_optics.png
 Drone Carrier,SRD_drone_carrier,,,,,Fighters,,,TRUE,,0,0,0,0,data.scripts.hullmods.SRD_DroneCarrier,"While mounted with modular carrier autoforges, this ship has fully automated the entire production and servicing chain. Its hangar bays, if they could even be called as such, are far too small and cramped to allow pilots to enter them, and operate in complete vacuum. Only fighter models specifically designed to be automated or remote-controlled are usable under these conditions.
 
 The ship %s. However, its automated systems are far superior to comparable crewed alternatives: all fighters mounted on the ship has their refit time reduced by %s, while the ship's replacement rate degrades %s slower and recovers %s faster.

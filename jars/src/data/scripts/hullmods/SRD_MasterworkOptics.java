@@ -20,10 +20,11 @@ import java.util.Map;
 
 public class SRD_MasterworkOptics extends BaseHullMod {
 
-    public static float BEAM_RANGE_INCREASE = 400f;
-    public static float SUPPLY_USE_MULT = 2.25f;
-    public static float REPAIR_COST_MULT = 1.5f;
-    public static float BOMBARD_BONUS = 500f;
+    public static final float BEAM_RANGE_INCREASE = 400f;
+    public static final float SUPPLY_USE_MULT = 2.25f;
+    public static final float REPAIR_COST_MULT = 1.5f;
+    public static final float BOMBARD_BONUS = 5000f;
+    public static final float GROUND_BONUS = 250;
 
     //Applies the effects
     @Override
@@ -32,6 +33,8 @@ public class SRD_MasterworkOptics extends BaseHullMod {
         stats.getSuppliesPerMonth().modifyMult(id, SUPPLY_USE_MULT);
         stats.getSuppliesToRecover().modifyMult(id, REPAIR_COST_MULT);
         stats.getDynamic().getMod(Stats.FLEET_BOMBARD_COST_REDUCTION).modifyFlat("SRD_MasterworkOpticsID", BOMBARD_BONUS);
+        stats.getDynamic().getMod(Stats.FLEET_GROUND_SUPPORT).modifyFlat("SRD_MasterworkOpticsID", GROUND_BONUS);
+        stats.getCRLossPerSecondPercent().modifyPercent(id, 100f);
     }
 
     //Never applicable: only comes built-in
@@ -44,8 +47,9 @@ public class SRD_MasterworkOptics extends BaseHullMod {
     public String getDescriptionParam(int index, HullSize hullSize) {
         if (index == 0) return "" + (int)BEAM_RANGE_INCREASE;
         if (index == 1) return "" + (int)BOMBARD_BONUS + " units of fuel";
-        if (index == 2) return "" + (int)((SUPPLY_USE_MULT-1f)*100f) + "%";
-        if (index == 3) return "" + (int)((REPAIR_COST_MULT-1f)*100f) + "%";
+        if (index == 2) return "" + (int)GROUND_BONUS;
+        if (index == 3) return "" + (int)((SUPPLY_USE_MULT-1f)*100f) + "%";
+        if (index == 4) return "" + (int)((REPAIR_COST_MULT-1f)*100f) + "%";
         return null;
     }
 }

@@ -18,7 +18,7 @@ Stricture Disruptor Beam,SRD_stricture,3,0.5,1400,700,1000,,,0,14,14,,,,HIGH_EXP
 Exalt VRM-3,SRD_exalt_3,2,1,500,4000,,100,,50,20,5,15,,,HIGH_EXPLOSIVE,50,,,5,3,1,,,,,,300,200,8,100,"CONSERVE_1, DO_NOT_AIM","missile6, LR, sylphon_ex_bp, rare_bp",,Sylphon RnD,,Variable Support,Variable,Good,,,"Fires more powerful missiles at shorter range dealing %s, %s and %s damage at long, medium and short range respectively",100 | 200 | 300,,,true,1309
 Exalt VRM-6,SRD_exalt_6,2,1,1400,4000,,100,,50,10,11,120,,,HIGH_EXPLOSIVE,50,,,5,6,0.5,,,,,,300,200,8,100,"CONSERVE_1, DO_NOT_AIM","missile10, LR, sylphon_ex_bp, rare_bp",,Sylphon RnD,,Variable Support,Variable,Good,,,"Fires more powerful missiles at shorter range dealing %s, %s and %s damage at long, medium and short range respectively",100 | 200 | 300,,,true,1310
 Exalt VRM-12,SRD_exalt_12,2,1,4000,4000,,100,,50,5,22,360,,,HIGH_EXPLOSIVE,50,,,5,12,0.25,,,,,,300,200,8,100,"CONSERVE_1, DO_NOT_AIM","missile16, LR, sylphon_ex_bp, rare_bp",,Sylphon RnD,,Variable Support,Variable,Good,,,"Fires more powerful missiles at shorter range dealing %s, %s and %s damage at long, medium and short range respectively",100 | 200 | 300,,,true,1311
-Benison Cannon,SRD_benison,3,0.3,3000,800,,300,,30,20,12,,,,HIGH_EXPLOSIVE,330,,0,1.2,1,,0,5,1,2,,900,,,30,,"he14, sylphon_core_bp",,Sylphon RnD,,Anti Armor,,,,,,,,,,4.75
+Benison Cannon,SRD_benison,3,0.3,3000,800,,120,,30,20,12,,,,HIGH_EXPLOSIVE,140,,0,0.5,1,,0,5,1,2,,900,,,30,,"he14, sylphon_core_bp",,Sylphon RnD,,Anti Armor,,,,,,,,,,4.75
 Largesse Pulsebeam,SRD_largesse,2,,1500,800,160,,,10,15,12,,,,ENERGY,,160,0.1,0.1,,,,,,,3000,,,,,,"beam14, sylphon_core_bp",,Sylphon RnD,,General,,,,,,,,,,21
 Divinity Assault Cannon,SRD_divinity,2,0.8,4000,600,,400,0,30,25,24,,,,ENERGY,350,,0,2.2,4,0.2,0,5,1,10,,1000,,,75,,"energy16, SR, sylphon_high_bp",,Sylphon RnD,,General,,,,,,,,,,7.5
 Iphrail Torpedo,SRD_iphrail,2,,200,1000,,1500,500,100,20,2,1,,,HIGH_EXPLOSIVE,0,,0.1,8,,,0,0,0,0,,500,150,2.5,250,"GUIDED_POOR, STRIKE","missile12, strike12, sylphon_core_bp",,Sylphon RnD,,Torpedo,Medium,Poor,,,,,,,true,1310
@@ -49,7 +49,7 @@ Clemency Ping,SRD_clemency_ftr,2,1,4000,500,,200,200,,100,0,,,,FRAGMENTATION,0,,
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 #built_in,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-Götterdämmerung,SRD_goetterdaemmerung,3,0.5,9999999,1300,2500,,0,0,0,99,1,,,ENERGY,,2000,5,2,0.5,15,,,,,10000,,,,,"SYSTEM, STRIKE",SRD_REQUIRES_ANCHOR,,Sylphon RnD,,Siege,,,,,Deals damage equal to %s of target's maximum hull on final blast,45%,,,,1309
+Götterdämmerung,SRD_goetterdaemmerung,3,0.5,9999999,1300,2200,,1000,0,0,99,1,,,KINETIC,,2200,2.5,2,0.5,15,,,,,10000,,,,,"SYSTEM, STRIKE",SRD_REQUIRES_ANCHOR,,Sylphon RnD,,Siege,,,,,Deals damage equal to %s of target's maximum hull and spawns %s shield-piercing EMP arcs dealing %S damage each on final blast,25% | 10 | 200 EMP,"Due to the heavy stress on all ship systems from firing the weapon, each completed firing sequence will reduce the remaining peak performance time of the ship by %s",30 seconds,,1309
 Evocation Pulse,SRD_evocation,2,1,3000,600,,500,500,,0,0,,,,ENERGY,600,,0.2,1,,,,,,,,5000,,,100,"SYSTEM, PD",energy15,,Sylphon RnD,,Heavy Point Defense,,,,,,,,,,1316
 Endzeit,SRD_Endzeit,3,0.4,9999999,1200,,1000,1000,200,10,99,,,,KINETIC,500,,0.4,0.1,1,,1,1,1,1,,2000,,,500,SYSTEM,kinetic19,,Sylphon RnD,,Obliteration,,,,,,,,,,1318
 Equity,SRD_equity,2,1,10000,700,,2000,5000,200,0,0,,,,ENERGY,2200,,0.5,7,,,0,0,,,,1200,,,,SYSTEM,,,Sylphon RnD,,Strike,,,,,,,,,,1301

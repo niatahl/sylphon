@@ -1,17 +1,37 @@
-﻿0.9.5c
+﻿0.9.5d
+Changes:
+- Reworked the Finis Astra and Götterdämmerung
+	- System now only halves turnrate to allow aiming while anchored
+	- Weapon damage type changed to kinetic, beam damage reduced slightly
+	- Now spawn shield-piercing EMP-arcs on final blast
+	- Reduced bonus damage based on target hp to 25%
+	- Halved chargeup duration of the weapon
+	- Brought bombardment and ground support levels of the ship up to II Titan standards
+	- Added doubled CR degradation after ppt runs out
+	- Each shot of the Götterdämmerung now reduces remaining ppt by 30 seconds
+	- Increased Finis Astra ppt to 540 to compensate
+
+Balancing:
+- Benison
+	- Lowered damage from 300 to 120
+	- Lowered refire delay to 0.5s
+	
+
+0.9.5c
 Balancing:
 - Increased Furika top speed from 110 to 130
 - Increased Celika top speed from 110 to 120
 - Lowered Dread Eagle shield efficiency from 0.8 to 1.0
 
 - Major tweaking of FP values for all ships. Too many to list here, but generally FP values went up, which should result in Sylphon fleets being less oversized.
-	- Celika DP 8 -> 7
-	- Etrika DP 18 -> 12
-	- Tilia DP 14 -> 12
-	- Synastry DP 30 -> 28
-	- Eolia DP 25 -> 22
-	- Equilibrium DP 50 -> 60
-	- Frelia DP 50 -> 45
+
+- Celika DP 8 -> 7
+- Etrika DP 18 -> 12
+- Tilia DP 14 -> 12
+- Synastry DP 30 -> 28
+- Eolia DP 25 -> 22
+- Equilibrium DP 50 -> 60
+- Frelia DP 50 -> 45
 	
 
 0.9.5b

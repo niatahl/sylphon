@@ -10,7 +10,7 @@ import com.fs.starfarer.api.impl.combat.BaseShipSystemScript;
 
 public class SRD_NullspaceAnchor extends BaseShipSystemScript {
 
-    private final float TURN_RATE_MULT = 0.01f;
+    private final float TURN_RATE_MULT = 0.2f;
 
     //We are not allowed to turn the system off if our main cannon is firing
     @Override
@@ -67,6 +67,9 @@ public class SRD_NullspaceAnchor extends BaseShipSystemScript {
         } else {
             return;
         }
+
+        //While active, we drain PPT and CR at doubled rate
+
 
         //If the system is on, we activate our main weapons and stop practically all movement
         if (effectLevel > 0) {

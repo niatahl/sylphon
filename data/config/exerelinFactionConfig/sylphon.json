@@ -120,4 +120,7 @@
         {"id":"lightindustry", "mult":0.1},
 	],
 
+	#rarely colonize and only nearby systems
+	"colonyExpeditionChance":0.2,
+    "maxColonyDistance": 10,
 }

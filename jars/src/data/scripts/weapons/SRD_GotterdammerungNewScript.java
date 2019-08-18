@@ -22,6 +22,7 @@ public class SRD_GotterdammerungNewScript implements BeamEffectPlugin {
     private final Color MUZZLE_FLASH_COLOR_BRIGHT = new Color(255, 150, 240, 255);
 
     private boolean runOnce = false;
+    private float pptloss = 0f;
 
     @Override
     public void advance(float amount, CombatEngineAPI engine, BeamAPI beam) {
@@ -76,8 +77,8 @@ public class SRD_GotterdammerungNewScript implements BeamEffectPlugin {
                 engine.applyDamage(
                         target, //enemy target
                         beam.getTo(), //Our 2D vector to the exact world-position
-                        target.getMaxHitpoints() * 0.45f, //Damage
-                        DamageType.ENERGY, //Using the damage type here.
+                        target.getMaxHitpoints() * 0.25f, //Damage
+                        DamageType.KINETIC, //Using the damage type here.
                         0f, //EMP
                         false, //Does not bypass shields.
                         true, //Does Soft Flux damage
@@ -85,12 +86,13 @@ public class SRD_GotterdammerungNewScript implements BeamEffectPlugin {
                 );
 
                 //Spawns decorative EMP arcs to the enemy, with *extremely* token damage (around 1 damage)
+                //No longer token damage, flood them with EMP instead - Nia
                 for (int i = 0; i < 10; i++) {
                     engine.spawnEmpArcPierceShields(ship, beam.getTo(), target, target,
                             DamageType.ENERGY, //Damage type
                             MathUtils.getRandomNumberInRange(0.5f, 2f), //Damage
-                            0f, //Emp
-                            50f * (float)i, //Max range, increases gradually
+                            200f, //Emp
+                            150f * (float)i, //Max range, increases gradually
                             null, //Impact sound
                             MathUtils.getRandomNumberInRange(3f, 7f), // thickness of the lightning bolt
                             MUZZLE_FLASH_COLOR_BRIGHT, //Central color
@@ -120,6 +122,14 @@ public class SRD_GotterdammerungNewScript implements BeamEffectPlugin {
 
                 //TEST: And plays a neat sound for the on-hit
                 Global.getSoundPlayer().playSound(ONHIT_SOUND_ID, 1f, 1.25f, beam.getTo(), new Vector2f(0f, 0f));
+
+                //Finally, reduce remaining ppt due to stress induced by firing the weapon
+
+                if ( !(engine.getCustomData().get(ship.getId()+"pptloss") instanceof Float) )
+                    engine.getCustomData().put(ship.getId()+"pptloss",0f);
+                pptloss = (float)engine.getCustomData().get(ship.getId()+"pptloss")+30f;
+                engine.getCustomData().put(ship.getId()+"pptloss",pptloss);
+                ship.getMutableStats().getPeakCRDuration().modifyFlat("GoetterdaemmerungID",-pptloss);
             }
         }
 
