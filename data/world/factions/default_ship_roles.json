@@ -7,9 +7,6 @@
 		"SRD_Celika_heavy":5,
 		"SRD_Catora_standard":8,
 		"SRD_Catora_prototype":2,
-			
-		"SRD_Celika_P_standard":5,
-		"SRD_Celika_P_balanced":5,
 	},
 	"combatSmall":{
 		"SRD_Furika_standard":10,
@@ -18,8 +15,6 @@
 		"SRD_Catora_standard":8,
 		"SRD_Catora_prototype":2,
 			
-		"SRD_Celika_P_standard":5,
-		"SRD_Celika_P_balanced":5,
 		"SRD_Vril_standard":10,
 		
 		"SRD_Celika_uv_racer":10,
@@ -41,8 +36,6 @@
 		"SRD_Ascordia_prototype":2,
 		"SRD_Synastry_standard":10,
 			
-		"SRD_Eagle_P_standard":5,
-		"SRD_Eagle_P_balanced":5,
 		"SRD_Sylvetra_standard":10,
 		
 		"SRD_Synastry_cieve_combat":10,
@@ -57,8 +50,6 @@
 		"SRD_Seresvalla_elite":2,
 		"SRD_Seresvalla_barrage":3,
 		"SRD_Replekia_andromeda":10,
-			
-		"SRD_Metafalica_standard":5,
 		
 		"SRD_Equilibrium_balance_flag":5,
 	},
@@ -87,8 +78,6 @@
 	"carrierLarge":{
 			"SRD_Frelia_combat":5,
 			"SRD_Frelia_strike":5,
-			"SRD_Fulgent_standard":5,
-			"SRD_Fulgent_beamer":5,
 	},
 
 	# phase ships

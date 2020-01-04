@@ -57,15 +57,6 @@ SRD_Tilia,SHIP,"A small 5th generation vessel, focusing entirely on projecting f
 SRD_Replekia,SHIP,"A prototype battleship developed by Sylphon during the 4th generation nanolaminate armor project. Originally meant as the top of this new line of ships, the design was ultimately discarded due to immense cost. How many of these prototype vessels were actually constructed is unclear, but they can rarely be seen within Sylphon systems.
 
 Designed for broadside combat, employing its enhanced defenses, the Replekia is a rather unusual design by Sylphon standards, but is undeniably effective and one would wonder how a strike group of these vessels would fare in combat.",,,
-SRD_Metafalica,SHIP,"Unknown to many, the design of the Replekia wasn't a new development as part of the nanofilament research initiative like the smaller vessels that came from said project, rather its design is based on a now abandoned prototype battleship.
-
-The Metafalica was designed to be the new core of the growing Sylphon fleet roster as part of the first wave of warships designed for full Nulltech integration. Equipped with every new piece of technology the corporation had to offer at time of design, the prototype ship was a true marvel to behold. Mounting three advanced variable ammunition cannons, capable of adapting to any combat situation and an advanced counterforce-charged armor, it seemed without question that the Metafalica would be dominating any battle Sylphon would find itself involved in. Reality set in soon after however as the project proved too ambitious for its own good. Estimated production costs for the new vessel proved exorbitant and the Equilibrium it had been developed alongside proved the more efficient alternative for a new battleship. The project was scrapped and the 4 built prototypes were put in storage where they are said to remain to this day. 
-
-Rumours however say that at least one of the original prototypes was stolen by a former member of the board of directions after a disagreement over Sylphon's inaction over a [REDACTED] attack on a nearby inhabited system, supposedly having taken the ship to wage their own personal war with. Multiple reports have surfaced in recent years of a ship matching the Metafalica's rough description active in the outer fringes of [REDACTED] space, acting as part of a seemingly growing hunter fleet, engaging [REDACTED] on sight without mercy.",,,
-SRD_Eagle_P,SHIP,"Based on the Dread Eagle, the Scourge Eagle is an outcast-modified design, adapting it to comply with outcast combat doctrine. With most of its mounts upgraded to support ballistic weapons and the addition of counterforce armor, this reliable cruiser has become more sturdy than its base model. The added mass however has affected its mobility, in particular limiting the range of its signature jaunt drive. Reconfigured to account for this, the new Slip Drive tries to make up for this limited range with a set of fast-charging capacitors.
-
-As many Dread Eagles were being phased out to be replaced with newer cruiser designs at the time of the exodus, the Outcast took many of these ships with them. The ships were later adapted for combat against [REDACTED] with upgrades based on the experimental technologies used in the Metafalica.",,,
-SRD_Celika_P,SHIP,"A favorite of many Sylphon commanders, many Celika-class drone frigates found their way into the Outcast navy. In addition to the usual upgrades with hybrid mounts and counterforce-armor, the Celika Rel also replaces its signature nullpoint barrier with a more offensive nullspace shunt system, instead relying on the improved armor for protection.",,,
 SRD_Myrigo,SHIP,Advanced fighter-bomber carrying 6 Harrow-type missiles capable of engaging targets of any size. Also carries a small PD beamer for support.,,,
 SRD_Misja,SHIP,"A versatile drone employed by the Outcast, coming in configurations for various support roles.",,,
 SRD_Nalka,SHIP,"Outfitted with a pair of downsized rail accelerators, the Nalka is designed to suppress shielded targets in advance of an assault.",,,
@@ -87,12 +78,6 @@ The Synastry is an advanced EWAR-Cruiser rarely seen in Sylphon's fleets. Their 
 The first of these vessels were initially constructed in the early years after the First AI War from the recovered hulls of Brilliant-class cruisers. Originally intended as a makeshift surveying vessel in this new post-collapse world, the Synastry fulfilled its role better than initially expected. Following this initial success, a number of overhauls for the class were greenlit to turn what was once a makeshift vessel into a military-grade EWAR platform. While the increased complexity of these extensive upgrades eventually necessitated the integration of alpha-level cores to provide enough processing power to handle all its systems, the increased difficulty of finding willing alphas was a price well worth paying.",,,
 SRD_Ascordia_deadeye,SHIP,,,,
 SRD_Celika_uv,SHIP,,,,
-,,,,,
-SRD_Fulgent,SHIP,"A remnant of the autonomous AI fleets developed by the TriTachyon Corporation. Illegal under Domain (and Hegemony) law, and an abomination to the Church of Galactic Redemption, the First AI War saw these creations purged from the Sector. So the official histories say.
-
-Host to an endless swarm of drone fighters, the Iridescent is a flying factory, projecting devastating fighter screens across any battle. Housing the fighter complement of a dedicated supercarrier, one wouldn't expect this ship to have much room for direct firepower. A wrong thought.",,,
-,,,,,
-SRD_Sura_Tel,SHIP,"""You should not be here. Return to your wretched realm or be smitten by nihility.""",,,
 ,,,,,
 # Weapons,,,,,
 ,,,,,
@@ -133,13 +118,7 @@ SRD_excogitation,WEAPON,"A lightweight alternative to the AM blaster. While sign
 SRD_enkindle,WEAPON,"Based on the salamander, this support missile trades some of its EMP damage and range for a faster engine to better avoid PD fire.
 
 Some say this modified model was developed out of a desire for a support missile fitting the Sylphon aesthetic. While unlikely, these kinds of excentricities aren't unheard of within the Sylphon board of directors.",Utility,,
-SRD_phira_burst,WEAPON,"Based on the Purgatory, the Metafalica's main cannons are outfitted with a unique variable ammo system, allowing it to adapt to most combat situations. While the expansive mechanism makes it impossible to swap these for other weapons, their versatility hardly ever makes that necessary.",Universal,,
 SRD_vacuity,WEAPON,"Customized by Sylphon for slightly increased range, the vacuity is a cheap alternative to the expensive Disavowal.",Point Defense,,
-SRD_veda,WEAPON,"A small repeating rail driver, firing solid metal spikes at high velocity. Highly effective against shields.",Fire Support,,
-SRD_arphage,WEAPON,"An upscaled version of the Veda, the Arphage replaces its ammunition with an armor piercing round, carrying a plasma warhead to pierce heavy armor and breach it via internal detonation.",Strike,,
-SRD_paja,WEAPON,A standard point-defense weapon as used by Outcast vessels.,Point Defense,,
-SRD_arciel,WEAPON,"A massive rail driver, firing heavy metal spike equipped with a small plasma warhead for somewhat increased effectiveness against armor.",Fire Support,,
-SRD_qoga,WEAPON,"Downscaled from the Ar Ciel, this medium-sized rail driver fires high velocity metal spikes equipped with small plasma warheads.",Fire Support,,
 SRD_harmonius,WEAPON,Massive plasma drivers boasting an atypically long range for weapons of their kind.,Fire Support,,
 SRD_vedra,WEAPON,"The Vril's integrated PD-solution. While a simple design, its beams are of a high intensity for PD weapons and often employed offensively at short range.",,,
 SRD_apoc,WEAPON,"A high-powered multi-spectrum scanner, linked to the Synastry's EWAR suite. While primarily designed for long distance scans, it can also be utilised in combat. The intensity of the scanning beams alone makes them a destructive weapon, but the scanner's ability to quickly analyze a target's structure and transmit weakpoint data to allies is its real benefit.",,,

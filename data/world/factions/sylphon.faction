@@ -45,7 +45,7 @@
 		],
 	},
 	"knownShips":{
-		"tags":["sylphon_core_bp", "sylphon_high_bp", "sylphon_outcast_bp", "sylphon_ex_bp", "sylphon_ecc_bp"],
+		"tags":["sylphon_core_bp", "sylphon_high_bp", "sylphon_outcast_bp", "sylphon_ex_bp"],
 		"hulls":[
 		],
 	},
@@ -66,7 +66,7 @@
 		],
 	},
 	"knownWeapons":{
-		"tags":["missile_bp", "sylphon_core_bp", "sylphon_high_bp", "sylphon_outcast_bp", "sylphon_ex_bp", "sylphon_ecc_bp"],
+		"tags":["missile_bp", "sylphon_core_bp", "sylphon_high_bp", "sylphon_outcast_bp", "sylphon_ex_bp"],
 		"weapons":[
 		],
 	},
