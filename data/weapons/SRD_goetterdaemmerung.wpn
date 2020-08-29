@@ -46,6 +46,14 @@
     -5,
     0
   ],
+  "pierceSet": [
+    PROJECTILE_FF,
+    PROJECTILE_NO_FF,
+    PROJECTILE_FIGHTER,
+    MISSILE_FF,
+    MISSILE_NO_FF,
+	FIGHTER
+  ],
   "turretSprite": "graphics/sylphon/weapons/SRD_goetterdaemmerung_turret.png",
   "type": "ENERGY",
   "width": 40

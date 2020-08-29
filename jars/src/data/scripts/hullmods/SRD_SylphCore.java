@@ -67,7 +67,7 @@ public class SRD_SylphCore extends BaseHullMod {
     //Applies the effects
     @Override
     public void applyEffectsBeforeShipCreation(HullSize hullSize, MutableShipStatsAPI stats, String id) {
-        stats.getSuppliesPerMonth().modifyMult(id, SUPPLY_USE_MULT);
+        //stats.getSuppliesPerMonth().modifyMult(id, SUPPLY_USE_MULT);
 
         stats.getMaxCrewMod().modifyMult(id, CREW_CAPACITY_MULT);
         stats.getMinCrewMod().modifyMult(id, 0f);
@@ -354,13 +354,13 @@ public class SRD_SylphCore extends BaseHullMod {
 
     //Adds the description strings
     public String getDescriptionParam(int index, HullSize hullSize) {
-        if (index == 0) return "" + (int)((SUPPLY_USE_MULT-1f)*100f) + "%";
-        if (index == 1) return "requires no human crew";
-        if (index == 2) return "" + (int)Math.ceil((CREW_CAPACITY_MULT-1f)*-100f) + "%";
+        //if (index == 0) return "" + (int)((SUPPLY_USE_MULT-1f)*100f) + "%";
+        if (index == 0) return "requires no human crew";
+        if (index == 1) return "" + (int)Math.ceil((CREW_CAPACITY_MULT-1f)*-100f) + "%";
         if (Global.getSector() != null && Global.getCurrentState().equals(GameState.CAMPAIGN)) {
-            if (index == 3 && Global.getSector().getFaction(Factions.PLAYER).getMemoryWithoutUpdate().contains("$SRDHasSeenAIRebellion")) return " Has a chance to rebel under certain circumstances.";
-            else if (index == 3) return "";
-        } else if (index == 3) {
+            if (index == 2 && Global.getSector().getFaction(Factions.PLAYER).getMemoryWithoutUpdate().contains("$SRDHasSeenAIRebellion")) return " Has a chance to rebel under certain circumstances.";
+            else if (index == 2) return "";
+        } else if (index == 2) {
             return "";
         }
         return null;

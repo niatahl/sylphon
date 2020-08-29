@@ -14,8 +14,8 @@
 	"engineGlowWidthMult":0,
 	"engineGlowGlowMult":0,
 	
-	"range":420,
-	"randomRange":30,
+	"range":350,
+	"randomRange":50,
 	
 	"vulnerableChargeup":false,
 	"vulnerableChargedown":false,
@@ -30,7 +30,7 @@
 	
 	"aiHints":{
 		"activeSpeedIncrease":0,
-		"burstMovementPotential":1000,
-		"averageSpeedIncrease":750,
+		"burstMovementPotential":350,
+		"averageSpeedIncrease":500,
 	}
 }

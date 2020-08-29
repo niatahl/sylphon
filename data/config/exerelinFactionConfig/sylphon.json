@@ -70,6 +70,7 @@
 		"exlane": 1.5, #that green is just irritating
 	};
 
+	"diplomacyTraits":["likes_ai", "neutralist", "lowprofile"],
 	"morality":"amoral",
 
     "alignments":{

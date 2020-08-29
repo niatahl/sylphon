@@ -78,7 +78,7 @@ public class SRD_ModPlugin extends BaseModPlugin {
 
         //If we have Nexerelin and random worlds enabled, don't spawn our manual systems
         boolean haveNexerelin = Global.getSettings().getModManager().isModEnabled("nexerelin");
-        if (!haveNexerelin || SectorManager.getCorvusMode()){
+        if (!haveNexerelin || SectorManager.getManager().isCorvusMode()){
             new SRD_Nym().generate(sector);
             new SRD_Rofocale().generate(sector);
         } else {

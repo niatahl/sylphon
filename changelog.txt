@@ -1,4 +1,111 @@
-﻿0.9.5d
+﻿0.9.11
+Changes:
+- Eolia
+	- Deck count reduced to 2
+	- Dissipation increased to 600
+	- Armor increased to 600
+- Synastry
+	- Increased built-in beam damage
+	- built-in beam now inhibits movement of targets
+	- System changed to Nullpoint Barrier
+- Valestri
+	- Increased burn level to 8
+- Dread Eagle
+	- Increased burn level to 9
+- Rakia
+	- Increased burn level to 9
+- Various beams now properly pierce missiles
+- Götterdämmerung now pierces fighters
+	
+
+0.9.10
+Changes:
+- Valestri
+	- Reduced flux capacity to 14000
+	- Increased shield upkeep ratio to 0.4
+	- Increased DP to 28
+	- Reduced armor to 1100
+	- Adjusted mount arcs
+	- Changed two missile hardpoints to synergy
+
+0.9.9
+Changes:
+- Dread Eagle
+	- Generally overhauled
+	- Ambush spec removed
+	- Flux stats buffed
+	- Mobility slightly buffed
+	- System changed to Slip Drive
+	- DP reduced to 26
+- Furika
+	- System changed to HEF
+	- Dissipation increased by 50
+- Equilibrium
+	- No longer zaps friendlies
+- Nanolaminate armor hullmod
+	- No longer zaps friendlies
+- Tarima
+	- Veritas damage increased from 400 to 500
+- Silverhead
+	- System changed to slip drive
+- Vril
+	- DP reduced from 12 to 10
+	- Base value lowered to 30000
+	
+
+0.9.8b
+Changes:
+- Armor Polarization
+	- Duration increased to 3s
+	- Cooldown reduced to 0.5s
+	- Now can hold 2 charges
+	- Regenerates 1 charge every 10s
+- Adjusted base costs of capitals down slightly
+
+0.9.8a
+Hotfix:
+- Fixed Sylphon missing their capitals
+
+
+0.9.8
+Additions:
+- Commissioned Crew Support
+- Innocentis Swarmpulse
+
+Changes:
+- Updated Nex integration 
+- Demiurge built-in on 'Balance Unto All' HVB reworked
+- Zealot Rail-repeater
+	- Improved sprite
+	- Changed firing pattern
+- Dignity Pulse Repeater
+	- Improved sprite
+	- Lowered time to reach full secondary RoF
+- Mariana variant blueprints now come in a single package
+- Seresvalla
+	- System changed to "Conduit Overdrive"
+
+
+0.9.7
+Changes:
+- Various adjustments to DP- and credit-values
+- Radiant Dawn 
+	- gained increased impact, slowing down targets hit
+	- added 100 EMP dps
+- Clemency
+	- slightly increased rate of fire
+- Added Predictive targeting hullmod to Etrika, Valestri and Replekia
+	- increases energy weapon range by a flat 100su
+
+
+0.9.6
+Changes:
+- Eccentric ships are now HVBs
+- Removed Outcast
+- Cleaned up stuff
+
+
+0.9.5d
 Changes:
 - Reworked the Finis Astra and Götterdämmerung
 	- System now only halves turnrate to allow aiming while anchored

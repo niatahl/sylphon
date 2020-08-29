@@ -15,7 +15,7 @@ import java.awt.*;
 
 public class SRD_SlipDrive extends BaseShipSystemScript {
 
-    public static Color AFTERIMAGE_COLOR = new Color(255f/255f, 20f/255f, 0f/255f, 35f/255f);
+    public static Color AFTERIMAGE_COLOR = new Color(0.25f, 0.05f, 0.40f, 0.3f);
     public static float SHADOW_DELAY = 0.05f;
     public static float SHADOW_ANGLE_DIFFERENCE = 8f;
     public static float SHADOW_DISTANCE_DIFFERENCE = 45f;
@@ -56,6 +56,8 @@ public class SRD_SlipDrive extends BaseShipSystemScript {
         }
 
         if (state == State.IN) {
+            stats.getAcceleration().modifyFlat(id,500f);
+            stats.getDeceleration().modifyFlat(id,500f);
             return;
         }
 
@@ -127,6 +129,9 @@ public class SRD_SlipDrive extends BaseShipSystemScript {
         } else {
             return;
         }
+
+        stats.getDeceleration().unmodify(id);
+        stats.getAcceleration().unmodify(id);
 
         if (ship.getSystem().getEffectLevel() <= 0f) {
             startPos = new Vector2f(0f, 0f);

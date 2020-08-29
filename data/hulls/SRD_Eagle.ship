@@ -54,8 +54,7 @@
     11.5
   ],
   "builtInMods": [
-    "SRD_nullspace_conduits",
-	"SRD_ambush_spec"
+    "SRD_nullspace_conduits"
   ],
   "builtInWings": [],
   "center": [

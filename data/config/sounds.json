@@ -161,6 +161,13 @@
 			{"file":"sounds/sylphon/weapons/SRD_embrace_fire.ogg","pitch":1.2,"volume":0.8},
         ],
     },
+	"SRD_innocentis_fire":{
+        "sounds":[
+           	{"file":"sounds/sylphon/weapons/SRD_embrace_fire.ogg","pitch":2.55,"volume":0.6},
+			{"file":"sounds/sylphon/weapons/SRD_embrace_fire.ogg","pitch":2.5,"volume":0.6},
+			{"file":"sounds/sylphon/weapons/SRD_embrace_fire.ogg","pitch":2.6,"volume":0.6},
+        ],
+    },
 	"SRD_embrace_charged_fire":{
         "sounds":[
            	{"file":"sounds/sylphon/weapons/SRD_embrace_charged_fire.ogg","pitch":1.05,"volume":1},

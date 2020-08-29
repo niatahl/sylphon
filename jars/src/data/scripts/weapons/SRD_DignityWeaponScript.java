@@ -17,10 +17,10 @@ public class SRD_DignityWeaponScript implements EveryFrameWeaponEffectPlugin {
     private static final float COOLDOWN_MIN = 0.10f;
     private static final float COOLDOWN_MAX = 0.9f;
     private static final float INACCURACY = 1f;
-    private static final float[] X_OFFSETS = {-8f, 8f};
+    private static final float[] X_OFFSETS = {-7f, 7f};
     private static final float[] Y_OFFSETS = {8f, 8f};
-    private static final float CHARGEUP_TIME = 3f;
-    private static final float CHARGE_FADE_MULT = 3f;
+    private static final float CHARGEUP_TIME = 2f;
+    private static final float CHARGE_FADE_MULT = 2f;
 
     private static final int PARTICLE_COUNT = 10;
     private static final float PARTICLE_SIZE_MIN = 3f;

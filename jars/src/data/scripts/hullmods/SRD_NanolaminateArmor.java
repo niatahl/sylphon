@@ -148,6 +148,10 @@ public class SRD_NanolaminateArmor extends BaseHullMod {
                         if (entityToTest.getCollisionClass().equals(CollisionClass.NONE)) {
                             continue;
                         }
+                        //No more friendly fire cause I'm sick of the whining
+                        if (entityToTest.getOwner() == ship.getOwner()) {
+                            continue;
+                        }
 
                         //Checks if the target is within the ship's shield arc
                         float angleBetween = VectorUtils.getAngle(ship.getShield().getLocation(), entityToTest.getLocation());

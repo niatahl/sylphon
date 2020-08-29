@@ -14,6 +14,15 @@
 			"Sylphon Outcast":[255,50,0,255],
     },
 	"graphics":{
+		"fx":{
+			"SRD_trail_standard":"graphics/sylphon/fx/SRD_projectile_contrail.png",
+			"SRD_trail_fuzzy":"graphics/sylphon/fx/SRD_projectile_contrail_fuzzy.png",
+			"SRD_trail_helix":"graphics/sylphon/fx/SRD_trail_helix.png",
+			"SRD_trail_core":"graphics/sylphon/fx/SRD_largesse_trail_core.png",
+			"SRD_trail_fringe":"graphics/sylphon/fx/SRD_largesse_trail_fringe.png",
+			"SRD_trail_zappy":"graphics/sylphon/fx/SRD_zappy_trail.png",
+			"SRD_trail_glow":"graphics/sylphon/fx/SRD_projectile_glow.png",
+		},
 		"SRD_fx":{
 			"SRD_Rakia_phantom":"graphics/sylphon/ships/SRD_Rakia_glow2.png",
 			"SRD_Equilibrium_phantom":"graphics/sylphon/ships/SRD_Equilibrium_glow1.png",

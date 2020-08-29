@@ -35,8 +35,10 @@ The ship %s. However, its automated systems are far superior to comparable crewe
 Incompatible with %s.",Better carrier performance. Cannot mount crewed fighters,graphics/sylphon/hullmods/SRD_drone_carrier.png
 Variable Mounts,SRD_superheavy_weapons_frelia,,,,,,,,TRUE,,0,0,0,0,data.scripts.hullmods.SRD_SuperweaponBayConversion,"The Frelia is equipped with a pair of specialized slots that are designed to be easily converted into additional launch bays for the ship; the ship gains %s for each of its Large slots left empty. In addition, all energy weapon cost %s to mount in these slots.",Mounts can be turned to fighter bays,graphics/sylphon/hullmods/harmonius_hullmod.png
 Ambush Spec,SRD_ambush_spec,,,,,,,,TRUE,,0,0,0,0,data.scripts.hullmods.SRD_AmbushSpec,"The Dread Eagle's flux core has been optimized for ambush operations. Operating a specialized integrated nullspace shunt, it boasts enhanced flux capacity at the cost of reduced dissipation. To make up for the reduced dissipation, the integrated shunt utilizes nullspace counterforce to boost active vent rate by %s.",Boosts active vent rate,graphics/sylphon/hullmods/nullspace_conduit.png
+Predictive Targeting,SRD_predictive_targeting,1,,,special,Special,,,TRUE,,0,0,0,0,data.scripts.hullmods.SRD_PredictiveTargeting,"Employs specialized low-grade AI for enhanced targeting. Increases energy weapon range by %s.
+",Increased energy weapon range,graphics/sylphon/hullmods/SRD_targeting_linkup.png
 ,,,,,,,,,,,,,,,,,,
-Sylph Core,SRD_sylph_core,,,Sylphon RnD,,,,,TRUE,,0,0,0,0,data.scripts.hullmods.SRD_SylphCore,"This ship has had a voluntary AI-core integrated into the mainframe by the Sylphon. While upkeep is increased by %s to keep the core operating under peak conditions, the ship %s. The ship's crew capacity is however reduced by %s due to installation requirements.%s",Automated ship,graphics/sylphon/hullmods/SRD_sylph_core.png
+Sylph Core,SRD_sylph_core,,,,,,,,TRUE,,0,0,0,0,data.scripts.hullmods.SRD_SylphCore,This ship has had a voluntary AI-core integrated into the mainframe by the Sylphon and therefore %s. The ship's crew capacity is however reduced by %s due to installation requirements.%s,Automated ship,graphics/sylphon/hullmods/SRD_sylph_core.png
 ,,,,,,,,,,,,,,,,,,
 Eccentric Core: Cieve,SRD_eccentric_core_cieve,,,,,,,,TRUE,,0,0,0,0,data.scripts.hullmods.SRD_EccentricCoreCieve,"""This unique vessel harbors one of the alpha sylph cores known as eccentrics, refusing to be harbored in the safety of Sylpheed station, instead traveling the sector on their own""
 
@@ -62,7 +64,7 @@ Increases supply upkeep by %s and counts as a %s.%s
 ""Originally working in engine development, this peculiar AI has developed a passion for speed and the sound of eurobeat""
 Its custom engine assembly has been toughened to take any punishment, reducing all engine damage by %s. In combat the massive booster engine enters an overdrive mode, increasing its top speed and acceleration power by %s of their base value every %s up to a maximum boost of %s.",Eccentric Sylph Core,graphics/sylphon/hullmods/SRD_ecore_cieve.png
 ,,,,,,,,,,,,,,,,,,
-Networked Targeting Linkup,SRD_targeting_linkup,1,,Sylphon RnD,special,Special,6500,,,,5,9,18,28,data.scripts.hullmods.SRD_TargetingLinkup,"Links the ship's Sylph Core to a fleet-wide targeting grid, relaying info to other ships hooked up to the same system.
+Networked Targeting Linkup,SRD_targeting_linkup,1,,,special,Special,6500,,,,5,9,18,28,data.scripts.hullmods.SRD_TargetingLinkup,"Links the ship's Sylph Core to a fleet-wide targeting grid, relaying info to other ships hooked up to the same system.
 
 For each deployed ally in the fleet with the same hullmod, this ship ignores %s/%s/%s/%s of enemy ECM, depending on the hullsize of the allied ship, up to a maximum of %s. In addition, it also gets %s of this bonus as bonus target leading accuracy.",ECM and targeting bonuses when massed.,graphics/sylphon/hullmods/SRD_targeting_linkup.png
 ,,,,,,,,,,,,,,,,,,
@@ -88,6 +90,8 @@ Sylphon Prototype: Local Soother,SRD_prototype_local_stabilizer,3,,Sylphon RnD,"
 Provides all the normal benefits of a %s, increasing manoeuvrability by %s and increasing the bonuses from nullspace-skimming by %s, but does not confer this bonus to other ships. Also increases the ship's burn level by %s.
 
 Cannot be mounted if a full %s exists. Requires the ship to have some form of %s installed. A ship can only have a single %s.",Installs a personal Nullspace Soother.,graphics/sylphon/hullmods/SRD_prototype_local_stabilizer.png
+,,,,,,,,,,,,,,,,,,
+Sylphon Shield Tuning,SRD_sylphon_crews,1,,Sylphon RnD,,,,,TRUE,,0,0,0,0,data.scripts.hullmods.SRD_SylphonCrews,"Due to their ships' heavy reliance on shields for defense, Sylphon engineers have developed a talent for fine-tuning shield generators for smoother operation. These optimizations reduce shield upkeep by %s and accelerate shield unfolding and turning by %s.",Improves shields.,graphics/sylphon/hullmods/SRD_sylphon_crews.png
 ,,,,,,,,,,,,,,,,,,
 Outcast Engineering,SRD_outcast_engineering,2,,,special,Special,9999,,TRUE,,0,0,0,0,data.scripts.hullmods.SRD_OutcastEngineering,"While very similar in nature to regular Sylphon designs, this specialized ship has some key differences that sets it apart from its peers.
 

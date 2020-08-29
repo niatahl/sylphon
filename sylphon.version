@@ -1,11 +1,11 @@
 {
-    "masterVersionFile":"https://bitbucket.org/niatahl/sylphon/downloads/sylphon.version",
+    "masterVersionFile":"https://raw.githubusercontent.com/niatahl/sylphon/master/sylphon.version",
     "modName":"Sylphon",
     "modThreadId":13524,
     "modVersion":
     {
         "major":0,
         "minor":9,
-        "patch":"5d"
+        "patch":"10"
     },
 }

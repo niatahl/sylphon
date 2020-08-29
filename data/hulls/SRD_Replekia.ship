@@ -97,7 +97,8 @@
   ],
   "builtInMods": [
     "SRD_nullspace_conduits",
-    "SRD_nanolaminate_armor"
+    "SRD_nanolaminate_armor",
+	"SRD_predictive_targeting"
   ],
   "builtInWeapons": {
     "WS0010": "SRD_vacuity",

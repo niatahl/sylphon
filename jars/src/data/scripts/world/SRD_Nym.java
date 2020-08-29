@@ -101,6 +101,9 @@ public class SRD_Nym {
                 new ArrayList<>(
                         Arrays.asList( // list of market conditions from martinique.json
                                 Conditions.FARMLAND_RICH,
+                                Conditions.HABITABLE,
+                                Conditions.ORGANICS_TRACE,
+                                Conditions.THIN_ATMOSPHERE,
                                 Conditions.POPULATION_3)),
                 new ArrayList<>(
                         Arrays.asList( // which submarkets to generate

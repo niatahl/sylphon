@@ -1,42 +1,43 @@
 {
-  "animationType": "MUZZLE_FLASH",
-  "barrelMode": "ALTERNATING",
+  "id": "SRD_dignity",
+  "specClass": "projectile",
+  "projectileSpecId": "SRD_dignity_shot",
+  "type": "ENERGY",
+  "size": "MEDIUM",
   "everyFrameEffect": "data.scripts.weapons.SRD_DignityWeaponScript",
-  "fireSoundTwo": "SRD_dignity_fire",
-  "hardpointAngleOffsets": [
+  "turretSprite": "graphics/sylphon/weapons/SRD_dignity_turret.png",
+  "hardpointSprite": "graphics/sylphon/weapons/SRD_dignity_hardpoint.png",
+  "renderAboveAllWeapons": 0,
+  "turretOffsets": [
+    14.5,
+    0
+  ],
+  "turretAngleOffsets": [
     0
   ],
   "hardpointOffsets": [
-    8,
+    16.5,
     0
   ],
-  "hardpointSprite": "graphics/sylphon/weapons/SRD_dignity_hardpoint.png",
-  "id": "SRD_dignity",
+  "hardpointAngleOffsets": [
+    0
+  ],
+  "barrelMode": "ALTERNATING",
+  "animationType": "MUZZLE_FLASH",
   "muzzleFlashSpec": {
     "length": 40,
+    "spread": 20,
+    "particleSizeMin": 10,
+    "particleSizeRange": 10,
+    "particleDuration": 0.5,
+    "particleCount": 10,
     "particleColor": [
       255,
       55,
       155,
       205
-    ],
-    "particleCount": 10,
-    "particleDuration": 0.5,
-    "particleSizeMin": 10,
-    "particleSizeRange": 10,
-    "spread": 20
+    ]
   },
-  "projectileSpecId": "SRD_dignity_shot",
-  "size": "MEDIUM",
-  "specClass": "projectile",
   "textureType": LASER,
-  "turretAngleOffsets": [
-    0
-  ],
-  "turretOffsets": [
-    6,
-    0
-  ],
-  "turretSprite": "graphics/sylphon/weapons/SRD_dignity_turret.png",
-  "type": "ENERGY"
+  "fireSoundTwo": "SRD_dignity_fire"
 }
