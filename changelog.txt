@@ -10,12 +10,30 @@ Changes:
 	- System changed to Nullpoint Barrier
 - Valestri
 	- Increased burn level to 8
+	- Increased armor to 1200
+- Replekia
+	- Increased armor to 1500
 - Dread Eagle
 	- Increased burn level to 9
+	- Increased armor to 700
 - Rakia
 	- Increased burn level to 9
+- Equilibrium
+	- DP lowered to 50
+- Finis Astra
+	- Beam Damage roughly doubled
+	- Halved ppt cost to fire
+	- Götterdämmerung now pierces fighters
+- Ascordia
+	- DP lowered from 30 to 26
+- Etrika
+	- Shield efficiency increased from 1.1 to 1.0
+- Silverhead
+	- DP lowered from 12 to 10
+- Rakia
+	- System changed to HEF
 - Various beams now properly pierce missiles
-- Götterdämmerung now pierces fighters
+
 	
 
 0.9.10

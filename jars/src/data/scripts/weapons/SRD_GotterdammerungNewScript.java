@@ -127,7 +127,7 @@ public class SRD_GotterdammerungNewScript implements BeamEffectPlugin {
 
                 if ( !(engine.getCustomData().get(ship.getId()+"pptloss") instanceof Float) )
                     engine.getCustomData().put(ship.getId()+"pptloss",0f);
-                pptloss = (float)engine.getCustomData().get(ship.getId()+"pptloss")+30f;
+                pptloss = (float)engine.getCustomData().get(ship.getId()+"pptloss")+15f;
                 engine.getCustomData().put(ship.getId()+"pptloss",pptloss);
                 ship.getMutableStats().getPeakCRDuration().modifyFlat("GoetterdaemmerungID",-pptloss);
             }
